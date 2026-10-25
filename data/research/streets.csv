@@ -1,0 +1,222 @@
+id,match,confidence,status,note
+L0219,CUR:rue Saint-Antoine,high,,the Grande rue Saint-Antoine; its western end is now rue François-Miron
+L0220,CUR:rue de la Cerisaie,high,,
+L0221,CUR:rue du Petit Musc,high,,called rue des Célestins on some 16th-century plans
+L0222,CUR:rue Scipion,high,,rue de la Barre in 1540
+L0223,CUR:rue du Fer à Moulin,high,,
+L0224,,low,,one of several 'rue Neuve' near Saint-Marcel; unresolved
+L0225,#1093,high,,
+L0226,CUR:rue Broca,medium,,"old rue des Cordelières, now rues Broca, Edouard-Quénu and Léon-Maurice-Nordmann"
+L0227,CUR:rue de la Perle,high,,
+L0228,CUR:rue Madame de Sévigné,medium,,"rue de la Culture-Sainte-Catherine, renamed rue de Sévigné in 1867"
+L0229,CUR:rue du Prévôt,high,,formerly rue Percée
+L0230,CUR:rue Saint-Paul,high,,
+L0231,CUR:rue des Jardins Saint-Paul,high,,
+L0232,CUR:rue Charles V,high,,formerly rue Neuve-Saint-Paul
+L0233,CUR:rue Daubenton,high,,formerly rue d'Orléans
+L0234,CUR:rue des Archives,high,,"rue du Grand-Chantier, now part of rue des Archives"
+L0235,DUP:L0236,,,
+L0236,CUR:rue des Quatre Fils,high,,rue des Quatre-Fils-Aymon
+L0237,#3097,high,,
+L0238,CUR:rue Vieille du Temple,high,,
+L0239,CUR:rue des Francs Bourgeois,medium,,formerly rue des Poulies
+L0240,CUR:rue Vieille du Temple,medium,,probably a second label on the Vieille rue du Temple
+L0241,#1174,high,,
+L0242,CUR:rue des Rosiers,high,,
+L0243,CUR:rue des Écouffes,high,,
+L0244,CUR:rue Payenne,high,,
+L0245,CUR:rue du Roi de Sicile,high,,
+L0246,#8226,high,,
+L0247,CUR:rue Cloche Perce,high,,formerly rue Renaut-le-Fèvre
+L0248,CUR:rue de Jouy,low,,reading of the label unclear
+L0249,CUR:rue Geoffroy l'Asnier,high,,
+L0250,CUR:rue Grenier sur l'Eau,high,,label reads Garnier sur l'Eau (old spelling: Garnier sur l'Yaue)
+L0251,DUP:L0252,,,
+L0252,CUR:rue des Nonnains d'Hyères,high,,
+L0253,CUR:rue Lacépède,high,,formerly rue Copeau
+L0254,CUR:rue Mouffetard,medium,,"the main street of the faubourg Saint-Marcel, from the Porte Bordelles"
+L0255,CUR:rue Volta,high,,formerly rue de la Croix
+L0256,CUR:rue des Fontaines du Temple,high,,
+L0257,#5520,medium,,rue Frépaux = rue Phélipeaux
+L0258,CUR:rue Portefoin,high,,
+L0259,CUR:rue Pastourelle,high,,
+L0260,CUR:rue Chapon,high,,
+L0261,CUR:rue du Temple,high,,
+L0262,CUR:rue de Montmorency,high,,formerly rue Courtauvillain
+L0263,CUR:rue Michel le Comte,high,,
+L0264,CUR:rue des Haudriettes,high,,
+L0265,CUR:rue de Braque,medium,,
+L0266,,low,,unnamed cul-de-sac near rue Geoffroy-l'Angevin
+L0267,CUR:rue des Blancs Manteaux,high,,
+L0268,#2346,high,,
+L0269,CUR:rue des Archives,high,,"rue de l'Homme-Armé, now part of rue des Archives"
+L0270,CUR:rue Sainte-Croix de la Bretonnerie,high,,
+L0271,CUR:rue du Bourg Tibourg,high,,
+L0272,CUR:rue de Moussy,high,,formerly rue du Franc-Mourier
+L0273,#7666,high,,
+L0274,CUR:rue des Mauvais Garçons,high,,
+L0275,#6634,high,,
+L0276,#992,high,,
+L0277,#944,high,,"rue du Pet-au-Diable, later rue du Tourniquet-Saint-Jean"
+L0278,CUR:rue des Barres,high,,
+L0279,CUR:rue de Brosse,high,,"formerly rue de Longpont"
+L0280,CUR:rue de l'Hôtel de Ville,high,,"formerly rue de la Mortellerie"
+L0281,CUR:rue d'Arras,high,,"the name was also corrupted to 'rue Dras' and 'rue des Ras'"
+L0282,#5515,high,vanished,"rue de Versailles (Guillot: Verseille), destroyed for rue Monge"
+L0283,#7758,high,,
+L0284,CUR:rue Descartes,high,,"formerly rue Bordelle"
+L0285,CUR:rue Lhomond,high,,"formerly rue des Postes"
+L0286,CUR:rue du Vertbois,high,,
+L0287,CUR:rue au Maire,high,,
+L0288,CUR:rue Beaubourg,high,,"rue Transnonain, now part of rue Beaubourg"
+L0289,#3980,high,,"absorbed by rue Rambuteau"
+L0290,CUR:rue Geoffroy l'Angevin,high,,
+L0291,#8058,high,,
+L0292,CUR:rue Pierre au Lard,high,,
+L0293,CUR:rue Saint-Merri,high,,"formerly rue Neuve-Saint-Merri"
+L0294,#2475,medium,,
+L0295,#6527,medium,,
+L0296,DUP:L0295,,,
+L0297,#2477,medium,,
+L0298,CUR:rue des Ursins,medium,,"rue du Port-Saint-Landry"
+L0299,CUR:rue de Bièvre,high,,
+L0300,CUR:rue des Bernardins,high,,
+L0301,CUR:rue Saint-Victor,high,,
+L0302,#1528,medium,,
+L0303,#3107,high,,"rue Alexandre-Langlois, later rue du Paon"
+L0304,#3634,high,,"rue Pavée-d'Andouilles, later rue du Mûrier"
+L0305,#6806,low,,"possibly rue Clopin; reading uncertain"
+L0306,CUR:rue de la Montagne Sainte-Geneviève,high,,
+L0307,CUR:rue des Gravilliers,high,,
+L0308,#6872,high,,
+L0309,CUR:rue de Montmorency,high,,
+L0310,CUR:rue du Grenier Saint-Lazare,high,,
+L0311,,low,,"reading uncertain (R. DE LA VENERIE?)"
+L0312,#2809,high,,"rue des Petits-Champs(-Saint-Martin), later rue Brantôme"
+L0313,CUR:rue Quincampoix,high,,
+L0314,#556,medium,,
+L0315,,low,,"rue de la Plâtrière (Saint-Martin quarter); modern successor not yet confirmed"
+L0316,CUR:rue Saint-Martin,high,,
+L0317,CUR:rue Quincampoix,high,,"rue de la Vieille-Courroierie (later rue des Cinq-Diamants), now the southern part of rue Quincampoix"
+L0318,CUR:rue Nicolas Flamel,medium,,"formerly rue Marivaux"
+L0319,#4724,high,,
+L0320,CUR:rue de la Tacherie,high,,
+L0321,CUR:rue de la Coutellerie,high,,
+L0322,#711,high,,
+L0323,#1102,high,,
+L0324,#5309,high,,
+L0325,#3429,high,,
+L0326,CUR:rue Frédéric Sauton,medium,,"probably the rue du Pavé (de la place Maubert)"
+L0327,CUR:rue Domat,high,,"formerly rue du Plâtre"
+L0328,CUR:boulevard Saint-Germain,high,,"rue des Noyers, absorbed by boulevard Saint-Germain"
+L0329,CUR:rue des Carmes,high,,
+L0330,CUR:rue Jean de Beauvais,high,,
+L0331,#6798,medium,,
+L0332,CUR:rue Saint-Jacques,high,,
+L0333,#6908,high,,
+L0334,#1756,high,,"rue Saint-Étienne-des-Grès, now part of rue Cujas"
+L0335,CUR:rue Guérin-Boisseau,high,,
+L0336,CUR:rue Greneta,high,standing,"formerly rue d'Arnetal"
+L0337,CUR:rue Saint-Denis,high,,
+L0338,CUR:rue du Bourg l'Abbé,high,,
+L0339,CUR:rue Tiquetonne,medium,,"a rue Pavée near Saint-Sauveur; now part of rue Tiquetonne"
+L0340,CUR:rue Tiquetonne,high,,"rue du Petit-Lion(-Saint-Sauveur), now part of rue Tiquetonne"
+L0341,CUR:rue aux Ours,high,,
+L0342,#7198,high,,"absorbed by rue Rambuteau"
+L0343,CUR:rue des Prêcheurs,high,,
+L0344,CUR:rue de la Cossonnerie,high,standing,
+L0345,#5775,high,,"rue aux Fers, now part of rue Berger"
+L0346,CUR:rue Aubry le Boucher,high,,"label reads (Au)bri (le) Bouche(r)"
+L0347,CUR:rue de la Ferronnerie,high,,
+L0348,CUR:rue de La Reynie,high,,"formerly rue Troussevache"
+L0349,CUR:rue des Lombards,high,,
+L0350,#5028,high,,
+L0351,#1245,high,,
+L0352,#1259,low,,"label read as 'de la Serpente'; position fits the rue de la Saunerie by the Châtelet"
+L0353,#6444,high,,"rue du Crucifix-Saint-Jacques"
+L0354,CUR:rue des Lavandières Sainte-Opportune,high,,
+L0355,#567,high,,
+L0356,#582,high,,"labelled 'rue de la Verrerie' by mistake, as on Ducerceau's plan of 1555"
+L0357,#1249,high,,
+L0358,#7458,high,,
+L0359,CUR:rue de la Huchette,high,,
+L0360,DUP:L0361,,,
+L0361,#2447,high,,"handwritten addition on the Basel copy"
+L0362,CUR:rue de la Parcheminerie,high,,
+L0363,CUR:impasse Hautefeuille,medium,,"handwritten addition; rue Percée(-Saint-André)"
+L0364,CUR:rue Boutebrie,high,standing,
+L0365,CUR:rue Serpente,high,,"handwritten addition"
+L0366,#6246,high,,"handwritten addition"
+L0367,#5719,high,,
+L0368,CUR:rue de la Harpe,high,,
+L0369,#4036,high,,
+L0370,CUR:rue de la Sorbonne,high,,
+L0371,#2634,high,,
+L0372,CUR:rue d'Alexandrie,high,,"formerly rue des Filles-Dieu"
+L0373,CUR:rue Saint-Sauveur,high,,
+L0374,CUR:rue Greneta,medium,,"rue du Renard(-Saint-Sauveur)"
+L0375,#7995,high,,
+L0376,#6245,high,,
+L0377,CUR:rue Marie Stuart,high,,"originally rue Tire-Vit, later rue Tire-Boudin, renamed rue Marie-Stuart"
+L0378,CUR:rue Montorgueil,high,,
+L0379,CUR:rue Tiquetonne,high,,"rue Pavée, now part of rue Tiquetonne"
+L0380,CUR:rue Française,high,,"formerly rue de Bourgogne"
+L0381,CUR:rue Montorgueil,high,,"rue au Comte-d'Artois, now part of rue Montorgueil"
+L0382,CUR:rue Mauconseil,high,,
+L0383,CUR:rue de la Grande Truanderie,high,,
+L0384,CUR:rue Mondétour,high,standing,
+L0385,#5502,high,,
+L0386,CUR:rue Vauvilliers,high,,"formerly rue du Four"
+L0387,CUR:rue des Prouvaires,high,standing,
+L0388,#5242,high,,
+L0389,CUR:rue de la Lingerie,high,,
+L0390,#1002,high,,
+L0391,#7055,medium,,"rue aux Chats, later rue de la Limace"
+L0392,CUR:rue des Bourdonnais,high,,
+L0393,,low,,"reading uncertain (R. DU BOUT...)"
+L0394,CUR:rue de la Monnaie,high,,
+L0395,CUR:rue des Orfèvres,high,,"rue des Deux-Portes, by the chapel of the goldsmiths"
+L0396,CUR:rue Saint-Germain l'Auxerrois,high,,
+L0397,CUR:rue Séguier,high,,"rue Pavée(-Saint-André), renamed rue Séguier in 1864"
+L0398,CUR:rue Serpente,high,,"rue du Battoir(-Saint-André), now part of rue Serpente"
+L0399,CUR:rue de l'Hirondelle,high,,
+L0400,CUR:rue Suger,high,,"formerly rue du Cimetière-Saint-André"
+L0401,CUR:rue des Poitevins,high,,
+L0402,CUR:rue Hautefeuille,high,,
+L0403,CUR:rue Serpente,high,,
+L0404,CUR:rue Pierre Sarrazin,high,,
+L0405,CUR:rue de l'École de Médecine,high,,"formerly rue des Cordeliers"
+L0406,CUR:rue Tiquetonne,high,standing,
+L0407,CUR:rue Montmartre,high,,
+L0408,CUR:rue Jean-Jacques Rousseau,high,,"formerly rue de la Plâtrière"
+L0409,CUR:rue du Jour,high,,"formerly rue du Séjour"
+L0410,CUR:rue Sauval,medium,,"formerly rue des (Vieilles-)Étuves(-Saint-Honoré)"
+L0411,#3205,high,,
+L0412,CUR:rue du Louvre,high,,"rue des Poulies, absorbed by rue du Louvre"
+L0413,CUR:rue Berger,high,,"rue des Deux-Écus, now part of rue Berger"
+L0414,CUR:rue des Grands Augustins,high,,
+L0415,CUR:rue Saint-André des Arts,high,,
+L0416,#3105,medium,,"rue du Paon(-Saint-André), later rue Larrey"
+L0417,,low,,"a 'rue Neuve' in the faubourg Saint-Germain; perhaps rue Neuve-Saint-Lambert (now rue de Condé)"
+L0418,CUR:rue de Tournon,high,,
+L0419,#542,high,,"rue des (Vieux-)Augustins, now rue d'Argout and rue Hérold"
+L0420,CUR:rue de la Jussienne,high,,"formerly rue Sainte-Marie-l'Égyptienne"
+L0421,,low,,"rue Breneuse: the name was used for several small streets in this quarter"
+L0422,CUR:rue d'Argout,high,,"formerly rue Pagevin"
+L0423,CUR:rue Coq Héron,high,,
+L0424,CUR:rue Coquillière,high,,
+L0425,CUR:rue Jean-Jacques Rousseau,high,,"rue de Grenelle(-Saint-Honoré), now part of rue Jean-Jacques-Rousseau"
+L0426,CUR:rue Saint-Honoré,high,,
+L0427,CUR:rue de Marengo,high,,"formerly rue du Coq(-Saint-Honoré)"
+L0428,#7206,high,,
+L0429,#8314,high,,"rue d'Autriche or d'Autruche; the surviving part is rue de l'Oratoire"
+L0430,#7250,high,,
+L0431,#5501,high,,
+L0432,CUR:rue du Vieux Colombier,medium,,"the 'grant rue Saint-Sulpice', now rue du Vieux-Colombier"
+L0433,CUR:rue de Vaugirard,high,,
+L0434,CUR:rue Croix des Petits Champs,high,,"formerly rue des Petits-Champs"
+L0435,#7992,high,,
+L0436,#4721,high,vanished,"rue Jean-Saint-Denis, by the Louvre; later merged into a rue Pierre-Lescot that has since disappeared"
+L0437,#1449,high,,
+L0438,CUR:rue de Seine,high,,
+L0439,CUR:rue du Four,high,,

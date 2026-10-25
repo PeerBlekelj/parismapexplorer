@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-25T18:50:38+00:00",
+"generated": "2026-10-25T19:01:07+00:00",
 "image": {
 "width": 10890,
 "height": 7820,
@@ -4276,15 +4276,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the Grande rue Saint-Antoine; its western end is now rue François-Miron",
+"modern": "Rue Saint-Antoine",
+"status": "renamed",
+"lat": 48.85476,
+"lon": 2.362058,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13554"
+}
+]
 },
 {
 "id": "L0220",
@@ -4297,14 +4302,19 @@
 "orient": "h",
 "flag": "ok",
 "note": "rue de la Cerisaie",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de la Cerisaie",
+"status": "renamed",
+"lat": 48.852585,
+"lon": 2.364165,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9672"
+}
+]
 },
 {
 "id": "L0221",
@@ -4316,15 +4326,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "called rue des Célestins on some 16th-century plans",
+"modern": "Rue du Petit-Musc",
+"status": "renamed",
+"lat": 48.852011,
+"lon": 2.363098,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12788"
+}
+]
 },
 {
 "id": "L0222",
@@ -4336,15 +4351,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue de la Barre in 1540",
+"modern": "Rue Scipion",
+"status": "renamed",
+"lat": 48.837787,
+"lon": 2.354369,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13409"
+}
+]
 },
 {
 "id": "L0223",
@@ -4357,14 +4377,19 @@
 "orient": "d",
 "flag": "ok",
 "note": "rue du Fer-a-Moulin",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue du Fer-à-Moulin",
+"status": "standing",
+"lat": 48.839609,
+"lon": 2.356011,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10676"
+}
+]
 },
 {
 "id": "L0224",
@@ -4376,12 +4401,12 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": null,
+"note": "one of several 'rue Neuve' near Saint-Marcel; unresolved",
 "modern": null,
 "status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"lat": 48.839855,
+"lon": 2.356052,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -4397,14 +4422,23 @@
 "orient": "d",
 "flag": "ok",
 "note": "rue des Teinturiers",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "part of Rue Saint-Hippolyte",
+"status": "renamed",
+"lat": 48.836093,
+"lon": 2.34843,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D1093"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13604"
+}
+]
 },
 {
 "id": "L0226",
@@ -4416,15 +4450,20 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "old rue des Cordelières, now rues Broca, Edouard-Quénu and Léon-Maurice-Nordmann",
+"modern": "Rue Broca",
+"status": "renamed",
+"lat": 48.838924,
+"lon": 2.349224,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9503"
+}
+]
 },
 {
 "id": "L0227",
@@ -4437,14 +4476,19 @@
 "orient": "v",
 "flag": "unsure",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de la Perle",
+"status": "renamed",
+"lat": 48.859344,
+"lon": 2.361698,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12756"
+}
+]
 },
 {
 "id": "L0228",
@@ -4456,15 +4500,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "rue Sainte-Catherine",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue de la Culture-Sainte-Catherine, renamed rue de Sévigné in 1867",
+"modern": "Rue de Sévigné",
+"status": "renamed",
+"lat": 48.856851,
+"lon": 2.362733,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D15623"
+}
+]
 },
 {
 "id": "L0229",
@@ -4476,15 +4525,20 @@
 ],
 "orient": "h",
 "flag": "unsure",
-"note": "printed R. VERCE E",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue Percée",
+"modern": "Rue du Prévôt",
+"status": "renamed",
+"lat": 48.854935,
+"lon": 2.359803,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13059"
+}
+]
 },
 {
 "id": "L0230",
@@ -4497,14 +4551,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Saint-Paul",
+"status": "renamed",
+"lat": 48.852811,
+"lon": 2.360819,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13657"
+}
+]
 },
 {
 "id": "L0231",
@@ -4517,14 +4576,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Jardins-Saint-Paul",
+"status": "renamed",
+"lat": 48.853208,
+"lon": 2.360319,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11415"
+}
+]
 },
 {
 "id": "L0232",
@@ -4536,15 +4600,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue Neuve-Saint-Paul",
+"modern": "Rue Charles-V",
+"status": "renamed",
+"lat": 48.853402,
+"lon": 2.361674,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9755"
+}
+]
 },
 {
 "id": "L0233",
@@ -4556,15 +4625,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "rue d'Orleans (Saint-Marcel)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue d'Orléans",
+"modern": "Rue Daubenton",
+"status": "renamed",
+"lat": 48.841422,
+"lon": 2.354201,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10164"
+}
+]
 },
 {
 "id": "L0234",
@@ -4576,35 +4650,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue du Grand-Chantier, now part of rue des Archives",
+"modern": "Rue des Archives",
+"status": "renamed",
+"lat": 48.861918,
+"lon": 2.359098,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
-},
+"sources": [
 {
-"id": "L0235",
-"old": "R. DES CATREFISHE MON",
-"type": "street",
-"px": [
-3340,
-2150
-],
-"orient": "v",
-"flag": "unsure",
-"note": "partial/unclear",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
-"summary": null,
-"variants": [],
-"sources": []
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9032"
+}
+]
 },
 {
 "id": "L0236",
@@ -4616,15 +4675,20 @@
 ],
 "orient": "v",
 "flag": "unsure",
-"note": "rue des Quatre-Fils?",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue des Quatre-Fils-Aymon",
+"modern": "Rue des Quatre-Fils",
+"status": "renamed",
+"lat": 48.85995,
+"lon": 2.360573,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13098"
+}
+]
 },
 {
 "id": "L0237",
@@ -4637,14 +4701,23 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "part of Rue des Francs-Bourgeois",
+"status": "renamed",
+"lat": 48.858561,
+"lon": 2.359076,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D3097"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10817"
+}
+]
 },
 {
 "id": "L0238",
@@ -4657,14 +4730,19 @@
 "orient": "d",
 "flag": "ok",
 "note": "Vieille rue du Temple",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Vieille-du-Temple",
+"status": "renamed",
+"lat": 48.859436,
+"lon": 2.359967,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D14052"
+}
+]
 },
 {
 "id": "L0239",
@@ -4676,15 +4754,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue des Poulies",
+"modern": "Rue des Francs-Bourgeois",
+"status": "renamed",
+"lat": 48.857806,
+"lon": 2.360587,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10817"
+}
+]
 },
 {
 "id": "L0240",
@@ -4696,15 +4779,20 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "rue du Temple? check vs Vieille rue du Temple",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "probably a second label on the Vieille rue du Temple",
+"modern": "Rue Vieille-du-Temple",
+"status": "renamed",
+"lat": 48.858989,
+"lon": 2.359376,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D14052"
+}
+]
 },
 {
 "id": "L0241",
@@ -4717,14 +4805,23 @@
 "orient": "h",
 "flag": "ok",
 "note": "rue des Singes",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "part of Rue des Guillemites",
+"status": "renamed",
+"lat": 48.858527,
+"lon": 2.357823,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D1174"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11167"
+}
+]
 },
 {
 "id": "L0242",
@@ -4737,14 +4834,19 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Rosiers",
+"status": "standing",
+"lat": 48.857387,
+"lon": 2.359081,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13316"
+}
+]
 },
 {
 "id": "L0243",
@@ -4757,14 +4859,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Écouffes",
+"status": "renamed",
+"lat": 48.857355,
+"lon": 2.359008,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10432"
+}
+]
 },
 {
 "id": "L0244",
@@ -4777,14 +4884,19 @@
 "orient": "h",
 "flag": "ok",
 "note": "rue Payenne",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Payenne",
+"status": "renamed",
+"lat": 48.857304,
+"lon": 2.361739,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12716"
+}
+]
 },
 {
 "id": "L0245",
@@ -4797,14 +4909,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "printed R. DV ROI CECILE",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue du Roi-de-Sicile",
+"status": "renamed",
+"lat": 48.856138,
+"lon": 2.358788,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13290"
+}
+]
 },
 {
 "id": "L0246",
@@ -4817,14 +4934,23 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "part of Rue Malher",
+"status": "renamed",
+"lat": 48.855921,
+"lon": 2.361184,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D8226"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12016"
+}
+]
 },
 {
 "id": "L0247",
@@ -4836,15 +4962,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue Renaut-le-Fèvre",
+"modern": "Rue Cloche-Perce",
+"status": "renamed",
+"lat": 48.856478,
+"lon": 2.357377,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9926"
+}
+]
 },
 {
 "id": "L0248",
@@ -4856,15 +4987,20 @@
 ],
 "orient": "v",
 "flag": "unsure",
-"note": "printed R. PETIO VI",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "reading of the label unclear",
+"modern": "Rue de Jouy",
+"status": "standing",
+"lat": 48.855172,
+"lon": 2.358002,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11557"
+}
+]
 },
 {
 "id": "L0249",
@@ -4877,14 +5013,19 @@
 "orient": "h",
 "flag": "ok",
 "note": "rue Geoffroy-l'Asnier",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Geoffroy-l'Asnier",
+"status": "renamed",
+"lat": 48.855465,
+"lon": 2.357148,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10990"
+}
+]
 },
 {
 "id": "L0250",
@@ -4896,35 +5037,20 @@
 ],
 "orient": "v",
 "flag": "unsure",
-"note": "printed R. GARNIERS. V RIAN; rue Garnier-sur-l'Eau? check",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "label reads Garnier sur l'Eau (old spelling: Garnier sur l'Yaue)",
+"modern": "Rue Grenier-sur-l'Eau",
+"status": "renamed",
+"lat": 48.855325,
+"lon": 2.355768,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
-},
+"sources": [
 {
-"id": "L0251",
-"old": "R. NONNAIN",
-"type": "street",
-"px": [
-5090,
-2085
-],
-"orient": "h",
-"flag": "unsure",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
-"summary": null,
-"variants": [],
-"sources": []
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11129"
+}
+]
 },
 {
 "id": "L0252",
@@ -4937,14 +5063,19 @@
 "orient": "h",
 "flag": "ok",
 "note": "rue des Nonnains-d'Hyeres",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Nonnains-d'Hyères",
+"status": "renamed",
+"lat": 48.854173,
+"lon": 2.358356,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12502"
+}
+]
 },
 {
 "id": "L0253",
@@ -4956,15 +5087,20 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "rue Copeau",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue Copeau",
+"modern": "Rue Lacépède",
+"status": "renamed",
+"lat": 48.844055,
+"lon": 2.350752,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11629"
+}
+]
 },
 {
 "id": "L0254",
@@ -4976,15 +5112,20 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the main street of the faubourg Saint-Marcel, from the Porte Bordelles",
+"modern": "Rue Mouffetard",
+"status": "renamed",
+"lat": 48.842978,
+"lon": 2.349726,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12386"
+}
+]
 },
 {
 "id": "L0255",
@@ -4996,15 +5137,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "rue de la Croix",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue de la Croix",
+"modern": "Rue Volta",
+"status": "renamed",
+"lat": 48.864584,
+"lon": 2.356897,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D14114"
+}
+]
 },
 {
 "id": "L0256",
@@ -5017,14 +5163,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "printed R. DES FONTI and SEN upside-down",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Fontaines-du-Temple",
+"status": "standing",
+"lat": 48.865491,
+"lon": 2.359884,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10756"
+}
+]
 },
 {
 "id": "L0257",
@@ -5036,15 +5187,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "rue Frepillon? check",
+"note": "rue Frépaux = rue Phélipeaux; later rue Phélipeaux",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.862838,
+"lon": 2.358733,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D5520"
+}
+]
 },
 {
 "id": "L0258",
@@ -5057,14 +5213,19 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Portefoin",
+"status": "renamed",
+"lat": 48.863467,
+"lon": 2.360212,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13013"
+}
+]
 },
 {
 "id": "L0259",
@@ -5077,14 +5238,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "rue Pastourelle",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Pastourelle",
+"status": "standing",
+"lat": 48.862604,
+"lon": 2.359462,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12650"
+}
+]
 },
 {
 "id": "L0260",
@@ -5097,14 +5263,19 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Chapon",
+"status": "standing",
+"lat": 48.862997,
+"lon": 2.357355,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9734"
+}
+]
 },
 {
 "id": "L0261",
@@ -5117,14 +5288,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue du Temple",
+"status": "renamed",
+"lat": 48.862354,
+"lon": 2.357488,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13758"
+}
+]
 },
 {
 "id": "L0262",
@@ -5136,15 +5312,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "rue Court-au-Villain (Montmorency)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue Courtauvillain",
+"modern": "Rue de Montmorency",
+"status": "renamed",
+"lat": 48.86246,
+"lon": 2.357085,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12352"
+}
+]
 },
 {
 "id": "L0263",
@@ -5157,14 +5338,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "rue Michel-le-Comte",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Michel-le-Comte",
+"status": "renamed",
+"lat": 48.861883,
+"lon": 2.356833,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12243"
+}
+]
 },
 {
 "id": "L0264",
@@ -5177,14 +5363,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "rue des Haudriettes",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Haudriettes",
+"status": "standing",
+"lat": 48.861298,
+"lon": 2.358228,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11210"
+}
+]
 },
 {
 "id": "L0265",
@@ -5197,14 +5388,19 @@
 "orient": "v",
 "flag": "unsure",
 "note": "rue de Braque?",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de Braque",
+"status": "renamed",
+"lat": 48.860661,
+"lon": 2.357387,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9474"
+}
+]
 },
 {
 "id": "L0266",
@@ -5216,12 +5412,12 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "cul-de-sac",
+"note": "unnamed cul-de-sac near rue Geoffroy-l'Angevin",
 "modern": null,
 "status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"lat": 48.8607,
+"lon": 2.356158,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -5237,14 +5433,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "rue des Blancs-Manteaux",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Blancs-Manteaux",
+"status": "renamed",
+"lat": 48.858846,
+"lon": 2.357465,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9355"
+}
+]
 },
 {
 "id": "L0268",
@@ -5257,14 +5458,23 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Aubriot",
+"status": "renamed",
+"lat": 48.85879,
+"lon": 2.357377,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D2346"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9094"
+}
+]
 },
 {
 "id": "L0269",
@@ -5276,15 +5486,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue de l'Homme-Armé, now part of rue des Archives",
+"modern": "Rue des Archives",
+"status": "renamed",
+"lat": 48.859532,
+"lon": 2.3565,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9032"
+}
+]
 },
 {
 "id": "L0270",
@@ -5297,14 +5512,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "Sainte-Croix-de-la-Bretonnerie",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Sainte-Croix-de-la-Bretonnerie",
+"status": "standing",
+"lat": 48.857924,
+"lon": 2.357039,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13704"
+}
+]
 },
 {
 "id": "L0271",
@@ -5317,14 +5537,19 @@
 "orient": "h",
 "flag": "ok",
 "note": "rue du Bourg-Tibourg",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue du Bourg-Tibourg",
+"status": "renamed",
+"lat": 48.857961,
+"lon": 2.356747,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9448"
+}
+]
 },
 {
 "id": "L0272",
@@ -5336,15 +5561,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "rue Franc-Meurier? check",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue du Franc-Mourier",
+"modern": "Rue de Moussy",
+"status": "renamed",
+"lat": 48.858218,
+"lon": 2.356036,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12404"
+}
+]
 },
 {
 "id": "L0273",
@@ -5357,14 +5587,23 @@
 "orient": "v",
 "flag": "unsure",
 "note": "printed R. BOV QVETONNE",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "part of Rue du Roi-de-Sicile",
+"status": "renamed",
+"lat": 48.856737,
+"lon": 2.356662,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D7666"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13290"
+}
+]
 },
 {
 "id": "L0274",
@@ -5377,14 +5616,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Mauvais-Garçons",
+"status": "renamed",
+"lat": 48.857072,
+"lon": 2.355152,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12181"
+}
+]
 },
 {
 "id": "L0275",
@@ -5398,13 +5642,18 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.857688,
+"lon": 2.354632,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D6634"
+}
+]
 },
 {
 "id": "L0276",
@@ -5418,13 +5667,18 @@
 "flag": "ok",
 "note": "printed R. DE LA TISARRA NDERIE",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.857015,
+"lon": 2.354386,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D992"
+}
+]
 },
 {
 "id": "L0277",
@@ -5436,15 +5690,20 @@
 ],
 "orient": "d",
 "flag": "unsure",
-"note": null,
+"note": "rue du Pet-au-Diable, later rue du Tourniquet-Saint-Jean",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.856565,
+"lon": 2.354567,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D944"
+}
+]
 },
 {
 "id": "L0278",
@@ -5457,14 +5716,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Barres",
+"status": "renamed",
+"lat": 48.85548,
+"lon": 2.35544,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9180"
+}
+]
 },
 {
 "id": "L0279",
@@ -5476,15 +5740,20 @@
 ],
 "orient": "h",
 "flag": "unsure",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue de Longpont",
+"modern": "Rue de Brosse",
+"status": "renamed",
+"lat": 48.855459,
+"lon": 2.354131,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9506"
+}
+]
 },
 {
 "id": "L0280",
@@ -5496,15 +5765,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue de la Mortellerie",
+"modern": "Rue de l'Hôtel-de-Ville",
+"status": "renamed",
+"lat": 48.854745,
+"lon": 2.354976,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11318"
+}
+]
 },
 {
 "id": "L0281",
@@ -5516,15 +5790,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "rue des Rats",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the name was also corrupted to 'rue Dras' and 'rue des Ras'",
+"modern": "Rue d'Arras",
+"status": "renamed",
+"lat": 48.847255,
+"lon": 2.351278,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9061"
+}
+]
 },
 {
 "id": "L0282",
@@ -5536,15 +5815,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "rue de Versailles",
+"note": "rue de Versailles (Guillot: Verseille), destroyed for rue Monge",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.848226,
+"lon": 2.349882,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D5515"
+}
+]
 },
 {
 "id": "L0283",
@@ -5558,13 +5842,18 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.848405,
+"lon": 2.349399,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D7758"
+}
+]
 },
 {
 "id": "L0284",
@@ -5576,15 +5865,20 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue Bordelle",
+"modern": "Rue Descartes",
+"status": "renamed",
+"lat": 48.846234,
+"lon": 2.348938,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10235"
+}
+]
 },
 {
 "id": "L0285",
@@ -5596,15 +5890,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue des Postes",
+"modern": "Rue Lhomond",
+"status": "renamed",
+"lat": 48.842366,
+"lon": 2.347431,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11848"
+}
+]
 },
 {
 "id": "L0286",
@@ -5617,14 +5916,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "rue du Vertbois",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue du Vertbois",
+"status": "renamed",
+"lat": 48.867108,
+"lon": 2.357416,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D14016"
+}
+]
 },
 {
 "id": "L0287",
@@ -5637,14 +5941,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "rue au Maire",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue au Maire",
+"status": "renamed",
+"lat": 48.864653,
+"lon": 2.356066,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12000"
+}
+]
 },
 {
 "id": "L0288",
@@ -5656,15 +5965,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "rue Transnonain",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue Transnonain, now part of rue Beaubourg",
+"modern": "Rue Beaubourg",
+"status": "renamed",
+"lat": 48.863122,
+"lon": 2.35471,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9220"
+}
+]
 },
 {
 "id": "L0289",
@@ -5676,15 +5990,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
+"note": "absorbed by rue Rambuteau",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.861465,
+"lon": 2.353583,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D3980"
+}
+]
 },
 {
 "id": "L0290",
@@ -5697,14 +6016,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "rue Geoffroy-l'Angevin",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Geoffroy-l'Angevin",
+"status": "renamed",
+"lat": 48.860439,
+"lon": 2.354838,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10989"
+}
+]
 },
 {
 "id": "L0291",
@@ -5717,14 +6041,23 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "part of Rue Brisemiche",
+"status": "renamed",
+"lat": 48.859636,
+"lon": 2.352106,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D8058"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9500"
+}
+]
 },
 {
 "id": "L0292",
@@ -5737,14 +6070,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "printed LAPIER REAVLART",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Pierre-au-Lard",
+"status": "standing",
+"lat": 48.859705,
+"lon": 2.353232,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12826"
+}
+]
 },
 {
 "id": "L0293",
@@ -5756,15 +6094,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "rue Neuve-Saint-Merri",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue Neuve-Saint-Merri",
+"modern": "Rue Saint-Merri",
+"status": "renamed",
+"lat": 48.85927,
+"lon": 2.353243,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13644"
+}
+]
 },
 {
 "id": "L0294",
@@ -5777,14 +6120,23 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "part of Rue du Renard",
+"status": "renamed",
+"lat": 48.859849,
+"lon": 2.352874,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D2475"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13187"
+}
+]
 },
 {
 "id": "L0295",
@@ -5797,34 +6149,23 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "part of Rue Quincampoix",
+"status": "renamed",
+"lat": 48.860274,
+"lon": 2.350213,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D6527"
 },
 {
-"id": "L0296",
-"old": "R. DE LA COURRERIE",
-"type": "street",
-"px": [
-4380,
-3320
-],
-"orient": "v",
-"flag": "ok",
-"note": "dup of LA COURRERIE",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
-"summary": null,
-"variants": [],
-"sources": []
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13108"
+}
+]
 },
 {
 "id": "L0297",
@@ -5837,14 +6178,23 @@
 "orient": "h",
 "flag": "ok",
 "note": "second",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "part of Rue du Renard",
+"status": "renamed",
+"lat": 48.85886,
+"lon": 2.352336,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D2477"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13187"
+}
+]
 },
 {
 "id": "L0298",
@@ -5856,15 +6206,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue du Port-Saint-Landry",
+"modern": "Rue des Ursins",
+"status": "renamed",
+"lat": 48.854649,
+"lon": 2.350537,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13920"
+}
+]
 },
 {
 "id": "L0299",
@@ -5877,14 +6232,19 @@
 "orient": "h",
 "flag": "ok",
 "note": "dup",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de Bièvre",
+"status": "standing",
+"lat": 48.849999,
+"lon": 2.349474,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9334"
+}
+]
 },
 {
 "id": "L0300",
@@ -5897,14 +6257,19 @@
 "orient": "h",
 "flag": "ok",
 "note": "dup",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Bernardins",
+"status": "standing",
+"lat": 48.849518,
+"lon": 2.350179,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9299"
+}
+]
 },
 {
 "id": "L0301",
@@ -5917,14 +6282,19 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Saint-Victor",
+"status": "renamed",
+"lat": 48.848912,
+"lon": 2.349983,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13689"
+}
+]
 },
 {
 "id": "L0302",
@@ -5937,14 +6307,23 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "part of Rue des Bernardins",
+"status": "renamed",
+"lat": 48.84813,
+"lon": 2.349063,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D1528"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9299"
+}
+]
 },
 {
 "id": "L0303",
@@ -5956,15 +6335,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "rue Alexandre-Langlois, later rue du Paon",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.848488,
+"lon": 2.348895,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D3107"
+}
+]
 },
 {
 "id": "L0304",
@@ -5976,15 +6360,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "rue Pavee-d'Andouilles",
+"note": "rue Pavée-d'Andouilles, later rue du Mûrier",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.848667,
+"lon": 2.348412,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D3634"
+}
+]
 },
 {
 "id": "L0305",
@@ -5996,15 +6385,20 @@
 ],
 "orient": "v",
 "flag": "unsure",
-"note": "rue Clopin?",
+"note": "possibly rue Clopin; reading uncertain",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.848132,
+"lon": 2.34873,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D6806"
+}
+]
 },
 {
 "id": "L0306",
@@ -6017,14 +6411,19 @@
 "orient": "d",
 "flag": "ok",
 "note": "printed LEMONT S GENEVIEVE; rue de la Montagne-Sainte-Genevieve",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de la Montagne-Sainte-Geneviève",
+"status": "renamed",
+"lat": 48.848526,
+"lon": 2.348426,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12306"
+}
+]
 },
 {
 "id": "L0307",
@@ -6037,14 +6436,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "rue des Gravilliers",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Gravilliers",
+"status": "renamed",
+"lat": 48.864448,
+"lon": 2.354455,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11116"
+}
+]
 },
 {
 "id": "L0308",
@@ -6057,14 +6461,23 @@
 "orient": "v",
 "flag": "ok",
 "note": "dup",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "part of Rue Chapon",
+"status": "renamed",
+"lat": 48.86391,
+"lon": 2.354198,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D6872"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9734"
+}
+]
 },
 {
 "id": "L0309",
@@ -6077,14 +6490,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "dup",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de Montmorency",
+"status": "renamed",
+"lat": 48.863366,
+"lon": 2.35391,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12352"
+}
+]
 },
 {
 "id": "L0310",
@@ -6097,14 +6515,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "rue Grenier-Saint-Lazare",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue du Grenier-Saint-Lazare",
+"status": "renamed",
+"lat": 48.862634,
+"lon": 2.353768,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11128"
+}
+]
 },
 {
 "id": "L0311",
@@ -6116,12 +6539,12 @@
 ],
 "orient": "v",
 "flag": "unsure",
-"note": "partly damaged",
+"note": "reading uncertain (R. DE LA VENERIE?)",
 "modern": null,
 "status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"lat": 48.862108,
+"lon": 2.35363,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -6136,15 +6559,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
+"note": "rue des Petits-Champs(-Saint-Martin), later rue Brantôme",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.861767,
+"lon": 2.353565,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D2809"
+}
+]
 },
 {
 "id": "L0313",
@@ -6157,14 +6585,19 @@
 "orient": "h",
 "flag": "ok",
 "note": "rue Quincampoix",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Quincampoix",
+"status": "renamed",
+"lat": 48.862443,
+"lon": 2.351132,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13108"
+}
+]
 },
 {
 "id": "L0314",
@@ -6178,13 +6611,18 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.861393,
+"lon": 2.352933,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D556"
+}
+]
 },
 {
 "id": "L0315",
@@ -6196,12 +6634,12 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
+"note": "rue de la Plâtrière (Saint-Martin quarter); modern successor not yet confirmed",
 "modern": null,
 "status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"lat": 48.861143,
+"lon": 2.352858,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -6217,14 +6655,19 @@
 "orient": "h",
 "flag": "ok",
 "note": "rue Saint-Martin? (fragment R. S. MARTIN)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Saint-Martin",
+"status": "standing",
+"lat": 48.860646,
+"lon": 2.351245,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13639"
+}
+]
 },
 {
 "id": "L0317",
@@ -6236,15 +6679,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Vieille Courroierie",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue de la Vieille-Courroierie (later rue des Cinq-Diamants), now the southern part of rue Quincampoix",
+"modern": "Rue Quincampoix",
+"status": "renamed",
+"lat": 48.860583,
+"lon": 2.350239,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13108"
+}
+]
 },
 {
 "id": "L0318",
@@ -6256,15 +6704,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "rue de Marivaux",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue Marivaux",
+"modern": "Rue Nicolas-Flamel",
+"status": "renamed",
+"lat": 48.85909,
+"lon": 2.349827,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12475"
+}
+]
 },
 {
 "id": "L0319",
@@ -6278,13 +6731,18 @@
 "flag": "ok",
 "note": "rue Jean-Pain-Mollet",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.858693,
+"lon": 2.351455,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D4724"
+}
+]
 },
 {
 "id": "L0320",
@@ -6297,14 +6755,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de la Tacherie",
+"status": "standing",
+"lat": 48.857753,
+"lon": 2.350229,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13730"
+}
+]
 },
 {
 "id": "L0321",
@@ -6317,14 +6780,19 @@
 "orient": "d",
 "flag": "ok",
 "note": "Coutellerie",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de la Coutellerie",
+"status": "standing",
+"lat": 48.85749,
+"lon": 2.351043,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10075"
+}
+]
 },
 {
 "id": "L0322",
@@ -6338,13 +6806,18 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.857488,
+"lon": 2.350674,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D711"
+}
+]
 },
 {
 "id": "L0323",
@@ -6358,13 +6831,18 @@
 "flag": "unsure",
 "note": "printed LA TEN NERIE",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.856624,
+"lon": 2.350568,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D1102"
+}
+]
 },
 {
 "id": "L0324",
@@ -6378,13 +6856,18 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.854321,
+"lon": 2.349002,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D5309"
+}
+]
 },
 {
 "id": "L0325",
@@ -6398,13 +6881,18 @@
 "flag": "ok",
 "note": "rue Neuve-Notre-Dame",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.853486,
+"lon": 2.347507,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D3429"
+}
+]
 },
 {
 "id": "L0326",
@@ -6416,15 +6904,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "left bank (Place Maubert side)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "probably the rue du Pavé (de la place Maubert)",
+"modern": "Rue Frédéric-Sauton",
+"status": "renamed",
+"lat": 48.850927,
+"lon": 2.34896,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10832"
+}
+]
 },
 {
 "id": "L0327",
@@ -6436,15 +6929,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue du Plâtre",
+"modern": "Rue Domat",
+"status": "renamed",
+"lat": 48.850995,
+"lon": 2.346234,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10323"
+}
+]
 },
 {
 "id": "L0328",
@@ -6456,15 +6954,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "rue des Noyers",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue des Noyers, absorbed by boulevard Saint-Germain",
+"modern": "Boulevard Saint-Germain",
+"status": "renamed",
+"lat": 48.85051,
+"lon": 2.346201,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13597"
+}
+]
 },
 {
 "id": "L0329",
@@ -6477,14 +6980,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Carmes",
+"status": "standing",
+"lat": 48.849178,
+"lon": 2.347512,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9623"
+}
+]
 },
 {
 "id": "L0330",
@@ -6497,14 +7005,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Jean-de-Beauvais",
+"status": "standing",
+"lat": 48.849009,
+"lon": 2.346474,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11449"
+}
+]
 },
 {
 "id": "L0331",
@@ -6518,13 +7031,18 @@
 "flag": "unsure",
 "note": "printed LE CLOS BRVNIAV; rue du Clos-Bruneau",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.848587,
+"lon": 2.34507,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D6798"
+}
+]
 },
 {
 "id": "L0332",
@@ -6537,14 +7055,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Saint-Jacques",
+"status": "renamed",
+"lat": 48.847928,
+"lon": 2.343853,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13612"
+}
+]
 },
 {
 "id": "L0333",
@@ -6558,13 +7081,18 @@
 "flag": "ok",
 "note": "rue des Ecoles? check",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.847422,
+"lon": 2.344371,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D6908"
+}
+]
 },
 {
 "id": "L0334",
@@ -6576,15 +7104,24 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "rue Saint-Etienne-des-Gres",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue Saint-Étienne-des-Grès, now part of rue Cujas",
+"modern": "part of Rue Cujas",
+"status": "renamed",
+"lat": 48.84722,
+"lon": 2.344157,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D1756"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10110"
+}
+]
 },
 {
 "id": "L0335",
@@ -6597,14 +7134,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "rue Guerin-Boisseau",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Guérin-Boisseau",
+"status": "renamed",
+"lat": 48.866529,
+"lon": 2.352064,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11155"
+}
+]
 },
 {
 "id": "L0336",
@@ -6616,15 +7158,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "rue Greneta",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue d'Arnetal",
+"modern": "Rue Greneta",
+"status": "standing",
+"lat": 48.865277,
+"lon": 2.351683,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11127"
+}
+]
 },
 {
 "id": "L0337",
@@ -6637,14 +7184,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Saint-Denis",
+"status": "standing",
+"lat": 48.865507,
+"lon": 2.350603,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13577"
+}
+]
 },
 {
 "id": "L0338",
@@ -6657,14 +7209,19 @@
 "orient": "h",
 "flag": "ok",
 "note": "rue du Bourg-l'Abbe",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue du Bourg-l'Abbé",
+"status": "renamed",
+"lat": 48.864171,
+"lon": 2.351593,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9443"
+}
+]
 },
 {
 "id": "L0339",
@@ -6676,15 +7233,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "a rue Pavée near Saint-Sauveur; now part of rue Tiquetonne",
+"modern": "Rue Tiquetonne",
+"status": "renamed",
+"lat": 48.864373,
+"lon": 2.350072,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13821"
+}
+]
 },
 {
 "id": "L0340",
@@ -6696,15 +7258,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "printed R. PETIT LION",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue du Petit-Lion(-Saint-Sauveur), now part of rue Tiquetonne",
+"modern": "Rue Tiquetonne",
+"status": "renamed",
+"lat": 48.864535,
+"lon": 2.349276,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13821"
+}
+]
 },
 {
 "id": "L0341",
@@ -6717,14 +7284,19 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue aux Ours",
+"status": "standing",
+"lat": 48.863257,
+"lon": 2.351085,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12589"
+}
+]
 },
 {
 "id": "L0342",
@@ -6736,15 +7308,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "Chanvrerie",
+"note": "absorbed by rue Rambuteau; later rue de la Chanverrerie",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.863155,
+"lon": 2.348888,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D7198"
+}
+]
 },
 {
 "id": "L0343",
@@ -6757,14 +7334,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "rue des Precheurs",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Prêcheurs",
+"status": "renamed",
+"lat": 48.862139,
+"lon": 2.348449,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13044"
+}
+]
 },
 {
 "id": "L0344",
@@ -6777,14 +7359,19 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de la Cossonnerie",
+"status": "standing",
+"lat": 48.861684,
+"lon": 2.348206,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10053"
+}
+]
 },
 {
 "id": "L0345",
@@ -6796,15 +7383,24 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "rue aux Fers",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue aux Fers, now part of rue Berger",
+"modern": "part of Rue Berger",
+"status": "renamed",
+"lat": 48.861127,
+"lon": 2.347491,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D5775"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9291"
+}
+]
 },
 {
 "id": "L0346",
@@ -6816,15 +7412,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "rue Brisemiche? check",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "label reads (Au)bri (le) Bouche(r)",
+"modern": "Rue Aubry-le-Boucher",
+"status": "renamed",
+"lat": 48.860609,
+"lon": 2.349602,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9096"
+}
+]
 },
 {
 "id": "L0347",
@@ -6837,14 +7438,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "printed R. DE LA FER RONERIE",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de la Ferronnerie",
+"status": "standing",
+"lat": 48.860274,
+"lon": 2.347886,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10705"
+}
+]
 },
 {
 "id": "L0348",
@@ -6856,15 +7462,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue Troussevache",
+"modern": "Rue de La Reynie",
+"status": "renamed",
+"lat": 48.860155,
+"lon": 2.348883,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11693"
+}
+]
 },
 {
 "id": "L0349",
@@ -6877,14 +7488,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "rue des Lombards",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Lombards",
+"status": "renamed",
+"lat": 48.859656,
+"lon": 2.348602,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11891"
+}
+]
 },
 {
 "id": "L0350",
@@ -6898,13 +7514,18 @@
 "flag": "ok",
 "note": "printed LA HEAV MERIE",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.859767,
+"lon": 2.348561,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D5028"
+}
+]
 },
 {
 "id": "L0351",
@@ -6918,13 +7539,18 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.859279,
+"lon": 2.348844,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D1245"
+}
+]
 },
 {
 "id": "L0352",
@@ -6936,15 +7562,20 @@
 ],
 "orient": "v",
 "flag": "unsure",
-"note": "printed DE LA SERPENTE (Right Bank)",
+"note": "label read as 'de la Serpente'; position fits the rue de la Saunerie by the Châtelet",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.85966,
+"lon": 2.346976,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D1259"
+}
+]
 },
 {
 "id": "L0353",
@@ -6956,15 +7587,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "rue du Crucifix(-Saint-Jacques)",
+"note": "rue du Crucifix-Saint-Jacques; later rue Saint-Jacques la Boucherie",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.858604,
+"lon": 2.34823,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D6444"
+}
+]
 },
 {
 "id": "L0354",
@@ -6977,14 +7613,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Lavandières-Sainte-Opportune",
+"status": "renamed",
+"lat": 48.859194,
+"lon": 2.346461,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11722"
+}
+]
 },
 {
 "id": "L0355",
@@ -6998,13 +7639,18 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.855325,
+"lon": 2.347047,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D567"
+}
+]
 },
 {
 "id": "L0356",
@@ -7016,15 +7662,24 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "rue de la Vieille-Draperie? printed DELA VARERIE",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "labelled 'rue de la Verrerie' by mistake, as on Ducerceau's plan of 1555",
+"modern": "Rue de Lutèce",
+"status": "renamed",
+"lat": 48.855041,
+"lon": 2.346496,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D582"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11964"
+}
+]
 },
 {
 "id": "L0357",
@@ -7036,15 +7691,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
+"note": "later rue Saint-Eloi",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.854549,
+"lon": 2.346561,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D1249"
+}
+]
 },
 {
 "id": "L0358",
@@ -7058,13 +7718,18 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.854375,
+"lon": 2.346282,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D7458"
+}
+]
 },
 {
 "id": "L0359",
@@ -7077,34 +7742,19 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de la Huchette",
+"status": "standing",
+"lat": 48.853024,
+"lon": 2.345387,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
-},
+"sources": [
 {
-"id": "L0360",
-"old": "RUE POUPEE",
-"type": "street",
-"px": [
-7250,
-4350
-],
-"orient": "v",
-"flag": "ok",
-"note": "manuscript addition",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
-"summary": null,
-"variants": [],
-"sources": []
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11324"
+}
+]
 },
 {
 "id": "L0361",
@@ -7116,15 +7766,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "dup manuscript",
+"note": "handwritten addition on the Basel copy",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.852461,
+"lon": 2.343341,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D2447"
+}
+]
 },
 {
 "id": "L0362",
@@ -7137,14 +7792,19 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de la Parcheminerie",
+"status": "standing",
+"lat": 48.851832,
+"lon": 2.344532,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12630"
+}
+]
 },
 {
 "id": "L0363",
@@ -7156,15 +7816,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "manuscript addition",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "handwritten addition; rue Percée(-Saint-André)",
+"modern": "Impasse Hautefeuille",
+"status": "renamed",
+"lat": 48.852372,
+"lon": 2.343318,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11212"
+}
+]
 },
 {
 "id": "L0364",
@@ -7177,14 +7842,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Boutebrie",
+"status": "standing",
+"lat": 48.851449,
+"lon": 2.344581,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9456"
+}
+]
 },
 {
 "id": "L0365",
@@ -7196,15 +7866,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "manuscript addition",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "handwritten addition",
+"modern": "Rue Serpente",
+"status": "standing",
+"lat": 48.852064,
+"lon": 2.342818,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13435"
+}
+]
 },
 {
 "id": "L0366",
@@ -7216,15 +7891,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "manuscript addition",
+"note": "handwritten addition",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.851833,
+"lon": 2.342692,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D6246"
+}
+]
 },
 {
 "id": "L0367",
@@ -7238,13 +7918,18 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.851168,
+"lon": 2.343733,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D5719"
+}
+]
 },
 {
 "id": "L0368",
@@ -7257,14 +7942,19 @@
 "orient": "d",
 "flag": "ok",
 "note": "rue de la Harpe",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de la Harpe",
+"status": "renamed",
+"lat": 48.851451,
+"lon": 2.343508,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11207"
+}
+]
 },
 {
 "id": "L0369",
@@ -7277,14 +7967,23 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Du Sommerard",
+"status": "renamed",
+"lat": 48.850346,
+"lon": 2.343397,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D4036"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10408"
+}
+]
 },
 {
 "id": "L0370",
@@ -7297,14 +7996,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de la Sorbonne",
+"status": "standing",
+"lat": 48.848898,
+"lon": 2.34295,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13489"
+}
+]
 },
 {
 "id": "L0371",
@@ -7318,13 +8022,18 @@
 "flag": "ok",
 "note": "rue des Poirees",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.848212,
+"lon": 2.342054,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D2634"
+}
+]
 },
 {
 "id": "L0372",
@@ -7336,15 +8045,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue des Filles-Dieu",
+"modern": "Rue d'Alexandrie",
+"status": "renamed",
+"lat": 48.868144,
+"lon": 2.350367,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D8872"
+}
+]
 },
 {
 "id": "L0373",
@@ -7357,14 +8071,19 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Saint-Sauveur",
+"status": "standing",
+"lat": 48.866125,
+"lon": 2.348333,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13676"
+}
+]
 },
 {
 "id": "L0374",
@@ -7376,15 +8095,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "rue du Renard",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue du Renard(-Saint-Sauveur)",
+"modern": "Rue Greneta",
+"status": "renamed",
+"lat": 48.865271,
+"lon": 2.349721,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11127"
+}
+]
 },
 {
 "id": "L0375",
@@ -7397,14 +8121,23 @@
 "orient": "v",
 "flag": "ok",
 "note": "rue Beaurepaire",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "part of Rue Greneta",
+"status": "renamed",
+"lat": 48.865515,
+"lon": 2.348095,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D7995"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11127"
+}
+]
 },
 {
 "id": "L0376",
@@ -7417,14 +8150,23 @@
 "orient": "h",
 "flag": "ok",
 "note": "rue des Deux-Portes",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Dussoubs",
+"status": "renamed",
+"lat": 48.866134,
+"lon": 2.349097,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D6245"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10409"
+}
+]
 },
 {
 "id": "L0377",
@@ -7436,15 +8178,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "rue Tire-Vit (Tiquetonne area)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "originally rue Tire-Vit, later rue Tire-Boudin, renamed rue Marie-Stuart",
+"modern": "Rue Marie-Stuart",
+"status": "renamed",
+"lat": 48.865092,
+"lon": 2.347711,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12100"
+}
+]
 },
 {
 "id": "L0378",
@@ -7457,14 +8204,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Montorgueil",
+"status": "standing",
+"lat": 48.866225,
+"lon": 2.347223,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12354"
+}
+]
 },
 {
 "id": "L0379",
@@ -7476,15 +8228,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue Pavée, now part of rue Tiquetonne",
+"modern": "Rue Tiquetonne",
+"status": "renamed",
+"lat": 48.864773,
+"lon": 2.347625,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13821"
+}
+]
 },
 {
 "id": "L0380",
@@ -7496,15 +8253,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "rue de Bourgogne",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue de Bourgogne",
+"modern": "Rue Française",
+"status": "renamed",
+"lat": 48.864703,
+"lon": 2.347837,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10786"
+}
+]
 },
 {
 "id": "L0381",
@@ -7516,15 +8278,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "rue Comte-d'Artois (Montorgueil)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue au Comte-d'Artois, now part of rue Montorgueil",
+"modern": "Rue Montorgueil",
+"status": "renamed",
+"lat": 48.865362,
+"lon": 2.346878,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12354"
+}
+]
 },
 {
 "id": "L0382",
@@ -7537,14 +8304,19 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Mauconseil",
+"status": "standing",
+"lat": 48.864088,
+"lon": 2.347511,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12158"
+}
+]
 },
 {
 "id": "L0383",
@@ -7557,14 +8329,19 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de la Grande-Truanderie",
+"status": "standing",
+"lat": 48.863111,
+"lon": 2.348057,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11104"
+}
+]
 },
 {
 "id": "L0384",
@@ -7577,14 +8354,19 @@
 "orient": "h",
 "flag": "ok",
 "note": "rue Mondetour",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Mondétour",
+"status": "standing",
+"lat": 48.863509,
+"lon": 2.348271,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12290"
+}
+]
 },
 {
 "id": "L0385",
@@ -7598,13 +8380,18 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.86315,
+"lon": 2.346748,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D5502"
+}
+]
 },
 {
 "id": "L0386",
@@ -7616,15 +8403,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "printed R. DVEOVR",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue du Four",
+"modern": "Rue Vauvilliers",
+"status": "renamed",
+"lat": 48.86188,
+"lon": 2.34349,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13973"
+}
+]
 },
 {
 "id": "L0387",
@@ -7637,14 +8429,19 @@
 "orient": "h",
 "flag": "ok",
 "note": "rue des Prouvaires",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Prouvaires",
+"status": "standing",
+"lat": 48.861671,
+"lon": 2.344388,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13078"
+}
+]
 },
 {
 "id": "L0388",
@@ -7658,13 +8455,18 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.862276,
+"lon": 2.346575,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D5242"
+}
+]
 },
 {
 "id": "L0389",
@@ -7677,14 +8479,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de la Lingerie",
+"status": "standing",
+"lat": 48.860521,
+"lon": 2.346706,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11873"
+}
+]
 },
 {
 "id": "L0390",
@@ -7698,13 +8505,18 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.861519,
+"lon": 2.345244,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D1002"
+}
+]
 },
 {
 "id": "L0391",
@@ -7716,15 +8528,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "rue des Chats? ",
+"note": "rue aux Chats, later rue de la Limace; later rue de la Limace",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.860559,
+"lon": 2.346613,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D7055"
+}
+]
 },
 {
 "id": "L0392",
@@ -7737,14 +8554,19 @@
 "orient": "h",
 "flag": "ok",
 "note": "rue des Bourdonnais",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Bourdonnais",
+"status": "renamed",
+"lat": 48.860686,
+"lon": 2.345793,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9440"
+}
+]
 },
 {
 "id": "L0393",
@@ -7756,12 +8578,12 @@
 ],
 "orient": "v",
 "flag": "unsure",
-"note": null,
+"note": "reading uncertain (R. DU BOUT...)",
 "modern": null,
 "status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"lat": 48.861178,
+"lon": 2.344385,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -7777,14 +8599,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de la Monnaie",
+"status": "renamed",
+"lat": 48.859941,
+"lon": 2.343466,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12297"
+}
+]
 },
 {
 "id": "L0395",
@@ -7796,15 +8623,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "second (Saint-Germain-l'Auxerrois)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue des Deux-Portes, by the chapel of the goldsmiths",
+"modern": "Rue des Orfèvres",
+"status": "renamed",
+"lat": 48.858798,
+"lon": 2.345467,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12554"
+}
+]
 },
 {
 "id": "L0396",
@@ -7817,14 +8649,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "rue Saint-Germain-l'Auxerrois",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Saint-Germain-l'Auxerrois",
+"status": "standing",
+"lat": 48.858666,
+"lon": 2.343752,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13599"
+}
+]
 },
 {
 "id": "L0397",
@@ -7836,15 +8673,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue Pavée(-Saint-André), renamed rue Séguier in 1864",
+"modern": "Rue Séguier",
+"status": "renamed",
+"lat": 48.853927,
+"lon": 2.341864,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13420"
+}
+]
 },
 {
 "id": "L0398",
@@ -7856,15 +8698,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "rue Gilles-Coeur? check",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue du Battoir(-Saint-André), now part of rue Serpente",
+"modern": "Rue Serpente",
+"status": "renamed",
+"lat": 48.852421,
+"lon": 2.341968,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13435"
+}
+]
 },
 {
 "id": "L0399",
@@ -7877,14 +8724,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "rue de l'Hirondelle",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de l'Hirondelle",
+"status": "renamed",
+"lat": 48.853659,
+"lon": 2.342658,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11301"
+}
+]
 },
 {
 "id": "L0400",
@@ -7896,15 +8748,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "cimetiere Saint-Andre",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue du Cimetière-Saint-André",
+"modern": "Rue Suger",
+"status": "renamed",
+"lat": 48.852901,
+"lon": 2.340771,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13532"
+}
+]
 },
 {
 "id": "L0401",
@@ -7917,14 +8774,19 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Poitevins",
+"status": "renamed",
+"lat": 48.852493,
+"lon": 2.342102,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12926"
+}
+]
 },
 {
 "id": "L0402",
@@ -7937,14 +8799,19 @@
 "orient": "d",
 "flag": "ok",
 "note": "rue Hautefeuille",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Hautefeuille",
+"status": "renamed",
+"lat": 48.851809,
+"lon": 2.342102,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11213"
+}
+]
 },
 {
 "id": "L0403",
@@ -7957,14 +8824,19 @@
 "orient": "v",
 "flag": "unsure",
 "note": "printed R. DE LASER PAN TE",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Serpente",
+"status": "renamed",
+"lat": 48.852527,
+"lon": 2.340643,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13435"
+}
+]
 },
 {
 "id": "L0404",
@@ -7977,14 +8849,19 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Pierre-Sarrazin",
+"status": "renamed",
+"lat": 48.851141,
+"lon": 2.341627,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12876"
+}
+]
 },
 {
 "id": "L0405",
@@ -7996,15 +8873,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue des Cordeliers",
+"modern": "Rue de l'École-de-Médecine",
+"status": "renamed",
+"lat": 48.851718,
+"lon": 2.339801,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10425"
+}
+]
 },
 {
 "id": "L0406",
@@ -8017,14 +8899,19 @@
 "orient": "v",
 "flag": "ok",
 "note": "rue Tiquetonne",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Tiquetonne",
+"status": "standing",
+"lat": 48.864828,
+"lon": 2.346002,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13821"
+}
+]
 },
 {
 "id": "L0407",
@@ -8037,14 +8924,19 @@
 "orient": "d",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Montmartre",
+"status": "standing",
+"lat": 48.865615,
+"lon": 2.344873,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12349"
+}
+]
 },
 {
 "id": "L0408",
@@ -8056,15 +8948,20 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "printed R. DE LA PLA TRIERE",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue de la Plâtrière",
+"modern": "Rue Jean-Jacques-Rousseau",
+"status": "renamed",
+"lat": 48.864813,
+"lon": 2.34469,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11467"
+}
+]
 },
 {
 "id": "L0409",
@@ -8076,15 +8973,20 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "rue du Sejour",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue du Séjour",
+"modern": "Rue du Jour",
+"status": "renamed",
+"lat": 48.864142,
+"lon": 2.345364,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11552"
+}
+]
 },
 {
 "id": "L0410",
@@ -8096,15 +8998,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue des (Vieilles-)Étuves(-Saint-Honoré)",
+"modern": "Rue Sauval",
+"status": "renamed",
+"lat": 48.862087,
+"lon": 2.342613,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13395"
+}
+]
 },
 {
 "id": "L0411",
@@ -8117,14 +9024,23 @@
 "orient": "h",
 "flag": "ok",
 "note": "rue d'Orleans (Saint-Honore)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "part of Rue Berger",
+"status": "renamed",
+"lat": 48.862014,
+"lon": 2.343637,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D3205"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9291"
+}
+]
 },
 {
 "id": "L0412",
@@ -8136,15 +9052,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "rue des Poulies",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue des Poulies, absorbed by rue du Louvre",
+"modern": "Rue du Louvre",
+"status": "renamed",
+"lat": 48.862714,
+"lon": 2.341888,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11948"
+}
+]
 },
 {
 "id": "L0413",
@@ -8156,15 +9077,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "rue des Deux-Ecus",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue des Deux-Écus, now part of rue Berger",
+"modern": "Rue Berger",
+"status": "renamed",
+"lat": 48.862128,
+"lon": 2.343143,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9291"
+}
+]
 },
 {
 "id": "L0414",
@@ -8177,14 +9103,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue des Grands-Augustins",
+"status": "standing",
+"lat": 48.854348,
+"lon": 2.340612,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11108"
+}
+]
 },
 {
 "id": "L0415",
@@ -8197,14 +9128,19 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Saint-André-des-Arts",
+"status": "renamed",
+"lat": 48.853534,
+"lon": 2.339752,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13550"
+}
+]
 },
 {
 "id": "L0416",
@@ -8216,15 +9152,20 @@
 ],
 "orient": "d",
 "flag": "unsure",
-"note": null,
+"note": "rue du Paon(-Saint-André), later rue Larrey",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.85248,
+"lon": 2.339075,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D3105"
+}
+]
 },
 {
 "id": "L0417",
@@ -8236,12 +9177,12 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": null,
+"note": "a 'rue Neuve' in the faubourg Saint-Germain; perhaps rue Neuve-Saint-Lambert (now rue de Condé)",
 "modern": null,
 "status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"lat": 48.851226,
+"lon": 2.336556,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -8257,14 +9198,19 @@
 "orient": "d",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de Tournon",
+"status": "standing",
+"lat": 48.850976,
+"lon": 2.337026,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13861"
+}
+]
 },
 {
 "id": "L0419",
@@ -8276,15 +9222,24 @@
 ],
 "orient": "d",
 "flag": "unsure",
-"note": "printed R. DES AVGVSTINS (Right Bank? check)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue des (Vieux-)Augustins, now rue d'Argout and rue Hérold",
+"modern": "Rue d'Argout",
+"status": "renamed",
+"lat": 48.866337,
+"lon": 2.344347,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D542"
+},
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9044"
+}
+]
 },
 {
 "id": "L0420",
@@ -8296,15 +9251,20 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "rue de la Jussienne",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue Sainte-Marie-l'Égyptienne",
+"modern": "Rue de la Jussienne",
+"status": "renamed",
+"lat": 48.86559,
+"lon": 2.344667,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11600"
+}
+]
 },
 {
 "id": "L0421",
@@ -8316,12 +9276,12 @@
 ],
 "orient": "d",
 "flag": "unsure",
-"note": "printed R. BRE NEVSE",
+"note": "rue Breneuse: the name was used for several small streets in this quarter",
 "modern": null,
 "status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"lat": 48.866658,
+"lon": 2.343475,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -8336,15 +9296,20 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "rue Pagevin",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue Pagevin",
+"modern": "Rue d'Argout",
+"status": "renamed",
+"lat": 48.865692,
+"lon": 2.343039,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D9044"
+}
+]
 },
 {
 "id": "L0423",
@@ -8357,14 +9322,19 @@
 "orient": "d",
 "flag": "ok",
 "note": "rue Coq-Heron",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Coq-Héron",
+"status": "renamed",
+"lat": 48.864497,
+"lon": 2.342514,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10034"
+}
+]
 },
 {
 "id": "L0424",
@@ -8377,14 +9347,19 @@
 "orient": "d",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Coquillière",
+"status": "standing",
+"lat": 48.864412,
+"lon": 2.341267,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10035"
+}
+]
 },
 {
 "id": "L0425",
@@ -8396,15 +9371,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "rue de Grenelle(-Saint-Honore)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rue de Grenelle(-Saint-Honoré), now part of rue Jean-Jacques-Rousseau",
+"modern": "Rue Jean-Jacques-Rousseau",
+"status": "renamed",
+"lat": 48.863787,
+"lon": 2.342778,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D11467"
+}
+]
 },
 {
 "id": "L0426",
@@ -8417,14 +9397,19 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue Saint-Honoré",
+"status": "standing",
+"lat": 48.862165,
+"lon": 2.339755,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13605"
+}
+]
 },
 {
 "id": "L0427",
@@ -8436,15 +9421,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue du Coq(-Saint-Honoré)",
+"modern": "Rue de Marengo",
+"status": "renamed",
+"lat": 48.862006,
+"lon": 2.339672,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D12081"
+}
+]
 },
 {
 "id": "L0428",
@@ -8458,13 +9448,18 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.863629,
+"lon": 2.339557,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D7206"
+}
+]
 },
 {
 "id": "L0429",
@@ -8476,15 +9471,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "rue de l'Autruche",
+"note": "rue d'Autriche or d'Autruche; the surviving part is rue de l'Oratoire",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.862921,
+"lon": 2.341185,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D8314"
+}
+]
 },
 {
 "id": "L0430",
@@ -8496,15 +9496,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "later rue de la Bibliothèque",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.863326,
+"lon": 2.340002,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D7250"
+}
+]
 },
 {
 "id": "L0431",
@@ -8516,15 +9521,20 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "rue Fromenteau",
+"note": "later rue du Musée",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.862371,
+"lon": 2.339296,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D5501"
+}
+]
 },
 {
 "id": "L0432",
@@ -8536,15 +9546,20 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "rue Saint-Sulpice? check",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the 'grant rue Saint-Sulpice', now rue du Vieux-Colombier",
+"modern": "Rue du Vieux-Colombier",
+"status": "renamed",
+"lat": 48.851253,
+"lon": 2.332455,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D14056"
+}
+]
 },
 {
 "id": "L0433",
@@ -8557,14 +9572,19 @@
 "orient": "d",
 "flag": "ok",
 "note": "rue de Vaugirard",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de Vaugirard",
+"status": "renamed",
+"lat": 48.848838,
+"lon": 2.333756,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13969"
+}
+]
 },
 {
 "id": "L0434",
@@ -8576,15 +9596,20 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "rue des Petits-Champs",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "formerly rue des Petits-Champs",
+"modern": "Rue Croix-des-Petits-Champs",
+"status": "renamed",
+"lat": 48.865445,
+"lon": 2.340918,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10095"
+}
+]
 },
 {
 "id": "L0435",
@@ -8598,13 +9623,18 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.863911,
+"lon": 2.338612,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D7992"
+}
+]
 },
 {
 "id": "L0436",
@@ -8616,15 +9646,20 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "rue Jean-Saint-Denis, by the Louvre; later merged into a rue Pierre-Lescot that has since disappeared",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.863655,
+"lon": 2.339021,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D4721"
+}
+]
 },
 {
 "id": "L0437",
@@ -8638,13 +9673,18 @@
 "flag": "ok",
 "note": "rue Saint-Thomas-du-Louvre",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.862286,
+"lon": 2.338028,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D1449"
+}
+]
 },
 {
 "id": "L0438",
@@ -8657,14 +9697,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de Seine",
+"status": "standing",
+"lat": 48.857541,
+"lon": 2.336163,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D13424"
+}
+]
 },
 {
 "id": "L0439",
@@ -8677,14 +9722,19 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue du Four",
+"status": "standing",
+"lat": 48.852216,
+"lon": 2.330933,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10776"
+}
+]
 },
 {
 "id": "L0440",

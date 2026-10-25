@@ -11,9 +11,10 @@ out = root / "web/public/data"
 out.mkdir(parents=True, exist_ok=True)
 
 ident = {}
-p = root / "data/places.csv"  # research results, keyed by label id (created in phase 2)
-if p.exists():
+for p in sorted((root / "data").glob("places_*.csv")):  # research results per category, keyed by label id
     for r in csv.DictReader(open(p)):
+        if r["id"] in ident:
+            sys.exit(f"{r['id']} researched twice ({p.name})")
         ident[r["id"]] = r
 
 def nn(v):
@@ -24,6 +25,8 @@ for r in csv.DictReader(open(root / "data/labels_inventory.csv")):
     if r["type"] == "decoration":
         continue
     i = ident.get(r["id"], {})
+    if nn(i.get("duplicate_of")):
+        continue  # a second reading of the same label
     places.append({
         "id": r["id"],
         "old": r["text"],
@@ -31,7 +34,7 @@ for r in csv.DictReader(open(root / "data/labels_inventory.csv")):
         "px": [int(r["x"]), int(r["y"])],
         "orient": r["orient"],
         "flag": r["flag"],
-        "note": nn(r["note"]),
+        "note": nn(i.get("note")) or nn(r["note"]),
         "modern": nn(i.get("modern")),
         "status": nn(i.get("status")),
         "lat": float(i["lat"]) if nn(i.get("lat")) else None,
