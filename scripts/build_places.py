@@ -20,6 +20,14 @@ for p in sorted((root / "data").glob("places_*.csv")):  # research results per c
 def nn(v):
     return v if v not in ("", None) else None
 
+summaries = {}
+p = root / "data/research/summaries.csv"
+if p.exists():
+    for r in csv.DictReader(open(p)):
+        if r["id"] in summaries:
+            sys.exit(f"{r['id']} has two summaries")
+        summaries[r["id"]] = r["summary"].strip()
+
 places = []
 for r in csv.DictReader(open(root / "data/labels_inventory.csv")):
     if r["type"] == "decoration":
@@ -40,7 +48,7 @@ for r in csv.DictReader(open(root / "data/labels_inventory.csv")):
         "lat": float(i["lat"]) if nn(i.get("lat")) else None,
         "lon": float(i["lon"]) if nn(i.get("lon")) else None,
         "loc_confidence": nn(i.get("loc_confidence")),
-        "summary": nn(i.get("summary")),
+        "summary": nn(summaries.get(r["id"])) or nn(i.get("summary")),
         "variants": [v for v in (i.get("variants") or "").split("|") if v],
         "sources": json.loads(i["sources"]) if nn(i.get("sources")) else [],
     })
