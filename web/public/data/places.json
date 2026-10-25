@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-25T19:01:07+00:00",
+"generated": "2026-10-25T22:17:44+00:00",
 "image": {
 "width": 10890,
 "height": 7820,
@@ -16,15 +16,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Pont de Charenton",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "bridge over the Marne just above its confluence with the Seine",
+"modern": "Pont de Charenton (Charenton-le-Pont / Alfortville)",
+"status": "rebuilt",
+"lat": 48.8169,
+"lon": 2.41972,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Pont_de_Charenton"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3396919"
+}
+]
 },
 {
 "id": "L0002",
@@ -36,15 +45,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "printed LE PONT HOSTRE DAME",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the stone bridge of 1500–1512, lined with houses; rebuilt 1853 and 1919",
+"modern": "Pont Notre-Dame",
+"status": "rebuilt",
+"lat": 48.856389,
+"lon": 2.348889,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Pont_Notre-Dame"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Pont_Notre-Dame"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1061959"
+}
+]
 },
 {
 "id": "L0003",
@@ -56,15 +78,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rebuilt 1853",
+"modern": "Petit-Pont",
+"status": "rebuilt",
+"lat": 48.853333,
+"lon": 2.346944,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Petit_pont_Cardinal-Lustiger"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Petit_Pont"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1323635"
+}
+]
 },
 {
 "id": "L0004",
@@ -76,15 +111,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rebuilt 1858–1860",
+"modern": "Pont au Change",
+"status": "rebuilt",
+"lat": 48.856667,
+"lon": 2.346667,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Pont_au_Change"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Pont_au_Change"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1327827"
+}
+]
 },
 {
 "id": "L0005",
@@ -96,15 +144,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Pont aux Meuniers",
+"note": "a mill bridge; collapsed in 1596",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.8569,
+"lon": 2.34592,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Pont_aux_Meuniers"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q15695317"
+}
+]
 },
 {
 "id": "L0006",
@@ -116,15 +173,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rebuilt 1857",
+"modern": "Pont Saint-Michel",
+"status": "rebuilt",
+"lat": 48.854167,
+"lon": 2.344722,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Pont_Saint-Michel_(Paris)"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Pont_Saint-Michel"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1329076"
+}
+]
 },
 {
 "id": "L0007",
@@ -136,12 +206,12 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "Pont d'Arcans (Grand Egout bridge)",
+"note": "Pont d'Arcans; small bridge on a stream west of the city; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.8755,
+"lon": 2.338845,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -156,15 +226,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Hotel des Tournelles",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "royal residence, demolished from 1563",
+"modern": "Place des Vosges (built on part of its site)",
+"status": "vanished",
+"lat": 48.854444,
+"lon": 2.365,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_des_Tournelles"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/H%C3%B4tel_des_Tournelles"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1476769"
+}
+]
 },
 {
 "id": "L0009",
@@ -176,12 +259,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "printed LOSTE DAN GOULESME",
+"note": "Hôtel d'Angoulême near the Tournelles; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.854759,
+"lon": 2.362803,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -196,12 +279,12 @@
 ],
 "orient": "h",
 "flag": "unsure",
-"note": "printed LOSTELDEBRIANNE; hotel (de Brienne?)",
+"note": "reading uncertain; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.853215,
+"lon": 2.362752,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -216,15 +299,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "printed LOS TE DU PREVOS DE PARIS",
+"note": "Hôtel du Prévôt de Paris (Hugues Aubriot's house near Saint-Paul); unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.854875,
+"lon": 2.359765,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_du_pr%C3%A9v%C3%B4t"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q109039092"
+}
+]
 },
 {
 "id": "L0012",
@@ -236,15 +328,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "the queen's lodgings of the Hôtel Saint-Pol, the royal residence of Charles V",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.852778,
+"lon": 2.361389,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_Saint-Pol"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/H%C3%B4tel_Saint-Pol"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1476690"
+}
+]
 },
 {
 "id": "L0013",
@@ -256,12 +361,12 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": null,
+"note": "unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.845784,
+"lon": 2.348972,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -276,12 +381,12 @@
 ],
 "orient": "h",
 "flag": "unsure",
-"note": "printed LOSTEL DAR GENT; Hotel d'Argent",
+"note": "unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.858432,
+"lon": 2.352626,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -296,15 +401,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Hotel de Ville",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the Renaissance building begun in 1533 was burned in 1871 and rebuilt",
+"modern": "Hôtel de Ville",
+"status": "rebuilt",
+"lat": 48.856389,
+"lon": 2.352222,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_ville_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/H%C3%B4tel_de_Ville%2C_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q640968"
+}
+]
 },
 {
 "id": "L0016",
@@ -316,12 +434,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "hotel de Lorraine? check",
+"note": "reading uncertain; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.850545,
+"lon": 2.349532,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -336,15 +454,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "fortified gate at the left-bank end of the Petit-Pont; demolished 1782",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.8575,
+"lon": 2.347222,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Petit_Ch%C3%A2telet"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2059782"
+}
+]
 },
 {
 "id": "L0018",
@@ -356,15 +483,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Grand Chatelet",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "fortress guarding the Pont au Change; seat of the Prévôté; demolished 1802–1810",
+"modern": "Place du Châtelet",
+"status": "vanished",
+"lat": 48.857434,
+"lon": 2.347087,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Grand_Ch%C3%A2telet"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Grand_Ch%C3%A2telet"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q673526"
+}
+]
 },
 {
 "id": "L0019",
@@ -377,14 +517,23 @@
 "orient": "v",
 "flag": "ok",
 "note": "Tour de l'Horloge",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Tour de l'Horloge",
+"status": "standing",
+"lat": 48.8561,
+"lon": 2.34567,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Tour_de_l%27Horloge_du_palais_de_la_Cit%C3%A9"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3533566"
+}
+]
 },
 {
 "id": "L0020",
@@ -397,14 +546,27 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Conciergerie",
+"status": "standing",
+"lat": 48.856389,
+"lon": 2.345556,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Conciergerie_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Conciergerie"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q138101"
+}
+]
 },
 {
 "id": "L0021",
@@ -416,15 +578,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Palais",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "royal palace, later the seat of the Parlement; partly survives inside the Palais de Justice",
+"modern": "Palais de Justice",
+"status": "rebuilt",
+"lat": 48.855807,
+"lon": 2.344572,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Palais_de_la_Cit%C3%A9"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Palais_de_la_Cit%C3%A9"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2047247"
+}
+]
 },
 {
 "id": "L0022",
@@ -436,15 +611,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Chambre des Comptes",
+"note": "its building in the palace burned in 1737",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.855288,
+"lon": 2.344338,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Chambre_des_comptes_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q28493246"
+}
+]
 },
 {
 "id": "L0023",
@@ -456,12 +640,12 @@
 ],
 "orient": "v",
 "flag": "unsure",
-"note": null,
+"note": "reading uncertain; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.852152,
+"lon": 2.34305,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -476,15 +660,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Hotel de Cluny",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "town house of the abbots of Cluny, built c. 1485–1510",
+"modern": "Musée de Cluny",
+"status": "standing",
+"lat": 48.8505,
+"lon": 2.34422,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Cluny"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3145813"
+}
+]
 },
 {
 "id": "L0025",
@@ -496,15 +689,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Hotel des Monnaies",
+"note": "the old royal mint by the rue de la Monnaie; the mint moved to the quai de Conti in 1775",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.856667,
+"lon": 2.339167,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Monnaie_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1250541"
+}
+]
 },
 {
 "id": "L0026",
@@ -516,15 +718,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "For-l'Eveque",
+"note": "the bishop's court and prison; demolished 1783",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.858306,
+"lon": 2.344167,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/For-l%27%C3%89v%C3%AAque"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2071778"
+}
+]
 },
 {
 "id": "L0027",
@@ -536,12 +747,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "Hôtel de Nevers; not the later hôtel of 1580 on the Monnaie site; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.853842,
+"lon": 2.340554,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -556,12 +767,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "hotel de Reims",
+"note": "Hôtel de Reims; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.851818,
+"lon": 2.340485,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -576,12 +787,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Hotel d'Alencon",
+"note": "Hôtel d'Alençon near the Louvre; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.861379,
+"lon": 2.341502,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -596,15 +807,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Petit-Bourbon",
+"note": "residence of the dukes of Bourbon by the Louvre; demolished 1660 for the Louvre colonnade",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.8595,
+"lon": 2.3397,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Petit-Bourbon"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/H%C3%B4tel_du_Petit-Bourbon"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3377026"
+}
+]
 },
 {
 "id": "L0031",
@@ -616,12 +840,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "hotel Saint-Denis",
+"note": "town house of the abbots of Saint-Denis; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.854453,
+"lon": 2.338628,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -636,15 +860,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "dup",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the name 'Rohan' is a corruption of 'Rouen' (the archbishops of Rouen had their town house here)",
+"modern": "Cour de Rohan",
+"status": "standing",
+"lat": 48.852946,
+"lon": 2.339507,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Cour_de_Rohan"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3000999"
+}
+]
 },
 {
 "id": "L0033",
@@ -656,15 +889,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "in 1550 the medieval castle was being rebuilt: Lescot's wing was begun in 1546",
+"modern": "Louvre",
+"status": "rebuilt",
+"lat": 48.861028,
+"lon": 2.335886,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Palais_du_Louvre"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Louvre_Palace"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1075988"
+}
+]
 },
 {
 "id": "L0034",
@@ -676,15 +922,28 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "Hotel de Nesle",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the Wikipedia article covers the Tour de Nesle, the corner tower of the hôtel",
+"modern": "Institut de France and Monnaie de Paris (on its site)",
+"status": "vanished",
+"lat": 48.8575,
+"lon": 2.337222,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Tour_de_Nesle"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Tour_de_Nesle"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1937108"
+}
+]
 },
 {
 "id": "L0035",
@@ -697,14 +956,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "abbey of Saint-Antoine-des-Champs",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Hôpital Saint-Antoine (on its site)",
+"status": "vanished",
+"lat": 48.848888,
+"lon": 2.3825,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Abbaye_Saint-Antoine-des-Champs"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-Antoine-des-Champs"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1500914"
+}
+]
 },
 {
 "id": "L0036",
@@ -718,13 +990,26 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.850834,
+"lon": 2.364722,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Couvent_des_C%C3%A9lestins_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Couvent_des_C%C3%A9lestins"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q657921"
+}
+]
 },
 {
 "id": "L0037",
@@ -738,13 +1023,22 @@
 "flag": "ok",
 "note": "Saint-Marcel",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.83681,
+"lon": 2.35273,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A9giale_Saint-Marcel_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q166691"
+}
+]
 },
 {
 "id": "L0038",
@@ -756,15 +1050,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Saint-Hippolyte",
+"note": "church of Saint-Hippolyte in the faubourg Saint-Marcel; demolished 1807",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.836573,
+"lon": 2.35075,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Ancienne_%C3%A9glise_Saint-Hippolyte_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q23731479"
+}
+]
 },
 {
 "id": "L0039",
@@ -776,12 +1079,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "hopital (Lourcine?)",
+"note": "a hospital in the faubourg Saint-Marcel; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.838815,
+"lon": 2.353894,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -797,14 +1100,23 @@
 "orient": "h",
 "flag": "ok",
 "note": "Cordelieres (convent at Lourcine)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Hôpital Broca (on its site)",
+"status": "vanished",
+"lat": 48.834721,
+"lon": 2.346944,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Couvent_des_Cordeli%C3%A8res_(Paris)"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1137929"
+}
+]
 },
 {
 "id": "L0041",
@@ -817,14 +1129,23 @@
 "orient": "h",
 "flag": "ok",
 "note": "printed S. CATERINNE DU VAL DES ECOLIERS",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Place du Marché-Sainte-Catherine (on its site)",
+"status": "vanished",
+"lat": 48.855278,
+"lon": 2.362778,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Couvent_Sainte-Catherine-du-Val-des-%C3%89coliers"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1552514"
+}
+]
 },
 {
 "id": "L0042",
@@ -836,15 +1157,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Saint-Paul",
+"note": "parish of the royal Hôtel Saint-Pol; demolished 1796–1799",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.854028,
+"lon": 2.362222,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Ancienne_%C3%A9glise_Saint-Paul-des-Champs"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q168980"
+}
+]
 },
 {
 "id": "L0043",
@@ -858,13 +1188,22 @@
 "flag": "ok",
 "note": "Ave-Maria convent",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.853084,
+"lon": 2.359885,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Couvent_de_l%27Ave-Maria"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q23055378"
+}
+]
 },
 {
 "id": "L0044",
@@ -877,14 +1216,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Medard",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Église Saint-Médard",
+"status": "standing",
+"lat": 48.839861,
+"lon": 2.350278,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-M%C3%A9dard_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-M%C3%A9dard%2C_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q574970"
+}
+]
 },
 {
 "id": "L0045",
@@ -896,15 +1248,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Enclos du Temple church",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the church of the Templars' (later Hospitallers') enclosure",
+"modern": "Square du Temple (on its site)",
+"status": "vanished",
+"lat": 48.864472,
+"lon": 2.360778,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Prieur%C3%A9_hospitalier_du_Temple"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Maison_du_Temple"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3280072"
+}
+]
 },
 {
 "id": "L0046",
@@ -916,15 +1281,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Enfants-Rouges",
+"note": "orphanage founded 1534; the Marché des Enfants-Rouges keeps its name",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.863268,
+"lon": 2.360695,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Hospice_des_Enfants-Rouges"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q18736719"
+}
+]
 },
 {
 "id": "L0047",
@@ -936,12 +1310,12 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "printed LA CHAPELLE DE BRAQVES",
+"note": "chapel of Braque (Notre-Dame de Braque); unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.859733,
+"lon": 2.359233,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -956,12 +1330,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Petit Saint-Antoine",
+"note": "the Petit Saint-Antoine (Hospitallers of Saint-Anthony), rue Saint-Antoine",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.856239,
+"lon": 2.358909,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -977,14 +1351,23 @@
 "orient": "h",
 "flag": "ok",
 "note": "Abbaye Saint-Victor",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Jussieu university campus (on its site)",
+"status": "vanished",
+"lat": 48.846472,
+"lon": 2.35573,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Abbaye_Saint-Victor_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1748506"
+}
+]
 },
 {
 "id": "L0050",
@@ -996,15 +1379,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the cloister of c. 1427 survives; the church was rebuilt in 1756",
+"modern": "Église des Billettes",
+"status": "rebuilt",
+"lat": 48.85799,
+"lon": 2.354996,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Clo%C3%AEtre_et_%C3%A9glise_des_Billettes"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Church_of_Les_Billettes%2C_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2979783"
+}
+]
 },
 {
 "id": "L0051",
@@ -1016,15 +1412,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "cimetiere Saint-Jean",
+"note": "cemetery of Saint-Jean-en-Grève; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.856389,
+"lon": 2.353333,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Jean-en-Gr%C3%A8ve"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q167567"
+}
+]
 },
 {
 "id": "L0052",
@@ -1036,12 +1441,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "hospital of Saint-Gervais; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.856358,
+"lon": 2.355126,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -1056,15 +1461,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Saint-Gervais",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rebuilt 1494–1657, so under construction in 1550",
+"modern": "Église Saint-Gervais",
+"status": "standing",
+"lat": 48.855556,
+"lon": 2.354444,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Gervais-Saint-Protais_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-Gervais-Saint-Protais"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q427340"
+}
+]
 },
 {
 "id": "L0054",
@@ -1078,13 +1496,22 @@
 "flag": "ok",
 "note": "Saint-Jean-en-Greve",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.856389,
+"lon": 2.353333,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Jean-en-Gr%C3%A8ve"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q167567"
+}
+]
 },
 {
 "id": "L0055",
@@ -1096,12 +1523,12 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "Haudriettes",
+"note": "hospice of the Haudriettes; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.855406,
+"lon": 2.353383,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -1116,15 +1543,24 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "dup",
+"note": "cemetery of Saint-Nicolas-des-Champs; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.86569,
+"lon": 2.35352,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Cimeti%C3%A8re_Saint-Nicolas-des-Champs"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q134771914"
+}
+]
 },
 {
 "id": "L0057",
@@ -1136,12 +1572,12 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "cloister of the canons of Saint-Merri",
+"modern": "Rue du Cloître-Saint-Merri",
+"status": "vanished",
+"lat": 48.859356,
+"lon": 2.35304,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -1157,14 +1593,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Merri (church)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Église Saint-Merri",
+"status": "standing",
+"lat": 48.859,
+"lon": 2.351,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Merri"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-Merri"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q525891"
+}
+]
 },
 {
 "id": "L0059",
@@ -1176,15 +1625,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Saint-Esprit hospital",
+"note": "hospital of the Saint-Esprit-en-Grève, beside the Hôtel de Ville",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.856924,
+"lon": 2.353271,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_du_Saint-Esprit_(Paris)"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q125921519"
+}
+]
 },
 {
 "id": "L0060",
@@ -1196,15 +1654,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "cloister of Notre-Dame",
+"note": "the canons' quarter north of the cathedral",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.853138,
+"lon": 2.350577,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Clo%C3%AEtre_Notre-Dame_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q20723084"
+}
+]
 },
 {
 "id": "L0061",
@@ -1218,13 +1685,22 @@
 "flag": "ok",
 "note": "dup",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.8525,
+"lon": 2.351111,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Denis-du-Pas"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q166670"
+}
+]
 },
 {
 "id": "L0062",
@@ -1237,14 +1713,27 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Collège des Bernardins",
+"status": "standing",
+"lat": 48.848823,
+"lon": 2.352026,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_des_Bernardins"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Coll%C3%A8ge_des_Bernardins"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q960165"
+}
+]
 },
 {
 "id": "L0063",
@@ -1256,15 +1745,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "dup",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rebuilt in the 17th century",
+"modern": "Église Saint-Nicolas-du-Chardonnet",
+"status": "rebuilt",
+"lat": 48.849168,
+"lon": 2.350278,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Nicolas-du-Chardonnet"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-Nicolas-du-Chardonnet"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1577630"
+}
+]
 },
 {
 "id": "L0064",
@@ -1276,15 +1778,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Saint-Etienne-du-Mont",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "built 1494–1624",
+"modern": "Église Saint-Étienne-du-Mont",
+"status": "standing",
+"lat": 48.846528,
+"lon": 2.34806,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-%C3%89tienne-du-Mont_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-%C3%89tienne-du-Mont"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q583251"
+}
+]
 },
 {
 "id": "L0065",
@@ -1297,14 +1812,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "abbey",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Lycée Henri-IV (on its site; the Tour Clovis survives)",
+"status": "vanished",
+"lat": 48.845889,
+"lon": 2.347833,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Abbaye_Sainte-Genevi%C3%A8ve_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Abbey_of_Saint_Genevieve"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1766069"
+}
+]
 },
 {
 "id": "L0066",
@@ -1317,14 +1845,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "printed S. LAVRES; Saint-Laurent",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Église Saint-Laurent",
+"status": "standing",
+"lat": 48.874849,
+"lon": 2.358311,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Laurent_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-Laurent%2C_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1629067"
+}
+]
 },
 {
 "id": "L0067",
@@ -1337,14 +1878,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Nicolas-des-Champs",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Église Saint-Nicolas-des-Champs",
+"status": "standing",
+"lat": 48.865581,
+"lon": 2.353672,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Nicolas-des-Champs_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-Nicolas-des-Champs%2C_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1488512"
+}
+]
 },
 {
 "id": "L0068",
@@ -1357,14 +1911,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Martin-des-Champs",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Musée des Arts et Métiers",
+"status": "standing",
+"lat": 48.865994,
+"lon": 2.355001,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Prieur%C3%A9_Saint-Martin-des-Champs"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-Martin-des-Champs_Priory"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q656302"
+}
+]
 },
 {
 "id": "L0069",
@@ -1376,35 +1943,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Saint-Julien-des-Menetriers",
+"note": "chapel and hospital of the minstrels' guild",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.86219,
+"lon": 2.35225,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Julien-des-M%C3%A9n%C3%A9triers"
 },
 {
-"id": "L0070",
-"old": "S. MARRI",
-"type": "church_religious",
-"px": [
-4310,
-3745
-],
-"orient": "h",
-"flag": "ok",
-"note": "second Saint-Merri label (street?)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
-"summary": null,
-"variants": [],
-"sources": []
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q65769651"
+}
+]
 },
 {
 "id": "L0071",
@@ -1418,10 +1974,10 @@
 "flag": "ok",
 "note": "Saint-Bon",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.858954,
+"lon": 2.351782,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -1437,14 +1993,23 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Tour Saint-Jacques (its bell tower survives)",
+"status": "vanished",
+"lat": 48.857972,
+"lon": 2.349237,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Jacques-de-la-Boucherie"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q167029"
+}
+]
 },
 {
 "id": "L0073",
@@ -1458,13 +2023,22 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.855,
+"lon": 2.349722,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Landry"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q22295486"
+}
+]
 },
 {
 "id": "L0074",
@@ -1476,15 +2050,24 @@
 ],
 "orient": "h",
 "flag": "unsure",
-"note": "printed S. MACIAS? Saint-Martial",
+"note": "church of Saint-Martial in the Cité; label reading uncertain",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.854079,
+"lon": 2.346461,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Martial_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q64843296"
+}
+]
 },
 {
 "id": "L0075",
@@ -1498,13 +2081,22 @@
 "flag": "ok",
 "note": "Sainte-Madeleine-en-la-Cite",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.854619,
+"lon": 2.347706,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_de_la_Madeleine-en-la-Cit%C3%A9"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q22230967"
+}
+]
 },
 {
 "id": "L0076",
@@ -1516,12 +2108,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "church of Saint-Christophe, in front of Notre-Dame; demolished 1747",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.853538,
+"lon": 2.348115,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -1538,13 +2130,22 @@
 "flag": "ok",
 "note": "Sainte-Genevieve-des-Ardents",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.85373,
+"lon": 2.34796,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Sainte-Genevi%C3%A8ve-des-Ardents"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q63302023"
+}
+]
 },
 {
 "id": "L0078",
@@ -1558,13 +2159,22 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.85431,
+"lon": 2.34613,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Germain-le-Vieux"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q64670265"
+}
+]
 },
 {
 "id": "L0079",
@@ -1577,14 +2187,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "printed HOSTREDA ME DEPARIS",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Cathédrale Notre-Dame",
+"status": "standing",
+"lat": 48.853056,
+"lon": 2.349722,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Notre-Dame_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Notre-Dame_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2981"
+}
+]
 },
 {
 "id": "L0080",
@@ -1596,35 +2219,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "in 1550 it stood on the south side of the parvis, straddling the small arm of the Seine",
+"modern": "Hôtel-Dieu (rebuilt north of the parvis 1867–1878)",
+"status": "rebuilt",
+"lat": 48.85467,
+"lon": 2.34882,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/H%C3%B4tel-Dieu_de_Paris"
 },
 {
-"id": "L0081",
-"old": "LOTEL DIEU",
-"type": "church_religious",
-"px": [
-6610,
-3910
-],
-"orient": "h",
-"flag": "ok",
-"note": "second Hotel-Dieu label",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
-"summary": null,
-"variants": [],
-"sources": []
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/H%C3%B4tel-Dieu_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1294736"
+}
+]
 },
 {
 "id": "L0082",
@@ -1637,14 +2253,27 @@
 "orient": "d",
 "flag": "ok",
 "note": "Saint-Julien-le-Pauvre (label upside down)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Église Saint-Julien-le-Pauvre",
+"status": "standing",
+"lat": 48.852025,
+"lon": 2.347108,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Julien-le-Pauvre_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-Julien-le-Pauvre"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1243760"
+}
+]
 },
 {
 "id": "L0083",
@@ -1656,12 +2285,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "chapelle Saint-Yves",
+"note": "chapel of Saint-Yves, rue Saint-Jacques",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.850875,
+"lon": 2.345741,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -1676,15 +2305,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "convent of the Carmelites (Grands-Carmes) on the place Maubert",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.849167,
+"lon": 2.350278,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Carmel_de_la_place_Maubert"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Carmel_de_la_Place_Maubert"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2939555"
+}
+]
 },
 {
 "id": "L0085",
@@ -1698,13 +2340,22 @@
 "flag": "ok",
 "note": "commanderie Saint-Jean-de-Latran",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.84972,
+"lon": 2.34639,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Prieur%C3%A9_hospitalier_de_Saint-Jean_de_Latran"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q55280667"
+}
+]
 },
 {
 "id": "L0086",
@@ -1716,15 +2367,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "dup",
+"note": "church of Saint-Hilaire-du-Mont",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.848056,
+"lon": 2.346944,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Hilaire_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-Hilaire%2C_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q30134693"
+}
+]
 },
 {
 "id": "L0087",
@@ -1738,13 +2402,26 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.847222,
+"lon": 2.343889,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-%C3%89tienne-des-Gr%C3%A8s"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-%C3%89tienne-des-Gr%C3%A8s%2C_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q166679"
+}
+]
 },
 {
 "id": "L0088",
@@ -1756,15 +2433,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rebuilt 1630–1685",
+"modern": "Église Saint-Jacques-du-Haut-Pas",
+"status": "rebuilt",
+"lat": 48.84361,
+"lon": 2.34139,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Jacques-du-Haut-Pas"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-Jacques-du-Haut-Pas"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q65326"
+}
+]
 },
 {
 "id": "L0089",
@@ -1776,12 +2466,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "hopital Saint-Jacques-du-Haut-Pas",
+"note": "the hospital of the Hospitallers of Altopascio, next to Saint-Jacques-du-Haut-Pas",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.843476,
+"lon": 2.340959,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -1796,15 +2486,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Notre-Dame-des-Champs",
+"note": "priory of Notre-Dame-des-Champs; from 1603 the first Carmelite convent in Paris",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.8413,
+"lon": 2.3399,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Couvent_des_Carm%C3%A9lites_du_faubourg_Saint-Jacques"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q41355013"
+}
+]
 },
 {
 "id": "L0091",
@@ -1816,15 +2515,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Saint-Lazare (leper house)",
+"note": "the leper house of Saint-Lazare",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.875,
+"lon": 2.354167,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Enclos_Saint-Lazare"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3053797"
+}
+]
 },
 {
 "id": "L0092",
@@ -1836,15 +2544,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "cimetiere de la Trinite",
+"note": "cemetery of the hospital of the Trinité",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.864461,
+"lon": 2.350194,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Cimeti%C3%A8re_de_la_Trinit%C3%A9_(Paris)"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q16928493"
+}
+]
 },
 {
 "id": "L0093",
@@ -1858,13 +2575,22 @@
 "flag": "ok",
 "note": "hopital Saint-Jacques-aux-Pelerins",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.863202,
+"lon": 2.34934,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Saint-Jacques_aux_p%C3%A8lerins"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q65125170"
+}
+]
 },
 {
 "id": "L0094",
@@ -1877,14 +2603,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Leu-Saint-Gilles",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Église Saint-Leu-Saint-Gilles",
+"status": "standing",
+"lat": 48.862862,
+"lon": 2.35006,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Leu-Saint-Gilles_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-Leu-Saint-Gilles_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1629670"
+}
+]
 },
 {
 "id": "L0095",
@@ -1896,15 +2635,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "abbey of Saint-Magloire, rue Saint-Denis",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.864461,
+"lon": 2.350194,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Abbaye_Saint-Magloire_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q24342838"
+}
+]
 },
 {
 "id": "L0096",
@@ -1916,15 +2664,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Saint-Sepulcre",
+"note": "church and hospital of the Saint-Sépulcre, rue Saint-Denis",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.864461,
+"lon": 2.350194,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_du_Saint-S%C3%A9pulcre_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-S%C3%A9pulcre%2C_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q24342872"
+}
+]
 },
 {
 "id": "L0097",
@@ -1936,15 +2697,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Saints-Innocents",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "church and cemetery of the Saints-Innocents; the cemetery was emptied into the Catacombs in 1786–1788",
+"modern": "Place Joachim-du-Bellay (the Fontaine des Innocents survives)",
+"status": "vanished",
+"lat": 48.860556,
+"lon": 2.347778,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Cimeti%C3%A8re_des_Innocents"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Holy_Innocents%27_Cemetery"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1092104"
+}
+]
 },
 {
 "id": "L0098",
@@ -1958,13 +2732,22 @@
 "flag": "ok",
 "note": "Sainte-Opportune",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.859691,
+"lon": 2.34734,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Sainte-Opportune_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3585250"
+}
+]
 },
 {
 "id": "L0099",
@@ -1976,35 +2759,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "hospital of Sainte-Catherine, rue Saint-Denis",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.8594,
+"lon": 2.348,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Sainte-Catherine"
 },
 {
-"id": "L0100",
-"old": "LOPITAL",
-"type": "church_religious",
-"px": [
-4550,
-4190
-],
-"orient": "h",
-"flag": "ok",
-"note": "hospital Sainte-Catherine",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
-"summary": null,
-"variants": [],
-"sources": []
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q104759913"
+}
+]
 },
 {
 "id": "L0101",
@@ -2016,15 +2788,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Saint-Leufroy",
+"note": "chapel beside the Grand Châtelet",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.85764,
+"lon": 2.34725,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Leufroy_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q65094843"
+}
+]
 },
 {
 "id": "L0102",
@@ -2038,13 +2819,22 @@
 "flag": "ok",
 "note": "dup",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.85523,
+"lon": 2.34643,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Pierre-des-Arcis"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q55227441"
+}
+]
 },
 {
 "id": "L0103",
@@ -2056,15 +2846,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Saint-Barthelemy",
+"note": "church of Saint-Barthélemy in the Cité, the palace parish",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.855833,
+"lon": 2.346667,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Barth%C3%A9lemy_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q21077839"
+}
+]
 },
 {
 "id": "L0104",
@@ -2076,15 +2875,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "Saint-Éloi in the Cité (Barnabites)",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.854935,
+"lon": 2.346483,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-%C3%89loi_(%C3%8Ele_de_la_Cit%C3%A9)"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q17190247"
+}
+]
 },
 {
 "id": "L0105",
@@ -2096,15 +2904,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "manuscript addition (Sainte-Chapelle)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "handwritten addition on the Basel copy",
+"modern": "Sainte-Chapelle",
+"status": "standing",
+"lat": 48.85528,
+"lon": 2.345,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Sainte-Chapelle"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Sainte-Chapelle"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q193193"
+}
+]
 },
 {
 "id": "L0106",
@@ -2116,15 +2937,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "chapelle Saint-Michel",
+"note": "chapel of Saint-Michel in the palace courtyard",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.856922,
+"lon": 2.341208,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Chapelle_Saint-Michel-du-Palais"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q26269675"
+}
+]
 },
 {
 "id": "L0107",
@@ -2137,14 +2967,27 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Église Saint-Séverin",
+"status": "standing",
+"lat": 48.85209,
+"lon": 2.34573,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-S%C3%A9verin_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-S%C3%A9verin%2C_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1710376"
+}
+]
 },
 {
 "id": "L0108",
@@ -2158,13 +3001,22 @@
 "flag": "ok",
 "note": "Mathurins",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.850601,
+"lon": 2.34502,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Couvent_des_Mathurins_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q16303596"
+}
+]
 },
 {
 "id": "L0109",
@@ -2178,13 +3030,26 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.849885,
+"lon": 2.344509,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Beno%C3%AEt-le-B%C3%A9tourn%C3%A9"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-Beno%C3%AEt-le-B%C3%A9tourn%C3%A9"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3461874"
+}
+]
 },
 {
 "id": "L0110",
@@ -2198,13 +3063,22 @@
 "flag": "ok",
 "note": "Saint-Come",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.850277,
+"lon": 2.342222,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-C%C3%B4me-Saint-Damien_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3581302"
+}
+]
 },
 {
 "id": "L0111",
@@ -2216,15 +3090,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Jacobins",
+"note": "the Dominican convent of the rue Saint-Jacques (Jacobins)",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.847198,
+"lon": 2.3432,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Couvent_des_Jacobins_(rue_Saint-Jacques)"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Couvent_des_Jacobins_de_la_rue_Saint-Jacques"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3001726"
+}
+]
 },
 {
 "id": "L0112",
@@ -2238,13 +3125,26 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.867569,
+"lon": 2.350571,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Filles-Dieu"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Filles-Dieu"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1414158"
+}
+]
 },
 {
 "id": "L0113",
@@ -2256,15 +3156,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "church of Saint-Sauveur, rue Saint-Denis",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.86591,
+"lon": 2.35032,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Sauveur_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3584441"
+}
+]
 },
 {
 "id": "L0114",
@@ -2276,15 +3185,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "chapel of the goldsmiths' guild (Saint-Éloi-des-Orfèvres)",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.858508,
+"lon": 2.345256,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Chapelle_Saint-%C3%89loi_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q16928449"
+}
+]
 },
 {
 "id": "L0115",
@@ -2297,14 +3215,23 @@
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Andre-des-Arts",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Place Saint-André-des-Arts (on its site)",
+"status": "vanished",
+"lat": 48.853056,
+"lon": 2.342778,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Andr%C3%A9-des-Arts"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1230964"
+}
+]
 },
 {
 "id": "L0116",
@@ -2317,14 +3244,27 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Couvent des Cordeliers (only the refectory survives)",
+"status": "vanished",
+"lat": 48.850556,
+"lon": 2.341303,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Couvent_des_Cordeliers_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Cordeliers_Convent%2C_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q853703"
+}
+]
 },
 {
 "id": "L0117",
@@ -2336,15 +3276,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Chartreux (Vauvert)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the Carthusian monastery of Vauvert",
+"modern": "Jardin du Luxembourg (part of its site)",
+"status": "vanished",
+"lat": 48.841946,
+"lon": 2.335833,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Chartreuse_de_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2961277"
+}
+]
 },
 {
 "id": "L0118",
@@ -2356,15 +3305,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Saint-Eustache",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the present church was begun in 1532 and finished in 1637; the map still shows the older church",
+"modern": "Église Saint-Eustache",
+"status": "rebuilt",
+"lat": 48.863278,
+"lon": 2.345056,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Eustache_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-Eustache%2C_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1338207"
+}
+]
 },
 {
 "id": "L0119",
@@ -2376,15 +3338,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Filles-Penitentes",
+"note": "convent of the Filles-Pénitentes",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.863828,
+"lon": 2.343331,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Augustines_de_l%27ordre_de_la_P%C3%A9nitence_de_la_Madeleine"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2871681"
+}
+]
 },
 {
 "id": "L0120",
@@ -2397,14 +3368,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Germain-l'Auxerrois",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Église Saint-Germain-l'Auxerrois",
+"status": "standing",
+"lat": 48.859444,
+"lon": 2.341111,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Germain-l%27Auxerrois_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-Germain_l%27Auxerrois"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1429394"
+}
+]
 },
 {
 "id": "L0121",
@@ -2418,13 +3402,22 @@
 "flag": "ok",
 "note": "dup",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.856711,
+"lon": 2.333522,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Couvent_des_Grands-Augustins"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3001716"
+}
+]
 },
 {
 "id": "L0122",
@@ -2436,15 +3429,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "chapelle des Martyrs",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "chapel of the Martyrs on the slope of Montmartre",
+"modern": "Chapelle du Martyre, rue Yvonne-Le-Tac (near the site)",
+"status": "vanished",
+"lat": 48.884197,
+"lon": 2.339784,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Abbaye_de_Montmartre"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Montmartre_Abbey"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q14397431"
+}
+]
 },
 {
 "id": "L0123",
@@ -2458,13 +3464,22 @@
 "flag": "ok",
 "note": "Saint-Honore (collegiate church)",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.864481,
+"lon": 2.340634,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A9giale_Saint-Honor%C3%A9"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q17802602"
+}
+]
 },
 {
 "id": "L0124",
@@ -2476,15 +3491,28 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "Saint-Sulpice",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "rebuilt 1646–1870",
+"modern": "Église Saint-Sulpice",
+"status": "rebuilt",
+"lat": 48.850929,
+"lon": 2.334302,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Sulpice_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-Sulpice%2C_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q295844"
+}
+]
 },
 {
 "id": "L0125",
@@ -2496,15 +3524,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Quinze-Vingts",
+"note": "the hospital for the blind founded by Saint Louis; it moved to the faubourg Saint-Antoine in 1780",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.863907,
+"lon": 2.33806,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_des_Quinze-Vingts"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Quinze-Vingts_National_Ophthalmology_Hospital"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1460618"
+}
+]
 },
 {
 "id": "L0126",
@@ -2518,13 +3559,22 @@
 "flag": "ok",
 "note": "Saint-Thomas-du-Louvre",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.860278,
+"lon": 2.334444,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Thomas-du-Louvre"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q166676"
+}
+]
 },
 {
 "id": "L0127",
@@ -2536,15 +3586,28 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "abbey",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the abbey church survives; the abbey buildings are gone",
+"modern": "Église Saint-Germain-des-Prés",
+"status": "standing",
+"lat": 48.853924,
+"lon": 2.334538,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Abbaye_de_Saint-Germain-des-Pr%C3%A9s"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Saint-Germain-des-Pr%C3%A9s_%28church%29"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q334186"
+}
+]
 },
 {
 "id": "L0128",
@@ -2556,15 +3619,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Minimes de Chaillot (Bonshommes)",
+"note": "the Minims of Chaillot, called the Bonshommes",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.858908,
+"lon": 2.287943,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Couvent_des_Minimes_de_Nigeon"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q36808269"
+}
+]
 },
 {
 "id": "L0129",
@@ -2578,13 +3650,22 @@
 "flag": "ok",
 "note": "college du Cardinal-Lemoine",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.848974,
+"lon": 2.351146,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_du_Cardinal-Lemoine"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1110033"
+}
+]
 },
 {
 "id": "L0130",
@@ -2598,13 +3679,26 @@
 "flag": "ok",
 "note": "college de Boncourt",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.8463,
+"lon": 2.3494,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Boncourt"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Coll%C3%A8ge_de_Boncourt"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983743"
+}
+]
 },
 {
 "id": "L0131",
@@ -2618,13 +3712,26 @@
 "flag": "ok",
 "note": "college de la Marche",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.848578,
+"lon": 2.348299,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_la_Marche"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Coll%C3%A8ge_de_la_Marche"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983796"
+}
+]
 },
 {
 "id": "L0132",
@@ -2638,13 +3745,26 @@
 "flag": "ok",
 "note": "college de Navarre",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.84782,
+"lon": 2.347887,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Navarre"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/College_of_Navarre"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1110010"
+}
+]
 },
 {
 "id": "L0133",
@@ -2656,12 +3776,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "college d'Albret? check",
+"note": "label reads ALBRET; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.84809,
+"lon": 2.346691,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -2676,15 +3796,24 @@
 ],
 "orient": "h",
 "flag": "unsure",
-"note": null,
+"note": "probably the Bons-Enfants of Saint-Victor; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.8486,
+"lon": 2.3504,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_des_Bons-Enfants-Saint-Victor"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983806"
+}
+]
 },
 {
 "id": "L0135",
@@ -2698,13 +3827,22 @@
 "flag": "ok",
 "note": "college de Cornouaille",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.851164,
+"lon": 2.345899,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Cornouaille"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983750"
+}
+]
 },
 {
 "id": "L0136",
@@ -2718,13 +3856,22 @@
 "flag": "ok",
 "note": "college de Presles",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.849918,
+"lon": 2.346165,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Presles"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983782"
+}
+]
 },
 {
 "id": "L0137",
@@ -2737,14 +3884,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "college de Beauvais (Dormans-Beauvais)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Chapelle Saint-Jean-de-Beauvais (its chapel survives)",
+"status": "vanished",
+"lat": 48.849525,
+"lon": 2.347031,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Beauvais"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Coll%C3%A8ge_de_Beauvais"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1110005"
+}
+]
 },
 {
 "id": "L0138",
@@ -2756,15 +3916,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Ecoles de Decret (faculty of law)",
+"note": "the Écoles de Décret, the law faculty",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.8469,
+"lon": 2.34473,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Facult%C3%A9_de_droit_de_Paris"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/University_of_Paris_Faculty_of_Law"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3064259"
+}
+]
 },
 {
 "id": "L0139",
@@ -2778,13 +3951,22 @@
 "flag": "ok",
 "note": "college des Lombards",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.848199,
+"lon": 2.347462,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_des_Lombards"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1110025"
+}
+]
 },
 {
 "id": "L0140",
@@ -2798,13 +3980,22 @@
 "flag": "ok",
 "note": "college Coqueret",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.848116,
+"lon": 2.344934,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Coqueret"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983748"
+}
+]
 },
 {
 "id": "L0141",
@@ -2818,13 +4009,22 @@
 "flag": "ok",
 "note": "college du Plessis",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.848611,
+"lon": 2.344444,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_du_Plessis"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1027755"
+}
+]
 },
 {
 "id": "L0142",
@@ -2838,13 +4038,22 @@
 "flag": "ok",
 "note": "college de Reims",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.847532,
+"lon": 2.345103,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Reims"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q16540881"
+}
+]
 },
 {
 "id": "L0143",
@@ -2858,13 +4067,22 @@
 "flag": "ok",
 "note": "college du Mans",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.847834,
+"lon": 2.344291,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_du_Mans"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983845"
+}
+]
 },
 {
 "id": "L0144",
@@ -2876,15 +4094,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "college de Marmoutier",
+"note": "college of Marmoutier",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.847908,
+"lon": 2.343904,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Marmoutiers"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983776"
+}
+]
 },
 {
 "id": "L0145",
@@ -2897,14 +4124,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "college Sainte-Barbe",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Collège Sainte-Barbe",
+"status": "rebuilt",
+"lat": 48.847507,
+"lon": 2.3466,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_Sainte-Barbe_(Paris)"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Coll%C3%A8ge_Sainte-Barbe"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1110002"
+}
+]
 },
 {
 "id": "L0146",
@@ -2918,13 +4158,22 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.847432,
+"lon": 2.344448,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_des_Cholets"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983809"
+}
+]
 },
 {
 "id": "L0147",
@@ -2936,15 +4185,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "college Saint-Michel (de Chanac)",
+"note": "the college Saint-Michel, also called Chanac",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.846991,
+"lon": 2.344502,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Chanac_Pompadour"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983746"
+}
+]
 },
 {
 "id": "L0148",
@@ -2957,14 +4215,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "college de Montaigu",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Bibliothèque Sainte-Geneviève (on its site)",
+"status": "vanished",
+"lat": 48.8469,
+"lon": 2.34639,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Montaigu"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Coll%C3%A8ge_de_Montaigu"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983781"
+}
+]
 },
 {
 "id": "L0149",
@@ -2978,13 +4249,22 @@
 "flag": "ok",
 "note": "college de Lisieux",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.8469,
+"lon": 2.345,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Lisieux"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983768"
+}
+]
 },
 {
 "id": "L0150",
@@ -2998,13 +4278,22 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.851299,
+"lon": 2.344599,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_ma%C3%AEtre_Gervais"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983799"
+}
+]
 },
 {
 "id": "L0151",
@@ -3017,14 +4306,23 @@
 "orient": "h",
 "flag": "ok",
 "note": "college d'Harcourt",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Lycée Saint-Louis (on its site)",
+"status": "rebuilt",
+"lat": 48.850137,
+"lon": 2.342955,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_d%27Harcourt"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983728"
+}
+]
 },
 {
 "id": "L0152",
@@ -3038,13 +4336,22 @@
 "flag": "ok",
 "note": "college de Justice",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.848015,
+"lon": 2.345065,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Justice"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983760"
+}
+]
 },
 {
 "id": "L0468",
@@ -3056,15 +4363,24 @@
 ],
 "orient": "h",
 "flag": "unsure",
-"note": "printed RAIEVS/BAIEVS; college de Bayeux (pass 2 zoom)",
+"note": "label reading uncertain",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.849623,
+"lon": 2.342093,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Bayeux"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983736"
+}
+]
 },
 {
 "id": "L0153",
@@ -3078,13 +4394,22 @@
 "flag": "ok",
 "note": "college de Narbonne",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.849278,
+"lon": 2.342271,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Narbonne_(Paris)"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983778"
+}
+]
 },
 {
 "id": "L0154",
@@ -3097,14 +4422,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "college de Sorbonne",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Sorbonne",
+"status": "rebuilt",
+"lat": 48.8484,
+"lon": 2.3433,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Sorbonne"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/College_of_Sorbonne"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q787286"
+}
+]
 },
 {
 "id": "L0155",
@@ -3116,15 +4454,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "college de Calvi",
+"note": "college of Calvi, the 'little Sorbonne'",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.848391,
+"lon": 2.343461,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Calvy"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Coll%C3%A8ge_de_Calvi"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983742"
+}
+]
 },
 {
 "id": "L0156",
@@ -3138,13 +4489,22 @@
 "flag": "ok",
 "note": "college de Cluny",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.848068,
+"lon": 2.341975,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Cluny"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983747"
+}
+]
 },
 {
 "id": "L0157",
@@ -3158,13 +4518,22 @@
 "flag": "ok",
 "note": "college Mignon",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.852167,
+"lon": 2.341667,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_Mignon"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983617"
+}
+]
 },
 {
 "id": "L0158",
@@ -3178,13 +4547,22 @@
 "flag": "ok",
 "note": "college de Bourgogne",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.851813,
+"lon": 2.339749,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Bourgogne"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1109997"
+}
+]
 },
 {
 "id": "L0159",
@@ -3196,12 +4574,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "a college by Saint-Germain-l'Auxerrois; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.859285,
+"lon": 2.342555,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -3216,15 +4594,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "college des Bons-Enfants",
+"note": "college of the Bons-Enfants, rue Saint-Honoré",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.865486,
+"lon": 2.340268,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_des_Bons-Enfants"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983807"
+}
+]
 },
 {
 "id": "L0167",
@@ -3236,15 +4623,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "bastion",
+"note": "a bastion of the city wall",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.855551,
+"lon": 2.366382,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Enceinte_de_Charles_V"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Wall_of_Charles_V"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3053732"
+}
+]
 },
 {
 "id": "L0168",
@@ -3257,14 +4657,27 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Place de la Bastille",
+"status": "vanished",
+"lat": 48.85379,
+"lon": 2.36856,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Porte_Saint-Antoine"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Porte_Saint-Antoine"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3398946"
+}
+]
 },
 {
 "id": "L0169",
@@ -3276,15 +4689,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "stormed 14 July 1789 and demolished",
+"modern": "Place de la Bastille",
+"status": "vanished",
+"lat": 48.853333,
+"lon": 2.369167,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Bastille"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Bastille"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1865480"
+}
+]
 },
 {
 "id": "L0170",
@@ -3296,32 +4722,12 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "printed POR DELABARE TE; porte de la Barre? check",
+"note": "gate in the faubourg Saint-Marcel; label reading uncertain",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
-"summary": null,
-"variants": [],
-"sources": []
-},
-{
-"id": "L0171",
-"old": "LE BASTILLON",
-"type": "gate_wall",
-"px": [
-1790,
-1800
-],
-"orient": "h",
-"flag": "ok",
-"note": "second bastion label",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.841218,
+"lon": 2.358935,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -3338,13 +4744,22 @@
 "flag": "ok",
 "note": "dup of r01c01",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.863862,
+"lon": 2.362715,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Porte_du_Temple"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3399192"
+}
+]
 },
 {
 "id": "L0173",
@@ -3356,15 +4771,24 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "Porte Bordelles",
+"note": "gate of Philip Augustus's wall, rue Descartes",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.845086,
+"lon": 2.349262,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Porte_Saint-Marcel"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q55599152"
+}
+]
 },
 {
 "id": "L0174",
@@ -3376,15 +4800,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the medieval gate, not the triumphal arch of 1674",
+"modern": "Porte Saint-Martin (the triumphal arch of 1674 stands near the site)",
+"status": "vanished",
+"lat": 48.869171,
+"lon": 2.355601,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Porte_Saint-Martin"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Porte_Saint-Martin"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q950217"
+}
+]
 },
 {
 "id": "L0175",
@@ -3398,13 +4835,22 @@
 "flag": "ok",
 "note": "dup",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.845723,
+"lon": 2.342769,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Porte_Saint-Jacques"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q24931996"
+}
+]
 },
 {
 "id": "L0176",
@@ -3416,15 +4862,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the medieval gate, not the triumphal arch of 1672",
+"modern": "Porte Saint-Denis (the triumphal arch of 1672 stands near the site)",
+"status": "vanished",
+"lat": 48.869722,
+"lon": 2.3525,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Porte_Saint-Denis"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Porte_Saint-Denis"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q684594"
+}
+]
 },
 {
 "id": "L0177",
@@ -3438,13 +4897,22 @@
 "flag": "ok",
 "note": "dup",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.847604,
+"lon": 2.341539,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Porte_d%27Enfer"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q55599156"
+}
+]
 },
 {
 "id": "L0178",
@@ -3458,13 +4926,22 @@
 "flag": "ok",
 "note": "printed PORTE DE BVCI",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.854446,
+"lon": 2.337524,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Porte_de_Buci"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q55599159"
+}
+]
 },
 {
 "id": "L0179",
@@ -3476,15 +4953,24 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": null,
+"note": "gate of Philip Augustus's wall",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.853095,
+"lon": 2.337885,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Porte_de_Buci"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q55599159"
+}
+]
 },
 {
 "id": "L0180",
@@ -3498,13 +4984,22 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.864431,
+"lon": 2.345322,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Porte_Montmartre"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3398926"
+}
+]
 },
 {
 "id": "L0181",
@@ -3517,14 +5012,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Tour de Nesle",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Institut de France (on its site)",
+"status": "vanished",
+"lat": 48.8575,
+"lon": 2.337222,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Tour_de_Nesle"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Tour_de_Nesle"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1937108"
+}
+]
 },
 {
 "id": "L0182",
@@ -3538,13 +5046,26 @@
 "flag": "ok",
 "note": null,
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.861969,
+"lon": 2.340344,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Porte_Saint-Honor%C3%A9"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Porte_Saint-Honor%C3%A9"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3398949"
+}
+]
 },
 {
 "id": "L0183",
@@ -3556,12 +5077,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "dup",
+"note": "the Tour du Bois, the riverside end of Charles V's wall by the Louvre",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.861038,
+"lon": 2.336428,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -3577,14 +5098,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Bois de Vincennes",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Bois de Vincennes",
+"status": "standing",
+"lat": 48.83,
+"lon": 2.4333,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Bois_de_Vincennes"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Bois_de_Vincennes"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q271639"
+}
+]
 },
 {
 "id": "L0185",
@@ -3597,14 +5131,27 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Marne",
+"status": "standing",
+"lat": 48.844447,
+"lon": 2.364093,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Marne_(rivi%C3%A8re)"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Marne_%28river%29"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q41983"
+}
+]
 },
 {
 "id": "L0186",
@@ -3617,14 +5164,27 @@
 "orient": "d",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Seine",
+"status": "standing",
+"lat": 48.843146,
+"lon": 2.363198,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Seine"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Seine"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1471"
+}
+]
 },
 {
 "id": "L0187",
@@ -3636,12 +5196,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "La Croix-Faubin",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "a wayside cross",
+"modern": "Rue de la Croix-Faubin",
+"status": "vanished",
+"lat": 48.855081,
+"lon": 2.367836,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -3657,14 +5217,27 @@
 "orient": "d",
 "flag": "ok",
 "note": "Ile Louviers",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Boulevard Morland (the island was joined to the bank in 1843)",
+"status": "vanished",
+"lat": 48.848889,
+"lon": 2.363056,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/%C3%8Ele_Louviers"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/%C3%8Ele_Louviers"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q175164"
+}
+]
 },
 {
 "id": "L0189",
@@ -3676,12 +5249,12 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": null,
+"note": "the faubourg Saint-Victor",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "standing",
+"lat": 48.847274,
+"lon": 2.352354,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -3696,12 +5269,12 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "Champ d'Albiac?",
+"note": "unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.842889,
+"lon": 2.352092,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -3716,15 +5289,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Gibet de Montfaucon",
+"note": "the great royal gallows",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.877499,
+"lon": 2.369419,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Gibet_de_Montfaucon"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Gibbet_of_Montfaucon"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q987914"
+}
+]
 },
 {
 "id": "L0192",
@@ -3736,15 +5322,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Porte Baudoyer",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "gate of the earliest wall",
+"modern": "Place Baudoyer",
+"status": "vanished",
+"lat": 48.85611,
+"lon": 2.35528,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Place_Baudoyer"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3389716"
+}
+]
 },
 {
 "id": "L0193",
@@ -3756,15 +5351,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Le Terrain (tip of Cite)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "'le Terrain', the open ground at the east tip of the Cité",
+"modern": "Square Jean-XXIII",
+"status": "vanished",
+"lat": 48.8525,
+"lon": 2.35139,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Square_Jean-XXIII"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3494657"
+}
+]
 },
 {
 "id": "L0194",
@@ -3776,15 +5380,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "the Tournelle, the riverside tower of Philip Augustus's wall on the left bank",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.849883,
+"lon": 2.354889,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_la_Tournelle"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Ch%C3%A2teau_de_la_Tournelle"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2971428"
+}
+]
 },
 {
 "id": "L0195",
@@ -3796,12 +5413,12 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "Clos du Chardonnet / Champ Gaillard",
+"note": "'le Champ Gaillard'; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.847713,
+"lon": 2.349112,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -3816,12 +5433,12 @@
 ],
 "orient": "h",
 "flag": "unsure",
-"note": null,
+"note": "unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.843149,
+"lon": 2.346522,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -3836,15 +5453,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "dup",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the Gobelin family's dye works and mills on the Bièvre",
+"modern": "Manufacture des Gobelins",
+"status": "rebuilt",
+"lat": 48.83495,
+"lon": 2.35312,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Manufacture_des_Gobelins"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Gobelins_Manufactory"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q732312"
+}
+]
 },
 {
 "id": "L0198",
@@ -3856,12 +5486,12 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": null,
+"note": "the faubourg Saint-Jacques",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "standing",
+"lat": 48.843393,
+"lon": 2.341555,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -3876,12 +5506,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "printed CHERRO COVPT? check",
+"note": "reading uncertain; unresolved",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.849134,
+"lon": 2.340787,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -3896,12 +5526,12 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
+"note": "a real-tennis court near the Halles",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.861834,
+"lon": 2.346455,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -3916,12 +5546,12 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
+"note": "the mill of the Mint, on the Seine",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.857369,
+"lon": 2.34285,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -3936,12 +5566,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the palace garden at the west tip of the Cité",
+"modern": "Place Dauphine and square du Vert-Galant (on its site)",
+"status": "vanished",
+"lat": 48.856375,
+"lon": 2.343467,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -3956,12 +5586,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "printed LE PRESOER DE LOTEL DIEV",
+"note": "meadow of the Hôtel-Dieu; reading uncertain",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.845897,
+"lon": 2.338649,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -3976,15 +5606,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "printed LESTVIL LEPIES",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "in 1550 still the tile kilns that gave the Tuileries their name; the palace was begun in 1564",
+"modern": "Jardin des Tuileries",
+"status": "vanished",
+"lat": 48.863611,
+"lon": 2.326667,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Jardin_des_Tuileries"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Tuileries_Garden"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q818517"
+}
+]
 },
 {
 "id": "L0205",
@@ -3996,15 +5639,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Pre-aux-Clercs",
+"note": "the students' meadow of the University",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.857778,
+"lon": 2.327778,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Pr%C3%A9-aux-Clercs"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3408768"
+}
+]
 },
 {
 "id": "L0206",
@@ -4016,12 +5668,12 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "Port au Foin",
+"note": "the hay port (Port au Foin) on the Grève",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.854406,
+"lon": 2.354485,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -4036,12 +5688,12 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "carrefour Guillori",
+"note": "the carrefour Guillori",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.857944,
+"lon": 2.352817,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -4056,15 +5708,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the place de Grève, renamed 1803",
+"modern": "Place de l'Hôtel-de-Ville",
+"status": "renamed",
+"lat": 48.856667,
+"lon": 2.351478,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Place_de_l%27H%C3%B4tel-de-Ville_-_esplanade_de_la_Lib%C3%A9ration"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Place_de_l%27H%C3%B4tel-de-Ville_%E2%80%93_Esplanade_de_la_Lib%C3%A9ration"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q1469337"
+}
+]
 },
 {
 "id": "L0209",
@@ -4076,12 +5741,12 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "place aux Veaux",
+"note": "the calf market (place aux Veaux)",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.857791,
+"lon": 2.348641,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -4097,14 +5762,23 @@
 "orient": "d",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Place Maubert",
+"status": "standing",
+"lat": 48.8501,
+"lon": 2.3488,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Place_Maubert"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3030249"
+}
+]
 },
 {
 "id": "L0211",
@@ -4116,12 +5790,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "the Grande Boucherie, the main butchers' market, by the Grand Châtelet",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.858723,
+"lon": 2.34744,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -4136,12 +5810,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "pilori des Halles",
+"note": "the pillory of the Halles",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.863769,
+"lon": 2.347514,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -4156,12 +5830,12 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "printed LA HALE AV BLE",
+"note": "the grain hall in the Halles",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.862663,
+"lon": 2.347031,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -4176,12 +5850,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "the Beauvais butchers' market",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.862136,
+"lon": 2.345643,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -4196,15 +5870,24 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the Croix du Trahoir, a cross and place of execution at the corner of rue de l'Arbre-Sec",
+"modern": "Fontaine de la Croix-du-Trahoir (rebuilt 1776, on the site)",
+"status": "vanished",
+"lat": 48.8614,
+"lon": 2.34237,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Fontaine_de_la_Croix-du-Trahoir"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3076193"
+}
+]
 },
 {
 "id": "L0216",
@@ -4217,14 +5900,23 @@
 "orient": "d",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Marché Saint-Germain (on its site)",
+"status": "vanished",
+"lat": 48.851864,
+"lon": 2.334462,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Foire_Saint-Germain"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q109037845"
+}
+]
 },
 {
 "id": "L0217",
@@ -4236,12 +5928,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "pilori Saint-Germain",
+"note": "the pillory of Saint-Germain-des-Prés",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.852354,
+"lon": 2.333142,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
 "sources": []
@@ -4256,15 +5948,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": null,
+"note": "the pig market",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.867419,
+"lon": 2.338149,
+"loc_confidence": "uncertain",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/March%C3%A9_aux_pourceaux"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q86660653"
+}
+]
 },
 {
 "id": "L0219",
@@ -9747,14 +11448,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "printed MOTREVL SVRLEBOIS; Montreuil",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Montreuil",
+"status": "standing",
+"lat": 48.8603,
+"lon": 2.4431,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Montreuil_(Seine-Saint-Denis)"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Montreuil%2C_Seine-Saint-Denis"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q193370"
+}
+]
 },
 {
 "id": "L0441",
@@ -9767,14 +11481,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Perci (Bercy)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Bercy",
+"status": "standing",
+"lat": 48.836111,
+"lon": 2.383333,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Quartier_de_Bercy"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Bercy"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q773318"
+}
+]
 },
 {
 "id": "L0442",
@@ -9787,14 +11514,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Conflans",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Conflans (Charenton-le-Pont)",
+"status": "standing",
+"lat": 48.821389,
+"lon": 2.411944,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Charenton-le-Pont"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Charenton-le-Pont"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q212793"
+}
+]
 },
 {
 "id": "L0443",
@@ -9807,14 +11547,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Ivry",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Ivry-sur-Seine",
+"status": "standing",
+"lat": 48.8078,
+"lon": 2.3747,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Ivry-sur-Seine"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Ivry-sur-Seine"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q193877"
+}
+]
 },
 {
 "id": "L0444",
@@ -9827,14 +11580,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Vitry",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Vitry-sur-Seine",
+"status": "standing",
+"lat": 48.7875,
+"lon": 2.392778,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Vitry-sur-Seine"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Vitry-sur-Seine"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q72248"
+}
+]
 },
 {
 "id": "L0445",
@@ -9847,14 +11613,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Villejuif",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Villejuif",
+"status": "standing",
+"lat": 48.791906,
+"lon": 2.363584,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Villejuif"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Villejuif"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q128466"
+}
+]
 },
 {
 "id": "L0446",
@@ -9867,14 +11646,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Gentilly",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Gentilly",
+"status": "standing",
+"lat": 48.813333,
+"lon": 2.344444,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Gentilly_(Val-de-Marne)"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Gentilly%2C_Val-de-Marne"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q640102"
+}
+]
 },
 {
 "id": "L0447",
@@ -9887,14 +11679,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Bicetre",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Hôpital Bicêtre",
+"status": "rebuilt",
+"lat": 48.810071,
+"lon": 2.353982,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_de_Bic%C3%AAtre"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Bic%C3%AAtre_Hospital"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q15217751"
+}
+]
 },
 {
 "id": "L0448",
@@ -9907,14 +11712,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Belleville",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Belleville",
+"status": "standing",
+"lat": 48.873889,
+"lon": 2.385278,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Quartier_de_Belleville"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Belleville%2C_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q815949"
+}
+]
 },
 {
 "id": "L0449",
@@ -9927,14 +11745,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Bagnolet",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Bagnolet",
+"status": "standing",
+"lat": 48.8692,
+"lon": 2.4181,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Bagnolet"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Bagnolet"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q208943"
+}
+]
 },
 {
 "id": "L0450",
@@ -9947,14 +11778,23 @@
 "orient": "h",
 "flag": "unsure",
 "note": "printed RVELI; Reuilly",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Reuilly",
+"status": "standing",
+"lat": 48.850582,
+"lon": 2.364885,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Quartier_de_Reuilly"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3413168"
+}
+]
 },
 {
 "id": "L0451",
@@ -9967,14 +11807,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Popincourt",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Popincourt",
+"status": "standing",
+"lat": 49.6669,
+"lon": 2.7331,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Dancourt-Popincourt"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Dancourt-Popincourt"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q61770"
+}
+]
 },
 {
 "id": "L0452",
@@ -9988,13 +11841,22 @@
 "flag": "ok",
 "note": "La Courtille",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "standing",
+"lat": 48.866048,
+"lon": 2.365438,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/La_Courtille"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3207922"
+}
+]
 },
 {
 "id": "L0453",
@@ -10006,15 +11868,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Les Marais",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "in 1550 still market gardens outside the wall",
+"modern": "Le Marais",
+"status": "standing",
+"lat": 48.8576,
+"lon": 2.361453,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Le_Marais_(quartier_parisien)"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/The_Marais"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q749573"
+}
+]
 },
 {
 "id": "L0454",
@@ -10026,12 +11901,12 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "dup",
+"note": "the faubourg Saint-Laurent",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "standing",
+"lat": 48.868186,
+"lon": 2.356773,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": []
@@ -10047,34 +11922,27 @@
 "orient": "h",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue du Faubourg-Saint-Denis",
+"status": "standing",
+"lat": 48.873056,
+"lon": 2.354444,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Rue_du_Faubourg-Saint-Denis"
 },
 {
-"id": "L0456",
-"old": "LA VILLE NEUVE",
-"type": "village_faubourg",
-"px": [
-1080,
-4890
-],
-"orient": "v",
-"flag": "ok",
-"note": "second label",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
-"summary": null,
-"variants": [],
-"sources": []
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Rue_du_Faubourg-Saint-Denis"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3452301"
+}
+]
 },
 {
 "id": "L0457",
@@ -10086,15 +11954,24 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Villeneuve-sur-Gravois (Bonne-Nouvelle)",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"note": "the Villeneuve-sur-Gravois",
+"modern": "Bonne-Nouvelle",
+"status": "standing",
+"lat": 48.866776,
+"lon": 2.350087,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Quartier_de_Bonne-Nouvelle"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3413158"
+}
+]
 },
 {
 "id": "L0458",
@@ -10107,14 +11984,23 @@
 "orient": "h",
 "flag": "ok",
 "note": "Clignancourt",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Clignancourt",
+"status": "standing",
+"lat": 48.8885,
+"lon": 2.34219,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Quartier_de_Clignancourt"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3413163"
+}
+]
 },
 {
 "id": "L0459",
@@ -10127,14 +12013,27 @@
 "orient": "d",
 "flag": "ok",
 "note": "Montmartre",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Montmartre",
+"status": "standing",
+"lat": 48.8861,
+"lon": 2.34306,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Montmartre"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Montmartre"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q186115"
+}
+]
 },
 {
 "id": "L0460",
@@ -10147,14 +12046,23 @@
 "orient": "d",
 "flag": "ok",
 "note": "Grange-Bateliere",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de la Grange-Batelière",
+"status": "vanished",
+"lat": 48.873261,
+"lon": 2.340437,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Ferme_de_la_Grange-Bateli%C3%A8re"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q16507914"
+}
+]
 },
 {
 "id": "L0461",
@@ -10167,14 +12075,23 @@
 "orient": "d",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Faubourg Saint-Germain",
+"status": "standing",
+"lat": 48.858,
+"lon": 2.32,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Faubourg_Saint-Germain"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q255910"
+}
+]
 },
 {
 "id": "L0462",
@@ -10188,13 +12105,22 @@
 "flag": "ok",
 "note": "Les Porcherons",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "vanished",
+"lat": 48.8754,
+"lon": 2.33011,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_des_Porcherons"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2971540"
+}
+]
 },
 {
 "id": "L0463",
@@ -10207,14 +12133,23 @@
 "orient": "v",
 "flag": "ok",
 "note": null,
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue du Faubourg-Saint-Honoré",
+"status": "standing",
+"lat": 48.871109,
+"lon": 2.316313,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Faubourg_Saint-Honor%C3%A9"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3067310"
+}
+]
 },
 {
 "id": "L0464",
@@ -10227,14 +12162,23 @@
 "orient": "h",
 "flag": "ok",
 "note": "La Ville-l'Eveque",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Rue de la Ville-l'Évêque",
+"status": "vanished",
+"lat": 48.87116,
+"lon": 2.32164,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Ville_l%27%C3%89v%C3%AAque"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q16682673"
+}
+]
 },
 {
 "id": "L0465",
@@ -10248,13 +12192,26 @@
 "flag": "ok",
 "note": "Le Roule",
 "modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"status": "standing",
+"lat": 48.87355,
+"lon": 2.303738,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Quartier_du_Faubourg-du-Roule"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Quartier_du_Faubourg-du-Roule"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2720548"
+}
+]
 },
 {
 "id": "L0466",
@@ -10267,14 +12224,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Chaillot",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Chaillot",
+"status": "standing",
+"lat": 48.869167,
+"lon": 2.291667,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Quartier_de_Chaillot"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Chaillot"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3413160"
+}
+]
 },
 {
 "id": "L0467",
@@ -10287,14 +12257,27 @@
 "orient": "h",
 "flag": "ok",
 "note": "Auteuil",
-"modern": null,
-"status": null,
-"lat": null,
-"lon": null,
-"loc_confidence": null,
+"modern": "Auteuil",
+"status": "standing",
+"lat": 48.852235,
+"lon": 2.252798,
+"loc_confidence": "exact",
 "summary": null,
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Quartier_d%27Auteuil"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Auteuil%2C_Paris"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q784536"
+}
+]
 }
 ]
 }
