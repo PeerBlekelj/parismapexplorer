@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-25T22:33:08+00:00",
+"generated": "2026-10-25T22:33:43+00:00",
 "image": {
 "width": 10890,
 "height": 7820,
@@ -279,7 +279,7 @@
 ],
 "orient": "h",
 "flag": "unsure",
-"note": "reading uncertain; unresolved",
+"note": "reading confirmed at high zoom: 'Lostel de Brianne'; not yet identified",
 "modern": null,
 "status": "vanished",
 "lat": 48.853215,
@@ -443,7 +443,7 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "reading uncertain; unresolved",
+"note": "reading confirmed at high zoom: 'Lostel de Lo Reine', beside the Bernardins; perhaps a phonetic spelling of 'de Lorraine'",
 "modern": null,
 "status": "vanished",
 "lat": 48.850545,
@@ -796,15 +796,28 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Hôtel d'Alençon near the Louvre; unresolved",
+"note": "the Hôtel d'Alençon, which adjoined the Hôtel du Petit-Bourbon facing the Louvre (Wikipedia, Hôtel du Petit-Bourbon)",
 "modern": null,
 "status": "vanished",
 "lat": 48.861379,
 "lon": 2.341502,
-"loc_confidence": "uncertain",
-"summary": null,
+"loc_confidence": "approx",
+"summary": "The town house of the dukes of Alençon, facing the medieval Louvre next to the Hôtel du Petit-Bourbon. It disappeared when the Louvre was extended eastwards.",
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Petit-Bourbon"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/H%C3%B4tel_du_Petit-Bourbon"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3377026"
+}
+]
 },
 {
 "id": "L0030",
