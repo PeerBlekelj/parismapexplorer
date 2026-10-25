@@ -44,9 +44,14 @@ for g in csv.DictReader(open(root / "data/gcps.csv")):
     pts.append({"id": g["id"], "name": g["name"], "x": int(g["x"]), "y": int(g["y"]),
                 "lat": float(g["lat"]), "lon": float(g["lon"]), "src": "hand"})
 inv = {r["id"]: r for r in csv.DictReader(open(root / "data/labels_inventory.csv"))}
+# Correct coordinates, but harmful as control points: the only point in a large, heavily
+# compressed area of the bird's-eye view, so the spline stretches everything around it.
+EXCLUDE = {"L0001": "Pont de Charenton: lone point 3 km beyond the city edge"}
 for r in csv.DictReader(open(root / "data/places_others.csv")):
     L = inv[r["id"]]
     if r["loc_confidence"] != "exact" or r["duplicate_of"] or L["type"] in ("village_faubourg", "other"):
+        continue
+    if r["id"] in EXCLUDE:
         continue
     x, y = int(L["x"]), int(L["y"])
     if any(abs(p["x"] - x) < 150 and abs(p["y"] - y) < 150 for p in pts):
