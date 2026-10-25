@@ -12,13 +12,14 @@ Live (once launched): https://parismapexplorer.vercel.app
 |---|---|
 | Views | Side-by-side synced **and** overlay (old map bent to fit modern streets, swipe + opacity slider), plus "1550 only" / "today only" |
 | Orientation | Default north-up (old map rotated). Toggle "original orientation": old map east-up as printed, modern map rotated to match |
-| Layout | Mockup layout 1, "Atlas sidebar": search + filters + results + info card on the left, map on the right |
+| Layout | Mockup layout 1, "Atlas sidebar": search + filters + results + info card on the left, map on the right. Opacity slider only in overlay mode. A full **table of places** (from mockup 3) as an extra view |
 | Scope | **Every** label on the map. The cartouche counts 287 streets and alleys, 104 churches and monasteries, 49 colleges; plus gates, bridges, mansions, fields, mills |
 | Vanished places | Shown where they stood, marked as vanished, with a note on what is there now |
 | Info cards | Distilled from Wikipedia / Wikidata (and other sources), with attribution |
 | Languages | English first; French and Swedish later via a switch |
 | Devices | Desktop first, then mobile |
 | Contributions | Stage 1: GitHub pull requests to the data files. Stage 2: an in-site "suggest a correction" form with moderation |
+| Search engines | Indexed at launch (noindex only on the placeholder) |
 | Identity | Public under the alias **Peer Blekelj** (GitHub + Vercel). Never the real name in commits, pages or metadata |
 
 ## Source
