@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-25T22:31:40+00:00",
+"generated": "2026-10-25T22:33:08+00:00",
 "image": {
 "width": 10890,
 "height": 7820,
@@ -361,15 +361,24 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "unresolved",
+"note": "the college of Tournai, founded in 1353 next to the college of Boncourt; the label calls it 'l'ostel'",
 "modern": null,
 "status": "vanished",
 "lat": 48.845784,
 "lon": 2.348972,
-"loc_confidence": "uncertain",
-"summary": null,
+"loc_confidence": "approx",
+"summary": "A college of the University of Paris founded in 1353 by Gilles de Lorris, bishop of Noyon and Tournai, at the same time as the neighbouring college of Boncourt. It was later united with the college of Navarre.",
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Coll%C3%A8ge_de_Tournai"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q2983789"
+}
+]
 },
 {
 "id": "L0014",
@@ -5269,15 +5278,24 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "unresolved",
+"note": "the Champ d'Albiac: in the 1540s parts of the clos du Chardonnet were granted to René d'Ablon and d'Albiac for building",
 "modern": null,
 "status": "vanished",
 "lat": 48.842889,
 "lon": 2.352092,
-"loc_confidence": "uncertain",
-"summary": null,
+"loc_confidence": "approx",
+"summary": "The 'Champ d'Albiac', open ground of the clos du Chardonnet. At the end of François I's reign (the 1540s) the clos was divided up for building and plots were granted to René d'Ablon and d'Albiac; this map shows it still largely open.",
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Liste_de_rues_m%C3%A9di%C3%A9vales_du_quartier_du_Chardonnet"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q16656226"
+}
+]
 },
 {
 "id": "L0191",
@@ -5413,15 +5431,24 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "'le Champ Gaillard'; unresolved",
+"note": "the Champ-Gaillard, the ground around the rue Clopin (named after the great house Clopin), next to the college of Navarre",
 "modern": null,
 "status": "vanished",
 "lat": 48.847713,
 "lon": 2.349112,
-"loc_confidence": "uncertain",
-"summary": null,
+"loc_confidence": "approx",
+"summary": "The Champ-Gaillard, ground on the slope of the montagne Sainte-Geneviève next to the college of Navarre, crossed by the rue Clopin, which was named after the great house Clopin. It disappeared under the École polytechnique and later buildings.",
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Liste_de_rues_m%C3%A9di%C3%A9vales_du_quartier_du_Chardonnet"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q16656226"
+}
+]
 },
 {
 "id": "L0196",
@@ -7643,7 +7670,7 @@
 "flag": "ok",
 "note": "rue au Maire",
 "modern": "Rue au Maire",
-"status": "renamed",
+"status": "standing",
 "lat": 48.864653,
 "lon": 2.356066,
 "loc_confidence": "exact",
@@ -8086,7 +8113,7 @@
 ],
 "orient": "v",
 "flag": "unsure",
-"note": "possibly rue Clopin; reading uncertain",
+"note": "very likely the rue Clopin, beside the Champ-Gaillard; the label may be cut short",
 "modern": null,
 "status": "vanished",
 "lat": 48.848132,
