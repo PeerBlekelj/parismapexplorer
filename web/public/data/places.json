@@ -1,0 +1,9250 @@
+{
+"generated": "2026-10-25T18:50:38+00:00",
+"image": {
+"width": 10890,
+"height": 7820,
+"orientation": "east-up"
+},
+"places": [
+{
+"id": "L0001",
+"old": "LE PONT DE CHALANTON",
+"type": "bridge",
+"px": [
+7570,
+75
+],
+"orient": "h",
+"flag": "ok",
+"note": "Pont de Charenton",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0002",
+"old": "LE PONT NOSTRE DAME",
+"type": "bridge",
+"px": [
+5620,
+3755
+],
+"orient": "h",
+"flag": "ok",
+"note": "printed LE PONT HOSTRE DAME",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0003",
+"old": "PETIT PONT",
+"type": "bridge",
+"px": [
+6640,
+3965
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0004",
+"old": "LE PONT AU CHANGE",
+"type": "bridge",
+"px": [
+5680,
+4070
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0005",
+"old": "LE PONT AU MUNIERS",
+"type": "bridge",
+"px": [
+5680,
+4265
+],
+"orient": "h",
+"flag": "ok",
+"note": "Pont aux Meuniers",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0006",
+"old": "LE PONT S. MICHEL",
+"type": "bridge",
+"px": [
+6680,
+4195
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0007",
+"old": "LE PONT ARCANS",
+"type": "bridge",
+"px": [
+1100,
+7150
+],
+"orient": "d",
+"flag": "ok",
+"note": "Pont d'Arcans (Grand Egout bridge)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0008",
+"old": "LES TOURNELLES",
+"type": "building",
+"px": [
+4240,
+1325
+],
+"orient": "h",
+"flag": "ok",
+"note": "Hotel des Tournelles",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0009",
+"old": "LOSTEL DANGOULESME",
+"type": "building",
+"px": [
+4510,
+1370
+],
+"orient": "h",
+"flag": "ok",
+"note": "printed LOSTE DAN GOULESME",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0010",
+"old": "LOSTEL DE BRIANNE",
+"type": "building",
+"px": [
+4960,
+1240
+],
+"orient": "h",
+"flag": "unsure",
+"note": "printed LOSTELDEBRIANNE; hotel (de Brienne?)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0011",
+"old": "LOSTEL DU PREVOST DE PARIS",
+"type": "building",
+"px": [
+4820,
+1870
+],
+"orient": "h",
+"flag": "ok",
+"note": "printed LOS TE DU PREVOS DE PARIS",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0012",
+"old": "LOSTEL DE LA REINE",
+"type": "building",
+"px": [
+5160,
+1540
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0013",
+"old": "LOSTEL DE TOURNAI",
+"type": "building",
+"px": [
+8570,
+2830
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0014",
+"old": "LOSTEL DARGENT",
+"type": "building",
+"px": [
+4540,
+3365
+],
+"orient": "h",
+"flag": "unsure",
+"note": "printed LOSTEL DAR GENT; Hotel d'Argent",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0015",
+"old": "LOSTEL DE LA VILE",
+"type": "building",
+"px": [
+5050,
+3245
+],
+"orient": "h",
+"flag": "ok",
+"note": "Hotel de Ville",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0016",
+"old": "LOSTEL DE LO REINE",
+"type": "building",
+"px": [
+7140,
+3165
+],
+"orient": "h",
+"flag": "ok",
+"note": "hotel de Lorraine? check",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0017",
+"old": "PETIT CHATELET",
+"type": "building",
+"px": [
+6810,
+3895
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0018",
+"old": "CHATELET",
+"type": "building",
+"px": [
+5240,
+4240
+],
+"orient": "h",
+"flag": "ok",
+"note": "Grand Chatelet",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0019",
+"old": "LORLOGE",
+"type": "building",
+"px": [
+5960,
+4200
+],
+"orient": "v",
+"flag": "ok",
+"note": "Tour de l'Horloge",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0020",
+"old": "LA CONCIERGERIE",
+"type": "building",
+"px": [
+6040,
+4425
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0021",
+"old": "LE PALAYS",
+"type": "building",
+"px": [
+6180,
+4260
+],
+"orient": "h",
+"flag": "ok",
+"note": "Palais",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0022",
+"old": "LA CHAMBRE DES CONTES",
+"type": "building",
+"px": [
+6330,
+4440
+],
+"orient": "h",
+"flag": "ok",
+"note": "Chambre des Comptes",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0023",
+"old": "LOSTEL DE TES",
+"type": "building",
+"px": [
+7370,
+4370
+],
+"orient": "v",
+"flag": "unsure",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0024",
+"old": "LOTEL DE CLUNI",
+"type": "building",
+"px": [
+7730,
+4170
+],
+"orient": "h",
+"flag": "ok",
+"note": "Hotel de Cluny",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0025",
+"old": "LA MONNOIE",
+"type": "building",
+"px": [
+4840,
+4820
+],
+"orient": "h",
+"flag": "ok",
+"note": "Hotel des Monnaies",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0026",
+"old": "LE FOUR LEVESQUE",
+"type": "building",
+"px": [
+5300,
+4630
+],
+"orient": "h",
+"flag": "ok",
+"note": "For-l'Eveque",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0027",
+"old": "LOTEL DE NEVERS",
+"type": "building",
+"px": [
+7150,
+4930
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0028",
+"old": "LOTEL DE RIMS",
+"type": "building",
+"px": [
+7740,
+4760
+],
+"orient": "h",
+"flag": "ok",
+"note": "hotel de Reims",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0029",
+"old": "LOSTEL DALANCON",
+"type": "building",
+"px": [
+4880,
+5450
+],
+"orient": "h",
+"flag": "ok",
+"note": "Hotel d'Alencon",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0030",
+"old": "LOSTEL DE BOURBON",
+"type": "building",
+"px": [
+5130,
+5450
+],
+"orient": "h",
+"flag": "ok",
+"note": "Petit-Bourbon",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0031",
+"old": "LOTEL S. DENIS",
+"type": "building",
+"px": [
+7180,
+5300
+],
+"orient": "h",
+"flag": "ok",
+"note": "hotel Saint-Denis",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0032",
+"old": "LOSTEL DE ROUEN",
+"type": "building",
+"px": [
+7620,
+5110
+],
+"orient": "h",
+"flag": "ok",
+"note": "dup",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0033",
+"old": "LE LOUVRE",
+"type": "building",
+"px": [
+5070,
+5860
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0034",
+"old": "LOSTEL DE NELLE",
+"type": "building",
+"px": [
+6800,
+5550
+],
+"orient": "d",
+"flag": "ok",
+"note": "Hotel de Nesle",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0035",
+"old": "S. ANTHOINE",
+"type": "church_religious",
+"px": [
+4830,
+405
+],
+"orient": "h",
+"flag": "ok",
+"note": "abbey of Saint-Antoine-des-Champs",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0036",
+"old": "LES CELESTINS",
+"type": "church_religious",
+"px": [
+5520,
+1090
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0037",
+"old": "S. MARCEAU",
+"type": "church_religious",
+"px": [
+9620,
+1005
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Marcel",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0038",
+"old": "S. IPOLITE",
+"type": "church_religious",
+"px": [
+9950,
+1080
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Hippolyte",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0039",
+"old": "LOPITAL",
+"type": "church_religious",
+"px": [
+10050,
+1400
+],
+"orient": "h",
+"flag": "ok",
+"note": "hopital (Lourcine?)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0040",
+"old": "LES CORDELIERES",
+"type": "church_religious",
+"px": [
+10530,
+1000
+],
+"orient": "h",
+"flag": "ok",
+"note": "Cordelieres (convent at Lourcine)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0041",
+"old": "S. CATERINE DU VAL DES ESCOLIERS",
+"type": "church_religious",
+"px": [
+4290,
+1750
+],
+"orient": "h",
+"flag": "ok",
+"note": "printed S. CATERINNE DU VAL DES ECOLIERS",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0042",
+"old": "S. POL",
+"type": "church_religious",
+"px": [
+4760,
+1720
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Paul",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0043",
+"old": "LAVE MARIA",
+"type": "church_religious",
+"px": [
+5120,
+1965
+],
+"orient": "h",
+"flag": "ok",
+"note": "Ave-Maria convent",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0044",
+"old": "S. MEDART",
+"type": "church_religious",
+"px": [
+9650,
+1625
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Medard",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0045",
+"old": "LEGLISE DU TEMPLE",
+"type": "church_religious",
+"px": [
+2340,
+2475
+],
+"orient": "h",
+"flag": "ok",
+"note": "Enclos du Temple church",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0046",
+"old": "LES ENFANS ROUGE",
+"type": "church_religious",
+"px": [
+2890,
+2230
+],
+"orient": "h",
+"flag": "ok",
+"note": "Enfants-Rouges",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0047",
+"old": "LA CHAPELLE DE BRAQUES",
+"type": "church_religious",
+"px": [
+3460,
+2400
+],
+"orient": "d",
+"flag": "ok",
+"note": "printed LA CHAPELLE DE BRAQVES",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0048",
+"old": "S. ANTHOINE",
+"type": "church_religious",
+"px": [
+4500,
+2140
+],
+"orient": "h",
+"flag": "ok",
+"note": "Petit Saint-Antoine",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0049",
+"old": "S. VITOR",
+"type": "church_religious",
+"px": [
+7610,
+2120
+],
+"orient": "h",
+"flag": "ok",
+"note": "Abbaye Saint-Victor",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0050",
+"old": "LES BILLETTES",
+"type": "church_religious",
+"px": [
+4160,
+2960
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0051",
+"old": "LE CIMETIERE S. IEHAN",
+"type": "church_religious",
+"px": [
+4640,
+2650
+],
+"orient": "h",
+"flag": "ok",
+"note": "cimetiere Saint-Jean",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0052",
+"old": "LOPITAL S. GERVES",
+"type": "church_religious",
+"px": [
+4870,
+2770
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0053",
+"old": "S. GERVES",
+"type": "church_religious",
+"px": [
+5030,
+2770
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Gervais",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0054",
+"old": "S. IEHAN",
+"type": "church_religious",
+"px": [
+5060,
+2975
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Jean-en-Greve",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0055",
+"old": "LES AUDRIETTES",
+"type": "church_religious",
+"px": [
+5330,
+2970
+],
+"orient": "v",
+"flag": "ok",
+"note": "Haudriettes",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0056",
+"old": "CIMETIERE S. NICOLAS",
+"type": "church_religious",
+"px": [
+3130,
+3210
+],
+"orient": "v",
+"flag": "ok",
+"note": "dup",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0057",
+"old": "CLOISTRE S. MARI",
+"type": "church_religious",
+"px": [
+4230,
+3380
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0058",
+"old": "S. MARI",
+"type": "church_religious",
+"px": [
+4290,
+3330
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Merri (church)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0059",
+"old": "LES ESPERIT",
+"type": "church_religious",
+"px": [
+4950,
+3085
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Esprit hospital",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0060",
+"old": "LE CLOISTRE",
+"type": "church_religious",
+"px": [
+6220,
+3335
+],
+"orient": "h",
+"flag": "ok",
+"note": "cloister of Notre-Dame",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0061",
+"old": "S. DENIS DU PAS",
+"type": "church_religious",
+"px": [
+6510,
+3205
+],
+"orient": "h",
+"flag": "ok",
+"note": "dup",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0062",
+"old": "LES BERNARDINS",
+"type": "church_religious",
+"px": [
+7170,
+3060
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0063",
+"old": "S. NICOLAS DU CHARDONNERET",
+"type": "church_religious",
+"px": [
+7530,
+3110
+],
+"orient": "h",
+"flag": "ok",
+"note": "dup",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0064",
+"old": "S. ETIENE",
+"type": "church_religious",
+"px": [
+8590,
+3080
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Etienne-du-Mont",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0065",
+"old": "S. GENEVIEVE",
+"type": "church_religious",
+"px": [
+8890,
+3150
+],
+"orient": "h",
+"flag": "ok",
+"note": "abbey",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0066",
+"old": "S. LAURENS",
+"type": "church_religious",
+"px": [
+410,
+3815
+],
+"orient": "h",
+"flag": "ok",
+"note": "printed S. LAVRES; Saint-Laurent",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0067",
+"old": "S. NICOLAS DES CHAS",
+"type": "church_religious",
+"px": [
+2420,
+3660
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Nicolas-des-Champs",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0068",
+"old": "S. MARTIN DES CHAMS",
+"type": "church_religious",
+"px": [
+2450,
+3510
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Martin-des-Champs",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0069",
+"old": "LOSPITAL S. IULIAN",
+"type": "church_religious",
+"px": [
+3435,
+3745
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Julien-des-Menetriers",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0070",
+"old": "S. MARRI",
+"type": "church_religious",
+"px": [
+4310,
+3745
+],
+"orient": "h",
+"flag": "ok",
+"note": "second Saint-Merri label (street?)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0071",
+"old": "S. BON",
+"type": "church_religious",
+"px": [
+4480,
+3550
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Bon",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0072",
+"old": "S. IAQUES DE LA BOUCHERIE",
+"type": "church_religious",
+"px": [
+4800,
+3950
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0073",
+"old": "S. LANDRI",
+"type": "church_religious",
+"px": [
+6080,
+3510
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0074",
+"old": "S. MARCIAL",
+"type": "church_religious",
+"px": [
+6290,
+3910
+],
+"orient": "h",
+"flag": "unsure",
+"note": "printed S. MACIAS? Saint-Martial",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0075",
+"old": "LA MADELINNE",
+"type": "church_religious",
+"px": [
+6340,
+3845
+],
+"orient": "d",
+"flag": "ok",
+"note": "Sainte-Madeleine-en-la-Cite",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0076",
+"old": "S. CHRISTOFLE",
+"type": "church_religious",
+"px": [
+6430,
+3665
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0077",
+"old": "S. GENEVIEVE",
+"type": "church_religious",
+"px": [
+6460,
+3810
+],
+"orient": "h",
+"flag": "ok",
+"note": "Sainte-Genevieve-des-Ardents",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0078",
+"old": "S. GERMAIN LE VIEUS",
+"type": "church_religious",
+"px": [
+6460,
+3990
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0079",
+"old": "NOSTRE DAME DE PARIS",
+"type": "church_religious",
+"px": [
+6490,
+3585
+],
+"orient": "h",
+"flag": "ok",
+"note": "printed HOSTREDA ME DEPARIS",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0080",
+"old": "LOSTEL DIEU",
+"type": "church_religious",
+"px": [
+6610,
+3645
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0081",
+"old": "LOTEL DIEU",
+"type": "church_religious",
+"px": [
+6610,
+3910
+],
+"orient": "h",
+"flag": "ok",
+"note": "second Hotel-Dieu label",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0082",
+"old": "S. IULIEN",
+"type": "church_religious",
+"px": [
+7030,
+3860
+],
+"orient": "d",
+"flag": "ok",
+"note": "Saint-Julien-le-Pauvre (label upside down)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0083",
+"old": "S. YVES",
+"type": "church_religious",
+"px": [
+7450,
+3815
+],
+"orient": "h",
+"flag": "ok",
+"note": "chapelle Saint-Yves",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0084",
+"old": "LES CARMES",
+"type": "church_religious",
+"px": [
+7780,
+3550
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0085",
+"old": "S. IEHAN DE LATRAN",
+"type": "church_religious",
+"px": [
+7790,
+3830
+],
+"orient": "h",
+"flag": "ok",
+"note": "commanderie Saint-Jean-de-Latran",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0086",
+"old": "S. HILAIRE",
+"type": "church_religious",
+"px": [
+8150,
+3685
+],
+"orient": "h",
+"flag": "ok",
+"note": "dup",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0087",
+"old": "S. ETIENE DES GRES",
+"type": "church_religious",
+"px": [
+8890,
+3760
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0088",
+"old": "S. IAQUES DU HAULT PAS",
+"type": "church_religious",
+"px": [
+9880,
+3990
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0089",
+"old": "LOPITAL",
+"type": "church_religious",
+"px": [
+10090,
+3935
+],
+"orient": "h",
+"flag": "ok",
+"note": "hopital Saint-Jacques-du-Haut-Pas",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0090",
+"old": "NOSTRE DAME DES CHAMS",
+"type": "church_religious",
+"px": [
+10600,
+3920
+],
+"orient": "h",
+"flag": "ok",
+"note": "Notre-Dame-des-Champs",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0091",
+"old": "S. LADRE",
+"type": "church_religious",
+"px": [
+240,
+4410
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Lazare (leper house)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0092",
+"old": "CIMETIERE DE LA TERNITE",
+"type": "church_religious",
+"px": [
+2450,
+4120
+],
+"orient": "h",
+"flag": "ok",
+"note": "cimetiere de la Trinite",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0093",
+"old": "LOPITAL S. IAQUES",
+"type": "church_religious",
+"px": [
+3300,
+4440
+],
+"orient": "h",
+"flag": "ok",
+"note": "hopital Saint-Jacques-aux-Pelerins",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0094",
+"old": "S. LEU S. GILLE",
+"type": "church_religious",
+"px": [
+3430,
+4310
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Leu-Saint-Gilles",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0095",
+"old": "S. MAGLOIRE",
+"type": "church_religious",
+"px": [
+3610,
+4065
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0096",
+"old": "LE SEPULCRE",
+"type": "church_religious",
+"px": [
+3870,
+4290
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Sepulcre",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0097",
+"old": "S. INOCENS",
+"type": "church_religious",
+"px": [
+4130,
+4490
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saints-Innocents",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0098",
+"old": "S. OPORTUNE",
+"type": "church_religious",
+"px": [
+4440,
+4405
+],
+"orient": "h",
+"flag": "ok",
+"note": "Sainte-Opportune",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0099",
+"old": "S. CATERINNE",
+"type": "church_religious",
+"px": [
+4500,
+4230
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0100",
+"old": "LOPITAL",
+"type": "church_religious",
+"px": [
+4550,
+4190
+],
+"orient": "h",
+"flag": "ok",
+"note": "hospital Sainte-Catherine",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0101",
+"old": "S. LEUFROI",
+"type": "church_religious",
+"px": [
+5350,
+4135
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Leufroy",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0102",
+"old": "S. PIERRE DES ASSIS",
+"type": "church_religious",
+"px": [
+6120,
+4060
+],
+"orient": "h",
+"flag": "ok",
+"note": "dup",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0103",
+"old": "S. BERTELEMI",
+"type": "church_religious",
+"px": [
+6120,
+4135
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Barthelemy",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0104",
+"old": "S. ELOI",
+"type": "church_religious",
+"px": [
+6280,
+4080
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0105",
+"old": "S. CHAPPELLE",
+"type": "church_religious",
+"px": [
+6430,
+4340
+],
+"orient": "h",
+"flag": "ok",
+"note": "manuscript addition (Sainte-Chapelle)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0106",
+"old": "S. MICHEL",
+"type": "church_religious",
+"px": [
+6440,
+4280
+],
+"orient": "h",
+"flag": "ok",
+"note": "chapelle Saint-Michel",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0107",
+"old": "S. SEVERIN",
+"type": "church_religious",
+"px": [
+7190,
+4040
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0108",
+"old": "LES MATURINS",
+"type": "church_religious",
+"px": [
+7650,
+4070
+],
+"orient": "h",
+"flag": "ok",
+"note": "Mathurins",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0109",
+"old": "LE CLOISTRE S. BENOIST",
+"type": "church_religious",
+"px": [
+7920,
+4090
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0110",
+"old": "S. COME",
+"type": "church_religious",
+"px": [
+7980,
+4470
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Come",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0111",
+"old": "LES IACOPINS",
+"type": "church_religious",
+"px": [
+8790,
+4060
+],
+"orient": "h",
+"flag": "ok",
+"note": "Jacobins",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0112",
+"old": "LES FILLES DIEU",
+"type": "church_religious",
+"px": [
+2130,
+4520
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0113",
+"old": "S. SAUVEUR",
+"type": "church_religious",
+"px": [
+2400,
+4520
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0114",
+"old": "LA CHAPELLE DES ORFEVRES",
+"type": "church_religious",
+"px": [
+5030,
+4520
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0115",
+"old": "S. ANDRI",
+"type": "church_religious",
+"px": [
+7230,
+4620
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Andre-des-Arts",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0116",
+"old": "LES CORDELIERS",
+"type": "church_religious",
+"px": [
+8130,
+4930
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0117",
+"old": "LES CHARTEREUS",
+"type": "church_religious",
+"px": [
+10370,
+4545
+],
+"orient": "h",
+"flag": "ok",
+"note": "Chartreux (Vauvert)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0118",
+"old": "S. EUSTACE",
+"type": "church_religious",
+"px": [
+3780,
+5050
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Eustache",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0119",
+"old": "LES FILLES REPENTIS",
+"type": "church_religious",
+"px": [
+3980,
+5370
+],
+"orient": "h",
+"flag": "ok",
+"note": "Filles-Penitentes",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0120",
+"old": "S. GERMAIN DE LOCERRAS",
+"type": "church_religious",
+"px": [
+5000,
+5225
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Germain-l'Auxerrois",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0121",
+"old": "LES AUGUSTINS",
+"type": "church_religious",
+"px": [
+6850,
+5260
+],
+"orient": "h",
+"flag": "ok",
+"note": "dup",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0122",
+"old": "LA CHAPELLE DES MARTIS",
+"type": "church_religious",
+"px": [
+380,
+5960
+],
+"orient": "h",
+"flag": "ok",
+"note": "chapelle des Martyrs",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0123",
+"old": "S. HONORE",
+"type": "church_religious",
+"px": [
+4080,
+5870
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Honore (collegiate church)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0124",
+"old": "S. SURPLICE",
+"type": "church_religious",
+"px": [
+8710,
+5520
+],
+"orient": "v",
+"flag": "ok",
+"note": "Saint-Sulpice",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0125",
+"old": "LES QUINSE VINS",
+"type": "church_religious",
+"px": [
+4520,
+6240
+],
+"orient": "h",
+"flag": "ok",
+"note": "Quinze-Vingts",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0126",
+"old": "S. THOMAS",
+"type": "church_religious",
+"px": [
+4950,
+6200
+],
+"orient": "h",
+"flag": "ok",
+"note": "Saint-Thomas-du-Louvre",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0127",
+"old": "S. GERMAIN DES PRES",
+"type": "church_religious",
+"px": [
+8420,
+6320
+],
+"orient": "v",
+"flag": "ok",
+"note": "abbey",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0128",
+"old": "LES BONS HOMMES",
+"type": "church_religious",
+"px": [
+8340,
+7690
+],
+"orient": "h",
+"flag": "ok",
+"note": "Minimes de Chaillot (Bonshommes)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0129",
+"old": "LE CARDINAL LEMOINE",
+"type": "college",
+"px": [
+7420,
+2760
+],
+"orient": "h",
+"flag": "ok",
+"note": "college du Cardinal-Lemoine",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0130",
+"old": "BON COURT",
+"type": "college",
+"px": [
+8350,
+2870
+],
+"orient": "d",
+"flag": "ok",
+"note": "college de Boncourt",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0131",
+"old": "LA MARCHE",
+"type": "college",
+"px": [
+7840,
+3335
+],
+"orient": "h",
+"flag": "ok",
+"note": "college de la Marche",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0132",
+"old": "NAVARRE",
+"type": "college",
+"px": [
+8100,
+3190
+],
+"orient": "h",
+"flag": "ok",
+"note": "college de Navarre",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0133",
+"old": "ALBRET",
+"type": "college",
+"px": [
+8150,
+3410
+],
+"orient": "h",
+"flag": "ok",
+"note": "college d'Albret? check",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0134",
+"old": "LES DE BONS ENFANS",
+"type": "college",
+"px": [
+8300,
+3390
+],
+"orient": "h",
+"flag": "unsure",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0135",
+"old": "CORNALLE",
+"type": "college",
+"px": [
+7350,
+3815
+],
+"orient": "h",
+"flag": "ok",
+"note": "college de Cornouaille",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0136",
+"old": "PRELLE",
+"type": "college",
+"px": [
+7680,
+3660
+],
+"orient": "h",
+"flag": "ok",
+"note": "college de Presles",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0137",
+"old": "BEAUVAIS",
+"type": "college",
+"px": [
+7830,
+3690
+],
+"orient": "h",
+"flag": "ok",
+"note": "college de Beauvais (Dormans-Beauvais)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0138",
+"old": "LE GRANT DECRET",
+"type": "college",
+"px": [
+8070,
+3700
+],
+"orient": "h",
+"flag": "ok",
+"note": "Ecoles de Decret (faculty of law)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0139",
+"old": "LONBARS",
+"type": "college",
+"px": [
+8100,
+3520
+],
+"orient": "h",
+"flag": "ok",
+"note": "college des Lombards",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0140",
+"old": "COQUERET",
+"type": "college",
+"px": [
+8330,
+3700
+],
+"orient": "h",
+"flag": "ok",
+"note": "college Coqueret",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0141",
+"old": "LE PLESSI",
+"type": "college",
+"px": [
+8370,
+3860
+],
+"orient": "h",
+"flag": "ok",
+"note": "college du Plessis",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0142",
+"old": "RAINS",
+"type": "college",
+"px": [
+8480,
+3620
+],
+"orient": "h",
+"flag": "ok",
+"note": "college de Reims",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0143",
+"old": "LEMAN",
+"type": "college",
+"px": [
+8480,
+3780
+],
+"orient": "h",
+"flag": "ok",
+"note": "college du Mans",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0144",
+"old": "MARMOUTIERS",
+"type": "college",
+"px": [
+8500,
+3850
+],
+"orient": "h",
+"flag": "ok",
+"note": "college de Marmoutier",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0145",
+"old": "C. S. BARBE",
+"type": "college",
+"px": [
+8570,
+3560
+],
+"orient": "h",
+"flag": "ok",
+"note": "college Sainte-Barbe",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0146",
+"old": "LES CHOLES",
+"type": "college",
+"px": [
+8670,
+3850
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0147",
+"old": "S. MICHEL",
+"type": "college",
+"px": [
+8700,
+3670
+],
+"orient": "h",
+"flag": "ok",
+"note": "college Saint-Michel (de Chanac)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0148",
+"old": "MONT EGU",
+"type": "college",
+"px": [
+8730,
+3560
+],
+"orient": "h",
+"flag": "ok",
+"note": "college de Montaigu",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0149",
+"old": "LISIEUX",
+"type": "college",
+"px": [
+8950,
+3630
+],
+"orient": "h",
+"flag": "ok",
+"note": "college de Lisieux",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0150",
+"old": "COLEGE MAISTRE GERVAIS",
+"type": "college",
+"px": [
+7450,
+4040
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0151",
+"old": "LOTEL DE HEROCOURT",
+"type": "college",
+"px": [
+7960,
+4205
+],
+"orient": "h",
+"flag": "ok",
+"note": "college d'Harcourt",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0152",
+"old": "C. DE IUSTICE",
+"type": "college",
+"px": [
+8170,
+4490
+],
+"orient": "h",
+"flag": "ok",
+"note": "college de Justice",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0468",
+"old": "BAIEUS",
+"type": "college",
+"px": [
+8200,
+4300
+],
+"orient": "h",
+"flag": "unsure",
+"note": "printed RAIEVS/BAIEVS; college de Bayeux (pass 2 zoom)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0153",
+"old": "NERBONNE",
+"type": "college",
+"px": [
+8280,
+4240
+],
+"orient": "h",
+"flag": "ok",
+"note": "college de Narbonne",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0154",
+"old": "C. SORBONNE",
+"type": "college",
+"px": [
+8340,
+4060
+],
+"orient": "h",
+"flag": "ok",
+"note": "college de Sorbonne",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0155",
+"old": "CALVI",
+"type": "college",
+"px": [
+8510,
+4050
+],
+"orient": "h",
+"flag": "ok",
+"note": "college de Calvi",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0156",
+"old": "CLUGNI",
+"type": "college",
+"px": [
+8660,
+4180
+],
+"orient": "h",
+"flag": "ok",
+"note": "college de Cluny",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0157",
+"old": "LA CHAPELLE MIGNON",
+"type": "college",
+"px": [
+7590,
+4770
+],
+"orient": "h",
+"flag": "ok",
+"note": "college Mignon",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0158",
+"old": "BOURGONGNE",
+"type": "college",
+"px": [
+7820,
+4880
+],
+"orient": "h",
+"flag": "ok",
+"note": "college de Bourgogne",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0159",
+"old": "LE COLLEGE S. GERMAIN",
+"type": "college",
+"px": [
+5370,
+5090
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0160",
+"old": "LES BONS ENFANS",
+"type": "college",
+"px": [
+3830,
+6020
+],
+"orient": "h",
+"flag": "ok",
+"note": "college des Bons-Enfants",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0167",
+"old": "LE BASTILLON",
+"type": "gate_wall",
+"px": [
+3900,
+855
+],
+"orient": "h",
+"flag": "ok",
+"note": "bastion",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0168",
+"old": "PORTE S. ANTHOINE",
+"type": "gate_wall",
+"px": [
+4270,
+915
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0169",
+"old": "LA BASTILLE",
+"type": "gate_wall",
+"px": [
+4680,
+745
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0170",
+"old": "PORTE DE LA BARRE",
+"type": "gate_wall",
+"px": [
+8820,
+790
+],
+"orient": "d",
+"flag": "ok",
+"note": "printed POR DELABARE TE; porte de la Barre? check",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0171",
+"old": "LE BASTILLON",
+"type": "gate_wall",
+"px": [
+1790,
+1800
+],
+"orient": "h",
+"flag": "ok",
+"note": "second bastion label",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0172",
+"old": "PORTE DU TEMPLE",
+"type": "gate_wall",
+"px": [
+1900,
+2200
+],
+"orient": "h",
+"flag": "ok",
+"note": "dup of r01c01",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0173",
+"old": "PORTE BORDELLE",
+"type": "gate_wall",
+"px": [
+8740,
+2720
+],
+"orient": "d",
+"flag": "ok",
+"note": "Porte Bordelles",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0174",
+"old": "PORTE S. MARTIN",
+"type": "gate_wall",
+"px": [
+2000,
+3630
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0175",
+"old": "PORTE S. IAQUES",
+"type": "gate_wall",
+"px": [
+9250,
+3840
+],
+"orient": "h",
+"flag": "ok",
+"note": "dup",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0176",
+"old": "PORTE S. DENIS",
+"type": "gate_wall",
+"px": [
+1920,
+4290
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0177",
+"old": "PORTE S. MICHEL",
+"type": "gate_wall",
+"px": [
+8840,
+4210
+],
+"orient": "h",
+"flag": "ok",
+"note": "dup",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0178",
+"old": "PORTE DE BUCI",
+"type": "gate_wall",
+"px": [
+7300,
+5480
+],
+"orient": "h",
+"flag": "ok",
+"note": "printed PORTE DE BVCI",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0179",
+"old": "PORTE S. GERMAIN",
+"type": "gate_wall",
+"px": [
+7650,
+5300
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0180",
+"old": "PORTE MONMARTRE",
+"type": "gate_wall",
+"px": [
+2620,
+5620
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0181",
+"old": "LA TOUR NELLE",
+"type": "gate_wall",
+"px": [
+6470,
+5860
+],
+"orient": "h",
+"flag": "ok",
+"note": "Tour de Nesle",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0182",
+"old": "PORTE S. HONORE",
+"type": "gate_wall",
+"px": [
+4450,
+6340
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0183",
+"old": "LA TOUR DU BOIS",
+"type": "gate_wall",
+"px": [
+5520,
+6250
+],
+"orient": "h",
+"flag": "ok",
+"note": "dup",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0184",
+"old": "LE BOIS DE VINCIENNE",
+"type": "other",
+"px": [
+5160,
+195
+],
+"orient": "h",
+"flag": "ok",
+"note": "Bois de Vincennes",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0185",
+"old": "RIVIERE DE MARNE",
+"type": "other",
+"px": [
+7340,
+235
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0186",
+"old": "RIVIERE DE SAINE",
+"type": "other",
+"px": [
+7810,
+265
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0187",
+"old": "LA CROIS FAUBIN",
+"type": "other",
+"px": [
+3880,
+575
+],
+"orient": "h",
+"flag": "ok",
+"note": "La Croix-Faubin",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0188",
+"old": "LILE DE LOUVIERS",
+"type": "other",
+"px": [
+6790,
+1150
+],
+"orient": "d",
+"flag": "ok",
+"note": "Ile Louviers",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0189",
+"old": "LES FAUBOURG S. VITOR",
+"type": "other",
+"px": [
+7780,
+2410
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0190",
+"old": "LE CHAN DALBIA",
+"type": "other",
+"px": [
+9070,
+2060
+],
+"orient": "d",
+"flag": "ok",
+"note": "Champ d'Albiac?",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0191",
+"old": "MON FAUCON",
+"type": "other",
+"px": [
+360,
+2675
+],
+"orient": "h",
+"flag": "ok",
+"note": "Gibet de Montfaucon",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0192",
+"old": "LA PORTE BODES",
+"type": "other",
+"px": [
+4810,
+2620
+],
+"orient": "h",
+"flag": "ok",
+"note": "Porte Baudoyer",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0193",
+"old": "LE TERRIN",
+"type": "other",
+"px": [
+6560,
+2880
+],
+"orient": "h",
+"flag": "ok",
+"note": "Le Terrain (tip of Cite)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0194",
+"old": "LA TOURNELLE",
+"type": "other",
+"px": [
+6860,
+2610
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0195",
+"old": "LE CHAN GAILLART",
+"type": "other",
+"px": [
+8000,
+2980
+],
+"orient": "d",
+"flag": "ok",
+"note": "Clos du Chardonnet / Champ Gaillard",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0196",
+"old": "BRAQUES",
+"type": "other",
+"px": [
+9590,
+2995
+],
+"orient": "h",
+"flag": "unsure",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0197",
+"old": "LES MOULINS DES GOBELLIN",
+"type": "other",
+"px": [
+10500,
+3230
+],
+"orient": "h",
+"flag": "ok",
+"note": "dup",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0198",
+"old": "LE FAUBOURS S. IAQUES",
+"type": "other",
+"px": [
+10050,
+3830
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0199",
+"old": "CHERRO COUPT",
+"type": "other",
+"px": [
+8480,
+4470
+],
+"orient": "h",
+"flag": "ok",
+"note": "printed CHERRO COVPT? check",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0200",
+"old": "LE IEU DE PAUME",
+"type": "other",
+"px": [
+4220,
+4680
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0201",
+"old": "LE MOULIN DE LA MONNOIE",
+"type": "other",
+"px": [
+5890,
+4870
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0202",
+"old": "LE IARDIN DU ROI",
+"type": "other",
+"px": [
+6110,
+4680
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0203",
+"old": "LE PRES OU ER DE LOTEL DIEU",
+"type": "other",
+"px": [
+9640,
+4530
+],
+"orient": "h",
+"flag": "ok",
+"note": "printed LE PRESOER DE LOTEL DIEV",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0204",
+"old": "LES TUILLERIES",
+"type": "other",
+"px": [
+4920,
+6640
+],
+"orient": "h",
+"flag": "ok",
+"note": "printed LESTVIL LEPIES",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0205",
+"old": "LE PRE AU CLERS",
+"type": "other",
+"px": [
+6700,
+6630
+],
+"orient": "h",
+"flag": "ok",
+"note": "Pre-aux-Clercs",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0206",
+"old": "LE PORT AU FIN",
+"type": "square_market",
+"px": [
+5500,
+2700
+],
+"orient": "v",
+"flag": "ok",
+"note": "Port au Foin",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0207",
+"old": "LE CARFOUR GILORI",
+"type": "square_market",
+"px": [
+4660,
+3290
+],
+"orient": "d",
+"flag": "ok",
+"note": "carrefour Guillori",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0208",
+"old": "LA PLACE DE GREVE",
+"type": "square_market",
+"px": [
+4990,
+3385
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0209",
+"old": "LA PLACE AU VIAUX",
+"type": "square_market",
+"px": [
+5150,
+3960
+],
+"orient": "d",
+"flag": "ok",
+"note": "place aux Veaux",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0210",
+"old": "LA PLACE MAUBERT",
+"type": "square_market",
+"px": [
+7330,
+3530
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0211",
+"old": "LA GRANT BOUCHERIE",
+"type": "square_market",
+"px": [
+5010,
+4240
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0212",
+"old": "LE PILORI",
+"type": "square_market",
+"px": [
+3550,
+4680
+],
+"orient": "h",
+"flag": "ok",
+"note": "pilori des Halles",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0213",
+"old": "LA HALLE AU BLE",
+"type": "square_market",
+"px": [
+3920,
+4660
+],
+"orient": "d",
+"flag": "ok",
+"note": "printed LA HALE AV BLE",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0214",
+"old": "LA BOUCHERIE DE BEAUVAIS",
+"type": "square_market",
+"px": [
+4220,
+4840
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0215",
+"old": "LA CROIX DU TIROY",
+"type": "square_market",
+"px": [
+4270,
+5110
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0216",
+"old": "LA FOIRE S. GERMAIN",
+"type": "square_market",
+"px": [
+8370,
+5750
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0217",
+"old": "LE PILORI",
+"type": "square_market",
+"px": [
+8370,
+6010
+],
+"orient": "h",
+"flag": "ok",
+"note": "pilori Saint-Germain",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0218",
+"old": "LE MARCHE AUX POURCEAUX",
+"type": "square_market",
+"px": [
+3500,
+6540
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0219",
+"old": "LA GRANT R. S. ANTHOINE",
+"type": "street",
+"px": [
+4660,
+1480
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0220",
+"old": "R. DE LA CERISEE",
+"type": "street",
+"px": [
+4930,
+1165
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue de la Cerisaie",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0221",
+"old": "R. DES CELLESTINS",
+"type": "street",
+"px": [
+5030,
+1385
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0222",
+"old": "R. DE LA BARRE",
+"type": "street",
+"px": [
+9250,
+1050
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0223",
+"old": "R. DU FER DE MOULAIN",
+"type": "street",
+"px": [
+9320,
+1200
+],
+"orient": "d",
+"flag": "ok",
+"note": "rue du Fer-a-Moulin",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0224",
+"old": "R. NEUVE",
+"type": "street",
+"px": [
+9520,
+1140
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0225",
+"old": "R. DES TAINTURIERS",
+"type": "street",
+"px": [
+10270,
+1100
+],
+"orient": "d",
+"flag": "ok",
+"note": "rue des Teinturiers",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0226",
+"old": "R. DES CORDELIERES",
+"type": "street",
+"px": [
+10640,
+1180
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0227",
+"old": "R. TOUGIN",
+"type": "street",
+"px": [
+3410,
+1960
+],
+"orient": "v",
+"flag": "unsure",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0228",
+"old": "LA R. S. CATERINE",
+"type": "street",
+"px": [
+3840,
+1880
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue Sainte-Catherine",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0229",
+"old": "R. VERCEE",
+"type": "street",
+"px": [
+4700,
+1995
+],
+"orient": "h",
+"flag": "unsure",
+"note": "printed R. VERCE E",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0230",
+"old": "R. S. POL",
+"type": "street",
+"px": [
+5070,
+1725
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0231",
+"old": "R. DU IARDIN",
+"type": "street",
+"px": [
+5140,
+1845
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0232",
+"old": "R. NEUVE S. POL",
+"type": "street",
+"px": [
+5340,
+1550
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0233",
+"old": "R. DORLEANS",
+"type": "street",
+"px": [
+9090,
+1650
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue d'Orleans (Saint-Marcel)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0234",
+"old": "R. DU GRANT CHANTIER",
+"type": "street",
+"px": [
+3080,
+2345
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0235",
+"old": "R. DES CATREFISHE MON",
+"type": "street",
+"px": [
+3340,
+2150
+],
+"orient": "v",
+"flag": "unsure",
+"note": "partial/unclear",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0236",
+"old": "R. DES CATREFILS MON",
+"type": "street",
+"px": [
+3340,
+2200
+],
+"orient": "v",
+"flag": "unsure",
+"note": "rue des Quatre-Fils?",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0237",
+"old": "R. DE PARADIS",
+"type": "street",
+"px": [
+3550,
+2300
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0238",
+"old": "LA VIELE R. DU TAMPLE",
+"type": "street",
+"px": [
+3590,
+2150
+],
+"orient": "d",
+"flag": "ok",
+"note": "Vieille rue du Temple",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0239",
+"old": "R. DE POULISE",
+"type": "street",
+"px": [
+3610,
+2010
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0240",
+"old": "R. DU TAMPLE",
+"type": "street",
+"px": [
+3710,
+2240
+],
+"orient": "d",
+"flag": "ok",
+"note": "rue du Temple? check vs Vieille rue du Temple",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0241",
+"old": "R. DES CINGES",
+"type": "street",
+"px": [
+3880,
+2420
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue des Singes",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0242",
+"old": "R. DES ROSIERS",
+"type": "street",
+"px": [
+3980,
+2200
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0243",
+"old": "R. DES ECOUFLES",
+"type": "street",
+"px": [
+4120,
+2225
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0244",
+"old": "R. DES PAIENS",
+"type": "street",
+"px": [
+4130,
+2075
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue Payenne",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0245",
+"old": "R. DU ROI DE CECILE",
+"type": "street",
+"px": [
+4410,
+2170
+],
+"orient": "v",
+"flag": "ok",
+"note": "printed R. DV ROI CECILE",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0246",
+"old": "R. DES BALES",
+"type": "street",
+"px": [
+4430,
+2010
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0247",
+"old": "R. RENAULT LE FEVRE",
+"type": "street",
+"px": [
+4510,
+2430
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0248",
+"old": "R. PETIT IOUI",
+"type": "street",
+"px": [
+4810,
+2150
+],
+"orient": "v",
+"flag": "unsure",
+"note": "printed R. PETIO VI",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0249",
+"old": "R. GEFROI LANNIER",
+"type": "street",
+"px": [
+4880,
+2385
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue Geoffroy-l'Asnier",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0250",
+"old": "R. GARNIER S. LADRE",
+"type": "street",
+"px": [
+5040,
+2490
+],
+"orient": "v",
+"flag": "unsure",
+"note": "printed R. GARNIERS. V RIAN; rue Garnier-sur-l'Eau? check",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0251",
+"old": "R. NONNAIN",
+"type": "street",
+"px": [
+5090,
+2085
+],
+"orient": "h",
+"flag": "unsure",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0252",
+"old": "R. NONNAIN DIERRE",
+"type": "street",
+"px": [
+5100,
+2140
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue des Nonnains-d'Hyeres",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0253",
+"old": "R. DE COUPEAUS",
+"type": "street",
+"px": [
+8900,
+2380
+],
+"orient": "d",
+"flag": "ok",
+"note": "rue Copeau",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0254",
+"old": "LA GRANT R. S. MARCEAU",
+"type": "street",
+"px": [
+9200,
+2350
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0255",
+"old": "R. DE LA CROYS",
+"type": "street",
+"px": [
+2340,
+2810
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue de la Croix",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0256",
+"old": "R. DES FONTAINES",
+"type": "street",
+"px": [
+2350,
+2690
+],
+"orient": "v",
+"flag": "ok",
+"note": "printed R. DES FONTI and SEN upside-down",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0257",
+"old": "R. DE FREPAU",
+"type": "street",
+"px": [
+2620,
+2760
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Frepillon? check",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0258",
+"old": "R. PORTE FOIN",
+"type": "street",
+"px": [
+2840,
+2560
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0259",
+"old": "R. PATOURELLE",
+"type": "street",
+"px": [
+2950,
+2560
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Pastourelle",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0260",
+"old": "R. CHAPON",
+"type": "street",
+"px": [
+3060,
+2960
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0261",
+"old": "LA GRANT R. DU TAMPLE",
+"type": "street",
+"px": [
+3080,
+2705
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0262",
+"old": "R. COURAULAIN",
+"type": "street",
+"px": [
+3170,
+2960
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Court-au-Villain (Montmorency)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0263",
+"old": "R. MICHELECONTE",
+"type": "street",
+"px": [
+3260,
+2960
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Michel-le-Comte",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0264",
+"old": "R. DE HAUDRIETTE",
+"type": "street",
+"px": [
+3330,
+2560
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue des Haudriettes",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0265",
+"old": "R. DE BROVES",
+"type": "street",
+"px": [
+3420,
+2600
+],
+"orient": "v",
+"flag": "unsure",
+"note": "rue de Braque?",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0266",
+"old": "CUDESAC",
+"type": "street",
+"px": [
+3510,
+2990
+],
+"orient": "v",
+"flag": "ok",
+"note": "cul-de-sac",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0267",
+"old": "R. DES BLANS MANTEOS",
+"type": "street",
+"px": [
+3790,
+2600
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue des Blancs-Manteaux",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0268",
+"old": "R. DU PUIS",
+"type": "street",
+"px": [
+3900,
+2510
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0269",
+"old": "R. DES HOMES ARMES",
+"type": "street",
+"px": [
+3920,
+2640
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0270",
+"old": "R. DE LA BRETONNERIE",
+"type": "street",
+"px": [
+4090,
+2600
+],
+"orient": "v",
+"flag": "ok",
+"note": "Sainte-Croix-de-la-Bretonnerie",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0271",
+"old": "R. BOUTI BOURG",
+"type": "street",
+"px": [
+4170,
+2630
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue du Bourg-Tibourg",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0272",
+"old": "R. FRANMURIER",
+"type": "street",
+"px": [
+4170,
+2810
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue Franc-Meurier? check",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0273",
+"old": "R. BOUQUETONNE",
+"type": "street",
+"px": [
+4340,
+2590
+],
+"orient": "v",
+"flag": "unsure",
+"note": "printed R. BOV QVETONNE",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0274",
+"old": "R. DES MAUVES GARCONS",
+"type": "street",
+"px": [
+4500,
+2860
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0275",
+"old": "R. DU COC",
+"type": "street",
+"px": [
+4540,
+2970
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0276",
+"old": "R. DE LA TISSARANDERIE",
+"type": "street",
+"px": [
+4760,
+2950
+],
+"orient": "d",
+"flag": "ok",
+"note": "printed R. DE LA TISARRA NDERIE",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0277",
+"old": "R. DU PEAU DIABLE",
+"type": "street",
+"px": [
+4870,
+2880
+],
+"orient": "d",
+"flag": "unsure",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0278",
+"old": "R. DES BARES",
+"type": "street",
+"px": [
+5130,
+2585
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0279",
+"old": "R. DE ONPONT",
+"type": "street",
+"px": [
+5160,
+2855
+],
+"orient": "h",
+"flag": "unsure",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0280",
+"old": "R. DE LA MORTELLERIE",
+"type": "street",
+"px": [
+5350,
+2650
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0281",
+"old": "R. DES RAS",
+"type": "street",
+"px": [
+7760,
+2815
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue des Rats",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0282",
+"old": "R. VARSAILLE",
+"type": "street",
+"px": [
+7770,
+2900
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue de Versailles",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0283",
+"old": "R. DU BON PUIS",
+"type": "street",
+"px": [
+7770,
+2995
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0284",
+"old": "R. BORDELLE",
+"type": "street",
+"px": [
+8520,
+2990
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0285",
+"old": "R. DES POSTES",
+"type": "street",
+"px": [
+9740,
+2780
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0286",
+"old": "R. DU VERBOIS",
+"type": "street",
+"px": [
+2180,
+3250
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue du Vertbois",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0287",
+"old": "R. AU MERE",
+"type": "street",
+"px": [
+2820,
+3270
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue au Maire",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0288",
+"old": "R. TRASENONNAIN",
+"type": "street",
+"px": [
+3070,
+3085
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue Transnonain",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0289",
+"old": "R. DES MENESTRIERS",
+"type": "street",
+"px": [
+3565,
+3480
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0290",
+"old": "R. GEFROI LANGEVIN",
+"type": "street",
+"px": [
+3620,
+3050
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Geoffroy-l'Angevin",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0291",
+"old": "R. DE LA BAUDRERIE",
+"type": "street",
+"px": [
+3835,
+3490
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0292",
+"old": "LA PIERRE AU LART",
+"type": "street",
+"px": [
+3950,
+3250
+],
+"orient": "v",
+"flag": "ok",
+"note": "printed LAPIER REAVLART",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0293",
+"old": "R. NEUVE S. MARRI",
+"type": "street",
+"px": [
+4050,
+3350
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Neuve-Saint-Merri",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0294",
+"old": "R. DE LA POTERIE",
+"type": "street",
+"px": [
+4160,
+3220
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0295",
+"old": "LA COURRERIE",
+"type": "street",
+"px": [
+4370,
+3180
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0296",
+"old": "R. DE LA COURRERIE",
+"type": "street",
+"px": [
+4380,
+3320
+],
+"orient": "v",
+"flag": "ok",
+"note": "dup of LA COURRERIE",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0297",
+"old": "R. DE LA POTERIE",
+"type": "street",
+"px": [
+4500,
+3225
+],
+"orient": "h",
+"flag": "ok",
+"note": "second",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0298",
+"old": "R. DU PORT S. LANDRI",
+"type": "street",
+"px": [
+6040,
+3400
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0299",
+"old": "R. DE BIEVRE",
+"type": "street",
+"px": [
+7170,
+3400
+],
+"orient": "h",
+"flag": "ok",
+"note": "dup",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0300",
+"old": "R. DES BERNARDINS",
+"type": "street",
+"px": [
+7200,
+3270
+],
+"orient": "h",
+"flag": "ok",
+"note": "dup",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0301",
+"old": "LA GRANT R. S. VITOR",
+"type": "street",
+"px": [
+7640,
+3150
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0302",
+"old": "R. S. NICOLAS",
+"type": "street",
+"px": [
+7770,
+3265
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0303",
+"old": "R. ALEXANDRE LANGLOIS",
+"type": "street",
+"px": [
+7800,
+3085
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0304",
+"old": "R. PAVEE DADOULLE",
+"type": "street",
+"px": [
+7800,
+3180
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue Pavee-d'Andouilles",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0305",
+"old": "LE CLOIS",
+"type": "street",
+"px": [
+7920,
+3080
+],
+"orient": "v",
+"flag": "unsure",
+"note": "rue Clopin?",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0306",
+"old": "LE MONT S. GENEVIEVE",
+"type": "street",
+"px": [
+7980,
+3410
+],
+"orient": "d",
+"flag": "ok",
+"note": "printed LEMONT S GENEVIEVE; rue de la Montagne-Sainte-Genevieve",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0307",
+"old": "R. DES GRAVELIERS",
+"type": "street",
+"px": [
+2960,
+3560
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue des Gravilliers",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0308",
+"old": "R. DU CIMETIERE",
+"type": "street",
+"px": [
+3070,
+3560
+],
+"orient": "v",
+"flag": "ok",
+"note": "dup",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0309",
+"old": "R. MONT MORANCI",
+"type": "street",
+"px": [
+3190,
+3570
+],
+"orient": "v",
+"flag": "ok",
+"note": "dup",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0310",
+"old": "R. GRENIER S. LADRE",
+"type": "street",
+"px": [
+3295,
+3540
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Grenier-Saint-Lazare",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0311",
+"old": "R. DE LA VENERIE",
+"type": "street",
+"px": [
+3375,
+3530
+],
+"orient": "v",
+"flag": "unsure",
+"note": "partly damaged",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0312",
+"old": "R. DES PETIS CHAMS",
+"type": "street",
+"px": [
+3480,
+3510
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0313",
+"old": "R. QUI QUEN POIX",
+"type": "street",
+"px": [
+3545,
+3970
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue Quincampoix",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0314",
+"old": "R. DES ESTUVES",
+"type": "street",
+"px": [
+3655,
+3580
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0315",
+"old": "R. DE LA PLATRIERE",
+"type": "street",
+"px": [
+3735,
+3570
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0316",
+"old": "S. MARTIN",
+"type": "street",
+"px": [
+4060,
+3745
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue Saint-Martin? (fragment R. S. MARTIN)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0317",
+"old": "LA VIELLE CORRERIE",
+"type": "street",
+"px": [
+4170,
+3970
+],
+"orient": "h",
+"flag": "ok",
+"note": "Vieille Courroierie",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0318",
+"old": "MARIVAUX",
+"type": "street",
+"px": [
+4260,
+3880
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue de Marivaux",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0319",
+"old": "R. IEHAN PIN MOLET",
+"type": "street",
+"px": [
+4590,
+3580
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Jean-Pain-Mollet",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0320",
+"old": "R. DE LA TACHERIE",
+"type": "street",
+"px": [
+4720,
+3570
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0321",
+"old": "R. DE LA COTELLERIE",
+"type": "street",
+"px": [
+4890,
+3550
+],
+"orient": "d",
+"flag": "ok",
+"note": "Coutellerie",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0322",
+"old": "R. DE LA VANNERIE",
+"type": "street",
+"px": [
+5020,
+3600
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0323",
+"old": "LA TANNERIE",
+"type": "street",
+"px": [
+5280,
+3540
+],
+"orient": "v",
+"flag": "unsure",
+"note": "printed LA TEN NERIE",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0324",
+"old": "R. DE GLATINI",
+"type": "street",
+"px": [
+6110,
+3590
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0325",
+"old": "LA R. NEUVE",
+"type": "street",
+"px": [
+6510,
+3760
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Neuve-Notre-Dame",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0326",
+"old": "LE PAVE",
+"type": "street",
+"px": [
+6950,
+3645
+],
+"orient": "h",
+"flag": "ok",
+"note": "left bank (Place Maubert side)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0327",
+"old": "R. DU PLATRE",
+"type": "street",
+"px": [
+7400,
+3870
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0328",
+"old": "R. DES NOERS",
+"type": "street",
+"px": [
+7550,
+3700
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue des Noyers",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0329",
+"old": "R. DES CARMES",
+"type": "street",
+"px": [
+7710,
+3610
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0330",
+"old": "R. S. IEHAN DE BEAUVAIS",
+"type": "street",
+"px": [
+7800,
+3740
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0331",
+"old": "LE CLOS BRUNEAU",
+"type": "street",
+"px": [
+8180,
+3720
+],
+"orient": "v",
+"flag": "unsure",
+"note": "printed LE CLOS BRVNIAV; rue du Clos-Bruneau",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0332",
+"old": "LA GRANT R. S. IAQUES",
+"type": "street",
+"px": [
+8470,
+3990
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0333",
+"old": "R. DES CHOLES",
+"type": "street",
+"px": [
+8590,
+3730
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue des Ecoles? check",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0334",
+"old": "R. S. ETIENNE",
+"type": "street",
+"px": [
+8800,
+3720
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Saint-Etienne-des-Gres",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0335",
+"old": "R. GAIRIN BOISIAU",
+"type": "street",
+"px": [
+2290,
+4140
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Guerin-Boisseau",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0336",
+"old": "R. DE GARNETAL",
+"type": "street",
+"px": [
+2650,
+4140
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Greneta",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0337",
+"old": "LA GRANT R. S. DENIS",
+"type": "street",
+"px": [
+2720,
+4330
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0338",
+"old": "R. DE BOUR LABE",
+"type": "street",
+"px": [
+2960,
+4055
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue du Bourg-l'Abbe",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0339",
+"old": "R. PAVEE",
+"type": "street",
+"px": [
+3010,
+4250
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0340",
+"old": "R. PETIT LION",
+"type": "street",
+"px": [
+3030,
+4480
+],
+"orient": "v",
+"flag": "ok",
+"note": "printed R. PETIT LION",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0341",
+"old": "R. AUX OURS",
+"type": "street",
+"px": [
+3350,
+4140
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0342",
+"old": "R. DE LA CHANVARERIE",
+"type": "street",
+"px": [
+3580,
+4400
+],
+"orient": "v",
+"flag": "ok",
+"note": "Chanvrerie",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0343",
+"old": "R. AU PRESCHEURS",
+"type": "street",
+"px": [
+3720,
+4460
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue des Precheurs",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0344",
+"old": "LA COCHONNERIE",
+"type": "street",
+"px": [
+3850,
+4460
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0345",
+"old": "R. AU FIARE",
+"type": "street",
+"px": [
+3960,
+4480
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue aux Fers",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0346",
+"old": "R. BRIBOUCHE",
+"type": "street",
+"px": [
+3990,
+4150
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Brisemiche? check",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0347",
+"old": "R. DE LA FERRONERIE",
+"type": "street",
+"px": [
+4200,
+4380
+],
+"orient": "v",
+"flag": "ok",
+"note": "printed R. DE LA FER RONERIE",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0348",
+"old": "R. TROUSE VACHE",
+"type": "street",
+"px": [
+4210,
+4150
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0349",
+"old": "R. DES LONBARS",
+"type": "street",
+"px": [
+4370,
+4120
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue des Lombards",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0350",
+"old": "LA HEAUMERIE",
+"type": "street",
+"px": [
+4590,
+4150
+],
+"orient": "v",
+"flag": "ok",
+"note": "printed LA HEAV MERIE",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0351",
+"old": "R. DE LA SAVONNERIE",
+"type": "street",
+"px": [
+4700,
+4060
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0352",
+"old": "R. DE LA SERPENTE",
+"type": "street",
+"px": [
+4790,
+4400
+],
+"orient": "v",
+"flag": "unsure",
+"note": "printed DE LA SERPENTE (Right Bank)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0353",
+"old": "R. DU CRUCEFIS",
+"type": "street",
+"px": [
+4960,
+4100
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue du Crucifix(-Saint-Jacques)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0354",
+"old": "R. DES LAVANDIERE",
+"type": "street",
+"px": [
+4980,
+4460
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0355",
+"old": "LA VIEILLE PELETERIE",
+"type": "street",
+"px": [
+6030,
+4000
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0356",
+"old": "R. DE LA VARERIE",
+"type": "street",
+"px": [
+6215,
+4060
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue de la Vieille-Draperie? printed DELA VARERIE",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0357",
+"old": "LA SAVATERIE",
+"type": "street",
+"px": [
+6305,
+4010
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0358",
+"old": "R. DE LA CALANDRE",
+"type": "street",
+"px": [
+6385,
+4040
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0359",
+"old": "R. DE LA HUCHETTE",
+"type": "street",
+"px": [
+6970,
+4050
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0360",
+"old": "RUE POUPEE",
+"type": "street",
+"px": [
+7250,
+4350
+],
+"orient": "v",
+"flag": "ok",
+"note": "manuscript addition",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0361",
+"old": "R. POUPEE",
+"type": "street",
+"px": [
+7250,
+4350
+],
+"orient": "v",
+"flag": "ok",
+"note": "dup manuscript",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0362",
+"old": "LA PARCHEMINERIE",
+"type": "street",
+"px": [
+7290,
+4100
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0363",
+"old": "R. PERCEE",
+"type": "street",
+"px": [
+7310,
+4340
+],
+"orient": "v",
+"flag": "ok",
+"note": "manuscript addition",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0364",
+"old": "R. DU BOUT DE BRIE",
+"type": "street",
+"px": [
+7400,
+4110
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0365",
+"old": "R. DE LA SERPENTE",
+"type": "street",
+"px": [
+7420,
+4400
+],
+"orient": "v",
+"flag": "ok",
+"note": "manuscript addition",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0366",
+"old": "R. DES DEUX PORTES",
+"type": "street",
+"px": [
+7500,
+4400
+],
+"orient": "v",
+"flag": "ok",
+"note": "manuscript addition",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0367",
+"old": "R. DU FOIN",
+"type": "street",
+"px": [
+7580,
+4170
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0368",
+"old": "LA GRANT R. DE LA HERPE",
+"type": "street",
+"px": [
+7580,
+4260
+],
+"orient": "d",
+"flag": "ok",
+"note": "rue de la Harpe",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0369",
+"old": "R. DES MATURINS",
+"type": "street",
+"px": [
+7870,
+4150
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0370",
+"old": "R. DE SORBONNE",
+"type": "street",
+"px": [
+8300,
+4160
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0371",
+"old": "R. DE POIREES",
+"type": "street",
+"px": [
+8610,
+4180
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue des Poirees",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0372",
+"old": "R. DES FILLES DIEU",
+"type": "street",
+"px": [
+2020,
+4600
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0373",
+"old": "R. S. SAUVEUR",
+"type": "street",
+"px": [
+2550,
+4800
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0374",
+"old": "R. DU RENART",
+"type": "street",
+"px": [
+2670,
+4500
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue du Renard",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0375",
+"old": "R. BEAU REPERE",
+"type": "street",
+"px": [
+2670,
+4800
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Beaurepaire",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0376",
+"old": "R. DES DEUS PORTES",
+"type": "street",
+"px": [
+2710,
+4580
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue des Deux-Portes",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0377",
+"old": "LA R. TIREVIT",
+"type": "street",
+"px": [
+2850,
+4800
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Tire-Vit (Tiquetonne area)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0378",
+"old": "R. DE MONTORGUEIL",
+"type": "street",
+"px": [
+2870,
+4930
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0379",
+"old": "R. PAVEE",
+"type": "street",
+"px": [
+3000,
+4820
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0380",
+"old": "R. DE BOURGONGNE",
+"type": "street",
+"px": [
+3140,
+4700
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue de Bourgogne",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0381",
+"old": "R. CONTE DARTOIS",
+"type": "street",
+"px": [
+3160,
+4930
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue Comte-d'Artois (Montorgueil)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0382",
+"old": "R. DE MAUCONSEIL",
+"type": "street",
+"px": [
+3220,
+4550
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0383",
+"old": "R. DE LA TRUANDERIE",
+"type": "street",
+"px": [
+3460,
+4720
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0384",
+"old": "R. DE MAUDE TOUR",
+"type": "street",
+"px": [
+3550,
+4510
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue Mondetour",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0385",
+"old": "R. DE LA FROMAGERIE",
+"type": "street",
+"px": [
+3810,
+4750
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0386",
+"old": "R. DU FOUR",
+"type": "street",
+"px": [
+4000,
+4995
+],
+"orient": "h",
+"flag": "ok",
+"note": "printed R. DVEOVR",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0387",
+"old": "R. DES PROUVELLES",
+"type": "street",
+"px": [
+4050,
+4915
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue des Prouvaires",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0388",
+"old": "LA FRIPERIE",
+"type": "street",
+"px": [
+4080,
+4700
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0389",
+"old": "LA LINGERIE",
+"type": "street",
+"px": [
+4110,
+4560
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0390",
+"old": "R. TIRECHAPE",
+"type": "street",
+"px": [
+4440,
+4850
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0391",
+"old": "R. DES CHAS",
+"type": "street",
+"px": [
+4570,
+4540
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue des Chats? ",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0392",
+"old": "R. DES BOURDONNOIS",
+"type": "street",
+"px": [
+4620,
+4670
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue des Bourdonnais",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0393",
+"old": "R. DU BOUT",
+"type": "street",
+"px": [
+4630,
+4960
+],
+"orient": "v",
+"flag": "unsure",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0394",
+"old": "R. DE LA MONNOIE",
+"type": "street",
+"px": [
+4830,
+4925
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0395",
+"old": "R. DES DEUS PORTES",
+"type": "street",
+"px": [
+5000,
+4550
+],
+"orient": "h",
+"flag": "ok",
+"note": "second (Saint-Germain-l'Auxerrois)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0396",
+"old": "R. S. GERMAIN",
+"type": "street",
+"px": [
+5130,
+4950
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Saint-Germain-l'Auxerrois",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0397",
+"old": "R. PAVEE",
+"type": "street",
+"px": [
+6930,
+4825
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0398",
+"old": "R. DU BATOVER",
+"type": "street",
+"px": [
+6970,
+4680
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue Gilles-Coeur? check",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0399",
+"old": "R. DE LA RONDELLE",
+"type": "street",
+"px": [
+7030,
+4560
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue de l'Hirondelle",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0400",
+"old": "R. DU CIMETIERE",
+"type": "street",
+"px": [
+7420,
+4950
+],
+"orient": "v",
+"flag": "ok",
+"note": "cimetiere Saint-Andre",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0401",
+"old": "R. POITEVIN",
+"type": "street",
+"px": [
+7480,
+4730
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0402",
+"old": "R. DE HAUTE FEULLES",
+"type": "street",
+"px": [
+7550,
+4560
+],
+"orient": "d",
+"flag": "ok",
+"note": "rue Hautefeuille",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0403",
+"old": "R. DE LA SER PANTE",
+"type": "street",
+"px": [
+7560,
+4900
+],
+"orient": "v",
+"flag": "unsure",
+"note": "printed R. DE LASER PAN TE",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0404",
+"old": "R. PIERRE SARASIN",
+"type": "street",
+"px": [
+7780,
+4540
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0405",
+"old": "R. DES CORDELIERS",
+"type": "street",
+"px": [
+7920,
+4960
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0406",
+"old": "LA R. QUIQUETONNE",
+"type": "street",
+"px": [
+3020,
+5130
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Tiquetonne",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0407",
+"old": "LA GRANT R. MONMARTRE",
+"type": "street",
+"px": [
+3250,
+5250
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0408",
+"old": "R. DE LA PLATRIERE",
+"type": "street",
+"px": [
+3260,
+5450
+],
+"orient": "d",
+"flag": "ok",
+"note": "printed R. DE LA PLA TRIERE",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0409",
+"old": "R. DU SEIOUR",
+"type": "street",
+"px": [
+3640,
+5080
+],
+"orient": "d",
+"flag": "ok",
+"note": "rue du Sejour",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0410",
+"old": "R. DES ETUVE",
+"type": "street",
+"px": [
+4000,
+5050
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0411",
+"old": "R. DORLEANS",
+"type": "street",
+"px": [
+4090,
+5220
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue d'Orleans (Saint-Honore)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0412",
+"old": "R. DES POULLIES",
+"type": "street",
+"px": [
+4470,
+5450
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue des Poulies",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0413",
+"old": "R. DES DEUS ESCUS",
+"type": "street",
+"px": [
+4480,
+5250
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue des Deux-Ecus",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0414",
+"old": "R. DES AUGUSTINS",
+"type": "street",
+"px": [
+6850,
+5210
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0415",
+"old": "R. S. ANDRI",
+"type": "street",
+"px": [
+7250,
+5050
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0416",
+"old": "R. DU PAN",
+"type": "street",
+"px": [
+7700,
+5050
+],
+"orient": "d",
+"flag": "unsure",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0417",
+"old": "R. NEUVE",
+"type": "street",
+"px": [
+8330,
+5350
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0418",
+"old": "R. DE TOURNON",
+"type": "street",
+"px": [
+8480,
+5410
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0419",
+"old": "R. DES AUGUSTINS",
+"type": "street",
+"px": [
+2860,
+5580
+],
+"orient": "d",
+"flag": "unsure",
+"note": "printed R. DES AVGVSTINS (Right Bank? check)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0420",
+"old": "R. MARIE EGIPCIENNE",
+"type": "street",
+"px": [
+2980,
+5500
+],
+"orient": "d",
+"flag": "ok",
+"note": "rue de la Jussienne",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0421",
+"old": "R. BRENEUSE",
+"type": "street",
+"px": [
+3150,
+5600
+],
+"orient": "d",
+"flag": "unsure",
+"note": "printed R. BRE NEVSE",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0422",
+"old": "R. PAGEVIN",
+"type": "street",
+"px": [
+3150,
+5820
+],
+"orient": "d",
+"flag": "ok",
+"note": "rue Pagevin",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0423",
+"old": "R. QUOQUEHERON",
+"type": "street",
+"px": [
+3260,
+5700
+],
+"orient": "d",
+"flag": "ok",
+"note": "rue Coq-Heron",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0424",
+"old": "R. COQUILLIERE",
+"type": "street",
+"px": [
+3530,
+5780
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0425",
+"old": "R. DE GERNELLE",
+"type": "street",
+"px": [
+3860,
+5580
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue de Grenelle(-Saint-Honore)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0426",
+"old": "LA GRANT R. S. HONORE",
+"type": "street",
+"px": [
+4280,
+5820
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0427",
+"old": "R. DU COQ",
+"type": "street",
+"px": [
+4420,
+5760
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0428",
+"old": "R. DU CHANTRE",
+"type": "street",
+"px": [
+4440,
+5970
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0429",
+"old": "R. DE LAUTRUCHE",
+"type": "street",
+"px": [
+4470,
+5640
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue de l'Autruche",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0430",
+"old": "R. CHAMP FLEURI",
+"type": "street",
+"px": [
+4480,
+5870
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0431",
+"old": "R. FROMANTEAU",
+"type": "street",
+"px": [
+4830,
+5900
+],
+"orient": "v",
+"flag": "ok",
+"note": "rue Fromenteau",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0432",
+"old": "R. S. SURPLICE",
+"type": "street",
+"px": [
+9030,
+5950
+],
+"orient": "d",
+"flag": "ok",
+"note": "rue Saint-Sulpice? check",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0433",
+"old": "R. DE VAUGIRART",
+"type": "street",
+"px": [
+9480,
+5520
+],
+"orient": "d",
+"flag": "ok",
+"note": "rue de Vaugirard",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0434",
+"old": "R. DES PETIS CHANS",
+"type": "street",
+"px": [
+3590,
+6000
+],
+"orient": "d",
+"flag": "ok",
+"note": "rue des Petits-Champs",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0435",
+"old": "R. DE BEAUVAIS",
+"type": "street",
+"px": [
+4460,
+6150
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0436",
+"old": "R. IEHAN S. DENIS",
+"type": "street",
+"px": [
+4490,
+6060
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0437",
+"old": "R. S. THOMAS",
+"type": "street",
+"px": [
+4990,
+6100
+],
+"orient": "h",
+"flag": "ok",
+"note": "rue Saint-Thomas-du-Louvre",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0438",
+"old": "R. DE SEINE",
+"type": "street",
+"px": [
+6540,
+6300
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0439",
+"old": "R. DU FOUR",
+"type": "street",
+"px": [
+9130,
+6150
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0440",
+"old": "MONTREUIL SUR LE BOIS",
+"type": "village_faubourg",
+"px": [
+4200,
+150
+],
+"orient": "h",
+"flag": "ok",
+"note": "printed MOTREVL SVRLEBOIS; Montreuil",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0441",
+"old": "PERCI",
+"type": "village_faubourg",
+"px": [
+7010,
+265
+],
+"orient": "h",
+"flag": "ok",
+"note": "Perci (Bercy)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0442",
+"old": "CONFLANS",
+"type": "village_faubourg",
+"px": [
+7060,
+100
+],
+"orient": "h",
+"flag": "ok",
+"note": "Conflans",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0443",
+"old": "IVERI",
+"type": "village_faubourg",
+"px": [
+8590,
+290
+],
+"orient": "h",
+"flag": "ok",
+"note": "Ivry",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0444",
+"old": "VITERI",
+"type": "village_faubourg",
+"px": [
+9150,
+160
+],
+"orient": "h",
+"flag": "ok",
+"note": "Vitry",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0445",
+"old": "VILLE IUIVE",
+"type": "village_faubourg",
+"px": [
+9680,
+230
+],
+"orient": "h",
+"flag": "ok",
+"note": "Villejuif",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0446",
+"old": "GENTILI",
+"type": "village_faubourg",
+"px": [
+10540,
+430
+],
+"orient": "h",
+"flag": "ok",
+"note": "Gentilly",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0447",
+"old": "BISSESTRE",
+"type": "village_faubourg",
+"px": [
+10710,
+305
+],
+"orient": "h",
+"flag": "ok",
+"note": "Bicetre",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0448",
+"old": "BELE VILE",
+"type": "village_faubourg",
+"px": [
+350,
+690
+],
+"orient": "h",
+"flag": "ok",
+"note": "Belleville",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0449",
+"old": "BANIOLET",
+"type": "village_faubourg",
+"px": [
+740,
+675
+],
+"orient": "h",
+"flag": "ok",
+"note": "Bagnolet",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0450",
+"old": "REUILLI",
+"type": "village_faubourg",
+"px": [
+5490,
+655
+],
+"orient": "h",
+"flag": "unsure",
+"note": "printed RVELI; Reuilly",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0451",
+"old": "PROPINCOURT",
+"type": "village_faubourg",
+"px": [
+2470,
+1040
+],
+"orient": "h",
+"flag": "ok",
+"note": "Popincourt",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0452",
+"old": "LA COURTILLE",
+"type": "village_faubourg",
+"px": [
+980,
+1950
+],
+"orient": "d",
+"flag": "ok",
+"note": "La Courtille",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0453",
+"old": "LES MARES",
+"type": "village_faubourg",
+"px": [
+880,
+3180
+],
+"orient": "h",
+"flag": "ok",
+"note": "Les Marais",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0454",
+"old": "LES FAUBOURS S. LAURENS",
+"type": "village_faubourg",
+"px": [
+1290,
+3560
+],
+"orient": "h",
+"flag": "ok",
+"note": "dup",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0455",
+"old": "LES FAUBOURS S. DENIS",
+"type": "village_faubourg",
+"px": [
+770,
+4325
+],
+"orient": "h",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0456",
+"old": "LA VILLE NEUVE",
+"type": "village_faubourg",
+"px": [
+1080,
+4890
+],
+"orient": "v",
+"flag": "ok",
+"note": "second label",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0457",
+"old": "LA VILLE NEUVE",
+"type": "village_faubourg",
+"px": [
+1190,
+4515
+],
+"orient": "h",
+"flag": "ok",
+"note": "Villeneuve-sur-Gravois (Bonne-Nouvelle)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0458",
+"old": "CLINNIENCOURT",
+"type": "village_faubourg",
+"px": [
+270,
+5345
+],
+"orient": "h",
+"flag": "ok",
+"note": "Clignancourt",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0459",
+"old": "MONMARTRE",
+"type": "village_faubourg",
+"px": [
+250,
+5530
+],
+"orient": "d",
+"flag": "ok",
+"note": "Montmartre",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0460",
+"old": "LA GRANCHE BATELIERE",
+"type": "village_faubourg",
+"px": [
+980,
+5800
+],
+"orient": "d",
+"flag": "ok",
+"note": "Grange-Bateliere",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0461",
+"old": "LES FAUBOURS S. GERMAIN",
+"type": "village_faubourg",
+"px": [
+8000,
+5730
+],
+"orient": "d",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0462",
+"old": "LES TORCHERONS",
+"type": "village_faubourg",
+"px": [
+770,
+6600
+],
+"orient": "v",
+"flag": "ok",
+"note": "Les Porcherons",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0463",
+"old": "LES FAUBOURS S. HONORE",
+"type": "village_faubourg",
+"px": [
+4200,
+6800
+],
+"orient": "v",
+"flag": "ok",
+"note": null,
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0464",
+"old": "LA VILLE LEVESQUE",
+"type": "village_faubourg",
+"px": [
+2400,
+7100
+],
+"orient": "h",
+"flag": "ok",
+"note": "La Ville-l'Eveque",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0465",
+"old": "LE ROULLE",
+"type": "village_faubourg",
+"px": [
+3670,
+7710
+],
+"orient": "h",
+"flag": "ok",
+"note": "Le Roule",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0466",
+"old": "CHALIOT",
+"type": "village_faubourg",
+"px": [
+5950,
+7580
+],
+"orient": "h",
+"flag": "ok",
+"note": "Chaillot",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+},
+{
+"id": "L0467",
+"old": "AUTEUL",
+"type": "village_faubourg",
+"px": [
+10000,
+7745
+],
+"orient": "h",
+"flag": "ok",
+"note": "Auteuil",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": null,
+"variants": [],
+"sources": []
+}
+]
+}

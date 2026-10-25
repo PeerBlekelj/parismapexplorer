@@ -1,0 +1,53 @@
+"""Build the app's data files (web/public/data/*.json) from data/.
+
+Contract with the app (see web/DATA_CONTRACT.md). Fields that are not researched yet are null,
+never empty strings or guesses: the app must show null as "not identified yet".
+"""
+import csv, json, sys, datetime
+from pathlib import Path
+
+root = Path(sys.argv[1])
+out = root / "web/public/data"
+out.mkdir(parents=True, exist_ok=True)
+
+ident = {}
+p = root / "data/places.csv"  # research results, keyed by label id (created in phase 2)
+if p.exists():
+    for r in csv.DictReader(open(p)):
+        ident[r["id"]] = r
+
+def nn(v):
+    return v if v not in ("", None) else None
+
+places = []
+for r in csv.DictReader(open(root / "data/labels_inventory.csv")):
+    if r["type"] == "decoration":
+        continue
+    i = ident.get(r["id"], {})
+    places.append({
+        "id": r["id"],
+        "old": r["text"],
+        "type": r["type"],
+        "px": [int(r["x"]), int(r["y"])],
+        "orient": r["orient"],
+        "flag": r["flag"],
+        "note": nn(r["note"]),
+        "modern": nn(i.get("modern")),
+        "status": nn(i.get("status")),
+        "lat": float(i["lat"]) if nn(i.get("lat")) else None,
+        "lon": float(i["lon"]) if nn(i.get("lon")) else None,
+        "loc_confidence": nn(i.get("loc_confidence")),
+        "summary": nn(i.get("summary")),
+        "variants": [v for v in (i.get("variants") or "").split("|") if v],
+        "sources": json.loads(i["sources"]) if nn(i.get("sources")) else [],
+    })
+
+gcps = [{"id": g["id"], "name": g["name"], "px": [int(g["x"]), int(g["y"])],
+         "lat": float(g["lat"]), "lon": float(g["lon"]), "quality": g["quality"]}
+        for g in csv.DictReader(open(root / "data/gcps.csv"))]
+
+meta = {"generated": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
+        "image": {"width": 10890, "height": 7820, "orientation": "east-up"}}
+json.dump({**meta, "places": places}, open(out / "places.json", "w"), ensure_ascii=False, indent=0)
+json.dump({**meta, "gcps": gcps}, open(out / "gcps.json", "w"), ensure_ascii=False, indent=1)
+print(len(places), "places,", len(gcps), "gcps")

@@ -19,7 +19,7 @@ def key(s):
     return " ".join(norm(s))
 
 rows = []
-for f in sorted((root / "data/labels_raw").glob("r*.csv")):
+for f in sorted((root / "data/labels_raw").glob("*.csv")):
     for r in csv.DictReader(open(f)):
         r["tile"], r["x"], r["y"] = f.stem, int(r["x"]), int(r["y"])
         rows.append(r)
@@ -99,11 +99,27 @@ for m in merged:
 
 merged.sort(key=lambda m: (m["type"], m["y"] // 500, m["x"]))
 out = root / "data/labels_inventory.csv"
+
+# IDs are permanent: research in data/places.csv is keyed on them. Reuse the id of the matching
+# label in the previous inventory; only genuinely new labels get new numbers.
+old = list(csv.DictReader(open(out))) if out.exists() else []
+used, next_n = set(), max([int(o["id"][1:]) for o in old] + [0]) + 1
+for m in merged:
+    for o in old:
+        if o["id"] not in used and key(o["text"]) == key(m["text"]) and \
+                math.dist((int(o["x"]), int(o["y"])), (m["x"], m["y"])) < DUP_DIST:
+            m["id"] = o["id"]; used.add(o["id"]); break
+for m in merged:
+    if "id" not in m:
+        m["id"] = f"L{next_n:04d}"; next_n += 1
+dropped = [o for o in old if o["id"] not in used]
+if dropped:
+    print("WARNING: ids no longer matched (retired, never reuse):", ", ".join(o["id"] + " " + o["text"] for o in dropped))
 with open(out, "w", newline="") as f:
     w = csv.writer(f)
     w.writerow(["id", "text", "type", "x", "y", "orient", "flag", "note", "seen_in"])
-    for i, m in enumerate(merged, 1):
-        w.writerow([f"L{i:04d}", m["text"], m["type"], m["x"], m["y"], m["orient"], m["flag"], m["note"], " ".join(m["seen"])])
+    for m in merged:
+        w.writerow([m["id"], m["text"], m["type"], m["x"], m["y"], m["orient"], m["flag"], m["note"], " ".join(m["seen"])])
 with open(root / "data/labels_orphan_fragments.csv", "w", newline="") as f:
     w = csv.writer(f)
     w.writerow(["text", "x", "y", "tile", "note"])

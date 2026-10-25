@@ -1,0 +1,230 @@
+{
+ "generated": "2026-10-25T18:50:38+00:00",
+ "image": {
+  "width": 10890,
+  "height": 7820,
+  "orientation": "east-up"
+ },
+ "gcps": [
+  {
+   "id": "G001",
+   "name": "Notre-Dame (west front)",
+   "px": [
+    6490,
+    3585
+   ],
+   "lat": 48.85296,
+   "lon": 2.34903,
+   "quality": "label"
+  },
+  {
+   "id": "G002",
+   "name": "Saint-Eustache",
+   "px": [
+    3780,
+    5050
+   ],
+   "lat": 48.86343,
+   "lon": 2.34517,
+   "quality": "label"
+  },
+  {
+   "id": "G003",
+   "name": "Saint-Germain-des-Pres",
+   "px": [
+    8420,
+    6320
+   ],
+   "lat": 48.85394,
+   "lon": 2.33427,
+   "quality": "label"
+  },
+  {
+   "id": "G004",
+   "name": "Saint-Severin",
+   "px": [
+    7190,
+    4040
+   ],
+   "lat": 48.85213,
+   "lon": 2.34547,
+   "quality": "label"
+  },
+  {
+   "id": "G005",
+   "name": "Saint-Etienne-du-Mont",
+   "px": [
+    8590,
+    3080
+   ],
+   "lat": 48.84675,
+   "lon": 2.34808,
+   "quality": "label"
+  },
+  {
+   "id": "G006",
+   "name": "Bastille (site)",
+   "px": [
+    4680,
+    745
+   ],
+   "lat": 48.85321,
+   "lon": 2.36922,
+   "quality": "label"
+  },
+  {
+   "id": "G007",
+   "name": "Louvre (Cour Carree)",
+   "px": [
+    5070,
+    5860
+   ],
+   "lat": 48.8606,
+   "lon": 2.3376,
+   "quality": "label"
+  },
+  {
+   "id": "G008",
+   "name": "Saint-Merri",
+   "px": [
+    4290,
+    3330
+   ],
+   "lat": 48.85904,
+   "lon": 2.35048,
+   "quality": "label"
+  },
+  {
+   "id": "G009",
+   "name": "Saint-Jacques-de-la-Boucherie (Tour Saint-Jacques)",
+   "px": [
+    4800,
+    3950
+   ],
+   "lat": 48.85805,
+   "lon": 2.34885,
+   "quality": "label"
+  },
+  {
+   "id": "G010",
+   "name": "Saint-Germain-l'Auxerrois",
+   "px": [
+    5000,
+    5225
+   ],
+   "lat": 48.85959,
+   "lon": 2.34116,
+   "quality": "label"
+  },
+  {
+   "id": "G011",
+   "name": "Saint-Sulpice",
+   "px": [
+    8710,
+    5520
+   ],
+   "lat": 48.85099,
+   "lon": 2.3348,
+   "quality": "label"
+  },
+  {
+   "id": "G012",
+   "name": "Saint-Gervais",
+   "px": [
+    5030,
+    2770
+   ],
+   "lat": 48.85547,
+   "lon": 2.35403,
+   "quality": "label"
+  },
+  {
+   "id": "G013",
+   "name": "Hotel de Ville",
+   "px": [
+    5050,
+    3245
+   ],
+   "lat": 48.85655,
+   "lon": 2.35223,
+   "quality": "label"
+  },
+  {
+   "id": "G014",
+   "name": "Sainte-Chapelle",
+   "px": [
+    6430,
+    4340
+   ],
+   "lat": 48.8554,
+   "lon": 2.345,
+   "quality": "label"
+  },
+  {
+   "id": "G015",
+   "name": "Saint-Medard",
+   "px": [
+    9650,
+    1625
+   ],
+   "lat": 48.83988,
+   "lon": 2.35019,
+   "quality": "label"
+  },
+  {
+   "id": "G016",
+   "name": "Saint-Nicolas-des-Champs",
+   "px": [
+    2420,
+    3660
+   ],
+   "lat": 48.86591,
+   "lon": 2.35448,
+   "quality": "label"
+  },
+  {
+   "id": "G017",
+   "name": "Saint-Martin-des-Champs (Arts et Metiers)",
+   "px": [
+    2450,
+    3510
+   ],
+   "lat": 48.86652,
+   "lon": 2.35565,
+   "quality": "label"
+  },
+  {
+   "id": "G018",
+   "name": "Saint-Julien-le-Pauvre",
+   "px": [
+    7030,
+    3860
+   ],
+   "lat": 48.85196,
+   "lon": 2.3473,
+   "quality": "label"
+  },
+  {
+   "id": "G019",
+   "name": "Saint-Leu-Saint-Gilles",
+   "px": [
+    3430,
+    4310
+   ],
+   "lat": 48.8628,
+   "lon": 2.35001,
+   "quality": "label"
+  },
+  {
+   "id": "G020",
+   "name": "Hotel de Cluny",
+   "px": [
+    7730,
+    4170
+   ],
+   "lat": 48.85051,
+   "lon": 2.34397,
+   "quality": "label"
+  }
+ ]
+}
