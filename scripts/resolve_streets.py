@@ -95,9 +95,15 @@ def nearest_on(v, lat, lon):
     return round(p.y, 6), round(p.x, 6), geom.distance(Point(lon, lat)) * 85e3
 
 def canon(s):
-    s = nfd(s).replace("-", " ").replace("'", " ")
-    s = re.sub(r"\b(rue|r|la|le|les|de|du|des|d|l|grant|grand|grande|saint|sainte|s|st)\b", " ", s)
-    s = s.replace("y", "i").replace("v", "u").replace("j", "i")
+    """Normalise 16th-century and modern spellings so that the same name compares equal."""
+    s = re.sub(r"[^a-z ]", " ", nfd(s).replace("-", " ").replace("'", " "))
+    s = re.sub(r"\b(rue|r|la|le|les|de|du|des|d|l|au|aux|grant|grand|grande|saint|sainte|s|st)\b", " ", s)
+    s = s.replace("y", "i").replace("v", "u").replace("j", "i").replace("th", "t").replace("ph", "f")
+    s = re.sub(r"n(?=[bp])", "m", s)            # Lonbars ~ Lombards
+    s = re.sub(r"(\w)\1", r"\1", s)            # doubled letters
+    s = re.sub(r"[dt]\b", "t", s)               # Vaugirart ~ Vaugirard
+    s = re.sub(r"(?<=\w)[sxz]\b", "", s)        # plural / silent endings
+    s = re.sub(r"(?<=\w)e\b", "", s)
     return re.sub(r"\s+", " ", s).strip()
 
 labels = {r["id"]: r for r in csv.DictReader(open(root / "data/labels_inventory.csv"))}
@@ -133,7 +139,7 @@ for d in csv.DictReader(open(root / "data/research/streets.csv")):
     row["history_fr"] = (v.get("historique") or "").replace("\r", " ").replace("\n", " ").strip()
     if kind == "CUR":
         lat, lon, dist = nearest_on(v, elat, elon)
-        same = fuzz.token_set_ratio(canon(L["text"]), canon(v["typo_min"])) >= 85
+        same = fuzz.token_set_ratio(canon(L["text"]), canon(v["typo_min"])) >= 80
         row.update(modern=pretty(v["typo_min"]), status=d["status"] or ("standing" if same else "renamed"),
                    lat=lat, lon=lon, loc_confidence="exact")
         if dist > 450:
