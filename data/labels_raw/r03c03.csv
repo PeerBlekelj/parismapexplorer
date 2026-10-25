@@ -1,0 +1,27 @@
+text,x,y,orient,flag,note
+R. C,3050,3030,v,partial,
+R. CO,3175,3030,v,partial,
+R. MIC,3290,3030,v,partial,
+CUD,3510,3030,v,partial,
+R. GEFFROI,3620,3080,v,partial,
+RASENOU NIN,3110,3075,h,partial,mirror/upside-down fragment; check neighbour tile
+CIMETIERE S. NICOLAS,3130,3260,v,ok,
+R. DU CIMETIERE,3065,3550,v,ok,
+R. MONT MORANCI,3190,3570,v,ok,rue de Montmorency
+R. GRENIER S. LADRE,3295,3540,v,ok,rue Grenier-Saint-Lazare
+R. DE LA VENERIE,3375,3530,v,unsure,partly damaged
+R. DES PETIS CHAMS,3480,3510,v,ok,
+R. DES MENESTRIERS,3565,3480,v,ok,
+R. DES ESTUVES,3655,3580,v,ok,
+R. DE LA PLATRIERE,3735,3570,v,ok,
+R. DE LA BAUDRERIE,3835,3490,v,ok,
+LA PIERRE AU LART,3950,3250,v,ok,printed LAPIER REAVLART
+R. NEUVE S. MARRI,4050,3350,v,ok,rue Neuve-Saint-Merri
+LOSPITAL S. IULIAN,3435,3745,h,ok,Saint-Julien-des-Menetriers
+LA GRANT R. S. MAR,3920,3740,h,partial,la Grant Rue Saint-Martin
+R. QUI QUEN POIX,3545,3970,h,ok,rue Quincampoix
+LA VIEI,4040,3965,h,partial,
+S. MAGLOIRE,3610,4065,h,ok,
+LABE,3030,4055,h,partial,
+RS,3350,4060,v,partial,
+ER,4095,4050,v,partial,

@@ -1,0 +1,6 @@
+text,x,y,orient,flag,note
+IVERI,8590,290,h,ok,Ivry
+VITERI,9150,160,h,ok,Vitry
+PORTE DE LA BARRE,8820,790,d,ok,printed POR DELABARE TE; porte de la Barre? check
+R. DE LA BARRE,9200,1050,v,partial,see r00c09
+R. DU FER,9150,1150,d,partial,see r00c09

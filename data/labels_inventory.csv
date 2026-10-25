@@ -1,0 +1,468 @@
+id,text,type,x,y,orient,flag,note,seen_in
+L0001,LE PONT DE CHALANTON,bridge,7570,75,h,ok,Pont de Charenton,r00c07
+L0002,LE PONT NOSTRE DAME,bridge,5620,3755,h,ok,printed LE PONT HOSTRE DAME,r03c05
+L0003,PETIT PONT,bridge,6640,3965,h,ok,,r03c06
+L0004,LE PONT AU CHANGE,bridge,5680,4070,h,ok,,r03c05
+L0005,LE PONT AU MUNIERS,bridge,5680,4265,h,ok,Pont aux Meuniers,r03c05
+L0006,LE PONT S. MICHEL,bridge,6680,4195,h,ok,,r03c06
+L0007,LE PONT ARCANS,bridge,1100,7150,d,ok,Pont d'Arcans (Grand Egout bridge),r06c00
+L0008,LES TOURNELLES,building,4240,1325,h,ok,Hotel des Tournelles,r01c04
+L0009,LOSTEL DANGOULESME,building,4510,1370,h,ok,printed LOSTE DAN GOULESME,r01c04
+L0010,LOSTEL DE BRIANNE,building,4960,1240,h,unsure,printed LOSTELDEBRIANNE; hotel (de Brienne?),r00c04
+L0011,LOSTEL DU PREVOST DE PARIS,building,4820,1870,h,ok,printed LOS TE DU PREVOS DE PARIS,r01c04
+L0012,LOSTEL DE LA REINE,building,5160,1540,h,ok,,r01c04
+L0013,LOSTEL DE TOURNAI,building,8570,2830,d,ok,,r02c08
+L0014,LOSTEL DARGENT,building,4540,3365,h,unsure,printed LOSTEL DAR GENT; Hotel d'Argent,r03c04
+L0015,LOSTEL DE LA VILE,building,5050,3245,h,ok,Hotel de Ville,r02c04
+L0016,LOSTEL DE LO REINE,building,7140,3165,h,ok,hotel de Lorraine? check,r02c06
+L0017,PETIT CHATELET,building,6810,3895,h,ok,,r03c06
+L0018,CHATELET,building,5240,4240,h,ok,Grand Chatelet,r03c05
+L0019,LORLOGE,building,5960,4200,v,ok,Tour de l'Horloge,r03c05
+L0020,LA CONCIERGERIE,building,6040,4425,h,ok,,r04c05
+L0021,LE PALAYS,building,6180,4260,h,ok,Palais,r03c05 r04c05
+L0022,LA CHAMBRE DES CONTES,building,6330,4440,h,ok,Chambre des Comptes,r04c06
+L0023,LOSTEL DE TES,building,7370,4370,v,unsure,,r04c07
+L0024,LOTEL DE CLUNI,building,7730,4170,h,ok,Hotel de Cluny,r03c07
+L0025,LA MONNOIE,building,4840,4820,h,ok,Hotel des Monnaies,r04c04
+L0026,LE FOUR LEVESQUE,building,5300,4630,h,ok,For-l'Eveque,r04c04 r04c05
+L0027,LOTEL DE NEVERS,building,7150,4930,h,ok,,r04c06
+L0028,LOTEL DE RIMS,building,7740,4760,h,ok,hotel de Reims,r04c07
+L0029,LOSTEL DALANCON,building,4880,5450,h,ok,Hotel d'Alencon,r05c04
+L0030,LOSTEL DE BOURBON,building,5130,5450,h,ok,Petit-Bourbon,r05c04
+L0031,LOTEL S. DENIS,building,7180,5300,h,ok,hotel Saint-Denis,r05c06
+L0032,LOSTEL DE ROUEN,building,7620,5110,h,ok,dup,r04c07 r05c07
+L0033,LE LOUVRE,building,5070,5860,h,ok,,r05c04
+L0034,LOSTEL DE NELLE,building,6800,5550,d,ok,Hotel de Nesle,r05c06
+L0035,S. ANTHOINE,church_religious,4830,405,h,ok,abbey of Saint-Antoine-des-Champs,r00c04
+L0036,LES CELESTINS,church_religious,5520,1090,h,ok,,r00c05
+L0037,S. MARCEAU,church_religious,9620,1005,h,ok,Saint-Marcel,r00c09
+L0038,S. IPOLITE,church_religious,9950,1080,h,ok,Saint-Hippolyte,r00c09
+L0039,LOPITAL,church_religious,10050,1400,h,ok,hopital (Lourcine?),r01c09
+L0040,LES CORDELIERES,church_religious,10530,1000,h,ok,Cordelieres (convent at Lourcine),r00c10
+L0041,S. CATERINE DU VAL DES ESCOLIERS,church_religious,4290,1750,h,ok,printed S. CATERINNE DU VAL DES ECOLIERS,r01c04
+L0042,S. POL,church_religious,4760,1720,h,ok,Saint-Paul,r01c04
+L0043,LAVE MARIA,church_religious,5120,1965,h,ok,Ave-Maria convent,r01c04
+L0044,S. MEDART,church_religious,9650,1625,h,ok,Saint-Medard,r01c09
+L0045,LEGLISE DU TEMPLE,church_religious,2340,2475,h,ok,Enclos du Temple church,r02c02
+L0046,LES ENFANS ROUGE,church_religious,2890,2230,h,ok,Enfants-Rouges,r01c02 r02c02
+L0047,LA CHAPELLE DE BRAQUES,church_religious,3460,2400,d,ok,printed LA CHAPELLE DE BRAQVES,r02c03
+L0048,S. ANTHOINE,church_religious,4500,2140,h,ok,Petit Saint-Antoine,r01c04
+L0049,S. VITOR,church_religious,7610,2120,h,ok,Abbaye Saint-Victor,r01c07
+L0050,LES BILLETTES,church_religious,4160,2960,h,ok,,r02c03
+L0051,LE CIMETIERE S. IEHAN,church_religious,4640,2650,h,ok,cimetiere Saint-Jean,r02c04
+L0052,LOPITAL S. GERVES,church_religious,4870,2770,h,ok,,r02c04
+L0053,S. GERVES,church_religious,5030,2770,h,ok,Saint-Gervais,r02c04
+L0054,S. IEHAN,church_religious,5060,2975,h,ok,Saint-Jean-en-Greve,r02c04
+L0055,LES AUDRIETTES,church_religious,5330,2970,v,ok,Haudriettes,r02c05
+L0056,CIMETIERE S. NICOLAS,church_religious,3130,3210,v,ok,dup,r02c02 r03c03
+L0057,CLOISTRE S. MARI,church_religious,4230,3380,v,ok,,r03c04
+L0058,S. MARI,church_religious,4290,3330,h,ok,Saint-Merri (church),r03c04
+L0059,LES ESPERIT,church_religious,4950,3085,h,ok,Saint-Esprit hospital,r02c04
+L0060,LE CLOISTRE,church_religious,6220,3335,h,ok,cloister of Notre-Dame,r03c06
+L0061,S. DENIS DU PAS,church_religious,6510,3205,h,ok,dup,r02c06 r03c06
+L0062,LES BERNARDINS,church_religious,7170,3060,h,ok,,r02c06
+L0063,S. NICOLAS DU CHARDONNERET,church_religious,7530,3110,h,ok,dup,r02c07 r03c07
+L0064,S. ETIENE,church_religious,8590,3080,h,ok,Saint-Etienne-du-Mont,r02c08
+L0065,S. GENEVIEVE,church_religious,8890,3150,h,ok,abbey,r02c08
+L0066,S. LAURENS,church_religious,410,3815,h,ok,printed S. LAVRES; Saint-Laurent,r03c00
+L0067,S. NICOLAS DES CHAS,church_religious,2420,3660,h,ok,Saint-Nicolas-des-Champs,r03c02
+L0068,S. MARTIN DES CHAMS,church_religious,2450,3510,h,ok,Saint-Martin-des-Champs,r03c02
+L0069,LOSPITAL S. IULIAN,church_religious,3435,3745,h,ok,Saint-Julien-des-Menetriers,r03c03
+L0070,S. MARRI,church_religious,4310,3745,h,ok,second Saint-Merri label (street?),r03c04
+L0071,S. BON,church_religious,4480,3550,h,ok,Saint-Bon,r03c04
+L0072,S. IAQUES DE LA BOUCHERIE,church_religious,4800,3950,h,ok,,r03c04
+L0073,S. LANDRI,church_religious,6080,3510,h,ok,,r03c06
+L0074,S. MARCIAL,church_religious,6290,3910,h,unsure,printed S. MACIAS? Saint-Martial,r03c06
+L0075,LA MADELINNE,church_religious,6340,3845,d,ok,Sainte-Madeleine-en-la-Cite,r03c06
+L0076,S. CHRISTOFLE,church_religious,6430,3665,h,ok,,r03c06
+L0077,S. GENEVIEVE,church_religious,6460,3810,h,ok,Sainte-Genevieve-des-Ardents,r03c06
+L0078,S. GERMAIN LE VIEUS,church_religious,6460,3990,h,ok,,r03c06
+L0079,NOSTRE DAME DE PARIS,church_religious,6490,3585,h,ok,printed HOSTREDA ME DEPARIS,r03c06
+L0080,LOSTEL DIEU,church_religious,6610,3645,h,ok,,r03c06
+L0081,LOTEL DIEU,church_religious,6610,3910,h,ok,second Hotel-Dieu label,r03c06
+L0082,S. IULIEN,church_religious,7030,3860,d,ok,Saint-Julien-le-Pauvre (label upside down),r03c06
+L0083,S. YVES,church_religious,7450,3815,h,ok,chapelle Saint-Yves,r03c07
+L0084,LES CARMES,church_religious,7780,3550,h,ok,,r03c07
+L0085,S. IEHAN DE LATRAN,church_religious,7790,3830,h,ok,commanderie Saint-Jean-de-Latran,r03c07
+L0086,S. HILAIRE,church_religious,8150,3685,h,ok,dup,r03c07 r03c08
+L0087,S. ETIENE DES GRES,church_religious,8890,3760,h,ok,,r03c08
+L0088,S. IAQUES DU HAULT PAS,church_religious,9880,3990,h,ok,,r03c09
+L0089,LOPITAL,church_religious,10090,3935,h,ok,hopital Saint-Jacques-du-Haut-Pas,r03c09
+L0090,NOSTRE DAME DES CHAMS,church_religious,10600,3920,h,ok,Notre-Dame-des-Champs,r03c10
+L0091,S. LADRE,church_religious,240,4410,h,ok,Saint-Lazare (leper house),r04c00
+L0092,CIMETIERE DE LA TERNITE,church_religious,2450,4120,h,ok,cimetiere de la Trinite,r03c02
+L0093,LOPITAL S. IAQUES,church_religious,3300,4440,h,ok,hopital Saint-Jacques-aux-Pelerins,r04c03
+L0094,S. LEU S. GILLE,church_religious,3430,4310,h,ok,Saint-Leu-Saint-Gilles,r04c03
+L0095,S. MAGLOIRE,church_religious,3610,4065,h,ok,,r03c03
+L0096,LE SEPULCRE,church_religious,3870,4290,h,ok,Saint-Sepulcre,r04c03
+L0097,S. INOCENS,church_religious,4130,4490,h,ok,Saints-Innocents,r04c03
+L0098,S. OPORTUNE,church_religious,4440,4405,h,ok,Sainte-Opportune,r04c04
+L0099,S. CATERINNE,church_religious,4500,4230,h,ok,,r03c04
+L0100,LOPITAL,church_religious,4550,4190,h,ok,hospital Sainte-Catherine,r03c04
+L0101,S. LEUFROI,church_religious,5350,4135,h,ok,Saint-Leufroy,r03c05
+L0102,S. PIERRE DES ASSIS,church_religious,6120,4060,h,ok,dup,r03c05
+L0103,S. BERTELEMI,church_religious,6120,4135,h,ok,Saint-Barthelemy,r03c05
+L0104,S. ELOI,church_religious,6280,4080,h,ok,,r03c06
+L0105,S. CHAPPELLE,church_religious,6430,4340,h,ok,manuscript addition (Sainte-Chapelle),r04c06
+L0106,S. MICHEL,church_religious,6440,4280,h,ok,chapelle Saint-Michel,r04c06
+L0107,S. SEVERIN,church_religious,7190,4040,h,ok,,r03c06
+L0108,LES MATURINS,church_religious,7650,4070,h,ok,Mathurins,r03c07
+L0109,LE CLOISTRE S. BENOIST,church_religious,7920,4090,h,ok,,r03c07
+L0110,S. COME,church_religious,7980,4470,h,ok,Saint-Come,r04c07
+L0111,LES IACOPINS,church_religious,8790,4060,h,ok,Jacobins,r03c08
+L0112,LES FILLES DIEU,church_religious,2130,4520,h,ok,,r04c01
+L0113,S. SAUVEUR,church_religious,2400,4520,h,ok,,r04c02
+L0114,LA CHAPELLE DES ORFEVRES,church_religious,5030,4520,h,ok,,r04c04
+L0115,S. ANDRI,church_religious,7230,4620,h,ok,Saint-Andre-des-Arts,r04c06
+L0116,LES CORDELIERS,church_religious,8130,4930,h,ok,,r04c08
+L0117,LES CHARTEREUS,church_religious,10370,4545,h,ok,Chartreux (Vauvert),r04c10
+L0118,S. EUSTACE,church_religious,3780,5050,h,ok,Saint-Eustache,r04c03
+L0119,LES FILLES REPENTIS,church_religious,3980,5370,h,ok,Filles-Penitentes,r05c03
+L0120,S. GERMAIN DE LOCERRAS,church_religious,5000,5225,h,ok,Saint-Germain-l'Auxerrois,r04c04
+L0121,LES AUGUSTINS,church_religious,6850,5260,h,ok,dup,r04c06 r05c06
+L0122,LA CHAPELLE DES MARTIS,church_religious,380,5960,h,ok,chapelle des Martyrs,r05c00
+L0123,S. HONORE,church_religious,4080,5870,h,ok,Saint-Honore (collegiate church),r05c03
+L0124,S. SURPLICE,church_religious,8710,5520,v,ok,Saint-Sulpice,r05c08
+L0125,LES QUINSE VINS,church_religious,4520,6240,h,ok,Quinze-Vingts,r05c04
+L0126,S. THOMAS,church_religious,4950,6200,h,ok,Saint-Thomas-du-Louvre,r05c04
+L0127,S. GERMAIN DES PRES,church_religious,8420,6320,v,ok,abbey,r06c08
+L0128,LES BONS HOMMES,church_religious,8340,7690,h,ok,Minimes de Chaillot (Bonshommes),r07c08
+L0129,LE CARDINAL LEMOINE,college,7420,2760,h,ok,college du Cardinal-Lemoine,r02c07
+L0130,BON COURT,college,8350,2870,d,ok,college de Boncourt,r02c08
+L0131,LA MARCHE,college,7840,3335,h,ok,college de la Marche,r03c07
+L0132,NAVARRE,college,8100,3190,h,ok,college de Navarre,r02c07
+L0133,ALBRET,college,8150,3410,h,ok,college d'Albret? check,r03c08
+L0134,LES DE BONS ENFANS,college,8300,3390,h,unsure,,r03c08
+L0135,CORNALLE,college,7350,3815,h,ok,college de Cornouaille,r03c07
+L0136,PRELLE,college,7680,3660,h,ok,college de Presles,r03c07
+L0137,BEAUVAIS,college,7830,3690,h,ok,college de Beauvais (Dormans-Beauvais),r03c07
+L0138,LE GRANT DECRET,college,8070,3700,h,ok,Ecoles de Decret (faculty of law),r03c07
+L0139,LONBARS,college,8100,3520,h,ok,college des Lombards,r03c08
+L0140,COQUERET,college,8330,3700,h,ok,college Coqueret,r03c08
+L0141,LE PLESSI,college,8370,3860,h,ok,college du Plessis,r03c08
+L0142,RAINS,college,8480,3620,h,ok,college de Reims,r03c08
+L0143,LEMAN,college,8480,3780,h,ok,college du Mans,r03c08
+L0144,MARMOUTIERS,college,8500,3850,h,ok,college de Marmoutier,r03c08
+L0145,C. S. BARBE,college,8570,3560,h,ok,college Sainte-Barbe,r03c08
+L0146,LES CHOLES,college,8670,3850,h,ok,,r03c08
+L0147,S. MICHEL,college,8700,3670,h,ok,college Saint-Michel (de Chanac),r03c08
+L0148,MONT EGU,college,8730,3560,h,ok,college de Montaigu,r03c08
+L0149,LISIEUX,college,8950,3630,h,ok,college de Lisieux,r03c08
+L0150,COLEGE MAISTRE GERVAIS,college,7450,4040,h,ok,,r03c07
+L0151,LOTEL DE HEROCOURT,college,7960,4205,h,ok,college d'Harcourt,r03c07
+L0152,C. DE IUSTICE,college,8170,4490,h,ok,college de Justice,r04c07
+L0153,NERBONNE,college,8280,4240,h,ok,college de Narbonne,r03c08
+L0154,C. SORBONNE,college,8340,4060,h,ok,college de Sorbonne,r03c08
+L0155,CALVI,college,8510,4050,h,ok,college de Calvi,r03c08
+L0156,CLUGNI,college,8660,4180,h,ok,college de Cluny,r03c08
+L0157,LA CHAPELLE MIGNON,college,7590,4770,h,ok,college Mignon,r04c07
+L0158,BOURGONGNE,college,7820,4880,h,ok,college de Bourgogne,r04c07
+L0159,LE COLLEGE S. GERMAIN,college,5370,5090,h,ok,,r04c05
+L0160,LES BONS ENFANS,college,3830,6020,h,ok,college des Bons-Enfants,r05c03
+L0161,SUBSOLANUS,decoration,850,170,h,ok,wind name (east); decoration,r00c00
+L0162,ORIENS,decoration,6730,80,h,ok,compass word (east); decoration,r00c06
+L0163,AUSTER,decoration,9920,140,h,ok,wind name (south); decoration,r00c09
+L0164,SEPTENTRIONES,decoration,410,6930,h,ok,compass word (north); decoration,r06c00
+L0165,OCCIDENS,decoration,5500,7460,h,ok,compass word (west); decoration,r07c05
+L0166,FAVONIUS,decoration,10500,7050,h,ok,wind name (west); decoration,r06c10
+L0167,LE BASTILLON,gate_wall,3900,855,h,ok,bastion,r00c03
+L0168,PORTE S. ANTHOINE,gate_wall,4270,915,h,ok,,r00c04
+L0169,LA BASTILLE,gate_wall,4680,745,h,ok,,r00c04
+L0170,PORTE DE LA BARRE,gate_wall,8820,790,d,ok,printed POR DELABARE TE; porte de la Barre? check,r00c08
+L0171,LE BASTILLON,gate_wall,1790,1800,h,ok,second bastion label,r01c01
+L0172,PORTE DU TEMPLE,gate_wall,1900,2200,h,ok,dup of r01c01,r01c01 r02c01
+L0173,PORTE BORDELLE,gate_wall,8740,2720,d,ok,Porte Bordelles,r02c08
+L0174,PORTE S. MARTIN,gate_wall,2000,3630,h,ok,,r03c01
+L0175,PORTE S. IAQUES,gate_wall,9250,3840,h,ok,dup,r03c08 r03c09
+L0176,PORTE S. DENIS,gate_wall,1920,4290,h,ok,,r04c01
+L0177,PORTE S. MICHEL,gate_wall,8840,4210,h,ok,dup,r03c08 r04c08
+L0178,PORTE DE BUCI,gate_wall,7300,5480,h,ok,printed PORTE DE BVCI,r05c07
+L0179,PORTE S. GERMAIN,gate_wall,7650,5300,d,ok,,r05c07
+L0180,PORTE MONMARTRE,gate_wall,2620,5620,d,ok,,r05c02
+L0181,LA TOUR NELLE,gate_wall,6470,5860,h,ok,Tour de Nesle,r05c06
+L0182,PORTE S. HONORE,gate_wall,4450,6340,h,ok,,r06c04
+L0183,LA TOUR DU BOIS,gate_wall,5520,6250,h,ok,dup,r05c05 r06c05
+L0184,LE BOIS DE VINCIENNE,other,5160,195,h,ok,Bois de Vincennes,r00c04
+L0185,RIVIERE DE MARNE,other,7340,235,h,ok,,r00c07
+L0186,RIVIERE DE SAINE,other,7810,265,d,ok,,r00c07
+L0187,LA CROIS FAUBIN,other,3880,575,h,ok,La Croix-Faubin,r00c03
+L0188,LILE DE LOUVIERS,other,6790,1150,d,ok,Ile Louviers,r00c06
+L0189,LES FAUBOURG S. VITOR,other,7780,2410,d,ok,,r02c07
+L0190,LE CHAN DALBIA,other,9070,2060,d,ok,Champ d'Albiac?,r01c08
+L0191,MON FAUCON,other,360,2675,h,ok,Gibet de Montfaucon,r02c00
+L0192,LA PORTE BODES,other,4810,2620,h,ok,Porte Baudoyer,r02c04
+L0193,LE TERRIN,other,6560,2880,h,ok,Le Terrain (tip of Cite),r02c06
+L0194,LA TOURNELLE,other,6860,2610,h,ok,,r02c06
+L0195,LE CHAN GAILLART,other,8000,2980,d,ok,Clos du Chardonnet / Champ Gaillard,r02c07
+L0196,BRAQUES,other,9590,2995,h,unsure,,r02c09
+L0197,LES MOULINS DES GOBELLIN,other,10500,3230,h,ok,dup,r02c10 r03c10
+L0198,LE FAUBOURS S. IAQUES,other,10050,3830,d,ok,,r03c09
+L0199,CHERRO COUPT,other,8480,4470,h,ok,printed CHERRO COVPT? check,r04c08
+L0200,LE IEU DE PAUME,other,4220,4680,v,ok,,r04c03
+L0201,LE MOULIN DE LA MONNOIE,other,5890,4870,v,ok,,r04c05
+L0202,LE IARDIN DU ROI,other,6110,4680,h,ok,,r04c05
+L0203,LE PRES OU ER DE LOTEL DIEU,other,9640,4530,h,ok,printed LE PRESOER DE LOTEL DIEV,r04c09
+L0204,LES TUILLERIES,other,4920,6640,h,ok,printed LESTVIL LEPIES,r06c04
+L0205,LE PRE AU CLERS,other,6700,6630,h,ok,Pre-aux-Clercs,r06c06
+L0206,LE PORT AU FIN,square_market,5500,2700,v,ok,Port au Foin,r02c05
+L0207,LE CARFOUR GILORI,square_market,4660,3290,d,ok,carrefour Guillori,r03c04
+L0208,LA PLACE DE GREVE,square_market,4990,3385,h,ok,,r03c04
+L0209,LA PLACE AU VIAUX,square_market,5150,3960,d,ok,place aux Veaux,r03c04
+L0210,LA PLACE MAUBERT,square_market,7330,3530,d,ok,,r03c07
+L0211,LA GRANT BOUCHERIE,square_market,5010,4240,h,ok,,r03c04
+L0212,LE PILORI,square_market,3550,4680,h,ok,pilori des Halles,r04c03
+L0213,LA HALLE AU BLE,square_market,3920,4660,d,ok,printed LA HALE AV BLE,r04c03
+L0214,LA BOUCHERIE DE BEAUVAIS,square_market,4220,4840,h,ok,,r04c03
+L0215,LA CROIX DU TIROY,square_market,4270,5110,v,ok,,r04c03
+L0216,LA FOIRE S. GERMAIN,square_market,8370,5750,d,ok,,r05c08
+L0217,LE PILORI,square_market,8370,6010,h,ok,pilori Saint-Germain,r05c08
+L0218,LE MARCHE AUX POURCEAUX,square_market,3500,6540,h,ok,,r06c03
+L0219,LA GRANT R. S. ANTHOINE,street,4660,1480,v,ok,,r01c04
+L0220,R. DE LA CERISEE,street,4930,1165,h,ok,rue de la Cerisaie,r00c04
+L0221,R. DES CELLESTINS,street,5030,1385,h,ok,,r01c04
+L0222,R. DE LA BARRE,street,9250,1050,v,ok,,r00c09
+L0223,R. DU FER DE MOULAIN,street,9320,1200,d,ok,rue du Fer-a-Moulin,r00c09
+L0224,R. NEUVE,street,9520,1140,d,ok,,r00c09
+L0225,R. DES TAINTURIERS,street,10270,1100,d,ok,rue des Teinturiers,r00c10
+L0226,R. DES CORDELIERES,street,10640,1180,d,ok,,r00c10
+L0227,R. TOUGIN,street,3410,1960,v,unsure,,r01c03
+L0228,LA R. S. CATERINE,street,3840,1880,h,ok,rue Sainte-Catherine,r01c03
+L0229,R. VERCEE,street,4700,1995,h,unsure,printed R. VERCE E,r01c04
+L0230,R. S. POL,street,5070,1725,h,ok,,r01c04
+L0231,R. DU IARDIN,street,5140,1845,h,ok,,r01c04
+L0232,R. NEUVE S. POL,street,5340,1550,v,ok,,r01c05
+L0233,R. DORLEANS,street,9090,1650,h,ok,rue d'Orleans (Saint-Marcel),r01c08
+L0234,R. DU GRANT CHANTIER,street,3080,2345,h,ok,,r02c02
+L0235,R. DES CATREFISHE MON,street,3340,2150,v,unsure,partial/unclear,r01c03
+L0236,R. DES CATREFILS MON,street,3340,2200,v,unsure,rue des Quatre-Fils?,r02c03
+L0237,R. DE PARADIS,street,3550,2300,v,ok,,r02c03
+L0238,LA VIELE R. DU TAMPLE,street,3590,2150,d,ok,Vieille rue du Temple,r01c03
+L0239,R. DE POULISE,street,3610,2010,v,ok,,r01c03
+L0240,R. DU TAMPLE,street,3710,2240,d,ok,rue du Temple? check vs Vieille rue du Temple,r01c03
+L0241,R. DES CINGES,street,3880,2420,h,ok,rue des Singes,r02c03
+L0242,R. DES ROSIERS,street,3980,2200,v,ok,,r01c03
+L0243,R. DES ECOUFLES,street,4120,2225,h,ok,,r01c03
+L0244,R. DES PAIENS,street,4130,2075,h,ok,rue Payenne,r01c03
+L0245,R. DU ROI DE CECILE,street,4410,2170,v,ok,printed R. DV ROI CECILE,r01c04
+L0246,R. DES BALES,street,4430,2010,v,ok,,r01c04
+L0247,R. RENAULT LE FEVRE,street,4510,2430,h,ok,,r02c04
+L0248,R. PETIT IOUI,street,4810,2150,v,unsure,printed R. PETIO VI,r01c04
+L0249,R. GEFROI LANNIER,street,4880,2385,h,ok,rue Geoffroy-l'Asnier,r02c04
+L0250,R. GARNIER S. LADRE,street,5040,2490,v,unsure,printed R. GARNIERS. V RIAN; rue Garnier-sur-l'Eau? check,r02c04
+L0251,R. NONNAIN,street,5090,2085,h,unsure,,r01c04
+L0252,R. NONNAIN DIERRE,street,5100,2140,h,ok,rue des Nonnains-d'Hyeres,r01c04
+L0253,R. DE COUPEAUS,street,8900,2380,d,ok,rue Copeau,r02c08
+L0254,LA GRANT R. S. MARCEAU,street,9200,2350,d,ok,,r02c08
+L0255,R. DE LA CROYS,street,2340,2810,h,ok,rue de la Croix,r02c02
+L0256,R. DES FONTAINES,street,2350,2690,v,ok,printed R. DES FONTI and SEN upside-down,r02c02
+L0257,R. DE FREPAU,street,2620,2760,v,ok,rue Frepillon? check,r02c02
+L0258,R. PORTE FOIN,street,2840,2560,v,ok,,r02c02
+L0259,R. PATOURELLE,street,2950,2560,v,ok,rue Pastourelle,r02c02
+L0260,R. CHAPON,street,3060,2960,v,ok,,r02c02
+L0261,LA GRANT R. DU TAMPLE,street,3080,2705,h,ok,,r02c02
+L0262,R. COURAULAIN,street,3170,2960,v,ok,rue Court-au-Villain (Montmorency),r02c02
+L0263,R. MICHELECONTE,street,3260,2960,v,ok,rue Michel-le-Comte,r02c02
+L0264,R. DE HAUDRIETTE,street,3330,2560,v,ok,rue des Haudriettes,r02c03
+L0265,R. DE BROVES,street,3420,2600,v,unsure,rue de Braque?,r02c03
+L0266,CUDESAC,street,3510,2990,v,ok,cul-de-sac,r02c03
+L0267,R. DES BLANS MANTEOS,street,3790,2600,v,ok,rue des Blancs-Manteaux,r02c03
+L0268,R. DU PUIS,street,3900,2510,h,ok,,r02c03
+L0269,R. DES HOMES ARMES,street,3920,2640,h,ok,,r02c03
+L0270,R. DE LA BRETONNERIE,street,4090,2600,v,ok,Sainte-Croix-de-la-Bretonnerie,r02c03
+L0271,R. BOUTI BOURG,street,4170,2630,h,ok,rue du Bourg-Tibourg,r02c03
+L0272,R. FRANMURIER,street,4170,2810,h,ok,rue Franc-Meurier? check,r02c03
+L0273,R. BOUQUETONNE,street,4340,2590,v,unsure,printed R. BOV QVETONNE,r02c04
+L0274,R. DES MAUVES GARCONS,street,4500,2860,h,ok,,r02c04
+L0275,R. DU COC,street,4540,2970,h,ok,,r02c04
+L0276,R. DE LA TISSARANDERIE,street,4760,2950,d,ok,printed R. DE LA TISARRA NDERIE,r02c04
+L0277,R. DU PEAU DIABLE,street,4870,2880,d,unsure,,r02c04
+L0278,R. DES BARES,street,5130,2585,h,ok,,r02c04
+L0279,R. DE ONPONT,street,5160,2855,h,unsure,,r02c04
+L0280,R. DE LA MORTELLERIE,street,5350,2650,v,ok,,r02c05
+L0281,R. DES RAS,street,7760,2815,h,ok,rue des Rats,r02c07
+L0282,R. VARSAILLE,street,7770,2900,h,ok,rue de Versailles,r02c07
+L0283,R. DU BON PUIS,street,7770,2995,h,ok,,r02c07
+L0284,R. BORDELLE,street,8520,2990,d,ok,,r02c08
+L0285,R. DES POSTES,street,9740,2780,v,ok,,r02c09
+L0286,R. DU VERBOIS,street,2180,3250,v,ok,rue du Vertbois,r03c01
+L0287,R. AU MERE,street,2820,3270,v,ok,rue au Maire,r03c02
+L0288,R. TRASENONNAIN,street,3070,3085,h,ok,rue Transnonain,r02c02
+L0289,R. DES MENESTRIERS,street,3565,3480,v,ok,,r03c03
+L0290,R. GEFROI LANGEVIN,street,3620,3050,v,ok,rue Geoffroy-l'Angevin,r02c03
+L0291,R. DE LA BAUDRERIE,street,3835,3490,v,ok,,r03c03
+L0292,LA PIERRE AU LART,street,3950,3250,v,ok,printed LAPIER REAVLART,r03c03
+L0293,R. NEUVE S. MARRI,street,4050,3350,v,ok,rue Neuve-Saint-Merri,r03c03 r03c04
+L0294,R. DE LA POTERIE,street,4160,3220,h,ok,,r02c03
+L0295,LA COURRERIE,street,4370,3180,v,ok,,r02c04
+L0296,R. DE LA COURRERIE,street,4380,3320,v,ok,dup of LA COURRERIE,r03c04
+L0297,R. DE LA POTERIE,street,4500,3225,h,ok,second,r02c04
+L0298,R. DU PORT S. LANDRI,street,6040,3400,v,ok,,r03c06
+L0299,R. DE BIEVRE,street,7170,3400,h,ok,dup,r03c06 r03c07
+L0300,R. DES BERNARDINS,street,7200,3270,h,ok,dup,r02c06 r03c06 r03c07
+L0301,LA GRANT R. S. VITOR,street,7640,3150,v,ok,,r02c07
+L0302,R. S. NICOLAS,street,7770,3265,h,ok,,r02c07
+L0303,R. ALEXANDRE LANGLOIS,street,7800,3085,h,ok,,r02c07
+L0304,R. PAVEE DADOULLE,street,7800,3180,h,ok,rue Pavee-d'Andouilles,r02c07
+L0305,LE CLOIS,street,7920,3080,v,unsure,rue Clopin?,r02c07
+L0306,LE MONT S. GENEVIEVE,street,7980,3410,d,ok,printed LEMONT S GENEVIEVE; rue de la Montagne-Sainte-Genevieve,r03c07
+L0307,R. DES GRAVELIERS,street,2960,3560,v,ok,rue des Gravilliers,r03c02
+L0308,R. DU CIMETIERE,street,3070,3560,v,ok,dup,r03c02 r03c03
+L0309,R. MONT MORANCI,street,3190,3570,v,ok,dup,r03c02 r03c03
+L0310,R. GRENIER S. LADRE,street,3295,3540,v,ok,rue Grenier-Saint-Lazare,r03c03
+L0311,R. DE LA VENERIE,street,3375,3530,v,unsure,partly damaged,r03c03
+L0312,R. DES PETIS CHAMS,street,3480,3510,v,ok,,r03c03
+L0313,R. QUI QUEN POIX,street,3545,3970,h,ok,rue Quincampoix,r03c03
+L0314,R. DES ESTUVES,street,3655,3580,v,ok,,r03c03
+L0315,R. DE LA PLATRIERE,street,3735,3570,v,ok,,r03c03
+L0316,S. MARTIN,street,4060,3745,h,ok,rue Saint-Martin? (fragment R. S. MARTIN),r03c04
+L0317,LA VIELLE CORRERIE,street,4170,3970,h,ok,Vieille Courroierie,r03c04
+L0318,MARIVAUX,street,4260,3880,h,ok,rue de Marivaux,r03c04
+L0319,R. IEHAN PIN MOLET,street,4590,3580,v,ok,rue Jean-Pain-Mollet,r03c04
+L0320,R. DE LA TACHERIE,street,4720,3570,h,ok,,r03c04
+L0321,R. DE LA COTELLERIE,street,4890,3550,d,ok,Coutellerie,r03c04
+L0322,R. DE LA VANNERIE,street,5020,3600,v,ok,,r03c04
+L0323,LA TANNERIE,street,5280,3540,v,unsure,printed LA TEN NERIE,r03c05
+L0324,R. DE GLATINI,street,6110,3590,h,ok,,r03c06
+L0325,LA R. NEUVE,street,6510,3760,v,ok,rue Neuve-Notre-Dame,r03c06
+L0326,LE PAVE,street,6950,3645,h,ok,left bank (Place Maubert side),r03c06
+L0327,R. DU PLATRE,street,7400,3870,v,ok,,r03c07
+L0328,R. DES NOERS,street,7550,3700,v,ok,rue des Noyers,r03c07
+L0329,R. DES CARMES,street,7710,3610,h,ok,,r03c07
+L0330,R. S. IEHAN DE BEAUVAIS,street,7800,3740,h,ok,,r03c07
+L0331,LE CLOS BRUNEAU,street,8180,3720,v,unsure,printed LE CLOS BRVNIAV; rue du Clos-Bruneau,r03c07 r03c08
+L0332,LA GRANT R. S. IAQUES,street,8470,3990,h,ok,,r03c08
+L0333,R. DES CHOLES,street,8590,3730,h,ok,rue des Ecoles? check,r03c08
+L0334,R. S. ETIENNE,street,8800,3720,v,ok,rue Saint-Etienne-des-Gres,r03c08
+L0335,R. GAIRIN BOISIAU,street,2290,4140,v,ok,rue Guerin-Boisseau,r03c01
+L0336,R. DE GARNETAL,street,2650,4140,v,ok,rue Greneta,r03c02
+L0337,LA GRANT R. S. DENIS,street,2720,4330,h,ok,,r04c02
+L0338,R. DE BOUR LABE,street,2960,4055,h,ok,rue du Bourg-l'Abbe,r03c02
+L0339,R. PAVEE,street,3010,4250,v,ok,,r03c02
+L0340,R. PETIT LION,street,3030,4480,v,ok,printed R. PETIT LION,r04c02
+L0341,R. AUX OURS,street,3350,4140,v,ok,,r04c03
+L0342,R. DE LA CHANVARERIE,street,3580,4400,v,ok,Chanvrerie,r04c03
+L0343,R. AU PRESCHEURS,street,3720,4460,v,ok,rue des Precheurs,r04c03
+L0344,LA COCHONNERIE,street,3850,4460,v,ok,,r04c03
+L0345,R. AU FIARE,street,3960,4480,v,ok,rue aux Fers,r04c03
+L0346,R. BRIBOUCHE,street,3990,4150,v,ok,rue Brisemiche? check,r04c03
+L0347,R. DE LA FERRONERIE,street,4200,4380,v,ok,printed R. DE LA FER RONERIE,r04c03
+L0348,R. TROUSE VACHE,street,4210,4150,v,ok,,r03c04
+L0349,R. DES LONBARS,street,4370,4120,v,ok,rue des Lombards,r03c04
+L0350,LA HEAUMERIE,street,4590,4150,v,ok,printed LA HEAV MERIE,r03c04
+L0351,R. DE LA SAVONNERIE,street,4700,4060,h,ok,,r03c04
+L0352,R. DE LA SERPENTE,street,4790,4400,v,unsure,printed DE LA SERPENTE (Right Bank),r04c04
+L0353,R. DU CRUCEFIS,street,4960,4100,v,ok,rue du Crucifix(-Saint-Jacques),r03c04
+L0354,R. DES LAVANDIERE,street,4980,4460,h,ok,,r04c04
+L0355,LA VIEILLE PELETERIE,street,6030,4000,v,ok,,r03c05
+L0356,R. DE LA VARERIE,street,6215,4060,v,ok,rue de la Vieille-Draperie? printed DELA VARERIE,r03c06
+L0357,LA SAVATERIE,street,6305,4010,v,ok,,r03c06
+L0358,R. DE LA CALANDRE,street,6385,4040,v,ok,,r03c06
+L0359,R. DE LA HUCHETTE,street,6970,4050,v,ok,,r03c06
+L0360,RUE POUPEE,street,7250,4350,v,ok,manuscript addition,r04c06
+L0361,R. POUPEE,street,7250,4350,v,ok,dup manuscript,r04c07
+L0362,LA PARCHEMINERIE,street,7290,4100,v,ok,,r03c07
+L0363,R. PERCEE,street,7310,4340,v,ok,manuscript addition,r04c07
+L0364,R. DU BOUT DE BRIE,street,7400,4110,h,ok,,r03c07
+L0365,R. DE LA SERPENTE,street,7420,4400,v,ok,manuscript addition,r04c07
+L0366,R. DES DEUX PORTES,street,7500,4400,v,ok,manuscript addition,r04c07
+L0367,R. DU FOIN,street,7580,4170,v,ok,,r03c07
+L0368,LA GRANT R. DE LA HERPE,street,7580,4260,d,ok,rue de la Harpe,r04c07
+L0369,R. DES MATURINS,street,7870,4150,v,ok,,r03c07
+L0370,R. DE SORBONNE,street,8300,4160,h,ok,,r03c08
+L0371,R. DE POIREES,street,8610,4180,v,ok,rue des Poirees,r03c08 r04c08
+L0372,R. DES FILLES DIEU,street,2020,4600,v,ok,,r04c01
+L0373,R. S. SAUVEUR,street,2550,4800,v,ok,,r04c02
+L0374,R. DU RENART,street,2670,4500,v,ok,rue du Renard,r04c02
+L0375,R. BEAU REPERE,street,2670,4800,v,ok,rue Beaurepaire,r04c02
+L0376,R. DES DEUS PORTES,street,2710,4580,h,ok,rue des Deux-Portes,r04c02
+L0377,LA R. TIREVIT,street,2850,4800,v,ok,rue Tire-Vit (Tiquetonne area),r04c02
+L0378,R. DE MONTORGUEIL,street,2870,4930,h,ok,,r04c02
+L0379,R. PAVEE,street,3000,4820,v,ok,,r04c02
+L0380,R. DE BOURGONGNE,street,3140,4700,h,ok,rue de Bourgogne,r04c02
+L0381,R. CONTE DARTOIS,street,3160,4930,h,ok,rue Comte-d'Artois (Montorgueil),r04c02 r04c03
+L0382,R. DE MAUCONSEIL,street,3220,4550,v,ok,,r04c02
+L0383,R. DE LA TRUANDERIE,street,3460,4720,v,ok,,r04c03
+L0384,R. DE MAUDE TOUR,street,3550,4510,h,ok,rue Mondetour,r04c03
+L0385,R. DE LA FROMAGERIE,street,3810,4750,d,ok,,r04c03
+L0386,R. DU FOUR,street,4000,4995,h,ok,printed R. DVEOVR,r04c03
+L0387,R. DES PROUVELLES,street,4050,4915,h,ok,rue des Prouvaires,r04c03
+L0388,LA FRIPERIE,street,4080,4700,v,ok,,r04c03
+L0389,LA LINGERIE,street,4110,4560,h,ok,,r04c03
+L0390,R. TIRECHAPE,street,4440,4850,h,ok,,r04c04
+L0391,R. DES CHAS,street,4570,4540,h,ok,rue des Chats? ,r04c04
+L0392,R. DES BOURDONNOIS,street,4620,4670,h,ok,rue des Bourdonnais,r04c04
+L0393,R. DU BOUT,street,4630,4960,v,unsure,,r04c04
+L0394,R. DE LA MONNOIE,street,4830,4925,h,ok,,r04c04
+L0395,R. DES DEUS PORTES,street,5000,4550,h,ok,second (Saint-Germain-l'Auxerrois),r04c04
+L0396,R. S. GERMAIN,street,5130,4950,v,ok,rue Saint-Germain-l'Auxerrois,r04c04
+L0397,R. PAVEE,street,6930,4825,h,ok,,r04c06
+L0398,R. DU BATOVER,street,6970,4680,h,ok,rue Gilles-Coeur? check,r04c06
+L0399,R. DE LA RONDELLE,street,7030,4560,v,ok,rue de l'Hirondelle,r04c06
+L0400,R. DU CIMETIERE,street,7420,4950,v,ok,cimetiere Saint-Andre,r04c07
+L0401,R. POITEVIN,street,7480,4730,v,ok,,r04c07
+L0402,R. DE HAUTE FEULLES,street,7550,4560,d,ok,rue Hautefeuille,r04c07
+L0403,R. DE LA SER PANTE,street,7560,4900,v,unsure,printed R. DE LASER PAN TE,r04c07
+L0404,R. PIERRE SARASIN,street,7780,4540,v,ok,,r04c07
+L0405,R. DES CORDELIERS,street,7920,4960,v,ok,,r04c07
+L0406,LA R. QUIQUETONNE,street,3020,5130,v,ok,rue Tiquetonne,r04c02
+L0407,LA GRANT R. MONMARTRE,street,3250,5250,d,ok,,r04c02
+L0408,R. DE LA PLATRIERE,street,3260,5450,d,ok,printed R. DE LA PLA TRIERE,r05c02
+L0409,R. DU SEIOUR,street,3640,5080,d,ok,rue du Sejour,r04c03
+L0410,R. DES ETUVE,street,4000,5050,h,ok,,r04c03
+L0411,R. DORLEANS,street,4090,5220,h,ok,rue d'Orleans (Saint-Honore),r04c03
+L0412,R. DES POULLIES,street,4470,5450,h,ok,rue des Poulies,r05c04
+L0413,R. DES DEUS ESCUS,street,4480,5250,h,ok,rue des Deux-Ecus,r04c04
+L0414,R. DES AUGUSTINS,street,6850,5210,h,ok,,r04c06
+L0415,R. S. ANDRI,street,7250,5050,v,ok,,r04c06
+L0416,R. DU PAN,street,7700,5050,d,unsure,,r04c07
+L0417,R. NEUVE,street,8330,5350,d,ok,,r05c08
+L0418,R. DE TOURNON,street,8480,5410,d,ok,,r05c08
+L0419,R. DES AUGUSTINS,street,2860,5580,d,unsure,printed R. DES AVGVSTINS (Right Bank? check),r05c02
+L0420,R. MARIE EGIPCIENNE,street,2980,5500,d,ok,rue de la Jussienne,r05c02
+L0421,R. BRENEUSE,street,3150,5600,d,unsure,printed R. BRE NEVSE,r05c02
+L0422,R. PAGEVIN,street,3150,5820,d,ok,rue Pagevin,r05c02
+L0423,R. QUOQUEHERON,street,3260,5700,d,ok,rue Coq-Heron,r05c02
+L0424,R. COQUILLIERE,street,3530,5780,d,ok,,r05c03
+L0425,R. DE GERNELLE,street,3860,5580,h,ok,rue de Grenelle(-Saint-Honore),r05c03
+L0426,LA GRANT R. S. HONORE,street,4280,5820,v,ok,,r05c03
+L0427,R. DU COQ,street,4420,5760,h,ok,,r05c04
+L0428,R. DU CHANTRE,street,4440,5970,h,ok,,r05c04
+L0429,R. DE LAUTRUCHE,street,4470,5640,h,ok,rue de l'Autruche,r05c04
+L0430,R. CHAMP FLEURI,street,4480,5870,h,ok,,r05c04
+L0431,R. FROMANTEAU,street,4830,5900,v,ok,rue Fromenteau,r05c04
+L0432,R. S. SURPLICE,street,9030,5950,d,ok,rue Saint-Sulpice? check,r05c08
+L0433,R. DE VAUGIRART,street,9480,5520,d,ok,rue de Vaugirard,r05c09
+L0434,R. DES PETIS CHANS,street,3590,6000,d,ok,rue des Petits-Champs,r05c03
+L0435,R. DE BEAUVAIS,street,4460,6150,h,ok,,r05c04
+L0436,R. IEHAN S. DENIS,street,4490,6060,h,ok,,r05c04
+L0437,R. S. THOMAS,street,4990,6100,h,ok,rue Saint-Thomas-du-Louvre,r05c04
+L0438,R. DE SEINE,street,6540,6300,h,ok,,r06c06
+L0439,R. DU FOUR,street,9130,6150,h,ok,,r05c08
+L0440,MONTREUIL SUR LE BOIS,village_faubourg,4200,150,h,ok,printed MOTREVL SVRLEBOIS; Montreuil,r00c03
+L0441,PERCI,village_faubourg,7010,265,h,ok,Perci (Bercy),r00c06
+L0442,CONFLANS,village_faubourg,7060,100,h,ok,Conflans,r00c06
+L0443,IVERI,village_faubourg,8590,290,h,ok,Ivry,r00c08
+L0444,VITERI,village_faubourg,9150,160,h,ok,Vitry,r00c08
+L0445,VILLE IUIVE,village_faubourg,9680,230,h,ok,Villejuif,r00c09
+L0446,GENTILI,village_faubourg,10540,430,h,ok,Gentilly,r00c10
+L0447,BISSESTRE,village_faubourg,10710,305,h,ok,Bicetre,r00c10
+L0448,BELE VILE,village_faubourg,350,690,h,ok,Belleville,r00c00
+L0449,BANIOLET,village_faubourg,740,675,h,ok,Bagnolet,r00c00
+L0450,REUILLI,village_faubourg,5490,655,h,unsure,printed RVELI; Reuilly,r00c05
+L0451,PROPINCOURT,village_faubourg,2470,1040,h,ok,Popincourt,r00c02
+L0452,LA COURTILLE,village_faubourg,980,1950,d,ok,La Courtille,r01c00
+L0453,LES MARES,village_faubourg,880,3180,h,ok,Les Marais,r02c00 r03c00
+L0454,LES FAUBOURS S. LAURENS,village_faubourg,1290,3560,h,ok,dup,r03c00 r03c01
+L0455,LES FAUBOURS S. DENIS,village_faubourg,770,4325,h,ok,,r04c00
+L0456,LA VILLE NEUVE,village_faubourg,1080,4890,v,ok,second label,r04c00
+L0457,LA VILLE NEUVE,village_faubourg,1190,4515,h,ok,Villeneuve-sur-Gravois (Bonne-Nouvelle),r04c00 r04c01
+L0458,CLINNIENCOURT,village_faubourg,270,5345,h,ok,Clignancourt,r05c00
+L0459,MONMARTRE,village_faubourg,250,5530,d,ok,Montmartre,r05c00
+L0460,LA GRANCHE BATELIERE,village_faubourg,980,5800,d,ok,Grange-Bateliere,r05c00
+L0461,LES FAUBOURS S. GERMAIN,village_faubourg,8000,5730,d,ok,,r05c07
+L0462,LES TORCHERONS,village_faubourg,770,6600,v,ok,Les Porcherons,r06c00
+L0463,LES FAUBOURS S. HONORE,village_faubourg,4200,6800,v,ok,,r06c03
+L0464,LA VILLE LEVESQUE,village_faubourg,2400,7100,h,ok,La Ville-l'Eveque,r06c02
+L0465,LE ROULLE,village_faubourg,3670,7710,h,ok,Le Roule,r07c03
+L0466,CHALIOT,village_faubourg,5950,7580,h,ok,Chaillot,r07c05
+L0467,AUTEUL,village_faubourg,10000,7745,h,ok,Auteuil,r07c09

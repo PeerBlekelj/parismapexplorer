@@ -1,0 +1,9 @@
+text,x,y,tile,note
+SAUS,8800,2230,r01c08,
+VER BOIS,2170,3170,r02c02,
+VMERE,2810,3230,r02c02,
+HU LEU,2900,3970,r03c02,rue au Leu (aux Ours)
+RASENOU NIN,3110,3075,r03c03,mirror/upside-down fragment; check neighbour tile
+R. BRNEVE,8160,3900,r03c07,
+RAIVS,8180,4270,r03c08,
+R. BRNEVE,8240,3900,r03c08,

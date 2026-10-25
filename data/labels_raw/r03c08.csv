@@ -1,0 +1,31 @@
+text,x,y,orient,flag,note
+ALBRET,8150,3410,h,ok,college d'Albret? check
+LONBARS,8100,3520,h,ok,college des Lombards
+LES DE BONS ENFANS,8300,3390,h,unsure,
+S. HILAIRE,8260,3685,h,ok,Saint-Hilaire-du-Mont
+COQUERET,8330,3700,h,ok,college Coqueret
+RAINS,8480,3620,h,ok,college de Reims
+C. S. BARBE,8570,3560,h,ok,college Sainte-Barbe
+MONT EGU,8730,3560,h,ok,college de Montaigu
+S. MICHEL,8700,3670,h,ok,college Saint-Michel (de Chanac)
+R. DES CHOLES,8590,3730,h,ok,rue des Ecoles? check
+LEMAN,8480,3780,h,ok,college du Mans
+LE PLESSI,8370,3860,h,ok,college du Plessis
+MARMOUTIERS,8500,3850,h,ok,college de Marmoutier
+LES CHOLES,8670,3850,h,ok,
+R. S. ETIENNE,8800,3720,v,ok,rue Saint-Etienne-des-Gres
+LISIEUX,8950,3630,h,ok,college de Lisieux
+S. ETIENE DES GRES,8890,3760,h,ok,
+PORTE S. IAQUES,9250,3840,h,ok,
+LA GRANT R. S. IAQUES,8470,3990,h,ok,
+C. SORBONNE,8340,4060,h,ok,college de Sorbonne
+CALVI,8510,4050,h,ok,college de Calvi
+LES IACOPINS,8790,4060,h,ok,Jacobins
+R. DE SORBONNE,8300,4160,h,ok,
+R. DE POIREES,8610,4180,v,ok,rue des Poirees
+CLUGNI,8660,4180,h,ok,college de Cluny
+PORTE S. MICHEL,8840,4210,h,ok,
+NERBONNE,8280,4240,h,ok,college de Narbonne
+RAIVS,8180,4270,h,partial,
+LE CLOS BRUNEAU,8180,3720,v,ok,dup
+R. BRNEVE,8240,3900,v,partial,
