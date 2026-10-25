@@ -77,6 +77,9 @@ for r in rows:
     d = dist_m(ll, est)
     if how != "map" and d > 600 and L["type"] not in FAR_OK_TYPES:
         row["check"] = f"{how} position is {d:.0f} m from the map-estimated position"
+    # Hard stop for homonyms: an article about a different place far away (e.g. Popincourt, Oise).
+    if not (48.74 < ll[0] < 48.95 and 2.20 < ll[1] < 2.50):
+        sys.exit(f"{r['id']} {L['text']}: position {ll} is outside the area of the map; wrong article?")
     exact = how != "map" and r["status"] in ("standing", "rebuilt", "renamed")
     row.update(lat=round(ll[0], 6), lon=round(ll[1], 6),
                loc_confidence="exact" if exact else ("uncertain" if r["confidence"] == "low" and how == "map" else "approx"))

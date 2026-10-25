@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-25T22:17:44+00:00",
+"generated": "2026-10-25T22:22:12+00:00",
 "image": {
 "width": 10890,
 "height": 7820,
@@ -299,7 +299,7 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Hôtel du Prévôt de Paris (Hugues Aubriot's house near Saint-Paul); unresolved",
+"note": "Hôtel du Prévôt de Paris (Hugues Aubriot's house near Saint-Paul)",
 "modern": null,
 "status": "vanished",
 "lat": 48.854875,
@@ -1412,7 +1412,7 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "cemetery of Saint-Jean-en-Grève; unresolved",
+"note": "cemetery of Saint-Jean-en-Grève",
 "modern": null,
 "status": "vanished",
 "lat": 48.856389,
@@ -1543,7 +1543,7 @@
 ],
 "orient": "v",
 "flag": "ok",
-"note": "cemetery of Saint-Nicolas-des-Champs; unresolved",
+"note": "cemetery of Saint-Nicolas-des-Champs",
 "modern": null,
 "status": "vanished",
 "lat": 48.86569,
@@ -3796,7 +3796,7 @@
 ],
 "orient": "h",
 "flag": "unsure",
-"note": "probably the Bons-Enfants of Saint-Victor; unresolved",
+"note": "probably the Bons-Enfants of Saint-Victor",
 "modern": null,
 "status": "vanished",
 "lat": 48.8486,
@@ -5953,7 +5953,7 @@
 "status": "vanished",
 "lat": 48.867419,
 "lon": 2.338149,
-"loc_confidence": "uncertain",
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": [
@@ -11806,26 +11806,22 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "Popincourt",
-"modern": "Popincourt",
+"note": "the hamlet of Popincourt outside the wall; its name survives in the rue Popincourt",
+"modern": "Rue Popincourt (11th arrondissement)",
 "status": "standing",
-"lat": 49.6669,
-"lon": 2.7331,
-"loc_confidence": "exact",
+"lat": 48.86003,
+"lon": 2.367704,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
 "sources": [
 {
 "label": "Wikipédia (fr)",
-"url": "https://fr.wikipedia.org/wiki/Dancourt-Popincourt"
-},
-{
-"label": "Wikipedia (en)",
-"url": "https://en.wikipedia.org/wiki/Dancourt-Popincourt"
+"url": "https://fr.wikipedia.org/wiki/Rue_Popincourt"
 },
 {
 "label": "Wikidata",
-"url": "https://www.wikidata.org/wiki/Q61770"
+"url": "https://www.wikidata.org/wiki/Q3449595"
 }
 ]
 },
@@ -11868,28 +11864,15 @@
 ],
 "orient": "h",
 "flag": "ok",
-"note": "in 1550 still market gardens outside the wall",
-"modern": "Le Marais",
-"status": "standing",
-"lat": 48.8576,
-"lon": 2.361453,
-"loc_confidence": "exact",
+"note": "the marais: market gardens on the old marshland north of the wall (today the 10th arrondissement), not the Marais district",
+"modern": null,
+"status": "vanished",
+"lat": 48.868655,
+"lon": 2.359351,
+"loc_confidence": "approx",
 "summary": null,
 "variants": [],
-"sources": [
-{
-"label": "Wikipédia (fr)",
-"url": "https://fr.wikipedia.org/wiki/Le_Marais_(quartier_parisien)"
-},
-{
-"label": "Wikipedia (en)",
-"url": "https://en.wikipedia.org/wiki/The_Marais"
-},
-{
-"label": "Wikidata",
-"url": "https://www.wikidata.org/wiki/Q749573"
-}
-]
+"sources": []
 },
 {
 "id": "L0454",

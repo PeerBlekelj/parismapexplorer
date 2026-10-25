@@ -1,0 +1,100 @@
+"""Build the control-point set and compare affine vs thin-plate-spline transforms.
+
+Control points = hand-picked GCPs (data/gcps.csv, quality=label) + identified places with
+exact coordinates whose label sits on a building (churches, colleges, gates, bridges,
+buildings). Duplicates within 150 px are merged (hand-picked wins).
+Writes data/gcps_auto.csv and prints leave-one-out errors for each method.
+"""
+import csv, sys
+from pathlib import Path
+import numpy as np
+
+root = Path(sys.argv[1])
+KX, KY = 111.2e3, 73.2e3  # metres per degree at Paris
+
+def tps_fit(P, V, lam):
+    """Thin-plate spline from pixel points P (n,2) to values V (n,k). Returns a predictor."""
+    s = P.std()
+    Q = (P - P.mean(0)) / s
+    n = len(Q)
+    d = np.linalg.norm(Q[:, None] - Q[None], axis=2)
+    K = np.where(d > 0, d ** 2 * np.log(d + 1e-12), 0) + lam * np.eye(n)
+    Pm = np.hstack([np.ones((n, 1)), Q])
+    A = np.zeros((n + 3, n + 3)); A[:n, :n] = K; A[:n, n:] = Pm; A[n:, :n] = Pm.T
+    b = np.zeros((n + 3, V.shape[1])); b[:n] = V
+    w = np.linalg.solve(A, b)
+    mu = P.mean(0)
+    def pred(X):
+        Z = (X - mu) / s
+        dd = np.linalg.norm(Z[:, None] - Q[None], axis=2)
+        U = np.where(dd > 0, dd ** 2 * np.log(dd + 1e-12), 0)
+        return U @ w[:n] + np.hstack([np.ones((len(Z), 1)), Z]) @ w[n:]
+    return pred
+
+def affine_fit(P, V):
+    X = np.hstack([P, np.ones((len(P), 1))])
+    c = np.linalg.lstsq(X, V, rcond=None)[0]
+    return lambda Y: np.hstack([Y, np.ones((len(Y), 1))]) @ c
+
+def err_m(a, b):
+    return np.hypot((a[:, 0] - b[:, 0]) * KX, (a[:, 1] - b[:, 1]) * KY)
+
+pts = []
+for g in csv.DictReader(open(root / "data/gcps.csv")):
+    pts.append({"id": g["id"], "name": g["name"], "x": int(g["x"]), "y": int(g["y"]),
+                "lat": float(g["lat"]), "lon": float(g["lon"]), "src": "hand"})
+inv = {r["id"]: r for r in csv.DictReader(open(root / "data/labels_inventory.csv"))}
+for r in csv.DictReader(open(root / "data/places_others.csv")):
+    L = inv[r["id"]]
+    if r["loc_confidence"] != "exact" or r["duplicate_of"] or L["type"] in ("village_faubourg", "other"):
+        continue
+    x, y = int(L["x"]), int(L["y"])
+    if any(abs(p["x"] - x) < 150 and abs(p["y"] - y) < 150 for p in pts):
+        continue
+    pts.append({"id": r["id"], "name": r["modern"] or r["old"], "x": x, "y": y,
+                "lat": float(r["lat"]), "lon": float(r["lon"]), "src": "place"})
+
+# Villages at the edge: coarse (a village is an area), but the only anchors out there.
+WITH_VILLAGES = "--villages" in sys.argv
+if WITH_VILLAGES:
+    for r in csv.DictReader(open(root / "data/places_others.csv")):
+        L = inv[r["id"]]
+        if L["type"] != "village_faubourg" or r["duplicate_of"] or r["loc_confidence"] != "exact":
+            continue
+        if L["text"].startswith("LES FAUBOURS"):  # a faubourg is a whole district: too vague
+            continue
+        x, y = int(L["x"]), int(L["y"])
+        pts.append({"id": r["id"], "name": r["modern"] or r["old"], "x": x, "y": y,
+                    "lat": float(r["lat"]), "lon": float(r["lon"]), "src": "village"})
+
+P = np.array([[p["x"], p["y"]] for p in pts], float)
+V = np.array([[p["lat"], p["lon"]] for p in pts])
+print(len(pts), "control points")
+
+def loo(make):
+    out = np.zeros_like(V)
+    for i in range(len(P)):
+        m = np.ones(len(P), bool); m[i] = False
+        out[i] = make(P[m], V[m])(P[i:i + 1])[0]
+    return err_m(out, V)
+
+results = {"affine": loo(affine_fit)}
+for lam in (0.0, 0.01, 0.05, 0.2):
+    results[f"tps λ={lam}"] = loo(lambda A, B, lam=lam: tps_fit(A, B, lam))
+central = np.array([p["src"] != "village" for p in pts])
+for k, e in results.items():
+    c = e[central]
+    print(f"{k:12s} leave-one-out, city points: median {np.median(c):4.0f} m  p90 {np.percentile(c, 90):5.0f} m"
+          f"  | all: median {np.median(e):5.0f} m")
+
+best = min((k for k in results if k.startswith("tps")), key=lambda k: np.median(results[k]))
+e = results[best]
+print(f"\nworst points under {best}:")
+for i in np.argsort(-e)[:8]:
+    print(f"  {pts[i]['id']} {pts[i]['name'][:40]:40s} {e[i]:5.0f} m  ({pts[i]['src']})")
+
+with open(root / "data/gcps_auto.csv", "w", newline="") as f:
+    w = csv.writer(f)
+    w.writerow(["id", "name", "x", "y", "lat", "lon", "source", "loo_error_m"])
+    for p, ee in zip(pts, e):
+        w.writerow([p["id"], p["name"], p["x"], p["y"], p["lat"], p["lon"], p["src"], round(float(ee))])

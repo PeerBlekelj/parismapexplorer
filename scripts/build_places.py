@@ -45,9 +45,15 @@ for r in csv.DictReader(open(root / "data/labels_inventory.csv")):
         "sources": json.loads(i["sources"]) if nn(i.get("sources")) else [],
     })
 
-gcps = [{"id": g["id"], "name": g["name"], "px": [int(g["x"]), int(g["y"])],
-         "lat": float(g["lat"]), "lon": float(g["lon"]), "quality": g["quality"]}
-        for g in csv.DictReader(open(root / "data/gcps.csv"))]
+# --auto-gcps: use the larger set built by scripts/fit_transform.py (needs a TPS in the app).
+if "--auto-gcps" in sys.argv:
+    gcps = [{"id": g["id"], "name": g["name"], "px": [int(g["x"]), int(g["y"])],
+             "lat": float(g["lat"]), "lon": float(g["lon"]), "quality": "label" if g["source"] == "hand" else "place"}
+            for g in csv.DictReader(open(root / "data/gcps_auto.csv"))]
+else:
+    gcps = [{"id": g["id"], "name": g["name"], "px": [int(g["x"]), int(g["y"])],
+             "lat": float(g["lat"]), "lon": float(g["lon"]), "quality": g["quality"]}
+            for g in csv.DictReader(open(root / "data/gcps.csv"))]
 
 meta = {"generated": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
         "image": {"width": 10890, "height": 7820, "orientation": "east-up"}}

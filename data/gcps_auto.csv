@@ -1,0 +1,38 @@
+id,name,x,y,lat,lon,source,loo_error_m
+G001,Notre-Dame (west front),6490,3585,48.85296,2.34903,hand,13
+G002,Saint-Eustache,3780,5050,48.86343,2.34517,hand,67
+G003,Saint-Germain-des-Pres,8420,6320,48.85394,2.33427,hand,317
+G004,Saint-Severin,7190,4040,48.85213,2.34547,hand,18
+G005,Saint-Etienne-du-Mont,8590,3080,48.84675,2.34808,hand,83
+G006,Bastille (site),4680,745,48.85321,2.36922,hand,2526
+G007,Louvre (Cour Carree),5070,5860,48.8606,2.3376,hand,87
+G008,Saint-Merri,4290,3330,48.85904,2.35048,hand,169
+G009,Saint-Jacques-de-la-Boucherie (Tour Saint-Jacques),4800,3950,48.85805,2.34885,hand,76
+G010,Saint-Germain-l'Auxerrois,5000,5225,48.85959,2.34116,hand,49
+G011,Saint-Sulpice,8710,5520,48.85099,2.3348,hand,169
+G012,Saint-Gervais,5030,2770,48.85547,2.35403,hand,76
+G013,Hotel de Ville,5050,3245,48.85655,2.35223,hand,54
+G014,Sainte-Chapelle,6430,4340,48.8554,2.345,hand,48
+G015,Saint-Medard,9650,1625,48.83988,2.35019,hand,2703
+G016,Saint-Nicolas-des-Champs,2420,3660,48.86591,2.35448,hand,91
+G017,Saint-Martin-des-Champs (Arts et Metiers),2450,3510,48.86652,2.35565,hand,107
+G018,Saint-Julien-le-Pauvre,7030,3860,48.85196,2.3473,hand,46
+G019,Saint-Leu-Saint-Gilles,3430,4310,48.8628,2.35001,hand,87
+G020,Hotel de Cluny,7730,4170,48.85051,2.34397,hand,26
+L0001,Pont de Charenton (Charenton-le-Pont / Alfortville),7570,75,48.8169,2.41972,place,4953
+L0002,Pont Notre-Dame,5620,3755,48.856389,2.348889,place,52
+L0003,Petit-Pont,6640,3965,48.853333,2.346944,place,48
+L0004,Pont au Change,5680,4070,48.856667,2.346667,place,22
+L0006,Pont Saint-Michel,6680,4195,48.854167,2.344722,place,52
+L0019,Tour de l'Horloge,5960,4200,48.8561,2.34567,place,21
+L0020,Conciergerie,6040,4425,48.856389,2.345556,place,92
+L0021,Palais de Justice,6180,4260,48.855807,2.344572,place,73
+L0032,Cour de Rohan,7620,5110,48.852946,2.339507,place,15
+L0050,Église des Billettes,4160,2960,48.85799,2.354996,place,228
+L0062,Collège des Bernardins,7170,3060,48.848823,2.352026,place,68
+L0063,Église Saint-Nicolas-du-Chardonnet,7530,3110,48.849168,2.350278,place,166
+L0066,Église Saint-Laurent,410,3815,48.874849,2.358311,place,130
+L0088,Église Saint-Jacques-du-Haut-Pas,9880,3990,48.84361,2.34139,place,682
+L0145,Collège Sainte-Barbe,8570,3560,48.847507,2.3466,place,108
+L0154,Sorbonne,8340,4060,48.8484,2.3433,place,70
+L0210,Place Maubert,7330,3530,48.8501,2.3488,place,54
