@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Paris 1550 — layout mockups</title>
+<style>
+  :root{
+    --ink:#2b2118; --ink2:#6b5a48; --paper:#f4ecdc; --paper2:#ebdfc6; --rule:#d3c3a3;
+    --red:#a63a1f; --blue:#3d5a78; --gone:#8a6d4a;
+    --serif: "EB Garamond", "Iowan Old Style", Georgia, serif;
+    --sans: "Inter", system-ui, sans-serif;
+  }
+  *{box-sizing:border-box} body{margin:0;font-family:var(--sans);color:var(--ink);background:#e6dcc8}
+  header.switch{display:flex;gap:6px;align-items:center;padding:10px 16px;background:var(--ink);color:#f4ecdc;font-size:13px}
+  header.switch b{font-family:var(--serif);font-size:17px;margin-right:16px;font-weight:600}
+  header.switch button{background:transparent;border:1px solid #6b5a48;color:#f4ecdc;padding:6px 12px;border-radius:4px;cursor:pointer;font:inherit}
+  header.switch button.on{background:#f4ecdc;color:var(--ink)}
+  header.switch .note{margin-left:auto;opacity:.65}
+  .layout{display:none;height:calc(100vh - 46px)} .layout.on{display:flex}
+
+  /* shared bits */
+  .brand{font-family:var(--serif);font-size:22px;line-height:1.1}
+  .brand small{display:block;font-family:var(--sans);font-size:11px;color:var(--ink2);letter-spacing:.06em;text-transform:uppercase;margin-top:3px}
+  .search{display:flex;align-items:center;gap:8px;background:#fffaf0;border:1px solid var(--rule);border-radius:6px;padding:9px 11px}
+  .search input{border:0;outline:0;background:transparent;font:inherit;font-size:15px;width:100%;color:var(--ink)}
+  .chips{display:flex;flex-wrap:wrap;gap:5px}
+  .chip{font-size:11.5px;padding:3px 9px;border-radius:99px;border:1px solid var(--rule);background:#fffaf0;color:var(--ink2);cursor:pointer}
+  .chip.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .result{display:grid;grid-template-columns:18px 1fr;gap:2px 8px;padding:9px 10px;border-radius:6px;cursor:pointer}
+  .result:hover{background:var(--paper2)} .result.sel{background:#fffaf0;box-shadow:inset 3px 0 0 var(--red)}
+  .result .dot{width:10px;height:10px;border-radius:50%;margin-top:5px;background:var(--red)}
+  .result .dot.gone{background:transparent;border:2px dashed var(--gone)}
+  .result .old{font-family:var(--serif);font-size:16px;font-variant:small-caps;letter-spacing:.02em}
+  .result .mod{grid-column:2;font-size:12.5px;color:var(--ink2)}
+  .card .kicker{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2)}
+  .card h2{font-family:var(--serif);font-weight:500;font-size:26px;margin:4px 0 2px;font-variant:small-caps}
+  .card .modname{font-size:14px;color:var(--ink2);margin-bottom:12px}
+  .card .snip{width:100%;border:1px solid var(--rule);border-radius:4px;display:block}
+  .card dl{display:grid;grid-template-columns:96px 1fr;gap:6px 10px;font-size:13px;margin:14px 0}
+  .card dt{color:var(--ink2)} .card dd{margin:0}
+  .card p{font-family:var(--serif);font-size:16px;line-height:1.45;margin:0 0 10px}
+  .card .src{font-size:11.5px;color:var(--ink2)} .card .src a{color:var(--blue)}
+  .badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:99px;background:#e3efe0;color:#355e2f}
+  .badge.gone{background:#f1e2cf;color:#7a4b1d}
+  .lang{font-size:12px;color:var(--ink2)} .lang b{color:var(--ink)}
+
+  /* map component */
+  .map{position:relative;flex:1;min-width:0;background:#cfc2a6;overflow:hidden}
+  .modes{position:absolute;top:12px;left:50%;transform:translateX(-50%);z-index:5;display:flex;background:#fffaf0;border:1px solid var(--rule);border-radius:6px;overflow:hidden;box-shadow:0 2px 8px #0002}
+  .modes button{border:0;background:transparent;padding:7px 13px;font:inherit;font-size:13px;cursor:pointer;color:var(--ink2)}
+  .modes button.on{background:var(--ink);color:var(--paper)}
+  .panes{position:absolute;inset:0;display:flex;gap:3px}
+  .pane{position:relative;flex:1;overflow:hidden}
+  .pane .inner,.overlay .inner{position:absolute;top:0;height:100%;left:50%}
+  .pane .inner img,.overlay .inner .base{position:absolute;inset:0;width:100%;height:100%}
+  .pane.oldp .inner{aspect-ratio:1100/770;transform:translateX(-75.9%)}
+  .pane.mod .inner,.overlay .inner{aspect-ratio:1280/768;transform:translateX(-56.3%)}
+  .pane .tag{position:absolute;bottom:10px;left:10px;font-size:11px;background:#fffaf0e6;padding:3px 8px;border-radius:4px;color:var(--ink2);z-index:3}
+  .pin{position:absolute;z-index:4;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;border:3px solid #fff;background:var(--red);box-shadow:0 0 0 2px var(--red),0 2px 8px #0006}
+  .pin.gone{background:transparent;border:3px dashed var(--gone);box-shadow:0 0 0 2px #fff}
+  .pin.small{width:11px;height:11px;margin:-5.5px 0 0 -5.5px;border-width:2px;box-shadow:0 0 0 1px var(--red)}
+  .pin.small.gone{box-shadow:none}
+  .overlay{position:absolute;inset:0;display:none}
+    .overlay .old{position:absolute;left:4.1%;top:26.6%;width:68.75%;height:80.2%;transform-origin:0 0}
+  .overlay .swipe{position:absolute;top:0;bottom:0;width:3px;background:#fff;box-shadow:0 0 6px #0008;z-index:4;cursor:ew-resize}
+  .overlay .swipe::after{content:"⇆";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#fff;border-radius:50%;width:30px;height:30px;display:grid;place-items:center;font-size:15px}
+  .ctrl{position:absolute;bottom:12px;right:12px;z-index:5;background:#fffaf0;border:1px solid var(--rule);border-radius:6px;padding:8px 12px;font-size:12px;display:none;gap:10px;align-items:center}
+  .warn{position:absolute;top:56px;left:50%;transform:translateX(-50%);z-index:5;font-size:11.5px;background:#fff3cd;border:1px solid #e0c66a;padding:4px 10px;border-radius:4px;display:none}
+  .map.m-overlay .panes{display:none} .map.m-overlay .overlay,.map.m-overlay .ctrl,.map.m-overlay .warn{display:block}
+  .map.m-overlay .ctrl{display:flex}
+  .map.m-old .pane.mod,.map.m-mod .pane.oldp{display:none}
+
+  /* layout 1: atlas sidebar */
+  .l1 aside{width:380px;background:var(--paper);border-right:1px solid var(--rule);display:flex;flex-direction:column}
+  .l1 .top{padding:18px 18px 12px;display:flex;flex-direction:column;gap:12px;border-bottom:1px solid var(--rule)}
+  .l1 .list{overflow:auto;padding:6px 8px;flex:0 0 210px;border-bottom:1px solid var(--rule)}
+  .l1 aside>div[data-fill]{flex:1;overflow:auto;min-height:0}
+  .l1 .card{padding:16px 18px}
+  .count{font-size:11.5px;color:var(--ink2);padding:6px 10px 2px}
+
+  /* layout 2: floating */
+  .l2 .map{flex:1}
+  .l2 .float-search{position:absolute;top:12px;left:12px;z-index:6;width:360px;background:var(--paper);border:1px solid var(--rule);border-radius:8px;box-shadow:0 4px 18px #0003;padding:12px;display:flex;flex-direction:column;gap:10px}
+  .l2 .float-search .list{max-height:180px;overflow:auto}
+  .l2 .float-card{position:absolute;top:12px;right:12px;bottom:12px;z-index:6;width:380px;background:var(--paper);border:1px solid var(--rule);border-radius:8px;box-shadow:0 4px 18px #0003;padding:18px;overflow:auto}
+  .l2 .modes{left:auto;right:410px;transform:none}
+  .l2 .ctrl{right:410px}
+
+  /* layout 3: gazetteer */
+  .l3 .index{width:46%;background:var(--paper);display:flex;flex-direction:column;border-right:1px solid var(--rule)}
+  .l3 .itop{padding:16px 20px;display:flex;gap:16px;align-items:center;border-bottom:1px solid var(--rule)}
+  .l3 .itop .search{flex:1}
+  .l3 .cols{display:grid;grid-template-columns:200px 1fr;flex:1;min-height:0}
+  .l3 .facets{border-right:1px solid var(--rule);padding:14px 16px;font-size:13px;overflow:auto}
+  .l3 .facets h4{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);margin:14px 0 6px}
+  .l3 .facets label{display:flex;justify-content:space-between;padding:3px 0}
+  .l3 .facets label span{color:var(--ink2)}
+  .l3 .table{overflow:auto}
+  .l3 table{width:100%;border-collapse:collapse;font-size:13.5px}
+  .l3 th{position:sticky;top:0;background:var(--paper2);text-align:left;font-weight:500;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2);padding:8px 10px}
+  .l3 td{padding:8px 10px;border-bottom:1px solid #e3d6bb;vertical-align:top}
+  .l3 td.o{font-family:var(--serif);font-variant:small-caps;font-size:15.5px}
+  .l3 tr.sel td{background:#fffaf0} .l3 tr.sel td:first-child{box-shadow:inset 3px 0 0 var(--red)}
+  .l3 .right{flex:1;display:flex;flex-direction:column;min-width:0}
+  .l3 .right .map{flex:1}
+  .l3 .strip{height:190px;background:var(--paper);border-top:1px solid var(--rule);display:grid;grid-template-columns:180px 1fr;gap:16px;padding:14px 18px}
+  .l3 .strip p{font-size:15px}
+</style>
+</head>
+<body>
+<header class="switch">
+  <b>Paris 1550 · mockups</b>
+  <button data-l="l1" class="on">1 · Atlas sidebar</button>
+  <button data-l="l2">2 · Floating panels</button>
+  <button data-l="l3">3 · Gazetteer table</button>
+  <span class="note">Static mockup: Île de la Cité only, sample text. The overlay is only roughly placed by hand.</span>
+</header>
+
+<!-- shared fragments are cloned into each layout by script -->
+<template id="t-map">
+  <div class="map m-side">
+    <div class="modes">
+      <button data-m="side" class="on">Side by side</button>
+      <button data-m="overlay">Overlay</button>
+      <button data-m="old">1550 only</button>
+      <button data-m="mod">Today only</button>
+    </div>
+    <div class="warn">The old map is bent to fit modern streets, so lines match best near landmarks</div>
+    <div class="panes">
+      <div class="pane oldp"><div class="inner"><img src="{{OLD}}" alt="">
+        <div class="pin" style="left:75.9%;top:61%"></div>
+        <div class="pin small gone" style="left:67.7%;top:56.5%"></div>
+        <div class="pin small gone" style="left:61.5%;top:42%"></div></div>
+        <span class="tag">Truschet &amp; Hoyau, c. 1550 (rotated north-up)</span>
+      </div>
+      <div class="pane mod"><div class="inner"><img src="{{MOD}}" alt="">
+        <div class="pin" style="left:56.3%;top:75.5%"></div>
+        <div class="pin small gone" style="left:53%;top:74%"></div>
+        <div class="pin small gone" style="left:54%;top:61%"></div></div>
+        <span class="tag">Today: © OpenStreetMap contributors</span>
+      </div>
+    </div>
+    <div class="overlay"><div class="inner">
+      <img class="base" src="{{MOD}}" alt="">
+      <div class="clip" style="position:absolute;inset:0"><img class="old" src="{{OLD}}" alt=""></div>
+      <div class="pin" style="left:56.3%;top:75.5%"></div></div>
+      <div class="swipe" style="left:55%"></div>
+    </div>
+    <div class="ctrl">Old map <input type="range" min="0" max="100" value="100" class="op"> <span>opacity</span> · drag ⇆ to swipe</div>
+  </div>
+</template>
+
+<template id="t-results">
+  <div class="result sel"><span class="dot"></span><span class="old">Nostre Dame de Paris</span><span class="mod">Cathédrale Notre-Dame · still standing</span></div>
+  <div class="result"><span class="dot gone"></span><span class="old">S. Christofle</span><span class="mod">Saint-Christophe · demolished, now under the parvis</span></div>
+  <div class="result"><span class="dot gone"></span><span class="old">S. Landri</span><span class="mod">Saint-Landry · demolished</span></div>
+  <div class="result"><span class="dot"></span><span class="old">Le Pont Nostre Dame</span><span class="mod">Pont Notre-Dame · rebuilt</span></div>
+  <div class="result"><span class="dot"></span><span class="old">Le Pont au Change</span><span class="mod">Pont au Change · rebuilt</span></div>
+  <div class="result"><span class="dot gone"></span><span class="old">R. de la Calandre</span><span class="mod">Rue de la Calandre · vanished</span></div>
+  <div class="result"><span class="dot gone"></span><span class="old">La Madelaine</span><span class="mod">Sainte-Madeleine-en-la-Cité · demolished</span></div>
+</template>
+
+<template id="t-card">
+  <div class="card">
+    <div class="kicker">Church · Île de la Cité &nbsp;<span class="badge">Still standing</span></div>
+    <h2>Nostre Dame de Paris</h2>
+    <div class="modname">Today: Cathédrale Notre-Dame de Paris · Parvis Notre-Dame, 4e</div>
+    <img class="snip" src="{{ND}}" alt="label on the 1550 map">
+    <dl>
+      <dt>On the map as</dt><dd>“HOSTRE DAME DE PARIS” (the N cut as H)</dd>
+      <dt>Spelling variants</dt><dd>Nostre-Dame, Notre Dame, N.-D.</dd>
+      <dt>Built</dt><dd>1163–1345</dd>
+      <dt>Located</dt><dd>48.8530° N, 2.3499° E · precise</dd>
+    </dl>
+    <p><i>Sample text.</i> The cathedral of Paris, already four centuries old when this map was cut. The woodcut shows the west front with its twin towers facing a much smaller parvis, hemmed in by houses and by the church of Saint-Christophe.</p>
+    <div class="src">Source: <a href="#">Wikipedia (EN)</a> · <a href="#">Wikidata Q2981</a> · CC BY-SA</div>
+  </div>
+</template>
+
+<!-- Layout 1 -->
+<section class="layout l1 on">
+  <aside>
+    <div class="top">
+      <div class="brand">La Ville, Cité et Université de Paris<small>Truschet &amp; Hoyau, c. 1550 · with Paris today</small></div>
+      <div class="search">🔍<input value="notre" placeholder="Search old or modern names…"></div>
+      <div class="chips"><span class="chip on">All</span><span class="chip">Churches</span><span class="chip">Colleges</span><span class="chip">Streets</span><span class="chip">Gates &amp; walls</span><span class="chip">Bridges</span><span class="chip">Vanished</span></div>
+    </div>
+    <div class="count">7 of 512 places</div>
+    <div class="list" data-fill="t-results"></div>
+    <div data-fill="t-card"></div>
+  </aside>
+  <div data-fill="t-map" style="display:flex;flex:1;min-width:0"></div>
+</section>
+
+<!-- Layout 2 -->
+<section class="layout l2">
+  <div data-fill="t-map" style="display:flex;flex:1;min-width:0;position:relative"></div>
+  <div class="float-search">
+    <div class="brand" style="font-size:18px">Paris 1550</div>
+    <div class="search">🔍<input value="notre" placeholder="Search old or modern names…"></div>
+    <div class="chips"><span class="chip on">All</span><span class="chip">Churches</span><span class="chip">Colleges</span><span class="chip">Streets</span><span class="chip">Vanished</span></div>
+    <div class="list" data-fill="t-results"></div>
+  </div>
+  <div class="float-card" data-fill="t-card"></div>
+</section>
+
+<!-- Layout 3 -->
+<section class="layout l3">
+  <div class="index">
+    <div class="itop">
+      <div class="brand" style="font-size:18px">Paris 1550<small>Gazetteer</small></div>
+      <div class="search">🔍<input value="" placeholder="Search 512 places…"></div>
+    </div>
+    <div class="cols">
+      <div class="facets">
+        <h4>Type</h4>
+        <label>Streets &amp; alleys <span>287</span></label>
+        <label>Churches &amp; monasteries <span>104</span></label>
+        <label>Colleges <span>49</span></label>
+        <label>Gates &amp; walls <span>24</span></label>
+        <label>Bridges <span>6</span></label>
+        <label>Other <span>42</span></label>
+        <h4>Today</h4>
+        <label>Still there <span>—</span></label>
+        <label>Renamed <span>—</span></label>
+        <label>Vanished <span>—</span></label>
+        <h4>Area</h4>
+        <label>La Ville (Right Bank) <span>—</span></label>
+        <label>La Cité <span>—</span></label>
+        <label>L'Université (Left Bank) <span>—</span></label>
+        <label>Faubourgs <span>—</span></label>
+        <h4>Location confidence</h4>
+        <label>Exact <span>—</span></label>
+        <label>Approximate <span>—</span></label>
+        <label>Uncertain <span>—</span></label>
+      </div>
+      <div class="table"><table>
+        <tr><th>On the map (1550)</th><th>Today</th><th>Type</th><th>Status</th></tr>
+        <tr><td class="o">La Madelaine</td><td>Ste-Madeleine-en-la-Cité</td><td>Church</td><td><span class="badge gone">Vanished</span></td></tr>
+        <tr class="sel"><td class="o">Nostre Dame de Paris</td><td>Cathédrale Notre-Dame</td><td>Church</td><td><span class="badge">Standing</span></td></tr>
+        <tr><td class="o">Le Pont au Change</td><td>Pont au Change</td><td>Bridge</td><td><span class="badge">Rebuilt</span></td></tr>
+        <tr><td class="o">Le Pont Nostre Dame</td><td>Pont Notre-Dame</td><td>Bridge</td><td><span class="badge">Rebuilt</span></td></tr>
+        <tr><td class="o">R. de la Calandre</td><td>—</td><td>Street</td><td><span class="badge gone">Vanished</span></td></tr>
+        <tr><td class="o">R. de la Iuyfrie</td><td>Rue de la Cité (part)</td><td>Street</td><td><span class="badge gone">Absorbed</span></td></tr>
+        <tr><td class="o">R. de la Vieille Draperie</td><td>—</td><td>Street</td><td><span class="badge gone">Vanished</span></td></tr>
+        <tr><td class="o">S. Christofle</td><td>Saint-Christophe</td><td>Church</td><td><span class="badge gone">Vanished</span></td></tr>
+        <tr><td class="o">S. Denis du Pas</td><td>Saint-Denis-du-Pas</td><td>Church</td><td><span class="badge gone">Vanished</span></td></tr>
+        <tr><td class="o">S. Germain le Vieux</td><td>Saint-Germain-le-Vieux</td><td>Church</td><td><span class="badge gone">Vanished</span></td></tr>
+        <tr><td class="o">S. Landri</td><td>Saint-Landry</td><td>Church</td><td><span class="badge gone">Vanished</span></td></tr>
+        <tr><td class="o">S. Pierre des Assis</td><td>Saint-Pierre-des-Arcis</td><td>Church</td><td><span class="badge gone">Vanished</span></td></tr>
+      </table></div>
+    </div>
+  </div>
+  <div class="right">
+    <div data-fill="t-map" style="display:flex;flex:1;min-height:0"></div>
+    <div class="strip">
+      <img src="{{ND}}" style="width:100%;border:1px solid var(--rule);border-radius:4px" alt="">
+      <div class="card"><div class="kicker">Church · <span class="badge">Still standing</span></div>
+        <h2 style="font-size:22px;margin:2px 0">Nostre Dame de Paris</h2>
+        <p><i>Sample text.</i> The cathedral of Paris, already four centuries old when this map was cut… <a href="#" style="color:var(--blue);font-size:13px">more</a></p></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('[data-fill]').forEach(el=>{
+    el.appendChild(document.getElementById(el.dataset.fill).content.cloneNode(true));
+  });
+  document.querySelectorAll('header.switch button').forEach(b=>b.onclick=()=>{
+    document.querySelectorAll('header.switch button').forEach(x=>x.classList.toggle('on',x===b));
+    document.querySelectorAll('.layout').forEach(l=>l.classList.toggle('on',l.classList.contains(b.dataset.l)));
+  });
+  document.querySelectorAll('.map').forEach(map=>{
+    map.querySelectorAll('.modes button').forEach(b=>b.onclick=()=>{
+      map.querySelectorAll('.modes button').forEach(x=>x.classList.toggle('on',x===b));
+      map.className='map m-'+b.dataset.m;
+    });
+    const clip=map.querySelector('.clip'), swipe=map.querySelector('.swipe'), ov=map.querySelector('.overlay');
+    const inner=ov.querySelector('.inner');
+    const set=pct=>{swipe.style.left=pct+'%';const o=ov.getBoundingClientRect(),i=inner.getBoundingClientRect();
+      const x=(o.left+o.width*pct/100-i.left)/i.width*100;clip.style.clipPath=`inset(0 ${100-x}% 0 0)`};
+    map.querySelector('.modes button[data-m=overlay]').addEventListener('click',()=>set(55));
+    let drag=false;
+    swipe.onpointerdown=e=>{drag=true;swipe.setPointerCapture(e.pointerId)};
+    swipe.onpointerup=()=>drag=false;
+    swipe.onpointermove=e=>{if(!drag)return;const r=ov.getBoundingClientRect();set(Math.max(0,Math.min(100,(e.clientX-r.left)/r.width*100)))};
+    map.querySelector('.op').oninput=e=>map.querySelector('.overlay .old').style.opacity=e.target.value/100;
+  });
+</script>
+</body>
+</html>

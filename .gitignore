@@ -1,0 +1,8 @@
+source/
+.venv/
+node_modules/
+dist/
+mockups/_*
+mockups/shot_*
+mockups/layouts.html
+.vercel/
