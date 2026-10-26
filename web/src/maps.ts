@@ -8,7 +8,7 @@
 
 import {
   AttributionControl, Map as MlMap, Marker, NavigationControl, setWorkerUrl,
-  type GeoJSONSource, type JumpToOptions, type MapMouseEvent, type StyleSpecification,
+  type GeoJSONSource, type JumpToOptions, type LngLatLike, type MapMouseEvent, type StyleSpecification,
 } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 // MapLibre v6 loads its worker from a separate module; let Vite emit it and tell MapLibre where.
@@ -74,6 +74,24 @@ export async function loadOverlayTiles(): Promise<OverlayTiles | null> {
 
 /** CSS px per image px when flying to a place. */
 const SELECT_SCALE = 0.5;
+
+/**
+ * Every move between places is the same three-part flight: zoom out until both places fit on
+ * screen (and always at least one zoom level), pan, zoom back in. MapLibre's own flyTo arc barely
+ * dips for nearby places and, with maxDuration, jumps without animating for distant ones.
+ */
+function flightPlan(map: MlMap, to: LngLatLike, toZoom: number): { minZoom: number; duration: number } {
+  const from = map.getCenter();
+  const z0 = map.getZoom();
+  const a = map.project(from), b = map.project(to);
+  const distNow = Math.hypot(a.x - b.x, a.y - b.y); // screen px at the current zoom
+  const c = map.getContainer();
+  const fit = 0.45 * Math.max(1, Math.min(c.clientWidth, c.clientHeight));
+  const peakToFit = z0 - Math.log2(Math.max(distNow, 1) / fit); // zoom at which both fit
+  const minZoom = Math.max(map.getMinZoom(), Math.min(peakToFit, z0 - 1, toZoom - 1));
+  const dip = Math.max(z0, toZoom) - minZoom;
+  return { minZoom, duration: Math.min(3200, 900 + 380 * dip) };
+}
 const PAPER = '#d6c9ad';
 const OLD_MIN_ZOOM = 7.6;
 const OLD_MAX_ZOOM = TILE_MAX_ZOOM + 0.8;
@@ -421,19 +439,12 @@ export class MapView {
     }
     const p = this.primary();
     const selZoomOld = oldZoomForScale(SELECT_SCALE);
-    if (p === 'old') {
-      const cam = { center: e.oldLL, zoom: Math.max(this.old.getZoom(), selZoomOld), bearing: this.targetOldBearing() };
-      if (opts.instant) this.old.jumpTo(cam);
-      else this.old.flyTo({ ...cam, maxDuration: 2500 });
-    } else {
-      const cam = {
-        center: e.geo,
-        zoom: Math.max(this.mod.getZoom(), selZoomOld + this.zoomDelta(e.px)),
-        bearing: this.targetModBearing(),
-      };
-      if (opts.instant) this.mod.jumpTo(cam);
-      else this.mod.flyTo({ ...cam, maxDuration: 2500 });
-    }
+    const map = p === 'old' ? this.old : this.mod;
+    const cam = p === 'old'
+      ? { center: e.oldLL, zoom: Math.max(this.old.getZoom(), selZoomOld), bearing: this.targetOldBearing() }
+      : { center: e.geo, zoom: Math.max(this.mod.getZoom(), selZoomOld + this.zoomDelta(e.px)), bearing: this.targetModBearing() };
+    if (opts.instant) map.jumpTo(cam);
+    else map.flyTo({ ...cam, ...flightPlan(map, cam.center, cam.zoom) });
   }
 
   // ---------- dots for places ----------
