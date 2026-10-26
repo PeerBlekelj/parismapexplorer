@@ -275,7 +275,7 @@ TITLE = [
 # ---------- words around the verse, per language ----------
 L = {}
 L["en"] = dict(
-    path="/texts/", home="/", by="Paris 1550, by Peer Blekelj.",
+    path="/texts/", home="/", map="Open the map", by="Paris 1550, by Peer Blekelj.",
     title="The texts on the map",
     desc="The poem in praise of Paris and the publishers' notice printed on the Truschet &amp; Hoyau plan of Paris, c. 1550, transcribed and translated into English line by line.",
     og_desc="A 108-line poem in praise of Paris and the publishers' notice, printed on the 1550 map: transcribed and translated.",
@@ -303,7 +303,7 @@ L["en"] = dict(
                "<a href=\"/sv/texts/\" hreflang=\"sv\" lang=\"sv\">svenska</a>",
 )
 L["fr"] = dict(
-    path="/fr/texts/", home="/?lang=fr", by="Paris 1550, par Peer Blekelj.",
+    path="/fr/texts/", home="/fr/", map="Ouvrir la carte", by="Paris 1550, par Peer Blekelj.",
     title="Les textes du plan",
     desc="Le poème à la louange de Paris et l'avis des éditeurs imprimés sur le plan de Truschet et Hoyau, vers 1550 : transcription et version en français moderne, vers par vers.",
     og_desc="Un poème de 108 vers à la louange de Paris et l'avis des éditeurs, imprimés sur le plan de 1550 : transcription et français moderne.",
@@ -331,7 +331,7 @@ L["fr"] = dict(
                "<a href=\"/sv/texts/\" hreflang=\"sv\" lang=\"sv\">svenska</a>",
 )
 L["sv"] = dict(
-    path="/sv/texts/", home="/?lang=sv", by="Paris 1550, av Peer Blekelj.",
+    path="/sv/texts/", home="/sv/", map="Öppna kartan", by="Paris 1550, av Peer Blekelj.",
     title="Texterna på kartan",
     desc="Dikten till Paris lov och utgivarnas meddelande, tryckta på Truschets och Hoyaus Parisplan från omkring 1550: avskrift och svensk översättning rad för rad.",
     og_desc="En dikt på 108 rader till Paris lov och utgivarnas meddelande, tryckta på kartan från 1550: avskrift och översättning.",
@@ -384,7 +384,7 @@ NOTES_POEM = {
         "(1532) and the <i>Antiquitez de Paris</i> (1550). Jules Cousin noticed it in 1875, and identified the "
         "poem as the closing verses of the <i>Fleur</i>; we have not yet checked that against the book. We "
         "found no other acrostic: not in the rest of the poem (first or last letters, by stanza, column or "
-        "panel), nor in the publishers' notice. See <a href=\"/about/#makers\">who made the map</a>.",
+        "panel), nor in the publishers' notice. See <a href=\"/#makers\">who made the map</a>.",
         "<b>Paris, Hercules, the Trojans (lines 19–41):</b> the poem weighs the founding legends of its day "
         "without choosing. In one, Paris was founded by Trojan exiles: in Jean Lemaire de Belges' "
         "<i>Illustrations de Gaule</i> (1510–1513), Hector's son, renamed Francus, founds it and names it after his "
@@ -425,7 +425,7 @@ NOTES_POEM = {
         "<i>Antiquitez de Paris</i> (1550). Jules Cousin l'a remarqué en 1875, et a reconnu dans le poème les "
         "vers qui terminent la <i>Fleur</i> ; nous ne l'avons pas encore vérifié sur le livre. Nous n'avons "
         "trouvé aucun autre acrostiche : ni dans le reste du poème (premières ou dernières lettres, par "
-        "strophe, colonne ou cartouche), ni dans l'avis des éditeurs. Voir <a href=\"/fr/about/#makers\">qui "
+        "strophe, colonne ou cartouche), ni dans l'avis des éditeurs. Voir <a href=\"/fr/#makers\">qui "
         "a fait le plan</a>.",
         "<b>Paris, Hercule, les Troyens (vers 19–41) :</b> le poème passe en revue les légendes de fondation de "
         "son temps sans trancher. Dans l'une, Paris est fondée par des Troyens exilés : dans les "
@@ -468,7 +468,7 @@ NOTES_POEM = {
         "och <i>Antiquitez de Paris</i> (1550). Jules Cousin upptäckte det 1875 och kände igen dikten som "
         "slutverserna i <i>Fleur</i>; det har vi ännu inte kontrollerat mot boken. Vi har inte hittat någon "
         "annan akrostikon: varken i resten av dikten (första eller sista bokstäverna, per strof, spalt eller "
-        "fält) eller i utgivarnas meddelande. Se <a href=\"/sv/about/#makers\">vem som gjorde kartan</a>.",
+        "fält) eller i utgivarnas meddelande. Se <a href=\"/sv/#makers\">vem som gjorde kartan</a>.",
         "<b>Paris, Herkules, trojanerna (rad 19–41):</b> dikten väger sin tids legender om stadens grundande mot "
         "varandra utan att välja. Enligt en grundades Paris av landsflyktiga trojaner: i Jean Lemaire de Belges "
         "<i>Illustrations de Gaule</i> (1510–1513) grundar Hektors son, under namnet Francus, staden och "
@@ -738,7 +738,7 @@ def page(lg):
   </head>
   <body class="doc">
     <header class="doc-head">
-      <a class="back" href="{s['home']}">← Paris 1550</a>
+      <span class="home-links"><a class="back" href="{s['home']}">← Paris 1550</a> · <a class="back" href="{s['home']}map/">{s['map']}</a></span>
       <h1>{s['title']}</h1>
       <p class="lede">{s['lede']}</p>
       <p class="langs">{s['lang_links']}</p>

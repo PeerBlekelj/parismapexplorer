@@ -8,10 +8,9 @@ import './style.css';
 
 import { renderCard, renderIntro } from './card';
 import { esc, statusClass, statusLabel, typeLabel } from './format';
-import { lang, langBase, LANGS, setLang, t, type Lang } from './i18n';
+import { lang, langBase, LANGS, mapBase, setLang, t, type Lang } from './i18n';
 import { loadOverlayTiles, MapView, type Mode, type Orientation } from './maps';
 import { initMobile } from './mobile';
-import { renderWelcome } from './welcome';
 import { buildEntries, modernText, type Entry } from './model';
 import { IMAGE_H, IMAGE_W } from './oldPlane';
 import { SearchIndex } from './search';
@@ -37,10 +36,10 @@ function placeIdFromUrl(): string | null {
   return m ? m[1] : null;
 }
 
-/** The start page, keeping ?lang= if the address has it. */
+/** The map's standard view (/map/, /fr/map/…), keeping ?lang= if the address has it. */
 function homeUrl(): string {
   const l = new URLSearchParams(location.search).get('lang');
-  return `${langBase()}${l ? `?lang=${encodeURIComponent(l)}` : ''}`;
+  return `${mapBase()}${l ? `?lang=${encodeURIComponent(l)}` : ''}`;
 }
 
 function fillStaticText(): void {
@@ -49,7 +48,6 @@ function fillStaticText(): void {
   $('#brand').title = t.brandHome;
   $('#brand').setAttribute('aria-label', `${t.brandTitle}. ${t.brandHome}`);
   $<HTMLAnchorElement>('#brand').href = homeUrl();
-  renderWelcome($('#welcome'));
   $('.viewtabs [data-view=map]').textContent = t.viewMap;
   $('.viewtabs [data-view=table]').textContent = t.viewTable;
   $<HTMLInputElement>('#q').placeholder = t.searchPlaceholder;
@@ -70,7 +68,7 @@ function fillStaticText(): void {
   const langs = LANGS.map((l) =>
     `<button type="button" data-lang="${l}" lang="${l}" aria-pressed="${l === lang}">${l.toUpperCase()}</button>`).join(' · ');
   $('#credits').innerHTML = `<span class="langs" role="group" aria-label="${esc(t.langLabel)}">${langs}</span>` +
-    `<a href="${langBase()}about/">${esc(t.creditAbout)}</a> · <a href="${langBase()}method/">${esc(t.creditMethod)}</a> · ` +
+    `<a href="${langBase()}">${esc(t.creditAbout)}</a> · <a href="${langBase()}method/">${esc(t.creditMethod)}</a> · ` +
     `<a href="${langBase()}texts/">${esc(t.creditTexts)}</a> · ` + [t.creditMap, t.creditOsm, t.creditBy].map(esc).join(' · ');
 }
 
@@ -301,7 +299,7 @@ async function main(): Promise<void> {
       document.title = `${e.place.modern ?? e.place.old} · Paris 1550`;
     } else {
       renderIntro(cardEl);
-      history.replaceState(null, '', `${langBase()}${location.search}`);
+      history.replaceState(null, '', `${mapBase()}${location.search}`);
       if (wasOpen) mobile.cardClosed();
       document.title = t.siteTitle;
     }
@@ -382,7 +380,8 @@ async function main(): Promise<void> {
 
   // ---------- start over ----------
   // The title returns to the standard view: list, no search or filters, side by side, north up,
-  // the whole city, the address back to / (keeping ?lang=). A modified click (new tab) is left alone.
+  // the whole city, the address back to /map/ (keeping the language and ?lang=). A modified click
+  // (new tab) is left alone.
   function startOver(): void {
     setFiltersOpen(false);
     q.value = '';

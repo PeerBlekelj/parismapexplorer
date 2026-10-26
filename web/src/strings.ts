@@ -143,10 +143,6 @@ const en = {
   creditMethod: 'How the map was bent',
   creditTexts: 'Texts on the map',
   creditAbout: 'About the map',
-  welcomeTitle: 'New here?',
-  welcomeText: 'Who made this map of Paris around 1550, how it is dated, and how its only copy turned up in Basel.',
-  welcomeLink: 'Read about the map →',
-  welcomeDismiss: 'Dismiss',
   oldAttribution: 'Truschet &amp; Hoyau, c. 1550 · Basel University Library (public domain)',
 
   loadError: 'Could not load the place data.',
@@ -326,10 +322,6 @@ const fr: Strings = {
   creditMethod: 'Comment le plan a été déformé',
   creditTexts: 'Les textes du plan',
   creditAbout: 'À propos du plan',
-  welcomeTitle: `Première visite${NB}?`,
-  welcomeText: 'Qui a fait ce plan de Paris vers 1550, comment on le date, et comment son unique exemplaire a resurgi à Bâle.',
-  welcomeLink: 'Lire la présentation →',
-  welcomeDismiss: 'Fermer',
   oldAttribution: 'Truschet &amp; Hoyau, vers 1550 · bibliothèque universitaire de Bâle (domaine public)',
 
   suggestCorrection: 'Proposer une correction',
@@ -512,10 +504,6 @@ const sv: Strings = {
   creditMethod: 'Hur kartan böjdes',
   creditTexts: 'Texterna på kartan',
   creditAbout: 'Om kartan',
-  welcomeTitle: 'Ny här?',
-  welcomeText: 'Vem som gjorde den här kartan över Paris runt 1550, hur den dateras och hur det enda exemplaret dök upp i Basel.',
-  welcomeLink: 'Läs om kartan →',
-  welcomeDismiss: 'Stäng',
   oldAttribution: 'Truschet &amp; Hoyau, ca 1550 · Basels universitetsbibliotek (fri från upphovsrätt)',
 
   suggestCorrection: 'Föreslå en rättelse',

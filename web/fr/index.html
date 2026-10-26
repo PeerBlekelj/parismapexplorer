@@ -3,32 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>À propos du plan · Paris 1550</title>
-    <meta name="description" content="Le plan de Paris de Truschet et Hoyau, vers 1550 : ce qu’il montre, qui l’a fait, comment on le date, et comment son unique exemplaire connu a été retrouvé à Bâle en 1874." />
-    <link rel="canonical" href="%SITE%/fr/about/" />
-    <link rel="alternate" hreflang="en" href="%SITE%/about/" />
-    <link rel="alternate" hreflang="fr" href="%SITE%/fr/about/" />
-    <link rel="alternate" hreflang="sv" href="%SITE%/sv/about/" />
-    <link rel="alternate" hreflang="x-default" href="%SITE%/about/" />
-    <meta property="og:type" content="article" />
+    <title>Paris 1550 · le plan de Truschet et Hoyau, vers 1550, et la ville d’aujourd’hui</title>
+    <meta name="description" content="Un plan de Paris gravé sur bois vers 1550 : qui l’a fait, comment on le date, comment son unique exemplaire a été retrouvé à Bâle, et chaque lieu qu’il nomme retrouvé dans la ville d’aujourd’hui." />
+    <link rel="canonical" href="%SITE%/fr/" />
+    <link rel="alternate" hreflang="en" href="%SITE%/" />
+    <link rel="alternate" hreflang="fr" href="%SITE%/fr/" />
+    <link rel="alternate" hreflang="sv" href="%SITE%/sv/" />
+    <link rel="alternate" hreflang="x-default" href="%SITE%/" />
+    <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Paris 1550" />
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:locale:alternate" content="en_GB" />
     <meta property="og:locale:alternate" content="sv_SE" />
-    <meta property="og:title" content="À propos du plan · Paris 1550" />
-    <meta property="og:description" content="Un plan de Paris gravé sur bois vers 1550, imprimé rue Montorgueil, acheté par un étudiant bâlois et oublié pendant trois siècles." />
-    <meta property="og:url" content="%SITE%/fr/about/" />
+    <meta property="og:title" content="Paris 1550 · le plan de Truschet et Hoyau, vers 1550, et la ville d’aujourd’hui" />
+    <meta property="og:description" content="Un plan de Paris gravé sur bois vers 1550, imprimé rue Montorgueil, acheté par un étudiant bâlois et oublié pendant trois siècles. Chacun de ses lieux, retrouvé dans la ville d’aujourd’hui." />
+    <meta property="og:url" content="%SITE%/fr/" />
     <meta property="og:image" content="%SITE%/og/site.jpg" />
     <meta property="og:image:width" content="800" />
     <meta property="og:image:height" content="420" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      // The map used to live here: old links with #place=L0123 go on to it.
+      if (/(?:^#|&)place=/.test(location.hash)) location.replace(location.pathname.replace(/\/?$/, '/') + 'map/' + location.search + location.hash);
+    </script>
   </head>
   <body class="doc">
     <header class="doc-head">
       <div class="doc-top">
-        <a class="back" href="/fr/">← Paris 1550</a>
-        <nav class="langs" aria-label="Langue"><a href="/about/" lang="en" hreflang="en">EN</a> · <a href="/fr/about/" lang="fr" hreflang="fr" aria-current="page">FR</a> · <a href="/sv/about/" lang="sv" hreflang="sv">SV</a></nav>
+        <span class="back">Paris 1550</span>
+        <nav class="langs" aria-label="Langue"><a href="/" lang="en" hreflang="en">EN</a> · <a href="/fr/" lang="fr" hreflang="fr" aria-current="page">FR</a> · <a href="/sv/" lang="sv" hreflang="sv">SV</a></nav>
       </div>
       <h1>Un plan de Paris vers&nbsp;1550</h1>
       <p class="lede">Vers 1550, deux imagiers de la rue Montorgueil taillent Paris dans huit planches de bois&nbsp;:
@@ -36,6 +40,7 @@
         fait pour être accroché au mur et s’est sans doute vendu en grand nombre. Un seul exemplaire a survécu,
         parce qu’un collectionneur suisse l’a emporté chez lui&nbsp;; il est resté oublié à Bâle pendant trois
         siècles.</p>
+      <p class="cta"><a class="cta-btn" href="/fr/map/">Ouvrir la carte →</a><span class="cta-sub">le plan gravé et le Paris d’aujourd’hui, côte à côte</span></p>
     </header>
 
     <main class="doc-body">
@@ -77,7 +82,7 @@
           et, comme s’en plaignait Jules Cousin en 1875, ils «&nbsp;fourmillent de fautes&nbsp;»&nbsp;; les titres et
           légendes, composés en caractères typographiques dans de grands cartouches, sont bien plus corrects
           <a class="ref" href="#s-cousin">[1]</a>. Au bas de la feuille court un poème de 108 vers à la louange de
-          Paris, et un troisième cartouche commence par <em>Icy est le vray pourtraict naturel de la ville, cité,
+          Paris (<a href="/fr/texts/">à lire en entier, avec une version en français moderne</a>), et un troisième cartouche commence par <em>Icy est le vray pourtraict naturel de la ville, cité,
           université et faubourgs de Paris</em> <a class="ref" href="#s-cousin">[1]</a>. Le cartouche annonce
           287 rues et ruelles, 104 églises et monastères et 49 collèges&nbsp;; ce site recense les 455 lieux qui
           portent un nom lisible.</p>
@@ -282,14 +287,16 @@
 
       <section id="use">
         <h2>Comment utiliser ce site</h2>
-        <p>La <a href="/fr/">carte</a> montre le plan gravé et le Paris d’aujourd’hui côte à côte, synchronisés
+        <p>La <a href="/fr/map/">carte</a> montre le plan gravé et le Paris d’aujourd’hui côte à côte, synchronisés
           quand vous vous déplacez&nbsp;; la superposition pose le plan sur les rues actuelles, déformé pour s’y
           ajuster. Cherchez n’importe quel nom, ancien ou moderne, dans n’importe quelle graphie du XVI<sup>e</sup>
           siècle, ou cliquez sur une étiquette de l’une ou l’autre carte. La <strong>Table des lieux</strong> (en
           haut du panneau latéral) liste les 455 lieux avec ce qui s’y trouve aujourd’hui. La manière dont le plan
           a été calé sur la ville moderne, et jusqu’où s’y fier, est expliquée dans
           <a href="/fr/method/">Comment le plan a été déformé</a>. Cliquez sur le titre en haut du panneau latéral
-          pour revenir au début.</p>
+          pour revenir au début. Le poème et l’avis des éditeurs sont transcrits et traduits vers par vers dans
+          <a href="/fr/texts/">Les textes du plan</a>.</p>
+        <p class="cta"><a class="cta-btn" href="/fr/map/">Ouvrir la carte →</a><span class="cta-sub">le plan gravé et le Paris d’aujourd’hui, côte à côte</span></p>
       </section>
 
       <section id="sources">

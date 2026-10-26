@@ -4,7 +4,9 @@ The Truschet & Hoyau plan of Paris (*La ville, cité et université de Paris*, c
 Basel plan) side by side with the city today. Search any place named on the old map by its old or
 modern name and see where it was and what is there now.
 
-**Site:** https://paris1550.vercel.app
+**Site:** https://paris1550.vercel.app: the start page tells the map's story (who made it, how it is
+dated, how its only copy turned up in Basel; also in [French](https://paris1550.vercel.app/fr/) and
+[Swedish](https://paris1550.vercel.app/sv/)). The map itself: https://paris1550.vercel.app/map/
 
 - 455 places named on the map, each identified with today's place (or marked as vanished, shown
   where it stood), with a short description and sources.

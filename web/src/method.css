@@ -15,6 +15,7 @@ a { color: var(--blue); }
 .doc-head { padding-top: 28px; padding-bottom: 8px; border-bottom: 1px solid var(--rule); }
 .back { font-family: var(--sans); font-size: 13px; text-decoration: none; color: var(--ink2); letter-spacing: .02em; }
 .back:hover { color: var(--ink); }
+.home-links { font-family: var(--sans); font-size: 13px; color: var(--ink2); white-space: nowrap; }
 .doc-top { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
 .langs { font-family: var(--sans); font-size: 13px; color: var(--ink2); letter-spacing: .04em; white-space: nowrap; }
 .langs a { color: var(--ink2); text-decoration: none; padding: 0 1px; }
@@ -22,6 +23,12 @@ a { color: var(--blue); }
 .langs a[aria-current="page"] { color: var(--ink); font-weight: 600; }
 h1 { font-weight: 500; font-size: 46px; line-height: 1.1; margin: 22px 0 12px; }
 .lede { font-size: 23px; color: var(--ink2); margin: 0 0 22px; }
+/* The start page's "Open the map" button, under the lede and again at the end. */
+.cta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin: 0 0 26px; }
+.cta-btn { font-family: var(--sans); font-size: 16px; font-weight: 600; text-decoration: none; color: #fff; background: var(--red); padding: 11px 22px; border-radius: 6px; box-shadow: 0 1px 2px rgba(43, 33, 24, .25); }
+.cta-btn:hover, .cta-btn:focus-visible { background: #8a2f18; }
+.cta-sub { font-family: var(--sans); font-size: 13.5px; color: var(--ink2); }
+#use .cta { margin-top: 24px; }
 h2 { font-weight: 500; font-size: 30px; margin: 46px 0 8px; scroll-margin-top: 16px; }
 h3 { font-weight: 500; font-size: 23px; margin: 28px 0 6px; scroll-margin-top: 16px; }
 p, ul { margin: 0 0 16px; }

@@ -3,38 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Om kartan · Paris 1550</title>
-    <meta name="description" content="Truschets och Hoyaus Parisplan från omkring 1550: vad den visar, vem som gjorde den, hur den dateras och hur det enda kända exemplaret hittades i Basel 1874." />
-    <link rel="canonical" href="%SITE%/sv/about/" />
-    <link rel="alternate" hreflang="en" href="%SITE%/about/" />
-    <link rel="alternate" hreflang="fr" href="%SITE%/fr/about/" />
-    <link rel="alternate" hreflang="sv" href="%SITE%/sv/about/" />
-    <link rel="alternate" hreflang="x-default" href="%SITE%/about/" />
-    <meta property="og:type" content="article" />
+    <title>Paris 1550 · Truschets och Hoyaus karta över Paris, ca 1550, och staden i dag</title>
+    <meta name="description" content="En träsnittskarta över Paris från omkring 1550: vem som gjorde den, hur den dateras, hur det enda exemplaret hittades i Basel, och varje plats på den återfunnen i dagens stad." />
+    <link rel="canonical" href="%SITE%/sv/" />
+    <link rel="alternate" hreflang="en" href="%SITE%/" />
+    <link rel="alternate" hreflang="fr" href="%SITE%/fr/" />
+    <link rel="alternate" hreflang="sv" href="%SITE%/sv/" />
+    <link rel="alternate" hreflang="x-default" href="%SITE%/" />
+    <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Paris 1550" />
     <meta property="og:locale" content="sv_SE" />
     <meta property="og:locale:alternate" content="en_GB" />
     <meta property="og:locale:alternate" content="fr_FR" />
-    <meta property="og:title" content="Om kartan · Paris 1550" />
-    <meta property="og:description" content="Ett träsnitt av Paris från omkring 1550, tryckt i en verkstad i rue Montorgueil, köpt av en student från Basel och bortglömt i 300 år." />
-    <meta property="og:url" content="%SITE%/sv/about/" />
+    <meta property="og:title" content="Paris 1550 · Truschets och Hoyaus karta över Paris, ca 1550, och staden i dag" />
+    <meta property="og:description" content="Ett träsnitt av Paris från omkring 1550, tryckt i en verkstad i rue Montorgueil, köpt av en student från Basel och bortglömt i 300 år. Varje plats på det, återfunnen i dagens stad." />
+    <meta property="og:url" content="%SITE%/sv/" />
     <meta property="og:image" content="%SITE%/og/site.jpg" />
     <meta property="og:image:width" content="800" />
     <meta property="og:image:height" content="420" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      // The map used to live here: old links with #place=L0123 go on to it.
+      if (/(?:^#|&)place=/.test(location.hash)) location.replace(location.pathname.replace(/\/?$/, '/') + 'map/' + location.search + location.hash);
+    </script>
   </head>
   <body class="doc">
     <header class="doc-head">
       <div class="doc-top">
-        <a class="back" href="/sv/">← Paris 1550</a>
-        <nav class="langs" aria-label="Språk"><a href="/about/" lang="en" hreflang="en">EN</a> · <a href="/fr/about/" lang="fr" hreflang="fr">FR</a> · <a href="/sv/about/" lang="sv" hreflang="sv" aria-current="page">SV</a></nav>
+        <span class="back">Paris 1550</span>
+        <nav class="langs" aria-label="Språk"><a href="/" lang="en" hreflang="en">EN</a> · <a href="/fr/" lang="fr" hreflang="fr">FR</a> · <a href="/sv/" lang="sv" hreflang="sv" aria-current="page">SV</a></nav>
       </div>
       <h1>En karta över Paris, ca&nbsp;1550</h1>
       <p class="lede">Omkring 1550 skar två bildtryckare i rue Montorgueil en bild av Paris i åtta träblock: varje
         kyrka, kollegium, port och bro, och hundratals gatunamn. Den var gjord för att hänga på väggen och såldes
         förmodligen i stora upplagor. Ett enda exemplar finns kvar, eftersom en schweizisk samlare tog det med sig
         hem, och där låg det bortglömt i Basel i tre sekler.</p>
+      <p class="cta"><a class="cta-btn" href="/sv/map/">Öppna kartan →</a><span class="cta-sub">träsnittet och dagens Paris sida vid sida</span></p>
     </header>
 
     <main class="doc-body">
@@ -75,7 +80,7 @@
           <a class="ref" href="#s-cousin">[1]</a>. Gatunamnen är skurna i mellanrummen mellan husen och ”myllrar
           av fel”, som Jules Cousin klagade 1875; titlar och förklaringar, satta med typer i stora kartuscher, är
           betydligt mer korrekta <a class="ref" href="#s-cousin">[1]</a>. Längs nederkanten löper en dikt på 108
-          rader till Paris lov, och en tredje kartusch börjar <em>Icy est le vray pourtraict naturel de la ville,
+          rader till Paris lov (<a href="/sv/texts/">läs den i sin helhet, med översättning</a>), och en tredje kartusch börjar <em>Icy est le vray pourtraict naturel de la ville,
           cité, université et faubourgs de Paris</em>: ”här är den sanna avbildningen efter naturen…”
           <a class="ref" href="#s-cousin">[1]</a>. Kartuschen utlovar 287 gator och gränder, 104 kyrkor och kloster
           och 49 kollegier; den här webbplatsen förtecknar de 455 platser som bär ett läsbart namn.</p>
@@ -269,13 +274,15 @@
 
       <section id="use">
         <h2>Så använder du webbplatsen</h2>
-        <p><a href="/sv/">Kartan</a> visar träsnittet och dagens Paris sida vid sida, i takt när du rör dig;
+        <p><a href="/sv/map/">Kartan</a> visar träsnittet och dagens Paris sida vid sida, i takt när du rör dig;
           överlägget lägger träsnittet över moderna gator, böjt för att passa. Sök på vilket namn som helst,
           gammalt eller modernt, i vilken 1500-talsstavning som helst, eller klicka på en etikett på någon av
           kartorna. <strong>Platsförteckningen</strong> (överst i sidopanelen) listar alla 455 platser med vad som
           finns där i dag. Hur träsnittet passades in i den moderna staden, och hur långt man kan lita på det,
           förklaras i <a href="/sv/method/">Hur kartan böjdes</a>. Klicka på titeln överst i sidopanelen för att
-          börja om.</p>
+          börja om. Dikten och utgivarnas meddelande är avskrivna och översatta rad för rad i
+          <a href="/sv/texts/">Texterna på kartan</a>.</p>
+        <p class="cta"><a class="cta-btn" href="/sv/map/">Öppna kartan →</a><span class="cta-sub">träsnittet och dagens Paris sida vid sida</span></p>
       </section>
 
       <section id="sources">
