@@ -140,6 +140,8 @@ const en = {
   modeModShort: 'Today',
   orientOriginalShort: 'As printed',
   sheetGrip: 'Show more or less',
+  sortLabel: 'Sort',
+  sortDefault: 'Best match',
 };
 
 function roundTo(v: number, step: number): number {

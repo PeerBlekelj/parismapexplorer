@@ -26,6 +26,13 @@ export class PlaceTable {
   constructor(el: HTMLElement, onSelect: (id: string) => void) {
     this.el = el;
     this.onSelect = onSelect;
+    // The sort menu stands in for the column headers on a phone, where rows are cards.
+    el.addEventListener('change', (ev) => {
+      const sel = ev.target as HTMLSelectElement;
+      if (!sel.matches('select.table-sort')) return;
+      this.sort = sel.value ? { key: sel.value as SortKey, dir: 1 } : null;
+      this.render();
+    });
     el.addEventListener('click', (ev) => {
       const target = ev.target as HTMLElement;
       const th = target.closest('th[data-key]') as HTMLElement | null;
@@ -80,15 +87,19 @@ export class PlaceTable {
       const m = modernText(p);
       return `<tr data-id="${esc(p.id)}"${p.id === this.selectedId ? ' class="sel"' : ''}>
         <td class="o">${esc(e.title)}</td>
-        <td${m.placeholder ? ' class="placeholder"' : ''}>${esc(m.text)}</td>
-        <td>${esc(typeLabel(p.type))}</td>
-        <td><span class="badge ${statusClass(p.status)}">${esc(statusLabel(p.status))}</span></td>
-        <td>${p.flag === 'unsure' ? `<span class="badge unsure">${esc(t.unsureBadge)}</span>` : ''}</td>
+        <td class="m"><span${m.placeholder ? ' class="placeholder"' : ''}>${esc(m.text)}</span><span class="m-type"> · ${esc(typeLabel(p.type))}</span></td>
+        <td class="ty">${esc(typeLabel(p.type))}</td>
+        <td class="st"><span class="badge ${statusClass(p.status)}">${esc(statusLabel(p.status))}</span></td>
+        <td class="rd">${p.flag === 'unsure' ? `<span class="badge unsure">${esc(t.unsureBadge)}</span>` : ''}</td>
         <td class="id">${esc(p.id)}</td>
       </tr>`;
     }).join('');
+    const cur = this.sort?.dir === 1 ? this.sort.key : '';
+    const sortOpts = [['', t.sortDefault], ...COLS.map((c) => [c.key, c.label()])]
+      .map(([v, l]) => `<option value="${v}"${v === cur ? ' selected' : ''}>${esc(l)}</option>`).join('');
     this.el.innerHTML = `
-      <div class="table-head"><span>${esc(this.countText)}</span><span class="muted">${esc(t.tableHint)}</span></div>
+      <div class="table-head"><span>${esc(this.countText)}</span><span class="muted">${esc(t.tableHint)}</span>
+        <label class="table-sort-wrap">${esc(t.sortLabel)} <select class="table-sort">${sortOpts}</select></label></div>
       <div class="table-scroll"><table><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table>
       ${rows.length ? '' : `<p class="empty">${esc(t.noResults)}</p>`}</div>`;
   }

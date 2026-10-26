@@ -92,21 +92,32 @@
   .swipe::after { width: 44px; height: 44px; font-size: 18px; }
   .swipe span { top: calc(50% + 30px); }
 
-  /* ---------- table: the three columns that matter, rows tall enough to tap ---------- */
+  /* ---------- table: each row a compact card, sorting from a menu (mockup C·3) ---------- */
   .table-view { position: absolute; inset: 0; padding-top: env(safe-area-inset-top); }
-  .table-head { padding: 10px 16px; }
+  .table-head { align-items: center; padding: 6px 16px; min-height: 56px; }
   .table-head .muted { display: none; }
-  .table-view th, .table-view td { padding: 11px 8px; }
-  .table-view th:first-child, .table-view td:first-child { padding-left: 16px; }
-  .table-view th:nth-child(3), .table-view td:nth-child(3),
-  .table-view th:nth-child(5), .table-view td:nth-child(5),
-  .table-view th:nth-child(6), .table-view td:nth-child(6) { display: none; }
-  .table-view td.o { font-size: 15px; }
-  .table-view th { white-space: normal; }
+  .table-sort-wrap { display: flex; align-items: center; gap: 6px; color: var(--ink2); }
+  .table-sort { min-height: 40px; max-width: 170px; font: inherit; font-size: 13px; color: var(--ink); background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 0 8px; }
+  .table-scroll { padding: 10px 12px 16px; }
+  .table-view table, .table-view tbody { display: block; }
+  .table-view thead, .table-view td.ty { display: none; }
+  .table-view tbody tr {
+    display: grid; grid-template-columns: auto auto 1fr; align-items: center; gap: 3px 6px;
+    background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; margin-bottom: 8px;
+  }
+  .table-view td { padding: 0; border: 0; }
+  .table-view td.o { grid-column: 1 / -1; font-size: 17px; line-height: 1.2; }
+  .table-view td.m { grid-column: 1 / -1; font-size: 12.5px; color: var(--ink2); margin-bottom: 4px; }
+  .table-view td.m > span:first-child:not(.placeholder) { color: var(--ink); }
+  .table-view td.rd:empty { display: none; }
+  .table-view td.id { justify-self: end; grid-column: -2; }
+  .table-view tbody tr:hover td, .table-view tr.sel td { background: transparent; }
+  .table-view tr.sel { box-shadow: inset 3px 0 0 var(--red); }
+  .table-view tr.sel td:first-child { box-shadow: none; }
 
   /* Short labels for the narrow bars (mobile.ts adds them). */
   .lbl-long { display: none; }
 }
 @media (min-width: 761px) {
-  .lbl-short, .sheet-grip, .sheet-probe { display: none; }
+  .lbl-short, .sheet-grip, .sheet-probe, .table-sort-wrap, .table-view .m-type { display: none; }
 }

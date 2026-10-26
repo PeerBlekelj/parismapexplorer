@@ -42,7 +42,12 @@ compact cards with a sort menu.
   extra taps; the overlay default hides the 16th-century map's own drawing under modern streets.
   The most restructuring of the three.
 
-## Recommendation
+## Decision (owner, 2026-10-26)
+
+**A**, with stacked "Both" as the default on phones, and the table as **compact cards** (as in C·3)
+with a sort menu. Built on branch `mobile`.
+
+## Recommendation (before the decision)
 
 **A.** It keeps the one thing the site does that a list cannot, map and place together, and it is
 the smallest change to the code. Open points for the owner: default mode on phones (A keeps

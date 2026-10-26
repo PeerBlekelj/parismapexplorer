@@ -6,7 +6,8 @@ tiles and with OpenFreeMap blocked, so both maps are blank paper here; the pink 
 
 - `phone-390-*` (390 × 844) and `phone-360-*` (360 × 740): 1 peek, 2 half (grip tapped),
   3 search "pont", 4 a place opened from the list, 5 the card dragged up to full, 6 after the
-  browser's Back (list, place highlighted), 7 overlay with the swipe dragged by touch, 8 the table,
-  9 a table row opened, 10 opened from `/place/L0029/`.
+  browser's Back (list, place highlighted), 7 overlay with the swipe dragged by touch, 8 the table
+  as compact cards, 8b sorted by status and filtered by "pont" (390 only), 9 a card opened from the
+  table, 10 opened from `/place/L0029/`.
 - `desktop-1600-*-before/after` (1600 × 900): home, a place, overlay, table, on `main` and on
   this branch. The pairs are pixel-identical.
