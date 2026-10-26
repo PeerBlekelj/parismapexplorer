@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-26T11:52:43+00:00",
+"generated": "2026-10-26T12:06:59+00:00",
 "image": {
 "width": 10890,
 "height": 7820,
@@ -254,12 +254,12 @@
 ],
 "orient": "d",
 "flag": "ok",
-"note": "Pont d'Arcans: Cousin 1875 lists it (V,7-8) without identifying it",
-"modern": null,
+"note": "Pont Arcans: a small bridge carrying the road from Paris to the Porcherons (later the rue de la Chaussée-d'Antin) over the Grand Égout, between the château des Porcherons and the Ville-l'Évêque (fr.wikipedia 'Liste des ponts de Paris'; Lurine, Paris ancien et moderne, 1844); see data/research/open_questions_research.md",
+"modern": "Rue de Provence at the rue de la Chaussée-d'Antin (approximate site; the bridge went when the sewer was covered, 1760s–1770s)",
 "status": "vanished",
 "lat": 48.8755,
 "lon": 2.338845,
-"loc_confidence": "uncertain",
+"loc_confidence": "approx",
 "summary": null,
 "summary_fr": null,
 "summary_sv": null,
@@ -14110,9 +14110,9 @@
 ],
 "orient": "d",
 "flag": "unsure",
-"note": "rue Breneuse: the name was used for several small streets in this quarter",
+"note": "rue Breneuse = rue Verdelet (Merderet), between the rue Jean-Jacques-Rousseau and the rue de la Jussienne (Paris register of vanished streets; Lazare 1844); later absorbed in the rue Pagevin; later rue Pagevin",
 "modern": null,
-"status": null,
+"status": "vanished",
 "lat": 48.866658,
 "lon": 2.343475,
 "loc_confidence": "approx",
@@ -14123,6 +14123,10 @@
 "Rue Breneuse"
 ],
 "sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-des-voies-caduques/table/?q=id%3D662"
+},
 {
 "label": "Cousin 1875, p. 61",
 "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f69.item"
