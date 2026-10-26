@@ -6,7 +6,7 @@ modern name and see where it was and what is there now.
 
 **Site:** https://parismapexplorer.vercel.app
 
-- 453 places named on the map, each identified with today's place (or marked as vanished, shown
+- 455 places named on the map, each identified with today's place (or marked as vanished, shown
   where it stood), with a short description and sources.
 - The 1550 map and modern Paris side by side and synced, or overlaid: the woodcut is warped onto
   modern streets with a thin-plate spline through 40 control points (typical error about 60 m).
@@ -29,6 +29,9 @@ identified, and the site written by Claude, directed and reviewed by the project
 - Street identifications: Ville de Paris open data, registers of current and vanished street names
   (*Dénominations des emprises des voies actuelles* / *des voies caduques*).
 - Buildings and places: Wikipedia (French and English) and Wikidata.
+- Checked against Jules Cousin's table of the map's names, *Mémoires de la Société de l'histoire de
+  Paris et de l'Île-de-France*, t. I (1875), pp. 60–70 (source gallica.bnf.fr / BnF); transcription in
+  `data/research/cousin_1875_table.txt`, pairing per label in `data/research/cousin.csv`.
 
 ## Licences
 

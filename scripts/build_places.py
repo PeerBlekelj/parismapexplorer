@@ -3,7 +3,7 @@
 Contract with the app (see web/DATA_CONTRACT.md). Fields that are not researched yet are null,
 never empty strings or guesses: the app must show null as "not identified yet".
 """
-import csv, json, sys, datetime
+import csv, json, re, sys, datetime
 from pathlib import Path
 
 root = Path(sys.argv[1])
@@ -28,6 +28,43 @@ if p.exists():
             sys.exit(f"{r['id']} has two summaries")
         summaries[r["id"]] = r["summary"].strip()
 
+# Jules Cousin's 1875 table of the map's names (data/research/cousin.csv, from scripts/cousin_match.py):
+# cited on every place it lists, linked to the page on Gallica (Gallica page = printed page + 8).
+COUSIN = "https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f{f}.item"
+SMALL = {"de", "du", "des", "la", "le", "les", "l", "d", "l'", "d'", "l’", "d’", "et", "ou", "en", "au", "aux", "sur", "sous", "a"}
+
+
+def cousin_name(n):
+    """Cousin's index form to a plain name, searchable as a variant: 'FÉCAMP (hôtel de)' -> 'Hôtel de Fécamp'."""
+    m = re.match(r"^(.*?)\s*\(([^)]*)\)\s*(.*)$", n)
+    head, pre, rest = (m.group(1), m.group(2).strip(), m.group(3).strip()) if m else (n, "", "")
+    m2 = re.match(r"^([^a-z]+?)\s+(\S*[a-z].*)$", head)  # 'SAINT-MICHEL du Palais'
+    if m2:
+        head, rest = m2.group(1), (m2.group(2) + " " + rest).strip()
+    if not head.isupper():
+        return n
+    words = re.split(r"([\s-]+|(?<=['’]))", head.lower())
+    head = "".join(w if (w in SMALL and i) else w[:1].upper() + w[1:] for i, w in enumerate(words))
+    if pre[:1].isupper() and pre != "L'":  # a qualifier, not a prefix: 'HÔPITAL (St-Médard)'
+        out = f"{head} ({pre})"
+    elif pre.startswith(("de ", "du ", "des ")):  # a complement: 'HÔPITAL (de Notre-Dame-des-Champs)'
+        out = f"{head} {pre}"
+    elif pre in ("le", "la", "les", "L'") or not pre or pre.startswith(("sans", "les —")):
+        out = (pre.capitalize() + " " if pre in ("le", "la", "les") else "L'" if pre == "L'" else "") + head
+    else:
+        out = pre + ("" if pre.endswith(("'", "’")) else " ") + head
+    if rest and not rest.startswith(","):
+        out += " " + rest
+    return out[:1].upper() + out[1:]
+
+
+cousin = {}
+p = root / "data/research/cousin.csv"
+if p.exists():
+    for r in csv.DictReader(open(p, encoding="utf-8")):
+        cousin[r["id"]] = {"label": f"Cousin 1875, p. {r['page']}", "url": COUSIN.format(f=int(r["page"]) + 8),
+                           "name": cousin_name(r["cousin_name"])}
+
 places = []
 for r in csv.DictReader(open(root / "data/labels_inventory.csv")):
     if r["type"] == "decoration":
@@ -49,8 +86,10 @@ for r in csv.DictReader(open(root / "data/labels_inventory.csv")):
         "lon": float(i["lon"]) if nn(i.get("lon")) else None,
         "loc_confidence": nn(i.get("loc_confidence")),
         "summary": nn(summaries.get(r["id"])) or nn(i.get("summary")),
-        "variants": [v for v in (i.get("variants") or "").split("|") if v],
-        "sources": json.loads(i["sources"]) if nn(i.get("sources")) else [],
+        "variants": [v for v in (i.get("variants") or "").split("|") if v]
+                    + ([cousin[r["id"]]["name"]] if r["id"] in cousin else []),
+        "sources": (json.loads(i["sources"]) if nn(i.get("sources")) else [])
+                   + ([{k: cousin[r["id"]][k] for k in ("label", "url")}] if r["id"] in cousin else []),
     })
 
 # --auto-gcps: use the larger set built by scripts/fit_transform.py (needs a TPS in the app).

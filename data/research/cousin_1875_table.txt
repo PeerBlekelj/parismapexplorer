@@ -1,0 +1,495 @@
+# Jules Cousin, "Table des noms ... inscrits sur le plan de Paris publié vers 1552 par Olivier Truschet
+# et Germain Hoyau", Mémoires de la Société de l'histoire de Paris et de l'Île-de-France, t. I (1875),
+# pp. 60-70 (PDF pp. 70-80). Transcribed from the page images.
+# name (Cousin's corrected form) | printed (as on the map, Cousin's italics) | refs (sheet,square;...) | note
+# p. 60
+ALBIAC (champ d') | Chan Dalbia | IV,4;IV,5 |
+ALBRET (collège et hôtel d') | | IV,7 |
+ALENÇON (hôtel d') | | VI,6 |
+ALEXANDRE-LANGLOIS (rue) | | III,9 | ancien nom de la rue du Paon-St-Victor
+ANGOULÊME (hôtel d') | Lostel Dangoulesme | II,5;II,6 |
+ARGENT (hôtel d') | Lostel Dargent | II,8;II,9 |
+ARRAS (rue d') | rue des Ras | III,9 |
+AUBRY-LE-BOUCHER (rue) | R. Briboucher | VI,2 |
+AUGUSTINS (couvent des) | | VII,5 |
+AUGUSTINS (rue des) | | VII,5 |
+AUGUSTINS (rue des Vieux) | R. des Augustins | VI,4 |
+AUTEUIL (village) | Auteul | VIII,9 |
+AUTRUCHE (rue de l'), ou rue d'Autriche | | VI,5 | le graveur a donné ce nom à la rue du Coq et a désigné la véritable rue d'Autriche sous le nom de rue des Poulies
+AVE-MARIA (couvent de l') | Lavemaria | II,6 |
+BAGNOLET | Baniolet | I,1 |
+BALLETS (rue des) | rue des Bales | II,5 |
+BARRE (porte de la) | | IV,2 |
+BARRE (rue de la) | | IV,2 |
+BARRÉS (rue des) | | II,6 |
+BASTILLE (la) | | II,3 |
+BASTILLON (le) du Temple | | I,5 |
+BASTILLON (le) St-Antoine | | II,2 |
+BATTOIR (rue du) | R. du Batouer | VII,2 | ce nom désigne ici la rue Gît-le-Cœur; la rue dite actuellement du Battoir porte dans le plan le nom de rue de la Serpente
+BAUDAIS ou BAUDOYER (porte) | la porte Bodes | II,6;II,9 |
+BAUDROIERIE (rue de la) | R. de la Baudrerie | II,8 | ancien nom de la rue Maubuée
+BAYEUX (collège de) | Raieus | VIII,1 |
+BEAUREPAIRE (rue) | R. Beaurepere | V,3 |
+BEAUVAIS (collège de) | | III,9 |
+BEAUVAIS (rue de) | | VI,5 | par erreur donné à une partie de la rue St-Thomas-du-Louvre; la véritable rue de Beauvais est nommée rue Fremantiau (Froidmanteau)
+BELLEVILLE | Belevile | I,1 |
+BERCY | Terci | III,2 |
+BERNARDINS (couvent des) | | III,8;III,9 |
+BERNARDINS (rue des) | | III,8;III,9 |
+BETOURNAI (hôtel) | | | voy. hôtel de Tournay
+BICÊTRE | Bissestre | IV,3 |
+BIÈVRE (rue de) | | III,8;III,9 |
+BILLETTES (les Carmes) | | II,8 |
+BLANCS-MANTEAUX (rue des) | rue des Blans Manteos | II,5;II,7 |
+BONCOURT (collège de) | | IV,7 |
+BON-PUITS (rue du) | r. du Bon puis | III,9 |
+BONS-ENFANTS-ST-HONORÉ (collège des) | Les bons Anfans | VI,5 |
+# p. 61
+BONS-HOMMES (les) de Chaillot | | VIII,7 |
+BORDELLE (porte) | | IV,7 |
+BORDELLE (rue) | | IV,7 |
+BOUCHERIE (la Grande) | la Grant boucherie | VI,3 |
+BOUCHERIE DE BEAUVAIS (la) | | VI,2 |
+BOUQUETONNE (rue) | | | voy. rue du Hoqueton
+BOURBON (hôtel de) ou Petit-Bourbon | | VI,6 |
+BOURDONNAIS (rue des) | | VI,2;VI,3 |
+BOURG-L'ABBÉ (rue) | R. de Bourlabé | VI,1 |
+BOURGOGNE (collège de) | | VII,3 |
+BOURGOGNE (rue de) | R. de Bourgongne | VI,1 |
+BOURTIBOURG (rue) | R. Boutibour | II,8 |
+BOUT (rue du) | | VII,2;VII,3 | sur l'emplacement de la rue Béthisy, qui porte déjà ce nom sur le Plan de tapisserie; Ducerceau l'appelle rue du Borel
+BOUTEBRIE (rue) | R. du Bout de brie | VII,3 |
+BOUTIBOUR (rue) | | | voy. rue Bourtibourg
+BRAQUES (chapelle de) | | II,4 |
+BRAQUES (hôtel de) | Braques | IV,8 |
+BRAQUES (rue de) | R. de Broves | II,4 |
+BRENEUSE (rue) | | VI,4 |
+BRETAGNE (hôtel de) | Lostel de Brianne | II,3 |
+BRETONNERIE (rue de la) | | II,5;II,8 |
+BRIANNE (hôtel de) | | | voy. hôtel de Bretagne
+BRIBOUCHER (rue) | | | voy. rue Aubry-le-Boucher
+BROVES (rue de) | | | voy. rue de Braque
+BUSSY (porte de) | porte de Buci | VII,6 |
+CALANDRE (rue de la) | | VII,2 |
+CALVI (collège de) | | VIII,1 |
+CARDINAL-LEMOYNE (collège du) | | III,9 |
+CARMES (couvent des) | | III,9 |
+CARMES (rue des) | | III,9 |
+CÉLESTINS (couvent des) | | III,1 |
+CÉLESTINS (rue des) | R. des Cellestins | II,6 |
+CERISAIE (rue de la) | R. de la Cerisée | II,3 | indiquée dans le sens perpendiculaire à sa direction actuelle, au lieu de la rue de l'Arsenal (ci-devant de l'Orme)
+CHAILLOT (village de) | Chaliot | VII,7 |
+CHALANTON (pont de) | | | voy. pont de Charenton
+CHAMBRE DES COMPTES (la) | | VII,2 |
+CHAMP-FLEURI (rue du) | | VI,5 | par erreur donné à la rue du Chantre; la véritable rue du Champ-Fleuri est nommée rue du Coq
+CHAMP-GAILLARD (le) | le chan Gaillart | III,9 |
+CHANTRE (rue du) | | VI,5 | par erreur donné à la rue Jean-Saint-Denis; la véritable rue du Chantre est nommée rue Champ-Fleuri
+CHANVRERIE (rue de la) | la Chanvarerie | VI,1 |
+CHAPON (rue) | | II,7 |
+CHARENTON (pont de) | Le pont de Chalanton | III,3 |
+CHARTREUX (les) | | VIII,3 |
+CHATS (rue des) | | VI,2;VI,3 | comme dans le plan de Ducerceau, c'est la rue des Déchargeurs qui est ainsi nommée et non, comme il conviendrait, la rue de la Limace qui lui est perpendiculaire
+# p. 62
+CHATELET (le grand) | | VI,3 |
+CHATELET (le petit) | | VII,2 |
+CHOLETS (collège des) | Les Choles | IV,7;VIII,1 |
+CHOLETS (rue des) | R. des Choles | IV,7 |
+CIMETIÈRE ST-ANDRÉ (rue du) | | VII,3 |
+CIMETIÈRE ST-JEHAN | | II,8;II,9 |
+CIMETIÈRE ST-NICOLAS | | II,7 |
+CIMETIÈRE ST-NICOLAS (rue du) | | II,7 |
+CIMETIÈRE DES SS. INNOCENTS | | VI,2 |
+CIMETIÈRE DE LA TRINITÉ | Cimetière de la Ternité | V,3 |
+CLIGNANCOURT | Clinniencourt | V,4 |
+CLOÎTRE NOTRE-DAME | Le Cloistre | III,7 |
+CLOÎTRE SAINT-MERRY | Cloistre S. Mari | II,8 |
+CLOS-BRUNEAU (rue du) | Le Clos-Bruniau | IV,7 |
+CLUNY (collège de) | Clugni | VIII,1 |
+CLUNY (hôtel de) | Lostel de Clugni | VII,3 |
+COMTE-D'ARTOIS (rue au) | R. Conte Dartois | VI,1 |
+COCHONERIE (la) | | | voy. rue de la Cossonnerie
+CONCIERGERIE (la) | | VII,1 |
+CONFLANS (village) | | III,2 |
+COPEAU (rue) | R. de Coipiaus | IV,4 |
+COQ-HÉRON (rue) | r. Quoque Héron | VI,4 |
+COQ-ST-HONORÉ (rue du) | | VI,5 | le graveur a donné par erreur ce nom à la rue du Champ-Fleuri, et a désigné la véritable rue du Coq sous le nom de r. de l'Autruche
+COQ-ST-JEAN (rue du) | R. du Coc | II,8;II,9 |
+COQUERET (collège) | | IV,7 |
+COQUILLÈRE (rue) | | VI,4 |
+CORDELIERS (couvent des) | Les ... | VII,3 | le nom a été oublié
+CORDELIERS (rue des) | | VII,3 |
+CORDELIÈRES (couvent des) | | IV,3 |
+CORDELIÈRES (rue des) | | IV,3 |
+CORNOUAILLES (collège de) | | III,9 |
+CORROIERIE (rue de la) | R. de la Courrerie | II,8 | c'est le nom que le graveur a inscrit sur la rue de la Verrerie, donnant à la véritable rue de la Corroierie son ancien nom de rue de la Platrière
+CORROIERIE (rue de la Vieille) | la Vielle Correrie | VI,2 | ancien nom de la rue des Cinq-Diamants
+COSSONNERIE (rue de la) | La Cochonnerie | VI,2 |
+COUR-AU-VILAIN (rue) | | II,7 |
+COURRERIE (rue de la) | | | voy. rue de la Corroierie
+COURTILLE (la) | | I,4 |
+COUTELLERIE (rue de la) | R. de la Cotellerie | II,9 |
+CROIX (rue de la) | R. de la Croys | I,9 |
+CROIX-FAUBIN (la) | La Crois Favbin | II,2 |
+CROIX-DU-TIROIR ou du TRAHOIR (la) | la Croix du Tiroy | VI,2 |
+CRUCIFIX (rue du) | R. du Crucefis | VI,3 |
+CUL-DE-SAC (sans autre dénomination) | | II,7 | ouvert sur la rue Beaubourg; c'est le cul-de-sac des Truies, plus tard cul-de-sac Berthaud
+DARNETAL (rue) | | | voy. rue Garnetal
+DEONPONT (rue) | | | voy. rue de Longpont
+DEUX-ÉCUS (rue des) | | VI,5 | c'est la rue des Poulies (St-Honoré) qui, par erreur, porte ce nom sur notre plan; la rue des Deux-Écus y figure, mais sans désignation; la rue des Poulies est inscrite plus bas
+# p. 63
+DEUX-PORTES (rue des) | | VI,3 | ancien nom de la rue des Orfèvres, devant la chapelle des Orfèvres
+DEUX-PORTES-ST-ANDRÉ (rue des) | | VII |
+DEUX-PORTES-ST-SAUVEUR (rue des) | | V,3;VI,1 |
+ÉCOLE SAINT GERMAIN-L'AUXERROIS (L') | | VI,3 |
+ÉCOUFFES (rue des) | R. des Ecoufles | II,5 |
+ÉTUVES-ST-HONORÉ (rue des) | | VI,2 |
+ÉTUVES (rue des Vieilles) | R. des Estuves | II,8 |
+FARE (rue au) | | | voy. rue aux Fers
+FÉCAMP (hôtel de) | Lostel de Tes | VII,3 | le graveur voulait écrire Fescamp; il a mis un T pour une F et laissé le mot inachevé faute de place
+FER-A-MOULIN (rue du) | R. du Fer de Moulain | IV,2 |
+FERRONNERIE (rue de la) | | VI,2 |
+FERS (rue aux) | R. au Fare | VI,2 | sans doute pour rue au Favre
+FILLES-DIEU (couvent des) | | V,3 |
+FILLES-DIEU (rue des) | | V,3 |
+FILLES-REPENTIES (les), couvent | | VI,5 |
+FOIN-ST-JACQUES (rue du) | | VII,3 |
+FOIRE SAINT-GERMAIN (la) | | VIII,4 |
+FONTAINES (rue des — du Temple) | R. des Fontinnes | I,9 |
+FOR-L'ÉVÊQUE (le) | Le four Lévesque | VI,3 |
+FOUR-ST-GERMAIN (rue du) | | VIII,5 |
+FOUR-ST-HONORÉ (rue du) | | VI,2 |
+FRANC-MURIER (rue du) | R. Fran Murier | II,8 |
+FREMANTIAU (rue) | | | voy. rue Froidmanteau
+FRÉPAU (rue de) | | I,9 | aujourd'hui rue Phélipeaux
+FRIPERIE (la) | | VI,2 |
+FROIDMANTEAU (rue) | R. Fremantiau | VI,6 | le graveur a, par erreur, donné ce nom à la rue de Beauvais, et a désigné la véritable rue Froidmanteau sous le nom de rue Jean-Saint-Denis
+FROMAGERIE (rue de la) | R. de la Froumagerie | VI,2 |
+GARNETAL (rue de) | | V,3 | pour Darnetal, ancien nom de la rue Grénetat
+GARNIER-SUR-L'EAU (rue) | R. Garnier-sur-ian | II,9 | ancien nom de la rue Grenier-sur-l'eau
+GENTILLY | Gentili | IV,3 |
+GEOFFROY-L'ANGEVIN (rue) | R. Geffroi Langevin | II,7;II,8 |
+GEOFFROY-L'ASNIER (rue) | R. Gefroi Lannier | II,6 |
+GILORI (le carfour) | | | voy. carrefour Guillori
+GLATIGNY (rue de) | R. de Glatini | III,7 |
+GRAND-CHANTIER (rue du) | | II,4 |
+GRAND-DÉCRET (Écoles) | le Grant Décret | III,9 |
+GRANGE-BATELIÈRE (la) | la Granche batelière | V,4;V,5 |
+GRAVILLIERS (rue des) | | II,7 |
+GRENELLE (rue de) | R. de Gernelle | VI,5 |
+GRENIER-ST-LADRE (rue) | | II,7 |
+GRÈVE (place de) | | II,9 |
+GUÉRIN-BOISSEAU (rue) | R. Gairin Boi siau | V,3 |
+GUILLORI (carrefour) | le carfour Gilori | II,9 |
+# p. 64
+HALLE AU BLÉ (la) | | VI,2 |
+HARCOURT (collège d') | C. Herrocourt | VIII,1 |
+HARCOURT (hôtel d') | Lotel de Herocourt | VII,3 |
+HARPE (rue de la) | la grant R. de la Herpe | VII,3 |
+HAUDRIETTES (couvent des) | les Audriettes | II,9 |
+HAUDRIETTES (rue des) | R. de Haudriette | II,4 |
+HAUTEFEUILLE (rue de) | | VII,3 |
+HEAUMERIE (rue de la) | | VI,3 |
+HIRONDELLE (rue de l') | R. de Larondelle | VII,2 |
+HOMME-ARMÉ (rue de l') | R. des Hômes armés | II,5;II,8 |
+HÔPITAL (de Notre-Dame-des-Champs) | Lopital | VIII,3 |
+HÔPITAL (St-Médard) | Lôpital | IV,6 |
+HÔPITAL SAINTE-CATHERINE | Lopital S. Caterinne | VI,2;VI,3 |
+HOQUETON (rue du) | R. Bouquetonne | II,5;II,8 | pour Hoquetonne; ancien nom de la rue de Bercy
+HORLOGE (l') du Palais | Lorloge | VII,1 |
+HÔTEL-DIEU | Lostel Dieu | III,8 |
+HÔTEL-DE-VILLE | Lostel de la vile | II,9 |
+HUCHETTE (rue de la) | | VII,2 |
+HUE-LEU (rue) | | VI,1 | c'est l'ancien nom de la rue du Grand-Hurleur; elle est donc ici très-bien désignée
+INNOCENTS (église et cimetière des SS.) | | VI,2 |
+ISON (rue de) | | | voy. rue Tiron ou Tison
+IVRY | Iveri | IV,1 |
+JACOBINS (couvent des) | les Jacopins | VIII,1 |
+JARDIN (rue du) | | II,6 | c'est la rue des Jardins-St-Paul
+JARDIN DU ROI (le), à la pointe du Palais | | VII,1 |
+JEAN-PAIN-MOLLET (rue) | R. Jehan pin Molet | II,8;II,9 |
+JEAN-SAINT-DENIS (rue) | R. Jehan S. Denis | VI,5 | le graveur a, par erreur, donné ce nom à la rue Froidmanteau, et a désigné la véritable rue Jean-St-Denis sous le nom de rue du Chantre
+JEU DE PAUME (le), aux Halles | | VI,2 |
+JOUY (rue de) | R. pet io . ni | II,6 | sans doute pour pet(ite) R. (de) Ioui
+JUSTICE (collège de) | | VIII,1 |
+LARONDELLE (rue de) | | | voy. R. de l'Hirondelle
+LAVANDIÈRES (rue des) | | VI,3 |
+LINGERIE (rue de la) | | VI,2 |
+LISIEUX (collège de) | | IV,7 |
+LOMBARDS (rue des) | R. des Lombars | VI,2 |
+LONG-PONT (rue de) | R. Deon Pont | II,9 |
+LORRAINE (hôtel de) | | III,8 |
+LOUVIERS (île de) | | III,2 |
+LOUVRE (le) | | VI,6 |
+MADELEINE (la) en la cité | la Madelinne | III,7;III,8 |
+MAIRE (rue au) | R. au Mère | II,7 |
+MAÎTRE-GERVAIS (collège de) | | VII,3 |
+MANS (collège du) | Le Man | IV,7 |
+MARAIS (les — du Temple) | Les Mares | I,7 |
+MARCHE (collège de La) | | III,9 |
+MARCHÉ AUX POURCEAUX (le) | | VI,7 |
+# p. 65
+MARIE-ÉGYPTIENNE (rue et église Ste) | | VI,4 | nom primitif de la rue de la Jussienne
+MARIVAUX (rue) | | II,8 |
+MARMOUTIERS (collège de) | | IV,7;VIII,1 |
+MARNE (embouchure de la) | | III,3 |
+MARTYRS (la chapelle des — à Montmartre) | La chapelle des Martis | V,4 |
+MATHURINS (couvent des) | | VII,3 |
+MATHURINS (rue des) | | VII,3 |
+MAUBERT (place) | | III,8;III,9 |
+MAUCONSEIL (rue de) | | VI,1 |
+MAUVAIS-GARÇONS (rue des) | R. des mauves Gracons | II,8;II,9 |
+MÉNESTRIERS (rue des) | | II,7 |
+MÈRE (rue au) | | | voy. rue au Maire
+MICHEL-LE-COMTE (rue) | R. Micheleconte | II,7 |
+MIGNON (la chapelle) | | VII,3 |
+MONDÉTOUR (rue) | R. de Maudetour | VI,1 |
+MONNAIE (hôtel de la) | | VI,3 |
+MONNAIE (moulin de la) sur la Seine | | VII,1 |
+MONNAIE (rue de la) | | VI,3 |
+MONTAGNE-STE-GENEVIÈVE (rue de la) | Le mon S. Gennevieve | III,9 |
+MONTAIGU (collège) | | IV,9 |
+MONTFAUCON (gibet de) | Monfaucon | I,7 |
+MONTMARTRE (abbaye de) | | V,4 |
+MONTMARTRE (porte) | Porte Mômrtre | V,6 |
+MONTMARTRE (rue) | La grant R. Monmartre | VI,4 |
+MONTMORENCY (rue) | R. Montmoranci | II,7 |
+MONTORGUEIL (rue de) | | VI,1;V,3 |
+MONTREUIL-SOUS-BOIS | Môtreul sur le bois | II,2 |
+MORTELLERIE (rue de la) | | II,8;II,9 |
+MOULIN DES GOBELINS (le) | | IV,9 |
+MOULIN DE LA MONNAIE (le), sur la Seine | | VII,1 |
+NARBONNE (collège de) | Nerbonne | VIII,1 | écrit sur l'emplacement de la rue des Maçons dont le nom est omis; se rapporte au collège dont l'entrée était sur la rue de la Harpe
+NAVARRE (collège de) | | III,9 |
+NESLE (hôtel de) | Lostel de Nelle | VII,5 |
+NESLE (la tour de) | La Tournelle | VII,5 |
+NEUVE (rue) | R. Neueve | VIII,4 | à l'entrée du faubourg St-Germain; se rapporte à la rue Garancière
+NEUVE (rue), sans autre désignation | | IV,2 | donnant dans la rue de la Barre au faub. St-Marcel
+NEUVE-NOTRE-DAME (rue) | La R. Neuve | III,8 |
+NEVERS (hôtel de) | | VII,2 |
+NONNAIN (rue) | | II,6 | nom donné à tort à la rue du Fauconnier, sans doute par confusion avec la rue voisine des Nonnains-d'Yères
+NONNAINS-D'YÈRES (rue des) | R. Nonnaindierre | II,6 |
+NOTRE-DAME (église) | Nostre-Dame de Paris | III,8 |
+NOTRE-DAME-DES-CHAMPS (église et prieuré) | | VIII,3 |
+NOYERS (rue des) | | III,9 |
+ORFÈVRES (la chapelle des) | | VI,3 |
+ORLÉANS ST-HONORÉ (rue d') | | VI,5 |
+ORLÉANS ST-MARCEL (rue d') | | IV,5 |
+OURS ou OIES (rue aux) | R. aux Oues | VI,1 |
+PAGEVIN (rue) | | VI,4 |
+# p. 66
+PALAIS (le) | | VII,1;VII,2 |
+PALÉE (rue) | R. Pavée | VI,1 | ancien nom de la rue du Petit-Hurleur
+PAON (rue du — St-André) | R. du Pan | VII,3 |
+PARADIS (rue de) | | II,4 |
+PARCHEMINERIE (rue de la) | | VII,3 |
+PASTOURELLE (rue) | R. Patourelle | II,4;II,7 |
+PAVÉ (le) | | III,8 | c'est la rue pavée, de la place Maubert à la rivière
+PAVÉE (rue) | | VI,1 | ainsi est désignée la rue du Petit-Hurleur dite alors rue Palée, du nom de J. Palée, fondateur de la Trinité
+PAVÉE-D'ANDOUILLES (rue) | | III,9 |
+PAVÉE-ST-ANDRÉ (rue) | | VII,2 |
+PAVÉE ST-SAUVEUR (rue) | | VI,1 |
+PAYENS (rue des) | R. des Paiens | II,5 | nom donné ici à la rue des Juifs
+PEAU DIABLE (rue du) | | | voy. rue du Pet-au-Diable
+PELLETERIE (rue de la Vieille) en la Cité | La Viele Peleterie | VII,1 |
+PERCÉE-ST-ANDRÉ (rue) | | VII,3 |
+PERCÉE-ST-PAUL (rue) | R. Vercée | II,6 |
+PET-AU-DIABLE (rue du) | R. du Peau Diable | II,9 |
+PET IO . NI (rue) | | | voy. rue de Jouy
+PETIT-LION ST-SAUVEUR (rue du) | | VI,1 |
+PETIT-PONT (le) | | VII,2 |
+PETITS-CHAMPS (rue des) | | II,7 |
+PETITS-CHAMPS (rue des) | | VI,4;VI,5 | ancien nom de la rue Croix-des-Petits-Champs
+PIERRE-AU-LARD (rue) | La Pierre au Lart | II,8 |
+PILORI (le) des Halles | | VI,1;VI,2 |
+PILORI (le) de St-Germain-des-Prés | | VIII,4 |
+PLATRE (rue du) | | III,9;VII,3 |
+PLATRIÈRE (rue) | R. de la Platrière | VI,4 | c'est aujourd'hui la rue J.-J.-Rousseau
+PLATRIÈRE (rue de la) | | II,8 | ancien nom de la rue de la Corroierie
+PLESSIS (collège du) | Le Pléci | IV,7;VIII,1 |
+POIRÉES (rue des) | | VIII,1 |
+POITEVINS (rue des) | R. Poitevin | VII,3 |
+PONT ARCANS | | V,7;V,8 |
+PONT-AU-CHANGE | | VII,1 |
+PONT-AUX-MEUNIERS | Le Pont au Muniers | VII,1 |
+PONT NOTRE-DAME | | III,7 |
+PONT SAINT-MICHEL | | VII,2 |
+POPINCOURT | Propincourt | I,3 |
+PORCHERONS (château des) | Les Torcherons | V,7 | on lit, par suite d'une lettre cassée, Les Torcherons
+PORT AU FOIN | le Port au Fin | III,7 |
+PORT ST-LANDRY (rue du) | | III,7 |
+PORTEFOIN (rue) | | II,4;II,7 |
+POSTES (rue des) | | IV,5;IV,8 |
+POTERIE (rue de la) | | II,8;II,9 | le graveur a donné deux fois ce nom, à la rue de la Poterie et à la rue du Renard-St-Merry
+POTERIE (rue de la Vieille) | | II,7 | nommée rue de la Poterne sur le plan de Ducerceau; ancien nom de la rue du Maure; sans doute erreur du graveur, poterie pour poterne
+POULIES (rue des) | R. de Poulise | II,4 | partie de la rue des Francs-Bourgeois nommée depuis rue Neuve-Ste-Catherine
+POULIES ST-HONORÉ (rue des) | | VI,5 | de la rue des Poulies à la porte St-Honoré, une série de substitutions de noms portant sur une dizaine de rues: la rue des Poulies faussement dénommée rue des Deux-Écus, son nom donné à la rue d'Autriche, celui de la rue d'Autriche à la rue du Coq, et ainsi de suite jusqu'à la rue Saint-Thomas, dont la première moitié a reçu le nom de rue de Beauvais, pendant que la véritable rue de Beauvais prenait celui de rue Froid-Manteau
+# p. 67
+POUPÉE (rue) | R. Poupet | VII,3 |
+PRÉ-AUX-CLERCS (le) | Le Pré au Clers | VII,8 |
+PRÊCHEURS (rue des) | R. au Prescheurs | VI,2 |
+PRESLE (collège de) | Prelle | III,9 |
+PRESSOIR DE L'HÔTEL-DIEU | Le Présoer de Lotel-Dieu | VIII,2 |
+PRÉVÔT DE PARIS (hôtel du) | Lostel du Prévos de Paris | II,6 |
+PROUVAIRES (rue des) | R. des Prouvelles | VI,2 |
+PUITS (rue du) | R. du Puis | II,5 |
+QUATRE FILS AYMON (rue des) | R. des Catre fis Hémon | II,4 |
+QUINCAMPOIX (rue) | R. Quiquenpoix | VI,1 |
+QUIQUETONNE (rue) | | | voy. rue Tiquetonne
+QUOQUE HÉRON (rue) | | | voy. rue Coq-Héron
+RAIEUS | | | voy. collège de Bayeux
+RAS (rue des) | | | voy. rue d'Arras
+REIMS (collège de) | Rains | IV,7 |
+REIMS (hôtel de) | Lostel de Rins | VII,3 |
+REINE (hôtel de la) | Lostel de la Reine | II,6 | reste de l'hôtel St-Paul
+RENARD-ST-SAUVEUR (rue du) | | V,3 |
+RENAUD-LE-FÈVRE (rue) | R. Renau le Fèvre | II,5;II,6 | sur l'emplacement de la rue Cloche-Perce; la rue dite depuis Regnault le Fèvre était plus bas, du Marché St-Jean à la Porte Baudoyer
+REUILLY | Rueli | III,1 |
+ROI-DE-SICILE (rue du) | R. du Roi Cecile | II,5 |
+ROSIERS (rue des) | | II,5 |
+ROUEN (hôtel de) | Lostel de Rouen | VII,3;VII,6 |
+ROULE (le) | Le Roulle | VI,7;VI,8 |
+SAINT-ANDRÉ-DES-ARTS (église) | S. André | VIII,2 |
+SAINT-ANDRÉ-DES-ARTS (rue) | R. S. Andri | VII,2 |
+SAINT-ANTOINE (abbaye) | S. Anthoine | II,3 |
+SAINT-ANTOINE (porte) | Porte S. Anthoine | II,2 |
+SAINT-ANTOINE (rue) | La grant R. S. Anthoine | II,5;II,2 |
+SAINT-ANTOINE (couvent du Petit) | S. Anthoine | II,5;II,6 |
+SAINT-BARTHÉLEMY (église) | S. Bertelemi | VII,1 |
+SAINT-BENOÎT (cloître et église) | | VII,3 |
+SAINT-BON (chapelle) | | II,8 |
+SAINT-CHRISTOPHE (église) | S. Christofle | III,8 |
+SAINT-CÔME (église) | | VII,3 |
+SAINT-DENIS (faubourg) | | V,1;V,2 |
+SAINT-DENIS (hôtel), près des Grands-Augustins | | VII,5 |
+SAINT-DENIS (porte) | | V,2;V,3 |
+SAINT-DENIS (rue) | La grant R. S. Denis | V,3;VI,1 |
+# p. 68
+SAINT-DENIS-DU-PAS (église) | | III,8 |
+SAINT-ÉLOI (église) | | VII,1;VII,2 |
+SAINT-ESPRIT (hôpital du) | Le S. Esperit | II,9 |
+SAINT-ÉTIENNE (rue) | | IV,7 |
+SAINT-ÉTIENNE-DES-GRÈS (église) | | IV,7 |
+SAINT-ÉTIENNE-DU-MONT (église) | | II,7 |
+SAINT-EUSTACHE (église) | S. Eustace | VI,2 |
+SAINT-GERMAIN (faubourg) | Les faubours S. Germain | VII,6 |
+SAINT-GERMAIN (porte) | | VII,3 |
+SAINT-GERMAIN-L'AUXERROIS (église) | S. Germain de Locerras | VI,3;VI,6 |
+SAINT-GERMAIN-L'AUXERROIS (rue) | | VI,3 |
+SAINT-GERMAIN-DES-PRÉS (abbaye) | | VIII,4;VIII,7 |
+SAINT-GERMAIN-LE-VIEUX (église) | | VII,2 |
+SAINT-GERVAIS (église) | S. Gerves | II,9 |
+SAINT-GERVAIS (hôpital) | Lopital S. Gerves | II,9 |
+SAINT-HILAIRE (église) | | IV,7 |
+SAINT-HIPPOLYTE (église) | S. Ipolite | IV,3 |
+SAINT-HONORÉ (église) | | VI,5 |
+SAINT-HONORÉ (faubourg) | Les faubours S.-Honoré | VI,8 |
+SAINT-HONORÉ (porte) | | VI,5 |
+SAINT-HONORÉ (rue) | La grant Rue S.-Honoré | VI,5;VI,2 |
+SAINT-JACQUES (faubourg) | | IV,9 |
+SAINT-JACQUES (porte) | | IV,8;VIII,2 |
+SAINT-JACQUES (rue) | la grant r. S. Jaques | VII,3;VIII,1 |
+SAINT-JACQUES-DE-LA-BOUCHERIE (église) | | VI,3 |
+SAINT-JACQUES-DU-HAUT-PAS (église) | | VIII,2;VIII,3 |
+SAINT-JACQUES-DE-L'HÔPITAL (église) | Lopital S. Jacques | VI,1 |
+SAINT-JEAN-DE-BEAUVAIS (rue) | | III,9 |
+SAINT-JEAN-EN-GRÈVE (église) | S. Jehan | II,9 |
+SAINT-JEAN-DE-LATRAN | S. Jehan de Latran | III,9 |
+SAINT-JULIEN-DES-MÉNÉTRIERS (église et hôpital) | Lospital S. Julian | II,7 |
+SAINT-JULIEN-LE-PAUVRE (église) | S. Julien | III,8 |
+SAINT-LADRE | | | voy. hôpital Saint-Lazare
+SAINT-LANDRY (église) | | III,7 |
+SAINT-LAURENT (église) | S. Lauren | I,7 |
+SAINT-LAURENT (faubourg) | Les faubours S. Laurens | I,7;I,8 |
+SAINT-LAZARE (hôpital) | S. Ladre | V,1 |
+SAINT-LEU-SAINT-GILLE (église) | | VI,1 |
+SAINT-LEUFROY (chapelle) | | VI,3 |
+SAINT-MAGLOIRE (église) | | VI,1;VI,2 |
+SAINT-MARCEAU (église) | | IV,2 |
+SAINT-MARCEAU (rue) | La grant R. S. Marceau | IV,5 |
+SAINT-MARTIAL (église) | S. Marcias | VII,1 |
+SAINT-MARTIN (porte) | | I,8;I,9 |
+SAINT-MARTIN (rue) | La grant R. S. Martin | II,7;II,8 |
+SAINT-MARTIN-DES-CHAMPS (église et monastère) | S. Martin des Chans | I,9 |
+SAINT-MÉDARD (église) | | IV,5 |
+SAINT-MERRY (église) | S. Marri | II,8 |
+SAINT-MERRY (rue Neuve) | R. Neuve S. Marri | II,8 |
+SAINT-MICHEL (collège) | | IV,7 |
+SAINT-MICHEL (porte) | | VIII,1 |
+SAINT-MICHEL du Palais (chapelle) | | VII,2 |
+# p. 69
+SAINT-NICOLAS (rue) | | III,9 |
+SAINT-NICOLAS-DU-CHARDONNET ou du CHARDONNERET (église) | | III,9 |
+SAINT-PAUL (église) | S. Pol | II,6 |
+SAINT-PAUL (rue) | R. S. Pol | II,6 |
+SAINT-PAUL (rue Neuve) | R. Nevve S. Pol | II,6 | sur l'emplacement de la rue des Lions; la rue Neuve-Saint-Paul moderne (auj. rue Charles V) n'était pas encore tracée
+SAINT-PIERRE-DES-ARCIS | S. Pierre des Assis | VII,1 |
+SAINT-SAUVEUR (église) | | V,3 |
+SAINT-SAUVEUR (rue) | | V,3 |
+SAINT-SÉVERIN (église) | | VII,2 |
+SAINT-SULPICE (église) | S. Surplice | VIII,4 |
+SAINT-SULPICE (rue) | R. S. Surplice | VIII,4 |
+SAINT-THOMAS (rue) | | VI,6 |
+SAINT-THOMAS-DU-LOUVRE (église) | | VI,6 |
+SAINT-VICTOR (abbaye) | S. Vitor | III,6 |
+SAINT-VICTOR (faubourg) | Les faubour S. Vitor | III,6 |
+SAINT-VICTOR (rue) | La grant R. S. Vitor | III,9 |
+SAINT-YVES (chapelle) | | III,9 |
+SAINTE-BARBE (collège) | | IV,9 |
+SAINTE-CATHERINE (rue) | La R. S. Caterine | II,5 |
+SAINTE-CATHERINE-DU-VAL-DES-ÉCOLIERS (église et prieuré) | S. Caterinne du Vos des Ecoliers | II,5 |
+SAINTE-CHAPELLE (la) | | VII,1;VII,2 |
+SAINTE-GENEVIÈVE (abbaye) | | IV,7;IV,8 |
+SAINTE-GENEVIÈVE-DES-ARDENTS | | III,7;III,8 |
+SAINTE-OPPORTUNE (église) | | VI,2 |
+SAVATERIE (rue de la), en la Cité | | VII,1;VII,2 |
+SAVONNERIE (rue de la) | | VI,3 |
+SEINE | Rivière de Saine | III;VII;VIII | feuilles III, VII, VIII
+SEINE (rue de) | | VII,5 |
+SÉJOUR (rue du) | | VI,2 | aujourd'hui rue du Jour
+SÉPULCRE (église du St) | Le Sépulcre | VI,2 |
+SERPENTE (rue) | R. de la Serpente | VII,3 |
+SERPENTE (rue de la) | | VII,3 | sous ce nom est désignée la rue du Battoir-Saint-André
+SERPENTE (rue de la) | | VI,3 | dite plus tard rue Perrin-Gasselin et rue du Chevalier-du-Guet; le plan de Ducerceau la désigne sous le même nom
+SINGES (rue des) | R. des Cinges | II,5 |
+SORBONNE (collège de) | | VIII,1 |
+SORBONNE (rue de) | | VIII,1 |
+TACHERIE (rue de la) | | II,9 |
+TANNERIE (rue de la) | La Tennerie | II,9 |
+TEINTURIERS (rue des) | | IV,3 |
+TEMPLE (église et monastère du) | Léglise du Tenple | I,6 |
+TEMPLE (porte du) | porte du Tenple | I,6 |
+TEMPLE (rue du) | La grant R. du Tample | II,7;II,8 |
+TEMPLE (rue Vieille du) | La viele R. du Tanple | II,4;II,5 |
+TERCI | | | voy. Bercy
+TERRAIN (le) derrière Notre-Dame | le Terrin | III,8 |
+TES (Lostel de) | | | voy. hôtel de Fécamp
+THORIGNY (rue) | R. Tougin | II,4 | un nom absolument défiguré par le graveur; seulement la partie parallèle à la Seine, plus tard rue du Parc-royal; l'autre partie n'était pas encore tracée
+# p. 70
+TIQUETONNE (rue) | La R. Quiquetonne | VI,1;VI,4 |
+TIRECHAPE (rue) | | VI,2;VI,3 |
+TIREVIT (rue) | | VI,2 | plus tard rue Tire-Boudin, puis Marie-Stuart
+TIRON ou TISON (rue) | R. de Ison | II,5;II,6 |
+TIXERANDERIE (rue de la) | R. de la Tisarranderie | II,9 |
+TORCHERONS (les) | | | voy. château des Porcherons
+TOUGIN (rue) | | II,4 | voy. Thorigny
+TOUR DU BOIS (la), contre la Porte-Neuve | | VII,4 |
+TOURNAY (hôtel de) | Lostel Betournai | IV,7 | c'est le collège de Tournay près la porte Bordelle
+TOURNELLE (la) | | III,8 |
+TOURNELLES (hôtel des) | Les Tournelles | II,2;II,5 |
+TOURNON (rue de) | | VIII,4 |
+TRANSNONNAIN (rue) | R. Trasenonnin | II,7 |
+TROUSSE-VACHE (rue) | | VI,2 |
+TRUANDERIE (rue de la) | | VI,1 |
+TUILERIES (les) | Les Tuillepies | VI,9 | fabriques de tuiles et maisons particulières sur l'emplacement du château non encore fondé
+VANNERIE (rue de la) | | II,9 |
+VAUGIRARD (rue de) | R. de Vaugirart | VIII,5 |
+VEAUX (place aux) | Place au Viaux | VI,3 |
+VERCÉE (rue) | | | voy. rue Percée St-Paul
+VERRERIE (rue de la) | R. de la Varerie | VII,1 | le graveur a, par erreur, donné ce nom à la rue de la Vieille Draperie en la Cité; la véritable rue de la Verrerie est désignée sous celui de rue de la Courrerie
+VERSAILLES (rue de) | R. Var saille | III,9 |
+VERT-BOIS (rue du) | R. Duver bois | I,9 |
+VILLEJUIF | Ville juive | IV,3 |
+VILLE-LÉVESQUE (la) | | V,9 |
+VILLE-NEUVE (la) | | V,2 |
+VINCENNES | Le Bois de Vincennes | II,3 |
+VITRY | Viteri | IV,2 |

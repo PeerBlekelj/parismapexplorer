@@ -2,6 +2,38 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-26 (afternoon) — Cousin 1875 checked; layout A sent to a cloud session
+
+**Cousin's table, done.** PDF on the mini (`source/cousin-1875-…pdf`, gitignored). It has an OCR layer, but
+the table (printed pp. 60–70 = PDF pp. 70–80; Gallica page = printed + 8) was transcribed from the page
+images: 480 entries in `data/research/cousin_1875_table.txt` (name | printed form | sheet,square | note).
+- **His grid:** 8 sheets, 4 across × 2 down, I–IV on the top row of the scan, each split 3×3, squares
+  numbered row by row. Fitted by brute force over sheet orders: 285/313 clear matches in the exact square.
+- `scripts/cousin_match.py` pairs labels with entries (names + square); weak pairs reviewed by hand
+  (`OVERRIDE`/`DROP` in the script) → `data/research/cousin.csv`, 424 labels. `build_places.py` now
+  cites "Cousin 1875, p. N" (linked to Gallica) on each, and adds his corrected name as a searchable
+  variant (e.g. "Hôtel de Fécamp" finds "Lostel de Tes").
+- **Open questions 29 → 3** (L0007 Pont Arcans, L0224 a rue Neuve, L0421 rue Breneuse: he lists them only).
+- **Corrections:** the engraver's chain of shifted names around the rue des Poulies (9 labels, L0413…
+  L0435, now each on its real street); L0244 Paiens = rue des Juifs; L0391 Chats = Déchargeurs; L0398
+  Battoir = Gît-le-Cœur; L0339 Pavée = rue Palée/Petit-Hurleur; L0294 = Renard-St-Merri; L0295 Courrerie
+  = rue de la Verrerie; L0315 Platrière = the Corroierie; L0232 = rue des Lions; L0352, L0393, L0417,
+  L0266, L0311. Collège d'Harcourt moved from L0151 to L0199 (L0151 = hôtel d'Harcourt).
+- **Misreadings fixed:** L0311 VENERIE → POTERIE (damaged paper), L0159 → LECOLLE S. GERMAIN (l'École
+  Saint-Germain, not a college; type other), L0199 → C. HERRO COUPT, L0203 → LE PRESOER DE LOTEL DIEU
+  (a wine press, not a meadow), L0250 → R. GARNIER SVR IAN.
+- **Two missed labels added:** L0469 HU LEU (rue du Grand-Hurleur), L0470 R. DEI SON (rue Tiron).
+- Totals now: 470 labels, 455 places; 143 standing, 19 rebuilt, 76 renamed, 215 vanished, 2 unknown.
+  Method page, README and open-questions footer updated.
+- ⚠ `labels_inventory.csv`, `places_*.csv` are CRLF in git; `research/*.csv` LF; `summaries.csv`
+  quotes every field. Keep that when rewriting them, or the diff is the whole file.
+
+**Layout A** delegated to a cloud session (`session_01PXG9oTDuoQGTs7niy7sh7R`, branch `layout-a`, no
+deploy, no PR). Review + merge + deploy from the mini (it has the tiles).
+
+**Naming:** the owner wants a less generic name than "Paris Map Explorer"; suggestions given, waiting.
+Favicons wait for the name.
+
 ## 2026-10-26 (later) — owner's feedback round
 
 - Owner: **state that it was built with Claude Code** → DONE and live: section "How this was built"
@@ -18,6 +50,9 @@ Newest first. What was done, what was found, what is open.
   layer for the PDF (scanned pages) and a base64 download of 78 MB is too big; Gallica answers
   403 to scripts (and a headless browser try was refused by the safety check — don't retry it).
   Needs the owner to copy the PDF (or just pp. 58–70) onto the mini.
+  → **UNBLOCKED 2026-10-26 08:09:** owner scp'd it from p-ubuntu. Now at
+  `source/cousin-1875-memoires-shp-bpt6k6310467r.pdf` (gitignored, 78,490,054 bytes, 302 pages,
+  PDF 1.4, `%%EOF` present). Not read yet.
 
 ## 2026-10-26 — launch + the method page
 

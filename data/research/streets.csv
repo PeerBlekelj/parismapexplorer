@@ -4,7 +4,7 @@ L0220,CUR:rue de la Cerisaie,high,,
 L0221,CUR:rue du Petit Musc,high,,called rue des Célestins on some 16th-century plans
 L0222,CUR:rue Scipion,high,,rue de la Barre in 1540
 L0223,CUR:rue du Fer à Moulin,high,,
-L0224,,low,,one of several 'rue Neuve' near Saint-Marcel; unresolved
+L0224,,low,,"'a rue Neuve leading into the rue de la Barre, faubourg Saint-Marcel' (Cousin 1875); modern successor not found"
 L0225,#1093,high,,
 L0226,CUR:rue Broca,medium,,"old rue des Cordelières, now rues Broca, Edouard-Quénu and Léon-Maurice-Nordmann"
 L0227,CUR:rue de la Perle,high,,
@@ -12,7 +12,7 @@ L0228,CUR:rue Madame de Sévigné,medium,,"rue de la Culture-Sainte-Catherine, r
 L0229,CUR:rue du Prévôt,high,,formerly rue Percée
 L0230,CUR:rue Saint-Paul,high,standing,
 L0231,CUR:rue des Jardins Saint-Paul,high,,
-L0232,CUR:rue Charles V,high,,formerly rue Neuve-Saint-Paul
+L0232,CUR:rue des Lions Saint-Paul,medium,standing,on the line of the rue des Lions; the later rue Neuve-Saint-Paul (rue Charles-V) was not yet laid out (Cousin 1875)
 L0233,CUR:rue Daubenton,high,,formerly rue d'Orléans
 L0234,CUR:rue des Archives,high,,"rue du Grand-Chantier, now part of rue des Archives"
 L0235,DUP:L0236,,,
@@ -24,11 +24,11 @@ L0240,CUR:rue Vieille du Temple,medium,standing,probably a second label on the V
 L0241,#1174,high,,
 L0242,CUR:rue des Rosiers,high,,
 L0243,CUR:rue des Écouffes,high,,
-L0244,CUR:rue Payenne,high,,
+L0244,CUR:rue Ferdinand Duval,medium,,"printed 'rue des Paiens', but drawn on the rue des Juifs, now rue Ferdinand-Duval (Cousin 1875)"
 L0245,CUR:rue du Roi de Sicile,high,standing,
 L0246,#8226,high,,
 L0247,CUR:rue Cloche Perce,high,,formerly rue Renaut-le-Fèvre
-L0248,CUR:rue de Jouy,low,,reading of the label unclear
+L0248,CUR:rue de Jouy,high,,printed 'R. pet io . ni': pet(ite) R. (de) Ioui (Cousin 1875)
 L0249,CUR:rue Geoffroy l'Asnier,high,standing,
 L0250,CUR:rue Grenier sur l'Eau,high,standing,label reads Garnier sur l'Eau (old spelling: Garnier sur l'Yaue)
 L0251,DUP:L0252,,,
@@ -46,7 +46,7 @@ L0262,CUR:rue de Montmorency,high,,formerly rue Courtauvillain
 L0263,CUR:rue Michel le Comte,high,standing,
 L0264,CUR:rue des Haudriettes,high,,
 L0265,CUR:rue de Braque,medium,standing,
-L0266,,low,,unnamed cul-de-sac near rue Geoffroy-l'Angevin
+L0266,CUR:impasse Berthaud,high,,"the cul-de-sac off the rue Beaubourg: the cul-de-sac des Truies, later impasse Berthaud (Cousin 1875)"
 L0267,CUR:rue des Blancs Manteaux,high,,
 L0268,#2346,high,,
 L0269,CUR:rue des Archives,high,,"rue de l'Homme-Armé, now part of rue des Archives"
@@ -74,8 +74,8 @@ L0290,CUR:rue Geoffroy l'Angevin,high,standing,
 L0291,#8058,high,,
 L0292,CUR:rue Pierre au Lard,high,,
 L0293,CUR:rue Saint-Merri,high,,formerly rue Neuve-Saint-Merri
-L0294,#2475,medium,,
-L0295,#6527,medium,,
+L0294,#2181,medium,,the engraver put 'Poterie' on two streets; this one is the rue du Renard-Saint-Merri (Cousin 1875)
+L0295,CUR:rue de la Verrerie,high,standing,printed 'la Courrerie' on the rue de la Verrerie; the Verrerie's own name went to a street in the Cité (Cousin 1875)
 L0296,DUP:L0295,,,
 L0297,#2477,medium,,
 L0298,CUR:rue des Ursins,medium,,rue du Port-Saint-Landry
@@ -91,11 +91,11 @@ L0307,CUR:rue des Gravilliers,high,,
 L0308,#6872,high,,
 L0309,CUR:rue de Montmorency,high,,
 L0310,CUR:rue du Grenier Saint-Lazare,high,,
-L0311,,low,,reading uncertain (R. DE LA VENERIE?)
+L0311,#4021,medium,,"the 'Vieille Poterie', probably the engraver's slip for 'Poterne': later the rue du Maure (Cousin 1875)"
 L0312,#2809,high,,"rue des Petits-Champs(-Saint-Martin), later rue Brantôme"
 L0313,CUR:rue Quincampoix,high,standing,
 L0314,#556,medium,,
-L0315,,low,,rue de la Plâtrière (Saint-Martin quarter); modern successor not yet confirmed
+L0315,#6581,medium,,"the rue de la Corroierie, here under its older name of rue de la Plâtrière (Cousin 1875)"
 L0316,CUR:rue Saint-Martin,high,,
 L0317,CUR:rue Quincampoix,high,,"rue de la Vieille-Courroierie (later rue des Cinq-Diamants), now the southern part of rue Quincampoix"
 L0318,CUR:rue Nicolas Flamel,medium,,formerly rue Marivaux
@@ -119,7 +119,7 @@ L0335,CUR:rue Guérin-Boisseau,high,standing,
 L0336,CUR:rue Greneta,high,standing,formerly rue d'Arnetal
 L0337,CUR:rue Saint-Denis,high,,
 L0338,CUR:rue du Bourg l'Abbé,high,standing,
-L0339,CUR:rue Tiquetonne,medium,,a rue Pavée near Saint-Sauveur; now part of rue Tiquetonne
+L0339,#2881,high,,"the rue Palée (after Jean Palée), later the rue du Petit-Hurleur (Cousin 1875)"
 L0340,CUR:rue Tiquetonne,high,,"rue du Petit-Lion(-Saint-Sauveur), now part of rue Tiquetonne"
 L0341,CUR:rue aux Ours,high,,
 L0342,#7198,high,,absorbed by rue Rambuteau
@@ -132,7 +132,7 @@ L0348,CUR:rue de La Reynie,high,,formerly rue Troussevache
 L0349,CUR:rue des Lombards,high,,
 L0350,#5028,high,,
 L0351,#1245,high,,
-L0352,#1259,low,,label read as 'de la Serpente'; position fits the rue de la Saunerie by the Châtelet
+L0352,#2924,medium,,later the rue Perrin-Gasselin and rue du Chevalier-du-Guet; Ducerceau's plan uses the same name (Cousin 1875)
 L0353,#6444,high,,rue du Crucifix-Saint-Jacques
 L0354,CUR:rue des Lavandières Sainte-Opportune,high,,
 L0355,#567,high,,
@@ -171,14 +171,14 @@ L0387,CUR:rue des Prouvaires,high,standing,
 L0388,#5242,high,,
 L0389,CUR:rue de la Lingerie,high,,
 L0390,#1002,high,,
-L0391,#7055,medium,,"rue aux Chats, later rue de la Limace"
+L0391,CUR:rue des Déchargeurs,high,standing,"as on Ducerceau's plan, 'rue des Chats' stands on the rue des Déchargeurs, not on the rue de la Limace beside it (Cousin 1875)"
 L0392,CUR:rue des Bourdonnais,high,,
-L0393,,low,,reading uncertain (R. DU BOUT...)
+L0393,#7889,medium,,"on the line of the rue Béthisy, which the 'Plan de tapisserie' already calls rue du Bout (Cousin 1875; his square reference, VII, does not match the label's sheet, VI)"
 L0394,CUR:rue de la Monnaie,high,,
 L0395,CUR:rue des Orfèvres,high,,"rue des Deux-Portes, by the chapel of the goldsmiths"
 L0396,CUR:rue Saint-Germain l'Auxerrois,high,,
 L0397,CUR:rue Séguier,high,,"rue Pavée(-Saint-André), renamed rue Séguier in 1864"
-L0398,CUR:rue Serpente,high,,"rue du Battoir(-Saint-André), now part of rue Serpente"
+L0398,CUR:rue Gît-le-Coeur,high,standing,"printed 'rue du Battoir', but this is the rue Gît-le-Cœur; the real rue du Battoir carries the name 'Serpente' (Cousin 1875)"
 L0399,CUR:rue de l'Hirondelle,high,,
 L0400,CUR:rue Suger,high,,formerly rue du Cimetière-Saint-André
 L0401,CUR:rue des Poitevins,high,,
@@ -192,12 +192,12 @@ L0408,CUR:rue Jean-Jacques Rousseau,high,,formerly rue de la Plâtrière
 L0409,CUR:rue du Jour,high,renamed,formerly rue du Séjour
 L0410,CUR:rue Sauval,medium,,formerly rue des (Vieilles-)Étuves(-Saint-Honoré)
 L0411,#3205,high,,
-L0412,CUR:rue du Louvre,high,,"rue des Poulies, absorbed by rue du Louvre"
-L0413,CUR:rue Berger,high,,"rue des Deux-Écus, now part of rue Berger"
+L0412,#8314,high,,"printed 'rue des Poulies', but this is the rue d'Autriche (Autruche): around here the engraver shifted the names of about ten streets by one (Cousin 1875)"
+L0413,CUR:rue du Louvre,high,,"printed 'rue des Deux-Écus', but this is the rue des Poulies: around here the engraver shifted the names of about ten streets by one (Cousin 1875)"
 L0414,CUR:rue des Grands Augustins,high,,
 L0415,CUR:rue Saint-André des Arts,high,standing,
 L0416,#3105,medium,,"rue du Paon(-Saint-André), later rue Larrey"
-L0417,,low,,a 'rue Neuve' in the faubourg Saint-Germain; perhaps rue Neuve-Saint-Lambert (now rue de Condé)
+L0417,CUR:rue Garancière,high,standing,'rue Neuve' at the entrance of the faubourg Saint-Germain: the rue Garancière (Cousin 1875)
 L0418,CUR:rue de Tournon,high,,
 L0419,#542,high,,"rue des (Vieux-)Augustins, now rue d'Argout and rue Hérold"
 L0420,CUR:rue de la Jussienne,high,,formerly rue Sainte-Marie-l'Égyptienne
@@ -207,16 +207,18 @@ L0423,CUR:rue Coq Héron,high,standing,
 L0424,CUR:rue Coquillière,high,,
 L0425,CUR:rue Jean-Jacques Rousseau,high,,"rue de Grenelle(-Saint-Honoré), now part of rue Jean-Jacques-Rousseau"
 L0426,CUR:rue Saint-Honoré,high,,
-L0427,CUR:rue de Marengo,high,,formerly rue du Coq(-Saint-Honoré)
-L0428,#7206,high,,
-L0429,#8314,high,,rue d'Autriche or d'Autruche; the surviving part is rue de l'Oratoire
-L0430,#7250,high,,
-L0431,#5501,high,,
+L0427,#7250,high,,"printed 'rue du Coq', but this is the rue du Champ-Fleuri: around here the engraver shifted the names of about ten streets by one (Cousin 1875)"
+L0428,#4721,high,vanished,"printed 'rue du Chantre', but this is the rue Jean-Saint-Denis: around here the engraver shifted the names of about ten streets by one (Cousin 1875); the old rue Pierre-Lescot it merged into has also gone (not today's rue Pierre-Lescot)"
+L0429,#6635,high,,"printed 'rue de l'Autruche', but this is the rue du Coq: around here the engraver shifted the names of about ten streets by one (Cousin 1875)"
+L0430,#7206,high,,"printed 'rue du Champ-Fleuri', but this is the rue du Chantre: around here the engraver shifted the names of about ten streets by one (Cousin 1875)"
+L0431,#7992,high,,"printed 'rue Froidmanteau', but this is the rue de Beauvais: around here the engraver shifted the names of about ten streets by one (Cousin 1875)"
 L0432,CUR:rue du Vieux Colombier,medium,,"the 'grant rue Saint-Sulpice', now rue du Vieux-Colombier"
 L0433,CUR:rue de Vaugirard,high,,
 L0434,CUR:rue Croix des Petits Champs,high,,formerly rue des Petits-Champs
-L0435,#7992,high,,
-L0436,#4721,high,vanished,"rue Jean-Saint-Denis, by the Louvre; later merged into a rue Pierre-Lescot that has since disappeared"
+L0435,#1449,high,,"printed 'rue de Beauvais', but this is the first stretch of the rue Saint-Thomas-du-Louvre: around here the engraver shifted the names of about ten streets by one (Cousin 1875)"
+L0436,#5507,high,,"printed 'rue Jean-Saint-Denis', but this is the rue Froidmanteau: around here the engraver shifted the names of about ten streets by one (Cousin 1875)"
 L0437,#1449,high,,
 L0438,CUR:rue de Seine,high,,
 L0439,CUR:rue du Four,high,,
+L0469,#5256,high,,"Hue-Leu, the old name of the rue du Grand-Hurleur: 'very well named here' (Cousin 1875)"
+L0470,CUR:rue Tiron,high,standing,"the rue Tiron or Tison, printed 'R. de Ison' (Cousin 1875)"

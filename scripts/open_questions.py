@@ -17,12 +17,13 @@ out = ["# Open questions", "",
 for r in open_rows:
     L = inv[r["id"]]
     out.append(f"| {r['id']} | {L['text']} | {L['type'].replace('_', ' ')} | {L['x']}, {L['y']} | {r['note'] or '—'} |")
-out += ["", "## Sources still to check", "",
-        "- Jules Cousin, *Plan des noms des rues, places, églises, couvents, collèges, hôtels, etc.*, "
-        "Mémoires de la Société de l'histoire de Paris et de l'Île-de-France, vol. 2 (1875), pp. 58–70 — "
-        "the 19th-century index of this map's names "
-        "(Gallica: https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f66.item).",
-        "- Félix Lazare, *Dictionnaire administratif et historique des rues de Paris* (1844).",
-        "- Jacques Hillairet, *Dictionnaire historique des rues de Paris*."]
+out += ["", "## Sources", "",
+        "- Checked against Jules Cousin, \"Table des noms des rues, places, églises, couvents, collèges, hôtels, etc., "
+        "inscrits sur le plan de Paris publié vers 1552 par Olivier Truschet et Germain Hoyau\", *Mémoires de la Société "
+        "de l'histoire de Paris et de l'Île-de-France*, t. I (1875), pp. 60–70 "
+        "(Gallica: https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f68.item). Cousin lists the items above without "
+        "identifying them.",
+        "- Still to check: Félix Lazare, *Dictionnaire administratif et historique des rues de Paris* (1844); "
+        "Jacques Hillairet, *Dictionnaire historique des rues de Paris*."]
 (root / "data/research/OPEN_QUESTIONS.md").write_text("\n".join(out) + "\n")
 print(len(open_rows), "open items")

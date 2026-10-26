@@ -8,20 +8,20 @@ L0006,LE PONT S. MICHEL,bridge,6680,4195,h,ok,,r03c06
 L0007,LE PONT ARCANS,bridge,1100,7150,d,ok,Pont d'Arcans (Grand Egout bridge),r06c00
 L0008,LES TOURNELLES,building,4240,1325,h,ok,Hotel des Tournelles,r01c04
 L0009,LOSTEL DANGOULESME,building,4510,1370,h,ok,printed LOSTE DAN GOULESME,r01c04
-L0010,LOSTEL DE BRIANNE,building,4960,1240,h,unsure,printed LOSTELDEBRIANNE; hotel (de Brienne?),r00c04
+L0010,LOSTEL DE BRIANNE,building,4960,1240,h,ok,printed LOSTELDEBRIANNE; Brianne = Bretagne (Cousin 1875),r00c04
 L0011,LOSTEL DU PREVOST DE PARIS,building,4820,1870,h,ok,printed LOS TE DU PREVOS DE PARIS,r01c04
 L0012,LOSTEL DE LA REINE,building,5160,1540,h,ok,,r01c04
 L0013,LOSTEL DE TOURNAI,building,8570,2830,d,ok,,r02c08
 L0014,LOSTEL DARGENT,building,4540,3365,h,unsure,printed LOSTEL DAR GENT; Hotel d'Argent,r03c04
 L0015,LOSTEL DE LA VILE,building,5050,3245,h,ok,Hotel de Ville,r02c04
-L0016,LOSTEL DE LO REINE,building,7140,3165,h,ok,hotel de Lorraine? check,r02c06
+L0016,LOSTEL DE LO REINE,building,7140,3165,h,ok,Lo Reine = Lorraine (Cousin 1875),r02c06
 L0017,PETIT CHATELET,building,6810,3895,h,ok,,r03c06
 L0018,CHATELET,building,5240,4240,h,ok,Grand Chatelet,r03c05
 L0019,LORLOGE,building,5960,4200,v,ok,Tour de l'Horloge,r03c05
 L0020,LA CONCIERGERIE,building,6040,4425,h,ok,,r04c05
 L0021,LE PALAYS,building,6180,4260,h,ok,Palais,r03c05 r04c05
 L0022,LA CHAMBRE DES CONTES,building,6330,4440,h,ok,Chambre des Comptes,r04c06
-L0023,LOSTEL DE TES,building,7370,4370,v,unsure,,r04c07
+L0023,LOSTEL DE TES,building,7370,4370,v,ok,"Tes = an unfinished Fescamp, T cut for F (Cousin 1875)",r04c07
 L0024,LOTEL DE CLUNI,building,7730,4170,h,ok,Hotel de Cluny,r03c07
 L0025,LA MONNOIE,building,4840,4820,h,ok,Hotel des Monnaies,r04c04
 L0026,LE FOUR LEVESQUE,building,5300,4630,h,ok,For-l'Eveque,r04c04 r04c05
@@ -158,7 +158,7 @@ L0155,CALVI,college,8510,4050,h,ok,college de Calvi,r03c08
 L0156,CLUGNI,college,8660,4180,h,ok,college de Cluny,r03c08
 L0157,LA CHAPELLE MIGNON,college,7590,4770,h,ok,college Mignon,r04c07
 L0158,BOURGONGNE,college,7820,4880,h,ok,college de Bourgogne,r04c07
-L0159,LE COLLEGE S. GERMAIN,college,5370,5090,h,ok,,r04c05
+L0159,LECOLLE S. GERMAIN,other,5370,5090,h,ok,L'Ecole Saint-Germain (Cousin 1875); earlier misread as LE COLLEGE,r04c05
 L0160,LES BONS ENFANS,college,3830,6020,h,ok,college des Bons-Enfants,r05c03
 L0161,SUBSOLANUS,decoration,850,170,h,ok,wind name (east); decoration,r00c00
 L0162,ORIENS,decoration,6730,80,h,ok,compass word (east); decoration,r00c06
@@ -169,7 +169,7 @@ L0166,FAVONIUS,decoration,10500,7050,h,ok,wind name (west); decoration,r06c10
 L0167,LE BASTILLON,gate_wall,3900,855,h,ok,bastion,r00c03
 L0168,PORTE S. ANTHOINE,gate_wall,4270,915,h,ok,,r00c04
 L0169,LA BASTILLE,gate_wall,4680,745,h,ok,,r00c04
-L0170,PORTE DE LA BARRE,gate_wall,8820,790,d,ok,printed POR DELABARE TE; porte de la Barre? check,r00c08
+L0170,PORTE DE LA BARRE,gate_wall,8820,790,d,ok,printed POR DELABARE TE; porte de la Barre (Cousin 1875),r00c08
 L0171,LE BASTILLON,gate_wall,1790,1800,h,ok,second bastion label,r01c01
 L0172,PORTE DU TEMPLE,gate_wall,1900,2200,h,ok,dup of r01c01,r01c01 r02c01
 L0173,PORTE BORDELLE,gate_wall,8740,2720,d,ok,Porte Bordelles,r02c08
@@ -198,11 +198,11 @@ L0195,LE CHAN GAILLART,other,8000,2980,d,ok,Clos du Chardonnet / Champ Gaillard,
 L0196,BRAQUES,other,9590,2995,h,unsure,,r02c09
 L0197,LES MOULINS DES GOBELLIN,other,10500,3230,h,ok,dup,r02c10 r03c10
 L0198,LE FAUBOURS S. IAQUES,other,10050,3830,d,ok,,r03c09
-L0199,CHERRO COUPT,other,8480,4470,h,ok,printed CHERRO COVPT? check,r04c08
+L0199,C. HERRO COUPT,other,8480,4470,h,ok,printed C. HERRO COVPT: the R of COURT cut like a P (Cousin 1875: C. Herrocourt),r04c08
 L0200,LE IEU DE PAUME,other,4220,4680,v,ok,,r04c03
 L0201,LE MOULIN DE LA MONNOIE,other,5890,4870,v,ok,,r04c05
 L0202,LE IARDIN DU ROI,other,6110,4680,h,ok,,r04c05
-L0203,LE PRES OU ER DE LOTEL DIEU,other,9640,4530,h,ok,printed LE PRESOER DE LOTEL DIEV,r04c09
+L0203,LE PRESOER DE LOTEL DIEU,other,9640,4530,h,ok,printed LE PR?SOER DE LOTEL DIEV (Cousin 1875: Le Presoer de Lotel-Dieu),r04c09
 L0204,LES TUILLERIES,other,4920,6640,h,ok,printed LESTVIL LEPIES,r06c04
 L0205,LE PRE AU CLERS,other,6700,6630,h,ok,Pre-aux-Clercs,r06c06
 L0206,LE PORT AU FIN,square_market,5500,2700,v,ok,Port au Foin,r02c05
@@ -247,9 +247,9 @@ L0244,R. DES PAIENS,street,4130,2075,h,ok,rue Payenne,r01c03
 L0245,R. DU ROI DE CECILE,street,4410,2170,v,ok,printed R. DV ROI CECILE,r01c04
 L0246,R. DES BALES,street,4430,2010,v,ok,,r01c04
 L0247,R. RENAULT LE FEVRE,street,4510,2430,h,ok,,r02c04
-L0248,R. PETIT IOUI,street,4810,2150,v,unsure,printed R. PETIO VI,r01c04
+L0248,R. PETIT IOUI,street,4810,2150,v,ok,printed R. PETIO VI: pet(ite) R. (de) Ioui (Cousin 1875),r01c04
 L0249,R. GEFROI LANNIER,street,4880,2385,h,ok,rue Geoffroy-l'Asnier,r02c04
-L0250,R. GARNIER S. LADRE,street,5040,2490,v,unsure,printed R. GARNIERS. V RIAN; rue Garnier-sur-l'Eau? check,r02c04
+L0250,R. GARNIER SVR IAN,street,5040,2490,v,ok,rue Garnier-sur-l'Eau (Grenier-sur-l'Eau); reading confirmed by Cousin 1875,r02c04
 L0251,R. NONNAIN,street,5090,2085,h,unsure,,r01c04
 L0252,R. NONNAIN DIERRE,street,5100,2140,h,ok,rue des Nonnains-d'Hyeres,r01c04
 L0253,R. DE COUPEAUS,street,8900,2380,d,ok,rue Copeau,r02c08
@@ -310,7 +310,7 @@ L0307,R. DES GRAVELIERS,street,2960,3560,v,ok,rue des Gravilliers,r03c02
 L0308,R. DU CIMETIERE,street,3070,3560,v,ok,dup,r03c02 r03c03
 L0309,R. MONT MORANCI,street,3190,3570,v,ok,dup,r03c02 r03c03
 L0310,R. GRENIER S. LADRE,street,3295,3540,v,ok,rue Grenier-Saint-Lazare,r03c03
-L0311,R. DE LA VENERIE,street,3375,3530,v,unsure,partly damaged,r03c03
+L0311,R. DE LA POTERIE,street,3375,3530,v,unsure,paper damaged; reads POTERIE (earlier misread VENERIE),r03c03
 L0312,R. DES PETIS CHAMS,street,3480,3510,v,ok,,r03c03
 L0313,R. QUI QUEN POIX,street,3545,3970,h,ok,rue Quincampoix,r03c03
 L0314,R. DES ESTUVES,street,3655,3580,v,ok,,r03c03
@@ -467,3 +467,5 @@ L0464,LA VILLE LEVESQUE,village_faubourg,2400,7100,h,ok,La Ville-l'Eveque,r06c02
 L0465,LE ROULLE,village_faubourg,3670,7710,h,ok,Le Roule,r07c03
 L0466,CHALIOT,village_faubourg,5950,7580,h,ok,Chaillot,r07c05
 L0467,AUTEUL,village_faubourg,10000,7745,h,ok,Auteuil,r07c09
+L0469,HU LEU,street,2897,3965,v,ok,"missed in the first pass; found from Cousin 1875 (Hue-Leu, VI,1)",cousin
+L0470,R. DEI SON,street,4470,2273,h,ok,"missed in the first pass; found from Cousin 1875 (Tiron ou Tison, R. de Ison, II,5)",cousin

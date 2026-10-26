@@ -65,7 +65,7 @@
         <p>The source is the only known copy, in Basel University Library, scanned at
           10&nbsp;890 × 7&nbsp;820 pixels (public domain, via Wikimedia Commons). The scan was cut into 88
           overlapping tiles and every label read tile by tile by an AI model (Claude, see
-          <a href="#built">how this was built</a>), then the dense areas again at twice the zoom. That gave 468 labels; after removing duplicates and decoration, <strong>453 places</strong>.
+          <a href="#built">how this was built</a>), then the dense areas again at twice the zoom. That gave 468 labels, and the check against Cousin's index (below) found two more that had been missed; after removing duplicates and decoration, <strong>455 places</strong>.
           Every label keeps a permanent id (L0001 …) so links and corrections never break.</p>
         <p>Each place was then identified:</p>
         <ul>
@@ -75,9 +75,18 @@
           <li><strong>Everything else</strong> (churches, colleges, gates, mansions) against French
             Wikipedia and Wikidata, with every article title checked by script.</li>
         </ul>
-        <p>The result: 138 places still standing, 19 rebuilt, 77 renamed or absorbed, 212 vanished and 7
-          not identified. 29 readings or identifications are open or uncertain and are listed openly in
-          the <a href="https://github.com/PeerBlekelj/parismapexplorer/blob/main/data/research/OPEN_QUESTIONS.md">open questions</a>.</p>
+        <p>Then everything was checked against the one earlier index of this map: the table of its names
+          that Jules Cousin published in 1875, when the Basel copy had just been rediscovered. Cousin gives each
+          name as he corrected it, the engraver's spelling, and the sheet and square where it stands. Fitting
+          his sheet grid to our labels lined up 285 of 313 clear matches to the exact square, which made his
+          table usable label by label. It confirmed most identifications, settled 26 of the 29 open questions,
+          corrected four misreadings (“R. de la Venerie” is a damaged “Poterie”; “Cherro Coupt” is
+          “C. Herro Court”, the collège d'Harcourt), and found two labels the first pass had missed
+          (“Hu Leu” and “R. dei Son”).</p>
+        <p>The result: 143 places still standing, 19 rebuilt, 76 renamed or absorbed, 215 vanished and 2
+          not identified. Three items are still open and listed in the
+          <a href="https://github.com/PeerBlekelj/parismapexplorer/blob/main/data/research/OPEN_QUESTIONS.md">open questions</a>.
+          Every place in Cousin's table cites the page, linked to the scan on Gallica.</p>
       </section>
 
       <section id="points">
@@ -164,6 +173,12 @@
           <li><strong>Labels as points.</strong> The first control points sat on the labels, which float
             beside what they name. Moving them to the drawn buildings and bridge ends was the biggest
             single improvement.</li>
+          <li><strong>The engraver's shuffle.</strong> Between the rue des Poulies and the Louvre, about
+            ten street names are each one street off: the name of each street was cut on its neighbour,
+            and so on down the line (Cousin spotted it in 1875). The first pass took the names at face
+            value; the nine affected places now say which street each label really stands on. Three more
+            labels sit on the wrong street the same way: “rue des Paiens” on the rue des Juifs, “rue des
+            Chats” on the rue des Déchargeurs, and “rue du Battoir” on the rue Gît-le-Cœur.</li>
           <li><strong>The engravers' own slips.</strong> Some labels are misprinted or garbled: "HOSTRE DAME"
             for Notre-Dame, "Bribouche" for Aubry-le-Boucher, "Cochonnerie" for the Cossonnerie. They are
             kept as printed and identified in the notes.</li>
@@ -181,7 +196,7 @@
             1642, for example), so the old shoreline and the modern one rarely coincide.</li>
           <li>Many features are drawn but not named. The cartouche boasts 287 streets, 104 churches and
             49 colleges; about 221 streets, 91 churches and 33 colleges carry a readable label.</li>
-          <li>Seven labels are not identified and some readings are uncertain; they are marked as such in
+          <li>Two labels are not identified and some readings are uncertain; they are marked as such in
             the app.</li>
         </ul>
         <p>Corrections are welcome as pull requests, see
@@ -195,6 +210,10 @@
             Basel University Library; scan via
             <a href="https://commons.wikimedia.org/wiki/File:Map_of_Paris_by_Truschet_and_Hoyau_-_Basel_University_Library.jpg">Wikimedia Commons</a>
             (public domain).</li>
+          <li>Jules Cousin, “Table des noms des rues, places, églises, couvents, collèges, hôtels, etc., inscrits
+            sur le plan de Paris publié vers 1552 par Olivier Truschet et Germain Hoyau”, <em>Mémoires de la
+            Société de l'histoire de Paris et de l'Île-de-France</em>, t. I (1875), pp. 60–70; source
+            <a href="https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f68.item">gallica.bnf.fr / BnF</a>.</li>
           <li>Street names: Ville de Paris open data, registers of current and vanished street names.</li>
           <li>Places: Wikipedia (French and English) and Wikidata.</li>
           <li>Today's map and the bridge ends: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>,
