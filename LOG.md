@@ -2,6 +2,33 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-26 — launch + the method page
+
+**Done**
+- **Launched** (owner's go-ahead): noindex dropped; `robots.txt` + `sitemap.xml` (455 urls).
+- **Place pages for link previews:** `npm run build` writes `/place/<id>/index.html` for all 453
+  places (copies of the app's `index.html` with the `page-meta` block swapped; `web/vite.config.ts`).
+  Each has its own title, description and `og:image` = a 800×420 crop of the woodcut round the
+  label with a red ellipse (`scripts/make_og_images.py` → `web/public/og/`, gitignored, 35 MB;
+  site card `og/site.jpg`). The app now reads the place from the path and writes `/place/<id>/`
+  on selection; `#place=` links still open. Tab title follows the selection.
+- **Method page** `/method/` ("How the map was bent"), linked from the sidebar footer and README.
+  Four SVG figures from `scripts/make_method_figures.py` (`web/public/figures/`, committed):
+  orientation, control points coloured by LOO error with the overlay edge, affine vs spline
+  error arrows, and the sheet's grid after one stretch vs after the spline.
+- Verified live: pages 200, `og:image` per place, app opens the place from the path, no errors.
+
+**Findings (numbers now on the page)**
+- Closest rotation: the top of the sheet points to 115°. The best affine is sheared: the sheet's
+  right angles are 77° on the ground; 0.36 m/px across vs 0.44 m/px up the sheet.
+- LOO: affine median 76 / p90 228 / worst 440 m; spline 64 / 155 / 427 m.
+- Control points: 21 drawn buildings, 8 bridge ends, 11 at labels.
+
+**Open / for the owner**
+- The method page says the labels were "read tile by tile"; it doesn't mention that an AI model
+  did the reading. Owner to decide whether to say so.
+- Cousin 1875 (item 4 below) not started.
+
 ## NEXT SESSION — start here (owner's answers, 2026-10-26)
 
 1. **Review:** "looks good for now". No changes requested to the preview.
