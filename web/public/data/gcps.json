@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T22:33:43+00:00",
+ "generated": "2026-10-25T22:52:00+00:00",
  "image": {
   "width": 10890,
   "height": 7820,
@@ -225,6 +225,182 @@
    "lat": 48.85051,
    "lon": 2.34397,
    "quality": "label"
+  },
+  {
+   "id": "L0002",
+   "name": "Pont Notre-Dame",
+   "px": [
+    5620,
+    3755
+   ],
+   "lat": 48.856389,
+   "lon": 2.348889,
+   "quality": "place"
+  },
+  {
+   "id": "L0003",
+   "name": "Petit-Pont",
+   "px": [
+    6640,
+    3965
+   ],
+   "lat": 48.853333,
+   "lon": 2.346944,
+   "quality": "place"
+  },
+  {
+   "id": "L0004",
+   "name": "Pont au Change",
+   "px": [
+    5680,
+    4070
+   ],
+   "lat": 48.856667,
+   "lon": 2.346667,
+   "quality": "place"
+  },
+  {
+   "id": "L0006",
+   "name": "Pont Saint-Michel",
+   "px": [
+    6680,
+    4195
+   ],
+   "lat": 48.854167,
+   "lon": 2.344722,
+   "quality": "place"
+  },
+  {
+   "id": "L0019",
+   "name": "Tour de l'Horloge",
+   "px": [
+    5960,
+    4200
+   ],
+   "lat": 48.8561,
+   "lon": 2.34567,
+   "quality": "place"
+  },
+  {
+   "id": "L0020",
+   "name": "Conciergerie",
+   "px": [
+    6040,
+    4425
+   ],
+   "lat": 48.856389,
+   "lon": 2.345556,
+   "quality": "place"
+  },
+  {
+   "id": "L0021",
+   "name": "Palais de Justice",
+   "px": [
+    6180,
+    4260
+   ],
+   "lat": 48.855807,
+   "lon": 2.344572,
+   "quality": "place"
+  },
+  {
+   "id": "L0032",
+   "name": "Cour de Rohan",
+   "px": [
+    7620,
+    5110
+   ],
+   "lat": 48.852946,
+   "lon": 2.339507,
+   "quality": "place"
+  },
+  {
+   "id": "L0050",
+   "name": "Église des Billettes",
+   "px": [
+    4160,
+    2960
+   ],
+   "lat": 48.85799,
+   "lon": 2.354996,
+   "quality": "place"
+  },
+  {
+   "id": "L0062",
+   "name": "Collège des Bernardins",
+   "px": [
+    7170,
+    3060
+   ],
+   "lat": 48.848823,
+   "lon": 2.352026,
+   "quality": "place"
+  },
+  {
+   "id": "L0063",
+   "name": "Église Saint-Nicolas-du-Chardonnet",
+   "px": [
+    7530,
+    3110
+   ],
+   "lat": 48.849168,
+   "lon": 2.350278,
+   "quality": "place"
+  },
+  {
+   "id": "L0066",
+   "name": "Église Saint-Laurent",
+   "px": [
+    410,
+    3815
+   ],
+   "lat": 48.874849,
+   "lon": 2.358311,
+   "quality": "place"
+  },
+  {
+   "id": "L0088",
+   "name": "Église Saint-Jacques-du-Haut-Pas",
+   "px": [
+    9880,
+    3990
+   ],
+   "lat": 48.84361,
+   "lon": 2.34139,
+   "quality": "place"
+  },
+  {
+   "id": "L0145",
+   "name": "Collège Sainte-Barbe",
+   "px": [
+    8570,
+    3560
+   ],
+   "lat": 48.847507,
+   "lon": 2.3466,
+   "quality": "place"
+  },
+  {
+   "id": "L0154",
+   "name": "Sorbonne",
+   "px": [
+    8340,
+    4060
+   ],
+   "lat": 48.8484,
+   "lon": 2.3433,
+   "quality": "place"
+  },
+  {
+   "id": "L0210",
+   "name": "Place Maubert",
+   "px": [
+    7330,
+    3530
+   ],
+   "lat": 48.8501,
+   "lon": 2.3488,
+   "quality": "place"
   }
  ]
 }

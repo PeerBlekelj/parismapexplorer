@@ -1,1 +1,310 @@
-export {}
+import '@fontsource/eb-garamond/latin-400.css';
+import '@fontsource/eb-garamond/latin-500.css';
+import '@fontsource/eb-garamond/latin-400-italic.css';
+import '@fontsource/inter/latin-400.css';
+import '@fontsource/inter/latin-500.css';
+import '@fontsource/inter/latin-600.css';
+import './style.css';
+
+import { renderCard, renderIntro } from './card';
+import { esc, statusClass, statusLabel, typeLabel } from './format';
+import { t } from './i18n';
+import { loadOverlayTiles, MapView, type Mode, type Orientation } from './maps';
+import { buildEntries, modernText, type Entry } from './model';
+import { IMAGE_H, IMAGE_W } from './oldPlane';
+import { SearchIndex } from './search';
+import { PlaceTable } from './table';
+import { createTransform } from './transform';
+import type { GcpsFile, PlacesFile } from './types';
+
+const BASE = import.meta.env.BASE_URL;
+const TYPE_ORDER = ['church_religious', 'college', 'street', 'gate_wall', 'bridge', 'building', 'square_market', 'village_faubourg', 'other'];
+
+const $ = <T extends HTMLElement = HTMLElement>(sel: string) => document.querySelector(sel) as T;
+
+async function loadJson<T>(path: string): Promise<T> {
+  const r = await fetch(`${BASE}${path}`, { cache: 'no-cache' });
+  if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
+  return (await r.json()) as T;
+}
+
+function placeIdFromHash(): string | null {
+  const m = /(?:^#|&)place=([A-Za-z0-9_-]+)/.exec(location.hash);
+  return m ? m[1] : null;
+}
+
+function fillStaticText(): void {
+  $('#brand-title').textContent = t.brandTitle;
+  $('#brand-sub').textContent = `${t.siteName} · ${t.brandSub}`;
+  $('.viewtabs [data-view=map]').textContent = t.viewMap;
+  $('.viewtabs [data-view=table]').textContent = t.viewTable;
+  $<HTMLInputElement>('#q').placeholder = t.searchPlaceholder;
+  $('#q-clear').title = t.searchClear;
+  $('#q-clear').setAttribute('aria-label', t.searchClear);
+  const modes: Record<string, string> = { side: t.modeSide, overlay: t.modeOverlay, old: t.modeOld, mod: t.modeMod };
+  document.querySelectorAll<HTMLButtonElement>('#modes button').forEach((b) => (b.textContent = modes[b.dataset.m ?? ''] ?? ''));
+  $('#orient .lbl').textContent = t.orientOriginal;
+  $('#tag-mod').textContent = t.tagMod;
+  $('#op-label').textContent = t.overlayOpacity;
+  $('#op-unit').textContent = t.overlayOpacityUnit;
+  $('#swipe-hint').textContent = t.overlaySwipeHint;
+  $('.swipe-l').textContent = t.overlayLeft;
+  $('.swipe-r').textContent = t.overlayRight;
+  $('#credits').innerHTML = [t.creditMap, t.creditOsm, t.creditBy].map(esc).join(' · ');
+}
+
+async function main(): Promise<void> {
+  fillStaticText();
+  renderIntro($('#card'));
+
+  let placesFile: PlacesFile, gcpsFile: GcpsFile;
+  const overlayTilesP = loadOverlayTiles();
+  try {
+    [placesFile, gcpsFile] = await Promise.all([
+      loadJson<PlacesFile>('data/places.json'),
+      loadJson<GcpsFile>('data/gcps.json'),
+    ]);
+  } catch (err) {
+    console.error(err);
+    $('#card').innerHTML = `<div class="intro"><p>${esc(t.loadError)}</p></div>`;
+    return;
+  }
+  if (placesFile.image && (placesFile.image.width !== IMAGE_W || placesFile.image.height !== IMAGE_H)) {
+    console.warn('places.json image size differs from the tiled image', placesFile.image);
+  }
+
+  const T = createTransform(gcpsFile.gcps ?? []);
+  const entries = buildEntries(placesFile.places ?? [], T);
+  const byId = new Map(entries.map((e) => [e.place.id, e]));
+  const index = new SearchIndex(entries.map((e) => e.place));
+  const total = entries.length;
+
+  // ---------- state ----------
+  const state = {
+    query: '',
+    types: new Set<string>(),
+    unsure: false,
+    selected: null as Entry | null,
+    view: 'map' as 'map' | 'table',
+    mode: 'side' as Mode,
+    orientation: 'north' as Orientation,
+    results: entries as Entry[],
+  };
+  const app = $('.app');
+  const mapArea = $('#map-area');
+  const listEl = $('#list');
+  const cardEl = $('#card');
+
+  const initial = byId.get(placeIdFromHash() ?? '') ?? null;
+  const overlayTiles = await overlayTilesP;
+  const maps = new MapView(
+    { old: $('#map-old'), mod: $('#map-mod'), ovl: $('#map-ovl'), tooltip: $('#tooltip') },
+    T, entries,
+    { onPick: (id, source) => select(id, { fly: false, source }) },
+    initial,
+    overlayTiles,
+  );
+  // Expose for debugging in the console and for the screenshot script.
+  (window as unknown as { pme: unknown }).pme = { maps, T, entries };
+
+  const table = new PlaceTable($('#table'), (id) => select(id, { fly: true, fromTable: true }));
+
+  // ---------- chips ----------
+  const counts = new Map<string, number>();
+  for (const e of entries) counts.set(e.place.type, (counts.get(e.place.type) ?? 0) + 1);
+  const unsureCount = entries.filter((e) => e.place.flag === 'unsure').length;
+  const chipTypes = TYPE_ORDER.filter((k) => counts.has(k));
+  for (const k of counts.keys()) if (!chipTypes.includes(k)) chipTypes.push(k);
+  const chipsEl = $('#chips');
+  chipsEl.innerHTML =
+    `<button type="button" class="chip on" data-chip="all">${esc(t.chipAll)}</button>` +
+    chipTypes.map((k) => `<button type="button" class="chip" data-chip="type" data-type="${esc(k)}">${esc(t.typeChips[k] ?? typeLabel(k))} <span class="n">${counts.get(k)}</span></button>`).join('') +
+    (unsureCount ? `<button type="button" class="chip chip-unsure" data-chip="unsure">${esc(t.chipUnsure)} <span class="n">${unsureCount}</span></button>` : '');
+  chipsEl.addEventListener('click', (ev) => {
+    const b = (ev.target as HTMLElement).closest('button.chip') as HTMLButtonElement | null;
+    if (!b) return;
+    if (b.dataset.chip === 'all') state.types.clear();
+    else if (b.dataset.chip === 'type') {
+      const k = b.dataset.type ?? '';
+      if (state.types.has(k)) state.types.delete(k);
+      else state.types.add(k);
+    } else if (b.dataset.chip === 'unsure') state.unsure = !state.unsure;
+    chipsEl.querySelectorAll<HTMLButtonElement>('button.chip').forEach((c) => {
+      const on = c.dataset.chip === 'all' ? state.types.size === 0
+        : c.dataset.chip === 'type' ? state.types.has(c.dataset.type ?? '')
+        : state.unsure;
+      c.classList.toggle('on', on);
+    });
+    refresh();
+  });
+
+  // ---------- results ----------
+  function filterActive(): boolean {
+    return !!state.query.trim() || state.types.size > 0 || state.unsure;
+  }
+
+  function resultHtml(e: Entry): string {
+    const p = e.place;
+    const m = modernText(p);
+    const second = p.status ? statusLabel(p.status).toLowerCase() : typeLabel(p.type);
+    return `<div class="result${state.selected === e ? ' sel' : ''}" data-id="${esc(p.id)}" role="option">` +
+      `<span class="dot ${statusClass(p.status)}"></span>` +
+      `<span class="old">${esc(e.title)}${p.flag === 'unsure' ? ' <span class="q" title="' + esc(t.unsureBadge) + '">?</span>' : ''}</span>` +
+      `<span class="mod"><span class="${m.placeholder ? 'placeholder' : ''}">${esc(m.text)}</span> · ${esc(second)}</span></div>`;
+  }
+
+  function refresh(): void {
+    const filter = (p: Entry['place']) =>
+      (state.types.size === 0 || state.types.has(p.type)) && (!state.unsure || p.flag === 'unsure');
+    state.results = index.search(state.query, filter).map((r) => byId.get(r.place.id) as Entry);
+    const countText = t.count(state.results.length, total);
+    $('#count').textContent = countText;
+    listEl.innerHTML = state.results.length
+      ? state.results.map(resultHtml).join('')
+      : `<p class="empty">${esc(t.noResults)}</p>`;
+    listEl.scrollTop = 0;
+    maps.setFilter(state.results, filterActive());
+    if (state.view === 'table') table.update(state.results, state.selected?.place.id ?? null, countText);
+  }
+
+  listEl.addEventListener('click', (ev) => {
+    const r = (ev.target as HTMLElement).closest('.result') as HTMLElement | null;
+    if (r?.dataset.id) select(r.dataset.id, { fly: true });
+  });
+
+  // ---------- search box ----------
+  const q = $<HTMLInputElement>('#q');
+  let timer = 0;
+  q.addEventListener('input', () => {
+    $('#q-clear').hidden = !q.value;
+    clearTimeout(timer);
+    timer = window.setTimeout(() => {
+      state.query = q.value;
+      refresh();
+    }, 70);
+  });
+  q.addEventListener('keydown', (ev) => {
+    if (ev.key === 'Enter') {
+      clearTimeout(timer);
+      state.query = q.value;
+      refresh();
+      if (state.results[0]) select(state.results[0].place.id, { fly: true });
+    } else if (ev.key === 'Escape') {
+      q.value = '';
+      q.dispatchEvent(new Event('input'));
+    }
+  });
+  $('#q-clear').addEventListener('click', () => {
+    q.value = '';
+    q.dispatchEvent(new Event('input'));
+    q.focus();
+  });
+
+  // ---------- selection ----------
+  function select(id: string | null, opts: { fly: boolean; source?: 'old' | 'mod'; fromTable?: boolean; instant?: boolean }): void {
+    const e = id ? byId.get(id) ?? null : null;
+    state.selected = e;
+    if (opts.fromTable) setView('map');
+    listEl.querySelectorAll('.result.sel').forEach((n) => n.classList.remove('sel'));
+    app.classList.toggle('has-sel', !!e);
+    if (e) {
+      const item = listEl.querySelector(`.result[data-id="${CSS.escape(e.place.id)}"]`);
+      item?.classList.add('sel');
+      renderCard(cardEl, e, T, () => select(null, { fly: false }));
+      requestAnimationFrame(() => item?.scrollIntoView({ block: 'nearest' }));
+      history.replaceState(null, '', `${location.pathname}${location.search}#place=${encodeURIComponent(e.place.id)}`);
+    } else {
+      renderIntro(cardEl);
+      history.replaceState(null, '', `${location.pathname}${location.search}`);
+    }
+    maps.select(e, opts);
+    if (state.view === 'table') table.update(state.results, e?.place.id ?? null, t.count(state.results.length, total));
+  }
+
+  window.addEventListener('hashchange', () => {
+    const id = placeIdFromHash();
+    if (id && id !== state.selected?.place.id && byId.has(id)) select(id, { fly: true });
+  });
+
+  // ---------- views ----------
+  function setView(view: 'map' | 'table'): void {
+    if (state.view === view) return;
+    state.view = view;
+    app.dataset.view = view;
+    document.querySelectorAll<HTMLButtonElement>('.viewtabs button').forEach((b) => {
+      const on = b.dataset.view === view;
+      b.classList.toggle('on', on);
+      b.setAttribute('aria-selected', String(on));
+    });
+    if (view === 'table') table.update(state.results, state.selected?.place.id ?? null, t.count(state.results.length, total));
+    else maps.resize();
+  }
+  document.querySelectorAll<HTMLButtonElement>('.viewtabs button').forEach((b) =>
+    b.addEventListener('click', () => setView(b.dataset.view as 'map' | 'table')));
+
+  // ---------- modes / orientation ----------
+  function updateTags(): void {
+    $('#tag-old').textContent = state.orientation === 'north' ? t.tagOldNorth : t.tagOldOriginal;
+  }
+  document.querySelectorAll<HTMLButtonElement>('#modes button').forEach((b) =>
+    b.addEventListener('click', () => {
+      const mode = b.dataset.m as Mode;
+      if (mode === state.mode) return;
+      state.mode = mode;
+      mapArea.dataset.mode = mode;
+      document.querySelectorAll('#modes button').forEach((x) => x.classList.toggle('on', x === b));
+      maps.setMode(mode);
+    }));
+  const orientBtn = $('#orient');
+  orientBtn.title = t.orientTitle;
+  orientBtn.addEventListener('click', () => {
+    state.orientation = state.orientation === 'north' ? 'original' : 'north';
+    orientBtn.setAttribute('aria-pressed', String(state.orientation === 'original'));
+    updateTags();
+    maps.setOrientation(state.orientation);
+  });
+  updateTags();
+
+  // ---------- overlay controls ----------
+  $('#warn').textContent = overlayTiles
+    ? t.overlayNoteWarped(overlayTiles.controlPoints, overlayTiles.medianErrorM)
+    : t.overlayNote(T.n, T.affineErrorMeters);
+  const op = $<HTMLInputElement>('#op');
+  op.addEventListener('input', () => maps.setOpacity(Number(op.value) / 100));
+  const swipe = $('#swipe');
+  const modPane = $('.modp');
+  let dragging = false;
+  const setSwipe = (pct: number) => {
+    swipe.style.left = `${pct}%`;
+    maps.setSwipe(pct);
+  };
+  swipe.addEventListener('pointerdown', (ev) => {
+    dragging = true;
+    swipe.setPointerCapture(ev.pointerId);
+    ev.preventDefault();
+  });
+  swipe.addEventListener('pointermove', (ev) => {
+    if (!dragging) return;
+    const r = modPane.getBoundingClientRect();
+    setSwipe(Math.max(0, Math.min(100, ((ev.clientX - r.left) / r.width) * 100)));
+  });
+  const endDrag = () => (dragging = false);
+  swipe.addEventListener('pointerup', endDrag);
+  swipe.addEventListener('pointercancel', endDrag);
+  setSwipe(50);
+
+  // ---------- go ----------
+  refresh();
+  if (initial) select(initial.place.id, { fly: true, instant: true });
+
+  // Warn (once) when the tile pyramid has not been generated.
+  fetch(`${BASE}tiles/old/meta.json`, { cache: 'no-cache' })
+    .then((r) => (r.ok && (r.headers.get('content-type') ?? '').includes('json') ? null : Promise.reject()))
+    .catch(() => {
+      const b = $('#banner');
+      b.textContent = t.tilesMissing;
+      b.hidden = false;
+    });
+}
+
+void main();

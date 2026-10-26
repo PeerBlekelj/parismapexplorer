@@ -13,7 +13,7 @@ from PIL import Image
 
 Image.MAX_IMAGE_PIXELS = None
 root = Path(sys.argv[1])
-ZMIN, ZMAX, LAM, HULL_GROW = 13, 17, 0.2, 900
+ZMIN, ZMAX, LAM, HULL_GROW = 11, 17, 0.2, 900
 out_dir = root / "web/public/tiles/overlay"
 
 g = list(csv.DictReader(open(root / "data/gcps_auto.csv")))
@@ -113,6 +113,7 @@ for z in range(ZMIN, ZMAX + 1):
     print(f"z{z}: done ({count} tiles so far)", flush=True)
 
 json.dump({"minzoom": ZMIN, "maxzoom": ZMAX, "bounds": [lon_min, lat_min, lon_max, lat_max],
-           "tiles": "tiles/overlay/{z}/{x}/{y}.webp", "control_points": len(g), "lambda": LAM},
+           "tiles": "tiles/overlay/{z}/{x}/{y}.webp", "control_points": len(g), "lambda": LAM,
+           "median_error_m": int(np.median([float(r["loo_error_m"]) for r in g]))},
           open(out_dir / "meta.json", "w"), indent=1)
 print("bounds", [round(v, 5) for v in (lon_min, lat_min, lon_max, lat_max)])
