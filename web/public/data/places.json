@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-26T15:48:17+00:00",
+"generated": "2026-10-26T21:20:22+00:00",
 "image": {
 "width": 10890,
 "height": 7820,
@@ -14,6 +14,7 @@
 7570,
 75
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "bridge over the Marne just above its confluence with the Seine",
@@ -51,6 +52,7 @@
 5620,
 3755
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the stone bridge of 1500–1512, lined with houses; rebuilt 1853 and 1919",
@@ -92,6 +94,7 @@
 6640,
 3965
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rebuilt 1853",
@@ -133,6 +136,7 @@
 5680,
 4070
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rebuilt 1858–1860",
@@ -174,6 +178,7 @@
 5680,
 4265
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "a mill bridge; collapsed in 1596",
@@ -211,6 +216,7 @@
 6680,
 4195
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rebuilt 1857",
@@ -252,6 +258,7 @@
 1100,
 7150
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "Pont Arcans: a small bridge carrying the road from Paris to the Porcherons (later the rue de la Chaussée-d'Antin) over the Grand Égout, between the château des Porcherons and the Ville-l'Évêque (fr.wikipedia 'Liste des ponts de Paris'; Lurine, Paris ancien et moderne, 1844); see data/research/open_questions_research.md",
@@ -281,6 +288,7 @@
 4240,
 1325
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "royal residence, demolished from 1563",
@@ -322,6 +330,7 @@
 4510,
 1370
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the Hôtel d'Angoulême (Cousin 1875)",
@@ -351,6 +360,7 @@
 4960,
 1240
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the Hôtel de Bretagne: 'Brianne' is the engraver's 'Bretagne' (Cousin 1875)",
@@ -380,6 +390,7 @@
 4820,
 1870
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Hôtel du Prévôt de Paris (Hugues Aubriot's house near Saint-Paul)",
@@ -417,6 +428,7 @@
 5160,
 1540
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the queen's lodgings of the Hôtel Saint-Pol, the royal residence of Charles V",
@@ -458,6 +470,7 @@
 8570,
 2830
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "the college of Tournai, founded in 1353 next to the college of Boncourt; the label calls it 'l'ostel'",
@@ -495,6 +508,7 @@
 4540,
 3365
 ],
+"also_px": [],
 "orient": "h",
 "flag": "unsure",
 "note": "the Hôtel d'Argent (Cousin 1875)",
@@ -524,6 +538,7 @@
 5050,
 3245
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the Renaissance building begun in 1533 was burned in 1871 and rebuilt",
@@ -565,6 +580,7 @@
 7140,
 3165
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the Hôtel de Lorraine: 'Lo Reine' is 'Lorraine' (Cousin 1875)",
@@ -594,6 +610,7 @@
 6810,
 3895
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "fortified gate at the left-bank end of the Petit-Pont; demolished 1782",
@@ -631,6 +648,7 @@
 5240,
 4240
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "fortress guarding the Pont au Change; seat of the Prévôté; demolished 1802–1810",
@@ -672,6 +690,7 @@
 5960,
 4200
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "Tour de l'Horloge",
@@ -709,6 +728,7 @@
 6040,
 4425
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -750,6 +770,7 @@
 6180,
 4260
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "royal palace, later the seat of the Parlement; partly survives inside the Palais de Justice",
@@ -791,6 +812,7 @@
 6330,
 4440
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "its building in the palace burned in 1737",
@@ -828,6 +850,7 @@
 7370,
 4370
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "the Hôtel de Fécamp: the engraver meant 'Fescamp', cut a T for the F and ran out of room (Cousin 1875)",
@@ -857,6 +880,7 @@
 7730,
 4170
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "town house of the abbots of Cluny, built c. 1485–1510",
@@ -894,6 +918,7 @@
 4840,
 4820
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the old royal mint by the rue de la Monnaie; the mint moved to the quai de Conti in 1775",
@@ -931,6 +956,7 @@
 5300,
 4630
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the bishop's court and prison; demolished 1783",
@@ -968,6 +994,7 @@
 7150,
 4930
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the Hôtel de Nevers of the 1550s, not the later hôtel of 1580 on the Monnaie site (Cousin 1875 lists it)",
@@ -997,6 +1024,7 @@
 7740,
 4760
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the Hôtel de Reims (Cousin 1875)",
@@ -1026,6 +1054,7 @@
 4880,
 5450
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the Hôtel d'Alençon, which adjoined the Hôtel du Petit-Bourbon facing the Louvre (Wikipedia, Hôtel du Petit-Bourbon)",
@@ -1067,6 +1096,7 @@
 5130,
 5450
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "residence of the dukes of Bourbon by the Louvre; demolished 1660 for the Louvre colonnade",
@@ -1102,6 +1132,7 @@
 7180,
 5300
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the town house / college of the abbots of Saint-Denis, which gave the rue des Grands-Augustins its 13th-century name (Paris street register)",
@@ -1124,6 +1155,7 @@
 7620,
 5110
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the name 'Rohan' is a corruption of 'Rouen' (the archbishops of Rouen had their town house here)",
@@ -1161,6 +1193,7 @@
 5070,
 5860
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "in 1550 the medieval castle was being rebuilt: Lescot's wing was begun in 1546",
@@ -1202,6 +1235,7 @@
 6800,
 5550
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "the Wikipedia article covers the Tour de Nesle, the corner tower of the hôtel",
@@ -1243,6 +1277,7 @@
 4830,
 405
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "abbey of Saint-Antoine-des-Champs",
@@ -1284,6 +1319,7 @@
 5520,
 1090
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -1325,6 +1361,7 @@
 9620,
 1005
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Marcel",
@@ -1362,6 +1399,7 @@
 9950,
 1080
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "church of Saint-Hippolyte in the faubourg Saint-Marcel; demolished 1807",
@@ -1399,6 +1437,7 @@
 10050,
 1400
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the hospital by Saint-Médard (Cousin 1875)",
@@ -1428,6 +1467,7 @@
 10530,
 1000
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Cordelieres (convent at Lourcine)",
@@ -1465,6 +1505,7 @@
 4290,
 1750
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "printed S. CATERINNE DU VAL DES ECOLIERS",
@@ -1502,6 +1543,7 @@
 4760,
 1720
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "parish of the royal Hôtel Saint-Pol; demolished 1796–1799",
@@ -1539,6 +1581,7 @@
 5120,
 1965
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Ave-Maria convent",
@@ -1576,6 +1619,7 @@
 9650,
 1625
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Medard",
@@ -1617,6 +1661,7 @@
 2340,
 2475
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the church of the Templars' (later Hospitallers') enclosure",
@@ -1658,6 +1703,7 @@
 2890,
 2230
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "orphanage founded 1534; the Marché des Enfants-Rouges keeps its name",
@@ -1689,6 +1735,7 @@
 3460,
 2400
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "the chapel of Braque (Cousin 1875)",
@@ -1718,6 +1765,7 @@
 4500,
 2140
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the Petit Saint-Antoine (Hospitallers of Saint-Anthony), rue Saint-Antoine",
@@ -1747,6 +1795,7 @@
 7610,
 2120
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Abbaye Saint-Victor",
@@ -1784,6 +1833,7 @@
 4160,
 2960
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the cloister of c. 1427 survives; the church was rebuilt in 1756",
@@ -1825,6 +1875,7 @@
 4640,
 2650
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "cemetery of Saint-Jean-en-Grève",
@@ -1862,6 +1913,7 @@
 4870,
 2770
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the hospital of Saint-Gervais (Cousin 1875)",
@@ -1891,6 +1943,7 @@
 5030,
 2770
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rebuilt 1494–1657, so under construction in 1550",
@@ -1932,6 +1985,7 @@
 5060,
 2975
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Jean-en-Greve",
@@ -1969,6 +2023,7 @@
 5330,
 2970
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "the convent of the Haudriettes (Cousin 1875)",
@@ -1998,6 +2053,7 @@
 3130,
 3210
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "cemetery of Saint-Nicolas-des-Champs",
@@ -2035,6 +2091,7 @@
 4230,
 3380
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "cloister of the canons of Saint-Merri",
@@ -2063,6 +2120,12 @@
 "px": [
 4290,
 3330
+],
+"also_px": [
+[
+4310,
+3745
+]
 ],
 "orient": "h",
 "flag": "ok",
@@ -2105,6 +2168,7 @@
 4950,
 3085
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "hospital of the Saint-Esprit-en-Grève, beside the Hôtel de Ville",
@@ -2142,6 +2206,7 @@
 6220,
 3335
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the canons' quarter north of the cathedral",
@@ -2179,6 +2244,7 @@
 6510,
 3205
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "dup",
@@ -2216,6 +2282,7 @@
 7170,
 3060
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -2257,6 +2324,7 @@
 7530,
 3110
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rebuilt in the 17th century",
@@ -2298,6 +2366,7 @@
 8590,
 3080
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "built 1494–1624",
@@ -2339,6 +2408,7 @@
 8890,
 3150
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "abbey",
@@ -2380,6 +2450,7 @@
 410,
 3815
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "printed S. LAVRES; Saint-Laurent",
@@ -2421,6 +2492,7 @@
 2420,
 3660
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Nicolas-des-Champs",
@@ -2456,6 +2528,7 @@
 2450,
 3510
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Martin-des-Champs",
@@ -2497,6 +2570,7 @@
 3435,
 3745
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "chapel and hospital of the minstrels' guild",
@@ -2534,6 +2608,7 @@
 4480,
 3550
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Bon",
@@ -2563,6 +2638,7 @@
 4800,
 3950
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -2600,6 +2676,7 @@
 6080,
 3510
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -2637,6 +2714,7 @@
 6290,
 3910
 ],
+"also_px": [],
 "orient": "h",
 "flag": "unsure",
 "note": "church of Saint-Martial in the Cité; label reading uncertain",
@@ -2674,6 +2752,7 @@
 6340,
 3845
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "Sainte-Madeleine-en-la-Cite",
@@ -2711,6 +2790,7 @@
 6430,
 3665
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "church of Saint-Christophe, in front of Notre-Dame; demolished 1747",
@@ -2740,6 +2820,7 @@
 6460,
 3810
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Sainte-Genevieve-des-Ardents",
@@ -2777,6 +2858,7 @@
 6460,
 3990
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -2814,6 +2896,7 @@
 6490,
 3585
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "printed HOSTREDA ME DEPARIS",
@@ -2854,6 +2937,12 @@
 "px": [
 6610,
 3645
+],
+"also_px": [
+[
+6610,
+3910
+]
 ],
 "orient": "h",
 "flag": "ok",
@@ -2896,6 +2985,7 @@
 7030,
 3860
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "Saint-Julien-le-Pauvre (label upside down)",
@@ -2937,6 +3027,7 @@
 7450,
 3815
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "chapel of Saint-Yves, rue Saint-Jacques",
@@ -2959,6 +3050,7 @@
 7780,
 3550
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "convent of the Carmelites (Grands-Carmes) on the place Maubert",
@@ -3000,6 +3092,7 @@
 7790,
 3830
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "commanderie Saint-Jean-de-Latran",
@@ -3037,6 +3130,7 @@
 8150,
 3685
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "church of Saint-Hilaire-du-Mont",
@@ -3078,6 +3172,7 @@
 8890,
 3760
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -3119,6 +3214,7 @@
 9880,
 3990
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rebuilt 1630–1685",
@@ -3160,6 +3256,7 @@
 10090,
 3935
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the hospital of the Hospitallers of Altopascio, next to Saint-Jacques-du-Haut-Pas",
@@ -3189,6 +3286,7 @@
 10600,
 3920
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "priory of Notre-Dame-des-Champs; from 1603 the first Carmelite convent in Paris",
@@ -3226,6 +3324,7 @@
 240,
 4410
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the leper house of Saint-Lazare",
@@ -3263,6 +3362,7 @@
 2450,
 4120
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "cemetery of the hospital of the Trinité",
@@ -3300,6 +3400,7 @@
 3300,
 4440
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "hopital Saint-Jacques-aux-Pelerins",
@@ -3337,6 +3438,7 @@
 3430,
 4310
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Leu-Saint-Gilles",
@@ -3378,6 +3480,7 @@
 3610,
 4065
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "abbey of Saint-Magloire, rue Saint-Denis",
@@ -3415,6 +3518,7 @@
 3870,
 4290
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "church and hospital of the Saint-Sépulcre, rue Saint-Denis",
@@ -3456,6 +3560,7 @@
 4130,
 4490
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "church and cemetery of the Saints-Innocents; the cemetery was emptied into the Catacombs in 1786–1788",
@@ -3491,6 +3596,7 @@
 4440,
 4405
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Sainte-Opportune",
@@ -3527,6 +3633,12 @@
 "px": [
 4500,
 4230
+],
+"also_px": [
+[
+4550,
+4190
+]
 ],
 "orient": "h",
 "flag": "ok",
@@ -3565,6 +3677,7 @@
 5350,
 4135
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "chapel beside the Grand Châtelet",
@@ -3602,6 +3715,7 @@
 6120,
 4060
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "dup",
@@ -3639,6 +3753,7 @@
 6120,
 4135
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "church of Saint-Barthélemy in the Cité, the palace parish",
@@ -3676,6 +3791,7 @@
 6280,
 4080
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Éloi in the Cité (Barnabites)",
@@ -3713,6 +3829,7 @@
 6430,
 4340
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "handwritten addition on the Basel copy",
@@ -3754,6 +3871,7 @@
 6440,
 4280
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "chapel of Saint-Michel in the palace courtyard",
@@ -3791,6 +3909,7 @@
 7190,
 4040
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -3832,6 +3951,7 @@
 7650,
 4070
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Mathurins",
@@ -3869,6 +3989,7 @@
 7920,
 4090
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -3910,6 +4031,7 @@
 7980,
 4470
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Come",
@@ -3947,6 +4069,7 @@
 8790,
 4060
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the Dominican convent of the rue Saint-Jacques (Jacobins)",
@@ -3988,6 +4111,7 @@
 2130,
 4520
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -4029,6 +4153,7 @@
 2400,
 4520
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "church of Saint-Sauveur, rue Saint-Denis",
@@ -4066,6 +4191,7 @@
 5030,
 4520
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "chapel of the goldsmiths' guild (Saint-Éloi-des-Orfèvres)",
@@ -4103,6 +4229,7 @@
 7230,
 4620
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Andre-des-Arts",
@@ -4140,6 +4267,7 @@
 8130,
 4930
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -4181,6 +4309,7 @@
 10370,
 4545
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the Carthusian monastery of Vauvert",
@@ -4218,6 +4347,7 @@
 3780,
 5050
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the present church was begun in 1532 and finished in 1637; the map still shows the older church",
@@ -4259,6 +4389,7 @@
 3980,
 5370
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "convent of the Filles-Pénitentes",
@@ -4296,6 +4427,7 @@
 5000,
 5225
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Germain-l'Auxerrois",
@@ -4337,6 +4469,7 @@
 6850,
 5260
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "dup",
@@ -4374,6 +4507,7 @@
 380,
 5960
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "chapel of the Martyrs on the slope of Montmartre",
@@ -4415,6 +4549,7 @@
 4080,
 5870
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Honore (collegiate church)",
@@ -4452,6 +4587,7 @@
 8710,
 5520
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rebuilt 1646–1870",
@@ -4493,6 +4629,7 @@
 4520,
 6240
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the hospital for the blind founded by Saint Louis; it moved to the faubourg Saint-Antoine in 1780",
@@ -4528,6 +4665,7 @@
 4950,
 6200
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Saint-Thomas-du-Louvre",
@@ -4565,6 +4703,7 @@
 8420,
 6320
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "the abbey church survives; the abbey buildings are gone",
@@ -4606,6 +4745,7 @@
 8340,
 7690
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the Minims of Chaillot, called the Bonshommes",
@@ -4643,6 +4783,7 @@
 7420,
 2760
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college du Cardinal-Lemoine",
@@ -4680,6 +4821,7 @@
 8350,
 2870
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "college de Boncourt",
@@ -4721,6 +4863,7 @@
 7840,
 3335
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college de la Marche",
@@ -4762,6 +4905,7 @@
 8100,
 3190
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college de Navarre",
@@ -4803,6 +4947,7 @@
 8150,
 3410
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the college and hôtel d'Albret (Cousin 1875)",
@@ -4825,6 +4970,7 @@
 8300,
 3390
 ],
+"also_px": [],
 "orient": "h",
 "flag": "unsure",
 "note": "probably the Bons-Enfants of Saint-Victor",
@@ -4856,6 +5002,7 @@
 7350,
 3815
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college de Cornouaille",
@@ -4887,6 +5034,7 @@
 7680,
 3660
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college de Presles",
@@ -4924,6 +5072,7 @@
 7830,
 3690
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college de Beauvais (Dormans-Beauvais)",
@@ -4965,6 +5114,7 @@
 8070,
 3700
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the Écoles de Décret, the law faculty",
@@ -5006,6 +5156,7 @@
 8100,
 3520
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college des Lombards",
@@ -5037,6 +5188,7 @@
 8330,
 3700
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college Coqueret",
@@ -5074,6 +5226,7 @@
 8370,
 3860
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college du Plessis",
@@ -5111,6 +5264,7 @@
 8480,
 3620
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college de Reims",
@@ -5148,6 +5302,7 @@
 8480,
 3780
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college du Mans",
@@ -5185,6 +5340,7 @@
 8500,
 3850
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college of Marmoutier",
@@ -5222,6 +5378,7 @@
 8570,
 3560
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college Sainte-Barbe",
@@ -5257,6 +5414,7 @@
 8670,
 3850
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -5294,6 +5452,7 @@
 8700,
 3670
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the college Saint-Michel, also called Chanac",
@@ -5331,6 +5490,7 @@
 8730,
 3560
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college de Montaigu",
@@ -5366,6 +5526,7 @@
 8950,
 3630
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college de Lisieux",
@@ -5403,6 +5564,7 @@
 7450,
 4040
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -5440,6 +5602,7 @@
 7960,
 4205
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the hôtel d'Harcourt, listed by Cousin 1875 apart from the college of the same name (L0199)",
@@ -5469,6 +5632,7 @@
 8170,
 4490
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college de Justice",
@@ -5506,6 +5670,7 @@
 8200,
 4300
 ],
+"also_px": [],
 "orient": "h",
 "flag": "unsure",
 "note": "label reading uncertain",
@@ -5543,6 +5708,7 @@
 8280,
 4240
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college de Narbonne",
@@ -5580,6 +5746,7 @@
 8340,
 4060
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college de Sorbonne",
@@ -5621,6 +5788,7 @@
 8510,
 4050
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college of Calvi, the 'little Sorbonne'",
@@ -5662,6 +5830,7 @@
 8660,
 4180
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college de Cluny",
@@ -5699,6 +5868,7 @@
 7590,
 4770
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college Mignon",
@@ -5736,6 +5906,7 @@
 7820,
 4880
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college de Bourgogne",
@@ -5773,6 +5944,7 @@
 5370,
 5090
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "l'École Saint-Germain, the riverbank before Saint-Germain-l'Auxerrois that gave its name to the quai de l'École, now part of the quai du Louvre (Cousin 1875)",
@@ -5802,6 +5974,7 @@
 3830,
 6020
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "college of the Bons-Enfants, rue Saint-Honoré",
@@ -5833,9 +6006,10 @@
 3900,
 855
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
-"note": "a bastion of the city wall",
+"note": "the Bastillon Saint-Antoine, a bastion of the city wall by the Porte Saint-Antoine (Cousin 1875: II,2)",
 "modern": null,
 "status": "vanished",
 "lat": 48.855551,
@@ -5868,6 +6042,7 @@
 4270,
 915
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -5909,6 +6084,7 @@
 4680,
 745
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "stormed 14 July 1789 and demolished",
@@ -5950,6 +6126,7 @@
 8820,
 790
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "the porte de la Barre, faubourg Saint-Marcel (Cousin 1875)",
@@ -5972,6 +6149,48 @@
 ]
 },
 {
+"id": "L0171",
+"old": "LE BASTILLON",
+"type": "gate_wall",
+"px": [
+1790,
+1800
+],
+"also_px": [],
+"orient": "h",
+"flag": "ok",
+"note": "the Bastillon du Temple, a bastion of the north wall by the Porte du Temple (Cousin 1875: 'Bastillon (le) du Temple', I,5); not the Bastillon Saint-Antoine (L0167)",
+"modern": null,
+"status": "vanished",
+"lat": 48.863426,
+"lon": 2.364919,
+"loc_confidence": "approx",
+"summary": "The Bastillon du Temple, a bastion of the city wall on the north side, by the Porte du Temple; not to be confused with the Bastillon Saint-Antoine by the Bastille (Jules Cousin, 1875). It disappeared with the wall.",
+"summary_fr": null,
+"summary_sv": null,
+"variants": [
+"Le Bastillon du Temple"
+],
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Enceinte_de_Charles_V"
+},
+{
+"label": "Wikipedia (en)",
+"url": "https://en.wikipedia.org/wiki/Wall_of_Charles_V"
+},
+{
+"label": "Wikidata",
+"url": "https://www.wikidata.org/wiki/Q3053732"
+},
+{
+"label": "Cousin 1875, p. 60",
+"url": "https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f68.item"
+}
+]
+},
+{
 "id": "L0172",
 "old": "PORTE DU TEMPLE",
 "type": "gate_wall",
@@ -5979,6 +6198,7 @@
 1900,
 2200
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "dup of r01c01",
@@ -6016,6 +6236,7 @@
 8740,
 2720
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "gate of Philip Augustus's wall, rue Descartes",
@@ -6053,6 +6274,7 @@
 2000,
 3630
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the medieval gate, not the triumphal arch of 1674",
@@ -6094,6 +6316,7 @@
 9250,
 3840
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "dup",
@@ -6131,6 +6354,7 @@
 1920,
 4290
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the medieval gate, not the triumphal arch of 1672",
@@ -6172,6 +6396,7 @@
 8840,
 4210
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "dup",
@@ -6209,6 +6434,7 @@
 7300,
 5480
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "printed PORTE DE BVCI",
@@ -6246,6 +6472,7 @@
 7650,
 5300
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "gate of Philip Augustus's wall",
@@ -6283,6 +6510,7 @@
 2620,
 5620
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": null,
@@ -6320,6 +6548,7 @@
 6470,
 5860
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Tour de Nesle",
@@ -6361,6 +6590,7 @@
 4450,
 6340
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -6402,6 +6632,7 @@
 5520,
 6250
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the Tour du Bois, the riverside end of Charles V's wall by the Louvre",
@@ -6424,6 +6655,7 @@
 5160,
 195
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Bois de Vincennes",
@@ -6465,6 +6697,7 @@
 7340,
 235
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -6500,6 +6733,7 @@
 7810,
 265
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": null,
@@ -6541,6 +6775,7 @@
 3880,
 575
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "a wayside cross",
@@ -6570,6 +6805,7 @@
 6790,
 1150
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "Ile Louviers",
@@ -6611,6 +6847,7 @@
 7780,
 2410
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "the faubourg Saint-Victor",
@@ -6640,6 +6877,7 @@
 9070,
 2060
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "the Champ d'Albiac: in the 1540s parts of the clos du Chardonnet were granted to René d'Ablon and d'Albiac for building",
@@ -6677,6 +6915,7 @@
 360,
 2675
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the great royal gallows",
@@ -6718,6 +6957,7 @@
 4810,
 2620
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "gate of the earliest wall",
@@ -6755,6 +6995,7 @@
 6560,
 2880
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "'le Terrain', the open ground at the east tip of the Cité",
@@ -6792,6 +7033,7 @@
 6860,
 2610
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the Tournelle, the riverside tower of Philip Augustus's wall on the left bank",
@@ -6833,6 +7075,7 @@
 8000,
 2980
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "the Champ-Gaillard, the ground around the rue Clopin (named after the great house Clopin), next to the college of Navarre",
@@ -6870,6 +7113,7 @@
 9590,
 2995
 ],
+"also_px": [],
 "orient": "h",
 "flag": "unsure",
 "note": "the hôtel de Braque, faubourg Saint-Marcel (Cousin 1875)",
@@ -6899,6 +7143,7 @@
 10500,
 3230
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the Gobelin family's dye works and mills on the Bièvre",
@@ -6940,6 +7185,7 @@
 10050,
 3830
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "the faubourg Saint-Jacques",
@@ -6969,6 +7215,7 @@
 8480,
 4470
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the collège d'Harcourt, 'C. Herrocourt' (Cousin 1875)",
@@ -7006,6 +7253,7 @@
 4220,
 4680
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "the real-tennis court by the Halles (Cousin 1875)",
@@ -7035,6 +7283,7 @@
 5890,
 4870
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "the mill of the Mint, on the Seine",
@@ -7064,6 +7313,7 @@
 6110,
 4680
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the palace garden at the west tip of the Cité",
@@ -7086,6 +7336,7 @@
 9640,
 4530
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the wine press of the Hôtel-Dieu ('le Présoer'), not a meadow (Cousin 1875)",
@@ -7115,6 +7366,7 @@
 4920,
 6640
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "in 1550 still the tile kilns that gave the Tuileries their name; the palace was begun in 1564",
@@ -7156,6 +7408,7 @@
 6700,
 6630
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the students' meadow of the University",
@@ -7193,6 +7446,7 @@
 5500,
 2700
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "the hay port (Port au Foin) on the Grève",
@@ -7222,6 +7476,7 @@
 4660,
 3290
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "the carrefour Guillori",
@@ -7251,6 +7506,7 @@
 4990,
 3385
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the place de Grève, renamed 1803",
@@ -7292,6 +7548,7 @@
 5150,
 3960
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "the calf market (place aux Veaux)",
@@ -7321,6 +7578,7 @@
 7330,
 3530
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": null,
@@ -7358,6 +7616,7 @@
 5010,
 4240
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the Grande Boucherie, the main butchers' market, by the Grand Châtelet",
@@ -7387,6 +7646,7 @@
 3550,
 4680
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the pillory of the Halles",
@@ -7416,6 +7676,7 @@
 3920,
 4660
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "the grain hall in the Halles",
@@ -7445,6 +7706,7 @@
 4220,
 4840
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the Beauvais butchers' market",
@@ -7474,6 +7736,7 @@
 4270,
 5110
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "the Croix du Trahoir, a cross and place of execution at the corner of rue de l'Arbre-Sec",
@@ -7511,6 +7774,7 @@
 8370,
 5750
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": null,
@@ -7548,6 +7812,7 @@
 8370,
 6010
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the pillory of Saint-Germain-des-Prés (Cousin 1875)",
@@ -7570,6 +7835,7 @@
 3500,
 6540
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the pig market",
@@ -7607,6 +7873,7 @@
 4660,
 1480
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "the Grande rue Saint-Antoine; its western end is now rue François-Miron",
@@ -7640,6 +7907,7 @@
 4930,
 1165
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue de la Cerisaie",
@@ -7673,6 +7941,7 @@
 5030,
 1385
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "called rue des Célestins on some 16th-century plans",
@@ -7706,6 +7975,7 @@
 9250,
 1050
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue de la Barre in 1540",
@@ -7739,6 +8009,7 @@
 9320,
 1200
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "rue du Fer-a-Moulin",
@@ -7772,6 +8043,7 @@
 9520,
 1140
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "'a rue Neuve leading into the rue de la Barre, faubourg Saint-Marcel' (Cousin 1875); modern successor not found",
@@ -7794,6 +8066,7 @@
 10270,
 1100
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "rue des Teinturiers",
@@ -7831,6 +8104,7 @@
 10640,
 1180
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "old rue des Cordelières, now rues Broca, Edouard-Quénu and Léon-Maurice-Nordmann",
@@ -7864,6 +8138,7 @@
 3410,
 1960
 ],
+"also_px": [],
 "orient": "v",
 "flag": "unsure",
 "note": null,
@@ -7897,6 +8172,7 @@
 3840,
 1880
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue de la Culture-Sainte-Catherine, renamed rue de Sévigné in 1867",
@@ -7930,6 +8206,7 @@
 4700,
 1995
 ],
+"also_px": [],
 "orient": "h",
 "flag": "unsure",
 "note": "formerly rue Percée",
@@ -7963,6 +8240,7 @@
 5070,
 1725
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -7996,6 +8274,7 @@
 5140,
 1845
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -8029,6 +8308,7 @@
 5340,
 1550
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "on the line of the rue des Lions; the later rue Neuve-Saint-Paul (rue Charles-V) was not yet laid out (Cousin 1875)",
@@ -8062,6 +8342,7 @@
 9090,
 1650
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "formerly rue d'Orléans",
@@ -8089,6 +8370,7 @@
 3080,
 2345
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue du Grand-Chantier, now part of rue des Archives",
@@ -8121,6 +8403,12 @@
 "px": [
 3340,
 2200
+],
+"also_px": [
+[
+3340,
+2150
+]
 ],
 "orient": "v",
 "flag": "unsure",
@@ -8155,6 +8443,7 @@
 3550,
 2300
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -8192,6 +8481,7 @@
 3590,
 2150
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "Vieille rue du Temple",
@@ -8225,6 +8515,7 @@
 3610,
 2010
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "formerly rue des Poulies",
@@ -8258,6 +8549,7 @@
 3710,
 2240
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "probably a second label on the Vieille rue du Temple",
@@ -8285,6 +8577,7 @@
 3880,
 2420
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue des Singes",
@@ -8322,6 +8615,7 @@
 3980,
 2200
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -8355,6 +8649,7 @@
 4120,
 2225
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -8388,6 +8683,7 @@
 4130,
 2075
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "printed 'rue des Paiens', but drawn on the rue des Juifs, now rue Ferdinand-Duval (Cousin 1875)",
@@ -8421,6 +8717,7 @@
 4410,
 2170
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "printed R. DV ROI CECILE",
@@ -8454,6 +8751,7 @@
 4430,
 2010
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -8491,6 +8789,7 @@
 4510,
 2430
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "formerly rue Renaut-le-Fèvre",
@@ -8524,6 +8823,7 @@
 4810,
 2150
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "printed 'R. pet io . ni': pet(ite) R. (de) Ioui (Cousin 1875)",
@@ -8557,6 +8857,7 @@
 4880,
 2385
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue Geoffroy-l'Asnier",
@@ -8590,6 +8891,7 @@
 5040,
 2490
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "label reads Garnier sur l'Eau (old spelling: Garnier sur l'Yaue)",
@@ -8616,6 +8918,40 @@
 ]
 },
 {
+"id": "L0251",
+"old": "R. NONNAIN",
+"type": "street",
+"px": [
+5090,
+2085
+],
+"also_px": [],
+"orient": "h",
+"flag": "unsure",
+"note": "printed 'R. Nonnain', but this is the rue du Fauconnier: the engraver gave it the name of the neighbouring rue des Nonnains-d'Yères by mistake (Cousin 1875)",
+"modern": "Rue du Fauconnier",
+"status": "renamed",
+"lat": 48.853338,
+"lon": 2.359188,
+"loc_confidence": "exact",
+"summary": "Labelled 'R. Nonnain', but this is the rue du Fauconnier, by Saint-Paul: the engraver gave it the name of the neighbouring rue des Nonnains-d'Yères by mistake (Jules Cousin, 1875). It still exists.",
+"summary_fr": null,
+"summary_sv": null,
+"variants": [
+"Rue Nonnain"
+],
+"sources": [
+{
+"label": "Ville de Paris, street register (open data)",
+"url": "https://opendata.paris.fr/explore/dataset/denominations-emprises-voies-actuelles/table/?q=id%3D10653"
+},
+{
+"label": "Cousin 1875, p. 65",
+"url": "https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f73.item"
+}
+]
+},
+{
 "id": "L0252",
 "old": "R. NONNAIN DIERRE",
 "type": "street",
@@ -8623,6 +8959,7 @@
 5100,
 2140
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue des Nonnains-d'Hyeres",
@@ -8656,6 +8993,7 @@
 8900,
 2380
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "formerly rue Copeau",
@@ -8689,6 +9027,7 @@
 9200,
 2350
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "the main street of the faubourg Saint-Marcel, from the Porte Bordelles",
@@ -8722,6 +9061,7 @@
 2340,
 2810
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "formerly rue de la Croix",
@@ -8755,6 +9095,7 @@
 2350,
 2690
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "printed R. DES FONTI and SEN upside-down",
@@ -8788,6 +9129,7 @@
 2620,
 2760
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue Frépaux = rue Phélipeaux; later rue Phélipeaux",
@@ -8821,6 +9163,7 @@
 2840,
 2560
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -8854,6 +9197,7 @@
 2950,
 2560
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue Pastourelle",
@@ -8887,6 +9231,7 @@
 3060,
 2960
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -8920,6 +9265,7 @@
 3080,
 2705
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -8953,6 +9299,7 @@
 3170,
 2960
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "formerly rue Courtauvillain",
@@ -8980,6 +9327,7 @@
 3260,
 2960
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue Michel-le-Comte",
@@ -9013,6 +9361,7 @@
 3330,
 2560
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue des Haudriettes",
@@ -9046,6 +9395,7 @@
 3420,
 2600
 ],
+"also_px": [],
 "orient": "v",
 "flag": "unsure",
 "note": "rue de Braque?",
@@ -9079,6 +9429,7 @@
 3510,
 2990
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "the cul-de-sac off the rue Beaubourg: the cul-de-sac des Truies, later impasse Berthaud (Cousin 1875)",
@@ -9106,6 +9457,7 @@
 3790,
 2600
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue des Blancs-Manteaux",
@@ -9139,6 +9491,7 @@
 3900,
 2510
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -9176,6 +9529,7 @@
 3920,
 2640
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue de l'Homme-Armé, now part of rue des Archives",
@@ -9209,6 +9563,7 @@
 4090,
 2600
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "Sainte-Croix-de-la-Bretonnerie",
@@ -9242,6 +9597,7 @@
 4170,
 2630
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue du Bourg-Tibourg",
@@ -9275,6 +9631,7 @@
 4170,
 2810
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "formerly rue du Franc-Mourier",
@@ -9308,6 +9665,7 @@
 4340,
 2590
 ],
+"also_px": [],
 "orient": "v",
 "flag": "unsure",
 "note": "printed R. BOV QVETONNE",
@@ -9345,6 +9703,7 @@
 4500,
 2860
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -9378,6 +9737,7 @@
 4540,
 2970
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -9411,6 +9771,7 @@
 4760,
 2950
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "printed R. DE LA TISARRA NDERIE",
@@ -9444,6 +9805,7 @@
 4870,
 2880
 ],
+"also_px": [],
 "orient": "d",
 "flag": "unsure",
 "note": "rue du Pet-au-Diable, later rue du Tourniquet-Saint-Jean",
@@ -9477,6 +9839,7 @@
 5130,
 2585
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -9510,6 +9873,7 @@
 5160,
 2855
 ],
+"also_px": [],
 "orient": "h",
 "flag": "unsure",
 "note": "formerly rue de Longpont",
@@ -9543,6 +9907,7 @@
 5350,
 2650
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "formerly rue de la Mortellerie",
@@ -9576,6 +9941,7 @@
 7760,
 2815
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the name was also corrupted to 'rue Dras' and 'rue des Ras'",
@@ -9609,6 +9975,7 @@
 7770,
 2900
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue de Versailles (Guillot: Verseille), destroyed for rue Monge",
@@ -9642,6 +10009,7 @@
 7770,
 2995
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -9675,6 +10043,7 @@
 8520,
 2990
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "formerly rue Bordelle",
@@ -9708,6 +10077,7 @@
 9740,
 2780
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "formerly rue des Postes",
@@ -9741,6 +10111,7 @@
 2180,
 3250
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue du Vertbois",
@@ -9768,6 +10139,7 @@
 2820,
 3270
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue au Maire",
@@ -9801,6 +10173,7 @@
 3070,
 3085
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue Transnonain, now part of rue Beaubourg",
@@ -9834,6 +10207,7 @@
 3565,
 3480
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "absorbed by rue Rambuteau",
@@ -9867,6 +10241,7 @@
 3620,
 3050
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue Geoffroy-l'Angevin",
@@ -9900,6 +10275,7 @@
 3835,
 3490
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -9937,6 +10313,7 @@
 3950,
 3250
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "printed LAPIER REAVLART",
@@ -9970,6 +10347,7 @@
 4050,
 3350
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "formerly rue Neuve-Saint-Merri",
@@ -10003,6 +10381,7 @@
 4160,
 3220
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the engraver put 'Poterie' on two streets; this one is the rue du Renard-Saint-Merri (Cousin 1875)",
@@ -10040,6 +10419,12 @@
 4370,
 3180
 ],
+"also_px": [
+[
+4380,
+3320
+]
+],
 "orient": "v",
 "flag": "ok",
 "note": "printed 'la Courrerie' on the rue de la Verrerie; the Verrerie's own name went to a street in the Cité (Cousin 1875)",
@@ -10073,6 +10458,7 @@
 4500,
 3225
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "second",
@@ -10110,6 +10496,7 @@
 6040,
 3400
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue du Port-Saint-Landry",
@@ -10143,6 +10530,7 @@
 7170,
 3400
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "dup",
@@ -10176,6 +10564,7 @@
 7200,
 3270
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "dup",
@@ -10209,6 +10598,7 @@
 7640,
 3150
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -10242,6 +10632,7 @@
 7770,
 3265
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -10279,6 +10670,7 @@
 7800,
 3085
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue Alexandre-Langlois, later rue du Paon",
@@ -10312,6 +10704,7 @@
 7800,
 3180
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue Pavée-d'Andouilles, later rue du Mûrier",
@@ -10345,6 +10738,7 @@
 7920,
 3080
 ],
+"also_px": [],
 "orient": "v",
 "flag": "unsure",
 "note": "very likely the rue Clopin, beside the Champ-Gaillard; the label may be cut short",
@@ -10372,6 +10766,7 @@
 7980,
 3410
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "printed LEMONT S GENEVIEVE; rue de la Montagne-Sainte-Genevieve",
@@ -10405,6 +10800,7 @@
 2960,
 3560
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue des Gravilliers",
@@ -10438,6 +10834,7 @@
 3070,
 3560
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "dup",
@@ -10475,6 +10872,7 @@
 3190,
 3570
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "dup",
@@ -10508,6 +10906,7 @@
 3295,
 3540
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue Grenier-Saint-Lazare",
@@ -10541,6 +10940,7 @@
 3375,
 3530
 ],
+"also_px": [],
 "orient": "v",
 "flag": "unsure",
 "note": "the 'Vieille Poterie', probably the engraver's slip for 'Poterne': later the rue du Maure (Cousin 1875)",
@@ -10574,6 +10974,7 @@
 3480,
 3510
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue des Petits-Champs(-Saint-Martin), later rue Brantôme",
@@ -10607,6 +11008,7 @@
 3545,
 3970
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue Quincampoix",
@@ -10640,6 +11042,7 @@
 3655,
 3580
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -10673,6 +11076,7 @@
 3735,
 3570
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "the rue de la Corroierie, here under its older name of rue de la Plâtrière (Cousin 1875)",
@@ -10710,6 +11114,7 @@
 4060,
 3745
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue Saint-Martin? (fragment R. S. MARTIN)",
@@ -10743,6 +11148,7 @@
 4170,
 3970
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue de la Vieille-Courroierie (later rue des Cinq-Diamants), now the southern part of rue Quincampoix",
@@ -10776,6 +11182,7 @@
 4260,
 3880
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "formerly rue Marivaux",
@@ -10809,6 +11216,7 @@
 4590,
 3580
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue Jean-Pain-Mollet",
@@ -10842,6 +11250,7 @@
 4720,
 3570
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -10875,6 +11284,7 @@
 4890,
 3550
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "Coutellerie",
@@ -10908,6 +11318,7 @@
 5020,
 3600
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -10941,6 +11352,7 @@
 5280,
 3540
 ],
+"also_px": [],
 "orient": "v",
 "flag": "unsure",
 "note": "printed LA TEN NERIE",
@@ -10974,6 +11386,7 @@
 6110,
 3590
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -11007,6 +11420,7 @@
 6510,
 3760
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue Neuve-Notre-Dame",
@@ -11040,6 +11454,7 @@
 6950,
 3645
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "probably the rue du Pavé (de la place Maubert)",
@@ -11073,6 +11488,7 @@
 7400,
 3870
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "formerly rue du Plâtre",
@@ -11106,6 +11522,7 @@
 7550,
 3700
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue des Noyers, absorbed by boulevard Saint-Germain",
@@ -11139,6 +11556,7 @@
 7710,
 3610
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -11172,6 +11590,7 @@
 7800,
 3740
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -11205,6 +11624,7 @@
 8180,
 3720
 ],
+"also_px": [],
 "orient": "v",
 "flag": "unsure",
 "note": "printed LE CLOS BRVNIAV; rue du Clos-Bruneau",
@@ -11238,6 +11658,7 @@
 8470,
 3990
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -11271,6 +11692,7 @@
 8590,
 3730
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue des Ecoles? check",
@@ -11304,6 +11726,7 @@
 8800,
 3720
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue Saint-Étienne-des-Grès, now part of rue Cujas",
@@ -11341,6 +11764,7 @@
 2290,
 4140
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue Guerin-Boisseau",
@@ -11374,6 +11798,7 @@
 2650,
 4140
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "formerly rue d'Arnetal",
@@ -11407,6 +11832,7 @@
 2720,
 4330
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -11440,6 +11866,7 @@
 2960,
 4055
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue du Bourg-l'Abbe",
@@ -11473,6 +11900,7 @@
 3010,
 4250
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "the rue Palée (after Jean Palée), later the rue du Petit-Hurleur (Cousin 1875)",
@@ -11506,6 +11934,7 @@
 3030,
 4480
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue du Petit-Lion(-Saint-Sauveur), now part of rue Tiquetonne",
@@ -11539,6 +11968,7 @@
 3350,
 4140
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -11572,6 +12002,7 @@
 3580,
 4400
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "absorbed by rue Rambuteau; later rue de la Chanverrerie",
@@ -11605,6 +12036,7 @@
 3720,
 4460
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue des Precheurs",
@@ -11638,6 +12070,7 @@
 3850,
 4460
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -11671,6 +12104,7 @@
 3960,
 4480
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue aux Fers, now part of rue Berger",
@@ -11708,6 +12142,7 @@
 3990,
 4150
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "label reads (Au)bri (le) Bouche(r)",
@@ -11741,6 +12176,7 @@
 4200,
 4380
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "printed R. DE LA FER RONERIE",
@@ -11774,6 +12210,7 @@
 4210,
 4150
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "formerly rue Troussevache",
@@ -11807,6 +12244,7 @@
 4370,
 4120
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue des Lombards",
@@ -11840,6 +12278,7 @@
 4590,
 4150
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "printed LA HEAV MERIE",
@@ -11873,6 +12312,7 @@
 4700,
 4060
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -11906,6 +12346,7 @@
 4790,
 4400
 ],
+"also_px": [],
 "orient": "v",
 "flag": "unsure",
 "note": "later the rue Perrin-Gasselin and rue du Chevalier-du-Guet; Ducerceau's plan uses the same name (Cousin 1875)",
@@ -11939,6 +12380,7 @@
 4960,
 4100
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue du Crucifix-Saint-Jacques; later rue Saint-Jacques la Boucherie",
@@ -11972,6 +12414,7 @@
 4980,
 4460
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -12005,6 +12448,7 @@
 6030,
 4000
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -12038,6 +12482,7 @@
 6215,
 4060
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "labelled 'rue de la Verrerie' by mistake, as on Ducerceau's plan of 1555",
@@ -12075,6 +12520,7 @@
 6305,
 4010
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "later rue Saint-Eloi",
@@ -12108,6 +12554,7 @@
 6385,
 4040
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -12141,6 +12588,7 @@
 6970,
 4050
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -12173,6 +12621,12 @@
 "px": [
 7250,
 4350
+],
+"also_px": [
+[
+7250,
+4350
+]
 ],
 "orient": "v",
 "flag": "ok",
@@ -12207,6 +12661,7 @@
 7290,
 4100
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -12240,6 +12695,7 @@
 7310,
 4340
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "handwritten addition; rue Percée(-Saint-André)",
@@ -12273,6 +12729,7 @@
 7400,
 4110
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -12306,6 +12763,7 @@
 7420,
 4400
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "handwritten addition",
@@ -12339,6 +12797,7 @@
 7500,
 4400
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "handwritten addition",
@@ -12366,6 +12825,7 @@
 7580,
 4170
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -12399,6 +12859,7 @@
 7580,
 4260
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "rue de la Harpe",
@@ -12432,6 +12893,7 @@
 7870,
 4150
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -12469,6 +12931,7 @@
 8300,
 4160
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -12502,6 +12965,7 @@
 8610,
 4180
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue des Poirees",
@@ -12535,6 +12999,7 @@
 2020,
 4600
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "formerly rue des Filles-Dieu",
@@ -12568,6 +13033,7 @@
 2550,
 4800
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -12601,6 +13067,7 @@
 2670,
 4500
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue du Renard(-Saint-Sauveur)",
@@ -12628,6 +13095,7 @@
 2670,
 4800
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue Beaurepaire",
@@ -12665,6 +13133,7 @@
 2710,
 4580
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue des Deux-Portes",
@@ -12696,6 +13165,7 @@
 2850,
 4800
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "originally rue Tire-Vit, later rue Tire-Boudin, renamed rue Marie-Stuart",
@@ -12723,6 +13193,7 @@
 2870,
 4930
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -12756,6 +13227,7 @@
 3000,
 4820
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue Pavée, now part of rue Tiquetonne",
@@ -12789,6 +13261,7 @@
 3140,
 4700
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "formerly rue de Bourgogne",
@@ -12822,6 +13295,7 @@
 3160,
 4930
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue au Comte-d'Artois, now part of rue Montorgueil",
@@ -12855,6 +13329,7 @@
 3220,
 4550
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -12888,6 +13363,7 @@
 3460,
 4720
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -12921,6 +13397,7 @@
 3550,
 4510
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue Mondetour",
@@ -12954,6 +13431,7 @@
 3810,
 4750
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": null,
@@ -12987,6 +13465,7 @@
 4000,
 4995
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "formerly rue du Four",
@@ -13020,6 +13499,7 @@
 4050,
 4915
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue des Prouvaires",
@@ -13053,6 +13533,7 @@
 4080,
 4700
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -13086,6 +13567,7 @@
 4110,
 4560
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -13119,6 +13601,7 @@
 4440,
 4850
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -13152,6 +13635,7 @@
 4570,
 4540
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "as on Ducerceau's plan, 'rue des Chats' stands on the rue des Déchargeurs, not on the rue de la Limace beside it (Cousin 1875)",
@@ -13185,6 +13669,7 @@
 4620,
 4670
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue des Bourdonnais",
@@ -13218,6 +13703,7 @@
 4630,
 4960
 ],
+"also_px": [],
 "orient": "v",
 "flag": "unsure",
 "note": "on the line of the rue Béthisy, which the 'Plan de tapisserie' already calls rue du Bout (Cousin 1875; his square reference, VII, does not match the label's sheet, VI)",
@@ -13245,6 +13731,7 @@
 4830,
 4925
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -13278,6 +13765,7 @@
 5000,
 4550
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue des Deux-Portes, by the chapel of the goldsmiths",
@@ -13311,6 +13799,7 @@
 5130,
 4950
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue Saint-Germain-l'Auxerrois",
@@ -13344,6 +13833,7 @@
 6930,
 4825
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue Pavée(-Saint-André), renamed rue Séguier in 1864",
@@ -13371,6 +13861,7 @@
 6970,
 4680
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "printed 'rue du Battoir', but this is the rue Gît-le-Cœur; the real rue du Battoir carries the name 'Serpente' (Cousin 1875)",
@@ -13404,6 +13895,7 @@
 7030,
 4560
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue de l'Hirondelle",
@@ -13437,6 +13929,7 @@
 7420,
 4950
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "formerly rue du Cimetière-Saint-André",
@@ -13464,6 +13957,7 @@
 7480,
 4730
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -13497,6 +13991,7 @@
 7550,
 4560
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "rue Hautefeuille",
@@ -13530,6 +14025,7 @@
 7560,
 4900
 ],
+"also_px": [],
 "orient": "v",
 "flag": "unsure",
 "note": "printed R. DE LASER PAN TE",
@@ -13563,6 +14059,7 @@
 7780,
 4540
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -13590,6 +14087,7 @@
 7920,
 4960
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "formerly rue des Cordeliers",
@@ -13623,6 +14121,7 @@
 3020,
 5130
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "rue Tiquetonne",
@@ -13656,6 +14155,7 @@
 3250,
 5250
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": null,
@@ -13689,6 +14189,7 @@
 3260,
 5450
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "formerly rue de la Plâtrière",
@@ -13722,6 +14223,7 @@
 3640,
 5080
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "formerly rue du Séjour",
@@ -13755,6 +14257,7 @@
 4000,
 5050
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "formerly rue des (Vieilles-)Étuves(-Saint-Honoré)",
@@ -13782,6 +14285,7 @@
 4090,
 5220
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue d'Orleans (Saint-Honore)",
@@ -13813,6 +14317,7 @@
 4470,
 5450
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "printed 'rue des Poulies', but this is the rue d'Autriche (Autruche): around here the engraver shifted the names of about ten streets by one (Cousin 1875)",
@@ -13840,6 +14345,7 @@
 4480,
 5250
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "printed 'rue des Deux-Écus', but this is the rue des Poulies: around here the engraver shifted the names of about ten streets by one (Cousin 1875)",
@@ -13873,6 +14379,7 @@
 6850,
 5210
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -13906,6 +14413,7 @@
 7250,
 5050
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -13939,6 +14447,7 @@
 7700,
 5050
 ],
+"also_px": [],
 "orient": "d",
 "flag": "unsure",
 "note": "rue du Paon(-Saint-André), later rue Larrey",
@@ -13972,6 +14481,7 @@
 8330,
 5350
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "'rue Neuve' at the entrance of the faubourg Saint-Germain: the rue Garancière (Cousin 1875)",
@@ -14005,6 +14515,7 @@
 8480,
 5410
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": null,
@@ -14038,6 +14549,7 @@
 2860,
 5580
 ],
+"also_px": [],
 "orient": "d",
 "flag": "unsure",
 "note": "rue des (Vieux-)Augustins, now rue d'Argout and rue Hérold",
@@ -14075,6 +14587,7 @@
 2980,
 5500
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "formerly rue Sainte-Marie-l'Égyptienne",
@@ -14108,6 +14621,7 @@
 3150,
 5600
 ],
+"also_px": [],
 "orient": "d",
 "flag": "unsure",
 "note": "rue Breneuse = rue Verdelet (Merderet), between the rue Jean-Jacques-Rousseau and the rue de la Jussienne (Paris register of vanished streets; Lazare 1844); later absorbed in the rue Pagevin; later rue Pagevin",
@@ -14141,6 +14655,7 @@
 3150,
 5820
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "formerly rue Pagevin",
@@ -14174,6 +14689,7 @@
 3260,
 5700
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "rue Coq-Heron",
@@ -14207,6 +14723,7 @@
 3530,
 5780
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": null,
@@ -14240,6 +14757,7 @@
 3860,
 5580
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue de Grenelle(-Saint-Honoré), now part of rue Jean-Jacques-Rousseau",
@@ -14273,6 +14791,7 @@
 4280,
 5820
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -14306,6 +14825,7 @@
 4420,
 5760
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "printed 'rue du Coq', but this is the rue du Champ-Fleuri: around here the engraver shifted the names of about ten streets by one (Cousin 1875); later rue de la Bibliothèque",
@@ -14333,6 +14853,7 @@
 4440,
 5970
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "printed 'rue du Chantre', but this is the rue Jean-Saint-Denis: around here the engraver shifted the names of about ten streets by one (Cousin 1875); the old rue Pierre-Lescot it merged into has also gone (not today's rue Pierre-Lescot)",
@@ -14366,6 +14887,7 @@
 4470,
 5640
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "printed 'rue de l'Autruche', but this is the rue du Coq: around here the engraver shifted the names of about ten streets by one (Cousin 1875)",
@@ -14403,6 +14925,7 @@
 4480,
 5870
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "printed 'rue du Champ-Fleuri', but this is the rue du Chantre: around here the engraver shifted the names of about ten streets by one (Cousin 1875)",
@@ -14436,6 +14959,7 @@
 4830,
 5900
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "printed 'rue Froidmanteau', but this is the rue de Beauvais: around here the engraver shifted the names of about ten streets by one (Cousin 1875)",
@@ -14469,6 +14993,7 @@
 9030,
 5950
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "the 'grant rue Saint-Sulpice', now rue du Vieux-Colombier",
@@ -14502,6 +15027,7 @@
 9480,
 5520
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "rue de Vaugirard",
@@ -14535,6 +15061,7 @@
 3590,
 6000
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "formerly rue des Petits-Champs",
@@ -14568,6 +15095,7 @@
 4460,
 6150
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "printed 'rue de Beauvais', but this is the first stretch of the rue Saint-Thomas-du-Louvre: around here the engraver shifted the names of about ten streets by one (Cousin 1875)",
@@ -14601,6 +15129,7 @@
 4490,
 6060
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "printed 'rue Jean-Saint-Denis', but this is the rue Froidmanteau: around here the engraver shifted the names of about ten streets by one (Cousin 1875); later rue du Musée",
@@ -14634,6 +15163,7 @@
 4990,
 6100
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "rue Saint-Thomas-du-Louvre",
@@ -14667,6 +15197,7 @@
 6540,
 6300
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -14700,6 +15231,7 @@
 9130,
 6150
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -14727,6 +15259,7 @@
 4200,
 150
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "printed MOTREVL SVRLEBOIS; Montreuil",
@@ -14768,6 +15301,7 @@
 7010,
 265
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Perci (Bercy)",
@@ -14809,6 +15343,7 @@
 7060,
 100
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Conflans",
@@ -14850,6 +15385,7 @@
 8590,
 290
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Ivry",
@@ -14891,6 +15427,7 @@
 9150,
 160
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Vitry",
@@ -14932,6 +15469,7 @@
 9680,
 230
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Villejuif",
@@ -14973,6 +15511,7 @@
 10540,
 430
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Gentilly",
@@ -15014,6 +15553,7 @@
 10710,
 305
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Bicetre",
@@ -15055,6 +15595,7 @@
 350,
 690
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Belleville",
@@ -15096,6 +15637,7 @@
 740,
 675
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Bagnolet",
@@ -15137,6 +15679,7 @@
 5490,
 655
 ],
+"also_px": [],
 "orient": "h",
 "flag": "unsure",
 "note": "printed RVELI; Reuilly",
@@ -15174,6 +15717,7 @@
 2470,
 1040
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the hamlet of Popincourt outside the wall; its name survives in the rue Popincourt",
@@ -15211,6 +15755,7 @@
 980,
 1950
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "La Courtille",
@@ -15248,6 +15793,7 @@
 880,
 3180
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the marais: market gardens on the old marshland north of the wall (today the 10th arrondissement), not the Marais district",
@@ -15277,6 +15823,7 @@
 1290,
 3560
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the faubourg Saint-Laurent",
@@ -15306,6 +15853,7 @@
 770,
 4325
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": null,
@@ -15347,6 +15895,12 @@
 1190,
 4515
 ],
+"also_px": [
+[
+1080,
+4890
+]
+],
 "orient": "h",
 "flag": "ok",
 "note": "the Villeneuve-sur-Gravois",
@@ -15384,6 +15938,7 @@
 270,
 5345
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Clignancourt",
@@ -15421,6 +15976,7 @@
 250,
 5530
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "Montmartre",
@@ -15462,6 +16018,7 @@
 980,
 5800
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": "Grange-Bateliere",
@@ -15499,6 +16056,7 @@
 8000,
 5730
 ],
+"also_px": [],
 "orient": "d",
 "flag": "ok",
 "note": null,
@@ -15536,6 +16094,7 @@
 770,
 6600
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "Les Porcherons",
@@ -15573,6 +16132,7 @@
 4200,
 6800
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": null,
@@ -15610,6 +16170,7 @@
 2400,
 7100
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "La Ville-l'Eveque",
@@ -15647,6 +16208,7 @@
 3670,
 7710
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Le Roule",
@@ -15688,6 +16250,7 @@
 5950,
 7580
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Chaillot",
@@ -15729,6 +16292,7 @@
 10000,
 7745
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "Auteuil",
@@ -15770,6 +16334,7 @@
 2897,
 3965
 ],
+"also_px": [],
 "orient": "v",
 "flag": "ok",
 "note": "Hue-Leu, the old name of the rue du Grand-Hurleur: 'very well named here' (Cousin 1875)",
@@ -15803,6 +16368,7 @@
 4470,
 2273
 ],
+"also_px": [],
 "orient": "h",
 "flag": "ok",
 "note": "the rue Tiron or Tison, printed 'R. de Ison' (Cousin 1875)",

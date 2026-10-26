@@ -31,7 +31,7 @@ L0247,CUR:rue Cloche Perce,high,,formerly rue Renaut-le-Fèvre
 L0248,CUR:rue de Jouy,high,,printed 'R. pet io . ni': pet(ite) R. (de) Ioui (Cousin 1875)
 L0249,CUR:rue Geoffroy l'Asnier,high,standing,
 L0250,CUR:rue Grenier sur l'Eau,high,standing,label reads Garnier sur l'Eau (old spelling: Garnier sur l'Yaue)
-L0251,DUP:L0252,,,
+L0251,CUR:rue du Fauconnier,high,,"printed 'R. Nonnain', but this is the rue du Fauconnier: the engraver gave it the name of the neighbouring rue des Nonnains-d'Yères by mistake (Cousin 1875)"
 L0252,CUR:rue des Nonnains d'Hyères,high,,
 L0253,CUR:rue Lacépède,high,,formerly rue Copeau
 L0254,CUR:rue Mouffetard,medium,,"the main street of the faubourg Saint-Marcel, from the Porte Bordelles"

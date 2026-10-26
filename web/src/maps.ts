@@ -470,11 +470,13 @@ export class MapView {
   private dotsData(which: Which): FeatureCollection {
     return {
       type: 'FeatureCollection',
-      features: this.candidates.map((e) => ({
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: which === 'old' ? e.oldLL : e.geo },
-        properties: { id: e.place.id, status: statusClass(e.place.status), kind: e.geoKind },
-      })),
+      // On the old map a place can have several labels (alsoLL); each gets its own dot.
+      features: this.candidates.flatMap((e) =>
+        (which === 'old' ? [e.oldLL, ...e.alsoLL] : [e.geo]).map((c) => ({
+          type: 'Feature' as const,
+          geometry: { type: 'Point' as const, coordinates: c },
+          properties: { id: e.place.id, status: statusClass(e.place.status), kind: e.geoKind },
+        }))),
     };
   }
 
@@ -533,11 +535,13 @@ export class MapView {
     let best: Entry | null = null;
     let bd = r * r;
     for (const e of this.candidates) {
-      const p = map.project(which === 'old' ? e.oldLL : e.geo);
-      const d = (p.x - x) ** 2 + (p.y - y) ** 2;
-      if (d < bd) {
-        bd = d;
-        best = e;
+      for (const ll of which === 'old' ? [e.oldLL, ...e.alsoLL] : [e.geo]) {
+        const p = map.project(ll);
+        const d = (p.x - x) ** 2 + (p.y - y) ** 2;
+        if (d < bd) {
+          bd = d;
+          best = e;
+        }
       }
     }
     return best;

@@ -14,6 +14,8 @@ export interface Place {
   old: string;
   type: PlaceType | string;
   px: [number, number];
+  /** Other labels on the scan naming the same place (clickable too). */
+  also_px?: [number, number][];
   orient: 'h' | 'v' | 'd' | string;
   flag: 'ok' | 'unsure' | string;
   note: string | null;

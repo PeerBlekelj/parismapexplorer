@@ -16,6 +16,7 @@ export interface Entry {
   title: string;   // display form of the old name
   px: Vec2;        // label position on the scan
   oldLL: Vec2;     // pseudo-lnglat on the old-map plane
+  alsoLL: Vec2[];  // other labels for the same place, on the old-map plane
   geo: Vec2;       // [lng, lat] on the modern map
   geoKind: GeoKind;
 }
@@ -36,7 +37,8 @@ export function buildEntries(places: Place[], T: PixelGeoTransform): Entry[] {
         geo = T.pxToLngLat(px);
         geoKind = 'estimated';
       }
-      return { place, title: displayOld(place.old), px, oldLL: pxToLngLat(px), geo, geoKind };
+      const alsoLL = (place.also_px ?? []).map((q) => pxToLngLat([q[0], q[1]]));
+      return { place, title: displayOld(place.old), px, oldLL: pxToLngLat(px), alsoLL, geo, geoKind };
     });
 }
 

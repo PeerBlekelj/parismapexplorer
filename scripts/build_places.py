@@ -77,8 +77,17 @@ if p.exists():
         cousin[r["id"]] = {"label": f"Cousin 1875, p. {r['page']}", "url": COUSIN.format(f=int(r["page"]) + 8),
                            "name": cousin_name(r["cousin_name"])}
 
+# A label that repeats another (e.g. a second "LA VILLE NEUVE") is not a place of its own, but its
+# position stays clickable on the old map: it is listed under the main place as `also_px`.
+inv_rows = list(csv.DictReader(open(root / "data/labels_inventory.csv")))
+also = {}
+for r in inv_rows:
+    dup = nn(ident.get(r["id"], {}).get("duplicate_of"))
+    if dup:
+        also.setdefault(dup, []).append([int(r["x"]), int(r["y"])])
+
 places = []
-for r in csv.DictReader(open(root / "data/labels_inventory.csv")):
+for r in inv_rows:
     if r["type"] == "decoration":
         continue
     i = ident.get(r["id"], {})
@@ -89,6 +98,7 @@ for r in csv.DictReader(open(root / "data/labels_inventory.csv")):
         "old": r["text"],
         "type": r["type"],
         "px": [int(r["x"]), int(r["y"])],
+        "also_px": also.get(r["id"], []),
         "orient": r["orient"],
         "flag": r["flag"],
         "note": nn(i.get("note")) or nn(r["note"]),

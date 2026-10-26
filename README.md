@@ -8,7 +8,7 @@ modern name and see where it was and what is there now.
 dated, how its only copy turned up in Basel; also in [French](https://paris1550.vercel.app/fr/) and
 [Swedish](https://paris1550.vercel.app/sv/)). The map itself: https://paris1550.vercel.app/map/
 
-- 455 places named on the map, each identified with today's place (or marked as vanished, shown
+- 457 places named on the map, each identified with today's place (or marked as vanished, shown
   where it stood), with a short description and sources.
 - The 1550 map and modern Paris side by side and synced, or overlaid: the woodcut is warped onto
   modern streets with a thin-plate spline through 46 control points (typical error about 60 m).

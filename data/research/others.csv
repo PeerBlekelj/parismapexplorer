@@ -160,11 +160,11 @@ L0157,Collège Mignon,vanished,,medium,,,
 L0158,Collège de Bourgogne,vanished,,medium,,,
 L0159,,renamed,Quai du Louvre (formerly quai de l'École),medium,,"l'École Saint-Germain, the riverbank before Saint-Germain-l'Auxerrois that gave its name to the quai de l'École, now part of the quai du Louvre (Cousin 1875)",
 L0160,Collège des Bons-Enfants,vanished,,medium,,"college of the Bons-Enfants, rue Saint-Honoré",
-L0167,Enceinte de Charles V,vanished,,medium,,a bastion of the city wall,
+L0167,Enceinte de Charles V,vanished,,medium,,"the Bastillon Saint-Antoine, a bastion of the city wall by the Porte Saint-Antoine (Cousin 1875: II,2)",
 L0168,Porte Saint-Antoine,vanished,Place de la Bastille,high,,,
 L0169,Bastille,vanished,Place de la Bastille,high,,stormed 14 July 1789 and demolished,
 L0170,,vanished,,medium,,"the porte de la Barre, faubourg Saint-Marcel (Cousin 1875)",
-L0171,,,,medium,L0167,second bastion label,
+L0171,Enceinte de Charles V,vanished,,medium,,"the Bastillon du Temple, a bastion of the north wall by the Porte du Temple (Cousin 1875: 'Bastillon (le) du Temple', I,5); not the Bastillon Saint-Antoine (L0167)",map
 L0172,Porte du Temple,vanished,,high,,,map
 L0173,Porte Saint-Marcel,vanished,,high,,"gate of Philip Augustus's wall, rue Descartes",
 L0174,Porte Saint-Martin,vanished,Porte Saint-Martin (the triumphal arch of 1674 stands near the site),medium,,"the medieval gate, not the triumphal arch of 1674",

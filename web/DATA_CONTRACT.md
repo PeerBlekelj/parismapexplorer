@@ -16,6 +16,7 @@ The app reads two static files. They are **generated** by `scripts/build_places.
       "type": "church_religious", // street | church_religious | college | building | gate_wall |
                                   // bridge | square_market | village_faubourg | other
       "px": [6430, 3665],         // label position in source-image pixels (x right, y down)
+      "also_px": [[6420, 3900]],  // other labels naming the same place (duplicates); [] if none
       "orient": "h",              // label direction on the map: h | v | d (diagonal)
       "flag": "ok",               // ok | unsure  (reading of the label itself is uncertain)
       "note": "…" | null,         // working note from the transcription
