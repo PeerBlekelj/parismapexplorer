@@ -42,8 +42,11 @@ function fillStaticText(): void {
   $('.viewtabs [data-view=map]').textContent = t.viewMap;
   $('.viewtabs [data-view=table]').textContent = t.viewTable;
   $<HTMLInputElement>('#q').placeholder = t.searchPlaceholder;
+  $('#q').title = t.searchLabel;
+  $('#q').setAttribute('aria-label', t.searchLabel);
   $('#q-clear').title = t.searchClear;
   $('#q-clear').setAttribute('aria-label', t.searchClear);
+  $('#filters-btn').title = t.filtersTitle;
   const modes: Record<string, string> = { side: t.modeSide, overlay: t.modeOverlay, old: t.modeOld, mod: t.modeMod };
   document.querySelectorAll<HTMLButtonElement>('#modes button').forEach((b) => (b.textContent = modes[b.dataset.m ?? ''] ?? ''));
   $('#orient .lbl').textContent = t.orientOriginal;
@@ -88,6 +91,8 @@ async function main(): Promise<void> {
     types: new Set<string>(),
     unsure: false,
     selected: null as Entry | null,
+    lastSelected: null as Entry | null, // stays highlighted in the list after Back
+    listScroll: 0,                      // list scroll position when the card opened
     view: 'map' as 'map' | 'table',
     mode: 'side' as Mode,
     orientation: 'north' as Orientation,
@@ -138,8 +143,32 @@ async function main(): Promise<void> {
         : state.unsure;
       c.classList.toggle('on', on);
     });
+    updateFiltersBtn();
+    if (state.selected) closeCard(false);
     refresh();
   });
+
+  // ---------- filters menu ----------
+  const filtersBtn = $<HTMLButtonElement>('#filters-btn');
+  const filtersEl = $('#filters');
+  function updateFiltersBtn(): void {
+    const n = state.types.size + (state.unsure ? 1 : 0);
+    filtersBtn.innerHTML = `${esc(n ? t.filtersActive(n) : t.filters)} <span class="caret" aria-hidden="true">▾</span>`;
+    filtersBtn.classList.toggle('active', n > 0);
+  }
+  let filtersOpen = false;
+  function setFiltersOpen(open: boolean): void {
+    filtersOpen = open;
+    filtersEl.hidden = !open;
+    filtersBtn.setAttribute('aria-expanded', String(open));
+    filtersBtn.classList.toggle('open', open);
+  }
+  filtersBtn.addEventListener('click', () => setFiltersOpen(!filtersOpen));
+  document.addEventListener('pointerdown', (ev) => {
+    const target = ev.target as Node;
+    if (filtersOpen && !filtersEl.contains(target) && !filtersBtn.contains(target)) setFiltersOpen(false);
+  });
+  updateFiltersBtn();
 
   // ---------- results ----------
   function filterActive(): boolean {
@@ -150,7 +179,7 @@ async function main(): Promise<void> {
     const p = e.place;
     const m = modernText(p);
     const second = p.status ? statusLabel(p.status).toLowerCase() : typeLabel(p.type);
-    return `<div class="result${state.selected === e ? ' sel' : ''}" data-id="${esc(p.id)}" role="option">` +
+    return `<div class="result${(state.selected ?? state.lastSelected) === e ? ' sel' : ''}" data-id="${esc(p.id)}" role="option">` +
       `<span class="dot ${statusClass(p.status)}"></span>` +
       `<span class="old">${esc(e.title)}${p.flag === 'unsure' ? ' <span class="q" title="' + esc(t.unsureBadge) + '">?</span>' : ''}</span>` +
       `<span class="mod"><span class="${m.placeholder ? 'placeholder' : ''}">${esc(m.text)}</span> · ${esc(second)}</span></div>`;
@@ -182,17 +211,24 @@ async function main(): Promise<void> {
     $('#q-clear').hidden = !q.value;
     clearTimeout(timer);
     timer = window.setTimeout(() => {
+      if (q.value === state.query) return;
       state.query = q.value;
+      if (state.selected) closeCard(false);
       refresh();
     }, 70);
   });
   q.addEventListener('keydown', (ev) => {
     if (ev.key === 'Enter') {
       clearTimeout(timer);
-      state.query = q.value;
-      refresh();
+      if (q.value !== state.query) {
+        state.query = q.value;
+        refresh();
+      }
       if (state.results[0]) select(state.results[0].place.id, { fly: true });
-    } else if (ev.key === 'Escape') {
+    } else if (ev.key === 'Escape' && q.value) {
+      // With text in the box, Esc clears it; with an empty box it falls through to the
+      // document handler (close the filters menu or the card).
+      ev.stopPropagation();
       q.value = '';
       q.dispatchEvent(new Event('input'));
     }
@@ -204,17 +240,22 @@ async function main(): Promise<void> {
   });
 
   // ---------- selection ----------
+  // A selected place opens as a card that replaces the list (drill-in); Back, × and Esc
+  // return to the list, scrolled to where it was, with the place still highlighted.
   function select(id: string | null, opts: { fly: boolean; source?: 'old' | 'mod'; fromTable?: boolean; instant?: boolean }): void {
     const e = id ? byId.get(id) ?? null : null;
+    if (e && !state.selected) state.listScroll = listEl.scrollTop;
     state.selected = e;
+    if (e) state.lastSelected = e;
     if (opts.fromTable) setView('map');
     listEl.querySelectorAll('.result.sel').forEach((n) => n.classList.remove('sel'));
+    const item = state.lastSelected
+      ? listEl.querySelector(`.result[data-id="${CSS.escape(state.lastSelected.place.id)}"]`)
+      : null;
+    item?.classList.add('sel');
     app.classList.toggle('has-sel', !!e);
     if (e) {
-      const item = listEl.querySelector(`.result[data-id="${CSS.escape(e.place.id)}"]`);
-      item?.classList.add('sel');
-      renderCard(cardEl, e, T, () => select(null, { fly: false }));
-      requestAnimationFrame(() => item?.scrollIntoView({ block: 'nearest' }));
+      renderCard(cardEl, e, T, state.results.length, () => closeCard(true));
       history.replaceState(null, '', `${BASE}place/${encodeURIComponent(e.place.id)}/${location.search}`);
       document.title = `${e.place.modern ?? e.place.old} · Paris in 1550`;
     } else {
@@ -225,6 +266,30 @@ async function main(): Promise<void> {
     maps.select(e, opts);
     if (state.view === 'table') table.update(state.results, e?.place.id ?? null, t.count(state.results.length, total));
   }
+
+  /** Back to the list. `restore` puts the list back where it was (false when the results are
+   *  about to change anyway, e.g. a new search). */
+  function closeCard(restore: boolean): void {
+    select(null, { fly: false });
+    if (!restore) return;
+    listEl.scrollTop = state.listScroll;
+    const item = listEl.querySelector<HTMLElement>('.result.sel');
+    if (item) {
+      // Opened from the map or a link: the row may be outside the remembered view.
+      const lr = listEl.getBoundingClientRect(), ir = item.getBoundingClientRect();
+      if (ir.top < lr.top || ir.bottom > lr.bottom) item.scrollIntoView({ block: 'center' });
+    }
+  }
+
+  document.addEventListener('keydown', (ev) => {
+    if (ev.key !== 'Escape' || ev.defaultPrevented) return;
+    if (filtersOpen) {
+      setFiltersOpen(false);
+      filtersBtn.focus();
+    } else if (state.selected) {
+      closeCard(true);
+    }
+  });
 
   window.addEventListener('hashchange', () => {
     const id = placeIdFromUrl();

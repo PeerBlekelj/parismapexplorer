@@ -7,7 +7,9 @@ import { t } from './i18n';
 import { modernText, type Entry } from './model';
 import type { PixelGeoTransform } from './transform';
 
-export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, onClose: () => void): void {
+// `backCount` is the number of places in the list the card was opened over; the back link and
+// the × both call `onClose`, which returns to that list.
+export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, backCount: number, onClose: () => void): void {
   const p = e.place;
   const m = modernText(p);
   const unsure = p.flag === 'unsure';
@@ -40,6 +42,7 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, onCl
 
   el.innerHTML = `
     <article class="card">
+      <button class="card-back" type="button">${esc(t.backToList(backCount))}</button>
       <button class="card-close" type="button" aria-label="${esc(t.cardClose)}" title="${esc(t.cardClose)}">×</button>
       <div class="kicker">${esc(typeLabel(p.type))}
         <span class="badge ${statusClass(p.status)}">${esc(statusLabel(p.status))}</span>
@@ -65,6 +68,7 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, onCl
     </article>`;
 
   el.querySelector('.card-close')?.addEventListener('click', onClose);
+  el.querySelector('.card-back')?.addEventListener('click', onClose);
   // The address bar already shows this link; a plain click shouldn't reload the app.
   el.querySelector('.permalink')?.addEventListener('click', (ev) => ev.preventDefault());
   el.scrollTop = 0;

@@ -2,6 +2,38 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-26 (branch `layout-a`) — sidebar layout A, drill-in
+
+**Done** (not merged, not deployed: for review on the machine with the tiles)
+- **Compact header:** the title is on one line (18 px) with a 9 px subtitle under it, then one row:
+  search, with "Filters ▾" at its right end, and the Map / Table toggle. The header is now 100 px
+  (was ~350 px). The type chips, "All" and "Unsure reading" moved into a dropdown under the row;
+  same state and behaviour. The button reads "Filters · N" in red when N filters are on. The
+  dropdown closes on an outside click, on Esc or on the button.
+- **Drill-in:** with a place selected, the count and list are hidden and the card fills the
+  sidebar between header and credits (736 px of 900), scrolling on its own. "← Back to N places"
+  at the top (N = current results), the × and Esc all return to the list at its old scroll
+  position with the place highlighted (scrolled into view if it was picked on the map or a link).
+- Typing a search, or changing a filter, while a card is open returns to the list with the new
+  results. Enter in search still opens the first result.
+- Search placeholder shortened to "Search…" (the field is ~90 px wide now); the full "Search old
+  or modern names" is its title and aria-label.
+- Files: `web/index.html`, `web/src/main.ts`, `web/src/card.ts`, `web/src/i18n.ts`, `web/src/style.css`.
+
+**Verified** with `npm run build` and in Chromium (Playwright, 1600×900, no tiles in that
+checkout, OpenFreeMap blocked by the sandbox network): `/place/L0029/` opens in the card (card
+114–835 px, list hidden); Back, × and Esc return to the list (scroll 2000 → 2000, row
+highlighted, URL back to `/`); selecting from the list, table, a map pick (via the `onPick`
+callback) and `#place=L0029` all open the card; Filters → Bridges shows "Filters · 1", 7 results,
+Back reads "Back to 7 places". No console errors apart from the missing tiles and the blocked
+style. At 420 px wide nothing scrolls sideways.
+
+**Open**
+- Not checked with real tiles or real map clicks; a map label click was simulated through the
+  callback.
+- The subtitle at 9 px is small; on a font fallback it may wrap to two lines (it is allowed to).
+- The "Search…" placeholder no longer hints at old vs modern names; the owner may prefer a
+  narrower Map/Table toggle instead.
 ## 2026-10-26 (afternoon) — Cousin 1875 checked; layout A sent to a cloud session
 
 **Cousin's table, done.** PDF on the mini (`source/cousin-1875-…pdf`, gitignored). It has an OCR layer, but

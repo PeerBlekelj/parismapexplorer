@@ -9,10 +9,14 @@ const en = {
   viewMap: 'Map',
   viewTable: 'Table of places',
 
-  searchPlaceholder: 'Search old or modern names…',
+  searchPlaceholder: 'Search…',
+  searchLabel: 'Search old or modern names',
   searchClear: 'Clear search',
   chipAll: 'All',
   chipUnsure: 'Unsure reading',
+  filters: 'Filters',
+  filtersActive: (n: number) => `Filters · ${n}`,
+  filtersTitle: 'Filter by type or reading',
   count: (n: number, total: number) => (n === total ? `${total} places` : `${n} of ${total} places`),
   noResults: 'No places match. Try fewer letters, or another spelling.',
 
@@ -41,6 +45,7 @@ const en = {
 
   // card
   cardClose: 'Close',
+  backToList: (n: number) => `← Back to ${n} ${n === 1 ? 'place' : 'places'}`,
   intro: 'Search for a place, pick one from the list, or click a label on either map.',
   introNote: 'Every name printed on the 1550 map is listed. Identifications and descriptions are still being added and checked.',
   notIdentified: 'Not identified yet',

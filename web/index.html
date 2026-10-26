@@ -25,16 +25,21 @@
       <aside class="side">
         <div class="top">
           <div class="brand"><span id="brand-title"></span><small id="brand-sub"></small></div>
-          <div class="viewtabs" role="tablist">
-            <button type="button" data-view="map" class="on" role="tab" aria-selected="true"></button>
-            <button type="button" data-view="table" role="tab" aria-selected="false"></button>
+          <div class="toolrow">
+            <div class="search">
+              <label class="q-wrap">
+                <svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <input id="q" type="search" autocomplete="off" spellcheck="false" />
+              </label>
+              <button type="button" id="q-clear" class="q-clear" hidden>×</button>
+              <button type="button" id="filters-btn" class="filters-btn" aria-expanded="false" aria-controls="filters"></button>
+            </div>
+            <div class="viewtabs" role="tablist">
+              <button type="button" data-view="map" class="on" role="tab" aria-selected="true"></button>
+              <button type="button" data-view="table" role="tab" aria-selected="false"></button>
+            </div>
           </div>
-          <label class="search">
-            <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-            <input id="q" type="search" autocomplete="off" spellcheck="false" />
-            <button type="button" id="q-clear" class="q-clear" hidden>×</button>
-          </label>
-          <div class="chips" id="chips"></div>
+          <div class="filters" id="filters" hidden><div class="chips" id="chips"></div></div>
         </div>
         <div class="count" id="count"></div>
         <div class="list" id="list" role="listbox"></div>
