@@ -5,7 +5,7 @@
 
 import './mobile.css';
 import type { Map as MlMap } from 'maplibre-gl';
-import { t } from './i18n';
+import { langBase, t } from './i18n';
 
 type Sheet = 'peek' | 'half' | 'full';
 const ORDER: Sheet[] = ['peek', 'half', 'full'];
@@ -119,7 +119,7 @@ export function initMobile(hooks: MobileHooks): Mobile {
     if (quietPop) {
       quietPop = false;
       // The entry we landed on may be a /place/ link the app was opened with.
-      history.replaceState(null, '', `${import.meta.env.BASE_URL}${location.search}`);
+      history.replaceState(null, '', `${langBase()}${location.search}`);
       return;
     }
     if (!pushed) return;

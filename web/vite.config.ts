@@ -1,23 +1,21 @@
-// After the build: one static page per place (/place/L0123/) with its own title, description
-// and link-preview image, plus sitemap.xml and robots.txt. The pages are copies of the app's
-// index.html with only the <head> meta block swapped, so the app itself is unchanged; it reads
+// After the build: one static page per place and language (/place/L0123/, /fr/place/L0123/,
+// /sv/place/L0123/) with its own title, description and link-preview image, the /fr/ and /sv/
+// home pages, plus sitemap.xml and robots.txt. The pages are copies of the app's index.html with
+// only the <head> meta block swapped, so the app itself is unchanged; it reads the language and
 // the place id from the path. A #place= hash never reaches the server, so link previews need
-// the path form.
+// the path form. The texts come from src/strings.ts, the app's own strings.
 
 import { readFileSync, mkdirSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { defineConfig, type Plugin } from 'vite';
+import { LANGS, localModernIn, STRINGS, type Lang } from './src/strings';
 
 // The site's address, in one place: the HTML pages say %SITE% and get it from siteUrl() below.
 const SITE = 'https://paris1550.vercel.app';
 const NAME = 'Paris 1550';
 
-const STATUS: Record<string, string> = {
-  standing: 'still standing',
-  rebuilt: 'rebuilt',
-  renamed: 'renamed',
-  vanished: 'vanished',
-};
+/** Path of a page in language `l`; `path` is the English one without the leading slash. */
+const langPath = (l: Lang, path: string) => (l === 'en' ? `/${path}` : `/${l}/${path}`);
 
 interface Place {
   id: string;
@@ -25,6 +23,8 @@ interface Place {
   modern: string | null;
   status: string | null;
   summary: string | null;
+  summary_fr?: string | null;
+  summary_sv?: string | null;
 }
 
 const attr = (s: string) =>
@@ -42,16 +42,30 @@ function tidy(old: string): string {
   return old.toLowerCase().replace(/(^|[\s'’.-])(\p{L})/gu, (_, a: string, b: string) => a + b.toUpperCase());
 }
 
-function metaBlock(m: { title: string; desc: string; url: string; image: string; alt: string }): string {
+interface Meta { lang: Lang; title: string; desc: string; path: string; image: string; alt: string; type?: string }
+
+/** canonical (the page itself) and one hreflang alternate per language, x-default = English. */
+function altLinks(l: Lang, path: string): string[] {
+  return [
+    `<link rel="canonical" href="${SITE}${langPath(l, path)}" />`,
+    ...LANGS.map((o) => `<link rel="alternate" hreflang="${o}" href="${SITE}${langPath(o, path)}" />`),
+    `<link rel="alternate" hreflang="x-default" href="${SITE}${langPath('en', path)}" />`,
+  ];
+}
+
+function metaBlock(m: Meta): string {
+  const url = `${SITE}${langPath(m.lang, m.path)}`;
   return [
     `<title>${attr(m.title)}</title>`,
     `<meta name="description" content="${attr(m.desc)}" />`,
-    `<link rel="canonical" href="${m.url}" />`,
-    `<meta property="og:type" content="website" />`,
+    ...altLinks(m.lang, m.path),
+    `<meta property="og:type" content="${m.type ?? 'website'}" />`,
     `<meta property="og:site_name" content="${NAME}" />`,
+    `<meta property="og:locale" content="${STRINGS[m.lang].ogLocale}" />`,
+    ...LANGS.filter((o) => o !== m.lang).map((o) => `<meta property="og:locale:alternate" content="${STRINGS[o].ogLocale}" />`),
     `<meta property="og:title" content="${attr(m.title)}" />`,
     `<meta property="og:description" content="${attr(m.desc)}" />`,
-    `<meta property="og:url" content="${m.url}" />`,
+    `<meta property="og:url" content="${url}" />`,
     `<meta property="og:image" content="${m.image}" />`,
     `<meta property="og:image:width" content="800" />`,
     `<meta property="og:image:height" content="420" />`,
@@ -83,32 +97,54 @@ function sitePages(): Plugin {
       const haveOg = existsSync(resolve(outDir, 'og'));
       if (!haveOg) this.warn('no og/ images: run scripts/make_og_images.py (pages still get the site image)');
 
-      const urls = [`${SITE}/`, `${SITE}/method/`];
-      for (const p of places) {
-        const old = tidy(p.old);
-        const status = p.status ? STATUS[p.status] : null;
-        const title = p.modern && p.modern.toLowerCase() !== old.toLowerCase()
-          ? `${old} (${p.modern}) · Paris 1550`
-          : `${old} · Paris 1550`;
-        const lead = `“${p.old}” on the Truschet & Hoyau plan of Paris, c. 1550` +
-          (status ? `: ${status}` : '') + (p.modern && p.status === 'renamed' ? ` as ${p.modern}` : '') + '.';
-        const desc = clip(p.summary ? `${lead} ${p.summary}` : lead, 200);
-        const url = `${SITE}/place/${p.id}/`;
-        const image = haveOg && existsSync(resolve(outDir, `og/${p.id}.jpg`)) ? `${SITE}/og/${p.id}.jpg` : `${SITE}/og/site.jpg`;
-        const page = html.replace(block, (_, a: string, b: string) =>
-          a + metaBlock({ title, desc, url, image, alt: `The label “${p.old}” on the 1550 map` }) + b);
-        const dir = resolve(outDir, 'place', p.id);
+      // `path` is the English path without the leading slash ('' = home).
+      const write = (m: Meta) => {
+        const page = html
+          .replace(/<html lang="[^"]*">/, `<html lang="${m.lang}">`)
+          .replace(block, (_, a: string, b: string) => a + metaBlock(m) + b);
+        const dir = resolve(outDir, langPath(m.lang, m.path).slice(1));
         mkdirSync(dir, { recursive: true });
         writeFileSync(resolve(dir, 'index.html'), page);
-        urls.push(url);
+      };
+
+      const paths = ['', 'method/'];
+      for (const l of LANGS) {
+        const s = STRINGS[l];
+        write({ lang: l, title: s.siteTitle, desc: s.siteDesc, path: '', image: `${SITE}/og/site.jpg`, alt: s.siteImageAlt });
+      }
+      for (const p of places) {
+        const old = tidy(p.old);
+        const path = `place/${p.id}/`;
+        const image = haveOg && existsSync(resolve(outDir, `og/${p.id}.jpg`)) ? `${SITE}/og/${p.id}.jpg` : `${SITE}/og/site.jpg`;
+        for (const l of LANGS) {
+          const s = STRINGS[l];
+          const modern = p.modern ? localModernIn(p.modern, s) : null;
+          const title = modern && modern.toLowerCase() !== old.toLowerCase()
+            ? `${old} (${modern}) · ${NAME}`
+            : `${old} · ${NAME}`;
+          const lead = s.placeLead(p.old, p.status, modern);
+          // The translated summary, or the English one where there is none yet.
+          const summary = (l === 'fr' ? p.summary_fr : l === 'sv' ? p.summary_sv : null) || p.summary;
+          const desc = clip(summary ? `${lead} ${summary}` : lead, 200);
+          write({ lang: l, title, desc, path, image, alt: s.placeImageAlt(p.old) });
+        }
+        paths.push(path);
       }
 
+      // Every language version is its own <url>, each listing all versions as alternates (the
+      // sitemap form of hreflang; the pages carry the same links in their <head>).
       const day = new Date().toISOString().slice(0, 10);
+      const entries = paths.flatMap((path) => LANGS.map((l) =>
+        `  <url><loc>${SITE}${langPath(l, path)}</loc><lastmod>${day}</lastmod>\n` +
+        [...LANGS.map((o) => [o, langPath(o, path)]), ['x-default', langPath('en', path)]]
+          .map(([h, u]) => `    <xhtml:link rel="alternate" hreflang="${h}" href="${SITE}${u}" />`).join('\n') +
+        '\n  </url>'));
       writeFileSync(resolve(outDir, 'sitemap.xml'),
-        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-        urls.map((u) => `  <url><loc>${u}</loc><lastmod>${day}</lastmod></url>`).join('\n') + '\n</urlset>\n');
+        '<?xml version="1.0" encoding="UTF-8"?>\n' +
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' +
+        entries.join('\n') + '\n</urlset>\n');
       writeFileSync(resolve(outDir, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
-      console.log(`site-pages: ${places.length} place pages, sitemap with ${urls.length} urls`);
+      console.log(`site-pages: ${places.length} places × ${LANGS.length} languages, sitemap with ${entries.length} urls`);
     },
   };
 }
@@ -117,7 +153,12 @@ export default defineConfig({
   plugins: [siteUrl(), sitePages()],
   build: {
     rollupOptions: {
-      input: { main: resolve(import.meta.dirname, 'index.html'), method: resolve(import.meta.dirname, 'method/index.html') },
+      input: {
+        main: resolve(import.meta.dirname, 'index.html'),
+        method: resolve(import.meta.dirname, 'method/index.html'),
+        methodFr: resolve(import.meta.dirname, 'fr/method/index.html'),
+        methodSv: resolve(import.meta.dirname, 'sv/method/index.html'),
+      },
     },
   },
 });
