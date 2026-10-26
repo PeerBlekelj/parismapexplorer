@@ -83,7 +83,7 @@ function sitePages(): Plugin {
       const haveOg = existsSync(resolve(outDir, 'og'));
       if (!haveOg) this.warn('no og/ images: run scripts/make_og_images.py (pages still get the site image)');
 
-      const urls = [`${SITE}/`, `${SITE}/method/`];
+      const urls = [`${SITE}/`, `${SITE}/about/`, `${SITE}/method/`];
       for (const p of places) {
         const old = tidy(p.old);
         const status = p.status ? STATUS[p.status] : null;
@@ -117,7 +117,8 @@ export default defineConfig({
   plugins: [siteUrl(), sitePages()],
   build: {
     rollupOptions: {
-      input: { main: resolve(import.meta.dirname, 'index.html'), method: resolve(import.meta.dirname, 'method/index.html') },
+      input: { main: resolve(import.meta.dirname, 'index.html'), method: resolve(import.meta.dirname, 'method/index.html'),
+        about: resolve(import.meta.dirname, 'about/index.html') },
     },
   },
 });
