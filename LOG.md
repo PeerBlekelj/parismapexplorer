@@ -2,6 +2,23 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-26 (later) — owner's feedback round
+
+- Owner: **state that it was built with Claude Code** → DONE and live: section "How this was built"
+  (`/method/#built`), the sidebar credit ("by Peer Blekelj, built with Claude Code") and the README.
+- **Favicon:** the blue bolt is Vite's default. Four options drawn in `mockups/favicons/`
+  (A serif P + red ring, B the ship of Paris shield, C Seine + ringed Cité, D Notre-Dame cut from
+  the woodcut); sheet `favicon-options.png`. Waiting for the owner's pick.
+- **Sidebar real estate:** the header (brand, tabs, search, 9 chips) eats ~350 px, so a selected
+  place's card is squeezed at the bottom. Four layouts mocked over a real screenshot in
+  `mockups/layout2/`: A drill-in (card replaces the list, ← Back, filters in a menu), B pop-up on
+  the map, C card column between list and map, D card on top of the list. Recommended A. Waiting.
+  All images for review together in `mockups/review/index.html` (not in git).
+- **Cousin 1875: BLOCKED.** No Drive mount on the mini; the Drive connector returns an empty text
+  layer for the PDF (scanned pages) and a base64 download of 78 MB is too big; Gallica answers
+  403 to scripts (and a headless browser try was refused by the safety check — don't retry it).
+  Needs the owner to copy the PDF (or just pp. 58–70) onto the mini.
+
 ## 2026-10-26 — launch + the method page
 
 **Done**
