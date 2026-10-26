@@ -2,6 +2,26 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-26 (13:15) — all four cloud branches merged; live at paris1550.vercel.app
+
+- The owner picked in the cloud sessions directly: favicon **A** ("15" over "50") and phone layout
+  **A** (bottom sheet, stacked "Both" by default, compact cards for the table). Merged in order
+  rename → corrections-research → i18n-fr-sv → mobile; conflicts only in i18n.ts/card.ts (added the
+  FR/SV strings the other branches lacked: correction link, phone short labels).
+- Research: L0007 Pont Arcans (bridge over the Grand Égout, ~rue de Provence × Chaussée-d'Antin) and
+  L0421 rue Breneuse = rue Verdelet (#662) settled → **1 open question** (L0224). The session's
+  quotes came from search extracts; `data/research/open_questions_research.md` flags them for checking.
+  Edge control-point candidates in `data/research/gcp_candidates.md`: NOT yet checked on the scan.
+- **New address https://paris1550.vercel.app**; the old address 308-redirects path-for-path (set as a
+  Vercel project-domain redirect via the API; the host-conditioned redirect in web/vercel.json did
+  not fire because the CDN served the old domain from cache; keep it anyway, harmless).
+- ⚠ The Vercel project IS connected to GitHub: every push made a Vercel build (all failed: no
+  tiles). A successful one would replace the live site with a tile-less one. Added
+  `"git": {"deploymentEnabled": false}` in both vercel.json files (root = where git builds look).
+  Disconnecting outright (`vercel git disconnect`) was refused by the safety check: owner's call.
+- Known gaps: transcription notes, source labels, the per-place pages and the method page are
+  English only; place pages in /fr/ /sv/ = owner to decide.
+
 ## 2026-10-26 (midday) — name chosen; work fanned out to cloud sessions
 
 - **Name: "Paris 1550"** (owner). `paris1550.vercel.app` answered 404 = probably free; the domain move
