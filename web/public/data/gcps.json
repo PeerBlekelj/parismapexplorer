@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T22:52:00+00:00",
+ "generated": "2026-10-26T06:02:01+00:00",
  "image": {
   "width": 10890,
   "height": 7820,
@@ -10,78 +10,78 @@
    "id": "G001",
    "name": "Notre-Dame (west front)",
    "px": [
-    6490,
-    3585
+    6485,
+    3440
    ],
    "lat": 48.85296,
    "lon": 2.34903,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G002",
    "name": "Saint-Eustache",
    "px": [
-    3780,
-    5050
+    3787,
+    4950
    ],
    "lat": 48.86343,
    "lon": 2.34517,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G003",
    "name": "Saint-Germain-des-Pres",
    "px": [
-    8420,
-    6320
+    8304,
+    6427
    ],
    "lat": 48.85394,
    "lon": 2.33427,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G004",
    "name": "Saint-Severin",
    "px": [
-    7190,
-    4040
+    7197,
+    4036
    ],
    "lat": 48.85213,
    "lon": 2.34547,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G005",
    "name": "Saint-Etienne-du-Mont",
    "px": [
-    8590,
-    3080
+    8719,
+    3076
    ],
    "lat": 48.84675,
    "lon": 2.34808,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G006",
    "name": "Bastille (site)",
    "px": [
-    4680,
-    745
+    4642,
+    952
    ],
    "lat": 48.85321,
    "lon": 2.36922,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G007",
    "name": "Louvre (Cour Carree)",
    "px": [
-    5070,
-    5860
+    5110,
+    5722
    ],
    "lat": 48.8606,
    "lon": 2.3376,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G008",
@@ -98,122 +98,122 @@
    "id": "G009",
    "name": "Saint-Jacques-de-la-Boucherie (Tour Saint-Jacques)",
    "px": [
-    4800,
-    3950
+    4712,
+    3870
    ],
    "lat": 48.85805,
    "lon": 2.34885,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G010",
    "name": "Saint-Germain-l'Auxerrois",
    "px": [
-    5000,
-    5225
+    5007,
+    5107
    ],
    "lat": 48.85959,
    "lon": 2.34116,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G011",
    "name": "Saint-Sulpice",
    "px": [
-    8710,
-    5520
+    8806,
+    5660
    ],
    "lat": 48.85099,
    "lon": 2.3348,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G012",
    "name": "Saint-Gervais",
    "px": [
-    5030,
-    2770
+    5076,
+    2788
    ],
    "lat": 48.85547,
    "lon": 2.35403,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G013",
    "name": "Hotel de Ville",
    "px": [
-    5050,
-    3245
+    5057,
+    3170
    ],
    "lat": 48.85655,
    "lon": 2.35223,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G014",
    "name": "Sainte-Chapelle",
    "px": [
-    6430,
-    4340
+    6315,
+    4300
    ],
    "lat": 48.8554,
    "lon": 2.345,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G015",
    "name": "Saint-Medard",
    "px": [
-    9650,
-    1625
+    9534,
+    1643
    ],
    "lat": 48.83988,
    "lon": 2.35019,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G016",
    "name": "Saint-Nicolas-des-Champs",
    "px": [
-    2420,
-    3660
+    2600,
+    3650
    ],
    "lat": 48.86591,
    "lon": 2.35448,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G017",
    "name": "Saint-Martin-des-Champs (Arts et Metiers)",
    "px": [
-    2450,
-    3510
+    2423,
+    3400
    ],
    "lat": 48.86652,
    "lon": 2.35565,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G018",
    "name": "Saint-Julien-le-Pauvre",
    "px": [
-    7030,
-    3860
+    7020,
+    3790
    ],
    "lat": 48.85196,
    "lon": 2.3473,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G019",
    "name": "Saint-Leu-Saint-Gilles",
    "px": [
-    3430,
-    4310
+    3420,
+    4250
    ],
    "lat": 48.8628,
    "lon": 2.35001,
-   "quality": "label"
+   "quality": "place"
   },
   {
    "id": "G020",
@@ -225,50 +225,6 @@
    "lat": 48.85051,
    "lon": 2.34397,
    "quality": "label"
-  },
-  {
-   "id": "L0002",
-   "name": "Pont Notre-Dame",
-   "px": [
-    5620,
-    3755
-   ],
-   "lat": 48.856389,
-   "lon": 2.348889,
-   "quality": "place"
-  },
-  {
-   "id": "L0003",
-   "name": "Petit-Pont",
-   "px": [
-    6640,
-    3965
-   ],
-   "lat": 48.853333,
-   "lon": 2.346944,
-   "quality": "place"
-  },
-  {
-   "id": "L0004",
-   "name": "Pont au Change",
-   "px": [
-    5680,
-    4070
-   ],
-   "lat": 48.856667,
-   "lon": 2.346667,
-   "quality": "place"
-  },
-  {
-   "id": "L0006",
-   "name": "Pont Saint-Michel",
-   "px": [
-    6680,
-    4195
-   ],
-   "lat": 48.854167,
-   "lon": 2.344722,
-   "quality": "place"
   },
   {
    "id": "L0019",
@@ -318,8 +274,8 @@
    "id": "L0050",
    "name": "Église des Billettes",
    "px": [
-    4160,
-    2960
+    4111,
+    2880
    ],
    "lat": 48.85799,
    "lon": 2.354996,
@@ -351,8 +307,8 @@
    "id": "L0066",
    "name": "Église Saint-Laurent",
    "px": [
-    410,
-    3815
+    483,
+    3740
    ],
    "lat": 48.874849,
    "lon": 2.358311,
@@ -362,7 +318,7 @@
    "id": "L0088",
    "name": "Église Saint-Jacques-du-Haut-Pas",
    "px": [
-    9880,
+    10009,
     3990
    ],
    "lat": 48.84361,
@@ -400,6 +356,94 @@
    ],
    "lat": 48.8501,
    "lon": 2.3488,
+   "quality": "place"
+  },
+  {
+   "id": "B01",
+   "name": "Pont Notre-Dame (Right Bank end)",
+   "px": [
+    5437,
+    3750
+   ],
+   "lat": 48.856629,
+   "lon": 2.348904,
+   "quality": "place"
+  },
+  {
+   "id": "B02",
+   "name": "Pont Notre-Dame (Cite end)",
+   "px": [
+    5975,
+    3740
+   ],
+   "lat": 48.855713,
+   "lon": 2.348375,
+   "quality": "place"
+  },
+  {
+   "id": "B03",
+   "name": "Pont au Change (Right Bank end)",
+   "px": [
+    5437,
+    4067
+   ],
+   "lat": 48.857115,
+   "lon": 2.34714,
+   "quality": "place"
+  },
+  {
+   "id": "B04",
+   "name": "Pont au Change (Cite end)",
+   "px": [
+    5905,
+    4070
+   ],
+   "lat": 48.856242,
+   "lon": 2.346596,
+   "quality": "place"
+  },
+  {
+   "id": "B05",
+   "name": "Petit-Pont (Cite end)",
+   "px": [
+    6567,
+    3970
+   ],
+   "lat": 48.853476,
+   "lon": 2.347049,
+   "quality": "place"
+  },
+  {
+   "id": "B06",
+   "name": "Petit-Pont (Left Bank end)",
+   "px": [
+    6763,
+    3970
+   ],
+   "lat": 48.853143,
+   "lon": 2.346861,
+   "quality": "place"
+  },
+  {
+   "id": "B07",
+   "name": "Pont Saint-Michel (Cite end)",
+   "px": [
+    6543,
+    4200
+   ],
+   "lat": 48.854252,
+   "lon": 2.344833,
+   "quality": "place"
+  },
+  {
+   "id": "B08",
+   "name": "Pont Saint-Michel (Left Bank end)",
+   "px": [
+    6803,
+    4200
+   ],
+   "lat": 48.853846,
+   "lon": 2.34443,
    "quality": "place"
   }
  ]

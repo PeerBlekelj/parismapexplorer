@@ -59,6 +59,24 @@ for r in csv.DictReader(open(root / "data/places_others.csv")):
     pts.append({"id": r["id"], "name": r["modern"] or r["old"], "x": x, "y": y,
                 "lat": float(r["lat"]), "lon": float(r["lon"]), "src": "place"})
 
+# Refinements (data/gcps_refined.csv): move a point from its label to the drawn feature, or add
+# precise new points (bridge ends). Bridge labels are dropped when their ends are present.
+REPLACED_BY_ENDS = {"L0002", "L0003", "L0004", "L0006"}
+ref = {r["id"]: r for r in csv.DictReader(open(root / "data/gcps_refined.csv"))} if "--labels-only" not in sys.argv else {}
+if ref:
+    pts = [p for p in pts if p["id"] not in REPLACED_BY_ENDS]
+    for p in pts:
+        r = ref.get(p["id"])
+        if r:
+            p["x"], p["y"], p["src"] = int(r["x"]), int(r["y"]), p["src"] + "+feature"
+            if r["lat"]:
+                p["lat"], p["lon"] = float(r["lat"]), float(r["lon"])
+    have = {p["id"] for p in pts}
+    for r in ref.values():
+        if r["id"] not in have:
+            pts.append({"id": r["id"], "name": r["name"], "x": int(r["x"]), "y": int(r["y"]),
+                        "lat": float(r["lat"]), "lon": float(r["lon"]), "src": "feature"})
+
 # Villages at the edge: coarse (a village is an area), but the only anchors out there.
 WITH_VILLAGES = "--villages" in sys.argv
 if WITH_VILLAGES:
@@ -92,7 +110,7 @@ for k, e in results.items():
     print(f"{k:12s} leave-one-out, city points: median {np.median(c):4.0f} m  p90 {np.percentile(c, 90):5.0f} m"
           f"  | all: median {np.median(e):5.0f} m")
 
-best = min((k for k in results if k.startswith("tps")), key=lambda k: np.median(results[k]))
+best = "tps λ=0.2"  # the setting the app and make_overlay_tiles.py use; report its errors
 e = results[best]
 print(f"\nworst points under {best}:")
 for i in np.argsort(-e)[:8]:

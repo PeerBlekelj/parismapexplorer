@@ -1,0 +1,30 @@
+id,name,x,y,lat,lon,note
+G001,Notre-Dame,6485,3440,,,footprint of the drawn cathedral (facade base at y~3547)
+G002,Saint-Eustache,3787,4950,,,footprint of the drawn church
+G003,Saint-Germain-des-Pres,8304,6427,,,abbey church left of the label (label is in the cloister)
+G004,Saint-Severin,7197,4036,,,drawn church
+G005,Saint-Etienne-du-Mont,8719,3076,,,drawn church south of the label
+G006,Bastille (site),4642,952,,,drawn fortress below the label
+G007,Louvre (medieval castle),5110,5722,,,drawn castle above the label
+G009,Tour Saint-Jacques,4712,3870,,,base of the drawn bell tower (the tower survives)
+G010,Saint-Germain-l'Auxerrois,5007,5107,,,drawn church (facade base y~5187)
+G011,Saint-Sulpice,8806,5660,,,drawn church
+G012,Saint-Gervais,5076,2788,,,drawn church
+G013,Hotel de Ville,5057,3170,,,drawn building (facade base y~3218)
+G014,Sainte-Chapelle,6315,4300,,,drawn chapel; identification of the drawing less certain
+G015,Saint-Medard,9534,1643,,,drawn church
+G016,Saint-Nicolas-des-Champs,2600,3650,,,drawn church facade on rue Saint-Martin
+G017,Saint-Martin-des-Champs,2423,3400,,,drawn priory church
+G018,Saint-Julien-le-Pauvre,7020,3790,,,drawn church
+G019,Saint-Leu-Saint-Gilles,3420,4250,,,drawn church
+L0050,Eglise des Billettes,4111,2880,,,drawn church
+L0066,Eglise Saint-Laurent,483,3740,,,drawn church
+L0088,Saint-Jacques-du-Haut-Pas,10009,3990,,,drawn chapel next to the hospital
+B01,Pont Notre-Dame (Right Bank end),5437,3750,48.856629,2.348904,bridge end; OSM roadway
+B02,Pont Notre-Dame (Cite end),5975,3740,48.855713,2.348375,bridge end; OSM roadway
+B03,Pont au Change (Right Bank end),5437,4067,48.857115,2.347140,bridge end; OSM roadway
+B04,Pont au Change (Cite end),5905,4070,48.856242,2.346596,bridge end; OSM roadway
+B05,Petit-Pont (Cite end),6567,3970,48.853476,2.347049,bridge end; OSM roadway
+B06,Petit-Pont (Left Bank end),6763,3970,48.853143,2.346861,bridge end; OSM roadway
+B07,Pont Saint-Michel (Cite end),6543,4200,48.854252,2.344833,bridge end; OSM roadway
+B08,Pont Saint-Michel (Left Bank end),6803,4200,48.853846,2.344430,bridge end; OSM roadway
