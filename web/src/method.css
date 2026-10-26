@@ -15,6 +15,11 @@ a { color: var(--blue); }
 .doc-head { padding-top: 28px; padding-bottom: 8px; border-bottom: 1px solid var(--rule); }
 .back { font-family: var(--sans); font-size: 13px; text-decoration: none; color: var(--ink2); letter-spacing: .02em; }
 .back:hover { color: var(--ink); }
+.doc-top { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+.langs { font-family: var(--sans); font-size: 13px; color: var(--ink2); letter-spacing: .04em; white-space: nowrap; }
+.langs a { color: var(--ink2); text-decoration: none; padding: 0 1px; }
+.langs a:hover { color: var(--ink); text-decoration: underline; }
+.langs a[aria-current="page"] { color: var(--ink); font-weight: 600; }
 h1 { font-weight: 500; font-size: 46px; line-height: 1.1; margin: 22px 0 12px; }
 .lede { font-size: 23px; color: var(--ink2); margin: 0 0 22px; }
 h2 { font-weight: 500; font-size: 30px; margin: 46px 0 8px; scroll-margin-top: 16px; }

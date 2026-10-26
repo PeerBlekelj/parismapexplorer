@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hur kartan böjdes · Paris 1550</title>
+    <meta name="description" content="Hur en träsnittskarta över Paris i fågelperspektiv från omkring 1550 passades in på dagens stad: läsningen av namnen, kontrollpunkter, en thin-plate spline, felen och begränsningarna." />
+    <link rel="canonical" href="%SITE%/sv/method/" />
+    <link rel="alternate" hreflang="en" href="%SITE%/method/" />
+    <link rel="alternate" hreflang="fr" href="%SITE%/fr/method/" />
+    <link rel="alternate" hreflang="sv" href="%SITE%/sv/method/" />
+    <link rel="alternate" hreflang="x-default" href="%SITE%/method/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Paris 1550" />
+    <meta property="og:locale" content="sv_SE" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:title" content="Hur kartan böjdes · Paris 1550" />
+    <meta property="og:description" content="Hur en träsnittskarta över Paris i fågelperspektiv från omkring 1550 passades in på dagens stad: kontrollpunkter, en thin-plate spline, felen och begränsningarna." />
+    <meta property="og:url" content="%SITE%/sv/method/" />
+    <meta property="og:image" content="%SITE%/og/site.jpg" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="420" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="doc">
+    <header class="doc-head">
+      <div class="doc-top">
+        <a class="back" href="/sv/">← Paris 1550</a>
+        <nav class="langs" aria-label="Språk"><a href="/method/" lang="en" hreflang="en">EN</a> · <a href="/fr/method/" lang="fr" hreflang="fr">FR</a> · <a href="/sv/method/" lang="sv" hreflang="sv" aria-current="page">SV</a></nav>
+      </div>
+      <h1>Hur kartan böjdes</h1>
+      <p class="lede">Truschet &amp; Hoyaus karta över Paris är en bild, inte en uppmätning. För att lägga den över
+        dagens stad måste den böjas: varsamt i mitten, kraftigt i kanterna. Här förklaras hur det gick till, hur
+        mycket man kan lita på resultatet och var det slår fel.</p>
+    </header>
+
+    <main class="doc-body">
+      <nav class="toc" aria-label="Innehåll">
+        <ol>
+          <li><a href="#picture">En bild, inte en karta</a></li>
+          <li><a href="#labels">Att läsa namnen</a></li>
+          <li><a href="#points">Kontrollpunkter</a></li>
+          <li><a href="#spline">Splinen</a></li>
+          <li><a href="#errors">Hur bra är den?</a></li>
+          <li><a href="#mistakes">Misstag som upptäcktes på vägen</a></li>
+          <li><a href="#limits">Begränsningar</a></li>
+          <li><a href="#sources">Källor och tack</a></li>
+        </ol>
+      </nav>
+
+      <section id="picture">
+        <h2>En bild, inte en karta</h2>
+        <p>Kartan skars i trä omkring 1550 och trycktes från flera stockar. Den visar Paris så som en fågel skulle
+          se staden högt uppifrån i väster, med blicken mot öster: varje kyrka, hus och trädgård är ritad stående,
+          och gatorna mellan dem är utdragna eller hoptryckta för att ge plats. Öster är uppåt på bladet. Mätt mot
+          dagens stad pekar bladets överkant mot en kurs på omkring <strong>116°</strong> (östsydost), så norr
+          ligger nedåt till vänster.</p>
+        <figure>
+          <img src="/figures/orientation.svg" width="1400" height="1005" alt="Hela kartan som den är tryckt, med en pil som visar att norr pekar nedåt till vänster" loading="lazy" />
+          <figcaption>Hela bladet som det är tryckt. Pilen visar geografiskt norr, enligt anpassningen som beskrivs
+            nedan. (Texterna i figurerna är på engelska.)</figcaption>
+        </figure>
+        <p>Att vrida bladet 116° räcker inte. Om man anpassar den bästa enskilda sträckningen (en <em>affin</em>
+          avbildning: en vridning, en skala i vardera riktningen och en skjuvning för hela kartan) blir bladets
+          räta vinklar <strong>77°</strong> på marken, och en pixel tvärs över bladet motsvarar omkring
+          0,36&nbsp;m medan en pixel uppåt motsvarar omkring 0,43&nbsp;m. Gravörerna gav också mer utrymme åt det
+          som var viktigt: Île de la Cité och dess kyrkor är ritade större än i verkligheten, fälten utanför
+          murarna mindre. Ingen enskild sträckning kan rätta till det, eftersom förvrängningen skiftar från en del
+          av kartan till nästa.</p>
+      </section>
+
+      <section id="labels">
+        <h2>Att läsa namnen</h2>
+        <p>Källan är det enda kända exemplaret, i Basels universitetsbibliotek, skannat i
+          10&nbsp;890 × 7&nbsp;820 pixlar (fri från upphovsrätt, via Wikimedia Commons). Skanningen delades upp i
+          88 överlappande rutor och varje namn lästes ruta för ruta av en AI-modell (Claude, se
+          <a href="#built">hur sajten byggdes</a>), och de täta områdena en gång till med dubbel förstoring. Det gav
+          468 namn, och jämförelsen med Cousins register (se nedan) hittade ytterligare två som hade missats; när
+          dubbletter och dekorationer rensats bort återstod <strong>455 platser</strong>. Varje namn har ett
+          permanent id (L0001 …) så att länkar och rättelser aldrig går sönder.</p>
+        <p>Sedan identifierades varje plats:</p>
+        <ul>
+          <li><strong>Gator</strong> mot Paris stads register över nuvarande och försvunna gatunamn, matchade efter
+            att stavningen normaliserats (1500-talets <em>v</em> för <em>u</em>, saknade accenter, <em>S.</em> för
+            <em>Saint</em>, ord som skrivits ihop) och sedan kontrollerade en och en.</li>
+          <li><strong>Allt annat</strong> (kyrkor, kollegier, portar, stadspalats) mot franska Wikipedia och
+            Wikidata, där varje artikeltitel kontrollerades med ett skript.</li>
+        </ul>
+        <p>Därefter kontrollerades allt mot det enda tidigare registret över den här kartan: den förteckning över
+          dess namn som Jules Cousin gav ut 1875, när exemplaret i Basel just hade återupptäckts. Cousin anger varje
+          namn så som han rättade det, gravörens stavning, och det blad och den ruta där det står. När hans
+          rutnät passades mot våra namn hamnade 285 av 313 säkra träffar i exakt rätt ruta, vilket gjorde hans
+          förteckning användbar namn för namn. Den bekräftade de flesta identifieringarna, avgjorde 26 av de 29
+          öppna frågorna (fortsatt forskning avgjorde två till), rättade fyra felläsningar (”R. de la Venerie” är
+          ett skadat ”Poterie”; ”Cherro Coupt” är ”C. Herro Court”, collège d’Harcourt) och hittade två namn som
+          den första genomgången hade missat (”Hu Leu” och ”R. dei Son”).</p>
+        <p>Resultatet: 143 platser finns kvar, 19 är återuppbyggda, 76 har bytt namn eller gått upp i något annat,
+          216 är försvunna och 1 är inte identifierad. En fråga är fortfarande öppen och finns i listan över
+          <a href="https://github.com/PeerBlekelj/parismapexplorer/blob/main/data/research/OPEN_QUESTIONS.md">öppna frågor</a>
+          (på engelska). Varje plats som finns i Cousins förteckning hänvisar till sidan, med en länk till
+          skanningen på Gallica.</p>
+      </section>
+
+      <section id="points">
+        <h2>Kontrollpunkter</h2>
+        <p>En kontrollpunkt är en plats som går att hitta på båda kartorna: en pixel på träsnittet och en
+          latitud och longitud i dag. Böjningen räknas fram enbart ur dem, så deras kvalitet avgör allt. De är
+          <strong>46</strong>:</p>
+        <ul>
+          <li><strong>21 ritade byggnader</strong> vars läge är känt exakt: Notre-Dame, Saint-Eustache, Tour
+            Saint-Jacques, Saint-Germain-des-Prés, Bastiljen med flera. Punkten sitter på den ritade byggnaden,
+            vid dess fot, inte på namnet: namnen svävar bredvid det de betecknar, och när punkterna flyttades från
+            namnen till byggnaderna sjönk det typiska felet från 76&nbsp;m till 64&nbsp;m.</li>
+          <li><strong>8 brofästen</strong> där en bro möter stranden, hämtade från OpenStreetMap. Broarna är de
+            skarpaste punkterna på kartan, eftersom floden låser dem på båda sidor.</li>
+          <li><strong>11 till</strong> vid själva namnet, där namnet står på eller tätt intill det det
+            betecknar.</li>
+          <li><strong>6 i kanterna</strong>, tillagda senare där anpassningen var svagast: fem gatukorsningar som
+            inte har flyttats sedan 1500-talet (rue Saint-Antoine × rue Saint-Paul, rue Mouffetard × rue Daubenton,
+            rue du Temple × rue Pastourelle med flera), placerade med Paris stads gatugeometri, samt platsen för
+            Tour de Nesle. Tre korsningar till prövades och ströks: var och en hamnade 200&nbsp;m eller mer fel och
+            drog med sig grannarna.</li>
+        </ul>
+        <figure>
+          <img src="/figures/control-points.svg" width="1400" height="1005" alt="Kartan med 46 färgade prickar: de flesta är gröna; Bastiljen och Saint-Germain-des-Prés, långt ut, är röda" loading="lazy" />
+          <figcaption>De 46 kontrollpunkterna på bladet, färgade efter hur långt fel var och en hamnar när den
+            lämnas utanför anpassningen (se <a href="#errors">nedan</a>). Den streckade linjen visar var
+            överlägget slutar: utanför den skulle splinen bara gissa.</figcaption>
+        </figure>
+      </section>
+
+      <section id="spline">
+        <h2>Splinen</h2>
+        <p>Böjningen är en <strong>thin-plate spline</strong> (ungefär ”tunnplattespline”): tänk dig kartan tryckt
+          på ett tunt metallblad, med varje kontrollpunkt fastnålad på sin plats i dagens stad. Bladet böjer sig
+          så lite som möjligt men når ändå alla nålar. Nära nålarna följer det dem tätt; mellan dem böjer det sig
+          mjukt; långt från alla återgår det till den bästa enskilda sträckningen.</p>
+        <p>Nålarna sitter lite löst (en utjämningsparameter, λ&nbsp;=&nbsp;0,2) så att en felplacerad punkt inte kan
+          dra med sig ett helt kvarter. Samma spline används åt båda hållen i appen: den lägger den gamla kartans
+          rutor på den moderna kartan i överlägget, och den håller de två kartorna i takt i vyn sida vid
+          sida.</p>
+        <figure>
+          <img src="/figures/bend.svg" width="900" height="1383" alt="Två rutnät med norr uppåt: ett rakt grått rutnät och ett rött rutnät som böjs runt kontrollpunkterna, mest i söder och öster" loading="lazy" />
+          <figcaption>Träsnittets kvadratiska rutnät lagt på dagens stad med norr uppåt. Grått: efter den bästa
+            enskilda sträckningen, fortfarande rakt. Rött: efter splinen. Linjerna böjer sig mest där gravörerna tog
+            sig störst friheter, mot stadens kanter.</figcaption>
+        </figure>
+      </section>
+
+      <section id="errors">
+        <h2>Hur bra är den?</h2>
+        <p>En spline går genom sina egna kontrollpunkter, så att mäta felet i just de punkterna bevisar
+          ingenting. I stället lämnas varje punkt utanför i tur och ordning, splinen anpassas till de övriga 45,
+          och den utelämnade punkten kontrolleras: hur långt från sitt verkliga läge hamnar den? Det här
+          <strong>leave-one-out-felet</strong> är en ärlig uppskattning av felet var som helst annars på
+          kartan.</p>
+        <table class="nums">
+          <thead><tr><th></th><th>median</th><th>90&nbsp;% av punkterna inom</th><th>sämsta</th></tr></thead>
+          <tbody>
+            <tr><th>En sträckning (affin)</th><td>89 m</td><td>250 m</td><td>404 m</td></tr>
+            <tr><th>Thin-plate spline</th><td><strong>61 m</strong></td><td><strong>136 m</strong></td><td>195 m</td></tr>
+          </tbody>
+        </table>
+        <figure>
+          <img src="/figures/affine-vs-spline.svg" width="1160" height="822" alt="Två paneler med fellinjer: långa linjer över den vänstra panelen (affin), mestadels kortare linjer till höger (spline)" loading="lazy" />
+          <figcaption>Leave-one-out-fel, norr uppåt. Varje linje går från en punkts verkliga läge till det läge
+            anpassningen ger den, ritad fyra gånger längre än den är.</figcaption>
+        </figure>
+        <p>I mitten, på Cité-ön och längs floden, hamnar en plats oftast inom en eller två gatubredder från där den
+          låg. Mot murarna och längre ut växer felet till några hundra meter, av två skäl: där finns färre
+          kontrollpunkter, och träsnittet självt är lösare där. De två sämsta punkterna, Saint-Germain-des-Prés
+          (195&nbsp;m) och Bastiljen (190&nbsp;m), ligger i kanten, där en utelämnad punkt tar bort det mesta av
+          förankringen för ett helt kvarter. Innan de sex kantpunkterna lades till låg Bastiljen 427&nbsp;m fel och
+          Saint-Médard 416&nbsp;m; nu ligger Saint-Médard bara 25&nbsp;m fel.</p>
+      </section>
+
+      <section id="mistakes">
+        <h2>Misstag som upptäcktes på vägen</h2>
+        <ul>
+          <li><strong>En ensam punkt långt ute.</strong> Pont de Charenton ligger rätt, 3&nbsp;km utanför murarna.
+            Som kontrollpunkt förstörde den anpassningen: splinen sträckte ut ett helt hoptryckt hörn av bilden för
+            att nå den. När den ströks sjönk 90-procentsfelet från 463&nbsp;m till 172&nbsp;m. Byar i kanten prövades
+            också som ankare och gjorde mitten sämre, så även de är utelämnade.</li>
+          <li><strong>Namnkusiner.</strong> En sökning på ”Popincourt” hittade en kommun i departementet Oise, 92&nbsp;km
+            bort, inte förstaden vid Bastiljen. Varje identifiering som hamnar utanför kartans område stoppar nu
+            bygget.</li>
+          <li><strong>Gamla stavningar.</strong> Ett enkelt test av typen ”samma namn?” kallade gator som bytt namn
+            oförändrade och tvärtom, eftersom stavningen 1550 varierar så mycket. Besluten vilar nu på normaliserad
+            stavning plus en manuell kontroll av varje gata.</li>
+          <li><strong>Namn som punkter.</strong> De första kontrollpunkterna satt på namnen, som svävar bredvid det
+            de betecknar. Att flytta dem till de ritade byggnaderna och brofästena var den enskilt största
+            förbättringen.</li>
+          <li><strong>Gravörens förskjutning.</strong> Mellan rue des Poulies och Louvren hamnade ungefär tio
+            gatunamn en gata fel: varje gatas namn skars på grannens, och så vidare längs raden (Cousin
+            upptäckte det 1875). Den första genomgången tog namnen för vad de var; de nio berörda platserna anger
+            nu vilken gata varje namn egentligen står på. Ytterligare tre namn står på fel gata på samma sätt:
+            ”rue des Paiens” på rue des Juifs, ”rue des Chats” på rue des Déchargeurs och ”rue du Battoir” på rue
+            Gît-le-Cœur.</li>
+          <li><strong>Gravörernas egna fel.</strong> Vissa namn är feltryckta eller förvanskade: ”HOSTRE DAME” för
+            Notre-Dame, ”Bribouche” för Aubry-le-Boucher, ”Cochonnerie” för Cossonnerie. De behålls som de är
+            tryckta och identifieras i anteckningarna.</li>
+        </ul>
+      </section>
+
+      <section id="limits">
+        <h2>Begränsningar</h2>
+        <ul>
+          <li>I mitten stämmer lägena på några tiotal meter, i kanterna på några hundra. Överlägget är en
+            vägledning, inte en uppmätning: använd det inte för att avgöra var en mur stod på metern när.</li>
+          <li>Träsnittet är ingen uppmätt karta. Där konstnärerna ritade en gata för lång eller en kyrka för stor
+            kan splinen bara sprida ut felet; den kan inte återskapa det som aldrig mättes.</li>
+          <li>Strandlinjerna passar inte: de flesta av dagens kajer byggdes efter 1550 (quai de Gesvres till
+            exempel 1642), så den gamla och den nya strandlinjen sammanfaller sällan.</li>
+          <li>Mycket är ritat men inte namngivet. Kartuschen skryter med 287 gator, 104 kyrkor och 49 kollegier;
+            omkring 221 gator, 91 kyrkor och 33 kollegier har ett läsbart namn.</li>
+          <li>Ett namn är inte identifierat och vissa läsningar är osäkra; de är markerade som sådana i appen.</li>
+        </ul>
+        <p>Rättelser tas gärna emot som pull requests, se
+          <a href="https://github.com/PeerBlekelj/parismapexplorer/blob/main/CONTRIBUTING.md">hur man bidrar</a>
+          (på engelska).</p>
+      </section>
+
+      <section id="sources">
+        <h2>Källor och tack</h2>
+        <ul>
+          <li><em>La ville, cité et université de Paris</em>, Olivier Truschet och Germain Hoyau, ca 1550,
+            Basels universitetsbibliotek; skanning via
+            <a href="https://commons.wikimedia.org/wiki/File:Map_of_Paris_by_Truschet_and_Hoyau_-_Basel_University_Library.jpg">Wikimedia Commons</a>
+            (fri från upphovsrätt).</li>
+          <li>Jules Cousin, ”Table des noms des rues, places, églises, couvents, collèges, hôtels, etc., inscrits
+            sur le plan de Paris publié vers 1552 par Olivier Truschet et Germain Hoyau”, <em>Mémoires de la
+            Société de l’histoire de Paris et de l’Île-de-France</em>, t. I (1875), s. 60–70; källa
+            <a href="https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f68.item">gallica.bnf.fr / BnF</a>.</li>
+          <li>Gatunamn: Paris stads öppna data, registren över nuvarande och försvunna gatunamn.</li>
+          <li>Platser: Wikipedia (på franska och engelska) och Wikidata.</li>
+          <li>Dagens karta och brofästena: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-bidragsgivare</a>,
+            kartrutor från <a href="https://openfreemap.org/">OpenFreeMap</a>.</li>
+          <li>Splinen, feltestet och alla figurer på sidan kommer från skripten i
+            <a href="https://github.com/PeerBlekelj/parismapexplorer">projektets repository</a>
+            (<code>scripts/fit_transform.py</code>, <code>scripts/make_method_figures.py</code>), så varje siffra
+            här kan räknas fram igen.</li>
+        </ul>
+        <h3 id="built">Hur sajten byggdes</h3>
+        <p>Hela projektet byggdes med <a href="https://claude.com/claude-code">Claude Code</a>, Anthropics
+          AI-assistent för programmering, tillsammans med en mänsklig redaktör: läsningen av namnen på skanningen,
+          matchningen mot gaturegistren och Wikipedia, valet och placeringen av kontrollpunkterna, anpassningen av
+          splinen, platsbeskrivningarna och skrivandet av sajten och den här sidan. Den mänskliga sidan stod för
+          inriktningen, fattade designbesluten och granskade resultaten. En AI:s läsning av ett nästan 500 år
+          gammalt träsnitt kan vara fel, och därför är varje osäker läsning markerad och varje identifiering länkad
+          till sin källa. Hör gärna av dig om misstag.</p>
+        <p class="muted">Paris 1550, av Peer Blekelj. Översatt från den engelska sidan
+          <a href="/method/" hreflang="en" lang="en">How the map was bent</a>.</p>
+      </section>
+    </main>
+    <script type="module" src="/src/method.ts"></script>
+  </body>
+</html>

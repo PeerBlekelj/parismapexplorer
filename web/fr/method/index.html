@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comment le plan a été déformé · Paris 1550</title>
+    <meta name="description" content="Comment un plan de Paris à vol d’oiseau gravé vers 1550 a été calé sur la ville actuelle : la lecture des noms, les points de calage, une spline en plaque mince, les erreurs et les limites." />
+    <link rel="canonical" href="%SITE%/fr/method/" />
+    <link rel="alternate" hreflang="en" href="%SITE%/method/" />
+    <link rel="alternate" hreflang="fr" href="%SITE%/fr/method/" />
+    <link rel="alternate" hreflang="sv" href="%SITE%/sv/method/" />
+    <link rel="alternate" hreflang="x-default" href="%SITE%/method/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Paris 1550" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta property="og:locale:alternate" content="sv_SE" />
+    <meta property="og:title" content="Comment le plan a été déformé · Paris 1550" />
+    <meta property="og:description" content="Comment un plan de Paris à vol d’oiseau gravé vers 1550 a été calé sur la ville actuelle : points de calage, spline en plaque mince, erreurs et limites." />
+    <meta property="og:url" content="%SITE%/fr/method/" />
+    <meta property="og:image" content="%SITE%/og/site.jpg" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="420" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="doc">
+    <header class="doc-head">
+      <div class="doc-top">
+        <a class="back" href="/fr/">← Paris 1550</a>
+        <nav class="langs" aria-label="Langue"><a href="/method/" lang="en" hreflang="en">EN</a> · <a href="/fr/method/" lang="fr" hreflang="fr" aria-current="page">FR</a> · <a href="/sv/method/" lang="sv" hreflang="sv">SV</a></nav>
+      </div>
+      <h1>Comment le plan a été déformé</h1>
+      <p class="lede">Le plan de Truschet et Hoyau est une image, non un levé. Pour le poser sur la ville
+        actuelle, il faut le déformer&nbsp;: doucement au centre, fortement sur les bords. Cette page explique
+        comment on s’y est pris, jusqu’où l’on peut se fier au résultat, et où il est en défaut.</p>
+    </header>
+
+    <main class="doc-body">
+      <nav class="toc" aria-label="Sommaire">
+        <ol>
+          <li><a href="#picture">Une image, non un plan</a></li>
+          <li><a href="#labels">La lecture des noms</a></li>
+          <li><a href="#points">Les points de calage</a></li>
+          <li><a href="#spline">La spline</a></li>
+          <li><a href="#errors">Quelle précision&nbsp;?</a></li>
+          <li><a href="#mistakes">Erreurs relevées en chemin</a></li>
+          <li><a href="#limits">Limites</a></li>
+          <li><a href="#sources">Sources et crédits</a></li>
+        </ol>
+      </nav>
+
+      <section id="picture">
+        <h2>Une image, non un plan</h2>
+        <p>Le plan a été gravé sur bois vers 1550 et imprimé à partir de plusieurs planches. Il montre Paris
+          comme le verrait un oiseau planant haut au-dessus de l’ouest, le regard tourné vers l’est&nbsp;: églises,
+          maisons et jardins sont tous dessinés en élévation, et les rues qui les séparent sont étirées ou
+          resserrées pour leur faire place. L’est est en haut de la feuille. Mesuré sur la ville actuelle, le
+          haut de la feuille pointe vers un azimut d’environ <strong>116°</strong> (est-sud-est)&nbsp;; le nord
+          se trouve donc en bas à gauche.</p>
+        <figure>
+          <img src="/figures/orientation.svg" width="1400" height="1005" alt="Le plan entier tel qu’imprimé, avec une flèche montrant que le nord pointe vers le bas et la gauche" loading="lazy" />
+          <figcaption>La feuille entière telle qu’imprimée. La flèche indique le nord vrai, d’après le calage décrit
+            plus bas. (Les légendes des figures sont en anglais.)</figcaption>
+        </figure>
+        <p>Faire pivoter la feuille de 116° ne suffit pas. Si l’on cherche la meilleure déformation unique (une
+          transformation <em>affine</em>&nbsp;: une rotation, une échelle dans chaque direction et un cisaillement
+          pour tout le plan), les angles droits de la feuille deviennent des angles de <strong>77°</strong> sur
+          le terrain, et un pixel en largeur couvre environ 0,36&nbsp;m quand un pixel en hauteur en couvre
+          environ 0,43. Les graveurs ont aussi donné plus de place à ce qui comptait&nbsp;: l’île de la Cité et
+          ses églises sont dessinées plus grandes que nature, les champs hors les murs plus petits. Aucune
+          déformation unique ne peut corriger cela, car la distorsion change d’une partie du plan à l’autre.</p>
+      </section>
+
+      <section id="labels">
+        <h2>La lecture des noms</h2>
+        <p>La source est le seul exemplaire connu, conservé à la bibliothèque universitaire de Bâle, numérisé
+          à 10&nbsp;890 × 7&nbsp;820 pixels (domaine public, via Wikimedia Commons). La numérisation a été
+          découpée en 88 tuiles qui se chevauchent, et chaque nom a été lu tuile par tuile par un modèle d’IA
+          (Claude, voir <a href="#built">comment ce site a été fait</a>), puis les zones denses une seconde fois,
+          à un grossissement double. On a obtenu ainsi 468 noms, et la comparaison avec la table de Cousin
+          (voir plus bas) en a fait apparaître deux qui avaient échappé à la lecture&nbsp;; une fois les doublons
+          et les ornements écartés, il reste <strong>455 lieux</strong>. Chaque nom garde un identifiant
+          permanent (L0001…), pour que les liens et les corrections ne se perdent jamais.</p>
+        <p>Chaque lieu a ensuite été identifié&nbsp;:</p>
+        <ul>
+          <li><strong>Les rues</strong>, d’après les registres de la Ville de Paris des voies actuelles et des
+            voies disparues, rapprochées après normalisation de l’orthographe (le <em>v</em> pour <em>u</em> du
+            XVI<sup>e</sup> siècle, les accents absents, <em>S.</em> pour <em>Saint</em>, les mots soudés), puis
+            vérifiées une à une.</li>
+          <li><strong>Tout le reste</strong> (églises, collèges, portes, hôtels), d’après Wikipédia en français
+            et Wikidata, chaque titre d’article étant vérifié par script.</li>
+        </ul>
+        <p>Le tout a ensuite été confronté au seul index antérieur de ce plan&nbsp;: la table de ses noms que Jules
+          Cousin publia en 1875, alors que l’exemplaire de Bâle venait d’être redécouvert. Cousin donne chaque
+          nom tel qu’il l’a rectifié, la graphie du graveur, ainsi que la feuille et la case où il se trouve. En
+          calant son quadrillage des feuilles sur nos noms, 285 des 313 correspondances sûres tombent exactement
+          dans la bonne case, ce qui a permis d’utiliser sa table nom par nom. Elle a confirmé la plupart des
+          identifications, tranché 26 des 29 questions ouvertes (des recherches complémentaires en ont tranché
+          deux autres), corrigé quatre lectures fautives («&nbsp;R. de la Venerie&nbsp;» est une «&nbsp;Poterie&nbsp;» abîmée&nbsp;;
+          «&nbsp;Cherro Coupt&nbsp;» est «&nbsp;C. Herro Court&nbsp;», le collège d’Harcourt) et révélé deux noms que la première
+          lecture avait manqués («&nbsp;Hu Leu&nbsp;» et «&nbsp;R. dei Son&nbsp;»).</p>
+        <p>Résultat&nbsp;: 143 lieux existent encore, 19 ont été reconstruits, 76 ont été renommés ou absorbés,
+          216 ont disparu et 1 n’est pas identifié. Une seule question reste ouverte, dans la liste des
+          <a href="https://github.com/PeerBlekelj/parismapexplorer/blob/main/data/research/OPEN_QUESTIONS.md">questions ouvertes</a>
+          (en anglais). Chaque lieu qui figure dans la table de Cousin en cite la page, avec un lien vers la
+          numérisation sur Gallica.</p>
+      </section>
+
+      <section id="points">
+        <h2>Les points de calage</h2>
+        <p>Un point de calage est un endroit que l’on retrouve sur les deux plans&nbsp;: un pixel sur la gravure, une
+          latitude et une longitude aujourd’hui. La déformation est calculée à partir de ces seuls points&nbsp;; leur
+          qualité décide donc de tout. Il y en a <strong>46</strong>&nbsp;:</p>
+        <ul>
+          <li><strong>21 édifices dessinés</strong> dont l’emplacement est connu exactement&nbsp;: Notre-Dame,
+            Saint-Eustache, la tour Saint-Jacques, Saint-Germain-des-Prés, la Bastille et d’autres. Le point est
+            placé sur l’édifice dessiné, à son pied, et non sur son nom&nbsp;: les noms flottent à côté de ce qu’ils
+            désignent, et le passage des noms aux édifices a fait tomber l’erreur typique de 76&nbsp;m à
+            64&nbsp;m.</li>
+          <li><strong>8 culées de ponts</strong>, là où un pont touche la rive, relevées sur OpenStreetMap. Les ponts
+            sont les points les plus nets du plan, parce que le fleuve les fixe des deux côtés.</li>
+          <li><strong>11 autres</strong> sur le nom lui-même, là où il est posé sur ce qu’il désigne ou tout
+            contre.</li>
+          <li><strong>6 sur les bords</strong>, ajoutés ensuite là où le calage était le plus faible&nbsp;: cinq
+            carrefours qui n’ont pas bougé depuis le XVI<sup>e</sup> siècle (rue Saint-Antoine × rue Saint-Paul,
+            rue Mouffetard × rue Daubenton, rue du Temple × rue Pastourelle, entre autres), placés d’après la
+            géométrie des voies de la Ville de Paris, et l’emplacement de la tour de Nesle. Trois autres
+            carrefours ont été essayés puis écartés&nbsp;: chacun tombait à 200&nbsp;m ou plus et entraînait ses
+            voisins avec lui.</li>
+        </ul>
+        <figure>
+          <img src="/figures/control-points.svg" width="1400" height="1005" alt="Le plan avec 46 points de couleur : la plupart sont verts ; la Bastille et Saint-Germain-des-Prés, loin du centre, sont rouges" loading="lazy" />
+          <figcaption>Les 46 points de calage sur la feuille, colorés selon l’écart de chacun lorsqu’on l’exclut du
+            calage (voir <a href="#errors">plus bas</a>). La ligne pointillée marque la limite de la superposition&nbsp;:
+            au-delà, la spline ne ferait que deviner.</figcaption>
+        </figure>
+      </section>
+
+      <section id="spline">
+        <h2>La spline</h2>
+        <p>La déformation est une <strong>spline en plaque mince</strong> (<em>thin-plate spline</em>)&nbsp;:
+          imaginez le plan imprimé sur une fine feuille de métal, chaque point de calage épinglé à sa place sur la
+          ville actuelle. La feuille se courbe aussi peu que possible tout en respectant les épingles. Près des
+          épingles, elle les suit de près&nbsp;; entre elles, elle se courbe en douceur&nbsp;; loin de toutes, elle
+          revient à la meilleure déformation unique.</p>
+        <p>Les épingles ont un peu de jeu (un paramètre de lissage, λ&nbsp;=&nbsp;0,2), pour qu’un point mal placé
+          ne puisse pas entraîner tout un quartier. La même spline sert dans les deux sens dans l’application&nbsp;:
+          elle pose les tuiles du plan ancien sur le plan actuel dans la superposition, et elle garde les deux
+          cartes synchronisées dans la vue côte à côte.</p>
+        <figure>
+          <img src="/figures/bend.svg" width="900" height="1383" alt="Deux quadrillages, nord en haut : un quadrillage gris rectiligne et un quadrillage rouge courbé autour des points de calage, surtout au sud et à l’est" loading="lazy" />
+          <figcaption>Le quadrillage carré de la gravure, posé sur la ville actuelle, nord en haut. En gris&nbsp;:
+            après la meilleure déformation unique, encore rectiligne. En rouge&nbsp;: après la spline. Les lignes se
+            courbent le plus là où les graveurs ont pris le plus de libertés, vers les bords de la ville.</figcaption>
+        </figure>
+      </section>
+
+      <section id="errors">
+        <h2>Quelle précision&nbsp;?</h2>
+        <p>Une spline passe par ses propres points de calage&nbsp;; mesurer l’erreur en ces points ne prouve donc
+          rien. On exclut plutôt chaque point à tour de rôle, on ajuste la spline sur les 45 autres, et l’on
+          regarde le point exclu&nbsp;: à quelle distance de sa position réelle tombe-t-il&nbsp;? Cette
+          <strong>erreur par validation croisée</strong> (<em>leave-one-out</em>) donne une estimation honnête
+          de l’erreur partout ailleurs sur le plan.</p>
+        <table class="nums">
+          <thead><tr><th></th><th>médiane</th><th>90&nbsp;% des points à moins de</th><th>pire cas</th></tr></thead>
+          <tbody>
+            <tr><th>Déformation unique (affine)</th><td>89 m</td><td>250 m</td><td>404 m</td></tr>
+            <tr><th>Spline en plaque mince</th><td><strong>61 m</strong></td><td><strong>136 m</strong></td><td>195 m</td></tr>
+          </tbody>
+        </table>
+        <figure>
+          <img src="/figures/affine-vs-spline.svg" width="1160" height="822" alt="Deux panneaux de traits d’erreur : de longs traits sur le panneau de gauche (affine), des traits surtout plus courts à droite (spline)" loading="lazy" />
+          <figcaption>Erreurs par validation croisée, nord en haut. Chaque trait va de la position réelle d’un point
+            à celle que lui donne le calage, dessiné quatre fois plus long qu’il n’est.</figcaption>
+        </figure>
+        <p>Au centre, dans la Cité et le long du fleuve, un lieu tombe généralement à une ou deux largeurs de rue
+          de sa position. Vers l’enceinte et au-delà, l’erreur monte à quelques centaines de mètres, pour deux
+          raisons&nbsp;: les points de calage y sont plus rares, et la gravure elle-même y est plus lâche. Les deux
+          pires points, Saint-Germain-des-Prés (195&nbsp;m) et la Bastille (190&nbsp;m), sont en bordure, là où
+          exclure un point supprime l’essentiel de l’ancrage de tout un quartier. Avant l’ajout des six points
+          de bordure, la Bastille était décalée de 427&nbsp;m et Saint-Médard de 416&nbsp;m&nbsp;; Saint-Médard ne
+          l’est plus que de 25&nbsp;m.</p>
+      </section>
+
+      <section id="mistakes">
+        <h2>Erreurs relevées en chemin</h2>
+        <ul>
+          <li><strong>Un point isolé, très loin.</strong> Le pont de Charenton est bien placé, à 3&nbsp;km hors
+            des murs. Comme point de calage, il ruinait l’ajustement&nbsp;: la spline étirait tout un coin comprimé
+            de l’image pour l’atteindre. L’écarter a fait tomber le 90<sup>e</sup> centile de l’erreur de 463&nbsp;m à 172&nbsp;m.
+            Les villages en bordure ont aussi été essayés comme points d’ancrage et dégradaient le centre&nbsp;; ils
+            sont donc écartés eux aussi.</li>
+          <li><strong>Les homonymes.</strong> La recherche de «&nbsp;Popincourt&nbsp;» a trouvé une commune de l’Oise,
+            à 92&nbsp;km, et non le faubourg proche de la Bastille. Toute identification qui tombe hors de l’emprise
+            du plan arrête désormais la construction du site.</li>
+          <li><strong>Les graphies anciennes.</strong> Un simple test «&nbsp;même nom&nbsp;?&nbsp;» classait des rues
+            renommées comme inchangées, et inversement, tant l’orthographe de 1550 varie. Les décisions reposent
+            maintenant sur une graphie normalisée et sur une vérification manuelle de chaque rue.</li>
+          <li><strong>Les noms pris pour des points.</strong> Les premiers points de calage étaient placés sur les
+            noms, qui flottent à côté de ce qu’ils désignent. Les déplacer sur les édifices dessinés et les culées
+            de ponts a été la plus forte amélioration à elle seule.</li>
+          <li><strong>Le décalage du graveur.</strong> Entre la rue des Poulies et le Louvre, une dizaine de noms de
+            rues sont chacun décalés d’une rue&nbsp;: le nom de chaque rue a été gravé sur sa voisine, et ainsi de
+            suite (Cousin l’avait remarqué en 1875). La première lecture prenait les noms au pied de la lettre&nbsp;;
+            les neuf lieux concernés indiquent maintenant sur quelle rue chaque nom se trouve réellement. Trois
+            autres noms sont posés sur la mauvaise rue de la même façon&nbsp;: «&nbsp;rue des Paiens&nbsp;» sur la rue
+            des Juifs, «&nbsp;rue des Chats&nbsp;» sur la rue des Déchargeurs et «&nbsp;rue du Battoir&nbsp;» sur la rue
+            Gît-le-Cœur.</li>
+          <li><strong>Les erreurs des graveurs eux-mêmes.</strong> Certains noms sont mal gravés ou déformés&nbsp;:
+            «&nbsp;HOSTRE DAME&nbsp;» pour Notre-Dame, «&nbsp;Bribouche&nbsp;» pour Aubry-le-Boucher,
+            «&nbsp;Cochonnerie&nbsp;» pour la Cossonnerie. Ils sont conservés tels qu’imprimés et identifiés dans
+            les notes.</li>
+        </ul>
+      </section>
+
+      <section id="limits">
+        <h2>Limites</h2>
+        <ul>
+          <li>Les positions sont justes à quelques dizaines de mètres au centre et à quelques centaines sur les
+            bords. La superposition est un guide, non un levé&nbsp;: ne vous en servez pas pour fixer au mètre près
+            l’emplacement d’un mur.</li>
+          <li>La gravure n’est pas un plan mesuré. Là où les artistes ont dessiné une rue trop longue ou une église
+            trop grande, la spline ne peut que répartir l’erreur&nbsp;; elle ne peut pas retrouver ce qui n’a jamais
+            été mesuré.</li>
+          <li>Les berges ne coïncideront pas&nbsp;: la plupart des quais actuels sont postérieurs à 1550 (le quai de
+            Gesvres date de 1642, par exemple), si bien que l’ancienne rive et la rive actuelle se superposent
+            rarement.</li>
+          <li>Beaucoup d’éléments sont dessinés mais non nommés. Le cartouche annonce 287 rues, 104 églises et
+            49 collèges&nbsp;; environ 221 rues, 91 églises et 33 collèges portent un nom lisible.</li>
+          <li>Un nom n’est pas identifié et certaines lectures sont incertaines&nbsp;; elles sont signalées comme
+            telles dans l’application.</li>
+        </ul>
+        <p>Les corrections sont bienvenues sous forme de <em>pull requests</em>, voir
+          <a href="https://github.com/PeerBlekelj/parismapexplorer/blob/main/CONTRIBUTING.md">comment contribuer</a>
+          (en anglais).</p>
+      </section>
+
+      <section id="sources">
+        <h2>Sources et crédits</h2>
+        <ul>
+          <li><em>La ville, cité et université de Paris</em>, Olivier Truschet et Germain Hoyau, vers 1550,
+            bibliothèque universitaire de Bâle&nbsp;; numérisation via
+            <a href="https://commons.wikimedia.org/wiki/File:Map_of_Paris_by_Truschet_and_Hoyau_-_Basel_University_Library.jpg">Wikimedia Commons</a>
+            (domaine public).</li>
+          <li>Jules Cousin, «&nbsp;Table des noms des rues, places, églises, couvents, collèges, hôtels, etc., inscrits
+            sur le plan de Paris publié vers 1552 par Olivier Truschet et Germain Hoyau&nbsp;», <em>Mémoires de la
+            Société de l’histoire de Paris et de l’Île-de-France</em>, t.&nbsp;I (1875), p.&nbsp;60–70&nbsp;; source
+            <a href="https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f68.item">gallica.bnf.fr / BnF</a>.</li>
+          <li>Noms de rues&nbsp;: données ouvertes de la Ville de Paris, registres des voies actuelles et des voies
+            disparues.</li>
+          <li>Lieux&nbsp;: Wikipédia (en français et en anglais) et Wikidata.</li>
+          <li>Plan actuel et culées de ponts&nbsp;: © <a href="https://www.openstreetmap.org/copyright">les contributeurs d’OpenStreetMap</a>,
+            tuiles <a href="https://openfreemap.org/">OpenFreeMap</a>.</li>
+          <li>La spline, le test d’erreur et toutes les figures de cette page proviennent des scripts du
+            <a href="https://github.com/PeerBlekelj/parismapexplorer">dépôt du projet</a>
+            (<code>scripts/fit_transform.py</code>, <code>scripts/make_method_figures.py</code>)&nbsp;: chaque
+            chiffre donné ici peut être recalculé.</li>
+        </ul>
+        <h3 id="built">Comment ce site a été fait</h3>
+        <p>Tout le projet a été réalisé avec <a href="https://claude.com/claude-code">Claude Code</a>, l’assistant
+          de programmation à base d’IA d’Anthropic, aux côtés d’un éditeur humain&nbsp;: la lecture des noms sur la
+          numérisation, leur rapprochement avec les registres des voies et Wikipédia, le choix et le placement des
+          points de calage, l’ajustement de la spline, la rédaction des notices des lieux, ainsi que l’écriture du
+          site et de cette page. Le côté humain a fixé la direction, pris les décisions de conception et relu les
+          résultats. Une lecture par IA d’une gravure vieille de près de cinq siècles peut se tromper&nbsp;: c’est
+          pourquoi chaque lecture incertaine est signalée et chaque identification renvoie à sa source. Merci de
+          signaler les erreurs.</p>
+        <p class="muted">Paris 1550, par Peer Blekelj. Traduction française de la page anglaise
+          <a href="/method/" hreflang="en" lang="en">How the map was bent</a>.</p>
+      </section>
+    </main>
+    <script type="module" src="/src/method.ts"></script>
+  </body>
+</html>

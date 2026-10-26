@@ -6,8 +6,15 @@
     <title>How the map was bent · Paris 1550</title>
     <meta name="description" content="How a bird's-eye woodcut of Paris from c. 1550 was matched to the modern city: reading the labels, control points, a thin-plate spline, the errors and the limits." />
     <link rel="canonical" href="%SITE%/method/" />
+    <link rel="alternate" hreflang="en" href="%SITE%/method/" />
+    <link rel="alternate" hreflang="fr" href="%SITE%/fr/method/" />
+    <link rel="alternate" hreflang="sv" href="%SITE%/sv/method/" />
+    <link rel="alternate" hreflang="x-default" href="%SITE%/method/" />
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="Paris 1550" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="sv_SE" />
     <meta property="og:title" content="How the map was bent · Paris 1550" />
     <meta property="og:description" content="How a bird's-eye woodcut of Paris from c. 1550 was matched to the modern city: control points, a thin-plate spline, the errors and the limits." />
     <meta property="og:url" content="%SITE%/method/" />
@@ -19,7 +26,10 @@
   </head>
   <body class="doc">
     <header class="doc-head">
-      <a class="back" href="/">← Paris 1550</a>
+      <div class="doc-top">
+        <a class="back" href="/">← Paris 1550</a>
+        <nav class="langs" aria-label="Language"><a href="/method/" lang="en" hreflang="en" aria-current="page">EN</a> · <a href="/fr/method/" lang="fr" hreflang="fr">FR</a> · <a href="/sv/method/" lang="sv" hreflang="sv">SV</a></nav>
+      </div>
       <h1>How the map was bent</h1>
       <p class="lede">The Truschet &amp; Hoyau plan of Paris is a picture, not a survey. To lay it over the modern
         city, it has to be bent: gently in the centre, hard at the edges. This page explains how that was done,
@@ -138,7 +148,7 @@
       <section id="errors">
         <h2>How good is it?</h2>
         <p>A spline passes through its own control points, so measuring the error at those points proves
-          nothing. Instead each point is left out in turn, the spline is fitted to the other 39, and the
+          nothing. Instead each point is left out in turn, the spline is fitted to the other 45, and the
           left-out point is checked: how far from its real position does it land? This
           <strong>leave-one-out error</strong> is an honest estimate of the error anywhere else on the map.</p>
         <table class="nums">
