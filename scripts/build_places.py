@@ -20,13 +20,25 @@ for p in sorted((root / "data").glob("places_*.csv")):  # research results per c
 def nn(v):
     return v if v not in ("", None) else None
 
-summaries = {}
-p = root / "data/research/summaries.csv"
-if p.exists():
-    for r in csv.DictReader(open(p)):
-        if r["id"] in summaries:
-            sys.exit(f"{r['id']} has two summaries")
-        summaries[r["id"]] = r["summary"].strip()
+def read_summaries(name):
+    out = {}
+    p = root / "data/research" / name
+    if p.exists():
+        for r in csv.DictReader(open(p, encoding="utf-8")):
+            if r["id"] in out:
+                sys.exit(f"{r['id']} has two summaries in {name}")
+            out[r["id"]] = r["summary"].strip()
+    return out
+
+# English summaries, and their French and Swedish translations (same ids; a missing one is null
+# and the app falls back to English).
+summaries = read_summaries("summaries.csv")
+summaries_fr = read_summaries("summaries_fr.csv")
+summaries_sv = read_summaries("summaries_sv.csv")
+for lang, tr in (("fr", summaries_fr), ("sv", summaries_sv)):
+    extra = sorted(set(tr) - set(summaries))
+    if extra:
+        sys.exit(f"summaries_{lang}.csv has ids with no English summary: {', '.join(extra[:10])}")
 
 # Jules Cousin's 1875 table of the map's names (data/research/cousin.csv, from scripts/cousin_match.py):
 # cited on every place it lists, linked to the page on Gallica (Gallica page = printed page + 8).
@@ -86,6 +98,8 @@ for r in csv.DictReader(open(root / "data/labels_inventory.csv")):
         "lon": float(i["lon"]) if nn(i.get("lon")) else None,
         "loc_confidence": nn(i.get("loc_confidence")),
         "summary": nn(summaries.get(r["id"])) or nn(i.get("summary")),
+        "summary_fr": nn(summaries_fr.get(r["id"])),
+        "summary_sv": nn(summaries_sv.get(r["id"])),
         "variants": [v for v in (i.get("variants") or "").split("|") if v]
                     + ([cousin[r["id"]]["name"]] if r["id"] in cousin else []),
         "sources": (json.loads(i["sources"]) if nn(i.get("sources")) else [])
