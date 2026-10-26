@@ -201,7 +201,7 @@ L0417,CUR:rue Garancière,high,standing,'rue Neuve' at the entrance of the faubo
 L0418,CUR:rue de Tournon,high,,
 L0419,#542,high,,"rue des (Vieux-)Augustins, now rue d'Argout and rue Hérold"
 L0420,CUR:rue de la Jussienne,high,,formerly rue Sainte-Marie-l'Égyptienne
-L0421,,low,,rue Breneuse: the name was used for several small streets in this quarter
+L0421,,low,,"rue Breneuse = rue Verdelet (Merderet, Verderet), between the rue Plâtrière and the rues Coq-Héron/Jussienne (Lazare 1844); vanished, absorbed in the rue Pagevin in 1849, then under the rue Étienne-Marcel and the Hôtel des Postes. Needs the vanished-register id of rue Verdelet in match; see open_questions_research.md"
 L0422,CUR:rue d'Argout,high,,formerly rue Pagevin
 L0423,CUR:rue Coq Héron,high,standing,
 L0424,CUR:rue Coquillière,high,,

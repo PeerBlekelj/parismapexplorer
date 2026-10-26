@@ -1,0 +1,48 @@
+name: Suggest a correction
+description: Something wrong about a place on the map (identification, reading, position, text).
+title: "Correction: "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you! If you came from a place card on [Paris 1550](https://parismapexplorer.vercel.app), the first two fields are already filled in.
+  - type: input
+    id: place_id
+    attributes:
+      label: Place id
+      description: Shown in the place card and in the page address, e.g. `L0123`.
+      placeholder: L0123
+    validations:
+      required: true
+  - type: textarea
+    id: place
+    attributes:
+      label: The place as shown on the site
+      description: Filled in automatically from the place card; no need to edit it.
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What's wrong
+      description: The identification, the reading of the label, the position, the text…
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: The correction
+      description: What it should be instead.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: A book (author, title, year, page), an article, a link, an old map… Corrections with a source are much easier to check.
+  - type: checkboxes
+    id: credit
+    attributes:
+      label: Credit
+      options:
+        - label: I'm happy to be credited by my GitHub name
+          required: false
