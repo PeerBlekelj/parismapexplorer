@@ -2,6 +2,8 @@
 
 Research note, 2026-10-26 (cloud session, branch `print-shop-research`).
 
+**Status: open** — listed in `OPEN_QUESTIONS.md` ("Research questions"); summary on the site at https://paris1550.vercel.app/#shop (section "Where was the shop?"). Add new findings here.
+
 ## Question
 
 The publishers' notice on the map reads: *"A Paris, par Olivier Truschet, & Germain Hoyau, demourans en

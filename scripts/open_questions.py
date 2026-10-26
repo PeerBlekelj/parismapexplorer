@@ -17,6 +17,13 @@ out = ["# Open questions", "",
 for r in open_rows:
     L = inv[r["id"]]
     out.append(f"| {r['id']} | {L['text']} | {L['type'].replace('_', ' ')} | {L['x']}, {L['y']} | {r['note'] or '—'} |")
+out += ["", "## Research questions", "",
+        "Questions about the map's history rather than its labels. Each has its own note.", "",
+        "- **Where was the Chef Saint-Denis?** The publishers' shop \"en la rue de Montorgueil, au chef Sainct-Denys\". "
+        "Narrowed to today's rue Montorgueil north of the rue Mauconseil, or the rue des Petits-Carreaux; the house "
+        "is not located. Next steps: read Lepape 2016 and Grivel 2008/2015 in full; the archbishop's censiers "
+        "(the 1575 one lists the Bon Pasteur) chained forward to the late-18th-century parcel plans Brette published; Minutier central deeds. "
+        "Note: `data/research/print_shop.md`. On the site: https://paris1550.vercel.app/#shop"]
 out += ["", "## Sources", "",
         "- Checked against Jules Cousin, \"Table des noms des rues, places, églises, couvents, collèges, hôtels, etc., "
         "inscrits sur le plan de Paris publié vers 1552 par Olivier Truschet et Germain Hoyau\", *Mémoires de la Société "
