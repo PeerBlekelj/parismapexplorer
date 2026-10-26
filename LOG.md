@@ -2,6 +2,28 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-26 (21:40) — start page = about; map at /map/; Corrozet; the shop question
+
+- Deployed main 705f725 (the print-shop cloud session merged both branches into main itself, on the
+  owner's word in that session). `/` `/fr/` `/sv/` = the about page with "Open the map"; the app is at
+  `/map/` (+ /fr/map/, /sv/map/); `/place/<id>/` unchanged; `#place=` on `/` forwards to `/map/`;
+  `/about/` → `/` 308 (web/vercel.json). Welcome card removed. Tested 14 routing cases locally with
+  tiles, all good; live routes and redirects verified.
+- **Corrozet:** the map's poem is in his *Fleur des antiquitez* (1532 ed., Lacroix 1874 reprint,
+  Gallica bpt6k6487221d, pp. 102–106) under « Le nom et surnom de l'aucteur »: the acrostic is his
+  declared signature. Book 112 lines vs map 108 (4 dropped; explains the 2 unrhymed lines); map updates
+  facts: 11 → 14 gates, 100 → 120 councillors, gros murs → haultz rampars. Line 98 translation fixed
+  (par elles = the Muses). Notes in data/research/corrozet.md, data/research/fleur_1532_louenges.txt.
+- **The shop:** new about-page section "Where was the shop?" (#shop): street extent in 1550 (north of
+  rue Mauconseil, plus today's rue des Petits-Carreaux), house not located, how it could be (archbishop's
+  censiers → Brette's parcel plans; deeds naming neighbours). data/research/print_shop.md; listed as
+  a research question in OPEN_QUESTIONS.md.
+- Drive sources: Taildrop to the mini works (receiving); p-ubuntu needs `sudo tailscale set
+  --operator=pelle` to send. Owner's files on p-ubuntu ~/Downloads: Corrozet Antiquitez 1550 (141 MB,
+  no text via Drive), 1549 royal entry (images only), Registres t.10, Lespinasse Métiers, Delamare Lutèce.
+  Wanted next: the Antiquitez' closing pages (does it reprint the poem with the 1550 figures?) and
+  Registres vol. 3 (1539–1552) for Henri II's order.
+
 ## 2026-10-26 (20:35) — intro page live; Corrozet + about FR/SV in the cloud
 
 - Owner: intro page OK as is, translate after launch; keep both the welcome card and the footer link;
