@@ -173,6 +173,13 @@ Compared line by line (script in the session; OCR of Lacroix 1874 against the ma
 | 96 | **Font** en ce lieu | **Sont** en ce lieu (long s / f: possibly OCR) |
 | 106 | qu'il n'ya **peuple** au monde | quil ny a **ville** au monde |
 
+- **Where the book helps read the map:** line 98, map “ou par elle semond / Estoit iadis maint homme”,
+  book “ou par elles se mond”: *elles* are the Muses (subject of the sentence), so “where many a man
+  was once summoned by them to learn”; the map's singular *elle* is most likely a dropped *s*. The
+  texts page translated “she” (Pallas); changed to the Muses in all three languages. Line 96 *Font*
+  (map) / *Sont* (book): *sont … tenantes* (“are holding [their dwelling]”) is the better grammar; the
+  map's letter is a clear F on the scan, so the transcription stays, and the translation (“make their
+  lasting home”) fits both.
 - **What the changes look like:** the factual ones go one way, towards Paris around 1550: eleven gates
   become fourteen, “thick walls” become “high ramparts”, the hundred councillors of the Parlement become
   six score (120; Francis I had enlarged the court), and the seven-leagues claim goes. Two changes break

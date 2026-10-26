@@ -217,8 +217,8 @@ POEM_2 = [  # lower middle panel, two columns of 15 lines: the poem goes on
     ("Plus que iamais ne furent sur le mond", "more than ever they did on the mount",
      "plus qu'elles ne le firent jamais sur le mont", "mer än de någonsin hade på berget"),
     ("De Aonias, ou par elle semond", "of Aonia, where in former days",
-     "d'Aonie, où, appelé par elle,", "i Aonien, dit hon fordom"),
-    ("Estoit iadis maint homme pour apprendre,", "she called many a man to learning.",
+     "d'Aonie, où, appelé par elles,", "i Aonien, dit de fordom"),
+    ("Estoit iadis maint homme pour apprendre,", "they called many a man to learning.",
      "venait jadis maint homme pour apprendre.", "kallade mången man för att lära."),
     ("Artz & mestiers, apres nous fault comprendre,", "Arts and crafts, next, we must include,",
      "Les arts et métiers, ensuite, il nous faut les compter,", "Konster och hantverk måste vi sedan räkna in,"),
@@ -409,7 +409,9 @@ NOTES_POEM = {
         "walls (<i>unze portes</i>, <i>gros murs</i>) where the map has fourteen gates and high ramparts (lines "
         "68–69), and a hundred councillors where the map has six score (line 80). Others look like slips: "
         "<i>propice</i> (line 43) and <i>plantes</i> (line 47) break rhymes that the book's <i>rassise</i> and "
-        "<i>plaines</i> make. Line 15 begins <i>Noble</i> on the map, <i>Nostre</i> (our) in the book. Who made "
+        "<i>plaines</i> make. Line 15 begins <i>Noble</i> on the map, <i>Nostre</i> (our) in the book. The book "
+        "also helps with line 98: the map's <i>par elle</i> (by her) is <i>par elles</i> (by them, the Muses) "
+        "there, and the translation follows the book. Who made "
         "the changes, and whether a later edition of the <i>Fleur</i> already had them, is not known.",
         "<b>Lutetia</b> (line 54): the Roman name of Paris.",
         f"<b>The Hôtel de Bourbon</b> (line 60): the {place('L0030', 'Petit-Bourbon')}, beside the Louvre.",
@@ -462,7 +464,8 @@ NOTES_POEM = {
         "conseillers là où le plan en a « six vingtz » (vers 80). D'autres ressemblent à des fautes : "
         "<i>propice</i> (vers 43) et <i>plantes</i> (vers 47) cassent des rimes que donnent <i>rassise</i> et "
         "<i>plaines</i> dans le livre. Le vers 15 commence par <i>Noble</i> sur le plan, <i>Nostre</i> dans le "
-        "livre. On ne sait pas qui a fait ces changements, ni si une édition plus tardive de la <i>Fleur</i> les "
+        "livre. Le livre éclaire aussi le vers 98 : le <i>par elle</i> du plan y est <i>par elles</i> (les "
+        "Muses), et la version moderne suit le livre. On ne sait pas qui a fait ces changements, ni si une édition plus tardive de la <i>Fleur</i> les "
         "contenait déjà.",
         "<b>Lutèce</b> (vers 54) : le nom romain de Paris.",
         f"<b>L'hôtel de Bourbon</b> (vers 60) : le {place('L0030', 'Petit-Bourbon')}, à côté du Louvre.",
@@ -513,7 +516,8 @@ NOTES_POEM = {
         "murs</i>) där kartan har fjorton portar och höga vallar (rad 68–69), och hundra rådsherrar där kartan "
         "har sex tjog (rad 80). Andra ser ut som misstag: <i>propice</i> (rad 43) och <i>plantes</i> (rad 47) "
         "bryter rim som bokens <i>rassise</i> och <i>plaines</i> ger. Rad 15 börjar med <i>Noble</i> på kartan, "
-        "<i>Nostre</i> (vår) i boken. Vem som gjorde ändringarna, och om en senare upplaga av <i>Fleur</i> redan "
+        "<i>Nostre</i> (vår) i boken. Boken hjälper också med rad 98: kartans <i>par elle</i> (av henne) är där "
+        "<i>par elles</i> (av dem, muserna), och översättningen följer boken. Vem som gjorde ändringarna, och om en senare upplaga av <i>Fleur</i> redan "
         "hade dem, vet vi inte.",
         "<b>Lutetia</b> (rad 54): det romerska namnet på Paris.",
         f"<b>Hôtel de Bourbon</b> (rad 60): {place('L0030', 'Petit-Bourbon')}, intill Louvren.",
