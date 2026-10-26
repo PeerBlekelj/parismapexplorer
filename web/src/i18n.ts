@@ -122,6 +122,7 @@ const en = {
   creditMap: 'Map: Truschet & Hoyau, c. 1550, Basel University Library (public domain)',
   creditOsm: '© OpenStreetMap contributors',
   creditBy: 'by Peer Blekelj',
+  creditMethod: 'How the map was bent',
   oldAttribution: 'Truschet &amp; Hoyau, c. 1550 · Basel University Library (public domain)',
 
   loadError: 'Could not load the place data.',

@@ -58,13 +58,15 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, onCl
         <dt>${esc(t.variants)}</dt><dd>${variants}</dd>
         <dt>${esc(t.pos1550)}</dt><dd>${esc(t.pxFmt(e.px[0], e.px[1]))}</dd>
         <dt>${esc(t.posToday)}</dt><dd class="pos">${posToday}</dd>
-        <dt>${esc(t.id)}</dt><dd><a href="#place=${encodeURIComponent(p.id)}" class="permalink">${esc(p.id)}</a> · <span class="muted">${esc(t.link)}</span></dd>
+        <dt>${esc(t.id)}</dt><dd><a href="${import.meta.env.BASE_URL}place/${encodeURIComponent(p.id)}/" class="permalink">${esc(p.id)}</a> · <span class="muted">${esc(t.link)}</span></dd>
       </dl>
       ${p.summary ? `<p class="summary">${esc(p.summary)}</p>` : `<p class="summary placeholder">${esc(t.noSummary)}</p>`}
       <div class="src">${esc(t.sources)}: ${links || `<span class="placeholder">${esc(t.noSources)}</span>`}</div>
     </article>`;
 
   el.querySelector('.card-close')?.addEventListener('click', onClose);
+  // The address bar already shows this link; a plain click shouldn't reload the app.
+  el.querySelector('.permalink')?.addEventListener('click', (ev) => ev.preventDefault());
   el.scrollTop = 0;
 
   const fig = el.querySelector('figure') as HTMLElement;

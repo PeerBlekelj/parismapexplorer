@@ -1,0 +1,40 @@
+{
+ "n": 40,
+ "north_deg": 245,
+ "top_bearing": 115,
+ "axes_angle": 77,
+ "m_per_px": 0.39,
+ "m_per_px_x": 0.36,
+ "m_per_px_y": 0.44,
+ "affine_median": 76,
+ "affine_p90": 228,
+ "tps_median": 64,
+ "tps_p90": 155,
+ "tps_max": 427,
+ "worst": [
+  [
+   "Bastille",
+   427
+  ],
+  [
+   "Saint-Médard",
+   416
+  ],
+  [
+   "Saint-Germain-des-Prés",
+   221
+  ],
+  [
+   "Saint-Merri",
+   155
+  ]
+ ],
+ "affine_worst": 440,
+ "sources": {
+  "feature": 8,
+  "hand": 2,
+  "hand+feature": 18,
+  "place": 9,
+  "place+feature": 3
+ }
+}

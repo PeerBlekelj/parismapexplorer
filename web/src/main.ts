@@ -18,6 +18,7 @@ import { createTransform } from './transform';
 import type { GcpsFile, PlacesFile } from './types';
 
 const BASE = import.meta.env.BASE_URL;
+const SITE_TITLE = 'Paris Map Explorer: Paris in 1550';
 const TYPE_ORDER = ['church_religious', 'college', 'street', 'gate_wall', 'bridge', 'building', 'square_market', 'village_faubourg', 'other'];
 
 const $ = <T extends HTMLElement = HTMLElement>(sel: string) => document.querySelector(sel) as T;
@@ -28,8 +29,10 @@ async function loadJson<T>(path: string): Promise<T> {
   return (await r.json()) as T;
 }
 
-function placeIdFromHash(): string | null {
-  const m = /(?:^#|&)place=([A-Za-z0-9_-]+)/.exec(location.hash);
+// A place link is /place/L0123/ (a real page, so link previews work); the older #place= form
+// still opens.
+function placeIdFromUrl(): string | null {
+  const m = /\/place\/([A-Za-z0-9_-]+)\/?$/.exec(location.pathname) ?? /(?:^#|&)place=([A-Za-z0-9_-]+)/.exec(location.hash);
   return m ? m[1] : null;
 }
 
@@ -50,7 +53,7 @@ function fillStaticText(): void {
   $('#swipe-hint').textContent = t.overlaySwipeHint;
   $('.swipe-l').textContent = t.overlayLeft;
   $('.swipe-r').textContent = t.overlayRight;
-  $('#credits').innerHTML = [t.creditMap, t.creditOsm, t.creditBy].map(esc).join(' · ');
+  $('#credits').innerHTML = `<a href="${BASE}method/">${esc(t.creditMethod)}</a> · ` + [t.creditMap, t.creditOsm, t.creditBy].map(esc).join(' · ');
 }
 
 async function main(): Promise<void> {
@@ -95,7 +98,7 @@ async function main(): Promise<void> {
   const listEl = $('#list');
   const cardEl = $('#card');
 
-  const initial = byId.get(placeIdFromHash() ?? '') ?? null;
+  const initial = byId.get(placeIdFromUrl() ?? '') ?? null;
   const overlayTiles = await overlayTilesP;
   const maps = new MapView(
     { old: $('#map-old'), mod: $('#map-mod'), ovl: $('#map-ovl'), tooltip: $('#tooltip') },
@@ -212,17 +215,19 @@ async function main(): Promise<void> {
       item?.classList.add('sel');
       renderCard(cardEl, e, T, () => select(null, { fly: false }));
       requestAnimationFrame(() => item?.scrollIntoView({ block: 'nearest' }));
-      history.replaceState(null, '', `${location.pathname}${location.search}#place=${encodeURIComponent(e.place.id)}`);
+      history.replaceState(null, '', `${BASE}place/${encodeURIComponent(e.place.id)}/${location.search}`);
+      document.title = `${e.place.modern ?? e.place.old} · Paris in 1550`;
     } else {
       renderIntro(cardEl);
-      history.replaceState(null, '', `${location.pathname}${location.search}`);
+      history.replaceState(null, '', `${BASE}${location.search}`);
+      document.title = SITE_TITLE;
     }
     maps.select(e, opts);
     if (state.view === 'table') table.update(state.results, e?.place.id ?? null, t.count(state.results.length, total));
   }
 
   window.addEventListener('hashchange', () => {
-    const id = placeIdFromHash();
+    const id = placeIdFromUrl();
     if (id && id !== state.selected?.place.id && byId.has(id)) select(id, { fly: true });
   });
 

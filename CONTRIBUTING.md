@@ -39,8 +39,13 @@ python3 -m venv .venv && .venv/bin/pip install pillow numpy rapidfuzz shapely
 python3 scripts/build_places.py . --auto-gcps # writes web/public/data/*.json
 .venv/bin/python scripts/make_old_tiles.py .
 .venv/bin/python scripts/make_overlay_tiles.py .
+.venv/bin/python scripts/make_og_images.py .       # link-preview images (web/public/og/)
+.venv/bin/python scripts/make_method_figures.py .  # figures for the method page
 cd web && npm install && npm run dev
 ```
+
+`npm run build` also writes one page per place (`/place/L0123/`, for link previews), `sitemap.xml`
+and `robots.txt`; see `web/vite.config.ts`.
 
 ## Licences
 
