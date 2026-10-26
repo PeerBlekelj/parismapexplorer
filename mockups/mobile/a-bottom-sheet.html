@@ -1,0 +1,51 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Phone layout A: bottom sheet</title>
+<link rel="stylesheet" href="../../web/src/style.css"><link rel="stylesheet" href="mock.css"><script src="common.js"></script></head><body>
+<h1 class="sheet-title">A · Map with a bottom sheet</h1>
+<p class="sheet-sub">The map fills the screen; search, results and the place card live in a sheet that slides up from the bottom (Google Maps style). Drag or tap the grip: <b>peek</b> → <b>half</b> → <b>full</b>. The map always uses the space above the sheet, so a selected place stays in view. Two maps: <b>stacked top/bottom</b> (“Both”, the default, synced as on desktop), or Overlay / 1550 / Today in the same bar.</p>
+<div class="row">
+
+<div class="frame"><div class="phone">
+  <div class="status"><span>9:41</span><span>●●● ▮</span></div>
+  <script>document.write(oldPane('left:0;right:0;top:0;height:352px', 352) + modPane('left:0;right:0;top:355px;height:351px', 351))</script>
+  <div style="position:absolute;left:0;right:0;top:352px;height:3px;background:var(--rule)"></div>
+  <span class="paneTag" style="bottom:auto;top:322px">1550 (rotated north-up)</span><span class="paneTag" style="bottom:146px">Today · © OpenStreetMap</span>
+  <div class="seg" style="position:absolute;top:54px;left:16px;right:16px"><span class="on">Both</span><span>Overlay</span><span>1550</span><span>Today</span></div>
+  <div class="fab" style="right:16px;top:106px" title="Original orientation">⤾</div>
+  <div style="position:absolute;left:0;right:0;bottom:0;height:138px;background:var(--paper);border-radius:14px 14px 0 0;box-shadow:0 -4px 16px #0003;padding:0 16px">
+    <div class="grip"></div>
+    <div class="msearch"><div class="box"><i class="ico"></i> Search…</div><div class="btn">Filters ▾</div><div class="btn">Table</div></div>
+    <div class="count" style="padding:9px 2px 0">455 places · drag up for the list</div>
+  </div>
+  <div class="homebar"></div>
+</div><p class="cap"><b>1 · Peek.</b> Both maps stacked and synced (pinch/pan either). The sheet shows only search, Filters and the Table switch.</p></div>
+
+<div class="frame"><div class="phone">
+  <div class="status"><span>9:41</span><span>●●● ▮</span></div>
+  <script>document.write(oldPane('left:0;right:0;top:0;height:210px', 210) + modPane('left:0;right:0;top:213px;height:209px', 209))</script>
+  <div style="position:absolute;left:0;right:0;top:210px;height:3px;background:var(--rule)"></div>
+  <div class="seg" style="position:absolute;top:54px;left:16px;right:16px"><span class="on">Both</span><span>Overlay</span><span>1550</span><span>Today</span></div>
+  <div style="position:absolute;left:0;right:0;bottom:0;height:422px;background:var(--paper);border-radius:14px 14px 0 0;box-shadow:0 -4px 16px #0003;display:flex;flex-direction:column">
+    <div style="padding:0 16px"><div class="grip"></div>
+    <div class="msearch"><div class="box" style="color:var(--ink)"><i class="ico"></i> pont</div><div class="btn">Filters ▾</div><div class="btn">Table</div></div></div>
+    <div class="count">17 of 455 places</div>
+    <div class="list" style="flex:1;overflow:hidden" data-fill="results(6, -1)"></div>
+  </div>
+  <div class="homebar"></div>
+</div><p class="cap"><b>2 · Half.</b> Typing lifts the sheet to half. Rows are 52 px tall. The maps shrink to the space above (here 2 × 210 px, tight; “Overlay” gives one 420 px map).</p></div>
+
+<div class="frame"><div class="phone">
+  <div class="status"><span>9:41</span><span>●●● ▮</span></div>
+  <script>document.write(modPane('left:0;right:0;top:0;height:422px', 422))</script>
+  <div style="position:absolute;left:0;width:195px;top:0;height:422px;overflow:hidden;opacity:.8"><script>document.write(oldPane('left:0;width:390px;top:0;height:422px', 422))</script></div>
+  <div class="swipeL" style="left:195px;height:422px"></div>
+  <div class="pinD" style="left:195px;top:211px"></div>
+  <div class="seg" style="position:absolute;top:54px;left:16px;right:16px"><span>Both</span><span class="on">Overlay</span><span>1550</span><span>Today</span></div>
+  <div class="ctrlM" style="top:104px">Old map <span class="track"></span> opacity</div>
+  <div style="position:absolute;left:0;right:0;bottom:0;height:422px;background:var(--paper);border-radius:14px 14px 0 0;box-shadow:0 -4px 16px #0003;overflow:hidden">
+    <div class="grip"></div>
+    <div data-fill="card()"></div>
+  </div>
+  <div class="homebar"></div>
+</div><p class="cap"><b>3 · A place.</b> The card replaces the list in the sheet, map flies to the place above it. Drag up to read the whole card. ← Back, × or the phone’s Back button return to the list. Overlay: drag ⇆ with a finger.</p></div>
+
+</div></body></html>

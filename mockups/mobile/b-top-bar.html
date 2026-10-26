@@ -1,0 +1,42 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Phone layout B: top bar and card page</title>
+<link rel="stylesheet" href="../../web/src/style.css"><link rel="stylesheet" href="mock.css"><script src="common.js"></script></head><body>
+<h1 class="sheet-title">B · Search bar on top, card as its own page</h1>
+<p class="sheet-sub">One full-screen map with a search bar floating on top. Results drop down under the bar while typing; a place opens as a <b>full-screen page</b> with ← Back (the phone’s Back button too). Two maps: <b>one at a time</b>, with a big <b>1550 ⇄ Today</b> flip button that keeps the same spot; Overlay and Both (stacked) sit behind the layers button.</p>
+<div class="row">
+
+<div class="frame"><div class="phone">
+  <div class="status"><span>9:41</span><span>●●● ▮</span></div>
+  <script>document.write(oldPane('inset:0', 844))</script>
+  <div class="msearch" style="position:absolute;top:54px;left:16px;right:16px;filter:drop-shadow(0 2px 6px #0003)"><div class="box"><i class="ico"></i> Search 455 places…</div><div class="btn">Filters ▾</div></div>
+  <div class="fab" style="right:16px;top:110px">≡</div>
+  <div class="fab" style="right:16px;top:162px">⤾</div>
+  <div style="position:absolute;left:50%;bottom:44px;transform:translateX(-50%);display:flex;gap:8px">
+    <div class="seg" style="border-radius:24px"><span class="on" style="padding:0 18px;height:48px;line-height:48px">1550</span><span style="padding:0 18px;height:48px;line-height:48px">⇄ Today</span></div>
+  </div>
+  <div class="fab" style="left:16px;bottom:46px;font-size:13px;width:auto;padding:0 12px;border-radius:22px">Table</div>
+  <div class="homebar"></div>
+</div><p class="cap"><b>1 · Map.</b> The 1550 map fills the screen. Tap “⇄ Today” to flip to the modern map at the same place (≡ = layers: Overlay, Both stacked; ⤾ = orientation).</p></div>
+
+<div class="frame"><div class="phone" style="background:var(--paper)">
+  <div class="status"><span>9:41</span><span>●●● ▮</span></div>
+  <div class="msearch" style="position:absolute;top:54px;left:16px;right:16px"><div class="box" style="color:var(--ink)"><i class="ico"></i> pont</div><div class="btn">Cancel</div></div>
+  <div style="position:absolute;top:108px;left:0;right:0;display:flex;gap:6px;padding:0 16px;overflow:hidden">
+    <span class="chip on" style="padding:8px 12px">All</span><span class="chip" style="padding:8px 12px">Churches</span><span class="chip" style="padding:8px 12px">Colleges</span><span class="chip" style="padding:8px 12px">Streets</span><span class="chip" style="padding:8px 12px">Bridges</span>
+  </div>
+  <div class="count" style="position:absolute;top:150px">17 of 455 places</div>
+  <div class="list" style="position:absolute;top:176px;left:0;right:0;bottom:0;overflow:hidden" data-fill="results(8, -1)"></div>
+  <div class="homebar"></div>
+</div><p class="cap"><b>2 · Results.</b> Focusing search covers the map with the list; type filters as chips that scroll sideways. Cancel returns to the map.</p></div>
+
+<div class="frame"><div class="phone" style="background:var(--paper)">
+  <div class="status"><span>9:41</span><span>●●● ▮</span></div>
+  <div style="position:absolute;top:47px;left:0;right:0;height:48px;display:flex;align-items:center;gap:8px;padding:0 8px;border-bottom:1px solid var(--rule)">
+    <span style="height:44px;display:grid;place-items:center;padding:0 8px;color:var(--blue)">← Back</span>
+    <span style="font-family:var(--serif);font-variant:small-caps;font-size:17px">Le Pont S. Michel</span></div>
+  <div style="position:absolute;top:96px;left:0;right:0;height:170px;overflow:hidden"><script>document.write(oldPane('inset:0', 170))</script><div class="pinR" style="left:195px;top:85px"></div>
+    <span class="fab" style="right:12px;bottom:10px;width:auto;height:40px;padding:0 12px;border-radius:20px;font-size:12.5px">Show on map</span></div>
+  <div style="position:absolute;top:266px;left:0;right:0;bottom:0;overflow:hidden" data-fill="cardPage()"></div>
+  <div class="homebar"></div>
+</div><p class="cap"><b>3 · A place.</b> Its own page: the place on the 1550 map at the top, then the card. “Show on map” goes back to the full map at that spot.</p></div>
+
+</div></body></html>

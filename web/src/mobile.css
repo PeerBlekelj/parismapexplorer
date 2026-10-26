@@ -1,0 +1,123 @@
+/* Phone layout (mockups/mobile, option A): the map fills the screen and the sidebar becomes a
+   sheet at the bottom that snaps to peek / half / full (data-sheet on .app, set by mobile.ts).
+   The map always takes the space above the sheet (at most down to "half"), so a selected place
+   stays in view. Nothing here applies above 760 px. */
+@media (max-width: 760px) {
+  :root {
+    --peek-h: calc(112px + env(safe-area-inset-bottom));
+    --half-h: 52vh;
+    --full-h: calc(100vh - env(safe-area-inset-top) - 10px);
+    --sheet-h: var(--peek-h);
+    --map-h: calc(100vh - var(--peek-h));
+  }
+  @supports (height: 100dvh) {
+    :root { --half-h: 52dvh; --full-h: calc(100dvh - env(safe-area-inset-top) - 10px); --map-h: calc(100dvh - var(--peek-h)); }
+  }
+  .app[data-sheet="half"], .app[data-sheet="full"] { --sheet-h: var(--half-h); --map-h: calc(100vh - var(--half-h)); }
+  @supports (height: 100dvh) {
+    .app[data-sheet="half"], .app[data-sheet="full"] { --map-h: calc(100dvh - var(--half-h)); }
+  }
+  .app[data-sheet="full"] { --sheet-h: var(--full-h); }
+  /* The table sits above a peeking sheet (search and the Map / Table switch stay usable). */
+  .app[data-view="table"] { --sheet-h: var(--peek-h); --map-h: calc(100vh - var(--peek-h)); }
+  @supports (height: 100dvh) {
+    .app[data-view="table"] { --map-h: calc(100dvh - var(--peek-h)); }
+  }
+
+  html, body { overscroll-behavior: none; }
+  body { overflow: hidden; background: #d6c9ad; }
+  .app { display: block; height: 100vh; min-height: 0; }
+
+  /* ---------- the sheet ---------- */
+  .side {
+    position: fixed; z-index: 40; left: 0; right: 0; bottom: 0; width: auto; height: var(--sheet-h);
+    flex: none; border: 0; border-radius: 14px 14px 0 0; box-shadow: 0 -4px 16px #0003; overflow: hidden;
+    padding: 0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    transition: height .2s ease-out;
+  }
+  .app.dragging .side { transition: none; }
+  .sheet-grip { flex: 0 0 auto; height: 26px; display: grid; place-items: center; touch-action: none; cursor: grab; border: 0; background: transparent; padding: 0; width: 100%; }
+  .sheet-grip::before { content: ""; width: 40px; height: 5px; border-radius: 3px; background: var(--rule); }
+  .sheet-probe { position: fixed; left: 0; top: 0; width: 1px; visibility: hidden; pointer-events: none; }
+
+  .top { padding: 0 16px 8px; gap: 8px; border-bottom: 0; }
+  .brand { display: none; font-size: 17px; }
+  .app[data-sheet="full"] .brand { display: block; order: -1; }
+  .search, .viewtabs, .filters-btn { min-height: 44px; }
+  .q-wrap { padding: 0 4px 0 12px; }
+  .search input { font-size: 16px; } /* 16 px: iOS does not zoom the page on focus */
+  .q-clear { min-width: 40px; min-height: 40px; font-size: 22px; }
+  .filters-btn { padding: 0 11px; font-size: 13px; }
+  .viewtabs button { padding: 0 12px; font-size: 13px; }
+  .filters { left: 16px; right: 16px; top: calc(100% - 4px); max-height: calc(var(--half-h) - 90px); overflow: auto; }
+  .chips { gap: 7px; }
+  .chip { min-height: 40px; padding: 0 13px; font-size: 13px; }
+
+  .count { padding: 2px 18px 4px; font-size: 12px; }
+  .list { flex: 1 1 auto; max-height: none; min-height: 0; padding: 0 8px 12px; }
+  .result { padding: 10px 10px; }
+  .app.has-sel .card-wrap { flex: 1 1 auto; min-height: 0; }
+  .card-wrap { overscroll-behavior: contain; }
+  .card { padding: 0 18px 24px; }
+  .card-back { display: flex; align-items: center; min-height: 40px; margin: 0 0 4px; font-size: 14px; }
+  .card-close { top: 0; right: 8px; width: 44px; height: 44px; font-size: 26px; }
+  .card dl { grid-template-columns: 112px 1fr; }
+  .card .src a { display: inline-block; padding: 4px 0; }
+  .intro, .credits { display: none; }
+  .app[data-sheet="full"] .credits { display: block; padding-bottom: 12px; }
+  .app[data-view="table"] .count, .app[data-view="table"] .list, .app[data-view="table"] .card-wrap { display: none; }
+
+  /* ---------- the map ---------- */
+  .main { position: fixed; top: 0; left: 0; right: 0; height: var(--map-h); min-height: 0; flex: none; }
+  .map-area[data-mode="side"] .panes { flex-direction: column; }
+  .modes { top: calc(8px + env(safe-area-inset-top)); left: calc(12px + env(safe-area-inset-left)); right: calc(12px + env(safe-area-inset-right)); transform: none; max-width: none; flex-wrap: nowrap; border-radius: 8px; }
+  .modes button { flex: 1 1 0; min-width: 0; height: 40px; padding: 0 4px; font-size: 13px; }
+  .orient { top: calc(56px + env(safe-area-inset-top)); right: calc(12px + env(safe-area-inset-right)); left: auto; bottom: auto; min-height: 40px; padding: 0 11px; font-size: 12px; border-radius: 8px; }
+  /* With the sheet up the map is short: keep its top clear for the selected place. */
+  .app:not([data-sheet="peek"]) .orient { display: none; }
+  .app:not([data-sheet="peek"]) .warn { top: calc(56px + env(safe-area-inset-top)); }
+  .warn { top: calc(104px + env(safe-area-inset-top)); left: 12px; right: 12px; transform: none; max-width: none; font-size: 10.5px; padding: 3px 8px; text-align: left; display: none; }
+  .map-area[data-mode="overlay"] .warn { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+  .ctrl { left: 12px; right: 12px; transform: none; bottom: 10px; min-height: 44px; padding: 0 12px; justify-content: space-between; font-size: 12.5px; }
+  .ctrl label { flex: 1; }
+  #swipe-hint { display: none; }
+  .ctrl input[type="range"] { flex: 1; min-width: 0; width: auto; height: 32px; }
+  .map-area[data-mode="overlay"] .tag { bottom: 62px; }
+  .banner { bottom: 64px; max-width: calc(100% - 24px); }
+  /* Pinch and double-tap zoom; the +/− buttons only take room on a phone. */
+  .maplibregl-ctrl-group { display: none; }
+
+  /* A wider grip and a finger-sized knob for the overlay swipe. */
+  .swipe::before { left: -22px; right: -22px; }
+  .swipe::after { width: 44px; height: 44px; font-size: 18px; }
+  .swipe span { top: calc(50% + 30px); }
+
+  /* ---------- table: each row a compact card, sorting from a menu (mockup C·3) ---------- */
+  .table-view { position: absolute; inset: 0; padding-top: env(safe-area-inset-top); }
+  .table-head { align-items: center; padding: 6px 16px; min-height: 56px; }
+  .table-head .muted { display: none; }
+  .table-sort-wrap { display: flex; align-items: center; gap: 6px; color: var(--ink2); }
+  .table-sort { min-height: 40px; max-width: 170px; font: inherit; font-size: 13px; color: var(--ink); background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 0 8px; }
+  .table-scroll { padding: 10px 12px 16px; }
+  .table-view table, .table-view tbody { display: block; }
+  .table-view thead, .table-view td.ty { display: none; }
+  .table-view tbody tr {
+    display: grid; grid-template-columns: auto auto 1fr; align-items: center; gap: 3px 6px;
+    background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px; margin-bottom: 8px;
+  }
+  .table-view td { padding: 0; border: 0; }
+  .table-view td.o { grid-column: 1 / -1; font-size: 17px; line-height: 1.2; }
+  .table-view td.m { grid-column: 1 / -1; font-size: 12.5px; color: var(--ink2); margin-bottom: 4px; }
+  .table-view td.m > span:first-child:not(.placeholder) { color: var(--ink); }
+  .table-view td.rd:empty { display: none; }
+  .table-view td.id { justify-self: end; grid-column: -2; }
+  .table-view tbody tr:hover td, .table-view tr.sel td { background: transparent; }
+  .table-view tr.sel { box-shadow: inset 3px 0 0 var(--red); }
+  .table-view tr.sel td:first-child { box-shadow: none; }
+
+  /* Short labels for the narrow bars (mobile.ts adds them). */
+  .lbl-long { display: none; }
+}
+@media (min-width: 761px) {
+  .lbl-short, .sheet-grip, .sheet-probe, .table-sort-wrap, .table-view .m-type { display: none; }
+}

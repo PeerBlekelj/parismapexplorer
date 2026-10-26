@@ -146,6 +146,17 @@ const en = {
   modernNames: {} as Record<string, string>,
   modernNotes: {} as Record<string, string>,
   compass: { N: 'N', S: 'S', E: 'E', W: 'W' } as Record<string, string>,
+
+  // phone layout: short labels for the narrow bars, and the sheet's grip
+  viewTableShort: 'Table',
+  modeSideShort: 'Both',
+  modeOverlayShort: 'Overlay',
+  modeOldShort: '1550',
+  modeModShort: 'Today',
+  orientOriginalShort: 'As printed',
+  sheetGrip: 'Show more or less',
+  sortLabel: 'Sort',
+  sortDefault: 'Best match',
 };
 
 function roundTo(v: number, step: number): number {
@@ -286,6 +297,15 @@ const fr: Strings = {
 
   suggestCorrection: 'Proposer une correction',
   suggestCorrectionHint: 'Ouvre un ticket prérempli sur GitHub (compte GitHub nécessaire)',
+  viewTableShort: 'Tableau',
+  modeSideShort: 'Les deux',
+  modeOverlayShort: 'Superposé',
+  modeOldShort: '1550',
+  modeModShort: 'Aujourd’hui',
+  orientOriginalShort: 'Tel qu’imprimé',
+  sheetGrip: 'Afficher plus ou moins',
+  sortLabel: 'Trier',
+  sortDefault: 'Pertinence',
   loadError: 'Impossible de charger les données des lieux.',
 
   langLabel: 'Langue',
@@ -446,6 +466,15 @@ const sv: Strings = {
 
   suggestCorrection: 'Föreslå en rättelse',
   suggestCorrectionHint: 'Öppnar ett ifyllt ärende på GitHub (kräver ett GitHub-konto)',
+  viewTableShort: 'Tabell',
+  modeSideShort: 'Båda',
+  modeOverlayShort: 'Överlagrad',
+  modeOldShort: '1550',
+  modeModShort: 'I dag',
+  orientOriginalShort: 'Som tryckt',
+  sheetGrip: 'Visa mer eller mindre',
+  sortLabel: 'Sortera',
+  sortDefault: 'Bästa träff',
   loadError: 'Kunde inte läsa in platsdata.',
 
   langLabel: 'Språk',
