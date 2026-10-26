@@ -2,6 +2,18 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-26 (22:30) — analytics; second labels clickable; two duplicates were separate places
+
+- Simple Analytics on every page (vite transformIndexHtml); owner added paris1550.vercel.app in the
+  dashboard (their browser sends Do Not Track, so their own visits don't count).
+- Owner: the vertical "LA VILLE NEUVE" (L0456) wasn't clickable: duplicate labels were dropped from the
+  places. Now `also_px` on the main place (build_places.py, DATA_CONTRACT, model/maps): extra dots on the
+  old map, clicking one opens the main place. 7 places have one.
+- Checking the 9 duplicate pairs against Cousin: two were NOT duplicates. L0171 "LE BASTILLON" = the
+  Bastillon du Temple (Cousin I,5), not the Bastillon Saint-Antoine (L0167); L0251 "R. NONNAIN" = the
+  rue du Fauconnier, misnamed by the engraver (Cousin). Both now places of their own → 457 places
+  (143 standing, 19 rebuilt, 77 renamed, 217 vanished, 1 open). Counts updated on all pages (en/fr/sv).
+
 ## 2026-10-26 (21:40) — start page = about; map at /map/; Corrozet; the shop question
 
 - Deployed main 705f725 (the print-shop cloud session merged both branches into main itself, on the
