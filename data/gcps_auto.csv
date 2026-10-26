@@ -1,41 +1,47 @@
 id,name,x,y,lat,lon,source,loo_error_m
-G001,Notre-Dame (west front),6485,3440,48.85296,2.34903,hand+feature,78
-G002,Saint-Eustache,3787,4950,48.86343,2.34517,hand+feature,64
-G003,Saint-Germain-des-Pres,8304,6427,48.85394,2.33427,hand+feature,221
-G004,Saint-Severin,7197,4036,48.85213,2.34547,hand+feature,27
+G001,Notre-Dame (west front),6485,3440,48.85296,2.34903,hand+feature,73
+G002,Saint-Eustache,3787,4950,48.86343,2.34517,hand+feature,66
+G003,Saint-Germain-des-Pres,8304,6427,48.85394,2.33427,hand+feature,195
+G004,Saint-Severin,7197,4036,48.85213,2.34547,hand+feature,28
 G005,Saint-Etienne-du-Mont,8719,3076,48.84675,2.34808,hand+feature,113
-G006,Bastille (site),4642,952,48.85321,2.36922,hand+feature,427
-G007,Louvre (Cour Carree),5110,5722,48.8606,2.3376,hand+feature,91
-G008,Saint-Merri,4290,3330,48.85904,2.35048,hand,155
-G009,Saint-Jacques-de-la-Boucherie (Tour Saint-Jacques),4712,3870,48.85805,2.34885,hand+feature,77
-G010,Saint-Germain-l'Auxerrois,5007,5107,48.85959,2.34116,hand+feature,48
-G011,Saint-Sulpice,8806,5660,48.85099,2.3348,hand+feature,131
-G012,Saint-Gervais,5076,2788,48.85547,2.35403,hand+feature,47
+G006,Bastille (site),4642,952,48.85321,2.36922,hand+feature,190
+G007,Louvre (Cour Carree),5110,5722,48.8606,2.3376,hand+feature,85
+G008,Saint-Merri,4290,3330,48.85904,2.35048,hand,153
+G009,Saint-Jacques-de-la-Boucherie (Tour Saint-Jacques),4712,3870,48.85805,2.34885,hand+feature,73
+G010,Saint-Germain-l'Auxerrois,5007,5107,48.85959,2.34116,hand+feature,50
+G011,Saint-Sulpice,8806,5660,48.85099,2.3348,hand+feature,129
+G012,Saint-Gervais,5076,2788,48.85547,2.35403,hand+feature,35
 G013,Hotel de Ville,5057,3170,48.85655,2.35223,hand+feature,39
-G014,Sainte-Chapelle,6315,4300,48.8554,2.345,hand+feature,14
-G015,Saint-Medard,9534,1643,48.83988,2.35019,hand+feature,416
-G016,Saint-Nicolas-des-Champs,2600,3650,48.86591,2.35448,hand+feature,28
-G017,Saint-Martin-des-Champs (Arts et Metiers),2423,3400,48.86652,2.35565,hand+feature,69
+G014,Sainte-Chapelle,6315,4300,48.8554,2.345,hand+feature,13
+G015,Saint-Medard,9534,1643,48.83988,2.35019,hand+feature,25
+G016,Saint-Nicolas-des-Champs,2600,3650,48.86591,2.35448,hand+feature,31
+G017,Saint-Martin-des-Champs (Arts et Metiers),2423,3400,48.86652,2.35565,hand+feature,37
 G018,Saint-Julien-le-Pauvre,7020,3790,48.85196,2.3473,hand+feature,10
 G019,Saint-Leu-Saint-Gilles,3420,4250,48.8628,2.35001,hand+feature,111
-G020,Hotel de Cluny,7730,4170,48.85051,2.34397,hand,18
-L0019,Tour de l'Horloge,5960,4200,48.8561,2.34567,place,22
-L0020,Conciergerie,6040,4425,48.856389,2.345556,place,100
+G020,Hotel de Cluny,7730,4170,48.85051,2.34397,hand,19
+L0019,Tour de l'Horloge,5960,4200,48.8561,2.34567,place,20
+L0020,Conciergerie,6040,4425,48.856389,2.345556,place,98
 L0021,Palais de Justice,6180,4260,48.855807,2.344572,place,66
-L0032,Cour de Rohan,7620,5110,48.852946,2.339507,place,17
-L0050,Église des Billettes,4111,2880,48.85799,2.354996,place+feature,99
-L0062,Collège des Bernardins,7170,3060,48.848823,2.352026,place,155
-L0063,Église Saint-Nicolas-du-Chardonnet,7530,3110,48.849168,2.350278,place,77
-L0066,Église Saint-Laurent,483,3740,48.874849,2.358311,place+feature,49
-L0088,Église Saint-Jacques-du-Haut-Pas,10009,3990,48.84361,2.34139,place+feature,142
+L0032,Cour de Rohan,7620,5110,48.852946,2.339507,place,13
+L0050,Église des Billettes,4111,2880,48.85799,2.354996,place+feature,105
+L0062,Collège des Bernardins,7170,3060,48.848823,2.352026,place,157
+L0063,Église Saint-Nicolas-du-Chardonnet,7530,3110,48.849168,2.350278,place,73
+L0066,Église Saint-Laurent,483,3740,48.874849,2.358311,place+feature,58
+L0088,Église Saint-Jacques-du-Haut-Pas,10009,3990,48.84361,2.34139,place+feature,143
 L0145,Collège Sainte-Barbe,8570,3560,48.847507,2.3466,place,59
 L0154,Sorbonne,8340,4060,48.8484,2.3433,place,83
 L0210,Place Maubert,7330,3530,48.8501,2.3488,place,39
-B01,Pont Notre-Dame (Right Bank end),5437,3750,48.856629,2.348904,feature,17
-B02,Pont Notre-Dame (Cite end),5975,3740,48.855713,2.348375,feature,65
+B01,Pont Notre-Dame (Right Bank end),5437,3750,48.856629,2.348904,feature,18
+B02,Pont Notre-Dame (Cite end),5975,3740,48.855713,2.348375,feature,66
 B03,Pont au Change (Right Bank end),5437,4067,48.857115,2.34714,feature,11
-B04,Pont au Change (Cite end),5905,4070,48.856242,2.346596,feature,16
-B05,Petit-Pont (Cite end),6567,3970,48.853476,2.347049,feature,65
+B04,Pont au Change (Cite end),5905,4070,48.856242,2.346596,feature,17
+B05,Petit-Pont (Cite end),6567,3970,48.853476,2.347049,feature,64
 B06,Petit-Pont (Left Bank end),6763,3970,48.853143,2.346861,feature,42
-B07,Pont Saint-Michel (Cite end),6543,4200,48.854252,2.344833,feature,40
+B07,Pont Saint-Michel (Cite end),6543,4200,48.854252,2.344833,feature,41
 B08,Pont Saint-Michel (Left Bank end),6803,4200,48.853846,2.34443,feature,63
+G101,Rue Saint-Antoine x rue Saint-Paul,4675,1718,48.854567,2.362656,feature,19
+G102,Rue Saint-Paul x rue des Lions-Saint-Paul,5330,1720,48.852928,2.361178,feature,73
+G104,Rue Mouffetard x rue Daubenton,9600,1725,48.840083,2.34984,feature,28
+G105,Rue Scipion x rue du Fer-à-Moulin,9258,1130,48.838877,2.3533,feature,82
+G106,Tour de Nesle (site),6500,5815,48.8575,2.337222,feature,17
+G109,Rue du Temple x rue Pastourelle,2945,2690,48.863348,2.358321,feature,90

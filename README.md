@@ -9,7 +9,7 @@ modern name and see where it was and what is there now.
 - 455 places named on the map, each identified with today's place (or marked as vanished, shown
   where it stood), with a short description and sources.
 - The 1550 map and modern Paris side by side and synced, or overlaid: the woodcut is warped onto
-  modern streets with a thin-plate spline through 40 control points (typical error about 60 m).
+  modern streets with a thin-plate spline through 46 control points (typical error about 60 m).
   How that works, how accurate it is and where it fails:
   [How the map was bent](https://paris1550.vercel.app/method/).
 - Search by old or modern name, tolerant of 16th-century spellings.

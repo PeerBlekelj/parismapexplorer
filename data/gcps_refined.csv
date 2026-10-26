@@ -28,3 +28,9 @@ B05,Petit-Pont (Cite end),6567,3970,48.853476,2.347049,bridge end; OSM roadway
 B06,Petit-Pont (Left Bank end),6763,3970,48.853143,2.346861,bridge end; OSM roadway
 B07,Pont Saint-Michel (Cite end),6543,4200,48.854252,2.344833,bridge end; OSM roadway
 B08,Pont Saint-Michel (Left Bank end),6803,4200,48.853846,2.344430,bridge end; OSM roadway
+G101,Rue Saint-Antoine x rue Saint-Paul,4675,1718,48.854567,2.362656,street junction (register geometry)
+G102,Rue Saint-Paul x rue des Lions-Saint-Paul,5330,1720,48.852928,2.361178,street junction; label R. NEUVE S. POL = rue des Lions (Cousin)
+G104,Rue Mouffetard x rue Daubenton,9600,1725,48.840083,2.34984,street junction; grant R. S. Marceau x R. d'Orleans
+G105,Rue Scipion x rue du Fer-à-Moulin,9258,1130,48.838877,2.3533,street junction; R. de la Barre x R. du Fer de Moulain
+G106,Tour de Nesle (site),6500,5815,48.8575,2.337222,foot of the drawn tower; position fr.wikipedia
+G109,Rue du Temple x rue Pastourelle,2945,2690,48.863348,2.358321,street junction

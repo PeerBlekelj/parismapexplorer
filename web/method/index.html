@@ -46,16 +46,16 @@
           would see it from high above the west, looking east: every church, house and garden is drawn standing up, and
           the streets between them are stretched or squeezed to make room. It is printed with east at
           the top. Measured against the modern city, the top of the sheet points to a bearing of about
-          <strong>115°</strong> (east-south-east), so north lies down and to the left.</p>
+          <strong>116°</strong> (east-south-east), so north lies down and to the left.</p>
         <figure>
           <img src="/figures/orientation.svg" width="1400" height="1005" alt="The whole map as printed, with an arrow showing that north points down and to the left" loading="lazy" />
           <figcaption>The whole sheet as printed. The arrow shows true north, from the fit described below.</figcaption>
         </figure>
-        <p>Turning the sheet by 115° is not enough. If you fit the best single stretch to it (an
+        <p>Turning the sheet by 116° is not enough. If you fit the best single stretch to it (an
           <em>affine</em> transform: one rotation, one scale in each direction and one shear for the whole
           map), the sheet's right angles turn out to be <strong>77°</strong> on the ground, and one pixel
           across the sheet covers about 0.36&nbsp;m while one pixel up the sheet covers about
-          0.44&nbsp;m. The engravers also gave more room to what mattered: the Île de la Cité and its
+          0.43&nbsp;m. The engravers also gave more room to what mattered: the Île de la Cité and its
           churches are drawn larger than life, the fields beyond the walls smaller. No single stretch
           can undo that, because the distortion changes from one part of the map to the next.</p>
       </section>
@@ -93,7 +93,7 @@
         <h2>Control points</h2>
         <p>A control point is a spot that can be found on both maps: a pixel on the woodcut and a latitude
           and longitude today. The bend is computed from these alone, so their quality decides
-          everything. There are <strong>40</strong>:</p>
+          everything. There are <strong>46</strong>:</p>
         <ul>
           <li><strong>21 drawn buildings</strong> whose site is known exactly: Notre-Dame, Saint-Eustache,
             the Tour Saint-Jacques, Saint-Germain-des-Prés, the Bastille and others. The point sits on the
@@ -103,10 +103,15 @@
             are the sharpest points on the map, because the river fixes them on both sides.</li>
           <li><strong>11 more</strong> at the label itself, where the label sits on or right against what it
             names.</li>
+          <li><strong>6 at the edges</strong>, added later where the fit was weakest: five street corners that
+            have not moved since the 16th century (rue Saint-Antoine × rue Saint-Paul, rue Mouffetard ×
+            rue Daubenton, rue du Temple × rue Pastourelle and others), placed with the City of Paris street
+            geometry, and the site of the Tour de Nesle. Three more corners were tried and dropped: each
+            landed 200&nbsp;m or more off and pulled its neighbours with it.</li>
         </ul>
         <figure>
-          <img src="/figures/control-points.svg" width="1400" height="1005" alt="The map with 40 coloured dots: most in the centre are green, the three far out (Bastille, Saint-Médard, Saint-Germain-des-Prés) are red" loading="lazy" />
-          <figcaption>The 40 control points on the sheet, coloured by how far off each one lands when it is
+          <img src="/figures/control-points.svg" width="1400" height="1005" alt="The map with 46 coloured dots: most are green; the Bastille and Saint-Germain-des-Prés, far out, are red" loading="lazy" />
+          <figcaption>The 46 control points on the sheet, coloured by how far off each one lands when it is
             left out of the fit (see <a href="#errors">below</a>). The dashed line is where the overlay
             stops: outside it the spline would only be guessing.</figcaption>
         </figure>
@@ -139,8 +144,8 @@
         <table class="nums">
           <thead><tr><th></th><th>median</th><th>90% of points within</th><th>worst</th></tr></thead>
           <tbody>
-            <tr><th>One stretch (affine)</th><td>76 m</td><td>228 m</td><td>440 m</td></tr>
-            <tr><th>Thin-plate spline</th><td><strong>64 m</strong></td><td><strong>155 m</strong></td><td>427 m</td></tr>
+            <tr><th>One stretch (affine)</th><td>89 m</td><td>250 m</td><td>404 m</td></tr>
+            <tr><th>Thin-plate spline</th><td><strong>61 m</strong></td><td><strong>136 m</strong></td><td>195 m</td></tr>
           </tbody>
         </table>
         <figure>
@@ -151,9 +156,10 @@
         <p>In the centre, on the Cité and along the river, a place usually lands within a street's width
           or two of where it was. Towards the walls and beyond, the error grows to a few hundred metres,
           for two reasons: there are fewer control points out there, and the woodcut itself is looser
-          there. The three worst points, the Bastille (427&nbsp;m), Saint-Médard (416&nbsp;m) and
-          Saint-Germain-des-Prés (221&nbsp;m), all lie at the edge, where leaving one point out removes
-          the only anchor for a whole quarter.</p>
+          there. The two worst points, Saint-Germain-des-Prés (195&nbsp;m) and the Bastille (190&nbsp;m), lie
+          at the edge, where leaving one point out removes most of the anchoring for a whole quarter.
+          Before the six edge points were added, the Bastille was off by 427&nbsp;m and Saint-Médard by
+          416&nbsp;m; Saint-Médard is now off by 25&nbsp;m.</p>
       </section>
 
       <section id="mistakes">

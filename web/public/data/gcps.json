@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T12:06:59+00:00",
+ "generated": "2026-10-26T15:48:17+00:00",
  "image": {
   "width": 10890,
   "height": 7820,
@@ -444,6 +444,72 @@
    ],
    "lat": 48.853846,
    "lon": 2.34443,
+   "quality": "place"
+  },
+  {
+   "id": "G101",
+   "name": "Rue Saint-Antoine x rue Saint-Paul",
+   "px": [
+    4675,
+    1718
+   ],
+   "lat": 48.854567,
+   "lon": 2.362656,
+   "quality": "place"
+  },
+  {
+   "id": "G102",
+   "name": "Rue Saint-Paul x rue des Lions-Saint-Paul",
+   "px": [
+    5330,
+    1720
+   ],
+   "lat": 48.852928,
+   "lon": 2.361178,
+   "quality": "place"
+  },
+  {
+   "id": "G104",
+   "name": "Rue Mouffetard x rue Daubenton",
+   "px": [
+    9600,
+    1725
+   ],
+   "lat": 48.840083,
+   "lon": 2.34984,
+   "quality": "place"
+  },
+  {
+   "id": "G105",
+   "name": "Rue Scipion x rue du Fer-à-Moulin",
+   "px": [
+    9258,
+    1130
+   ],
+   "lat": 48.838877,
+   "lon": 2.3533,
+   "quality": "place"
+  },
+  {
+   "id": "G106",
+   "name": "Tour de Nesle (site)",
+   "px": [
+    6500,
+    5815
+   ],
+   "lat": 48.8575,
+   "lon": 2.337222,
+   "quality": "place"
+  },
+  {
+   "id": "G109",
+   "name": "Rue du Temple x rue Pastourelle",
+   "px": [
+    2945,
+    2690
+   ],
+   "lat": 48.863348,
+   "lon": 2.358321,
    "quality": "place"
   }
  ]

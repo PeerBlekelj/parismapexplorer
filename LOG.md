@@ -2,6 +2,21 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-26 (afternoon) — GitHub unlinked from Vercel; six edge control points
+
+- Owner said yes: `vercel git disconnect` done. Deploys only from the mini (prebuilt).
+- Edge control points from the cloud session's 15 candidates (`data/research/gcp_candidates.md`):
+  today's positions from the junction of the two streets' areas in the Paris register
+  (`work/corners.json`), the pixel from the drawn junction on the scan. Rejected on sight: C01
+  (rue de la Cerisaie is drawn at right angles, Cousin), C08 (Porte Saint-Jacques sits on a sheet
+  seam), C10/C11/C15 (the drawn junction isn't identifiable: the Saint-Germain fields are schematic;
+  the Saint-Honoré grid near the Louvre is the engraver's shuffled block). Tried and dropped by the
+  fit: G103 Sévigné×Francs-Bourgeois, G107 Coquillière×Coq-Héron, G108 Saint-Denis×Saint-Sauveur
+  (each 120–220 m off and dragging neighbours; Saint-Laurent went 49→273 m with them).
+  KEPT (G101, G102, G104, G105, G106 Tour de Nesle, G109) in `data/gcps_refined.csv`.
+- Result, 46 points: LOO median 64→61 m, p90 155→136 m, worst 427→195 m. Saint-Médard 416→25 m,
+  Bastille 427→190 m. Overlay tiles regenerated, method page + figures + README updated.
+
 ## 2026-10-26 (13:15) — all four cloud branches merged; live at paris1550.vercel.app
 
 - The owner picked in the cloud sessions directly: favicon **A** ("15" over "50") and phone layout
