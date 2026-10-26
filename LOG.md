@@ -2,6 +2,28 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-26 (evening) — FR/SV pages, texts on the map, start-over link: live; intro = suggestion
+
+- Merged + deployed: `i18n-pages` (FR/SV place + home + method pages, hreflang, app follows /fr/ /sv/
+  paths; UI strings moved to `web/src/strings.ts`, shared with the build), `texts` (/texts/ in
+  en/fr/sv: the 108-line poem + the publishers' notice, transcription checked by the cloud session,
+  16 fixes; full-res JPGs under /texts/full/), and from `intro` only commit 81eb0ff (the title =
+  "Back to the start"; cherry-picked as 3bf7d72). Fixes during the merge: creditTexts/brandHome into
+  strings.ts, footer links via langBase(), start-over keeps the language path (/fr/), texts/ in the
+  sitemap paths, hreflang links inside the texts pages.
+- Flying between places now always zooms out ≥1 level (flightPlan in maps.ts).
+- Seen once: 8 "source image could not be decoded" console errors only during the start-over
+  flight (MapLibre cancelling tile loads mid-zoom). Not reproduced in normal use.
+- Owner decisions pending from the cloud summaries: a FR/SV browser on an English link is moved
+  to /fr/ or /sv/ (shipped; owner may prefer unprefixed = always English); native-speaker read of
+  the FR/SV method page; the texts' sources (Hofmann, Lepape, fr.wikipedia) were seen only via
+  search extracts.
+- `intro` branch (NOT merged): /about/ page (~2,350 words, 13 sources; Cousin's 1875 notice is in
+  `data/research/cousin_1875_notice.txt`), footer link, first-visit welcome card (flag
+  WELCOME_CARD in web/src/welcome.ts). I cut the 6 images from the scan (a862f12). Screenshots in
+  mockups/intro/ on that branch. Waiting for the owner's verdict.
+- ⚠ Never `pkill -f "...port..."` from a Bash call: it matches its own command line and kills it.
+
 ## 2026-10-26 (afternoon) — GitHub unlinked from Vercel; six edge control points
 
 - Owner said yes: `vercel git disconnect` done. Deploys only from the mini (prebuilt).
