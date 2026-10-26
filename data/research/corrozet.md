@@ -8,8 +8,12 @@ and what was his part in the map?
 archive.org, press.uchicago.edu all refused by the network policy). Read **in full**: only the files in
 this repository (Cousin's notice, `cousin_1875_notice.txt`, OCR; the poem as transcribed in
 `scripts/make_texts_page.py`; the panel crops in `data/map_texts/`). Everything else below was **seen only
-as search-engine extracts**, and is marked so. Nothing here was checked against a copy of Corrozet's
-books.
+as search-engine extracts**, and is marked so.
+
+**Update, same evening:** the owner put Lacroix's 1874 reprint of the *Fleur des antiquitez* (Gallica
+PDF bpt6k6487221d) on Google Drive. The connector could not download the 35 MB PDF, but Drive's search
+index returned its OCR text up to PDF page 132, which includes the whole poem (PDF pages 102–106). §2
+and §3 are rewritten from that text; it is OCR, not checked against the page images.
 
 ## 1. Acrostics and other signatures: one, and only one
 
@@ -95,10 +99,19 @@ Paris de 1550. C'était probablement le plan et le guide offerts alors aux étra
 en avoir eu sinon le monopole, du moins la spécialité” (“probably the plan and the guide then offered to
 foreigners […] and Corrozet seems to have had, if not the monopoly, at least the speciality of them”).
 
-**Before Cousin:** nobody can have noticed it on the map: the map was unknown until Sieber found it in
-Basel (1874, per later sources; Cousin says only “récemment”) and Cousin's notice is the first
-publication. Whether anyone had noticed the acrostic **in Corrozet's book** (if it is there; see §3) is
-unknown. Cousin presents it as his own discovery (“ils nous révéleront”). Credit: Cousin.
+**Before Cousin: Corrozet himself.** In the *Fleur des antiquitez* (second edition, 1532, as reprinted
+by Lacroix in 1874) the same fourteen lines stand under the heading **“Le nom et surnom de laucteur.”**
+(“The author's first name and surname”), followed by **“Louenges de Paris faictes par ledict aucteur.”**
+(“Praises of Paris made by the said author”). The acrostic was announced in print in 1532; it is no
+hidden signature. The map drops both headings and keeps only the printer's ornaments, so on the map
+the name is hidden. Cousin, who knew the *Fleur* (“Nous connaissons tous ce rare petit livre”) and
+wrote a year after Lacroix's reprint, presents it as a reveal (“ils nous révéleront”) without saying
+the book labels it. Fair credit: Corrozet signed it; Cousin was the first to point it out **on the
+map** (1875); the map itself was unknown before 1874.
+
+Corrozet liked the device: right after the poem the *Fleur* prints an “Épigramme sur le nom de Paris”
+whose five lines begin P(our), A(ccroissement), R(och), I(ustice), S(cauoir): an acrostic of PARIS.
+The map does not print it.
 
 **Later literature** (all search extracts only):
 - **French Wikipedia**, “Plan de Truschet et Hoyau”: “Ce plan est une commande datée de 1553 d'un
@@ -126,46 +139,73 @@ unknown. Cousin presents it as his own discovery (“ils nous révéleront”). 
 So: no later source found discusses the acrostic itself; those seen repeat Cousin's conclusion
 (patronage, sold together), some more cautiously, one (Wikipedia) as a dated “commission”.
 
-## 3. Shared verses: Cousin says the poem closes the *Fleur*; not verified
+## 3. Shared verses: the map's poem is Corrozet's “Louenges de Paris”, lightly revised
 
-- Cousin's claim (above): the map's poem is “le poème final qui termine et résume la Fleur des
-  antiquités”. He does not say which edition of the *Fleur* he compared, nor whether the acrostic is
-  also in the book.
-- **Corroboration, weak** (search extract of the Internet Archive record of Paul Lacroix's 1874 reprint
-  of the 1532 text, *La fleur des antiquitez de la noble et triumphante ville et cité de Paris*, ed. “le
-  bibliophile Jacob”): contents list a poem **“Louenges de Paris”, pp. 64–68**, followed by “Les noms des
-  rues, eglises et colleges de Paris”, then the genealogy (pp. 69–89) and an appendix from the 1555
-  edition (pp. 91–100). A praise of Paris, five pages long, at the end of the text, is consistent with a
-  108-line poem; but **we have not seen its text**, so the identity with the map's poem is unconfirmed.
-  The same reprint is on Gallica (ark:/12148/bpt6k6487221d) and Internet Archive (lafleurdesantiqu00corr,
-  lafleurdesantiq00corrgoog).
-- Searches for distinctive lines of the map poem (“Gentilz lecteurs amateurs d'escripture”, “Ioyeulx
-  espritz”, “quatorze portes”, “iusques à Tours… Constantinoble”) found nothing: the full texts are not
-  indexed by the search engines, so this is no evidence either way.
-- **1550 *Antiquitez***: not checked. Cousin's wording implies the poem belongs to the *Fleur*, which
-  Corrozet disowned in 1550; he does not say it was reprinted in the *Antiquitez*.
-- **“Blason de Paris”**: no poem of that name by Corrozet found. Corrozet wrote *Blasons domestiques*
-  (1539), and a “Blason des armes de la ville de Paris” is recorded as a liminary piece (Scripta Manent
-  database); no link to the map's verses found.
-- Cousin's remark that each chapter of the *Fleur* is “summed up in a few verses” is about the book's
-  chapter verses; the map poem is, in his words, the *final* poem that closes and sums up the book.
+Compared line by line (script in the session; OCR of Lacroix 1874 against the map transcription in
+`scripts/make_texts_page.py`, spelling normalised):
 
-**Verdict on the about page sentence** (“The poem is the verse summary from the end of his earlier
-*Fleur des antiquités de Paris*”): it states Cousin's identification as fact. Change it to attribute it
-to Cousin and say it is unchecked. Confidence that Cousin is right: moderate (he knew the *Fleur*
-well, “Nous connaissons tous ce rare petit livre”, and the Lacroix contents fit), but not verified.
+- **Same poem.** The *Fleur* has the 14-line acrostic stanza plus 98 lines of “Louenges de Paris”: 112
+  lines. The map has 108: the same text in the same order, with **four lines left out** and about ten
+  words changed. Everything else differs only in spelling (*beaulx/beaux*, *et/&*, *Luthesse/Lutece*…).
+- **The four missing lines** (book numbering):
+  - 21 “Soit dudict lieu qui fut de Gaulle roy” (whether Paris, founder of the place, was king of Gaul),
+    the partner of “arroy”: this is why map line 21 has no rhyme;
+  - 73–74 “Lequel encloz sep[t] lieues lors contient / Comme le bruyt tout commun le maintient” (the
+    enclosure contains seven leagues, as common report has it): a whole couplet dropped;
+  - 77 “Depuis la ville en la noble cite”, the partner of “De la cite en luniuersite”: this is why map
+    line 74 has no rhyme.
+  So the texts page's guess (“perhaps a line was dropped each time”) is confirmed.
+- **Changed readings** (map / *Fleur* 1532):
 
-**Open (needs a library or unblocked access):** compare the map poem with “Louenges de Paris” in
-Lacroix 1874 (Gallica bpt6k6487221d, pp. 64–68), and with a 1532–1543 original edition of the *Fleur*:
-same lines? same acrostic? Check the 1550 *Antiquitez* for the poem.
+| Map line | Map | *Fleur* (1532, Lacroix) |
+|---|---|---|
+| 2 | la stature | la structure (OCR; could be a misreading) |
+| 15 | **Noble** cite | **Nostre** cite |
+| 43 | la riuiere **propice** | la riuiere **rassise** (rhymes with *assise*; the map's word does not) |
+| 45 | Puis est remplie de tres belle fonteine | Ou leau decourt clere plaisante et seine |
+| 47 | boys, & **plantes** | boys, et **plaines** (rhymes with *tresplaines*) |
+| 68 | Ceste ville à **quatorze** portes close | Ceste ville est de **unze** portes enclose |
+| 69 | Et **haultz rampars**, qui n'est pas peu de chose | **Avecq gros murs** qui pas nest peu de chose |
+| 77 | En tresgrand nombre | En tres gros nombre |
+| 79 | **Le** sainct senat | **Et** sainct senat |
+| 80 | Nombre **six vingtz** hommes | En nombre **cent** hommes |
+| 83 | à la court | en la court |
+| 96 | **Font** en ce lieu | **Sont** en ce lieu (long s / f: possibly OCR) |
+| 106 | qu'il n'ya **peuple** au monde | quil ny a **ville** au monde |
+
+- **What the changes look like:** the factual ones go one way, towards Paris around 1550: eleven gates
+  become fourteen, “thick walls” become “high ramparts”, the hundred councillors of the Parlement become
+  six score (120; Francis I had enlarged the court), and the seven-leagues claim goes. Two changes break
+  a rhyme (43, 47), which looks like careless copying or resetting rather than the poet's own revision.
+  Who revised it, Corrozet or the publishers, the text cannot tell.
+- **Caveats.** (1) Only the second 1532 edition was compared. The *Fleur* was reprinted at least eight
+  times to 1555 (Lacroix's preface lists 1532, 1532, 1533/34, 1534, 1535, 1543, 1555); the map's
+  readings (fourteen gates, six score) may already be in a later edition. Lacroix's appendix of
+  first-edition variants lies beyond the part of the OCR we could read. (2) The 1550 *Antiquitez*:
+  the owner also uploaded a Gallica PDF of it (bpt6k1510886x, 141 MB), but it has no text layer the
+  connector can read; not checked.
+- **Placement in the book:** the acrostic stanza and the poem come after the prose chapters and before
+  the epigram on the name of Paris, the “Blason des armes de la ville de Paris” (ending with Corrozet's
+  motto “Plus que moins”) and the list of streets, churches and colleges. Cousin's “le poème final qui
+  termine et résume la Fleur” is fair: it is the last long poem.
+- **“Blason de Paris”**: no poem of that name. The *Fleur*'s own “Blason des armes de la ville de
+  Paris” (10 lines, on the ship of the city's arms) is not on the map.
+
+**Verdict.** Cousin was right: the map's poem is Corrozet's “Louenges de Paris” from the *Fleur des
+antiquitez*, with its acrostic stanza. Confidence: high (whole text compared; OCR of a reprint).
+
+**Still open:** which edition the map's text was taken from (the later *Fleur* editions, 1533–1555, and
+the 1550 *Antiquitez*); the first edition's variants (Lacroix's appendix).
 
 ## 4. Corrozet's role
 
 What the evidence supports, from strongest to weakest:
 
-1. **He wrote the verses** (or at least signed them): the acrostic. High confidence. Even this has a
-   caveat: an acrostic in a reused poem shows authorship of the poem, not involvement in the map; the
-   publishers could have reprinted his verses from his book.
+1. **He wrote the verses**: certain; the poem is in his own book under his name (“Le nom et surnom de
+   laucteur”, “Louenges de Paris faictes par ledict aucteur”). But it was printed there in 1532, so the
+   verses show authorship of the poem, not involvement in the map: the publishers could have reprinted
+   them from his book. The revisions (fourteen gates, six score councillors) show someone updated the
+   text for the map, or used a later edition; that someone may or may not be Corrozet.
 2. **Map and book were sold together, or at least bought together**: Amerbach bought the map in Paris
    (1557 or 1558, per Cousin and Sieber) with a 1550 *Antiquités*; Zwinger's *Methodus apodemica*
    follows the map's names. Evidence for joint purchase by one buyer; “sold together as a pair” is an
@@ -179,14 +219,18 @@ What the evidence supports, from strongest to weakest:
    conflation of Cousin's patronage inference with the c. 1553 dating of Boutier and Hofmann. Treat as
    unsupported until someone produces the document.
 
-One tension worth noting (our observation, not in the literature seen): Cousin says Corrozet had
-disowned the *Fleur* by 1550 as “full of errors and fables”, yet the map, supposedly a companion to
-the new *Antiquités*, prints the old book's closing poem. That fits a cheap reuse of available verses
+One tension worth noting (our observation, not in the literature seen): Corrozet had disowned the
+*Fleur* by 1550 as a “petit livret” full of “erreurs et fables” (his words, quoted by Lacroix and
+Cousin), yet the map, supposedly a companion to the new *Antiquités*, prints the old book's poem. That fits a cheap reuse of available verses
 by Truschet and Hoyau at least as well as a planned companion piece.
 
 ## Sources
 
-Read in full (in the repository):
+Read in full (repository, and the owner's Drive):
+- Gilles Corrozet, *La fleur des antiquitez de la noble et triumphante ville et cité de Paris*, second
+  edition (Galiot du Pré, 1532), ed. P. Lacroix (“le bibliophile Jacob”), Paris, 1874; Gallica
+  ark:/12148/bpt6k6487221d. OCR text from Google Drive's index, PDF pages 1–132 (preface, text, poem
+  on PDF pp. 102–106, street list); not the appendix.
 - Jules Cousin, “Notice sur un plan de Paris du XVIe siècle nouvellement découvert à Bâle”, *Mémoires
   de la Société de l'histoire de Paris et de l'Île-de-France*, t. I (1875), pp. 46–59, OCR in
   `data/research/cousin_1875_notice.txt` (Gallica ark:/12148/bpt6k6310467r, f54–f67).
@@ -197,8 +241,6 @@ Seen only as search extracts:
 - Sénat, Bibliothèque, *Paris : représentations et plans anciens* (brochure-02.pdf).
 - *History of Cartography* vol. 3, ch. 48 (“National Mapmaking from Oronce Fine to Guillaume Postel”)
   and ch. 53 (C. Hofmann, “Publishing and the Map Trade in France, 1470–1670”), press.uchicago.edu PDFs.
-- Internet Archive record of Corrozet, *La fleur des antiquitez…*, ed. P. Lacroix (Paris, Willem, 1874)
-  (contents list); Gallica record of the same, ark:/12148/bpt6k6487221d.
 - English Wikipedia, “Gilles Corrozet”; Institut Paris Région page on the plan; WorldCat / AbeBooks
   records of Dérens 1980; fabula.org notice of *En lisant, en écrivant* (Corrozet colloquium); Scripta
   Manent (huma-num) record of “Blason des armes de la ville de Paris”.

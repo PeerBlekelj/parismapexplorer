@@ -284,8 +284,9 @@ L["en"] = dict(
     col_orig="As printed, c. 1550", col_tr="English",
     h_poem="A poem in praise of Paris",
     p_poem="The poem starts in the large panel at the lower left and carries on in the smaller panel in the "
-           "middle, linked by the catchword “Le sainct” at the foot of the first. It is unsigned, but the first "
-           "letters of its first fourteen lines spell GILLES CORROSET: Gilles Corrozet (see the notes). It is "
+           "middle, linked by the catchword “Le sainct” at the foot of the first. It is by Gilles Corrozet: the "
+           "first letters of its first fourteen lines spell his name. It is his “Louenges de Paris”, printed in "
+           "his <i>Fleur des antiquitez de Paris</i> in 1532 and lightly revised for the map (see the notes). It is "
            "in rhyming couplets of ten syllables. It runs through the city's legendary founding, its setting, its castles "
            "and great houses, its walls, bridges and churches, its courts, its university and its trade.",
     alt1="The first panel of the poem: three columns of verse in a framed cartouche",
@@ -312,9 +313,10 @@ L["fr"] = dict(
     col_orig="Tel qu'imprimé, vers 1550", col_tr="Français moderne",
     h_poem="Un poème à la louange de Paris",
     p_poem="Le poème commence dans le grand cartouche en bas à gauche et se poursuit dans le plus petit, au "
-           "milieu, relié par la réclame « Le sainct » au pied du premier. Il n'est pas signé, mais les initiales de "
-           "ses quatorze premiers vers forment GILLES CORROSET : Gilles Corrozet (voir les notes). Il est en "
-           "décasyllabes à rimes plates. Il passe en revue la fondation légendaire de la ville, son site, ses châteaux et ses grands "
+           "milieu, relié par la réclame « Le sainct » au pied du premier. Il est de Gilles Corrozet : les "
+           "initiales de ses quatorze premiers vers forment son nom. Ce sont ses « Louenges de Paris », "
+           "imprimées dans sa <i>Fleur des antiquitez de Paris</i> en 1532 et légèrement retouchées pour le plan "
+           "(voir les notes). Il est en décasyllabes à rimes plates. Il passe en revue la fondation légendaire de la ville, son site, ses châteaux et ses grands "
            "hôtels, ses murs, ses ponts et ses églises, ses cours de justice, son université et son commerce.",
     alt1="Le premier cartouche du poème : trois colonnes de vers dans un cadre",
     cap1="Le premier cartouche, en bas à gauche du plan (vers 1–78). Cliquez pour la pleine résolution.",
@@ -340,8 +342,9 @@ L["sv"] = dict(
     col_orig="Som tryckt, ca 1550", col_tr="Svenska",
     h_poem="En dikt till Paris lov",
     p_poem="Dikten börjar i det stora fältet nere till vänster och fortsätter i det mindre i mitten; de binds "
-           "samman av kustoden ”Le sainct” längst ned i det första. Den är osignerad, men begynnelsebokstäverna "
-           "i de fjorton första raderna bildar GILLES CORROSET: Gilles Corrozet (se kommentarerna). Den är "
+           "samman av kustoden ”Le sainct” längst ned i det första. Den är skriven av Gilles Corrozet: "
+           "begynnelsebokstäverna i de fjorton första raderna bildar hans namn. Det är hans ”Louenges de Paris”, "
+           "tryckt i hans <i>Fleur des antiquitez de Paris</i> 1532 och lätt bearbetad för kartan (se kommentarerna). Den är "
            "skriven i rimmade par om tio stavelser. Den går igenom stadens legendariska grundande, dess läge, dess slott och stora palats, "
            "dess murar, broar och kyrkor, dess domstolar, dess universitet och dess handel.",
     alt1="Diktens första fält: tre spalter vers i en inramad kartusch",
@@ -381,9 +384,10 @@ NOTES_POEM = {
         "<b>An acrostic (lines 1–14):</b> the opening stanza, which ends at the printer's ornament before "
         "line 15, spells GILLES CORROSET with the first letters of its lines: Gilles Corrozet (1510–1568), "
         "bookseller at the Palais and author of the first guidebooks to Paris, the <i>Fleur des antiquitez</i> "
-        "(1532) and the <i>Antiquitez de Paris</i> (1550). Jules Cousin noticed it in 1875, and identified the "
-        "poem as the closing verses of the <i>Fleur</i>; we have not yet checked that against the book. We "
-        "found no other acrostic: not in the rest of the poem (first or last letters, by stanza, column or "
+        "(1532) and the <i>Antiquitez de Paris</i> (1550). In the <i>Fleur</i> the stanza is headed “Le nom et "
+        "surnom de l'aucteur” (the author's name and surname) and the poem “Louenges de Paris faictes par "
+        "ledict aucteur” (praises of Paris by the said author); the map leaves both headings out. Jules Cousin "
+        "was the first to point the name out on the map, in 1875. We found no other acrostic: not in the rest of the poem (first or last letters, by stanza, column or "
         "panel), nor in the publishers' notice. See <a href=\"/#makers\">who made the map</a>.",
         "<b>Paris, Hercules, the Trojans (lines 19–41):</b> the poem weighs the founding legends of its day "
         "without choosing. In one, Paris was founded by Trojan exiles: in Jean Lemaire de Belges' "
@@ -395,8 +399,18 @@ NOTES_POEM = {
         "<b>“Eight hundred and thirty years before God suffered”</b> (line 38): about 800 BC by the legend's "
         "reckoning.",
         "<b>Two lines without a partner:</b> the poem rhymes in couplets, but lines 21 (<i>arroy</i>) and 74 "
-        "(<i>vniuersité</i>) have no rhyme; perhaps a line was dropped each time when the type was set. The "
-        "count of 108 is of the lines as printed.",
+        "(<i>vniuersité</i>) have no rhyme. The 1532 text has the missing partners: “Soit dudict lieu qui fut "
+        "de Gaulle roy” (whether Paris, the founder, was king of Gaul) before line 21, and “Depuis la ville en "
+        "la noble cite” (from the town to the noble Cité) before line 74. The count of 108 is of the lines as "
+        "printed on the map.",
+        "<b>The map's text and the book's:</b> compared with the <i>Fleur</i> of 1532, the map leaves out four "
+        "lines (the two above and, after line 71, a couplet saying the enclosure takes in seven leagues) and "
+        "changes about ten words. Some changes bring the facts up to date: the book has eleven gates and thick "
+        "walls (<i>unze portes</i>, <i>gros murs</i>) where the map has fourteen gates and high ramparts (lines "
+        "68–69), and a hundred councillors where the map has six score (line 80). Others look like slips: "
+        "<i>propice</i> (line 43) and <i>plantes</i> (line 47) break rhymes that the book's <i>rassise</i> and "
+        "<i>plaines</i> make. Line 15 begins <i>Noble</i> on the map, <i>Nostre</i> (our) in the book. Who made "
+        "the changes, and whether a later edition of the <i>Fleur</i> already had them, is not known.",
         "<b>Lutetia</b> (line 54): the Roman name of Paris.",
         f"<b>The Hôtel de Bourbon</b> (line 60): the {place('L0030', 'Petit-Bourbon')}, beside the Louvre.",
         "<b>Villeroy, “château pers”</b> (lines 60–61): the words are clear on the scan, the meaning is not. "
@@ -409,8 +423,8 @@ NOTES_POEM = {
         f"<b>Five great bridges</b> (line 72): {BRIDGES['en']}. All five are on the map.",
         "<b>The holy senate</b> (lines 78–83): the Parlement of Paris, the highest court of the realm, not an "
         "assembly. Francis I (r. 1515–1547) enlarged it with two new chambers of twenty members each and a score "
-        "more judges; “six score” (120) councillors around 1550 is plausible, but we have not been able to "
-        "confirm the exact figure.",
+        "more judges. The 1532 text of the poem says a hundred councillors; the map says “six score” (120). "
+        "We have not been able to confirm the exact figure.",
         "<b>Standing in for the Provost</b> (lines 84–87): <i>tenant le lieu</i>, “holding the place”, is what "
         "<i>lieutenant</i> means. The Prévôt de Paris was the king's judge for the city; his lieutenants, civil "
         "and criminal, did the judging in his name at the Grand Châtelet.",
@@ -422,8 +436,9 @@ NOTES_POEM = {
         "<b>Un acrostiche (vers 1–14) :</b> la strophe d'ouverture, close par le fleuron qui précède le vers "
         "15, forme par les initiales de ses vers GILLES CORROSET : Gilles Corrozet (1510–1568), libraire au "
         "Palais, auteur des premiers guides de Paris, la <i>Fleur des antiquitez</i> (1532) et les "
-        "<i>Antiquitez de Paris</i> (1550). Jules Cousin l'a remarqué en 1875, et a reconnu dans le poème les "
-        "vers qui terminent la <i>Fleur</i> ; nous ne l'avons pas encore vérifié sur le livre. Nous n'avons "
+        "<i>Antiquitez de Paris</i> (1550). Dans la <i>Fleur</i>, la strophe porte le titre « Le nom et surnom "
+        "de l'aucteur » et le poème « Louenges de Paris faictes par ledict aucteur » ; le plan omet les deux "
+        "titres. Jules Cousin fut le premier à signaler le nom sur le plan, en 1875. Nous n'avons "
         "trouvé aucun autre acrostiche : ni dans le reste du poème (premières ou dernières lettres, par "
         "strophe, colonne ou cartouche), ni dans l'avis des éditeurs. Voir <a href=\"/fr/#makers\">qui "
         "a fait le plan</a>.",
@@ -437,8 +452,18 @@ NOTES_POEM = {
         "<b>« Huit cent trente ans avant que Dieu souffrît »</b> (vers 38) : vers 800 av. J.-C. selon le comput "
         "de la légende.",
         "<b>Deux vers sans rime :</b> le poème est en rimes plates, mais les vers 21 (<i>arroy</i>) et 74 "
-        "(<i>vniuersité</i>) n'ont pas de vers qui leur réponde ; peut-être un vers a-t-il chaque fois été omis "
-        "à la composition. Le compte de 108 vers est celui de l'imprimé.",
+        "(<i>vniuersité</i>) n'ont pas de vers qui leur réponde. Le texte de 1532 donne les vers manquants : "
+        "« Soit dudict lieu qui fut de Gaulle roy » avant le vers 21, et « Depuis la ville en la noble cite » "
+        "avant le vers 74. Le compte de 108 vers est celui du plan.",
+        "<b>Le texte du plan et celui du livre :</b> par rapport à la <i>Fleur</i> de 1532, le plan omet quatre "
+        "vers (les deux ci-dessus et, après le vers 71, un distique disant que l'enceinte contient sept lieues) "
+        "et change une dizaine de mots. Certains changements mettent les faits à jour : le livre a « unze "
+        "portes » et « gros murs » là où le plan a quatorze portes et « haultz rampars » (vers 68–69), et cent "
+        "conseillers là où le plan en a « six vingtz » (vers 80). D'autres ressemblent à des fautes : "
+        "<i>propice</i> (vers 43) et <i>plantes</i> (vers 47) cassent des rimes que donnent <i>rassise</i> et "
+        "<i>plaines</i> dans le livre. Le vers 15 commence par <i>Noble</i> sur le plan, <i>Nostre</i> dans le "
+        "livre. On ne sait pas qui a fait ces changements, ni si une édition plus tardive de la <i>Fleur</i> les "
+        "contenait déjà.",
         "<b>Lutèce</b> (vers 54) : le nom romain de Paris.",
         f"<b>L'hôtel de Bourbon</b> (vers 60) : le {place('L0030', 'Petit-Bourbon')}, à côté du Louvre.",
         "<b>Villeroy, « château pers »</b> (vers 60–61) : les mots sont nets sur le scan, le sens ne l'est pas. "
@@ -452,8 +477,8 @@ NOTES_POEM = {
         f"<b>Cinq grands ponts</b> (vers 72) : {BRIDGES['fr']}. Les cinq figurent sur le plan.",
         "<b>Le saint sénat</b> (vers 78–83) : le Parlement de Paris, la plus haute cour de justice du royaume, et "
         "non une assemblée. François Ier (1515–1547) l'agrandit de deux chambres nouvelles de vingt membres "
-        "chacune et d'une vingtaine de juges de plus ; « six vingts » (120) conseillers vers 1550 est plausible, "
-        "mais nous n'avons pas pu vérifier le chiffre exact.",
+        "chacune et d'une vingtaine de juges de plus. Le texte de 1532 du poème dit cent conseillers ; le plan "
+        "dit « six vingtz » (120). Nous n'avons pas pu vérifier le chiffre exact.",
         "<b>Tenant lieu du prévôt</b> (vers 84–87) : <i>tenant le lieu</i>, c'est le sens même de "
         "<i>lieutenant</i>. Le prévôt de Paris était le juge du roi pour la ville ; ses lieutenants, civil et "
         "criminel, jugeaient en son nom au Grand Châtelet.",
@@ -465,9 +490,10 @@ NOTES_POEM = {
         "<b>En akrostikon (rad 1–14):</b> den inledande strofen, som slutar vid tryckarens ornament före rad "
         "15, bildar med radernas begynnelsebokstäver GILLES CORROSET: Gilles Corrozet (1510–1568), bokhandlare "
         "vid Palais och författare till de första guideböckerna om Paris, <i>Fleur des antiquitez</i> (1532) "
-        "och <i>Antiquitez de Paris</i> (1550). Jules Cousin upptäckte det 1875 och kände igen dikten som "
-        "slutverserna i <i>Fleur</i>; det har vi ännu inte kontrollerat mot boken. Vi har inte hittat någon "
-        "annan akrostikon: varken i resten av dikten (första eller sista bokstäverna, per strof, spalt eller "
+        "och <i>Antiquitez de Paris</i> (1550). I <i>Fleur</i> har strofen rubriken ”Le nom et surnom de "
+        "l'aucteur” (författarens för- och efternamn) och dikten rubriken ”Louenges de Paris faictes par ledict "
+        "aucteur” (Paris lov, av samme författare); kartan utelämnar båda rubrikerna. Jules Cousin var den "
+        "förste som påpekade namnet på kartan, 1875. Vi har inte hittat någon annan akrostikon: varken i resten av dikten (första eller sista bokstäverna, per strof, spalt eller "
         "fält) eller i utgivarnas meddelande. Se <a href=\"/sv/#makers\">vem som gjorde kartan</a>.",
         "<b>Paris, Herkules, trojanerna (rad 19–41):</b> dikten väger sin tids legender om stadens grundande mot "
         "varandra utan att välja. Enligt en grundades Paris av landsflyktiga trojaner: i Jean Lemaire de Belges "
@@ -478,8 +504,17 @@ NOTES_POEM = {
         "sitt namn efter parisierna, det galliska folk som bodde där.",
         "<b>”Åttahundratrettio år innan Gud led”</b> (rad 38): omkring 800 f.Kr. enligt legendens tideräkning.",
         "<b>Två rader utan rim:</b> dikten rimmar parvis, men rad 21 (<i>arroy</i>) och 74 (<i>vniuersité</i>) "
-        "saknar rimpartner; kanske föll en rad bort vid sättningen båda gångerna. Antalet 108 gäller raderna "
-        "som de trycktes.",
+        "saknar rimpartner. Texten från 1532 har de saknade raderna: ”Soit dudict lieu qui fut de Gaulle roy” "
+        "(om Paris, grundaren, var kung i Gallien) före rad 21 och ”Depuis la ville en la noble cite” (från "
+        "staden till den ädla Cité) före rad 74. Antalet 108 gäller raderna som de trycktes på kartan.",
+        "<b>Kartans text och bokens:</b> jämfört med <i>Fleur</i> från 1532 utelämnar kartan fyra rader (de två "
+        "ovan och, efter rad 71, ett rimpar om att stadsmuren omsluter sju lieues, franska mil om ungefär fyra kilometer) och ändrar ett tiotal ord. En "
+        "del ändringar uppdaterar fakta: boken har elva portar och tjocka murar (<i>unze portes</i>, <i>gros "
+        "murs</i>) där kartan har fjorton portar och höga vallar (rad 68–69), och hundra rådsherrar där kartan "
+        "har sex tjog (rad 80). Andra ser ut som misstag: <i>propice</i> (rad 43) och <i>plantes</i> (rad 47) "
+        "bryter rim som bokens <i>rassise</i> och <i>plaines</i> ger. Rad 15 börjar med <i>Noble</i> på kartan, "
+        "<i>Nostre</i> (vår) i boken. Vem som gjorde ändringarna, och om en senare upplaga av <i>Fleur</i> redan "
+        "hade dem, vet vi inte.",
         "<b>Lutetia</b> (rad 54): det romerska namnet på Paris.",
         f"<b>Hôtel de Bourbon</b> (rad 60): {place('L0030', 'Petit-Bourbon')}, intill Louvren.",
         "<b>Villeroy, ”château pers”</b> (rad 60–61): orden är tydliga på skanningen, betydelsen är det inte. "
@@ -492,8 +527,8 @@ NOTES_POEM = {
         f"<b>Fem stora broar</b> (rad 72): {BRIDGES['sv']}. Alla fem finns på kartan.",
         "<b>Den heliga senaten</b> (rad 78–83): Parlement de Paris, rikets högsta domstol, inte en folkförsamling. "
         "Frans I (regent 1515–1547) utökade den med två nya kammare om tjugo ledamöter vardera och ett tjugotal "
-        "domare till; ”sex tjog” (120) rådsherrar omkring 1550 är rimligt, men vi har inte kunnat bekräfta "
-        "den exakta siffran.",
+        "domare till. Diktens text från 1532 säger hundra rådsherrar; kartan säger ”sex tjog” (120). Vi har "
+        "inte kunnat bekräfta den exakta siffran.",
         "<b>I prevostens ställe</b> (rad 84–87): <i>tenant le lieu</i>, ”som håller platsen”, är just vad "
         "<i>lieutenant</i> betyder. Prévôt de Paris var kungens domare för staden; hans ställföreträdare för "
         "civila mål och för brottmål dömde i hans namn på Grand Châtelet.",
@@ -635,6 +670,12 @@ ABOUT = {
 
 # The same list on every page: titles stay in their own language.
 SOURCES = [
+    "Gilles Corrozet, <i>La fleur des antiquitez de la noble et triumphante ville et cité de Paris</i>, second "
+    "edition (1532), ed. P. Lacroix (“le bibliophile Jacob”), Paris, 1874, pp. 64–68: "
+    "<a href=\"https://gallica.bnf.fr/ark:/12148/bpt6k6487221d\">gallica.bnf.fr / BnF</a> (the poem, with "
+    "its acrostic stanza); comparison in "
+    "<a href=\"https://github.com/PeerBlekelj/parismapexplorer/blob/main/data/research/corrozet.md\">the "
+    "research notes</a>.",
     "Jules Cousin, “Notice sur un plan de Paris du XVI<sup>e</sup> siècle nouvellement découvert à Bâle”, "
     "<i>Mémoires de la Société de l'histoire de Paris et de l'Île-de-France</i>, t. I (1875), pp. 46–59: "
     "<a href=\"https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f54.item\">gallica.bnf.fr / BnF</a> (the "
