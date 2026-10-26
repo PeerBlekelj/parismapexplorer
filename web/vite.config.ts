@@ -13,6 +13,7 @@ import { LANGS, localModernIn, STRINGS, type Lang } from './src/strings';
 
 // The site's address, in one place: the HTML pages say %SITE% and get it from siteUrl() below.
 const SITE = 'https://paris1550.vercel.app';
+const ANALYTICS = '    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>';
 const NAME = 'Paris 1550';
 
 /** Path of a page in language `l`; `path` is the English one without the leading slash. */
@@ -81,7 +82,12 @@ function metaBlock(m: Meta): string {
 function siteUrl(): Plugin {
   return {
     name: 'site-url',
-    transformIndexHtml: { order: 'pre', handler: (html) => html.replaceAll('%SITE%', SITE) },
+    // Every page, every language: the site address, and Simple Analytics (no cookies, no personal
+    // data; the same account as the owner's other public sites).
+    transformIndexHtml: {
+      order: 'pre',
+      handler: (html) => html.replaceAll('%SITE%', SITE).replace('</head>', `${ANALYTICS}\n  </head>`),
+    },
   };
 }
 
