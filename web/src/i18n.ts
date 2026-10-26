@@ -14,8 +14,8 @@ function pathLang(): Lang | null {
   return m && isLang(m[1]) ? m[1] : null;
 }
 
-/** ?lang= in the address, then the /fr/ or /sv/ path, then the visitor's earlier choice, then
- *  the browser's language. An unprefixed path says nothing: it is also where old links point. */
+/** ?lang= in the address, then the /fr/ or /sv/ path, then the visitor's earlier choice, else
+ *  English. An unprefixed path says nothing: it is also where old links point. */
 function detectLang(): Lang {
   const q = new URLSearchParams(location.search).get('lang');
   if (isLang(q)) return q;
@@ -25,8 +25,9 @@ function detectLang(): Lang {
     const s = localStorage.getItem(STORE_KEY);
     if (isLang(s)) return s;
   } catch { /* storage blocked */ }
-  const nav = (navigator.language || '').toLowerCase();
-  return nav.startsWith('fr') ? 'fr' : nav.startsWith('sv') ? 'sv' : 'en';
+  // English by default, whatever the browser's language (owner, 2026-10-26: the translations need
+  // review first). French and Swedish only by the visitor's choice or a /fr/, /sv/ address.
+  return 'en';
 }
 
 // Live bindings: modules that import `t` and `lang` see the new values after `setLang`.

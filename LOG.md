@@ -2,6 +2,13 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-26 (23:00) — English by default
+
+- Owner: default to English regardless of browser language — the Swedish translation is too weak for now.
+  `detectLang()` in web/src/i18n.ts no longer reads navigator.language; FR/SV only via /fr/ /sv/ paths,
+  ?lang=, or the visitor's own click on the switch (remembered). Tested with sv-SE and fr-FR browsers.
+- TODO before re-enabling browser detection: a native-speaker review of the SV (and FR) texts.
+
 ## 2026-10-26 (22:30) — analytics; second labels clickable; two duplicates were separate places
 
 - Simple Analytics on every page (vite transformIndexHtml); owner added paris1550.vercel.app in the
