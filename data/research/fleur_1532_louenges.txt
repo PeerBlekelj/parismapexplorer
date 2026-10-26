@@ -1,0 +1,120 @@
+# Gilles Corrozet, "Le nom et surnom de laucteur" + "Louenges de Paris faictes par ledict aucteur",
+# from La fleur des antiquitez de ... Paris, 2nd edition (Galiot du Pré, 1532), as reprinted by
+# P. Lacroix ("le bibliophile Jacob"), Paris 1874, Gallica ark:/12148/bpt6k6487221d, PDF pp. 102-106.
+# Public domain. Source: the OCR text of the Gallica PDF (via Google Drive's index), NOT checked against
+# the page images. Only words run together by the OCR were split ("lecteursamateursdescripture"); the
+# OCR's "fres bel" was read as "tres bel" and "sep lieues" left as printed by the OCR. Spelling, missing
+# apostrophes and accents are as in the OCR. Lines 1-14 = the acrostic stanza (GILLES CORROSET).
+# Comparison with the map: data/research/corrozet.md, section 3.
+Gentilz lecteurs amateurs descripture.
+Ioyeulx esprits regardez la structure
+Le bastiment et la fondation
+Lacroissement et laugmentation
+Et la facon comment Paris la ville
+Sest augmentee en matiere civille
+Considerez la sienne antiquite
+Ou mainctz cas sont de singularite
+Regardez bien tous ces beaulx ediffices
+Recongnoissez ses louenges propices
+Ou on comprend sa valleur et noblesse
+Son hault estat sa doulce gentillesse
+Et tous les biens quon peult en verite
+Totallement dire dune cite.
+Nostre cite et ville tant exquise
+Dicte Paris de toutes gens requise
+Peult auoir loz et desservir la gloire
+De tout honneur pour lantique memoire
+De son premier et noble instaurateur
+Sil est ainsi que Paris fondateur
+Soit dudict lieu qui fut de Gaulle roy
+Ou sainsi est que auec puissant arroy
+Hercules Grec ait faict fondation
+De la cite par une nation
+De son pais, ou si la gent troyenne
+Ont la cite dicte Parisienne
+Faicte et bastie, et mise en son essence
+Ceulx cy nommes de treshaulte excellence
+Furent iadis et de noblesse antique:
+Mesmement ceulx de source Dardanique
+Furent tres preux et les plus anciens
+Qui furent onc es pays Asiens
+Paris aussi eut couronne royalle
+Et fut le roy de France la loyalle
+Donc si lung deulx la faicte et instauree
+Estre elle en doibt prisee et honoree
+Pareillement la sienne antiquite
+Est de longtemps, car a la verite
+Huyt centz trente ans auant que dieu souffrist
+Tres dure mort, et a la croix se offrist
+Paris avoit prins son commencement
+Par les Troyens, et le sien fondement.
+Or est Paris en tres bel aer assise
+Entour soy a la riuiere rassise
+Et fleuue doulx, que lon appelle Seine
+Ou leau decourt clere plaisante et seine.
+De lautre part sont les forestz tresplaines
+De venoison, champaignes, boys, et plaines
+Terres portans les vignes tresplaisantes
+Autres aussi en tous bledz habondantes
+Laer y est doulx, et la terre fertille
+Et en tous fruyctz trescommode et utille
+En elle aussi sont grans chasteaulx et tours
+Plus quil ny a dicy jusques a Tours
+Maisons dhonneur, voit on dedens Luthesse
+Maint bastillon et riche forteresse
+Comme le Louure et la Bastille noble
+Dont telle na dedens Constantinnoble.
+Puis des seigneurs les maisons de plaisance
+Les grans logis ou prennent ample aisance
+Comme lhostel de Bourbon Villeroy
+Dict chasteau pers et la maison du roy
+Pres le Palais, lequel Palais a bruyt
+Destre le myeulx en bel œuvre construyt
+Quon veit iamais en la Chrestiente
+Pour sa grandeur, puis on voit a plante
+Dautres logis plains de beaulx edifices
+Pour les bourgeoys et citoyens propices.
+Ceste ville est de unze portes enclose
+Avecq gros murs qui pas nest peu de chose
+Profondz fossez tout alentour sestendent
+Ou maintes eaux de toutes parts se rendent
+Lequel encloz sep lieues lors contient
+Comme le bruyt tout commun le maintient.
+Puys apres sont cinq grantz pontz pour passer
+Par dessus leau, aussy pour rapasser
+Depuis la ville en la noble cite
+De la cite en luniuersite.
+Avecq ce sont maintes eglises belles
+Temples diuins, monasteres chapelles
+En tres gros nombre, on peult pareillement
+Ceste louer pour le beau parlement
+Et sainct senat ou sont les conseillers
+En nombre cent hommes tressinguliers
+De grant scauoir qui tiennent leurs office
+De par le Roy pour faire à tous iustice
+Sur les proces en la court intimez.
+Autres gens sont en iustice estimez
+Tenant le lieu du grant Preuost royal
+Pour ordonner leur jugement loyal
+A toutes gens selon leur cause bonne
+Apres y a maincte docte personne
+Estudiant aux loix pource establiz
+Et de scavoir sont tresfort ennobliz
+Dedens Paris les sciences florissent
+Et gens scavans en ce lieu resplendissent
+Plus quen nul lieu. car Palas y octroye
+Autant ou plus quen Athenes ou Troye
+Le sien seiour, et les muses scavantes
+Sont en ce lieu leur demeure tenantes
+Plus que iamais ne furent sur le mont
+De Aonias ou par elles se mond
+Estoit iadis mainct homme pour apprendre.
+Ars et mestiers, apres nous fault comprendre
+Desquelz il vient tresgrande utilite
+Au lieu susdict aussi tranquilite.
+Semblablement marchans de toutes guises
+Viennent illecq pour toutes marchandises
+Distribuer et tant de peuple habonde
+En cestuy lieu quil ny a ville au monde
+Qui soit autant a chascun gracieuse
+Quest cest cy ny autant spacieuse

@@ -34,9 +34,15 @@ export let lang: Lang = detectLang();
 export let t: Strings = STRINGS[lang];
 document.documentElement.lang = lang;
 
-/** The site root in language `l`: "/" for English, "/fr/", "/sv/". App paths hang off it. */
+/** The site root in language `l`: "/" for English, "/fr/", "/sv/". The start page (about the
+ *  map) lives there; the app and the other pages hang off it. */
 export function langBase(l: Lang = lang): string {
   return l === 'en' ? BASE : `${BASE}${l}/`;
+}
+
+/** The map app's own address in language `l`: "/map/", "/fr/map/", "/sv/map/". */
+export function mapBase(l: Lang = lang): string {
+  return `${langBase(l)}map/`;
 }
 
 /** Put the address on the current language's path (/fr/place/L0123/ ↔ /place/L0123/), keeping

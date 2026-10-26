@@ -2,80 +2,339 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <!-- page-meta: vite.config.ts rewrites this block for each language and /place/ page -->
-    <title>Paris 1550 · the Truschet &amp; Hoyau map and the city today</title>
-    <meta name="description" content="Every place named on the Truschet &amp; Hoyau plan of Paris, c. 1550, found on the map and in the city today." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paris 1550 · the Truschet &amp; Hoyau map of Paris, c. 1550, and the city today</title>
+    <meta name="description" content="A woodcut map of Paris from around 1550: who made it, how it is dated, how its only copy was found in Basel, and every place named on it found in the city today." />
     <link rel="canonical" href="%SITE%/" />
+    <link rel="alternate" hreflang="en" href="%SITE%/" />
+    <link rel="alternate" hreflang="fr" href="%SITE%/fr/" />
+    <link rel="alternate" hreflang="sv" href="%SITE%/sv/" />
+    <link rel="alternate" hreflang="x-default" href="%SITE%/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Paris 1550" />
-    <meta property="og:title" content="Paris 1550 · the Truschet &amp; Hoyau map and the city today" />
-    <meta property="og:description" content="Every place named on the Truschet &amp; Hoyau plan of Paris, c. 1550, found on the map and in the city today." />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="sv_SE" />
+    <meta property="og:title" content="Paris 1550 · the Truschet &amp; Hoyau map of Paris, c. 1550, and the city today" />
+    <meta property="og:description" content="A woodcut of Paris from around 1550, printed in a shop in the rue Montorgueil, bought by a Basel student and forgotten for 300 years. Every place on it, found in the city today." />
     <meta property="og:url" content="%SITE%/" />
     <meta property="og:image" content="%SITE%/og/site.jpg" />
     <meta property="og:image:width" content="800" />
     <meta property="og:image:height" content="420" />
-    <meta property="og:image:alt" content="The Île de la Cité and both banks on the Truschet &amp; Hoyau plan of Paris" />
     <meta name="twitter:card" content="summary_large_image" />
-    <!-- /page-meta -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      // The map used to live here: old links with #place=L0123 go on to it.
+      if (/(?:^#|&)place=/.test(location.hash)) location.replace(location.pathname.replace(/\/?$/, '/') + 'map/' + location.search + location.hash);
+    </script>
   </head>
-  <body>
-    <div class="app" data-view="map">
-      <aside class="side">
-        <div class="top">
-          <a class="brand" id="brand" href="/"><span id="brand-title"></span><small id="brand-sub"></small></a>
-          <div class="toolrow">
-            <div class="search">
-              <label class="q-wrap">
-                <svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-                <input id="q" type="search" autocomplete="off" spellcheck="false" />
-              </label>
-              <button type="button" id="q-clear" class="q-clear" hidden>×</button>
-              <button type="button" id="filters-btn" class="filters-btn" aria-expanded="false" aria-controls="filters"></button>
-            </div>
-            <div class="viewtabs" role="tablist">
-              <button type="button" data-view="map" class="on" role="tab" aria-selected="true"></button>
-              <button type="button" data-view="table" role="tab" aria-selected="false"></button>
-            </div>
-          </div>
-          <div class="filters" id="filters" hidden><div class="chips" id="chips"></div></div>
+  <body class="doc">
+    <header class="doc-head">
+      <div class="doc-top">
+        <span class="back">Paris 1550</span>
+        <nav class="langs" aria-label="Language"><a href="/" lang="en" hreflang="en" aria-current="page">EN</a> · <a href="/fr/" lang="fr" hreflang="fr">FR</a> · <a href="/sv/" lang="sv" hreflang="sv">SV</a></nav>
+      </div>
+      <h1>A map of Paris, c.&nbsp;1550</h1>
+      <p class="lede">Around 1550 two printmakers in the rue Montorgueil cut a picture of Paris into eight blocks of
+        wood: every church, college, gate and bridge, and hundreds of street names. It was made to hang on a
+        wall and probably sold in large numbers. One copy survives, because a Swiss collector took it home, and it lay forgotten in Basel for
+        three centuries.</p>
+      <p class="cta"><a class="cta-btn" href="/map/">Open the map →</a><span class="cta-sub">the woodcut and Paris today, side by side</span></p>
+    </header>
+
+    <main class="doc-body">
+      <nav class="toc" aria-label="Contents">
+        <ol>
+          <li><a href="#map">The map</a></li>
+          <li><a href="#makers">Who made it</a></li>
+          <li><a href="#when">When</a></li>
+          <li><a href="#paris">Paris in 1550</a></li>
+          <li><a href="#basel">One copy, found in Basel</a></li>
+          <li><a href="#copies">Relatives and copies</a></li>
+          <li><a href="#use">How to use this site</a></li>
+          <li><a href="#sources">Sources</a></li>
+        </ol>
+      </nav>
+
+      <section id="map">
+        <h2>The map</h2>
+        <p>The title is printed on a twisting ribbon at the top: <em>La Ville, Cité et Université de Paris</em>,
+          the three parts of the city. The sheet measures about 133&nbsp;cm across and 96&nbsp;cm high, and it was
+          printed from eight woodblocks, so eight sheets of paper pasted together
+          <a class="ref" href="#s-cousin">[1]</a><a class="ref" href="#s-erara">[3]</a>.
+          The Basel copy is coloured by hand: “richly, too richly”, as the first scholar to see it put it
+          <a class="ref" href="#s-cousin">[1]</a>.</p>
+        <figure>
+          <img src="/figures/orientation.svg" width="1400" height="1005" alt="The whole map as printed, east at the top" loading="lazy" />
+          <figcaption>The whole sheet as printed, with east at the top. The arrow shows true north (see
+            <a href="/method/">how the map was bent</a>).</figcaption>
+        </figure>
+        <p>It is not a plan in the modern sense but a <strong>bird's-eye view</strong>: Paris seen from high
+          above the west, looking east. East is at the top (the four winds blow from the corners and name the
+          directions), north on the left. The important buildings are drawn standing up, with some care for what
+          they really looked like; ordinary houses are rows of near-identical little cottages
+          <a class="ref" href="#s-cousin">[1]</a>.</p>
+        <p>The artists bent the world to fit the frame. Below Paris the Seine turns a sharp right angle so that
+          both banks can be shown as far as Auteuil and Passy; at the top the horizon drops so that the mouth of the
+          Marne and the villages of Vincennes, Conflans, Vitry, Villejuif and Bicêtre squeeze in
+          <a class="ref" href="#s-cousin">[1]</a>. Street names are cut into the spaces between the houses and, as
+          Jules Cousin complained in 1875, “swarm with mistakes”; the titles and legends, set in type in large
+          cartouches, are far more correct <a class="ref" href="#s-cousin">[1]</a>. Across the bottom runs a poem
+          of 108 lines in praise of Paris (<a href="/texts/">read it in full, with a translation</a>), and a third cartouche begins <em>Icy est le vray pourtraict naturel de
+          la ville, cité, université et faubourgs de Paris</em>: “here is the true and natural portrait…”
+          <a class="ref" href="#s-cousin">[1]</a>. The cartouche promises 287 streets and alleys, 104 churches and
+          monasteries and 49 colleges; this site lists the 455 places that carry a readable name.</p>
+        <figure data-crop="4250,0,2600,750">
+          <img src="/about/banner.webp" width="1400" height="404" alt="The title ribbon: La ville, cité, université de Paris" loading="lazy" />
+          <figcaption>The title ribbon across the top of the map: “the town, the city and the university of Paris”.</figcaption>
+        </figure>
+        <figure data-crop="1000,0,2300,800">
+          <img src="/about/arms.webp" width="1400" height="487" alt="Three interlaced crescents and the crowned arms of France" loading="lazy" />
+          <figcaption>Further left, the crowned arms of France, and beside them three
+            interlaced crescents: the emblem of Henri II, king from 1547 to 1559 <a class="ref" href="#s-cousin">[1]</a>.</figcaption>
+        </figure>
+      </section>
+
+      <section id="makers">
+        <h2>Who made it</h2>
+        <p>The third cartouche ends with the only signature: <em>A Paris, par Olivier Truschet et Germain Hoyau,
+          demourans en la rue de Montorgueil, au chef Sainct-Denys</em>: “at Paris, by Olivier Truschet and
+          Germain Hoyau, living in the rue Montorgueil, at the sign of the Head of Saint Denis”
+          <a class="ref" href="#s-cousin">[1]</a>. These are the first publishers' names found on any map of
+          Paris. They were not booksellers; Cousin thought <em>par</em> (“by”) meant they also cut the blocks
+          themselves, since the rather rough cutting looks like the work of “a skilled craftsman rather than a true
+          artist” <a class="ref" href="#s-cousin">[1]</a>. Later writers split the work: French Wikipedia and the
+          Institut Paris Région make Truschet the draughtsman and Hoyau the engraver
+          <a class="ref" href="#s-wpfr">[4]</a><a class="ref" href="#s-ipr">[5]</a>; at least one other source has
+          it the other way round. Nothing on the sheet says.</p>
+        <figure data-crop="6300,6700,2000,850">
+          <img src="/about/notice.webp" width="1400" height="595" alt="The publishers' notice in its frame" loading="lazy" />
+          <figcaption>The publishers' notice: “A Paris, par Olivier Truschet et Germain Hoyau, demourans en la rue
+            de Montorgueil, au chef Sainct-Denys”.</figcaption>
+        </figure>
+        <p>The rue Montorgueil was a street of woodcut makers. Around 1572 Germain Hoyau was signing religious
+          prints there with a new partner, Mathurin Nicolas, at the sign of the Good Shepherd (<em>Bon Pasteur</em>);
+          the house at the Head of Saint Denis had passed to Nicolas Prévost, and the neighbours were image-makers
+          too: the Chessboard, the Deer's Horn, the Stag's Horn <a class="ref" href="#s-cousin">[1]</a>. Notarial
+          records show Hoyau buying a share of the Bon Pasteur house in 1563 and 1566; by 1575 Truschet was dead
+          <a class="ref" href="#s-desprez">[9]</a>. The street is still there, and on this site:
+          <a href="/place/L0378/">rue Montorgueil</a>.</p>
+        <p>A third name is hidden in the poem. Its opening stanza of fourteen lines ends at a printer's
+          ornament; read the first letters of those lines downwards and they spell <strong>GILLES
+          CORROSET</strong>: Gilles Corrozet (1510–1568), bookseller at the Palais and historian of Paris, whose
+          <em>Antiquités de Paris</em> came out in 1550. It is no secret code: in Corrozet's own
+          <em>Fleur des antiquités de Paris</em> (1532) the same stanza stands under the heading “Le nom et surnom
+          de l'aucteur”, the author's name and surname <a class="ref" href="#s-fleur">[14]</a>. The map leaves the
+          heading out. Jules Cousin was the first to point the name out on the map, in 1875, the year after it
+          came to light <a class="ref" href="#s-cousin">[1]</a>. There is nothing else of the kind: we checked
+          the rest of the poem and the publishers' notice for other acrostics and found none (see
+          <a href="/texts/">the texts on the map</a>).</p>
+        <p>Cousin also recognised the whole poem: it is Corrozet's “Praises of Paris” (<em>Louenges de
+          Paris</em>), which follows the acrostic near the end of the <em>Fleur</em>, a book Corrozet himself later
+          dismissed as “full of errors and fables” <a class="ref" href="#s-cousin">[1]</a>. We have compared the
+          two line by line. The map prints the poem almost word for word, but leaves out four lines and changes a
+          few facts: the book's eleven gates become fourteen, its thick walls high ramparts, and its hundred
+          councillors of the Parlement six score <a class="ref" href="#s-fleur">[14]</a>. From the acrostic Cousin concluded that the map was published under Corrozet's
+          patronage, as a companion to his guidebook, and added, “without fear of being wrong”, that book and
+          map were sold in his shop at the Palais <a class="ref" href="#s-cousin">[1]</a>. That is an inference,
+          not a document: the poem proves only that the verses are Corrozet's, and they had been in print
+          since 1532; the sheet names only Truschet and Hoyau. What supports it is the Basel copy itself, bought in Paris together with a copy of
+          the <em>Antiquités</em> (see <a href="#basel">below</a>). French Wikipedia goes further and speaks of a
+          commission from “a certain Corrozet” dated 1553 <a class="ref" href="#s-wpfr">[4]</a>; we have found no
+          source for it.</p>
+      </section>
+
+      <section id="when">
+        <h2>When</h2>
+        <p>The sheet has no date. Cousin thought the publishers left it off on purpose, so that the map would look
+          new for as long as possible <a class="ref" href="#s-cousin">[1]</a>. It has to be dated from what it
+          shows, and Cousin did it like a detective:</p>
+        <ul>
+          <li><strong>The crescents</strong> of Henri II put it between 1547 and 1559.</li>
+          <li><strong>Built by 1550:</strong> the <a href="/place/L0006/">Pont Saint-Michel</a> with its double row
+            of new houses (the bridge fell in 1547 and was rebuilt), the new royal Arsenal of 1549, the newly opened
+            Porte de Nesle, and the new quay at the Port au Foin by the Grève.</li>
+          <li><strong>Not yet built:</strong> the wide bastioned moat between the Arsenal and the
+            <a href="/place/L0169/">Bastille</a>, begun in 1552; the uniform houses put up on the
+            <a href="/place/L0003/">Petit-Pont</a> in 1552 (the old uneven ones are still drawn); the Marché Neuf.</li>
+          <li><strong>A party leftover:</strong> the Ponceau fountain in the rue Saint-Denis still
+            carries the remains of the decorations put up for Henri II's entry into Paris on 16 June 1549. Cousin
+            doubted that flimsy festival scenery would last more than a winter or two.</li>
+        </ul>
+        <p>That gave him <strong>1551 or 1552</strong> <a class="ref" href="#s-cousin">[1]</a>, the date Basel
+          University Library still uses in its catalogue <a class="ref" href="#s-erara">[3]</a>.</p>
+        <p>Two buildings seem to contradict it. The <a href="/place/L0033/">Louvre</a> is drawn as the old castle of
+          Philippe Auguste, with its towers and its central keep, although the keep was pulled down in 1529 and the
+          new Renaissance wings were going up. Yet the new <a href="/place/L0015/">Hôtel de Ville</a> is drawn
+          half-built: one storey high, with only its corner pavilion rising above <a class="ref" href="#s-cousin">[1]</a>.
+          Cousin's explanation: in 1550 both were building sites hidden by scaffolding, so the artist left them
+          blank; the woodcutters later filled the gaps, the Louvre with the old façade everyone knew, the Hôtel de
+          Ville with what they could see <a class="ref" href="#s-cousin">[1]</a>.</p>
+        <div class="figpair">
+          <figure data-crop="4600,2900,900,650">
+          <img src="/about/hotel-de-ville.webp" width="900" height="650" alt="The Hôtel de Ville on the place de Grève" loading="lazy" />
+            <figcaption>The new Hôtel de Ville on the place de Grève, one storey high.</figcaption>
+          </figure>
+          <figure data-crop="4500,5250,1200,900">
+          <img src="/about/louvre.webp" width="1200" height="900" alt="The Louvre drawn as a medieval castle" loading="lazy" />
+            <figcaption>The Louvre as an old castle, keep and all, twenty years after the keep came down.</figcaption>
+          </figure>
         </div>
-        <div class="welcome" id="welcome" hidden></div>
-        <div class="count" id="count"></div>
-        <div class="list" id="list" role="listbox"></div>
-        <div class="card-wrap" id="card"></div>
-        <footer class="credits" id="credits"></footer>
-      </aside>
-      <main class="main">
-        <div class="map-area" data-mode="side" id="map-area">
-          <div class="modes" id="modes">
-            <button type="button" data-m="side" class="on"></button>
-            <button type="button" data-m="overlay"></button>
-            <button type="button" data-m="old"></button>
-            <button type="button" data-m="mod"></button>
-          </div>
-          <button type="button" class="orient" id="orient" aria-pressed="false"><span class="box" aria-hidden="true"></span><span class="lbl"></span></button>
-          <div class="warn" id="warn"></div>
-          <div class="panes">
-            <div class="pane oldp"><div class="map" id="map-old"></div><span class="tag" id="tag-old"></span></div>
-            <div class="pane modp">
-              <div class="map" id="map-mod"></div>
-              <div class="map ovl" id="map-ovl"></div>
-              <div class="swipe" id="swipe"><span class="swipe-l"></span><span class="swipe-r"></span></div>
-              <span class="tag" id="tag-mod"></span>
-            </div>
-          </div>
-          <div class="ctrl" id="ctrl">
-            <label><span id="op-label"></span> <input type="range" id="op" min="0" max="100" value="80" /> <span id="op-unit"></span></label>
-            <span class="muted" id="swipe-hint"></span>
-          </div>
-          <div class="banner" id="banner" hidden></div>
-        </div>
-        <div class="table-view" id="table"></div>
-      </main>
-    </div>
-    <div class="tooltip" id="tooltip" hidden></div>
-    <script type="module" src="/src/main.ts"></script>
+        <p>Not everyone accepts Cousin's date. Sources today give anything from 1550 to 1553: “c. 1550” (Basel's
+          open-data page and Wikimedia Commons <a class="ref" href="#s-commons">[8]</a>), “c. 1550–1552” (Institut
+          Paris Région <a class="ref" href="#s-ipr">[5]</a>), “1552 for the view, 1553 for the edition” (French
+          Wikipedia <a class="ref" href="#s-wpfr">[4]</a>), and about 1553 in Jean Boutier's catalogue of the plans
+          of Paris <a class="ref" href="#s-boutier">[6]</a>. The difference matters little: the map shows Paris in
+          the first years of Henri II. This site says <strong>c.&nbsp;1550</strong>.</p>
+        <p>Cousin also argued that the map is a reduced copy of an official survey made after Henri II's letters
+          of 8 September 1550, which ordered a “portrait” of the walls and suburbs of Paris
+          <a class="ref" href="#s-cousin">[1]</a>. It is an attractive idea, repeated by later historians
+          <a class="ref" href="#s-wpfr">[4]</a>, but no such survey has been found.</p>
+      </section>
+
+      <section id="paris">
+        <h2>Paris in 1550</h2>
+        <p>The title names the three parts of the city, and the map shows them clearly. <strong>La Ville</strong>,
+          the town, is the right bank: trade, the Halles, the Grève with the Hôtel de Ville, the river port. <strong>La
+          Cité</strong> is the island in the middle with <a href="/place/L0079/">Notre-Dame</a> and the
+          <a href="/place/L0021/">Palais</a>, the seat of the courts. <strong>L'Université</strong> is the left
+          bank, packed with colleges and convents: the map names 33 of the 49 colleges it boasts.</p>
+        <p>A wall still closed the city. On the right bank it was the wall of Charles V, of the late 14th century,
+          with its gates (Saint-Antoine by the Bastille, Saint-Denis, Saint-Honoré…); on the left bank the older
+          wall of Philippe Auguste, of around 1200. Philippe Auguste's wall on the right bank had become useless and
+          most of it had been demolished under François I; the map leaves out even the stretches still standing
+          among the houses, except near the Louvre <a class="ref" href="#s-cousin">[1]</a>. Beyond the gates lie
+          faubourgs, fields, windmills and villages that are now central Paris: Saint-Germain-des-Prés still has
+          its abbey walls and meadows.</p>
+        <p>It was a city on the move. Henri II had entered Paris in state in 1549; new quarters were being laid out
+          on the old royal grounds of the Hôtel Saint-Pol and the Culture Sainte-Catherine; the Louvre and the
+          Hôtel de Ville were being rebuilt <a class="ref" href="#s-cousin">[1]</a>. Paris was among the largest cities
+          in Europe, with a few hundred thousand people; figures for the 1550s are estimates and vary widely.
+          Of the 455 places named on the map, this site finds 143 still standing and 216 gone.</p>
+        <figure data-crop="4100,300,1200,900">
+          <img src="/about/bastille.webp" width="1200" height="900" alt="The Bastille and the Porte Saint-Antoine" loading="lazy" />
+          <figcaption>The Bastille and the Porte Saint-Antoine, with the old narrow moat that was replaced from
+            1552.</figcaption>
+        </figure>
+      </section>
+
+      <section id="basel">
+        <h2>One copy, found in Basel</h2>
+        <p>Maps like this were pinned to walls, used and thrown away; a single copy survives. In the 1870s Louis
+          Sieber, librarian of the University of Basel, was going through old bundles of unsorted papers when he
+          found “a very fine and very large plan of Paris of the 16th century” <a class="ref" href="#s-cousin">[1]</a>.
+          The year is usually given as 1874 <a class="ref" href="#s-wpfr">[4]</a>. The sheet had been folded and was
+          worn at the corners; Sieber had the folds mended and the whole sheet mounted flat on canvas.</p>
+        <p>Sieber wrote to Léopold Delisle at the Bibliothèque nationale in Paris, who passed the question to Jules
+          Cousin, librarian of the City of Paris. No catalogue of Paris maps mentioned the plan. Cousin, who by his
+          own account disliked long journeys, went to Basel and recognised “an unknown plan from the heart of the
+          16th century” <a class="ref" href="#s-cousin">[1]</a>. He tried to buy it for the City of Paris and
+          failed: Basel law forbade the library to sell or exchange anything that was not a duplicate. Sieber
+          instead had it photographed, eight plates at full size and two at a quarter, and Cousin published his
+          study in the first volume of the new <em>Société de l'histoire de Paris</em> in 1875, with a table of
+          every name on the map <a class="ref" href="#s-cousin">[1]</a><a class="ref" href="#s-table">[2]</a>.</p>
+        <p>How did it get to Basel? Cousin and Sieber traced it to the Amerbach family of printers and scholars.
+          Basilius Amerbach, son of Erasmus's friend and heir Bonifacius, bought the map in Paris in 1557 or 1558,
+          together with a fine copy of Corrozet's <em>Antiquités de Paris</em> of 1550: perhaps the map-and-guide
+          that was sold to visitors <a class="ref" href="#s-cousin">[1]</a>. Basilius's friend Theodor Zwinger,
+          who had studied in Paris from 1551 to 1553, later described Paris in his <em>Methodus apodemica</em>
+          (1577), a guide to travelling with profit; Cousin noticed that Zwinger names exactly the places on the map,
+          even with its misprints, translating the engraver's “hôtel de Brianne” (for Bretagne) as <em>domus
+          Briannensis</em> <a class="ref" href="#s-cousin">[1]</a>. Basel's copy of the book carries Zwinger's
+          dedication to Amerbach. The Amerbach collections passed to the Iselin family and were bought by the
+          University in 1661 <a class="ref" href="#s-cousin">[1]</a><a class="ref" href="#s-wpfr">[4]</a>; the map
+          went in with them, unnoticed. The library still keeps it (shelfmark Kartenslg AA 124)
+          <a class="ref" href="#s-erara">[3]</a><a class="ref" href="#s-basel">[10]</a>.</p>
+      </section>
+
+      <section id="copies">
+        <h2>Relatives and copies</h2>
+        <p>The map has a close relative: a smaller plan engraved on copper in four plates, about 66 × 80 cm,
+          traditionally attributed to the architect Jacques Androuet du Cerceau. It is called the <strong>plan de
+          Saint-Victor</strong> after the abbey library that held a copy in the 18th century, from which Dheulland
+          made the reproduction most people know <a class="ref" href="#s-cousin">[1]</a><a class="ref" href="#s-sv">[11]</a>.
+          It covers exactly the same ground with the same liberties (the bent Seine, the lowered horizon), but
+          differs in detail: its new quarters are further along, it shows no new Hôtel de Ville, and it keeps
+          stretches of Philippe Auguste's wall. Cousin dated it a few years later, about 1555, and thought both
+          were reduced from the same lost original rather than one copied from the other
+          <a class="ref" href="#s-cousin">[1]</a>. A third, smaller descendant appeared in Belleforest's edition of
+          Münster's <em>Cosmography</em> in 1575, with the Tuileries palace added.</p>
+        <p>Truschet and Hoyau's own blocks had a second life. A later state, printed from the same blocks “modernised
+          with a great many patches”, was in the French army's map archive (<em>Dépôt de la Guerre</em>) in 1875:
+          the publishers' names removed, the royal arms changed to those of Henri IV, and the Pont-Neuf, the
+          Tuileries and the Louvre's Grande Galerie inserted among buildings that had long gone. Adolphe Bonnardot
+          dated it to about 1601. Cousin found it “incoherent” <a class="ref" href="#s-cousin">[1]</a>.</p>
+        <p>The Society for the History of Paris published a full-size facsimile in eight sheets from 1875, drawn by
+          Fédor Hoffbauer under Sieber and Cousin <a class="ref" href="#s-facs">[7]</a>; a reduced reprint
+          followed in 1908 <a class="ref" href="#s-folger">[12]</a>, and a full-size colour facsimile was printed in
+          Zürich in 1980 with a study by Jean Dérens <a class="ref" href="#s-1980">[13]</a>. Today the library's scan, 10&nbsp;890 × 7&nbsp;820 pixels, is
+          free to use on Wikimedia Commons <a class="ref" href="#s-commons">[8]</a>, and it is the map you see on
+          this site.</p>
+      </section>
+
+      <section id="use">
+        <h2>How to use this site</h2>
+        <p>The <a href="/map/">map</a> shows the woodcut and Paris today side by side, kept in step as you move; the
+          overlay lays the woodcut over modern streets, bent to fit. Search for any name, old or modern, in any
+          16th-century spelling, or click a label on either map. The <strong>Table of places</strong> (top of the
+          sidebar) lists all 455 places with what is there now. How the woodcut was matched to the modern city,
+          and how far to trust it, is explained in <a href="/method/">How the map was bent</a>. Click the title at
+          the top of the sidebar to start over. The poem and the publishers' notice are transcribed and
+          translated line by line in <a href="/texts/">The texts on the map</a>.</p>
+        <p class="cta"><a class="cta-btn" href="/map/">Open the map →</a><span class="cta-sub">the woodcut and Paris today, side by side</span></p>
+      </section>
+
+      <section id="sources">
+        <h2>Sources</h2>
+        <ol class="refs">
+          <li id="s-cousin">Jules Cousin, “Notice sur un plan de Paris du XVI<sup>e</sup> siècle nouvellement découvert à
+            Bâle”, <em>Mémoires de la Société de l'histoire de Paris et de l'Île-de-France</em>, t. I (1875),
+            pp. 46–59; <a href="https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f54.item">gallica.bnf.fr / BnF</a>.
+            Quotations are translated from the OCR text of the Gallica scan, checked for sense, not letter by letter.</li>
+          <li id="s-table">Jules Cousin, “Table des noms des rues… inscrits sur le plan de Paris publié vers 1552 par
+            Olivier Truschet et Germain Hoyau”, same volume, pp. 60–70;
+            <a href="https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f68.item">gallica.bnf.fr / BnF</a>.</li>
+          <li id="s-erara">Universitätsbibliothek Basel, <em>La ville, cité et Université de Paris</em>, woodcut,
+            96 × 133 cm, dated “[1551 oder 1552]”, Kartenslg AA 124; digitised on e-rara,
+            <a href="https://doi.org/10.3931/e-rara-20453">doi:10.3931/e-rara-20453</a>.</li>
+          <li id="s-wpfr"><a href="https://fr.wikipedia.org/wiki/Plan_de_Truschet_et_Hoyau">“Plan de Truschet et
+            Hoyau”</a>, Wikipédia (fr).</li>
+          <li id="s-ipr">Institut Paris Région, <a href="https://www.institutparisregion.fr/nos-travaux/publications/la-ville-cite-et-universite-de-paris-dit-plan-de-bale/">“La Ville,
+            Cité et Université de Paris, dit « plan de Bâle »”</a>.</li>
+          <li id="s-boutier">Jean Boutier, <em>Les plans de Paris des origines (1493) à la fin du XVIII<sup>e</sup>
+            siècle</em>, Bibliothèque nationale de France, 2002; date as cited in
+            <a href="https://books.openedition.org/enc/245">Les halles de Paris et leur quartier, École nationale des chartes</a>.</li>
+          <li id="s-facs"><em>Plan de Paris sous le règne de Henri II par Olivier Truschet et Germain Hoyau,
+            reproduit en fac-similé d'après l'exemplaire unique de la Bibliothèque de Bâle</em>, by F. Hoffbauer
+            under L. Sieber and J. Cousin, Société de l'histoire de Paris;
+            <a href="https://gallica.bnf.fr/ark:/12148/btv1b53093892p">gallica.bnf.fr / BnF</a>.</li>
+          <li id="s-commons"><a href="https://commons.wikimedia.org/wiki/File:Map_of_Paris_by_Truschet_and_Hoyau_-_Basel_University_Library.jpg">Map
+            of Paris by Truschet and Hoyau – Basel University Library</a>, Wikimedia Commons (public domain).</li>
+          <li id="s-desprez">“Les Desprez”, Éditions de la BnF,
+            <a href="https://books.openedition.org/editionsbnf/2445">OpenEdition Books</a> (on the Bon Pasteur house, rue Montorgueil).</li>
+          <li id="s-basel">Universitätsbibliothek Basel, <a href="https://kartengeschichte.ch/ch/texts/themen63/th63zus_en.html">essay on
+            the library's map collection</a> (the Amerbach provenance of its finest maps).</li>
+          <li id="s-sv">On the name “plan de Saint-Victor”: description of the Belleforest plan, 1575,
+            <a href="https://www.livre-rare-book.com/book/5472883/LBW-6776">livre-rare-book.com</a> (a dealer's
+            note; Cousin's footnote on p. 48 says the same).</li>
+          <li id="s-folger"><em>Paris vers 1551. Plan de Paris sous le règne de Henri II</em>, reproduction with a
+            notice by Jules Cousin (Taride, 1908), <a href="https://catalog.folger.edu/record/27683">Folger
+            Shakespeare Library catalogue</a>.</li>
+          <li id="s-1980"><em>Le plan de Paris par Truschet et Hoyau</em>, facsimile, Zürich 1980, with a study by
+            Jean Dérens; <a href="https://www.finarte.it/asta/larte-di-riprodurre-codici-milano-2022-10-07/le-plan-de-paris-par-truschet-et-hoyau-84248">auction
+            listing</a>.</li>
+          <li id="s-fleur">Gilles Corrozet, <em>La fleur des antiquitez de la noble et triumphante ville et cité de
+            Paris</em>, second edition (1532), ed. P. Lacroix (“le bibliophile Jacob”), Paris 1874: the acrostic
+            stanza and “Louenges de Paris”, pp. 64–68; <a href="https://gallica.bnf.fr/ark:/12148/bpt6k6487221d">gallica.bnf.fr / BnF</a>.
+            Notes on the acrostic and Corrozet's part:
+            <a href="https://github.com/PeerBlekelj/parismapexplorer/blob/main/data/research/corrozet.md">research
+            notes</a>.</li>
+        </ol>
+        <p class="muted">Paris 1550, by Peer Blekelj. Written with <a href="/method/#built">Claude Code</a>;
+          corrections welcome, see <a href="https://github.com/PeerBlekelj/parismapexplorer/blob/main/CONTRIBUTING.md">how
+          to contribute</a>.</p>
+      </section>
+    </main>
+    <script type="module" src="/src/method.ts"></script>
   </body>
 </html>

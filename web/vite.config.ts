@@ -1,8 +1,9 @@
-// After the build: one static page per place and language (/place/L0123/, /fr/place/L0123/,
-// /sv/place/L0123/) with its own title, description and link-preview image, the /fr/ and /sv/
-// home pages, plus sitemap.xml and robots.txt. The pages are copies of the app's index.html with
-// only the <head> meta block swapped, so the app itself is unchanged; it reads the language and
-// the place id from the path. A #place= hash never reaches the server, so link previews need
+// The start page (/, /fr/, /sv/) is the page about the map, written by hand in each language; the
+// app lives at /map/. After the build: one static page per place and language (/place/L0123/,
+// /fr/place/L0123/, /sv/place/L0123/) with its own title, description and link-preview image, the
+// app's /map/ page in each language, plus sitemap.xml and robots.txt. The pages are copies of the
+// app's map/index.html with only the <head> meta block swapped, so the app itself is unchanged; it
+// reads the language and the place id from the path. A #place= hash never reaches the server, so link previews need
 // the path form. The texts come from src/strings.ts, the app's own strings.
 
 import { readFileSync, mkdirSync, writeFileSync, existsSync } from 'node:fs';
@@ -93,14 +94,14 @@ function sitePages(): Plugin {
       outDir = resolve(c.root, c.build.outDir);
     },
     closeBundle() {
-      const html = readFileSync(resolve(outDir, 'index.html'), 'utf8');
+      const html = readFileSync(resolve(outDir, 'map/index.html'), 'utf8');
       const block = /(<!-- page-meta[^>]*-->\n)[\s\S]*?(\n\s*<!-- \/page-meta -->)/;
-      if (!block.test(html)) throw new Error('site-pages: no page-meta block in index.html');
+      if (!block.test(html)) throw new Error('site-pages: no page-meta block in map/index.html');
       const places: Place[] = JSON.parse(readFileSync(resolve(outDir, 'data/places.json'), 'utf8')).places;
       const haveOg = existsSync(resolve(outDir, 'og'));
       if (!haveOg) this.warn('no og/ images: run scripts/make_og_images.py (pages still get the site image)');
 
-      // `path` is the English path without the leading slash ('' = home).
+      // `path` is the English path without the leading slash ('' = the start page).
       const write = (m: Meta) => {
         const page = html
           .replace(/<html lang="[^"]*">/, `<html lang="${m.lang}">`)
@@ -110,10 +111,10 @@ function sitePages(): Plugin {
         writeFileSync(resolve(dir, 'index.html'), page);
       };
 
-      const paths = ['', 'method/', 'texts/'];
+      const paths = ['', 'map/', 'method/', 'texts/'];
       for (const l of LANGS) {
         const s = STRINGS[l];
-        write({ lang: l, title: s.siteTitle, desc: s.siteDesc, path: '', image: `${SITE}/og/site.jpg`, alt: s.siteImageAlt });
+        write({ lang: l, title: s.siteTitle, desc: s.siteDesc, path: 'map/', image: `${SITE}/og/site.jpg`, alt: s.siteImageAlt });
       }
       for (const p of places) {
         const old = tidy(p.old);
@@ -142,8 +143,6 @@ function sitePages(): Plugin {
         [...LANGS.map((o) => [o, langPath(o, path)]), ['x-default', langPath('en', path)]]
           .map(([h, u]) => `    <xhtml:link rel="alternate" hreflang="${h}" href="${SITE}${u}" />`).join('\n') +
         '\n  </url>'));
-      // The about page is English only until it is translated: one plain entry.
-      entries.push(`  <url><loc>${SITE}/about/</loc><lastmod>${day}</lastmod></url>`);
       writeFileSync(resolve(outDir, 'sitemap.xml'),
         '<?xml version="1.0" encoding="UTF-8"?>\n' +
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' +
@@ -159,11 +158,13 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(import.meta.dirname, 'index.html'),
+        map: resolve(import.meta.dirname, 'map/index.html'),
+        home: resolve(import.meta.dirname, 'index.html'),
+        homeFr: resolve(import.meta.dirname, 'fr/index.html'),
+        homeSv: resolve(import.meta.dirname, 'sv/index.html'),
         method: resolve(import.meta.dirname, 'method/index.html'),
         methodFr: resolve(import.meta.dirname, 'fr/method/index.html'),
         methodSv: resolve(import.meta.dirname, 'sv/method/index.html'),
-        about: resolve(import.meta.dirname, 'about/index.html'),
         ...Object.fromEntries(TEXTS.map((t) => [t.replace('/', '-'), resolve(import.meta.dirname, t, 'index.html')])),
       },
     },

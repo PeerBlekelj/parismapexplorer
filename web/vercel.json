@@ -6,6 +6,12 @@
       "has": [{ "type": "host", "value": "parismapexplorer.vercel.app" }],
       "destination": "https://paris1550.vercel.app/:path*",
       "permanent": true
-    }
+    },
+    { "source": "/about", "destination": "/", "permanent": true },
+    { "source": "/about/", "destination": "/", "permanent": true },
+    { "source": "/fr/about", "destination": "/fr/", "permanent": true },
+    { "source": "/fr/about/", "destination": "/fr/", "permanent": true },
+    { "source": "/sv/about", "destination": "/sv/", "permanent": true },
+    { "source": "/sv/about/", "destination": "/sv/", "permanent": true }
   ]
 }
