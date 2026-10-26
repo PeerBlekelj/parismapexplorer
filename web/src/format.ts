@@ -1,4 +1,4 @@
-import { t } from './i18n';
+import { fmtNum, lang, t } from './i18n';
 import type { Place } from './types';
 
 const SMALL = new Set(['de', 'du', 'des', 'la', 'le', 'les', 'au', 'aux', 'et', 'en', 'a', 'sur', 'lez', 'sus', 'dela', 'del']);
@@ -49,11 +49,20 @@ export function hasKnownPosition(p: Place): boolean {
 }
 
 export function fmtLat(lat: number, digits: number): string {
-  return `${Math.abs(lat).toFixed(digits)}° ${lat >= 0 ? 'N' : 'S'}`;
+  return `${fmtNum(Math.abs(lat), digits)}° ${t.compass[lat >= 0 ? 'N' : 'S']}`;
 }
 
 export function fmtLon(lon: number, digits: number): string {
-  return `${Math.abs(lon).toFixed(digits)}° ${lon >= 0 ? 'E' : 'W'}`;
+  return `${fmtNum(Math.abs(lon), digits)}° ${t.compass[lon >= 0 ? 'E' : 'W']}`;
+}
+
+/** The summary in the current language, falling back to English. `lang` is set on the element
+ *  when the text is not in the page's language. */
+export function summaryFor(p: Place): { text: string; lang: string | null } | null {
+  const own = lang === 'fr' ? p.summary_fr : lang === 'sv' ? p.summary_sv : null;
+  if (own) return { text: own, lang: null };
+  if (p.summary) return { text: p.summary, lang: lang === 'en' ? null : 'en' };
+  return null;
 }
 
 const ESC: Record<string, string> = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };

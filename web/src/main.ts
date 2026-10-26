@@ -8,7 +8,7 @@ import './style.css';
 
 import { renderCard, renderIntro } from './card';
 import { esc, statusClass, statusLabel, typeLabel } from './format';
-import { t } from './i18n';
+import { lang, LANGS, setLang, t, type Lang } from './i18n';
 import { loadOverlayTiles, MapView, type Mode, type Orientation } from './maps';
 import { buildEntries, modernText, type Entry } from './model';
 import { IMAGE_H, IMAGE_W } from './oldPlane';
@@ -56,8 +56,25 @@ function fillStaticText(): void {
   $('#swipe-hint').textContent = t.overlaySwipeHint;
   $('.swipe-l').textContent = t.overlayLeft;
   $('.swipe-r').textContent = t.overlayRight;
-  $('#credits').innerHTML = `<a href="${BASE}method/">${esc(t.creditMethod)}</a> · ` + [t.creditMap, t.creditOsm, t.creditBy].map(esc).join(' · ');
+  const langs = LANGS.map((l) =>
+    `<button type="button" data-lang="${l}" lang="${l}" aria-pressed="${l === lang}">${l.toUpperCase()}</button>`).join(' · ');
+  $('#credits').innerHTML = `<span class="langs" role="group" aria-label="${esc(t.langLabel)}">${langs}</span>` +
+    `<a href="${BASE}method/">${esc(t.creditMethod)}</a> · ` + [t.creditMap, t.creditOsm, t.creditBy].map(esc).join(' · ');
 }
+
+// Re-renders everything that shows text; replaced by the full version once the data is loaded.
+let rerender = (): void => {
+  fillStaticText();
+  renderIntro($('#card'));
+};
+
+$('#credits').addEventListener('click', (ev) => {
+  const b = (ev.target as HTMLElement).closest('button[data-lang]') as HTMLButtonElement | null;
+  const l = b?.dataset.lang as Lang | undefined;
+  if (!l || l === lang) return;
+  setLang(l);
+  rerender();
+});
 
 async function main(): Promise<void> {
   fillStaticText();
@@ -124,10 +141,22 @@ async function main(): Promise<void> {
   const chipTypes = TYPE_ORDER.filter((k) => counts.has(k));
   for (const k of counts.keys()) if (!chipTypes.includes(k)) chipTypes.push(k);
   const chipsEl = $('#chips');
-  chipsEl.innerHTML =
-    `<button type="button" class="chip on" data-chip="all">${esc(t.chipAll)}</button>` +
-    chipTypes.map((k) => `<button type="button" class="chip" data-chip="type" data-type="${esc(k)}">${esc(t.typeChips[k] ?? typeLabel(k))} <span class="n">${counts.get(k)}</span></button>`).join('') +
-    (unsureCount ? `<button type="button" class="chip chip-unsure" data-chip="unsure">${esc(t.chipUnsure)} <span class="n">${unsureCount}</span></button>` : '');
+  function renderChips(): void {
+    chipsEl.innerHTML =
+      `<button type="button" class="chip" data-chip="all">${esc(t.chipAll)}</button>` +
+      chipTypes.map((k) => `<button type="button" class="chip" data-chip="type" data-type="${esc(k)}">${esc(t.typeChips[k] ?? typeLabel(k))} <span class="n">${counts.get(k)}</span></button>`).join('') +
+      (unsureCount ? `<button type="button" class="chip chip-unsure" data-chip="unsure">${esc(t.chipUnsure)} <span class="n">${unsureCount}</span></button>` : '');
+    markChips();
+  }
+  function markChips(): void {
+    chipsEl.querySelectorAll<HTMLButtonElement>('button.chip').forEach((c) => {
+      const on = c.dataset.chip === 'all' ? state.types.size === 0
+        : c.dataset.chip === 'type' ? state.types.has(c.dataset.type ?? '')
+        : state.unsure;
+      c.classList.toggle('on', on);
+    });
+  }
+  renderChips();
   chipsEl.addEventListener('click', (ev) => {
     const b = (ev.target as HTMLElement).closest('button.chip') as HTMLButtonElement | null;
     if (!b) return;
@@ -137,12 +166,7 @@ async function main(): Promise<void> {
       if (state.types.has(k)) state.types.delete(k);
       else state.types.add(k);
     } else if (b.dataset.chip === 'unsure') state.unsure = !state.unsure;
-    chipsEl.querySelectorAll<HTMLButtonElement>('button.chip').forEach((c) => {
-      const on = c.dataset.chip === 'all' ? state.types.size === 0
-        : c.dataset.chip === 'type' ? state.types.has(c.dataset.type ?? '')
-        : state.unsure;
-      c.classList.toggle('on', on);
-    });
+    markChips();
     updateFiltersBtn();
     if (state.selected) closeCard(false);
     refresh();
@@ -185,7 +209,8 @@ async function main(): Promise<void> {
       `<span class="mod"><span class="${m.placeholder ? 'placeholder' : ''}">${esc(m.text)}</span> · ${esc(second)}</span></div>`;
   }
 
-  function refresh(): void {
+  /** `keepScroll`: same results, new language; leave the list where it is. */
+  function refresh(keepScroll = false): void {
     const filter = (p: Entry['place']) =>
       (state.types.size === 0 || state.types.has(p.type)) && (!state.unsure || p.flag === 'unsure');
     state.results = index.search(state.query, filter).map((r) => byId.get(r.place.id) as Entry);
@@ -194,7 +219,7 @@ async function main(): Promise<void> {
     listEl.innerHTML = state.results.length
       ? state.results.map(resultHtml).join('')
       : `<p class="empty">${esc(t.noResults)}</p>`;
-    listEl.scrollTop = 0;
+    if (!keepScroll) listEl.scrollTop = 0;
     maps.setFilter(state.results, filterActive());
     if (state.view === 'table') table.update(state.results, state.selected?.place.id ?? null, countText);
   }
@@ -362,6 +387,32 @@ async function main(): Promise<void> {
   swipe.addEventListener('pointerup', endDrag);
   swipe.addEventListener('pointercancel', endDrag);
   setSwipe(50);
+
+  // ---------- language ----------
+  // Text only: the selection, list scroll, card scroll and map cameras stay as they are.
+  rerender = () => {
+    fillStaticText();
+    renderChips();
+    updateFiltersBtn();
+    const listScroll = listEl.scrollTop;
+    refresh(true);
+    listEl.scrollTop = listScroll;
+    const e = state.selected;
+    if (e) {
+      const cardScroll = cardEl.scrollTop;
+      renderCard(cardEl, e, T, state.results.length, () => closeCard(true));
+      cardEl.scrollTop = cardScroll;
+    } else {
+      renderIntro(cardEl);
+    }
+    orientBtn.title = t.orientTitle;
+    updateTags();
+    $('#warn').textContent = overlayTiles
+      ? t.overlayNoteWarped(overlayTiles.controlPoints, overlayTiles.medianErrorM)
+      : t.overlayNote(T.n, T.affineErrorMeters);
+    if (!$('#banner').hidden) $('#banner').textContent = t.tilesMissing;
+    maps.relabel();
+  };
 
   // ---------- go ----------
   refresh();

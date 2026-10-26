@@ -404,6 +404,11 @@ export class MapView {
     }
   }
 
+  /** Redraw the pin labels after a language change. */
+  relabel(): void {
+    this.updatePins();
+  }
+
   /** Select a place. `fly` moves the camera; `source` = the map that was clicked, if any. */
   select(e: Entry | null, opts: { fly: boolean; source?: Which; instant?: boolean }): void {
     this.selected = e;

@@ -22,7 +22,9 @@ export interface Place {
   lat: number | null;
   lon: number | null;
   loc_confidence: LocConfidence | string | null;
-  summary: string | null;
+  summary: string | null;      // English
+  summary_fr?: string | null;
+  summary_sv?: string | null;
   variants: string[];
   sources: Source[];
 }
