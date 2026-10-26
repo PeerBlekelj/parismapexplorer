@@ -1,4 +1,4 @@
-# Paris Map Explorer
+# Paris 1550
 
 The Truschet & Hoyau plan of Paris (*La ville, cité et université de Paris*, c. 1550, known as the
 Basel plan) side by side with the city today. Search any place named on the old map by its old or

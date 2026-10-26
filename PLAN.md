@@ -1,4 +1,4 @@
-# Paris Map Explorer: plan
+# Paris 1550: plan
 
 A searchable website that pairs the Truschet & Hoyau plan of Paris (c. 1550, the "Basel plan")
 with the modern city. Every place named on the old map can be found by its old or modern name,

@@ -1,0 +1,29 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;padding:24px;background:#e9e1d0;font:14px system-ui,sans-serif;color:#2b2118;width:1100px}
+h1{font:600 20px Georgia,serif;margin:0 0 4px} p.n{margin:0 0 16px;color:#5a4a3a;font-size:12px}
+.row{display:grid;grid-template-columns:150px 64px 32px 16px 64px 1fr;align-items:center;gap:18px;padding:12px 0;border-top:1px solid #cbbd a0;border-top:1px solid #cdbfa4}
+.lab{font-weight:600}.lab small{display:block;font-weight:400;color:#6b5b4a;font-size:11px}
+canvas{width:64px;height:64px;image-rendering:pixelated;outline:1px solid #cdbfa4}
+.tabs{display:flex;flex-direction:column;gap:6px}
+.bar{display:flex;align-items:flex-end;height:36px;padding:0 8px;border-radius:8px 8px 0 0}
+.bar.dark{background:#1f1f22}.bar.light{background:#dee1e6}
+.tab{display:flex;align-items:center;gap:8px;height:30px;padding:0 12px;border-radius:8px 8px 0 0;width:210px;font:12px system-ui,sans-serif}
+.dark .tab{background:#35363a;color:#e8eaed}.light .tab{background:#fff;color:#202124}
+.tab img{width:16px;height:16px}.other{opacity:.55;width:120px;background:transparent!important}
+.hd{font-size:11px;color:#6b5b4a}
+</style></head><body>
+<h1>Favicon options for “Paris 1550”</h1>
+<p class="n">Each at 64, 32 and 16 px as the browser draws them; the framed square is the 16 px rendering blown up 4× so every pixel shows; then in a browser tab, dark and light.</p>
+<div class="row hd"><span></span><span>64</span><span>32</span><span>16</span><span>16 × 4</span><span>in a tab</span></div>
+<div id="rows"></div>
+<script>
+const opts=[['a-1550-stacked','A · 1550, stacked','“15” over “50”, EB Garamond'],['b-p-red-ring','B · P + red ring','the selected-place ring'],['c-ship-arms','C · arms of Paris','ship on red, fleurs on blue'],['d-seine-cite','D · Seine + Cité','the bend, Cité ringed'],['e-compass','E · compass rose','red point = east, up as on the map']];
+const rows=document.getElementById('rows');
+for(const [f,l,s] of opts){
+  const tab=(c)=>`<div class="bar ${c}"><div class="tab"><img src="${f}.svg">Paris 1550</div><div class="tab other">New Tab</div></div>`;
+  rows.insertAdjacentHTML('beforeend',`<div class="row"><div class="lab">${l}<small>${s}</small></div>
+  <img src="${f}.svg" width="64" height="64"><img src="${f}.svg" width="32" height="32"><img src="${f}.svg" width="16" height="16">
+  <canvas width="16" height="16" data-f="${f}.svg"></canvas><div class="tabs">${tab('dark')}${tab('light')}</div></div>`);
+}
+Promise.all([...document.querySelectorAll('canvas')].map(c=>new Promise(r=>{const i=new Image();i.onload=()=>{c.getContext('2d').drawImage(i,0,0,16,16);r()};i.src=c.dataset.f}))).then(()=>document.body.dataset.ready=1);
+</script></body></html>

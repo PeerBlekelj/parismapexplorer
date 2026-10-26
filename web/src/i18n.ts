@@ -2,9 +2,9 @@
 // same shape as `en` and pick it in `t`.
 
 const en = {
-  siteName: 'Paris Map Explorer',
+  siteName: 'Paris 1550',
   brandTitle: 'La Ville, Cité et Université de Paris',
-  brandSub: 'Truschet & Hoyau, c. 1550 · with Paris today',
+  brandSub: 'the Truschet & Hoyau map, with Paris today',
 
   viewMap: 'Map',
   viewTable: 'Table of places',

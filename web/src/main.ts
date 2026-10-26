@@ -18,7 +18,7 @@ import { createTransform } from './transform';
 import type { GcpsFile, PlacesFile } from './types';
 
 const BASE = import.meta.env.BASE_URL;
-const SITE_TITLE = 'Paris Map Explorer: Paris in 1550';
+const SITE_TITLE = 'Paris 1550 · the Truschet & Hoyau map and the city today';
 const TYPE_ORDER = ['church_religious', 'college', 'street', 'gate_wall', 'bridge', 'building', 'square_market', 'village_faubourg', 'other'];
 
 const $ = <T extends HTMLElement = HTMLElement>(sel: string) => document.querySelector(sel) as T;
@@ -257,7 +257,7 @@ async function main(): Promise<void> {
     if (e) {
       renderCard(cardEl, e, T, state.results.length, () => closeCard(true));
       history.replaceState(null, '', `${BASE}place/${encodeURIComponent(e.place.id)}/${location.search}`);
-      document.title = `${e.place.modern ?? e.place.old} · Paris in 1550`;
+      document.title = `${e.place.modern ?? e.place.old} · Paris 1550`;
     } else {
       renderIntro(cardEl);
       history.replaceState(null, '', `${BASE}${location.search}`);

@@ -1,6 +1,6 @@
 # Contributing
 
-Corrections and additions are very welcome — especially from people who know old Paris.
+Corrections and additions to Paris 1550 are very welcome — especially from people who know old Paris.
 
 ## The quickest way: open an issue
 
