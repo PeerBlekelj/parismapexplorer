@@ -2,7 +2,7 @@
 // WELCOME_CARD. It stays away once dismissed (×) or followed, remembered in this browser only.
 
 import { esc } from './format';
-import { t } from './i18n';
+import { langBase, t } from './i18n';
 
 export const WELCOME_CARD = true;
 const STORE_KEY = 'welcome-dismissed';
@@ -30,7 +30,7 @@ export function renderWelcome(el: HTMLElement): void {
   el.hidden = false;
   el.innerHTML =
     `<p><strong>${esc(t.welcomeTitle)}</strong> ${esc(t.welcomeText)} ` +
-    `<a href="${import.meta.env.BASE_URL}about/">${esc(t.welcomeLink)}</a></p>` +
+    `<a href="${langBase()}about/">${esc(t.welcomeLink)}</a></p>` +
     `<button type="button" class="welcome-x" aria-label="${esc(t.welcomeDismiss)}" title="${esc(t.welcomeDismiss)}">×</button>`;
   el.querySelector('a')?.addEventListener('click', () => dismiss(el));
   el.querySelector('button')?.addEventListener('click', () => dismiss(el));

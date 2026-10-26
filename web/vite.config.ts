@@ -19,6 +19,8 @@ const langPath = (l: Lang, path: string) => (l === 'en' ? `/${path}` : `/${l}/${
 
 // The texts on the map: static pages from scripts/make_texts_page.py (en, fr, sv).
 const TEXTS = ['texts', 'fr/texts', 'sv/texts'];
+// The about page, written by hand in each language.
+const ABOUT = ['about', 'fr/about', 'sv/about'];
 
 interface Place {
   id: string;
@@ -110,7 +112,7 @@ function sitePages(): Plugin {
         writeFileSync(resolve(dir, 'index.html'), page);
       };
 
-      const paths = ['', 'method/', 'texts/'];
+      const paths = ['', 'method/', 'texts/', 'about/'];
       for (const l of LANGS) {
         const s = STRINGS[l];
         write({ lang: l, title: s.siteTitle, desc: s.siteDesc, path: '', image: `${SITE}/og/site.jpg`, alt: s.siteImageAlt });
@@ -142,8 +144,6 @@ function sitePages(): Plugin {
         [...LANGS.map((o) => [o, langPath(o, path)]), ['x-default', langPath('en', path)]]
           .map(([h, u]) => `    <xhtml:link rel="alternate" hreflang="${h}" href="${SITE}${u}" />`).join('\n') +
         '\n  </url>'));
-      // The about page is English only until it is translated: one plain entry.
-      entries.push(`  <url><loc>${SITE}/about/</loc><lastmod>${day}</lastmod></url>`);
       writeFileSync(resolve(outDir, 'sitemap.xml'),
         '<?xml version="1.0" encoding="UTF-8"?>\n' +
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' +
@@ -163,8 +163,7 @@ export default defineConfig({
         method: resolve(import.meta.dirname, 'method/index.html'),
         methodFr: resolve(import.meta.dirname, 'fr/method/index.html'),
         methodSv: resolve(import.meta.dirname, 'sv/method/index.html'),
-        about: resolve(import.meta.dirname, 'about/index.html'),
-        ...Object.fromEntries(TEXTS.map((t) => [t.replace('/', '-'), resolve(import.meta.dirname, t, 'index.html')])),
+        ...Object.fromEntries([...ABOUT, ...TEXTS].map((t) => [t.replace('/', '-'), resolve(import.meta.dirname, t, 'index.html')])),
       },
     },
   },
