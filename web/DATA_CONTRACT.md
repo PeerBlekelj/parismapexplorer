@@ -24,12 +24,17 @@ The app reads two static files. They are **generated** by `scripts/build_places.
       "lat": 48.853 | null, "lon": 2.348 | null,
       "loc_confidence": "exact" | "approx" | "uncertain" | null,
       "summary": "2–4 sentences, English" | null,
+      "summary_fr": "the same in French" | null,   // null: not translated yet; show `summary`
+      "summary_sv": "the same in Swedish" | null,
       "variants": ["Saint-Christofle", "…"],
       "sources": [{ "label": "Wikipedia (fr)", "url": "https://…" }]
     }
   ]
 }
 ```
+
+`summary_fr` / `summary_sv` are translations of `summary` from `data/research/summaries_fr.csv` and
+`summaries_sv.csv`; show the one for the current language and fall back to `summary`.
 
 **`null` means "not researched yet", never "nothing there".** Show it as "Not identified yet" /
 "Location estimated from the map", never as an empty or negative state.

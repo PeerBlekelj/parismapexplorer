@@ -2,7 +2,7 @@
 // "not researched yet" and is shown with a neutral placeholder, never as absent or negative.
 
 import { drawCrop } from './crop';
-import { esc, fmtLat, fmtLon, safeUrl, statusClass, statusLabel, typeLabel } from './format';
+import { esc, fmtLat, fmtLon, safeUrl, statusClass, statusLabel, summaryFor, typeLabel } from './format';
 import { t } from './i18n';
 import { modernText, type Entry } from './model';
 import type { PixelGeoTransform } from './transform';
@@ -38,7 +38,7 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, back
       `<span class="est-note">${esc(t.estimated)}</span>` +
       `<small>${esc(t.estimatedHow(T.n, T.errorMeters))}</small>`;
   } else {
-    const conf = e.geoKind === 'unassessed' ? t.confidenceUnknown : `${t.confidence}: ${t.confidenceLabels[e.geoKind] ?? e.geoKind}`;
+    const conf = e.geoKind === 'unassessed' ? t.confidenceUnknown : `${t.confidence}${t.colon}${t.confidenceLabels[e.geoKind] ?? e.geoKind}`;
     posToday = `${fmtLat(e.geo[1], 4)}, ${fmtLon(e.geo[0], 4)}<small>${esc(conf)}${gone ? ` · ${esc(t.formerSite)}` : ''}</small>`;
   }
 
@@ -54,6 +54,7 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, back
     })
     .join(' · ');
 
+  const sum = summaryFor(p);
   const orient = p.orient === 'v' ? 'v' : p.orient === 'd' ? 'd' : 'h';
 
   el.innerHTML = `
@@ -65,13 +66,13 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, back
         ${unsure ? `<span class="badge unsure">${esc(t.unsureBadge)}</span>` : ''}
       </div>
       <h2>${esc(e.title)}</h2>
-      <div class="modname">${esc(t.today)}: <span class="${m.placeholder ? 'placeholder' : ''}">${esc(m.text)}</span></div>
+      <div class="modname">${esc(t.today)}${esc(t.colon)}<span class="${m.placeholder ? 'placeholder' : ''}">${esc(m.text)}</span></div>
       <figure class="snip snip-${orient}">
         <canvas aria-label="${esc(t.cropCaption)}"></canvas>
         <figcaption>${esc(t.cropCaption)}</figcaption>
       </figure>
       <dl>
-        <dt>${esc(t.onMapAs)}</dt><dd>“${esc(p.old)}”</dd>
+        <dt>${esc(t.onMapAs)}</dt><dd>${esc(t.quote(p.old))}</dd>
         ${p.note ? `<dt>${esc(t.transcription)}</dt><dd>${esc(p.note)}</dd>` : ''}
         <dt>${esc(t.reading)}</dt><dd>${esc(unsure ? t.readingUnsure : t.readingOk)}</dd>
         <dt>${esc(t.variants)}</dt><dd>${variants}</dd>
@@ -79,8 +80,8 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, back
         <dt>${esc(t.posToday)}</dt><dd class="pos">${posToday}</dd>
         <dt>${esc(t.id)}</dt><dd><a href="${import.meta.env.BASE_URL}place/${encodeURIComponent(p.id)}/" class="permalink">${esc(p.id)}</a> · <span class="muted">${esc(t.link)}</span></dd>
       </dl>
-      ${p.summary ? `<p class="summary">${esc(p.summary)}</p>` : `<p class="summary placeholder">${esc(t.noSummary)}</p>`}
-      <div class="src">${esc(t.sources)}: ${links || `<span class="placeholder">${esc(t.noSources)}</span>`}</div>
+      ${sum ? `<p class="summary"${sum.lang ? ` lang="${sum.lang}"` : ''}>${esc(sum.text)}</p>` : `<p class="summary placeholder">${esc(t.noSummary)}</p>`}
+      <div class="src">${esc(t.sources)}${esc(t.colon)}${links || `<span class="placeholder">${esc(t.noSources)}</span>`}</div>
       <p class="suggest"><a href="${esc(correctionUrl(e))}" target="_blank" rel="noopener" title="${esc(t.suggestCorrectionHint)}">${esc(t.suggestCorrection)}</a></p>
     </article>`;
 
