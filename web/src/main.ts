@@ -36,9 +36,18 @@ function placeIdFromUrl(): string | null {
   return m ? m[1] : null;
 }
 
+/** The start page, keeping ?lang= if the address has it. */
+function homeUrl(): string {
+  const l = new URLSearchParams(location.search).get('lang');
+  return `${langBase()}${l ? `?lang=${encodeURIComponent(l)}` : ''}`;
+}
+
 function fillStaticText(): void {
   $('#brand-title').textContent = t.brandTitle;
   $('#brand-sub').textContent = `${t.siteName} · ${t.brandSub}`;
+  $('#brand').title = t.brandHome;
+  $('#brand').setAttribute('aria-label', `${t.brandTitle}. ${t.brandHome}`);
+  $<HTMLAnchorElement>('#brand').href = homeUrl();
   $('.viewtabs [data-view=map]').textContent = t.viewMap;
   $('.viewtabs [data-view=table]').textContent = t.viewTable;
   $<HTMLInputElement>('#q').placeholder = t.searchPlaceholder;
@@ -347,24 +356,59 @@ async function main(): Promise<void> {
   function updateTags(): void {
     $('#tag-old').textContent = state.orientation === 'north' ? t.tagOldNorth : t.tagOldOriginal;
   }
+  function setMode(mode: Mode): void {
+    if (mode === state.mode) return;
+    state.mode = mode;
+    mapArea.dataset.mode = mode;
+    document.querySelectorAll<HTMLButtonElement>('#modes button').forEach((x) => x.classList.toggle('on', x.dataset.m === mode));
+    maps.setMode(mode);
+  }
   document.querySelectorAll<HTMLButtonElement>('#modes button').forEach((b) =>
-    b.addEventListener('click', () => {
-      const mode = b.dataset.m as Mode;
-      if (mode === state.mode) return;
-      state.mode = mode;
-      mapArea.dataset.mode = mode;
-      document.querySelectorAll('#modes button').forEach((x) => x.classList.toggle('on', x === b));
-      maps.setMode(mode);
-    }));
+    b.addEventListener('click', () => setMode(b.dataset.m as Mode)));
   const orientBtn = $('#orient');
   orientBtn.title = t.orientTitle;
-  orientBtn.addEventListener('click', () => {
-    state.orientation = state.orientation === 'north' ? 'original' : 'north';
+  function markOrientation(): void {
     orientBtn.setAttribute('aria-pressed', String(state.orientation === 'original'));
     updateTags();
+  }
+  orientBtn.addEventListener('click', () => {
+    state.orientation = state.orientation === 'north' ? 'original' : 'north';
+    markOrientation();
     maps.setOrientation(state.orientation);
   });
   updateTags();
+
+  // ---------- start over ----------
+  // The title returns to the standard view: list, no search or filters, side by side, north up,
+  // the whole city, the address back to / (keeping ?lang=). A modified click (new tab) is left alone.
+  function startOver(): void {
+    setFiltersOpen(false);
+    q.value = '';
+    $('#q-clear').hidden = true;
+    clearTimeout(timer);
+    state.query = '';
+    state.types.clear();
+    state.unsure = false;
+    markChips();
+    updateFiltersBtn();
+    setView('map');
+    mobile.home(); // first: the sheet sets the map's size, and the camera fits that size
+    setMode('side');
+    state.orientation = 'north';
+    markOrientation();
+    if (state.selected) select(null, { fly: false });
+    state.lastSelected = null;
+    state.listScroll = 0;
+    refresh();
+    maps.home();
+    history.replaceState(null, '', homeUrl());
+    document.title = t.siteTitle;
+  }
+  $('#brand').addEventListener('click', (ev) => {
+    if (ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+    ev.preventDefault();
+    startOver();
+  });
 
   // ---------- overlay controls ----------
   $('#warn').textContent = overlayTiles

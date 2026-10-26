@@ -324,6 +324,17 @@ export class MapView {
     else this.mod.easeTo({ bearing: this.targetModBearing(), duration: 700 });
   }
 
+  /** Back to the start: nothing selected, north up, the whole sheet in view. The caller has
+   *  already switched to side by side, so the old map leads and the modern one follows. */
+  home(): void {
+    this.orientation = 'north';
+    this.select(null, { fly: false });
+    this.hideTooltip();
+    const cam = this.fitOldCamera(this.old.getContainer());
+    // Zooming out to the whole sheet needs no dip below it (flightPlan always dips one level).
+    this.old.flyTo({ ...cam, duration: 1400 });
+  }
+
   /** Called after the map area becomes visible again (e.g. back from the table view). */
   resize(): void {
     this.resizeVisible();

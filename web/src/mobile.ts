@@ -25,6 +25,8 @@ export interface Mobile {
   /** Start the maps' attribution folded (the ⓘ button opens it), as it covers a third of a
    *  small pane otherwise. MapLibre unfolds it on load and folds it on the first drag. */
   foldAttribution(maps: MlMap[]): void;
+  /** Back to the start: the sheet down to peek. */
+  home(): void;
 }
 
 const mq = window.matchMedia('(max-width: 760px)');
@@ -141,6 +143,9 @@ export function initMobile(hooks: MobileHooks): Mobile {
       pushed = false;
       quietPop = true;
       history.back();
+    },
+    home() {
+      setSheet('peek');
     },
     foldAttribution(maps) {
       for (const m of maps) {
