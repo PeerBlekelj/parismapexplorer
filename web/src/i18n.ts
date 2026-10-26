@@ -121,7 +121,7 @@ const en = {
   // credits
   creditMap: 'Map: Truschet & Hoyau, c. 1550, Basel University Library (public domain)',
   creditOsm: '© OpenStreetMap contributors',
-  creditBy: 'by Peer Blekelj',
+  creditBy: 'by Peer Blekelj, built with Claude Code',
   creditMethod: 'How the map was bent',
   oldAttribution: 'Truschet &amp; Hoyau, c. 1550 · Basel University Library (public domain)',
 

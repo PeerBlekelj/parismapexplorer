@@ -18,6 +18,10 @@ modern name and see where it was and what is there now.
 Corrections are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) and the list of
 [open questions](data/research/OPEN_QUESTIONS.md). Project notes: [PLAN.md](PLAN.md).
 
+Built with [Claude Code](https://claude.com/claude-code): the labels were read off the scan,
+identified, and the site written by Claude, directed and reviewed by the project's editor. See
+[How the map was bent](https://parismapexplorer.vercel.app/method/#built).
+
 ## Sources
 
 - The map: *La ville, cité et université de Paris*, Olivier Truschet and Germain Hoyau, c. 1550

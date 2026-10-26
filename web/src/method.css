@@ -18,6 +18,7 @@ a { color: var(--blue); }
 h1 { font-weight: 500; font-size: 46px; line-height: 1.1; margin: 22px 0 12px; }
 .lede { font-size: 23px; color: var(--ink2); margin: 0 0 22px; }
 h2 { font-weight: 500; font-size: 30px; margin: 46px 0 8px; scroll-margin-top: 16px; }
+h3 { font-weight: 500; font-size: 23px; margin: 28px 0 6px; scroll-margin-top: 16px; }
 p, ul { margin: 0 0 16px; }
 li { margin-bottom: 6px; }
 code { font-size: 15px; background: var(--paper2); padding: 1px 5px; border-radius: 4px; }

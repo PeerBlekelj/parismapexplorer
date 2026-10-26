@@ -64,8 +64,8 @@
         <h2>Reading the labels</h2>
         <p>The source is the only known copy, in Basel University Library, scanned at
           10&nbsp;890 × 7&nbsp;820 pixels (public domain, via Wikimedia Commons). The scan was cut into 88
-          overlapping tiles and every label read tile by tile, then the dense areas again at twice the
-          zoom. That gave 468 labels; after removing duplicates and decoration, <strong>453 places</strong>.
+          overlapping tiles and every label read tile by tile by an AI model (Claude, see
+          <a href="#built">how this was built</a>), then the dense areas again at twice the zoom. That gave 468 labels; after removing duplicates and decoration, <strong>453 places</strong>.
           Every label keeps a permanent id (L0001 …) so links and corrections never break.</p>
         <p>Each place was then identified:</p>
         <ul>
@@ -204,6 +204,14 @@
             (<code>scripts/fit_transform.py</code>, <code>scripts/make_method_figures.py</code>), so every
             number here can be rerun.</li>
         </ul>
+        <h3 id="built">How this was built</h3>
+        <p>The whole project was built with <a href="https://claude.com/claude-code">Claude Code</a>,
+          Anthropic's AI coding assistant, working with a human editor: reading the labels off the scan,
+          matching them to the street registers and Wikipedia, choosing and placing the control points,
+          fitting the spline, writing the place summaries, and writing the site and this page. The human
+          side set the direction, made the design decisions and reviewed the results. An AI reading of a
+          500-year-old woodcut can be wrong, which is why every uncertain reading is flagged and every
+          identification links to its source; please report mistakes.</p>
         <p class="muted">Paris Map Explorer, by Peer Blekelj.</p>
       </section>
     </main>
