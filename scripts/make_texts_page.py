@@ -284,8 +284,9 @@ L["en"] = dict(
     col_orig="As printed, c. 1550", col_tr="English",
     h_poem="A poem in praise of Paris",
     p_poem="The poem starts in the large panel at the lower left and carries on in the smaller panel in the "
-           "middle, linked by the catchword “Le sainct” at the foot of the first. It is anonymous, in rhyming "
-           "couplets of ten syllables. It runs through the city's legendary founding, its setting, its castles "
+           "middle, linked by the catchword “Le sainct” at the foot of the first. It is unsigned, but the first "
+           "letters of its first fourteen lines spell GILLES CORROSET: Gilles Corrozet (see the notes). It is "
+           "in rhyming couplets of ten syllables. It runs through the city's legendary founding, its setting, its castles "
            "and great houses, its walls, bridges and churches, its courts, its university and its trade.",
     alt1="The first panel of the poem: three columns of verse in a framed cartouche",
     cap1="The first panel, lower left of the map (lines 1–78). Click for the full resolution.",
@@ -311,8 +312,9 @@ L["fr"] = dict(
     col_orig="Tel qu'imprimé, vers 1550", col_tr="Français moderne",
     h_poem="Un poème à la louange de Paris",
     p_poem="Le poème commence dans le grand cartouche en bas à gauche et se poursuit dans le plus petit, au "
-           "milieu, relié par la réclame « Le sainct » au pied du premier. Il est anonyme, en décasyllabes à rimes "
-           "plates. Il passe en revue la fondation légendaire de la ville, son site, ses châteaux et ses grands "
+           "milieu, relié par la réclame « Le sainct » au pied du premier. Il n'est pas signé, mais les initiales de "
+           "ses quatorze premiers vers forment GILLES CORROSET : Gilles Corrozet (voir les notes). Il est en "
+           "décasyllabes à rimes plates. Il passe en revue la fondation légendaire de la ville, son site, ses châteaux et ses grands "
            "hôtels, ses murs, ses ponts et ses églises, ses cours de justice, son université et son commerce.",
     alt1="Le premier cartouche du poème : trois colonnes de vers dans un cadre",
     cap1="Le premier cartouche, en bas à gauche du plan (vers 1–78). Cliquez pour la pleine résolution.",
@@ -338,8 +340,9 @@ L["sv"] = dict(
     col_orig="Som tryckt, ca 1550", col_tr="Svenska",
     h_poem="En dikt till Paris lov",
     p_poem="Dikten börjar i det stora fältet nere till vänster och fortsätter i det mindre i mitten; de binds "
-           "samman av kustoden ”Le sainct” längst ned i det första. Den är anonym, skriven i rimmade par om tio "
-           "stavelser. Den går igenom stadens legendariska grundande, dess läge, dess slott och stora palats, "
+           "samman av kustoden ”Le sainct” längst ned i det första. Den är osignerad, men begynnelsebokstäverna "
+           "i de fjorton första raderna bildar GILLES CORROSET: Gilles Corrozet (se kommentarerna). Den är "
+           "skriven i rimmade par om tio stavelser. Den går igenom stadens legendariska grundande, dess läge, dess slott och stora palats, "
            "dess murar, broar och kyrkor, dess domstolar, dess universitet och dess handel.",
     alt1="Diktens första fält: tre spalter vers i en inramad kartusch",
     cap1="Det första fältet, nere till vänster på kartan (rad 1–78). Klicka för full upplösning.",
@@ -375,6 +378,13 @@ BRIDGES = {
 
 NOTES_POEM = {
     "en": [
+        "<b>An acrostic (lines 1–14):</b> the opening stanza, which ends at the printer's ornament before "
+        "line 15, spells GILLES CORROSET with the first letters of its lines: Gilles Corrozet (1510–1568), "
+        "bookseller at the Palais and author of the first guidebooks to Paris, the <i>Fleur des antiquitez</i> "
+        "(1532) and the <i>Antiquitez de Paris</i> (1550). Jules Cousin noticed it in 1875, and identified the "
+        "poem as the closing verses of the <i>Fleur</i>; we have not yet checked that against the book. We "
+        "found no other acrostic: not in the rest of the poem (first or last letters, by stanza, column or "
+        "panel), nor in the publishers' notice. See <a href=\"/about/#makers\">who made the map</a>.",
         "<b>Paris, Hercules, the Trojans (lines 19–41):</b> the poem weighs the founding legends of its day "
         "without choosing. In one, Paris was founded by Trojan exiles: in Jean Lemaire de Belges' "
         "<i>Illustrations de Gaule</i> (1510–1513), Hector's son, renamed Francus, founds it and names it after his "
@@ -409,6 +419,14 @@ NOTES_POEM = {
         "outshine Athens.",
     ],
     "fr": [
+        "<b>Un acrostiche (vers 1–14) :</b> la strophe d'ouverture, close par le fleuron qui précède le vers "
+        "15, forme par les initiales de ses vers GILLES CORROSET : Gilles Corrozet (1510–1568), libraire au "
+        "Palais, auteur des premiers guides de Paris, la <i>Fleur des antiquitez</i> (1532) et les "
+        "<i>Antiquitez de Paris</i> (1550). Jules Cousin l'a remarqué en 1875, et a reconnu dans le poème les "
+        "vers qui terminent la <i>Fleur</i> ; nous ne l'avons pas encore vérifié sur le livre. Nous n'avons "
+        "trouvé aucun autre acrostiche : ni dans le reste du poème (premières ou dernières lettres, par "
+        "strophe, colonne ou cartouche), ni dans l'avis des éditeurs. Voir <a href=\"/fr/about/#makers\">qui "
+        "a fait le plan</a>.",
         "<b>Paris, Hercule, les Troyens (vers 19–41) :</b> le poème passe en revue les légendes de fondation de "
         "son temps sans trancher. Dans l'une, Paris est fondée par des Troyens exilés : dans les "
         "<i>Illustrations de Gaule</i> de Jean Lemaire de Belges (1510–1513), le fils d'Hector, devenu Francus, la "
@@ -444,6 +462,13 @@ NOTES_POEM = {
         "surpassent Athènes.",
     ],
     "sv": [
+        "<b>En akrostikon (rad 1–14):</b> den inledande strofen, som slutar vid tryckarens ornament före rad "
+        "15, bildar med radernas begynnelsebokstäver GILLES CORROSET: Gilles Corrozet (1510–1568), bokhandlare "
+        "vid Palais och författare till de första guideböckerna om Paris, <i>Fleur des antiquitez</i> (1532) "
+        "och <i>Antiquitez de Paris</i> (1550). Jules Cousin upptäckte det 1875 och kände igen dikten som "
+        "slutverserna i <i>Fleur</i>; det har vi ännu inte kontrollerat mot boken. Vi har inte hittat någon "
+        "annan akrostikon: varken i resten av dikten (första eller sista bokstäverna, per strof, spalt eller "
+        "fält) eller i utgivarnas meddelande. Se <a href=\"/sv/about/#makers\">vem som gjorde kartan</a>.",
         "<b>Paris, Herkules, trojanerna (rad 19–41):</b> dikten väger sin tids legender om stadens grundande mot "
         "varandra utan att välja. Enligt en grundades Paris av landsflyktiga trojaner: i Jean Lemaire de Belges "
         "<i>Illustrations de Gaule</i> (1510–1513) grundar Hektors son, under namnet Francus, staden och "
@@ -610,6 +635,10 @@ ABOUT = {
 
 # The same list on every page: titles stay in their own language.
 SOURCES = [
+    "Jules Cousin, “Notice sur un plan de Paris du XVI<sup>e</sup> siècle nouvellement découvert à Bâle”, "
+    "<i>Mémoires de la Société de l'histoire de Paris et de l'Île-de-France</i>, t. I (1875), pp. 46–59: "
+    "<a href=\"https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f54.item\">gallica.bnf.fr / BnF</a> (the "
+    "acrostic, pp. 51–52).",
     "Jules Cousin, “Table des noms des rues… inscrits sur le plan de Paris publié vers 1552 par Olivier Truschet "
     "et Germain Hoyau”, <i>Mémoires de la Société de l'histoire de Paris et de l'Île-de-France</i>, t. I (1875), "
     "pp. 60–70: <a href=\"https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f68.item\">gallica.bnf.fr / BnF</a>.",
