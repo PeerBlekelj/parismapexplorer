@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Phone layout C: tabs</title>
+<link rel="stylesheet" href="../../web/src/style.css"><link rel="stylesheet" href="mock.css"><script src="common.js"></script></head><body>
+<h1 class="sheet-title">C · Tabs at the bottom: Map / List / Table</h1>
+<p class="sheet-sub">Three full-screen views behind a tab bar, like a phone app. A place opens as a page over the List (Back returns). Two maps: <b>Overlay is the default</b> on the Map tab (the warped 1550 map over today’s, drag ⇆ and set opacity), the other modes in the Layers menu.</p>
+<div class="row">
+
+<div class="frame"><div class="phone">
+  <div class="status"><span>9:41</span><span>●●● ▮</span></div>
+  <script>document.write(modPane('left:0;right:0;top:0;bottom:83px', 761))</script>
+  <div style="position:absolute;left:0;width:240px;top:0;bottom:83px;overflow:hidden;opacity:.8"><script>document.write(oldPane('left:0;width:390px;top:0;height:761px', 761))</script></div>
+  <div class="swipeL" style="left:240px;bottom:83px"></div>
+  <div class="msearch" style="position:absolute;top:54px;left:16px;right:16px;filter:drop-shadow(0 2px 6px #0003)"><div class="box"><i class="ico"></i> Search…</div><div class="btn">Layers ▾</div></div>
+  <div class="ctrlM" style="bottom:98px">Old map <span class="track"></span> opacity</div>
+  <div class="tabbar"><span class="on"><i>◫</i>Map</span><span><i>☰</i>List</span><span><i>▦</i>Table</span></div>
+</div><p class="cap"><b>1 · Map tab.</b> Overlay by default: one big map, drag ⇆ to compare. Tapping search jumps to the List tab.</p></div>
+
+<div class="frame"><div class="phone" style="background:var(--paper)">
+  <div class="status"><span>9:41</span><span>●●● ▮</span></div>
+  <div class="msearch" style="position:absolute;top:54px;left:16px;right:16px"><div class="box" style="color:var(--ink)"><i class="ico"></i> pont</div><div class="btn">Filters ▾</div></div>
+  <div class="count" style="position:absolute;top:104px">17 of 455 places</div>
+  <div class="list" style="position:absolute;top:130px;left:0;right:0;bottom:83px;overflow:hidden" data-fill="results(8, 0)"></div>
+  <div class="tabbar"><span><i>◫</i>Map</span><span class="on"><i>☰</i>List</span><span><i>▦</i>Table</span></div>
+</div><p class="cap"><b>2 · List tab.</b> Search, Filters, results. A row opens the card as a page (as in B·3); “Show on map” switches to the Map tab.</p></div>
+
+<div class="frame"><div class="phone" style="background:var(--paper)">
+  <div class="status"><span>9:41</span><span>●●● ▮</span></div>
+  <div style="position:absolute;top:54px;left:16px;right:16px;display:flex;justify-content:space-between;align-items:center;height:44px;font-size:13px"><span>455 places</span><span class="msearch"><span class="btn">Sort: On the map ▾</span></span></div>
+  <div class="cards" style="position:absolute;top:110px;left:0;right:0;bottom:83px;overflow:hidden">
+    <div class="pcard"><div class="o">Le Pont S. Michel</div><div class="m">Pont Saint-Michel · Bridge</div><span class="badge rebuilt">Rebuilt</span> <span style="float:right;font-size:12px;color:var(--ink2)">L0006</span></div>
+    <div class="pcard"><div class="o">Le Pont au Muniers</div><div class="m"><i>No longer exists</i> · Bridge</div><span class="badge vanished">Vanished</span> <span style="float:right;font-size:12px;color:var(--ink2)">L0005</span></div>
+    <div class="pcard"><div class="o">Les Tournelles</div><div class="m">Place des Vosges · Building</div><span class="badge vanished">Vanished</span> <span style="float:right;font-size:12px;color:var(--ink2)">L0008</span></div>
+    <div class="pcard"><div class="o">S. Germain des Prez</div><div class="m">Saint-Germain-des-Prés · Church</div><span class="badge standing">Still standing</span> <span class="badge unsure">Unsure reading</span></div>
+    <div class="pcard"><div class="o">Le Petit Chastelet</div><div class="m"><i>No longer exists</i> · Gate or wall</div><span class="badge vanished">Vanished</span></div>
+    <div class="pcard"><div class="o">R. de la Harpe</div><div class="m">Rue de la Harpe · Street</div><span class="badge standing">Still standing</span></div>
+  </div>
+  <div class="tabbar"><span><i>◫</i>Map</span><span><i>☰</i>List</span><span class="on"><i>▦</i>Table</span></div>
+</div><p class="cap"><b>3 · Table tab.</b> The table becomes compact cards (all six columns, no sideways scroll); sorting moves to a menu.</p></div>
+
+</div></body></html>

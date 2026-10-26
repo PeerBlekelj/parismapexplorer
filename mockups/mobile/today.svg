@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#f2efe9"/>
+  <g fill="#e4e0d6"><rect x="40" y="60" width="150" height="110"/><rect x="230" y="40" width="190" height="140"/><rect x="470" y="60" width="160" height="120"/><rect x="60" y="560" width="170" height="150"/><rect x="290" y="580" width="160" height="160"/><rect x="510" y="560" width="200" height="140"/></g>
+  <g fill="#cfe3c4"><rect x="80" y="610" width="90" height="70" rx="6"/><rect x="660" y="80" width="90" height="90" rx="6"/></g>
+  <path d="M-20 300 C 140 280, 260 360, 400 350 S 640 300, 820 360 L 820 430 C 640 370, 560 420, 400 425 S 140 350, -20 375 Z" fill="#aad3df"/>
+  <path d="M330 365 C 370 352, 450 352, 500 370 C 460 395, 380 398, 330 380 Z" fill="#e4e0d6" stroke="#fff" stroke-width="2"/>
+  <path d="M530 380 C 560 372, 610 374, 640 384 C 610 398, 560 398, 530 390 Z" fill="#e4e0d6" stroke="#fff" stroke-width="2"/>
+  <g stroke="#fff" stroke-width="9" fill="none" stroke-linecap="round">
+    <path d="M0 220 L800 240"/><path d="M0 500 L800 520"/><path d="M420 0 L410 330"/><path d="M400 440 L390 800"/>
+    <path d="M200 0 L250 330"/><path d="M620 0 L590 330"/><path d="M180 800 L240 450"/><path d="M640 800 L600 450"/>
+  </g>
+  <g stroke="#fff" stroke-width="4" fill="none">
+    <path d="M0 120 L800 140"/><path d="M0 620 L800 640"/><path d="M100 0 L120 330"/><path d="M520 0 L500 330"/><path d="M300 450 L280 800"/><path d="M520 450 L540 800"/><path d="M720 0 L700 330"/><path d="M80 800 L120 450"/>
+  </g>
+  <g stroke="#fff" stroke-width="6"><path d="M395 330 L395 445"/><path d="M455 335 L460 440"/><path d="M300 345 L305 430"/></g>
+</svg>
