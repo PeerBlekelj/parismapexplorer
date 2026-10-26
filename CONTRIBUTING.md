@@ -5,9 +5,14 @@ Corrections and additions are very welcome — especially from people who know o
 ## The quickest way: open an issue
 
 If you spot a wrong identification, a misread label, a misplaced pin or a mistake in a text,
-[open an issue](https://github.com/PeerBlekelj/parismapexplorer/issues) with the place id
-(e.g. `L0123`, shown in the table of places and in the page address `#place=L0123`) and, if you
-can, a source.
+click **Suggest a correction** at the bottom of the place's card on the site. It opens a new
+GitHub issue with the place's id, its label as printed, today's name and status, and a link to the
+place already filled in; you add what's wrong, the correction and, if you can, a source (book,
+article, link, old map). You need a (free) GitHub account.
+
+You can also [open an issue](https://github.com/PeerBlekelj/parismapexplorer/issues/new/choose)
+directly, with the place id (e.g. `L0123`, shown in the place card, the table of places and the
+page address `/place/L0123/`).
 
 ## Editing the data directly
 

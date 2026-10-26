@@ -7,6 +7,22 @@ import { t } from './i18n';
 import { modernText, type Entry } from './model';
 import type { PixelGeoTransform } from './transform';
 
+const REPO = 'https://github.com/PeerBlekelj/parismapexplorer';
+const SITE = 'https://parismapexplorer.vercel.app';
+
+/** A new GitHub issue from `.github/ISSUE_TEMPLATE/correction.yml`, its fields filled in by id. */
+function correctionUrl(e: Entry): string {
+  const p = e.place;
+  const place = [
+    `On the map as: "${p.old}"`,
+    `Today: ${modernText(p).text}`,
+    `Status: ${statusLabel(p.status)}`,
+    `Link: ${SITE}/place/${p.id}/`,
+  ].join('\n');
+  const q = new URLSearchParams({ template: 'correction.yml', title: `Correction: ${p.id} ${e.title}`, place_id: p.id, place });
+  return `${REPO}/issues/new?${q}`;
+}
+
 // `backCount` is the number of places in the list the card was opened over; the back link and
 // the × both call `onClose`, which returns to that list.
 export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, backCount: number, onClose: () => void): void {
@@ -65,6 +81,7 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, back
       </dl>
       ${p.summary ? `<p class="summary">${esc(p.summary)}</p>` : `<p class="summary placeholder">${esc(t.noSummary)}</p>`}
       <div class="src">${esc(t.sources)}: ${links || `<span class="placeholder">${esc(t.noSources)}</span>`}</div>
+      <p class="suggest"><a href="${esc(correctionUrl(e))}" target="_blank" rel="noopener" title="${esc(t.suggestCorrectionHint)}">${esc(t.suggestCorrection)}</a></p>
     </article>`;
 
   el.querySelector('.card-close')?.addEventListener('click', onClose);

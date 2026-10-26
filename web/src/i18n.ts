@@ -131,6 +131,10 @@ const en = {
   oldAttribution: 'Truschet &amp; Hoyau, c. 1550 · Basel University Library (public domain)',
 
   loadError: 'Could not load the place data.',
+
+  // correction link (opens a pre-filled GitHub issue)
+  suggestCorrection: 'Suggest a correction',
+  suggestCorrectionHint: 'Opens a pre-filled issue on GitHub (needs a GitHub account)',
 };
 
 function roundTo(v: number, step: number): number {
