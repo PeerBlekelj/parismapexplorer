@@ -4,7 +4,7 @@ A searchable website that pairs the Truschet & Hoyau plan of Paris (c. 1550, the
 with the modern city. Every place named on the old map can be found by its old or modern name,
 located on both maps, and read about.
 
-Live preview (noindex until launch): https://parismapexplorer.vercel.app
+Live: https://paris1550.vercel.app (the old parismapexplorer.vercel.app redirects here)
 
 ## Decisions
 

@@ -8,7 +8,7 @@ import { modernText, type Entry } from './model';
 import type { PixelGeoTransform } from './transform';
 
 const REPO = 'https://github.com/PeerBlekelj/parismapexplorer';
-const SITE = 'https://parismapexplorer.vercel.app';
+const SITE = 'https://paris1550.vercel.app';
 
 /** A new GitHub issue from `.github/ISSUE_TEMPLATE/correction.yml`, its fields filled in by id. */
 function correctionUrl(e: Entry): string {

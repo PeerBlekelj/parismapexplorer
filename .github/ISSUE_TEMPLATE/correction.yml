@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you! If you came from a place card on [Paris 1550](https://parismapexplorer.vercel.app), the first two fields are already filled in.
+        Thank you! If you came from a place card on [Paris 1550](https://paris1550.vercel.app), the first two fields are already filled in.
   - type: input
     id: place_id
     attributes:

@@ -9,7 +9,7 @@ import { resolve } from 'node:path';
 import { defineConfig, type Plugin } from 'vite';
 
 // The site's address, in one place: the HTML pages say %SITE% and get it from siteUrl() below.
-const SITE = 'https://parismapexplorer.vercel.app';
+const SITE = 'https://paris1550.vercel.app';
 const NAME = 'Paris 1550';
 
 const STATUS: Record<string, string> = {
