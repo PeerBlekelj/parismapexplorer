@@ -2,6 +2,29 @@
 
 Newest first. What was done, what was found, what is open.
 
+## NEXT SESSION — start here (owner's answers, 2026-10-26)
+
+1. **Review:** "looks good for now". No changes requested to the preview.
+2. **Launch: YES to indexing and YES to link previews.** Drop `noindex` from `web/index.html`, add
+   `robots.txt` + `sitemap.xml`, an Open Graph / Twitter card (title, description, a share image cut from the
+   map), and ideally per-place previews for `#place=` links. A hash isn't sent to the server, so per-place cards
+   need a path form such as `/place/L0123` (see how ReadLater does OG previews with Vercel edge middleware).
+   Grep the build for the real name before deploying.
+3. **Vercel team slug** (`pelle-bjerke-s-projects`): the owner will look into it later. Do nothing.
+4. **Cousin 1875:** the whole volume is in the owner's Google Drive, Claude folder:
+   `Mémoires_de_la_Société_de_[...]Société_de_bpt6k6310467r.pdf`, 78 MB, Drive file id
+   `1Zzn05jN2UiuI0cGC5sGuL_raEgG0ExI9`. The index of the map's names is pp. 58–70 (Gallica f66 on); Cousin's
+   notice on the map starts around f52. Use it to settle `data/research/OPEN_QUESTIONS.md` and check the label list.
+5. **NEW REQUEST: a page on the site explaining how the map was bent**, i.e. the method. Cover:
+   - why a bird's-eye view can't be laid on a map with one stretch, and the ~115° rotation;
+   - how the labels were read and identified (sources);
+   - control points (drawn buildings, bridge ends), the thin-plate spline, the leave-one-out error (64 m
+     median, 155 m p90) and why the edges are worse;
+   - mistakes caught (Charenton, homonyms, old spellings);
+   - figures: the control-point map, an error map, affine vs spline;
+   - honest limits; credits and sources.
+   Link it from the app (sidebar footer) and the README, and keep it in the site's style.
+
 ## 2026-10-25 → 26 — first session: from idea to live preview
 
 **Done**
