@@ -2,6 +2,19 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-26 (20:35) — intro page live; Corrozet + about FR/SV in the cloud
+
+- Owner: intro page OK as is, translate after launch; keep both the welcome card and the footer link;
+  keep the FR/SV language redirect. Merged `intro` (about page, card, footer link) and deployed.
+  About links stay English-only until the translation lands (sitemap: one plain /about/ entry).
+- ⚠ Vercel free plan: "more than 5000 file uploads per day" — deploy with `--archive=tgz` (one
+  upload). A failed deploy can leave 404s cached for a few minutes.
+- The acrostic GILLES CORROSET (lines 1–14) = the poet Gilles Corrozet, not the publishers; the about
+  page already says so and credits Cousin 1875.
+- Cloud session session_016hjei192GYZPbkfQvLFN7i, branch `corrozet-about-i18n`: investigate the acrostic
+  (other acrostics, who noticed it first, shared verses in Corrozet's works, the 1553 "commission"),
+  update the about + texts pages, then translate the about page to FR/SV.
+
 ## 2026-10-26 (evening) — FR/SV pages, texts on the map, start-over link: live; intro = suggestion
 
 - Merged + deployed: `i18n-pages` (FR/SV place + home + method pages, hreflang, app follows /fr/ /sv/
