@@ -10,6 +10,7 @@ import { renderCard, renderIntro } from './card';
 import { esc, statusClass, statusLabel, typeLabel } from './format';
 import { t } from './i18n';
 import { loadOverlayTiles, MapView, type Mode, type Orientation } from './maps';
+import { initMobile } from './mobile';
 import { buildEntries, modernText, type Entry } from './model';
 import { IMAGE_H, IMAGE_W } from './oldPlane';
 import { SearchIndex } from './search';
@@ -116,6 +117,8 @@ async function main(): Promise<void> {
   (window as unknown as { pme: unknown }).pme = { maps, T, entries };
 
   const table = new PlaceTable($('#table'), (id) => select(id, { fly: true, fromTable: true }));
+  const mobile = initMobile({ back: () => closeCard(true), resize: () => maps.resize() });
+  mobile.foldAttribution([maps.old, maps.mod]);
 
   // ---------- chips ----------
   const counts = new Map<string, number>();
@@ -244,6 +247,7 @@ async function main(): Promise<void> {
   // return to the list, scrolled to where it was, with the place still highlighted.
   function select(id: string | null, opts: { fly: boolean; source?: 'old' | 'mod'; fromTable?: boolean; instant?: boolean }): void {
     const e = id ? byId.get(id) ?? null : null;
+    const wasOpen = !!state.selected;
     if (e && !state.selected) state.listScroll = listEl.scrollTop;
     state.selected = e;
     if (e) state.lastSelected = e;
@@ -256,11 +260,13 @@ async function main(): Promise<void> {
     app.classList.toggle('has-sel', !!e);
     if (e) {
       renderCard(cardEl, e, T, state.results.length, () => closeCard(true));
+      if (!wasOpen) mobile.cardOpened();
       history.replaceState(null, '', `${BASE}place/${encodeURIComponent(e.place.id)}/${location.search}`);
       document.title = `${e.place.modern ?? e.place.old} · Paris in 1550`;
     } else {
       renderIntro(cardEl);
       history.replaceState(null, '', `${BASE}${location.search}`);
+      if (wasOpen) mobile.cardClosed();
       document.title = SITE_TITLE;
     }
     maps.select(e, opts);
