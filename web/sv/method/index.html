@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hur kartan böjdes · Paris 1550</title>
-    <meta name="description" content="Hur en träsnittskarta över Paris i fågelperspektiv från omkring 1550 passades in på dagens stad: läsningen av namnen, kontrollpunkter, en thin-plate spline, felen och begränsningarna." />
+    <meta name="description" content="Hur en träsnittskarta över Paris i fågelperspektiv från omkring 1550 passades in på dagens stad: läsningen av namnen, kontrollpunkter, en tunnplåtspline, felen och begränsningarna." />
     <link rel="canonical" href="%SITE%/sv/method/" />
     <link rel="alternate" hreflang="en" href="%SITE%/method/" />
     <link rel="alternate" hreflang="fr" href="%SITE%/fr/method/" />
@@ -16,7 +16,7 @@
     <meta property="og:locale:alternate" content="en_GB" />
     <meta property="og:locale:alternate" content="fr_FR" />
     <meta property="og:title" content="Hur kartan böjdes · Paris 1550" />
-    <meta property="og:description" content="Hur en träsnittskarta över Paris i fågelperspektiv från omkring 1550 passades in på dagens stad: kontrollpunkter, en thin-plate spline, felen och begränsningarna." />
+    <meta property="og:description" content="Hur en träsnittskarta över Paris i fågelperspektiv från omkring 1550 passades in på dagens stad: kontrollpunkter, en tunnplåtspline, felen och begränsningarna." />
     <meta property="og:url" content="%SITE%/sv/method/" />
     <meta property="og:image" content="%SITE%/og/site.jpg" />
     <meta property="og:image:width" content="800" />
@@ -133,7 +133,7 @@
 
       <section id="spline">
         <h2>Splinen</h2>
-        <p>Böjningen är en <strong>thin-plate spline</strong> (ungefär ”tunnplattespline”): tänk dig kartan tryckt
+        <p>Böjningen är en <strong>tunnplåtspline</strong> (engelska <em>thin-plate spline</em>): tänk dig kartan tryckt
           på ett tunt metallblad, med varje kontrollpunkt fastnålad på sin plats i dagens stad. Bladet böjer sig
           så lite som möjligt men når ändå alla nålar. Nära nålarna följer det dem tätt; mellan dem böjer det sig
           mjukt; långt från alla återgår det till den bästa enskilda sträckningen.</p>
@@ -160,7 +160,7 @@
           <thead><tr><th></th><th>median</th><th>90&nbsp;% av punkterna inom</th><th>sämsta</th></tr></thead>
           <tbody>
             <tr><th>En sträckning (affin)</th><td>89 m</td><td>250 m</td><td>404 m</td></tr>
-            <tr><th>Thin-plate spline</th><td><strong>61 m</strong></td><td><strong>136 m</strong></td><td>195 m</td></tr>
+            <tr><th>Tunnplåtspline</th><td><strong>61 m</strong></td><td><strong>136 m</strong></td><td>195 m</td></tr>
           </tbody>
         </table>
         <figure>
