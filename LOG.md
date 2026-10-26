@@ -2,6 +2,22 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-26 (midday) — name chosen; work fanned out to cloud sessions
+
+- **Name: "Paris 1550"** (owner). `paris1550.vercel.app` answered 404 = probably free; the domain move
+  waits until the rename is merged (keep the old URL working, then switch canonical/sitemap).
+- Owner: "hand over as much as possible to cloud". Four cloud sessions, each on its own branch, no
+  merge/PR/deploy, told NOT to edit LOG.md (notes come in their final summaries):
+  - `rename-paris-1550` (session_018QqnWXdEF3oW36FYV9yZHs): rename everywhere except URLs; favicon
+    options in `mockups/favicons-1550/` with preview.png for the owner to view on GitHub.
+  - `mobile` (session_01MPeK8UethfUobKsy54B5LS): 3 phone mockups in `mockups/mobile/`, then builds its pick
+    behind a media query; owner to choose.
+  - `i18n-fr-sv` (session_01PFTteGnqxqaJ2qRjHWxzod): FR/SV UI, language switch, all summaries translated.
+  - `corrections-research` (session_019NbwEZ9EeMqc1U45jTQ5uW): "Suggest a correction" → prefilled GitHub
+    issue form; research on the 3 open questions; edge control-point candidates.
+- Merge order planned: rename → corrections → i18n → mobile (expect conflicts in i18n.ts, card.ts).
+- The layout-A session (session_01PXG9oTDuoQGTs7niy7sh7R) is done and merged.
+
 ## 2026-10-26 (branch `layout-a`) — sidebar layout A, drill-in
 
 **Done** (not merged, not deployed: for review on the machine with the tiles)
