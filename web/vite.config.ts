@@ -12,6 +12,9 @@ import { defineConfig, type Plugin } from 'vite';
 const SITE = 'https://paris1550.vercel.app';
 const NAME = 'Paris 1550';
 
+// The texts on the map: static pages from scripts/make_texts_page.py.
+const TEXTS = ['texts', 'fr/texts', 'sv/texts'];
+
 const STATUS: Record<string, string> = {
   standing: 'still standing',
   rebuilt: 'rebuilt',
@@ -84,6 +87,8 @@ function sitePages(): Plugin {
       if (!haveOg) this.warn('no og/ images: run scripts/make_og_images.py (pages still get the site image)');
 
       const urls = [`${SITE}/`, `${SITE}/method/`];
+      // The texts on the map (scripts/make_texts_page.py), one page per language.
+      urls.push(...TEXTS.map((t) => `${SITE}/${t}/`));
       for (const p of places) {
         const old = tidy(p.old);
         const status = p.status ? STATUS[p.status] : null;
@@ -117,7 +122,11 @@ export default defineConfig({
   plugins: [siteUrl(), sitePages()],
   build: {
     rollupOptions: {
-      input: { main: resolve(import.meta.dirname, 'index.html'), method: resolve(import.meta.dirname, 'method/index.html') },
+      input: {
+        main: resolve(import.meta.dirname, 'index.html'),
+        method: resolve(import.meta.dirname, 'method/index.html'),
+        ...Object.fromEntries(TEXTS.map((t) => [t.replace('/', '-'), resolve(import.meta.dirname, t, 'index.html')])),
+      },
     },
   },
 });
