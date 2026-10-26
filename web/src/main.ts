@@ -8,7 +8,7 @@ import './style.css';
 
 import { renderCard, renderIntro } from './card';
 import { esc, statusClass, statusLabel, typeLabel } from './format';
-import { lang, LANGS, setLang, t, type Lang } from './i18n';
+import { lang, langBase, LANGS, setLang, t, type Lang } from './i18n';
 import { loadOverlayTiles, MapView, type Mode, type Orientation } from './maps';
 import { initMobile } from './mobile';
 import { buildEntries, modernText, type Entry } from './model';
@@ -19,7 +19,6 @@ import { createTransform } from './transform';
 import type { GcpsFile, PlacesFile } from './types';
 
 const BASE = import.meta.env.BASE_URL;
-const SITE_TITLE = 'Paris 1550 · the Truschet & Hoyau map and the city today';
 const TYPE_ORDER = ['church_religious', 'college', 'street', 'gate_wall', 'bridge', 'building', 'square_market', 'village_faubourg', 'other'];
 
 const $ = <T extends HTMLElement = HTMLElement>(sel: string) => document.querySelector(sel) as T;
@@ -30,8 +29,8 @@ async function loadJson<T>(path: string): Promise<T> {
   return (await r.json()) as T;
 }
 
-// A place link is /place/L0123/ (a real page, so link previews work); the older #place= form
-// still opens.
+// A place link is /place/L0123/ or /fr/place/L0123/ (a real page, so link previews work); the
+// older #place= form still opens.
 function placeIdFromUrl(): string | null {
   const m = /\/place\/([A-Za-z0-9_-]+)\/?$/.exec(location.pathname) ?? /(?:^#|&)place=([A-Za-z0-9_-]+)/.exec(location.hash);
   return m ? m[1] : null;
@@ -60,7 +59,7 @@ function fillStaticText(): void {
   const langs = LANGS.map((l) =>
     `<button type="button" data-lang="${l}" lang="${l}" aria-pressed="${l === lang}">${l.toUpperCase()}</button>`).join(' · ');
   $('#credits').innerHTML = `<span class="langs" role="group" aria-label="${esc(t.langLabel)}">${langs}</span>` +
-    `<a href="${BASE}method/">${esc(t.creditMethod)}</a> · ` + [t.creditMap, t.creditOsm, t.creditBy].map(esc).join(' · ');
+    `<a href="${langBase()}method/">${esc(t.creditMethod)}</a> · ` + [t.creditMap, t.creditOsm, t.creditBy].map(esc).join(' · ');
 }
 
 // Re-renders everything that shows text; replaced by the full version once the data is loaded.
@@ -286,13 +285,13 @@ async function main(): Promise<void> {
     if (e) {
       renderCard(cardEl, e, T, state.results.length, () => closeCard(true));
       if (!wasOpen) mobile.cardOpened();
-      history.replaceState(null, '', `${BASE}place/${encodeURIComponent(e.place.id)}/${location.search}`);
+      history.replaceState(null, '', `${langBase()}place/${encodeURIComponent(e.place.id)}/${location.search}`);
       document.title = `${e.place.modern ?? e.place.old} · Paris 1550`;
     } else {
       renderIntro(cardEl);
-      history.replaceState(null, '', `${BASE}${location.search}`);
+      history.replaceState(null, '', `${langBase()}${location.search}`);
       if (wasOpen) mobile.cardClosed();
-      document.title = SITE_TITLE;
+      document.title = t.siteTitle;
     }
     maps.select(e, opts);
     if (state.view === 'table') table.update(state.results, e?.place.id ?? null, t.count(state.results.length, total));
@@ -410,6 +409,7 @@ async function main(): Promise<void> {
       cardEl.scrollTop = cardScroll;
     } else {
       renderIntro(cardEl);
+      document.title = t.siteTitle;
     }
     orientBtn.title = t.orientTitle;
     updateTags();

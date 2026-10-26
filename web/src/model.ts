@@ -2,8 +2,9 @@
 // (real when the data has lat/lon, otherwise estimated with the transform).
 
 import { displayOld, hasKnownPosition } from './format';
-import { lang, t } from './i18n';
+import { t } from './i18n';
 import { pxToLngLat } from './oldPlane';
+import { localModernIn } from './strings';
 import type { PixelGeoTransform } from './transform';
 import type { Place, Vec2 } from './types';
 
@@ -46,13 +47,7 @@ export function modernText(p: Place): { text: string; placeholder: boolean } {
   return { text: t.notIdentified, placeholder: true };
 }
 
-/** The modern name in the current language. The names are French already; what is translated is
- *  the English around them: "part of …", " and ", and a trailing note in parentheses. */
+/** The modern name in the current language (see localModernIn). */
 export function localModern(m: string): string {
-  if (lang === 'en') return m;
-  const paren = / \(([^()]*)\)$/.exec(m);
-  let name = paren ? m.slice(0, paren.index) : m;
-  const part = /^part of (.+)$/.exec(name);
-  name = part ? t.partOf(part[1]) : t.modernNames[name] ?? name.replace(/ and /g, t.and);
-  return paren ? `${name} (${t.modernNotes[paren[1]] ?? paren[1]})` : name;
+  return localModernIn(m, t);
 }

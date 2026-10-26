@@ -3,7 +3,7 @@
 
 import { drawCrop } from './crop';
 import { esc, fmtLat, fmtLon, safeUrl, statusClass, statusLabel, summaryFor, typeLabel } from './format';
-import { t } from './i18n';
+import { langBase, t } from './i18n';
 import { modernText, type Entry } from './model';
 import type { PixelGeoTransform } from './transform';
 
@@ -78,7 +78,7 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, back
         <dt>${esc(t.variants)}</dt><dd>${variants}</dd>
         <dt>${esc(t.pos1550)}</dt><dd>${esc(t.pxFmt(e.px[0], e.px[1]))}</dd>
         <dt>${esc(t.posToday)}</dt><dd class="pos">${posToday}</dd>
-        <dt>${esc(t.id)}</dt><dd><a href="${import.meta.env.BASE_URL}place/${encodeURIComponent(p.id)}/" class="permalink">${esc(p.id)}</a> · <span class="muted">${esc(t.link)}</span></dd>
+        <dt>${esc(t.id)}</dt><dd><a href="${langBase()}place/${encodeURIComponent(p.id)}/" class="permalink">${esc(p.id)}</a> · <span class="muted">${esc(t.link)}</span></dd>
       </dl>
       ${sum ? `<p class="summary"${sum.lang ? ` lang="${sum.lang}"` : ''}>${esc(sum.text)}</p>` : `<p class="summary placeholder">${esc(t.noSummary)}</p>`}
       <div class="src">${esc(t.sources)}${esc(t.colon)}${links || `<span class="placeholder">${esc(t.noSources)}</span>`}</div>
