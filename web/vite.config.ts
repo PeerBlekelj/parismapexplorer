@@ -17,6 +17,9 @@ const NAME = 'Paris 1550';
 /** Path of a page in language `l`; `path` is the English one without the leading slash. */
 const langPath = (l: Lang, path: string) => (l === 'en' ? `/${path}` : `/${l}/${path}`);
 
+// The texts on the map: static pages from scripts/make_texts_page.py (en, fr, sv).
+const TEXTS = ['texts', 'fr/texts', 'sv/texts'];
+
 interface Place {
   id: string;
   old: string;
@@ -107,7 +110,7 @@ function sitePages(): Plugin {
         writeFileSync(resolve(dir, 'index.html'), page);
       };
 
-      const paths = ['', 'method/'];
+      const paths = ['', 'method/', 'texts/'];
       for (const l of LANGS) {
         const s = STRINGS[l];
         write({ lang: l, title: s.siteTitle, desc: s.siteDesc, path: '', image: `${SITE}/og/site.jpg`, alt: s.siteImageAlt });
@@ -158,6 +161,7 @@ export default defineConfig({
         method: resolve(import.meta.dirname, 'method/index.html'),
         methodFr: resolve(import.meta.dirname, 'fr/method/index.html'),
         methodSv: resolve(import.meta.dirname, 'sv/method/index.html'),
+        ...Object.fromEntries(TEXTS.map((t) => [t.replace('/', '-'), resolve(import.meta.dirname, t, 'index.html')])),
       },
     },
   },

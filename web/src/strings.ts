@@ -140,6 +140,7 @@ const en = {
   creditOsm: '© OpenStreetMap contributors',
   creditBy: 'by Peer Blekelj, built with Claude Code',
   creditMethod: 'How the map was bent',
+  creditTexts: 'Texts on the map',
   oldAttribution: 'Truschet &amp; Hoyau, c. 1550 · Basel University Library (public domain)',
 
   loadError: 'Could not load the place data.',
@@ -316,6 +317,7 @@ const fr: Strings = {
   creditOsm: '© les contributeurs d’OpenStreetMap',
   creditBy: 'par Peer Blekelj, réalisé avec Claude Code',
   creditMethod: 'Comment le plan a été déformé',
+  creditTexts: 'Les textes du plan',
   oldAttribution: 'Truschet &amp; Hoyau, vers 1550 · bibliothèque universitaire de Bâle (domaine public)',
 
   suggestCorrection: 'Proposer une correction',
@@ -495,6 +497,7 @@ const sv: Strings = {
   creditOsm: '© OpenStreetMap-bidragsgivare',
   creditBy: 'av Peer Blekelj, byggd med Claude Code',
   creditMethod: 'Hur kartan böjdes',
+  creditTexts: 'Texterna på kartan',
   oldAttribution: 'Truschet &amp; Hoyau, ca 1550 · Basels universitetsbibliotek (fri från upphovsrätt)',
 
   suggestCorrection: 'Föreslå en rättelse',

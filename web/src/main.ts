@@ -59,7 +59,8 @@ function fillStaticText(): void {
   const langs = LANGS.map((l) =>
     `<button type="button" data-lang="${l}" lang="${l}" aria-pressed="${l === lang}">${l.toUpperCase()}</button>`).join(' · ');
   $('#credits').innerHTML = `<span class="langs" role="group" aria-label="${esc(t.langLabel)}">${langs}</span>` +
-    `<a href="${langBase()}method/">${esc(t.creditMethod)}</a> · ` + [t.creditMap, t.creditOsm, t.creditBy].map(esc).join(' · ');
+    `<a href="${langBase()}method/">${esc(t.creditMethod)}</a> · ` +
+    `<a href="${langBase()}texts/">${esc(t.creditTexts)}</a> · ` + [t.creditMap, t.creditOsm, t.creditBy].map(esc).join(' · ');
 }
 
 // Re-renders everything that shows text; replaced by the full version once the data is loaded.

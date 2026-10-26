@@ -14,6 +14,9 @@ modern name and see where it was and what is there now.
   [How the map was bent](https://paris1550.vercel.app/method/).
 - Search by old or modern name, tolerant of 16th-century spellings.
 - Every place has its own link, e.g. https://paris1550.vercel.app/place/L0006/
+- The texts printed on the map (a 108-line poem in praise of Paris and the publishers' notice),
+  transcribed and translated line by line into English, modern French and Swedish:
+  [The texts on the map](https://paris1550.vercel.app/texts/) (built by `scripts/make_texts_page.py`).
 
 Corrections are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) and the list of
 [open questions](data/research/OPEN_QUESTIONS.md). Project notes: [PLAN.md](PLAN.md).
