@@ -5,6 +5,7 @@ const en = {
   siteName: 'Paris 1550',
   brandTitle: 'La Ville, Cité et Université de Paris',
   brandSub: 'the Truschet & Hoyau map, with Paris today',
+  brandHome: 'Back to the start',
 
   viewMap: 'Map',
   viewTable: 'Table of places',
@@ -173,6 +174,7 @@ const fr: Strings = {
   siteName: 'Paris 1550',
   brandTitle: 'La Ville, Cité et Université de Paris',
   brandSub: 'la carte de Truschet & Hoyau, avec Paris aujourd’hui',
+  brandHome: 'Revenir au début',
 
   viewMap: 'Carte',
   viewTable: 'Tableau',
@@ -342,6 +344,7 @@ const sv: Strings = {
   siteName: 'Paris 1550',
   brandTitle: 'La Ville, Cité et Université de Paris',
   brandSub: 'Truschet & Hoyaus karta, med Paris i dag',
+  brandHome: 'Tillbaka till början',
 
   viewMap: 'Karta',
   viewTable: 'Tabell över platser',
