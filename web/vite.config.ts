@@ -8,8 +8,9 @@ import { readFileSync, mkdirSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { defineConfig, type Plugin } from 'vite';
 
+// The site's address, in one place: the HTML pages say %SITE% and get it from siteUrl() below.
 const SITE = 'https://parismapexplorer.vercel.app';
-const NAME = 'Paris Map Explorer';
+const NAME = 'Paris 1550';
 
 const STATUS: Record<string, string> = {
   standing: 'still standing',
@@ -59,6 +60,13 @@ function metaBlock(m: { title: string; desc: string; url: string; image: string;
   ].map((l) => `    ${l}`).join('\n');
 }
 
+function siteUrl(): Plugin {
+  return {
+    name: 'site-url',
+    transformIndexHtml: { order: 'pre', handler: (html) => html.replaceAll('%SITE%', SITE) },
+  };
+}
+
 function sitePages(): Plugin {
   let outDir = '';
   return {
@@ -80,8 +88,8 @@ function sitePages(): Plugin {
         const old = tidy(p.old);
         const status = p.status ? STATUS[p.status] : null;
         const title = p.modern && p.modern.toLowerCase() !== old.toLowerCase()
-          ? `${old} (${p.modern}) · Paris in 1550`
-          : `${old} · Paris in 1550`;
+          ? `${old} (${p.modern}) · Paris 1550`
+          : `${old} · Paris 1550`;
         const lead = `“${p.old}” on the Truschet & Hoyau plan of Paris, c. 1550` +
           (status ? `: ${status}` : '') + (p.modern && p.status === 'renamed' ? ` as ${p.modern}` : '') + '.';
         const desc = clip(p.summary ? `${lead} ${p.summary}` : lead, 200);
@@ -106,7 +114,7 @@ function sitePages(): Plugin {
 }
 
 export default defineConfig({
-  plugins: [sitePages()],
+  plugins: [siteUrl(), sitePages()],
   build: {
     rollupOptions: {
       input: { main: resolve(import.meta.dirname, 'index.html'), method: resolve(import.meta.dirname, 'method/index.html') },
