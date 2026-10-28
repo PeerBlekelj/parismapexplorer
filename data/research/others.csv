@@ -15,7 +15,7 @@ L0013,Collège de Tournai,vanished,,high,,"the college of Tournai, founded in 13
 L0014,,vanished,,medium,,the Hôtel d'Argent (Cousin 1875),
 L0015,Hôtel de ville de Paris,rebuilt,Hôtel de Ville,high,,the Renaissance building begun in 1533 was burned in 1871 and rebuilt,
 L0016,,vanished,,medium,,the Hôtel de Lorraine: 'Lo Reine' is 'Lorraine' (Cousin 1875),
-L0017,Petit Châtelet,vanished,,high,,fortified gate at the left-bank end of the Petit-Pont; demolished 1782,
+L0017,Petit Châtelet,vanished,,high,,fortified gate at the left-bank end of the Petit-Pont; demolished 1782,map
 L0018,Grand Châtelet,vanished,Place du Châtelet,high,,fortress guarding the Pont au Change; seat of the Prévôté; demolished 1802–1810,
 L0019,Tour de l'Horloge du palais de la Cité,standing,Tour de l'Horloge,high,,,
 L0020,Conciergerie de Paris,standing,Conciergerie,high,,,
@@ -23,7 +23,7 @@ L0021,Palais de la Cité,rebuilt,Palais de Justice,high,,"royal palace, later th
 L0022,Chambre des comptes de Paris,vanished,,medium,,its building in the palace burned in 1737,
 L0023,,vanished,,medium,,"the Hôtel de Fécamp: the engraver meant 'Fescamp', cut a T for the F and ran out of room (Cousin 1875)",
 L0024,Hôtel de Cluny,standing,Musée de Cluny,high,,"town house of the abbots of Cluny, built c. 1485–1510",
-L0025,Monnaie de Paris,vanished,,medium,,the old royal mint by the rue de la Monnaie; the mint moved to the quai de Conti in 1775,
+L0025,Monnaie de Paris,vanished,,medium,,the old royal mint by the rue de la Monnaie; the mint moved to the quai de Conti in 1775,map
 L0026,For-l'Évêque,vanished,,high,,the bishop's court and prison; demolished 1783,
 L0027,,vanished,,medium,,"the Hôtel de Nevers of the 1550s, not the later hôtel of 1580 on the Monnaie site (Cousin 1875 lists it)",
 L0028,,vanished,,medium,,the Hôtel de Reims (Cousin 1875),
@@ -78,11 +78,11 @@ L0076,,vanished,,medium,,"church of Saint-Christophe, in front of Notre-Dame; de
 L0077,Église Sainte-Geneviève-des-Ardents,vanished,,high,,,
 L0078,Église Saint-Germain-le-Vieux,vanished,,high,,,
 L0079,Cathédrale Notre-Dame de Paris,standing,Cathédrale Notre-Dame,high,,,
-L0080,Hôtel-Dieu de Paris,rebuilt,Hôtel-Dieu (rebuilt north of the parvis 1867–1878),high,,"in 1550 it stood on the south side of the parvis, straddling the small arm of the Seine",
+L0080,Hôtel-Dieu de Paris,rebuilt,Hôtel-Dieu (rebuilt north of the parvis 1867–1878),high,,"in 1550 it stood on the south side of the parvis, straddling the small arm of the Seine",map
 L0081,,,,medium,L0080,"second Hôtel-Dieu label, on its south wing",
 L0082,Église Saint-Julien-le-Pauvre,standing,Église Saint-Julien-le-Pauvre,high,,,
 L0083,,vanished,,medium,,"chapel of Saint-Yves, rue Saint-Jacques",
-L0084,Carmel de la place Maubert,vanished,,medium,,convent of the Carmelites (Grands-Carmes) on the place Maubert,
+L0084,Carmel de la place Maubert,vanished,,medium,,convent of the Carmelites (Grands-Carmes) on the place Maubert,map
 L0085,Prieuré hospitalier de Saint-Jean de Latran,vanished,,high,,,
 L0086,Église Saint-Hilaire de Paris,vanished,,medium,,church of Saint-Hilaire-du-Mont,
 L0087,Église Saint-Étienne-des-Grès,vanished,,high,,,
@@ -90,11 +90,11 @@ L0088,Église Saint-Jacques-du-Haut-Pas,rebuilt,Église Saint-Jacques-du-Haut-Pa
 L0089,,vanished,,medium,,"the hospital of the Hospitallers of Altopascio, next to Saint-Jacques-du-Haut-Pas",
 L0090,Couvent des Carmélites du faubourg Saint-Jacques,vanished,,medium,,priory of Notre-Dame-des-Champs; from 1603 the first Carmelite convent in Paris,
 L0091,Enclos Saint-Lazare,vanished,,medium,,the leper house of Saint-Lazare,
-L0092,Cimetière de la Trinité (Paris),vanished,,medium,,cemetery of the hospital of the Trinité,
+L0092,Cimetière de la Trinité (Paris),vanished,,medium,,cemetery of the hospital of the Trinité,map
 L0093,Hôpital Saint-Jacques aux pèlerins,vanished,,high,,,
 L0094,Église Saint-Leu-Saint-Gilles de Paris,standing,Église Saint-Leu-Saint-Gilles,high,,,
-L0095,Abbaye Saint-Magloire de Paris,vanished,,medium,,"abbey of Saint-Magloire, rue Saint-Denis",
-L0096,Église du Saint-Sépulcre de Paris,vanished,,medium,,"church and hospital of the Saint-Sépulcre, rue Saint-Denis",
+L0095,Abbaye Saint-Magloire de Paris,vanished,,medium,,"abbey of Saint-Magloire, rue Saint-Denis",map
+L0096,Église du Saint-Sépulcre de Paris,vanished,,medium,,"church and hospital of the Saint-Sépulcre, rue Saint-Denis",map
 L0097,Cimetière des Innocents,vanished,Place Joachim-du-Bellay (the Fontaine des Innocents survives),high,,church and cemetery of the Saints-Innocents; the cemetery was emptied into the Catacombs in 1786–1788,
 L0098,Église Sainte-Opportune de Paris,vanished,,high,,,
 L0099,Hôpital Sainte-Catherine,vanished,,medium,,"hospital of Sainte-Catherine, rue Saint-Denis",
@@ -104,7 +104,7 @@ L0102,Église Saint-Pierre-des-Arcis,vanished,,high,,,
 L0103,Église Saint-Barthélemy de Paris,vanished,,medium,,"church of Saint-Barthélemy in the Cité, the palace parish",
 L0104,Église Saint-Éloi (Île de la Cité),vanished,,medium,,Saint-Éloi in the Cité (Barnabites),
 L0105,Sainte-Chapelle,standing,Sainte-Chapelle,high,,handwritten addition on the Basel copy,
-L0106,Chapelle Saint-Michel-du-Palais,vanished,,medium,,chapel of Saint-Michel in the palace courtyard,
+L0106,Chapelle Saint-Michel-du-Palais,vanished,,medium,,chapel of Saint-Michel in the palace courtyard,map
 L0107,Église Saint-Séverin,standing,Église Saint-Séverin,high,,,
 L0108,Couvent des Mathurins de Paris,vanished,,high,,,
 L0109,Église Saint-Benoît-le-Bétourné,vanished,,medium,,,
@@ -119,7 +119,7 @@ L0117,Chartreuse de Paris,vanished,Jardin du Luxembourg (part of its site),mediu
 L0118,Église Saint-Eustache de Paris,rebuilt,Église Saint-Eustache,high,,the present church was begun in 1532 and finished in 1637; the map still shows the older church,
 L0119,Augustines de l'ordre de la Pénitence de la Madeleine,vanished,,medium,,convent of the Filles-Pénitentes,
 L0120,Église Saint-Germain-l'Auxerrois de Paris,standing,Église Saint-Germain-l'Auxerrois,high,,,
-L0121,Couvent des Grands-Augustins,vanished,,high,,,
+L0121,Couvent des Grands-Augustins,vanished,,high,,,map
 L0122,Abbaye de Montmartre,vanished,"Chapelle du Martyre, rue Yvonne-Le-Tac (near the site)",medium,,chapel of the Martyrs on the slope of Montmartre,
 L0123,Collégiale Saint-Honoré,vanished,,medium,,,
 L0124,Église Saint-Sulpice de Paris,rebuilt,Église Saint-Sulpice,high,,rebuilt 1646–1870,
@@ -233,7 +233,7 @@ L0457,Quartier de Bonne-Nouvelle,standing,Bonne-Nouvelle,medium,,the Villeneuve-
 L0458,Clignancourt,standing,Clignancourt,high,,,
 L0459,Montmartre,standing,Montmartre,high,,,
 L0460,Ferme de la Grange-Batelière,vanished,Rue de la Grange-Batelière,medium,,,
-L0461,Faubourg Saint-Germain,standing,Faubourg Saint-Germain,high,,,
+L0461,Faubourg Saint-Germain,standing,Faubourg Saint-Germain,high,,,map
 L0462,Porcherons,vanished,,medium,,,
 L0463,Faubourg Saint-Honoré,standing,Rue du Faubourg-Saint-Honoré,medium,,,
 L0464,Ville l'Évêque,vanished,Rue de la Ville-l'Évêque,medium,,,
