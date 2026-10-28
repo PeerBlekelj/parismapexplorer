@@ -2,6 +2,38 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-28 (20:36) — ten coordinates pointed at the wrong site
+
+- Owner asked whether "S. GERMAIN DE LOCERRAS" (L0120) -> Saint-Germain-l'Auxerrois is an error. It is
+  not. The scan really reads that (a period spelling of l'Aucerrois, from Auxerre); the drawing is the
+  church, and R. S. GERMAIN, LE COLLEGE S. GERMAIN and LA MONNOIE all sit around it. The pin looked off
+  because the old-map marker sits on the label pixel (model.ts `oldLL`), which is below the building.
+- Measured, for all 457: the TPS georef of the label pixel vs the stored coordinate. Inside the
+  control-point hull, median 58 m against the transform's own leave-one-out error of 61 m - i.e. at the
+  noise floor, no general accuracy problem. Outside the hull, median 205 m and up to 6 km: the outlying
+  villages are drawn crammed into the margins and every control point is inside the city. That is the
+  map, not the data. work/drift_map.png shows it.
+- Ten places carried a Wikipedia/Wikidata coordinate describing a *different* site. `coords=map` in
+  data/research/others.csv + re-ran resolve_others.py: L0017 PETIT CHATELET (had the Grand Chatelet's
+  point, 519 m), L0025 LA MONNOIE (the quai de Conti building the mint moved to in 1775, 450 m),
+  L0080 LOSTEL DIEU (the 1867 building north of the parvis, 199 m), L0084 LES CARMES, L0106 S. MICHEL,
+  L0121 LES AUGUSTINS (459 m), L0461 LES FAUBOURS S. GERMAIN (a rounded district centroid, 2.32000,
+  marked `exact`), and L0092 / L0095 / L0096 - the cimetiere de la Trinite, Saint-Magloire and the
+  Saint-Sepulcre, which all three carry the SAME coordinate (48.864461, 2.350194) on fr.wikipedia.
+- Rule, on the owner's word: a place that moved points at its 1550 site, not its later home. Checked all
+  50 relocation-flavoured entries; only L0025 and L0080 needed moving. The rest (Quinze-Vingts,
+  Cordelieres, Saint-Antoine, Nesle...) already pointed at the old site.
+- Result: worst in-hull drift 1316 m -> 355 m, p90 145 -> 127 m. No two unrelated places share a
+  coordinate any more (the two remaining pairs are the hotel de Nesle + its tower, and Saint-Jean + its
+  own cemetery, both genuinely co-located). All ten are `approx` now, which is honest.
+- build_places.py: the transcription pass's "dup" marker ("already recorded in the previous tile";
+  `seen_in` carries the same fact) was surfacing as the card's Transcription line on 9 places. Filtered
+  in the build (`inv_note`); labels_inventory.csv untouched. gcps.json diff is the timestamp only -
+  none of the ten was a control point, so the georeference is unchanged.
+- Open: resolve_others.py positions `coords=map` places with an *affine* fit while the app uses the TPS,
+  so those ten sit 24-143 m from where the app's own transform would put them. Harmless at `approx`,
+  but the two should use one transform.
+
 ## 2026-10-26 (23:00) — English by default
 
 - Owner: default to English regardless of browser language — the Swedish translation is too weak for now.
