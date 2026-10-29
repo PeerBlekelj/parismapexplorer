@@ -5,6 +5,13 @@ could run web searches but could not open Gallica, Wikisource, Wikipedia or the 
 registers directly. So the quotes below come from search-engine extracts of those pages, not from
 pages read in full. **Check each quote against the page before citing it on the site.**
 
+**Verification pass, 29 October 2026 (branch `verify-research-quotes`).** The quotes were put to a check.
+**The pages still could not be opened** — fr.wikipedia.org, en.wikipedia.org, fr.wikisource.org,
+rdf.archives-nationales.culture.gouv.fr, journals.openedition.org, paris-pittoresque.com, ccfr.bnf.fr and
+paris-atlas-historique.fr are all refused by the session's network policy — so every quote taken from them
+stands unverified. Two kinds of claim were confirmed, from material in this repository: the Cousin
+quotation for L0224, and all nine label-distance figures. Details in `quote_verification.md`, group F.
+
 Positions on the scan: x grows southwards, y grows westwards (the map is east-up).
 
 ## L0007 "LE PONT ARCANS": the Pont Arcans over the Grand Égout. Confidence: medium–high
@@ -38,9 +45,13 @@ meets the rue de la Chaussée-d'Antin, in the 9th arrondissement.
 **Does it fit the map?** Yes. The label (1100, 7150) sits between LES TORCHERONS (the
 Porcherons, L0462, 641 px away) and LA VILLE LEVESQUE (L0464, 1300 px), which is exactly where
 Wikipedia puts the bridge. Cousin's square V,7–8 is the same area.
+(The distances are **confirmed** against `data/labels_inventory.csv`, 29 Oct 2026: 641 px and 1301 px.
+The Wikipedia half of the sentence is still unverified.)
 
 **Position.** The rue de Provence × rue de la Chaussée-d'Antin crossing is at about
-48.8745 N, 2.3330 E (from memory, ±50 m; OpenStreetMap could not be reached to check it). The
+48.8745 N, 2.3330 E (from memory, ±50 m; OpenStreetMap could not be reached to check it).
+**Still unchecked on 29 Oct 2026** (the map services are blocked too). This figure rests on no source at
+all: do not move a pin onto it until it has been read off a map. The
 current map estimate (48.8755, 2.3389) is about 420 m east-north-east of that. That error is
 typical for this edge of the overlay, so I left `coords` empty. Setting it after a check on OSM
 would put the pin on the site.
@@ -87,6 +98,8 @@ Pagevin. The label (3150, 5600) sits between R. DE LA PLATRIERE (L0408, 186 px),
 R. QUOQUEHERON (L0423, 148 px) and R. MARIE EGIPCIENNE (L0420, 197 px), so it marks the lane
 joining those three. That is Verdelet's exact extent. R. PAGEVIN (L0422) has its own label
 220 px further west.
+(The distances are **confirmed** against `data/labels_inventory.csv`, 29 Oct 2026: 186, 149, 197 and
+220 px. The register and Lazare quotes above are still unverified.)
 
 **Changed:** `streets.csv` row L0421: the note only. `match` stays empty and confidence stays
 low, because `resolve_streets.py` needs the id of rue Verdelet in the vanished-streets register
@@ -105,10 +118,16 @@ L0419 already covers. Worth a look in the register.
 
 **What Cousin says:** « NEUVE (rue), sans autre désignation | IV,2 | donnant dans la rue de la
 Barre au faub. St-Marcel ».
+**Confirmed** 29 Oct 2026 against the project transcription, `data/research/cousin_1875_table.txt:266`:
+`NEUVE (rue), sans autre désignation | | IV,2 | donnant dans la rue de la Barre au faub. St-Marcel`
+(the quote above simply elides the empty map-label column). Beware the neighbouring entry at line 265,
+`NEUVE (rue) | R. Neueve | VIII,4 | à l'entrée du faubourg St-Germain; se rapporte à la rue Garancière`
+— a different street, and not this label.
 
 **On the map:** the label (9520, 1140) is 168 px from S. MARCEAU (the collegiate church of
 Saint-Marcel, L0037), 208 px from R. DU FER DE MOULAIN (L0223) and 284 px from R. DE LA BARRE
 (L0222, now rue Scipion).
+(The distances are **confirmed** against `data/labels_inventory.csv`, 29 Oct 2026: 168, 209 and 285 px.)
 
 **What I found**
 - The rue de la Barre was itself a new street: « rue Scipion (ancienne rue de la Barre, ouverte

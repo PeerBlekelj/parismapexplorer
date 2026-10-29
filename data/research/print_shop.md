@@ -40,7 +40,7 @@ page numbers must be checked against the source before they are quoted on the si
 | LEPAPE | Séverine Lepape, *Gravures de la rue Montorgueil*, Paris, Bibliothèque nationale de France, 2016 (DL 2015), 361 p., ISBN 978-2-7177-2656-5; online at OpenEdition Books, https://books.openedition.org/editionsbnf/2341 (table of contents). Chapters used: "Prévost" (editionsbnf/2414), "Les Desprez" (editionsbnf/2445, already source [9] on the about page), "Les Gence et Leroy" (2423), "Fonteney ou Fontenoy" (2434), "Saulce" (2417), "Gravures… datées" (2395), index (2421) | Extracts only |
 | GRIVEL08 | Marianne Grivel, "Au Bon Pasteur, rue Montorgueil : une famille d'imagiers parisiens dans la seconde moitié du XVIe siècle", *Documents d'histoire parisienne*, n° 9, 2008, pp. 15–47; HAL: https://shs.hal.science/halshs-00602821 | Bibliographic record only; content known only as cited by LEPAPE |
 | GRIVEL15 | Marianne Grivel, "Une famille d'imagiers de la rue Montorgueil au XVIe siècle : les Boussy. Réseau familial, méthodes de travail et alliances commerciales", *Documents d'histoire parisienne*, n° 17, 2015, pp. 5–16 | Bibliographic record only (title, issue, pages from extract) |
-| BOUSSY-IAD | Inventaire après décès de Jean Boucy (ou Boussy), maître imagier en papier, et de Michèle Clément, sa femme, rue Montorgueil, à l'enseigne de la Cuillère; FranceArchives, https://francearchives.gouv.fr/fr/facomponent/475b5a6d350cc3068d5ac68fcb13baa802a679b0 (Archives nationales, Minutier central) | Search title only; date and cote not seen |
+| BOUSSY-IAD | Inventaire après décès de Jean Boucy (ou Boussy), maître imagier en papier, et de Michèle Clément, sa femme, rue Montorgueil, à l'enseigne de la Cuillère; FranceArchives, https://francearchives.gouv.fr/fr/facomponent/475b5a6d350cc3068d5ac68fcb13baa802a679b0 (Archives nationales, Minutier central) | Search title only; **date and cote still not seen** (29 Oct 2026: francearchives.gouv.fr blocked by the session's network policy). Cite no date for this act. |
 | AN-PC | Archives nationales, street register entry "rue des Petits Carreaux", https://rdf.archives-nationales.culture.gouv.fr/place/FRAN_RI_025-d3nzchekdc-1oaf022uugsgq | Extract |
 | AN-CA | Archives nationales, street register entries for the rue au Comte-d'Artois / de la Porte au Comte (part of rue Montorgueil) | Extract |
 | LAZARE | Félix et Louis Lazare, *Dictionnaire administratif et historique des rues de Paris et de ses monuments* (1844; 2nd ed. 1855), "Montorgueil (rue)", Wikisource | Extract |
@@ -50,6 +50,20 @@ page numbers must be checked against the source before they are quoted on the si
 | HOC | Catherine Hofmann, "Publishing and the Map Trade in France, 1470–1670", in D. Woodward (ed.), *The History of Cartography*, vol. 3, part 2, University of Chicago Press, 2007, ch. 53, pp. 1569–1588 (PDF at press.uchicago.edu) | Extract |
 | BEAUREPAIRE | Edmond Beaurepaire, *Vieux Paris, vieux plans*, Gallica ark:/12148/bpt6k64563829 | Extract |
 | BRETTE | Armand Brette (ed.), *Atlas de la censive de l'Archevêché dans Paris*, Paris, Imprimerie nationale, 1906 (Histoire générale de Paris); archive.org `atlasdelacensive00bret` | Bibliographic record only |
+
+**Verification pass, 29 October 2026 (branch `verify-research-quotes`).** Every extract-based fact in
+this note was put to a check; the result is in `quote_verification.md`. **The external sources still
+could not be opened** — books.openedition.org, francearchives.gouv.fr,
+rdf.archives-nationales.culture.gouv.fr, fr.wikipedia.org, fr.wikisource.org, press.uchicago.edu,
+collections.louvre.fr and shs.hal.science are all refused by the session's network policy — so the
+extract markings below stand. Two things did change:
+
+- The **Cousin** half of the Prévost finding is now confirmed from the OCR in this repository (see §2);
+  Lepape's 1571 is not. That † is downgraded to "partly confirmed", not removed.
+- The daggers: this note carries **11 † characters**, but 9 of them are on facts (the same three
+  sentences in English, French and Swedish) and 2 are in the prose that explains the mark. They cover
+  **four** distinct claims — Prévost 1571; Guînes 1559; France/Germany/Italy 1560; Hoyau's Bon Pasteur
+  shares 1563/1566 and his being alive in 1572 — not eleven.
 
 ## Findings
 
@@ -82,10 +96,16 @@ street ended blind at the wall in 1550 or passed it by a minor opening; not foun
 ### 2. The house at the Chef Saint-Denis
 
 - 1550s: Truschet and Hoyau "demourans en la rue de Montorgueil, au chef Sainct-Denys" (the map; COUSIN).
-- LEPAPE, chapter "Prévost" (extract): Nicolas Prévost, "peintre en papier, imprimeur d'histoires et
-  imagier", was "installé rue Montorgueil au Chef Saint-Denis, où il se trouvait en 1571", and the house
-  "était en 1553 le lieu d'édition de Truschet et Hoyau pour le Plan de Paris". This **refines Cousin**
-  (who says c. 1572) to 1571 and gives a modern scholarly confirmation of the house's continuity.
+- **Cousin, printed p. 53 — confirmed, read in this repository** (`cousin_1875_notice.txt:315–321`):
+  "Ces planches datent de 1572 ou environ; [...] La maison du Chef Saint-Denis, sans doute liquidée après
+  la mort de Truschet, appartient alors à Nicolas Prévost." Note what Cousin actually claims: the house
+  **belonged to** Prévost around 1572. He does not say Prévost printed there, and he gives no year for
+  Truschet's death.
+- LEPAPE, chapter "Prévost" (extract, **still unverified 29 Oct 2026**): Nicolas Prévost, "peintre en
+  papier, imprimeur d'histoires et imagier", was "installé rue Montorgueil au Chef Saint-Denis, où il se
+  trouvait en 1571", and the house "était en 1553 le lieu d'édition de Truschet et Hoyau pour le Plan de
+  Paris". This would **refine Cousin** (who says c. 1572, now confirmed above) to 1571 and give a modern
+  scholarly confirmation of the house's continuity — if the chapter can be opened.
   The table of contents (extract) has an entry like "Germain Hoyau au Chef Saint-Denis en 1553".
   → Note that Lepape apparently dates the plan **1553**. That may be where French Wikipedia's
   "commande… datée de 1553" comes from (the about page says its source is not given). Unverified:
@@ -228,7 +248,9 @@ Notes on the wording:
   geometry before adding a figure.
 - "Spinet" for *l'Espinette*: an *espinette* is a small spinet (keyboard instrument), but it could also be
   a thorn-bush (*épine*). If Lepape or Grivel don't explain it, leave the name in French.
-- Nicolas Prévost's 1571 date and Truschet's 1559/1560 maps are marked † (search extract only).
+- Nicolas Prévost's 1571 date and Truschet's 1559/1560 maps are marked † (search extract only). As of
+  29 Oct 2026 they are **still unverified**; Cousin's own "c. 1572, the house belonged to Prévost" is
+  confirmed and is the safe form to publish until Lepape can be read.
 
 ### New source entries
 

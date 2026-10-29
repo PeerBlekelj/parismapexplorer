@@ -15,6 +15,16 @@ PDF bpt6k6487221d) on Google Drive. The connector could not download the 35 MB P
 index returned its OCR text up to PDF page 132, which includes the whole poem (PDF pages 102–106). §2
 and §3 are rewritten from that text; it is OCR, not checked against the page images.
 
+**Verification pass, 29 October 2026 (branch `verify-research-quotes`).** The flagged claims below were
+put to a check. **The external sources still could not be opened**: this session's network policy answers
+`403` to every one of them (press.uchicago.edu, fr.wikipedia.org, en.wikipedia.org, senat.fr,
+institutparisregion.fr, gallica.bnf.fr, archive.org, books.openedition.org...), so the "Later literature"
+block in §2 and the "Seen only as search extracts" list stand **unchanged and unverified**. What the pass
+did settle, from the OCR now in `data/research/sources/`, is recorded in `quote_verification.md`
+(group B): the reprint is the right edition, confirmed from its own title page, and the *Fleur* headings,
+the PARIS epigram, the Blason and its motto, and the *cent hommes* / *Nostre cite* / *structure* readings
+are all confirmed at Gallica viewer pp. 102–106.
+
 ## 1. Acrostics and other signatures: one, and only one
 
 The poem has 108 printed lines (`POEM_1` lines 1–78, three columns of 26; `POEM_2` lines 79–108, two
@@ -113,7 +123,8 @@ Corrozet liked the device: right after the poem the *Fleur* prints an “Épigra
 whose five lines begin P(our), A(ccroissement), R(och), I(ustice), S(cauoir): an acrostic of PARIS.
 The map does not print it.
 
-**Later literature** (all search extracts only):
+**Later literature** (all search extracts only; re-checked 29 Oct 2026 — **every source below is still
+unopened**, the hosts being blocked by the session's network policy, so none of these moves):
 - **French Wikipedia**, “Plan de Truschet et Hoyau”: “Ce plan est une commande datée de 1553 d'un
   certain Corrozet adressée à deux artistes de la rue Montorgueil de Paris, le dessinateur Olivier
   Truschet et le graveur Germain Hoyau.” The extract has no acrostic and no reference for the sentence.
@@ -243,12 +254,16 @@ Read in full (repository, and the owner's Drive):
   `data/research/cousin_1875_notice.txt` (Gallica ark:/12148/bpt6k6310467r, f54–f67).
 - The poem and notice as transcribed in `scripts/make_texts_page.py`; panel crops `data/map_texts/`.
 
-Seen only as search extracts:
+Seen only as search extracts (still, as of 29 Oct 2026; see `quote_verification.md`):
 - Wikipédia (fr), “Plan de Truschet et Hoyau” (and its mirror on wikimonde.com).
 - Sénat, Bibliothèque, *Paris : représentations et plans anciens* (brochure-02.pdf).
 - *History of Cartography* vol. 3, ch. 48 (“National Mapmaking from Oronce Fine to Guillaume Postel”)
   and ch. 53 (C. Hofmann, “Publishing and the Map Trade in France, 1470–1670”), press.uchicago.edu PDFs.
-- English Wikipedia, “Gilles Corrozet”; Institut Paris Région page on the plan; WorldCat / AbeBooks
+- English Wikipedia, “Gilles Corrozet” — the one fact the site takes from it, Corrozet's dates
+  1510–1568, no longer depends on it: the BnF metadata page of the Gallica *Fleur* scan reads
+  “Corrozet, Gilles (1510-1568). Auteur du texte.”
+  (`data/research/sources/corrozet_fleur_des_antiquitez_bpt6k6487221d.txt`, line 27);
+  Institut Paris Région page on the plan; WorldCat / AbeBooks
   records of Dérens 1980; fabula.org notice of *En lisant, en écrivant* (Corrozet colloquium); Scripta
   Manent (huma-num) record of “Blason des armes de la ville de Paris”.
 
