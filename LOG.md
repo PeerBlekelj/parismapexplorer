@@ -2,6 +2,23 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-29 (07:15) — the Simple Analytics badge; deployed main
+
+- Simple Analytics' free plan requires a visible badge from 2026-11-01 (mail of 10-27): no badge means
+  a reminder, then 14 days, then the dashboard is locked — the collected data is kept. Owner's call:
+  tune the badge to each site's palette rather than take the stock grey one.
+- `web/src/badge.ts` holds the markup in one place (`background`/`text`/`logo` query params = paper,
+  sepia ink, the site's red). The written pages get it from the same vite plugin that injects the
+  analytics script, under the colophon that ends the last section (`withBadge`, keyed on
+  `<body class="doc">`); the map and place pages get it from `main.ts`, at the end of the sidebar
+  credits. 9 static pages carry it in the HTML, which is what their detector reads.
+- Deployed main 684cb07 (prebuilt, `--archive=tgz`). Checked live: `/` `/fr/` `/sv/` `/map/` `/fr/map/`
+  `/place/L0017/` `/method/` `/texts/` 200, og images, tiles, sitemap, data, and the old-domain 308.
+- The deploy must run from a tree that has `web/public/og/` and `web/public/tiles/` — both gitignored,
+  so a fresh clone or worktree builds a site without OG images and without the 1550 tiles. They were
+  hard-linked in from the main checkout for this one.
+- The owner's `wrong-site-coordinates` work is NOT in this deploy; main had only the badge commit.
+
 ## 2026-10-26 (23:00) — English by default
 
 - Owner: default to English regardless of browser language — the Swedish translation is too weak for now.
