@@ -4,7 +4,8 @@ Research note, 26 October 2026 (cloud session). Question: what does the acrostic
 poem on the Truschet & Hoyau plan tell us, who noticed it, do the verses occur in Corrozet's own books,
 and what was his part in the map?
 
-**Access caveat.** Direct page fetches were blocked in this session (gallica.bnf.fr, fr.wikipedia.org,
+**Access caveat** (superseded on 29 Oct 2026 — see the verification note below; the external sources
+have since been opened). Direct page fetches were blocked in this session (gallica.bnf.fr, fr.wikipedia.org,
 archive.org, press.uchicago.edu all refused by the network policy). Read **in full**: only the files in
 this repository (Cousin's notice, `cousin_1875_notice.txt`, OCR; the poem as transcribed in
 `scripts/make_texts_page.py`; the panel crops in `data/map_texts/`). Everything else below was **seen only
@@ -16,14 +17,10 @@ index returned its OCR text up to PDF page 132, which includes the whole poem (P
 and §3 are rewritten from that text; it is OCR, not checked against the page images.
 
 **Verification pass, 29 October 2026 (branch `verify-research-quotes`).** The flagged claims below were
-put to a check. **The external sources still could not be opened**: this session's network policy answers
-`403` to every one of them (press.uchicago.edu, fr.wikipedia.org, en.wikipedia.org, senat.fr,
-institutparisregion.fr, gallica.bnf.fr, archive.org, books.openedition.org...), so the "Later literature"
-block in §2 and the "Seen only as search extracts" list stand **unchanged and unverified**. What the pass
-did settle, from the OCR now in `data/research/sources/`, is recorded in `quote_verification.md`
-(group B): the reprint is the right edition, confirmed from its own title page, and the *Fleur* headings,
-the PARIS epigram, the Blason and its motto, and the *cent hommes* / *Nostre cite* / *structure* readings
-are all confirmed at Gallica viewer pp. 102–106.
+checked against the sources themselves. Results in full: `quote_verification.md`. In short, for this file:
+the fr.wikipedia quotation is exact but **two of our remarks about it are wrong**; the **Sénat quotation
+does not exist**; both *History of Cartography* chapters check out; and no source yet read mentions the
+acrostic, so Cousin is still the only one.
 
 ## 1. Acrostics and other signatures: one, and only one
 
@@ -123,32 +120,49 @@ Corrozet liked the device: right after the poem the *Fleur* prints an “Épigra
 whose five lines begin P(our), A(ccroissement), R(och), I(ustice), S(cauoir): an acrostic of PARIS.
 The map does not print it.
 
-**Later literature** (all search extracts only; re-checked 29 Oct 2026 — **every source below is still
-unopened**, the hosts being blocked by the session's network policy, so none of these moves):
-- **French Wikipedia**, “Plan de Truschet et Hoyau”: “Ce plan est une commande datée de 1553 d'un
-  certain Corrozet adressée à deux artistes de la rue Montorgueil de Paris, le dessinateur Olivier
-  Truschet et le graveur Germain Hoyau.” The extract has no acrostic and no reference for the sentence.
-  “Un certain Corrozet” suggests the writer did not connect him with Gilles Corrozet.
-- **Sénat library brochure** *Paris : représentations et plans anciens* (senat.fr, brochure-02.pdf):
-  the plan de Bâle (c. 1551), “dont Gilles Corrozet a probablement patronné l'édition pour servir
-  d'annexe à ses Antiquitez de 1550”: Cousin's conclusion, hedged with “probablement”. No acrostic in
-  the extract.
-- **History of Cartography vol. 3, ch. 48** (Fine to Postel; *not* Hofmann's ch. 53): the extract says
-  the Paris map and *Les antiquitez* “were sold together, as confirmed by their joined use by
-  Theodore…” (cut off; presumably Theodor Zwinger, as in Cousin), citing Jean Dérens's 1980 commentary
-  and the *Fleur des antiquitez*. Whether it mentions the acrostic is not visible in the extract.
-- **Hofmann, ch. 53**: the extract says the eight-sheet plan “was cut in 1553 by Olivier Truschet and
-  Germain Hoyau”, in the context of the rue Montorgueil. No Corrozet in the extract.
+**Later literature** (checked against the sources, 29 Oct 2026):
+- **French Wikipedia**, “Plan de Truschet et Hoyau” — **quotation confirmed, our gloss on it wrong**:
+  “Ce plan est une commande datée de 1553 d'un certain Corrozet adressée à deux artistes de la rue
+  Montorgueil de Paris, le dessinateur Olivier Truschet et le graveur Germain Hoyau.” We said the
+  sentence had no reference and that “un certain Corrozet” showed the writer had not identified him.
+  **Both are false.** The sentence carries two footnotes: on “Corrozet”, « Gilles Corrozet, éditeur
+  (cf. infra, p. 169) » — so Wikipedia does identify him — and at the end, « Françoise
+  Vergneault-Belmont – *Lire l'espace penser la carte* – p. 168 » (L'Harmattan, 2008,
+  ISBN 978-2-296-07831-4). The 1553 commission therefore has a named source, which we have not read.
+  The article's infobox gives « 1552 (vue de Paris) / 1553 (édition) ». No acrostic anywhere in it.
+- **Sénat library brochure** *Paris : représentations et plans anciens* (senat.fr, brochure-02.pdf) —
+  **contradicted: the sentence is not in the brochure.** All 12 pages carry a text layer and contain no
+  “plan de Bâle”, no “patronné”, no “1551”, no “annexe”. Its only mention of the map is a picture
+  caption: « Plan de Paris sous le règne de Henri II, par Olivier Truschet et Germain Hoyau. Reproduit
+  en fac-similé d'après l'exemplaire unique de la Bibliothèque de Bâle, par M. F. Hoffbauër (1877) ».
+  Corrozet appears only as the author behind Bonfons's 1608 reissue. **Cite nothing to this brochure.**
+- **History of Cartography vol. 3, ch. 48** (Monique Pelletier; the Fine-to-Postel section sits inside
+  it) — **confirmed**, p. 1500: “The Paris map and *Les antiquitez* were sold together, as confirmed by
+  their joined use by **Theodore Zwinger** in his *Methodus apodemica* (Basel, 1577).” The same page
+  makes Hoyau the draughtsman and Truschet the engraver, after Dérens, and dates the map **1550**. No
+  acrostic.
+- **Hofmann, ch. 53** — **confirmed**, p. 1572, in two places: the plan was “published by Olivier
+  Truschet and Germain Hoyau **ca. 1553**”, and, of Mathonière's 1598 inventory, “probably the one **cut
+  in 1553** by Olivier Truschet and Germain Hoyau”. No Corrozet in the chapter. **Note that HOC's two
+  chapters disagree: ch. 48 says 1550, ch. 53 ca. 1553.** Never cite “HOC” for a date without the
+  chapter.
 - **Boutier 2002**: not seen (dates c. 1553, as cited elsewhere). Unknown whether it discusses the
   acrostic.
-- **Dérens 1980** (commentary to the Zürich facsimile): not seen; cited by HOC ch. 48 as linking map
-  and *Fleur*.
+- **Dérens 1980** (commentary to the Zürich facsimile): still not read, but HOC ch. 48 n. 80 gives the
+  full citation — Jean Dérens, *Le plan de Paris par Truschet et Hoyau, 1550, dit plan de Bâle* (1980;
+  reprinted Paris: Rotonde de la Villette, 1986) — and his argument: the 1550 *Antiquitez* is a **less**
+  detailed guide than the 1543 *Fleur* “because, according to Dérens, the Truschet-Hoyau map, which came
+  out that same year, rendered some information included in the late *Fleur des antiquitez* useless”.
+  Note that Dérens's own title dates the plan **1550**.
 - **Corrozet studies** (Chiron, Godet & Tran (eds.), *En lisant, en écrivant. Gilles Corrozet, un
   libraire-auteur au temps de la Renaissance*, colloquium, Toulouse; the Persée article on Corrozet and
   the fables): seen only as titles; nothing about the map surfaced in the extracts.
 
-So: no later source found discusses the acrostic itself; those seen repeat Cousin's conclusion
-(patronage, sold together), some more cautiously, one (Wikipedia) as a dated “commission”.
+So: **no later source now read discusses the acrostic** — not fr.wikipedia, not en.wikipedia (which does
+not mention the map at all), not the Sénat brochure, not HOC ch. 48 or ch. 53, not the Institut Paris
+Région. Cousin remains the only writer known to point it out. Of those read, HOC ch. 48 supports the
+sold-together claim from Zwinger; Wikipedia alone speaks of a dated “commission”, and does cite a source
+for it (Vergneault-Belmont 2008, p. 168), which still needs reading.
 
 ## 3. Shared verses: the map's poem is Corrozet's “Louenges de Paris”, lightly revised
 
@@ -232,12 +246,18 @@ What the evidence supports, from strongest to weakest:
    inference (“nous pouvons en conclure”, “sans craindre de nous tromper”), no document cited. Plausible,
    not proven. Corrozet's shop was indeed at the Palais (Cousin; his imprints), but no imprint, contract
    or inventory ties the map to it. The map itself names only Truschet and Hoyau as its publishers.
-4. **A 1553 commission from Corrozet** (French Wikipedia): **no source found.** No such document is
-   mentioned by Cousin, nor in any extract seen (Sénat, HOC ch. 48/53, Institut Paris Région). Likely a
-   conflation of Cousin's patronage inference with the c. 1553 dating of Boutier and Hofmann. Treat as
-   unsupported until someone produces the document.
+4. **A 1553 commission from Corrozet** (French Wikipedia): **a source is named, and we have not read
+   it.** Wikipedia cites Françoise Vergneault-Belmont, *Lire l'espace penser la carte* (L'Harmattan,
+   2008), p. 168, and a second footnote identifies the man as “Gilles Corrozet, éditeur”. No such
+   document is mentioned by Cousin, nor in HOC ch. 48 or ch. 53, the Sénat brochure or the Institut
+   Paris Région page — all now read in full. So the claim is **unverified, not unsourced**: it stands or
+   falls on Vergneault-Belmont p. 168, which is the next thing to read. Note that Lepape independently
+   dates the *publication* to 1553, also without giving a document, so the date itself is not
+   Wikipedia's invention.
 
-One tension worth noting (our observation, not in the literature seen): Corrozet had disowned the
+One tension — which Dérens, we now find, has already answered (see §2: on his account the 1550
+*Antiquitez* is the thinner book precisely *because* the map took over what the *Fleur* used to carry,
+which argues for the companion-piece reading rather than against it): Corrozet had disowned the
 *Fleur* by 1550 as a “petit livret” full of “erreurs et fables” (his words, quoted by Lacroix and
 Cousin), yet the map, supposedly a companion to the new *Antiquités*, prints the old book's poem. That fits a cheap reuse of available verses
 by Truschet and Hoyau at least as well as a planned companion piece.
@@ -254,7 +274,7 @@ Read in full (repository, and the owner's Drive):
   `data/research/cousin_1875_notice.txt` (Gallica ark:/12148/bpt6k6310467r, f54–f67).
 - The poem and notice as transcribed in `scripts/make_texts_page.py`; panel crops `data/map_texts/`.
 
-Seen only as search extracts (still, as of 29 Oct 2026; see `quote_verification.md`):
+Opened and read, 29 Oct 2026 (previously search extracts only; see `quote_verification.md`):
 - Wikipédia (fr), “Plan de Truschet et Hoyau” (and its mirror on wikimonde.com).
 - Sénat, Bibliothèque, *Paris : représentations et plans anciens* (brochure-02.pdf).
 - *History of Cartography* vol. 3, ch. 48 (“National Mapmaking from Oronce Fine to Guillaume Postel”)
