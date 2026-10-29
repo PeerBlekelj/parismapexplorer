@@ -264,11 +264,18 @@ by Truschet and Hoyau at least as well as a planned companion piece.
 
 ## Sources
 
-Read in full (repository, and the owner's Drive):
+Read in full (repository, the owner's Drive, and — 29 Oct 2026 — the Internet Archive):
 - Gilles Corrozet, *La fleur des antiquitez de la noble et triumphante ville et cité de Paris*, second
   edition (Galiot du Pré, 1532), ed. P. Lacroix (“le bibliophile Jacob”), Paris, 1874; Gallica
   ark:/12148/bpt6k6487221d. OCR text from Google Drive's index, PDF pages 1–132 (preface, text, poem
   on PDF pp. 102–106, street list); not the appendix.
+- The **same 1874 reprint on the Internet Archive**, `lafleurdesantiqu00corr`, whose OCR keeps the
+  **printed** page numbers that the Gallica text layer lost (Gallica itself answers `403` to automated
+  requests). Edition confirmed from its own title page. **The poem is at printed pp. 64–67**: p. 64
+  carries “Le nom et surnom de lauctenr” and the acrostic stanza, p. 67 ends the *Louenges*, and p. 68
+  opens with the “Épigramme sur le nom de Paris” and the “Blason des armes”. The texts page currently
+  cites “pp. 64–68”, one page too many.
+  https://archive.org/stream/lafleurdesantiqu00corr/lafleurdesantiqu00corr_djvu.txt
 - Jules Cousin, “Notice sur un plan de Paris du XVIe siècle nouvellement découvert à Bâle”, *Mémoires
   de la Société de l'histoire de Paris et de l'Île-de-France*, t. I (1875), pp. 46–59, OCR in
   `data/research/cousin_1875_notice.txt` (Gallica ark:/12148/bpt6k6310467r, f54–f67).

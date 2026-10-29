@@ -11,9 +11,9 @@ the wikitext. Where a source could not be opened, the claim stays unverified and
 | Verdict | Claims |
 |---|---|
 | **Confirmed** | **57** |
-| **Partly confirmed** | **8** |
+| **Partly confirmed** | **9** |
 | **Contradicted** | **4** |
-| **Still unverified** | **4** |
+| **Still unverified** | **3** |
 | Total | 73 |
 
 ### The four contradicted claims
@@ -33,15 +33,33 @@ the wikitext. Where a source could not be opened, the claim stays unverified and
 4. **Alain de Mathonière was installed at the Corne de Daim in 1557, not 1577** (E7). French Wikipedia's
    1577 is internally impossible (it also has him dying in 1572); Lepape has 19 January 1557.
 
-### The four still unverified
+### A fifth page range, resolved on the second pass
 
-- **B10** the texts page's "pp. 64–68" for the poem in Lacroix 1874 — gallica.bnf.fr returns `403` to
-  automated requests and no printed page numbers survive in the OCR.
-- **A5** Boutier 2002 and **A7** the Corrozet colloquium volume — print only.
-- **E20 (part)** Grivel 2015's issue and pagination; **F19** Lazare on the rue des
-  Francs-Bourgeois-Saint-Marcel (not on Wikisource).
-- **E1** the FranceArchives record itself sits behind a JavaScript/cookie wall. Its substance was
-  nevertheless settled from Lepape, who gives the inventory's date: **2 November 1547**.
+**B10** is now settled, and it needs a one-character fix on the live site. Gallica still answers `403`
+to automated requests, but the **Internet Archive** holds the same 1874 reprint
+(`lafleurdesantiqu00corr`), whose OCR keeps the printed running heads. Confirmed from **its own title
+page**, not the catalogue record: `La Fleur / DES ANTIQUITEZ / DE LA NOBLE ET TRIUMPHANTE / VILLE ET
+CITÉ DE PARIS / GILLES CORROZET (1532) / PUBLIÉE / Par le Bibliophile JACOB / PARIS / LIBRAIRIES :
+Léon WILLEM, 8 RUE DE VERNEUIL | Paul DAFFIS, 7, RUE GUÉNÉGAUD / 1874`. The printed page numbers run:
+**64** (running head `LES ANTIQUITEZ`, then `Le nom et surnom de lauctenr` and the fourteen acrostic
+lines), 65, 66, **67** (`DE PARIS. 67`, ending `… Quest cest cy ny autant spacieuse`), then **68**
+(`68 LES ANTIQUITEZ DE PARIS.`, which carries the Épigramme and the Blason). **So the poem is at
+pp. 64–67; p. 68 is the epigram and the blason, which the texts page does not transcribe.**
+
+That copy also corroborates §3 of `corrozet.md` from a second scan: `En nombre cent hommes`,
+`quil ny a ville au monde`, `ou par elles se mond`, `En très gros nombre`, `Plus que moins` closing the
+Blason, and the line the map drops, `Soit dudict lieu qui fut de Gaulle roy`.
+
+### The three still unverified
+
+- **A5** Boutier 2002 and **A7** the Corrozet colloquium volume — print only, not online.
+- **E20 (part)** Grivel 2015's issue and pagination — searched again on the second pass and still not
+  found in any catalogue that could be opened. **F21** Lazare on the rue des
+  Francs-Bourgeois-Saint-Marcel — confirmed absent: Wikisource returns a genuine `404` for that entry,
+  which has not been transcribed.
+- **E1** the FranceArchives record itself sits behind a JavaScript/cookie wall, which should not be
+  worked around. Its substance was nevertheless settled from Lepape, who gives the inventory's date:
+  **2 November 1547**.
 
 ### Two traps worth recording
 
@@ -103,7 +121,7 @@ Quotations from `data/research/sources/corrozet_fleur_des_antiquitez_bpt6k648722
 | B7 | Book "cent hommes" vs map "six vingtz" (line 80) | **Confirmed** | `Et sainct senat ou sont les conseillers` / `En nombre centhommes tressinguliers` | viewer p. 105; file 7419–7421 |
 | B8 | The "Épigramme sur le nom de Paris" spells PARIS | **Confirmed** | `Pour pris dhonneur…` / `Accroissementde tout bien…` / `Roch de vertu…` / `Iustice vraye…` / `Scauoir de tout estude…`, closing `Cest de Paris le tiltre de noblesse.` | viewer p. 106; file 7497–7513 |
 | B9 | The "Blason des armes" is 10 lines and ends with the motto *Plus que moins* | **Confirmed** | 10 verse lines, `La nef voguant dessus la mergallicque` → `Cest de Paris le beau blason des armes.`, then `Plusquemoins.` | viewer p. 106; file 7517–7545 |
-| B10 | The texts page cites the poem as **"pp. 64–68"** of Lacroix 1874 (`web/texts/index.html:215`) | **Still unverified** | gallica.bnf.fr answers `403` to automated requests, and no printed page number survives anywhere in the OCR. The poem occupies viewer pp. 102–106 — five pages, as "64–68" is five pages, consistent with a constant offset of 38, but that is arithmetic, not a reading. | — |
+| B10 | The texts page cites the poem as **"pp. 64–68"** of Lacroix 1874 (`web/texts/index.html:215`) | **Partly confirmed — should be pp. 64–67** | The start is right: printed p. **64** carries the running head `LES ANTIQUITEZ`, the heading `Le nom et surnom de lauctenr` and the fourteen acrostic lines. The poem's last lines sit on p. **67**; p. **68** opens with `Épigramme sur le nom de Paris` and then the `Blason des armes`. Confirmed from the Internet Archive copy of the same 1874 reprint, whose OCR keeps the running heads, its edition checked on its own title page. | archive.org/stream/lafleurdesantiqu00corr/lafleurdesantiqu00corr_djvu.txt |
 | B11 | English Wikipedia "Gilles Corrozet" as a source on the map | **Note** | The article **never mentions the map, Truschet or Hoyau**. It is good for his life and trade only. It gives the *Fleur* 1532 as his first published work, and has his daughter marrying Nicholas Bonfons, who later reissued it. | en.wikipedia.org |
 
 ---
@@ -201,7 +219,7 @@ correction.
 | F18 | Cousin: « NEUVE (rue), sans autre désignation \| IV,2 \| donnant dans la rue de la Barre au faub. St-Marcel » — `:106–107` | **Confirmed** | Exact; the note elides only the empty map-label column. Beware the neighbouring entry: `NEUVE (rue) \| R. Neueve \| VIII,4 \| à l'entrée du faubourg St-Germain` — a different street. | `cousin_1875_table.txt:266`, `:265` |
 | F19 | fr.wikipedia: « rue Scipion (ancienne *rue de la Barre*, ouverte en 1540) » — `:114–115` | **Confirmed verbatim** | And a useful addition: the hôtel Scipion was built in 1565 for Scipion Sardini « dans le faubourg Saint-Marcel **rue de la Barre à l'angle de l'actuelle rue du Fer à Moulin** » — which is the corner the label sits beside. | fr.wikipedia "Faubourg Saint-Marcel (quartier de Paris)" |
 | F20 | The *séjour d'Orléans* was divided into plots in **1541/1545**, opening the rues Censier and de la Clef — `:118–121` | **Partly confirmed** | « le séjour d'Orléans fut **loti en 1541** (ouverture des rues Censier et de la Clef) ». 1541 is right; **1545 does not appear in the source** and should be dropped. | paris-atlas-historique.fr/32.html |
-| F21 | The rue des Francs-Bourgeois-Saint-Marcel's name dates from 1296 — `:122–125` | **Still unverified** | Not on Wikisource (404). | — |
+| F21 | The rue des Francs-Bourgeois-Saint-Marcel's name dates from 1296 — `:122–125` | **Still unverified** | Lazare's entry for this street has not been transcribed on Wikisource: the page returns a genuine `404`, under that title and under two variants. A printed Lazare is needed. | — |
 | F22 | Lazare gives the rue du Fer-à-Moulin the earlier names « rue Richebourg » and « rue des Morts » — `:130–131` | **Confirmed, and it weakens the hypothesis** | « Selon Sauval, elle a pris aussi la dénomination de rue de ***Richebourg*** … En 1713, cette rue divisée en deux parties avait deux dénominations : la première partie … se nommait rue ***des Morts***, parce qu'elle longeait le cimetière de Clamart ; la deuxième partie s'appelait rue *Permoulin* ». It also carried *Comte-de-Boulogne*. **None of its documented names is "Neuve"**, so hypothesis 2 is weaker than the note allows. | fr.wikisource, Lazare 1844 djvu **p. 220** |
 | F23 | Label distances for L0224 — `:109–111` | **Confirmed** | 168, 209 and 285 px. | `data/labels_inventory.csv` |
 
@@ -221,6 +239,11 @@ Institut Paris Région · Louvre collections cl020519735 · HAL halshs-00602821 
 journals.openedition.org/nda/3928 · paris-pittoresque.com/rues/100.htm · blog.paris-libris.com ·
 ccfr.bnf.fr · OpenStreetMap API · and, in the repository, Cousin's notice and table and the *Fleur* OCR.
 
+Added on the second pass: **archive.org** (`lafleurdesantiqu00corr`, the 1874 *Fleur* reprint with its
+printed page numbers) and a re-check of Wikisource and the catalogues for F21 and Grivel 2015.
+
 **Could not be opened:** gallica.bnf.fr (`403` to automated requests — its own anti-bot, not the network
-policy); francearchives.gouv.fr (JavaScript/cookie wall); api.archives-ouvertes.fr (not in the allowed
-domains; the HAL page itself served the metadata).
+policy; the Internet Archive copy served instead); francearchives.gouv.fr (JavaScript/cookie wall);
+archive.org's `download/` node hosts (`dn760009.eu.archive.org` is outside the allowed domains — the
+`stream/` endpoint on archive.org itself works); api.archives-ouvertes.fr (likewise outside; the HAL
+page itself served the metadata).
