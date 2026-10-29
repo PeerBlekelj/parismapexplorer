@@ -20,6 +20,14 @@ for p in sorted((root / "data").glob("places_*.csv")):  # research results per c
 def nn(v):
     return v if v not in ("", None) else None
 
+# Bookkeeping left by the tile-by-tile transcription pass ("already recorded in the previous
+# tile"); `seen_in` carries the same fact. Not something to show on a place's card.
+INV_BOOKKEEPING = {"dup", "dupe", "duplicate"}
+
+def inv_note(v):
+    v = nn(v)
+    return None if v and v.strip().lower() in INV_BOOKKEEPING else v
+
 def read_summaries(name):
     out = {}
     p = root / "data/research" / name
@@ -101,7 +109,7 @@ for r in inv_rows:
         "also_px": also.get(r["id"], []),
         "orient": r["orient"],
         "flag": r["flag"],
-        "note": nn(i.get("note")) or nn(r["note"]),
+        "note": nn(i.get("note")) or inv_note(r["note"]),
         "modern": nn(i.get("modern")),
         "status": nn(i.get("status")),
         "lat": float(i["lat"]) if nn(i.get("lat")) else None,
