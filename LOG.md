@@ -2,6 +2,23 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-29 (13:20) — the ten coordinates are live
+
+- Merged `wrong-site-coordinates` into main (merge 61a73aa) and deployed. The 28 Oct fix had been
+  pushed but never merged, so the live map still carried the ten wrong pins for a day.
+- The LOG.md conflict was the badge entry against the coordinates entry; both kept, newest first.
+- Verified the data build is reproducible before deploying: `build_places.py . --auto-gcps` on the
+  merged tree reproduces the committed `places.json` and `gcps.json` byte for byte apart from the
+  `generated` timestamp. 457 places, 46 gcps.
+- Deployed prebuilt with `--archive=tgz` from the main checkout (so `web/public/og/`, 458 images, and
+  `web/public/tiles/`, 49 MB, were both present). Production Ready.
+- Checked live: `/` `/fr/` `/sv/` `/map/` `/fr/map/` `/place/L0017/` `/method/` `/texts/` 200;
+  `/data/places.json`, `/sitemap.xml` (1383 urls), `/og/L0017.jpg`, `/tiles/old/7/64/64.webp`,
+  `/tiles/overlay/15/16598/11271.webp` 200; the old domain still 308s path-for-path. The badge is in
+  the HTML of the written pages and injected by `main.ts` on the map pages, as designed.
+- Live coordinates confirmed moved: L0017 Petit Chatelet 48.852874, 2.346347; L0025 La Monnoie
+  48.860307, 2.344764; L0080 Hostel Dieu 48.852981, 2.347932.
+
 ## 2026-10-29 (07:15) — the Simple Analytics badge; deployed main
 
 - Simple Analytics' free plan requires a visible badge from 2026-11-01 (mail of 10-27): no badge means
