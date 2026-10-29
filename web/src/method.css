@@ -96,6 +96,10 @@ ol.refs li:target { background: var(--paper2); }
 .figpair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .figpair figure { margin-left: 0; margin-right: 0; }
 .figpair figcaption { margin-left: 0; }
+/* Simple Analytics' badge (src/badge.ts), at the end of the page under the colophon. */
+.sa-badge { display: block; margin: 18px 0 0; }
+.sa-badge img { display: block; height: 30px; width: auto; }
+
 @media (max-width: 600px) {
   .figpair { grid-template-columns: 1fr; gap: 0; }
   body.doc { font-size: 18px; }

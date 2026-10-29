@@ -7,6 +7,7 @@ import '@fontsource/inter/latin-600.css';
 import './style.css';
 
 import { renderCard, renderIntro } from './card';
+import { badge } from './badge';
 import { esc, statusClass, statusLabel, typeLabel } from './format';
 import { lang, langBase, LANGS, mapBase, setLang, t, type Lang } from './i18n';
 import { loadOverlayTiles, MapView, type Mode, type Orientation } from './maps';
@@ -69,7 +70,7 @@ function fillStaticText(): void {
     `<button type="button" data-lang="${l}" lang="${l}" aria-pressed="${l === lang}">${l.toUpperCase()}</button>`).join(' · ');
   $('#credits').innerHTML = `<span class="langs" role="group" aria-label="${esc(t.langLabel)}">${langs}</span>` +
     `<a href="${langBase()}">${esc(t.creditAbout)}</a> · <a href="${langBase()}method/">${esc(t.creditMethod)}</a> · ` +
-    `<a href="${langBase()}texts/">${esc(t.creditTexts)}</a> · ` + [t.creditMap, t.creditOsm, t.creditBy].map(esc).join(' · ');
+    `<a href="${langBase()}texts/">${esc(t.creditTexts)}</a> · ` + [t.creditMap, t.creditOsm, t.creditBy].map(esc).join(' · ') + badge('sa-badge');
 }
 
 // Re-renders everything that shows text; replaced by the full version once the data is loaded.

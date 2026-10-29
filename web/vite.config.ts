@@ -10,6 +10,7 @@ import { readFileSync, mkdirSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { defineConfig, type Plugin } from 'vite';
 import { LANGS, localModernIn, STRINGS, type Lang } from './src/strings';
+import { badge } from './src/badge';
 
 // The site's address, in one place: the HTML pages say %SITE% and get it from siteUrl() below.
 const SITE = 'https://paris1550.vercel.app';
@@ -79,14 +80,26 @@ function metaBlock(m: Meta): string {
   ].map((l) => `    ${l}`).join('\n');
 }
 
+/** Puts the badge at the very end of a written page's text, after the colophon. */
+function withBadge(html: string): string {
+  const at = html.lastIndexOf('</section>');
+  if (at < 0) throw new Error('site-url: no </section> to put the badge after');
+  return `${html.slice(0, at)}  ${badge('sa-badge')}\n      ${html.slice(at)}`;
+}
+
 function siteUrl(): Plugin {
   return {
     name: 'site-url',
-    // Every page, every language: the site address, and Simple Analytics (no cookies, no personal
-    // data; the same account as the owner's other public sites).
+    // Every page, every language: the site address, Simple Analytics (no cookies, no personal
+    // data; the same account as the owner's other public sites), and its badge.
     transformIndexHtml: {
       order: 'pre',
-      handler: (html) => html.replaceAll('%SITE%', SITE).replace('</head>', `${ANALYTICS}\n  </head>`),
+      handler: (html) => {
+        const out = html.replaceAll('%SITE%', SITE).replace('</head>', `${ANALYTICS}\n  </head>`);
+        // The badge goes on the written pages, under the colophon that ends the last section;
+        // the map page (not .doc) carries its own, in the sidebar credits -- see src/main.ts.
+        return out.includes('<body class="doc">') ? withBadge(out) : out;
+      },
     },
   };
 }

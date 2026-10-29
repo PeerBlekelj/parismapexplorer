@@ -106,6 +106,8 @@ a { color: var(--blue); }
 
 .credits { flex: 0 0 auto; font-size: 10.5px; line-height: 1.45; color: var(--ink2); padding: 8px 18px 10px; border-top: 1px solid var(--rule); }
 .langs { float: right; margin-left: 10px; white-space: nowrap; letter-spacing: .04em; }
+.credits .sa-badge { display: block; clear: both; margin-top: 8px; }
+.credits .sa-badge img { display: block; height: 22px; width: auto; }
 .langs button { font: inherit; color: inherit; background: none; border: 0; padding: 0 1px; cursor: pointer; }
 .langs button:hover { color: var(--ink); text-decoration: underline; }
 .langs button[aria-pressed="true"] { color: var(--ink); font-weight: 600; cursor: default; text-decoration: none; }
