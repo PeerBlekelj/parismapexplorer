@@ -2,9 +2,9 @@
 
 Newest first. What was done, what was found, what is open.
 
-## 2026-10-30 (19:10) — starred places and sharing, on branch `starred-places`
+## 2026-10-30 (22:45) — starred places and sharing: LIVE
 
-**Built, not deployed.** A visitor can keep their own list of places and send a place, a view or the
+**Deployed** (main 1d22a4b, prebuilt, `--archive=tgz`). A visitor can keep their own list of places and send a place, a view or the
 whole list to someone else — or to their own phone. The site stays static: no server, no accounts, no
 cookies. A star lives in `localStorage` (guarded, as `lang` is) and a **link** is the only thing that
 travels. Mockups and the reasoning: `mockups/favorites/` (four sheets + README).
@@ -42,8 +42,12 @@ assertions) and leaves screenshots in `work/stars-check/`. Run it against **both
 `npm run preview`: the QR generator (`qrcode-generator`, the one new dependency) is a bundler question,
 and `/fr/map/` and `/sv/map/` only exist in a build. Both green here.
 
+**Checked live** after the deploy: all 39 assertions against `https://paris1550.vercel.app`, in
+English, French and Swedish. Routes: `/` `/fr/` `/sv/` `/map/` `/fr/map/` `/sv/map/` `/place/L0017/`
+`/method/` `/texts/` 200; `/data/places.json`, `/sitemap.xml`, `/og/L0017.jpg`, both tile pyramids 200;
+the old domain still 308s path-for-path.
+
 **Open:**
-- Not deployed and not merged — waiting on the owner's look.
 - The French and Swedish wordings are drafted, not reviewed, like the rest of the translations.
 - A `?stars=` or view link gets the generic site link-preview card: a query string never reaches a
   static file, so a custom one would need a serverless OG function — the first runtime on a site with
