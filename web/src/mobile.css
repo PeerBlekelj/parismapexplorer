@@ -72,9 +72,12 @@
   .map-area[data-mode="side"] .panes { flex-direction: column; }
   .modes { top: calc(8px + env(safe-area-inset-top)); left: calc(12px + env(safe-area-inset-left)); right: calc(12px + env(safe-area-inset-right)); transform: none; max-width: none; flex-wrap: nowrap; border-radius: 8px; }
   .modes button { flex: 1 1 0; min-width: 0; height: 40px; padding: 0 4px; font-size: 13px; }
-  .orient { top: calc(56px + env(safe-area-inset-top)); right: calc(12px + env(safe-area-inset-right)); left: auto; bottom: auto; min-height: 40px; padding: 0 11px; font-size: 12px; border-radius: 8px; }
+  .topright { top: calc(56px + env(safe-area-inset-top)); right: calc(12px + env(safe-area-inset-right)); left: auto; bottom: auto; }
+  .orient, .share-view { min-height: 40px; padding: 0 11px; font-size: 12px; border-radius: 8px; }
+  /* no room for both labels beside the modes bar: the share button keeps its glyph */
+  .share-view .lbl { display: none; }
   /* With the sheet up the map is short: keep its top clear for the selected place. */
-  .app:not([data-sheet="peek"]) .orient { display: none; }
+  .app:not([data-sheet="peek"]) .topright { display: none; }
   .app:not([data-sheet="peek"]) .warn { top: calc(56px + env(safe-area-inset-top)); }
   .warn { top: calc(104px + env(safe-area-inset-top)); left: 12px; right: 12px; transform: none; max-width: none; font-size: 10.5px; padding: 3px 8px; text-align: left; display: none; }
   .map-area[data-mode="overlay"] .warn { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }

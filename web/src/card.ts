@@ -23,9 +23,28 @@ function correctionUrl(e: Entry): string {
   return `${REPO}/issues/new?${q}`;
 }
 
+export interface CardActions {
+  /** Back to the list (the ← link and the ×). */
+  onClose(): void;
+  /** Star or unstar this place; returns the new state. */
+  onStar(): boolean;
+  /** Hand the link to this place over (clipboard, or the phone's share sheet). */
+  onShare(button: HTMLElement): void;
+  starred: boolean;
+}
+
+/** The ☆/★ button's look and wording for a state, in one place: the card renders it and the
+ *  click handler repaints it without rebuilding the card. */
+function paintStar(btn: HTMLElement, on: boolean): void {
+  btn.classList.toggle('starred', on);
+  btn.setAttribute('aria-pressed', String(on));
+  btn.title = on ? t.unstarHint : t.starHint;
+  btn.innerHTML = `<span class="ic" aria-hidden="true">${on ? '★' : '☆'}</span><span>${esc(on ? t.starred : t.star)}</span>`;
+}
+
 // `backCount` is the number of places in the list the card was opened over; the back link and
-// the × both call `onClose`, which returns to that list.
-export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, backCount: number, onClose: () => void): void {
+// the × both call `actions.onClose`, which returns to that list.
+export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, backCount: number, actions: CardActions): void {
   const p = e.place;
   const m = modernText(p);
   const unsure = p.flag === 'unsure';
@@ -67,6 +86,11 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, back
       </div>
       <h2>${esc(e.title)}</h2>
       <div class="modname">${esc(t.today)}${esc(t.colon)}<span class="${m.placeholder ? 'placeholder' : ''}">${esc(m.text)}</span></div>
+      <div class="actions">
+        <button type="button" class="act star-btn"></button>
+        <button type="button" class="act share-btn" title="${esc(t.sharePlaceHint)}">
+          <span class="ic" aria-hidden="true">⤴</span><span>${esc(t.share)}</span></button>
+      </div>
       <figure class="snip snip-${orient}">
         <canvas aria-label="${esc(t.cropCaption)}"></canvas>
         <figcaption>${esc(t.cropCaption)}</figcaption>
@@ -85,8 +109,13 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, back
       <p class="suggest"><a href="${esc(correctionUrl(e))}" target="_blank" rel="noopener" title="${esc(t.suggestCorrectionHint)}">${esc(t.suggestCorrection)}</a></p>
     </article>`;
 
-  el.querySelector('.card-close')?.addEventListener('click', onClose);
-  el.querySelector('.card-back')?.addEventListener('click', onClose);
+  el.querySelector('.card-close')?.addEventListener('click', actions.onClose);
+  el.querySelector('.card-back')?.addEventListener('click', actions.onClose);
+  const starBtn = el.querySelector('.star-btn') as HTMLElement;
+  paintStar(starBtn, actions.starred);
+  starBtn.addEventListener('click', () => paintStar(starBtn, actions.onStar()));
+  const shareBtn = el.querySelector('.share-btn') as HTMLElement;
+  shareBtn.addEventListener('click', () => actions.onShare(shareBtn));
   // The address bar already shows this link; a plain click shouldn't reload the app.
   el.querySelector('.permalink')?.addEventListener('click', (ev) => ev.preventDefault());
   el.scrollTop = 0;

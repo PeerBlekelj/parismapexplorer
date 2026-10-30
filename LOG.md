@@ -2,6 +2,55 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-30 (19:10) — starred places and sharing, on branch `starred-places`
+
+**Built, not deployed.** A visitor can keep their own list of places and send a place, a view or the
+whole list to someone else — or to their own phone. The site stays static: no server, no accounts, no
+cookies. A star lives in `localStorage` (guarded, as `lang` is) and a **link** is the only thing that
+travels. Mockups and the reasoning: `mockups/favorites/` (four sheets + README).
+
+What is there:
+- **Star a place** from its card (☆ Star / ★ Starred) or from any row in the list. On a touch screen
+  the row star is always visible — there is no hover to reveal it with.
+- **The list**: `★ n starred` appears in the count line as soon as there is one, and as a chip in the
+  Filters menu (owner's call: A + B, not a button in the top row, which has no width to spare on a
+  phone). It filters the list and both maps through the `setFilter()` path that already existed.
+  Starred places keep a gold ring at every zoom, where the catalogue's red dots fade out.
+- **Share one place**: a button that copies `/place/L0006/` — which already had its own page, title
+  and link-preview image in three languages — or opens the system share sheet on a phone.
+- **Share a view**: `?m=overlay&c=48.8529,2.3463&z=15.4&o=62&s=50`, the thing that had no link at all
+  before. Every part optional, so an older link still opens.
+- **Share the list**: `?stars=…`, and **Open on another device**, which draws the same string as a QR
+  code. Opening such a link shows the places with a banner — *add them* or *just look*. It **merges,
+  never replaces**, so following a link twice changes nothing and nobody's list is overwritten.
+- `?stars=` indexes by the **id number** (`L0017` → 17), never by a row's position in `places.json`,
+  which shifts whenever a place is added. Two forms, whichever is shorter: the numbers written out, or
+  a base64url bitmap with trailing zero bytes trimmed (22 characters for seven places, 79 for all 457).
+  **The ids must therefore never be reused for a different place.**
+
+**Two bugs the checks caught, worth remembering:**
+1. Wrapping a zoom `interpolate` inside a `case` to make starred dots bigger made MapLibre reject the
+   whole paint property and **never add the `dots` layer at all** — every place dot gone, reported only
+   to the console. The per-place choice has to go inside each stop of the ramp (`starRamp` in maps.ts).
+   The run passed until console errors were made to count as failures: a `pageerror` listener does not
+   see this.
+2. The row star was `visibility: hidden` until hover, which on a phone means unreachable. Now
+   `@media (hover: none)` shows it always.
+
+**Checking it**: `scripts/check_stars.py <base-url>` walks the whole thing in a real browser (39
+assertions) and leaves screenshots in `work/stars-check/`. Run it against **both** the dev server and
+`npm run preview`: the QR generator (`qrcode-generator`, the one new dependency) is a bundler question,
+and `/fr/map/` and `/sv/map/` only exist in a build. Both green here.
+
+**Open:**
+- Not deployed and not merged — waiting on the owner's look.
+- The French and Swedish wordings are drafted, not reviewed, like the rest of the translations.
+- A `?stars=` or view link gets the generic site link-preview card: a query string never reaches a
+  static file, so a custom one would need a serverless OG function — the first runtime on a site with
+  none. Left out deliberately.
+- No GPX export and no free-dropped pins (both the owner's call: only the 457 catalogued places).
+- The starred list shows in the catalogue's order, not the order they were starred.
+
 ## 2026-10-30 (10:30) — 73 claims checked; three corrections live; the poem question answered
 
 **The verification branch is merged and deployed** (main b102e3f). A cloud session opened and read the

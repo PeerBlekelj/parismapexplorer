@@ -2,6 +2,8 @@
 :root {
   --ink: #2b2118; --ink2: #6b5a48; --paper: #f4ecdc; --paper2: #ebdfc6; --rule: #d3c3a3;
   --card: #fffaf0; --red: #a63a1f; --blue: #3d5a78; --gone: #8a6d4a;
+  /* the visitor's own places: sepia gold, never the catalogue's red (see STAR in maps.ts) */
+  --star: #946d10; --star-bg: #fbf0d4; --star-rule: #d8bd76;
   --serif: "EB Garamond", "Iowan Old Style", Georgia, serif;
   --sans: "Inter", system-ui, sans-serif;
   --side-w: 380px;
@@ -57,11 +59,11 @@ a { color: var(--blue); }
 
 .count { font-size: 11.5px; color: var(--ink2); padding: 7px 18px 3px; }
 .list { overflow: auto; padding: 4px 8px 8px; flex: 1 1 auto; min-height: 120px; }
-/* Drill-in: with a place selected the card replaces the count and the list. */
-.app.has-sel .count, .app.has-sel .list { display: none; }
+/* Drill-in: with a place selected the card replaces the count, the list and its bar. */
+.app.has-sel .count, .app.has-sel .list, .app.has-sel .stars-bar { display: none; }
 .empty { color: var(--ink2); font-size: 13px; padding: 10px; }
 
-.result { display: grid; grid-template-columns: 18px 1fr; gap: 2px 8px; padding: 8px 10px; border-radius: 6px; cursor: pointer; }
+.result { display: grid; grid-template-columns: 18px 1fr 20px; gap: 2px 8px; padding: 8px 10px; border-radius: 6px; cursor: pointer; }
 .result:hover { background: var(--paper2); }
 .result.sel { background: var(--card); box-shadow: inset 3px 0 0 var(--red); }
 .result .old { font-family: var(--serif); font-size: 16px; font-variant: small-caps; letter-spacing: .02em; line-height: 1.2; }
@@ -134,7 +136,8 @@ a { color: var(--blue); }
 .modes button:hover { color: var(--ink); }
 .modes button.on { background: var(--ink); color: var(--paper); }
 
-.orient { position: absolute; top: 12px; right: 12px; z-index: 8; display: flex; gap: 7px; align-items: center; background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 7px 11px; font-size: 13px; color: var(--ink2); cursor: pointer; box-shadow: 0 2px 8px #0002; white-space: nowrap; }
+.topright { position: absolute; top: 12px; right: 12px; z-index: 8; display: flex; gap: 8px; align-items: flex-start; }
+.orient { display: flex; gap: 7px; align-items: center; background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 7px 11px; font-size: 13px; color: var(--ink2); cursor: pointer; box-shadow: 0 2px 8px #0002; white-space: nowrap; }
 .orient .box { width: 13px; height: 13px; border: 1.5px solid var(--ink2); border-radius: 3px; display: inline-grid; place-items: center; }
 .orient[aria-pressed="true"] { color: var(--ink); }
 .orient[aria-pressed="true"] .box { background: var(--ink); border-color: var(--ink); }
@@ -191,9 +194,69 @@ a { color: var(--blue); }
 .table-view tr.sel td { background: var(--card); }
 .table-view tr.sel td:first-child { box-shadow: inset 3px 0 0 var(--red); }
 
+/* ---------- starred places and sharing ---------- */
+/* A star is the visitor's own mark, so it is gold where the catalogue is red. */
+
+.card .actions { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 0 12px; }
+.act { display: inline-flex; align-items: center; gap: 6px; font: inherit; font-size: 12.5px; padding: 5px 11px; border: 1px solid var(--rule); border-radius: 99px; background: var(--card); color: var(--ink2); cursor: pointer; }
+.act:hover { border-color: var(--ink2); color: var(--ink); }
+.act:focus-visible { outline: 2px solid var(--ink2); outline-offset: 1px; }
+.act .ic { font-size: 13px; line-height: 1; }
+.act.starred { background: var(--star-bg); border-color: var(--star-rule); color: var(--star); font-weight: 500; }
+.act.primary { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.act.primary:hover { color: var(--paper2); }
+.act.danger { color: #8c4a35; }
+.stars-bar .act.danger { border-color: transparent; background: transparent; margin-left: auto; padding: 5px 4px; }
+.stars-bar .act.danger:hover { border-color: #c9a493; background: var(--card); }
+
+/* the star on a result row: on hover, or always once it is set */
+.result .star { grid-column: 3; grid-row: 1 / span 2; align-self: start; border: 0; background: transparent; cursor: pointer; color: #c0ae8d; font-size: 15px; line-height: 1; padding: 2px 0 0; visibility: hidden; }
+.result:hover .star, .result .star.on, .result .star.from-link, .result .star:focus-visible { visibility: visible; }
+/* A touch screen has no hover, so there the star is always there to be tapped. */
+@media (hover: none) { .result .star { visibility: visible; } }
+.result .star.on { color: var(--star); }
+.result .star.from-link { color: var(--star-rule); }
+.result .star:hover { color: var(--star); }
+
+/* the way in to the list, in the line that already says how many places are showing */
+.count .starsw { float: right; margin-left: 8px; }
+.stars-link { border: 0; background: transparent; font: inherit; color: var(--ink2); cursor: pointer; padding: 1px 7px; border-radius: 99px; }
+.stars-link:hover { color: var(--star); background: var(--star-bg); }
+.stars-link.on { color: var(--star); background: var(--star-bg); box-shadow: inset 0 0 0 1px var(--star-rule); font-weight: 600; }
+.chip-starred.on { background: var(--star); border-color: var(--star); color: var(--paper); }
+
+/* what can be done with the list, under it */
+.stars-bar { flex: 0 0 auto; min-width: 0; border-top: 1px solid var(--rule); background: var(--paper2); padding: 10px 18px; font-size: 11.5px; color: var(--ink2); display: flex; flex-direction: column; gap: 8px; }
+.stars-bar .acts { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.stars-bar .ask { display: inline-flex; gap: 6px; align-items: center; color: var(--ink); }
+.stars-bar .note { margin: 0; line-height: 1.45; }
+.handoff { min-width: 0; background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 12px; display: flex; gap: 12px; align-items: flex-start; }
+.handoff .qr { width: 92px; height: 92px; flex: 0 0 auto; border: 1px solid var(--rule); border-radius: 4px; }
+.handoff .side2 { min-width: 0; display: flex; flex-direction: column; gap: 7px; }
+.handoff .lbl { font-size: 11px; letter-spacing: .07em; text-transform: uppercase; }
+.urlbox { max-width: 100%; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; color: var(--ink2); background: var(--paper); border: 1px solid var(--rule); border-radius: 4px; padding: 5px 7px; overflow-wrap: anywhere; line-height: 1.4; user-select: all; }
+
+/* a link that shares places, opened by someone else (or by yourself on another device) */
+.shared { position: relative; margin: 8px 10px 2px; padding: 10px 12px 11px; background: var(--star-bg); border: 1px solid var(--star-rule); border-radius: 6px; font-size: 12.5px; line-height: 1.45; }
+.shared .acts { display: flex; gap: 6px; margin-top: 8px; }
+.shared .x { position: absolute; top: 1px; right: 5px; border: 0; background: transparent; color: var(--ink2); font-size: 17px; line-height: 1; padding: 2px 5px; cursor: pointer; }
+.shared .x:hover { color: var(--ink); }
+
+/* "Link copied": a label under the button, gone in a moment, with nothing to dismiss */
+.copied { position: fixed; z-index: 1001; background: var(--ink); color: var(--paper); font-size: 11.5px; padding: 5px 10px; border-radius: 4px; box-shadow: 0 3px 10px #0005; max-width: calc(100vw - 16px); transition: opacity .25s; }
+.copied::after { content: ""; position: absolute; left: var(--arrow, 14px); top: -4px; width: 8px; height: 8px; background: var(--ink); transform: rotate(45deg); }
+.copied.out { opacity: 0; }
+
+/* the map area's own share button, beside the orientation toggle */
+.share-view { display: flex; gap: 7px; align-items: center; background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 7px 11px; font-size: 13px; color: var(--ink2); cursor: pointer; box-shadow: 0 2px 8px #0002; white-space: nowrap; }
+.share-view:hover { color: var(--ink); border-color: var(--ink2); }
+.share-view .ic { font-size: 14px; line-height: 1; }
+
+@media (prefers-reduced-motion: reduce) { .copied { transition: none; } }
+
 /* ---------- narrower screens: keep working, no dedicated mobile design yet ---------- */
 @media (max-width: 1180px) {
-  .orient { top: 54px; }
+  .topright { top: 54px; }
   .warn { top: 96px; }
 }
 @media (max-width: 900px) {
@@ -205,6 +268,6 @@ a { color: var(--blue); }
   .main { flex: none; height: 75vh; min-height: 440px; }
   .modes { flex-wrap: wrap; justify-content: center; max-width: calc(100% - 24px); }
   .modes button { padding: 6px 9px; font-size: 12px; }
-  .orient { top: auto; bottom: 44px; right: auto; left: 10px; }
+  .topright { top: auto; bottom: 44px; right: auto; left: 10px; }
   .table-view { position: relative; }
 }
