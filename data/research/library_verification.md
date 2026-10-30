@@ -78,9 +78,58 @@ mort de Truschet" is Cousin's own inference, hedged, from the signatures disappe
 not a document. The site's separate "by 1575 Truschet was dead", cited to [9], does not rest on
 Cousin and is still unverified.
 
+## 5. ANSWERED: the 1550 *Antiquitez* does **not** print the poem
+
+Vision OCR run 30 October 2026 (458 of 459 pages read, $0.69; p. 459 is a binding leaf Vision
+refused). The source now carries text on **439** of 459 pages, so this is a real search, not a search
+of an empty book.
+
+**The map's poem — « Louenges de Paris faictes par ledict aucteur » — is absent.** Its distinctive
+rhyme-words return nothing anywhere in the volume: *propices*, *gentillesse*, *singularite*,
+*instaurateur*, *descripture*, *exquise*, *gentilz lecteurs* — all zero. (*edifices* appears, but
+scattered through the prose on eight pages, which is what an ordinary word does.) The fourteen-line
+acrostic « Le nom et surnom de l'aucteur » is absent too, and so is the « Épigramme sur le nom de
+Paris ».
+
+**What the 1550 edition does print is the Blason**, in the front matter, scan p. 21, before the table:
+
+> LE BLASON DES ARMES de la ville de Paris.
+> Le chef d'azur de fleur de lis semé / Monstre Paris estre ville royale … La belle nef d'vne grand'
+> Republique.
+> **PLVS QVE MOINS.**
+
+So the question of whether it carries the **1550 figures (14 gates, 120 councillors) does not arise**:
+there is no poem in the book to carry them. `"quatorze portes"`, `"xiiii portes"`, `"vingtz
+conseillers"` and `"cent conseillers"` return nothing in the prose either.
+
+⚠ The earlier "it ends at FIN, no poem" finding was made against the **1561** edition while the
+catalogue still mislabelled it 1550. It happened to reach the same verdict, but it was never evidence
+about this book.
+
+**What this means.** The map's poem is the *Fleur*'s Louenges with the figures brought up to date
+(11 → 14 gates, 100 → 120 councillors). Those updated figures appear in **neither** book: not in the
+1532 *Fleur*, which has the old numbers, and not in the 1550 *Antiquitez*, which drops the poem
+altogether. **The updating was done for the map.**
+
+## 6. Corrozet disowns the *Fleur*, in his own words
+
+`corrozet.md` §4 raised, as "our observation, not in the literature seen", the tension that Corrozet
+had repudiated the *Fleur* by 1550 while the map was printing its poem. The repudiation is now a
+primary-source fact. Closing the dedication to Claude Guiot, scan p. 20:
+
+> … amplement & au long sans comparaison qu'il n'a esté par cy deuãt escrit en **vn petit liuret ainsi
+> intitulé, lequel i'ay supprimé & mis à neant, emendant ses erreurs & fables, & faisant cestuy cy
+> tout neuf** par forme de memoires & croniques …
+
+— "a little book of that same title, which I have **suppressed and brought to nothing**, amending its
+errors and fables, and making this one wholly new."
+
+The cloud session independently found that the tension has a published answer: HOC ch. 48 (Pelletier,
+n. 80) reports Dérens's argument that the 1550 *Antiquitez* is the thinner guide **because the map,
+out the same year, had taken over what the late *Fleur* carried**. Put beside Corrozet's own sentence,
+the three fit: he suppressed the *Fleur*, left its poem out of the new book, and the poem went onto
+the map — updated. `corrozet.md` §4 should stop presenting this as unanswered.
+
 ## Still for the library, not done
 
-- Does the 1550 *Antiquitez* print the poem, and with the 1550 figures (14 gates, 120 councillors)?
-  **Not yet answerable here:** the 459-page scan is image-only (2 pages of text), so it needs OCR
-  first. The earlier "no poem, it ends at FIN" finding was made against the **1561** edition, which
-  the catalogue had not yet been corrected to show.
+- Nothing outstanding from this pass.
