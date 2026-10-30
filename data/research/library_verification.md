@@ -111,6 +111,25 @@ about this book.
 1532 *Fleur*, which has the old numbers, and not in the 1550 *Antiquitez*, which drops the poem
 altogether. **The updating was done for the map.**
 
+### Caveat: this OCR contains invented text — and the conclusion survives it anyway
+
+A parallel session found on 30 October that Cloud Vision reads the ink showing through from the back
+of these thin leaves and emits it as words, and that our text-based quality score rates such a page
+`good` (see the memory `feedback-ocr-invents-text`). It is visible on scan p. 21 itself: behind the
+Blason you can see p. 22's table in mirror, and Vision appended it as junk.
+
+**This does not weaken the finding, because the finding is a negative.** Bleed-through *adds*
+spurious text; it cannot delete text that was printed. If it had any effect on a search for the
+poem's words it would be to produce a **false positive**, and none appeared. The reverse risk — a
+page Vision failed to read at all, hiding the poem — was checked directly: the 20 pages without text
+are scan pp. 4–12 and 448–459, and every one was looked at. They are blank leaves, the marbled
+endpapers, the boards and the spine. The body, pp. 13–447, is read throughout and ends with the
+errata table.
+
+What the caveat *does* mean: positive quotations from this source must be checked against the page
+image before use. The three quoted above (title page, dedication, Blason) were each read from the
+rendered page, not from the OCR.
+
 ## 6. Corrozet disowns the *Fleur*, in his own words
 
 `corrozet.md` §4 raised, as "our observation, not in the literature seen", the tension that Corrozet
