@@ -1,0 +1,54 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<title>Paris 1550 — sharing the view, and starred places on the map</title>
+<link rel="stylesheet" href="../../web/src/style.css"><link rel="stylesheet" href="mock.css"></head><body>
+<h1 class="sheet-title">The map: sharing a view, and seeing your stars</h1>
+<p class="sheet-sub">Two things the map area gains. A <b>⤴ Share view</b> button beside the orientation
+toggle, which copies a link to <i>what you are looking at</i> — the mode, where the cameras are, how far in,
+the overlay's opacity and the swipe. And <b>starred places keep their ring</b> in sepia gold at every zoom,
+so your own places stay findable while you move around. (The maps here are stand-ins.)</p>
+
+<div class="row"><div class="frame wide">
+<div class="stage" style="width:1120px;height:560px">
+  <div class="map-area" data-mode="side">
+    <div class="modes"><button type="button" class="on">Side by side</button><button type="button">Overlay</button><button type="button">1550 only</button><button type="button">Today only</button></div>
+    <div class="topright">
+      <div class="share-view"><span>⤴</span> Share view</div>
+      <button type="button" class="orient" aria-pressed="false"><span class="box"></span><span class="lbl">Original orientation</span></button>
+    </div>
+    <span class="copied" style="right:188px;top:52px">Link copied</span>
+    <div class="panes">
+      <div class="pane oldp">
+        <span class="omap" style="inset:0;background-position:-760px -420px"></span>
+        <span class="d" style="left:214px;top:198px"></span>
+        <span class="d" style="left:286px;top:246px"></span>
+        <span class="d gone" style="left:342px;top:300px"></span>
+        <span class="d" style="left:176px;top:330px"></span>
+        <span class="d star" style="left:258px;top:286px"></span>
+        <span class="d star" style="left:390px;top:214px"></span>
+        <span class="d star" style="left:140px;top:252px"></span>
+        <span class="tag">Truschet &amp; Hoyau, c. 1550 (rotated north-up)</span>
+      </div>
+      <div class="pane modp">
+        <span class="mmap" style="inset:0;background-position:-120px -170px"></span>
+        <span class="d" style="left:236px;top:206px"></span>
+        <span class="d" style="left:300px;top:250px"></span>
+        <span class="d gone" style="left:352px;top:306px"></span>
+        <span class="d" style="left:196px;top:338px"></span>
+        <span class="d star" style="left:272px;top:292px"></span>
+        <span class="d star" style="left:402px;top:220px"></span>
+        <span class="d star" style="left:158px;top:258px"></span>
+        <span class="tag">Today: © OpenStreetMap contributors</span>
+      </div>
+    </div>
+  </div>
+</div>
+<p class="cap" style="max-width:1120px"><b>Share view.</b> The link carries the state the app already keeps:
+<code>…/map/?m=overlay&amp;c=48.8529,2.3463&amp;z=15.4&amp;b=0&amp;o=80&amp;s=50</code> — mode, centre, zoom,
+bearing, old-map opacity, swipe position. Each part is optional, so an old link without one of them still opens.
+This is the piece that does not exist today: a place has a link, but “look at the overlay <i>here</i>” has none.
+<br><b>Starred rings.</b> Ordinary dots only appear once you zoom past the point where labels stop colliding
+(<code>OLD_DOTS_ZOOM</code>, <code>MOD_DOTS_ZOOM</code>) or when a filter is on; starred ones ignore that rule and
+are drawn a size larger, in gold. They are the only pins on the map that are the visitor's own, so they should
+not look like the catalogue's red.</p>
+</div></div>
+</body></html>

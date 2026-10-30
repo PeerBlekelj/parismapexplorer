@@ -15,9 +15,12 @@ import { initMobile } from './mobile';
 import { buildEntries, modernText, type Entry } from './model';
 import { IMAGE_H, IMAGE_W } from './oldPlane';
 import { SearchIndex } from './search';
+import { copyText, flash, qrSvg, shareLink } from './share';
+import { decodeIds, Stars } from './stars';
 import { PlaceTable } from './table';
 import { createTransform } from './transform';
 import type { GcpsFile, PlacesFile } from './types';
+import { hasCamera, readViewState, viewQuery, withoutView } from './viewstate';
 
 const BASE = import.meta.env.BASE_URL;
 const TYPE_ORDER = ['church_religious', 'college', 'street', 'gate_wall', 'bridge', 'building', 'square_market', 'village_faubourg', 'other'];
@@ -60,6 +63,9 @@ function fillStaticText(): void {
   const modes: Record<string, string> = { side: t.modeSide, overlay: t.modeOverlay, old: t.modeOld, mod: t.modeMod };
   document.querySelectorAll<HTMLButtonElement>('#modes button').forEach((b) => (b.textContent = modes[b.dataset.m ?? ''] ?? ''));
   $('#orient .lbl').textContent = t.orientOriginal;
+  $('#share-view .lbl').textContent = t.shareView;
+  $('#share-view').title = t.shareViewHint;
+  $('#share-view').setAttribute('aria-label', t.shareView);
   $('#tag-mod').textContent = t.tagMod;
   $('#op-label').textContent = t.overlayOpacity;
   $('#op-unit').textContent = t.overlayOpacityUnit;
@@ -91,6 +97,17 @@ async function main(): Promise<void> {
   fillStaticText();
   renderIntro($('#card'));
 
+  // What the address asks for, read before anything rewrites it: a view to open at, and a list
+  // of places someone shared. Both are then taken off the address, so that a reload does not ask
+  // again and the replaceState that follows every selection (which keeps the query) stays clean.
+  const wantedView = readViewState();
+  const sharedIds = decodeIds(new URLSearchParams(location.search).get('stars') ?? '');
+  if (sharedIds.length || Object.keys(wantedView).length) {
+    history.replaceState(null, '', `${location.pathname}${withoutView()}`);
+  }
+
+  const stars = new Stars();
+
   let placesFile: PlacesFile, gcpsFile: GcpsFile;
   const overlayTilesP = loadOverlayTiles();
   try {
@@ -118,6 +135,12 @@ async function main(): Promise<void> {
     query: '',
     types: new Set<string>(),
     unsure: false,
+    /** Showing only the visitor's own starred places. */
+    starred: false,
+    /** Places a link shared, while they are being shown. Never merged into the visitor's own
+     *  list without being asked: `null` once the question has been answered either way. */
+    shared: null as { set: Set<string>; ids: string[]; unknown: number } | null,
+    sharedBanner: false,
     selected: null as Entry | null,
     lastSelected: null as Entry | null, // stays highlighted in the list after Back
     listScroll: 0,                      // list scroll position when the card opened
@@ -158,13 +181,17 @@ async function main(): Promise<void> {
     chipsEl.innerHTML =
       `<button type="button" class="chip" data-chip="all">${esc(t.chipAll)}</button>` +
       chipTypes.map((k) => `<button type="button" class="chip" data-chip="type" data-type="${esc(k)}">${esc(t.typeChips[k] ?? typeLabel(k))} <span class="n">${counts.get(k)}</span></button>`).join('') +
-      (unsureCount ? `<button type="button" class="chip chip-unsure" data-chip="unsure">${esc(t.chipUnsure)} <span class="n">${unsureCount}</span></button>` : '');
+      (unsureCount ? `<button type="button" class="chip chip-unsure" data-chip="unsure">${esc(t.chipUnsure)} <span class="n">${unsureCount}</span></button>` : '') +
+      // Starred is a filter like any other; it appears here as well as in the count line, and
+      // only once there is something to filter by.
+      (stars.size ? `<button type="button" class="chip chip-starred" data-chip="starred">★ ${esc(t.chipStarred)} <span class="n">${stars.size}</span></button>` : '');
     markChips();
   }
   function markChips(): void {
     chipsEl.querySelectorAll<HTMLButtonElement>('button.chip').forEach((c) => {
       const on = c.dataset.chip === 'all' ? state.types.size === 0
         : c.dataset.chip === 'type' ? state.types.has(c.dataset.type ?? '')
+        : c.dataset.chip === 'starred' ? state.starred
         : state.unsure;
       c.classList.toggle('on', on);
     });
@@ -179,6 +206,7 @@ async function main(): Promise<void> {
       if (state.types.has(k)) state.types.delete(k);
       else state.types.add(k);
     } else if (b.dataset.chip === 'unsure') state.unsure = !state.unsure;
+    else if (b.dataset.chip === 'starred') setStarredView(!state.starred);
     markChips();
     updateFiltersBtn();
     if (state.selected) closeCard(false);
@@ -189,7 +217,7 @@ async function main(): Promise<void> {
   const filtersBtn = $<HTMLButtonElement>('#filters-btn');
   const filtersEl = $('#filters');
   function updateFiltersBtn(): void {
-    const n = state.types.size + (state.unsure ? 1 : 0);
+    const n = state.types.size + (state.unsure ? 1 : 0) + (state.starred ? 1 : 0);
     filtersBtn.innerHTML = `${esc(n ? t.filtersActive(n) : t.filters)} <span class="caret" aria-hidden="true">▾</span>`;
     filtersBtn.classList.toggle('active', n > 0);
   }
@@ -209,38 +237,264 @@ async function main(): Promise<void> {
 
   // ---------- results ----------
   function filterActive(): boolean {
-    return !!state.query.trim() || state.types.size > 0 || state.unsure;
+    return !!state.query.trim() || state.types.size > 0 || state.unsure || state.starred || !!state.shared?.ids.length;
   }
 
   function resultHtml(e: Entry): string {
     const p = e.place;
     const m = modernText(p);
     const second = p.status ? statusLabel(p.status).toLowerCase() : typeLabel(p.type);
+    const on = stars.has(p.id);
+    // A place from someone else's link is not yours until you say so: its star is drawn hollow,
+    // in the paler gold, and only a click makes it yours.
+    const fromLink = !on && !!state.shared?.set.has(p.id);
     return `<div class="result${(state.selected ?? state.lastSelected) === e ? ' sel' : ''}" data-id="${esc(p.id)}" role="option">` +
       `<span class="dot ${statusClass(p.status)}"></span>` +
       `<span class="old">${esc(e.title)}${p.flag === 'unsure' ? ' <span class="q" title="' + esc(t.unsureBadge) + '">?</span>' : ''}</span>` +
+      `<button type="button" class="star${on ? ' on' : fromLink ? ' from-link' : ''}" aria-pressed="${on}" ` +
+      `aria-label="${esc(on ? t.unstarRow(e.title) : t.starRow(e.title))}">${on ? '★' : '☆'}</button>` +
       `<span class="mod"><span class="${m.placeholder ? 'placeholder' : ''}">${esc(m.text)}</span> · ${esc(second)}</span></div>`;
   }
 
   /** `keepScroll`: same results, new language; leave the list where it is. */
   function refresh(keepScroll = false): void {
+    const shared = state.shared;
     const filter = (p: Entry['place']) =>
-      (state.types.size === 0 || state.types.has(p.type)) && (!state.unsure || p.flag === 'unsure');
+      (state.types.size === 0 || state.types.has(p.type)) && (!state.unsure || p.flag === 'unsure') &&
+      (!state.starred || stars.has(p.id)) && (!shared?.ids.length || shared.set.has(p.id));
     state.results = index.search(state.query, filter).map((r) => byId.get(r.place.id) as Entry);
-    const countText = t.count(state.results.length, total);
-    $('#count').textContent = countText;
+    const countText = shared?.ids.length ? t.sharedCount(state.results.length) : t.count(state.results.length, total);
+    renderCount(countText);
     listEl.innerHTML = state.results.length
       ? state.results.map(resultHtml).join('')
-      : `<p class="empty">${esc(t.noResults)}</p>`;
+      : `<p class="empty">${esc(state.starred ? t.starsEmpty : t.noResults)}</p>`;
     if (!keepScroll) listEl.scrollTop = 0;
+    renderStarsBar();
     maps.setFilter(state.results, filterActive());
     if (state.view === 'table') table.update(state.results, state.selected?.place.id ?? null, countText);
   }
 
   listEl.addEventListener('click', (ev) => {
-    const r = (ev.target as HTMLElement).closest('.result') as HTMLElement | null;
-    if (r?.dataset.id) select(r.dataset.id, { fly: true });
+    const target = ev.target as HTMLElement;
+    const r = target.closest('.result') as HTMLElement | null;
+    if (!r?.dataset.id) return;
+    // The star belongs to the row but is not a way into it.
+    if (target.closest('.star')) {
+      toggleStar(r.dataset.id);
+      return;
+    }
+    select(r.dataset.id, { fly: true });
   });
+
+  // ---------- starred places ----------
+  // The list itself lives in stars.ts (this browser's own storage). Here is everything that
+  // shows it: the way in from the count line, the bar under the list, and the banner a shared
+  // link opens with. Nothing is sent anywhere; a link is the only thing that travels.
+
+  const countEl = $('#count');
+  const starsBarEl = $('#stars-bar');
+  const sharedEl = $('#shared');
+  let qrOpen = false;
+  let confirmingClear = false;
+
+  function renderCount(text: string): void {
+    countEl.innerHTML = esc(text) +
+      (stars.size
+        ? `<span class="starsw"><button type="button" class="stars-link${state.starred ? ' on' : ''}" ` +
+          `aria-pressed="${state.starred}" title="${esc(t.starsFilterHint)}">${esc(t.starsFilter(stars.size))}</button></span>`
+        : '');
+  }
+
+  /** Show only the visitor's own places, or go back to all of them. A shared list is a different
+   *  question, so it is put down first. */
+  function setStarredView(on: boolean): void {
+    state.starred = on;
+    qrOpen = false;
+    confirmingClear = false;
+    if (on) {
+      state.shared = null;
+      state.sharedBanner = false;
+      renderSharedBanner();
+    }
+  }
+
+  function starsView(on: boolean): void {
+    setStarredView(on);
+    markChips();
+    updateFiltersBtn();
+    if (state.selected) closeCard(false);
+    refresh();
+  }
+
+  countEl.addEventListener('click', (ev) => {
+    if ((ev.target as HTMLElement).closest('.stars-link')) starsView(!state.starred);
+  });
+
+  /** The link to the starred list, in the language the visitor is reading. */
+  function starsUrl(): string {
+    const q = new URLSearchParams(withoutView().replace(/^\?/, ''));
+    const code = stars.code();
+    if (code) q.set('stars', code);
+    const s = q.toString();
+    return `${location.origin}${mapBase()}${s ? `?${s}` : ''}`;
+  }
+
+  function renderStarsBar(): void {
+    const show = state.starred && stars.size > 0;
+    starsBarEl.hidden = !show;
+    if (!show) {
+      starsBarEl.innerHTML = '';
+      return;
+    }
+    const n = stars.size;
+    const url = starsUrl();
+    let qr = '';
+    if (qrOpen) {
+      let svg = '';
+      try {
+        svg = qrSvg(url, t.starsQrAlt);
+      } catch {
+        // A list too long for a symbol: the link itself still works, so show only that.
+      }
+      qr = `<div class="handoff">${svg}<div class="side2">` +
+        (svg ? `<span class="lbl">${esc(t.starsQrLead)}</span>` : '') +
+        `<span class="urlbox">${esc(url)}</span>` +
+        `<span>${esc(t.starsPrivacy(n))}</span></div></div>`;
+    }
+    starsBarEl.innerHTML =
+      '<div class="acts">' +
+      `<button type="button" class="act" data-act="copy"><span class="ic" aria-hidden="true">⤴</span><span>${esc(t.starsCopy(n))}</span></button>` +
+      `<button type="button" class="act${qrOpen ? ' starred' : ''}" data-act="qr" aria-expanded="${qrOpen}">` +
+      `<span class="ic" aria-hidden="true">▣</span><span>${esc(qrOpen ? t.starsHandoffHide : t.starsHandoff)}</span></button>` +
+      (confirmingClear
+        ? `<span class="ask">${esc(t.starsClearAsk(n))}` +
+          ` <button type="button" class="act danger" data-act="clear-yes">${esc(t.starsClearYes)}</button>` +
+          ` <button type="button" class="act" data-act="clear-no">${esc(t.starsClearNo)}</button></span>`
+        : `<button type="button" class="act danger" data-act="clear">${esc(t.starsClear)}</button>`) +
+      '</div>' + qr +
+      `<p class="note">${esc(stars.blocked ? t.starsBlocked : t.starsNote)}</p>`;
+  }
+
+  starsBarEl.addEventListener('click', async (ev) => {
+    const b = (ev.target as HTMLElement).closest('[data-act]') as HTMLElement | null;
+    if (!b) return;
+    const act = b.dataset.act;
+    if (act === 'copy') {
+      flash(b, (await copyText(starsUrl())) ? t.copied : t.copyFailed);
+    } else if (act === 'qr') {
+      qrOpen = !qrOpen;
+      renderStarsBar();
+    } else if (act === 'clear') {
+      confirmingClear = true;
+      renderStarsBar();
+    } else if (act === 'clear-no') {
+      confirmingClear = false;
+      renderStarsBar();
+    } else if (act === 'clear-yes') {
+      confirmingClear = false;
+      stars.clear();
+      starsView(false);
+    }
+  });
+
+  function renderSharedBanner(): void {
+    const sh = state.shared;
+    const show = !!sh && state.sharedBanner;
+    sharedEl.hidden = !show;
+    if (!show || !sh) {
+      sharedEl.innerHTML = '';
+      return;
+    }
+    const n = sh.ids.length;
+    // A link whose places are all unknown here says so and offers nothing: an id that cannot be
+    // resolved must not be made to look resolved.
+    sharedEl.innerHTML =
+      `<button type="button" class="x" data-act="dismiss" aria-label="${esc(t.sharedDismiss)}" title="${esc(t.sharedDismiss)}">×</button>` +
+      (n ? `<strong>${esc(t.sharedTitle(n))}</strong> ${esc(t.sharedAsk(n))}` : `<strong>${esc(t.sharedNone(sh.unknown))}</strong>`) +
+      (n && sh.unknown ? ` <span class="muted">${esc(t.sharedUnknown(sh.unknown))}</span>` : '') +
+      (n
+        ? '<div class="acts">' +
+          `<button type="button" class="act primary" data-act="add">${esc(t.sharedAdd(n))}</button>` +
+          `<button type="button" class="act" data-act="look">${esc(t.sharedLook)}</button>` +
+          '</div>'
+        : '');
+  }
+
+  sharedEl.addEventListener('click', (ev) => {
+    const b = (ev.target as HTMLElement).closest('[data-act]') as HTMLElement | null;
+    const sh = state.shared;
+    if (!b || !sh) return;
+    if (b.dataset.act === 'add') {
+      // Merge, never replace: what is already starred here stays starred, so following the same
+      // link twice changes nothing and nobody's list is overwritten by someone else's.
+      state.shared = null;
+      state.sharedBanner = false;
+      state.starred = true;
+      const added = stars.addAll(sh.ids);
+      flash(b, added ? t.sharedAdded(added) : t.sharedAlready);
+      renderSharedBanner();
+      markChips();
+      updateFiltersBtn();
+      refresh();
+    } else if (b.dataset.act === 'look') {
+      state.sharedBanner = false;
+      renderSharedBanner();
+    } else {
+      state.shared = null;
+      state.sharedBanner = false;
+      renderSharedBanner();
+      updateFiltersBtn();
+      refresh();
+    }
+  });
+
+  // One place decides what a change to the list redraws: the dots on both maps, the chips, the
+  // count line, the list and the bar under it.
+  stars.onChange(() => {
+    maps.setStarred((id) => stars.has(id));
+    renderChips();
+    updateFiltersBtn();
+    refresh(true);
+  });
+  maps.setStarred((id) => stars.has(id));
+
+  function toggleStar(id: string): void {
+    stars.toggle(id);
+  }
+
+  // ---------- sharing ----------
+
+  $('#share-view').addEventListener('click', (ev) => {
+    const b = ev.currentTarget as HTMLElement;
+    const q = viewQuery(maps.getView());
+    void shareLink({
+      url: `${location.origin}${mapBase()}${q ? `?${q}` : ''}`,
+      title: t.siteTitle,
+      anchor: b,
+      copied: t.copied,
+      failed: t.copyFailed,
+    });
+  });
+
+  function sharePlace(e: Entry, anchor: HTMLElement): void {
+    void shareLink({
+      url: `${location.origin}${langBase()}place/${encodeURIComponent(e.place.id)}/`,
+      title: `${e.place.modern ?? e.place.old} · ${t.siteName}`,
+      anchor,
+      copied: t.copied,
+      failed: t.copyFailed,
+    });
+  }
+
+  /** What the card's two buttons do for a place. */
+  function cardActions(e: Entry) {
+    return {
+      onClose: () => closeCard(true),
+      onStar: () => stars.toggle(e.place.id),
+      onShare: (btn: HTMLElement) => sharePlace(e, btn),
+      starred: stars.has(e.place.id),
+    };
+  }
 
   // ---------- search box ----------
   const q = $<HTMLInputElement>('#q');
@@ -294,7 +548,7 @@ async function main(): Promise<void> {
     item?.classList.add('sel');
     app.classList.toggle('has-sel', !!e);
     if (e) {
-      renderCard(cardEl, e, T, state.results.length, () => closeCard(true));
+      renderCard(cardEl, e, T, state.results.length, cardActions(e));
       if (!wasOpen) mobile.cardOpened();
       history.replaceState(null, '', `${langBase()}place/${encodeURIComponent(e.place.id)}/${location.search}`);
       document.title = `${e.place.modern ?? e.place.old} · Paris 1550`;
@@ -391,6 +645,10 @@ async function main(): Promise<void> {
     state.query = '';
     state.types.clear();
     state.unsure = false;
+    setStarredView(false);
+    state.shared = null;
+    state.sharedBanner = false;
+    renderSharedBanner();
     markChips();
     updateFiltersBtn();
     setView('map');
@@ -446,13 +704,14 @@ async function main(): Promise<void> {
     fillStaticText();
     renderChips();
     updateFiltersBtn();
+    renderSharedBanner();
     const listScroll = listEl.scrollTop;
     refresh(true);
     listEl.scrollTop = listScroll;
     const e = state.selected;
     if (e) {
       const cardScroll = cardEl.scrollTop;
-      renderCard(cardEl, e, T, state.results.length, () => closeCard(true));
+      renderCard(cardEl, e, T, state.results.length, cardActions(e));
       cardEl.scrollTop = cardScroll;
     } else {
       renderIntro(cardEl);
@@ -467,9 +726,42 @@ async function main(): Promise<void> {
     maps.relabel();
   };
 
+  // ---------- what the address asked for ----------
+
+  /** A shared view: the mode, which way up, where and how far in. Each part is optional. */
+  function applyWantedView(): void {
+    const v = wantedView;
+    const camera = hasCamera(v) && !initial; // a place in the address decides the camera itself
+    if (v.mode) setMode(v.mode);
+    if (v.orientation === 'original') {
+      state.orientation = 'original';
+      markOrientation();
+      maps.setOrientation('original', !camera);
+    }
+    if (v.opacity !== undefined) {
+      op.value = String(Math.round(v.opacity));
+      maps.setOpacity(v.opacity / 100);
+    }
+    if (v.swipe !== undefined) setSwipe(v.swipe);
+    if (camera && v.center && v.zoom !== undefined) maps.jumpToView(v.center, v.zoom, v.bearing ?? 0);
+  }
+
+  /** A shared list: shown, and offered — never merged into this browser's own list unasked. */
+  function applySharedLink(): void {
+    if (!sharedIds.length) return;
+    const known = sharedIds.filter((id) => byId.has(id));
+    state.shared = { set: new Set(known), ids: known, unknown: sharedIds.length - known.length };
+    state.sharedBanner = true;
+    renderSharedBanner();
+    updateFiltersBtn();
+  }
+
   // ---------- go ----------
+  applyWantedView();
+  applySharedLink();
   refresh();
   if (initial) select(initial.place.id, { fly: true, instant: true });
+  else if (state.shared?.ids.length) maps.fitTo(state.results);
 
   // Warn (once) when the tile pyramid has not been generated.
   fetch(`${BASE}tiles/old/meta.json`, { cache: 'no-cache' })

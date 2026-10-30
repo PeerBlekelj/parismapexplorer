@@ -24,6 +24,7 @@ import {
 } from './oldPlane';
 import { lngLatToMerc, mercToLngLat, type PixelGeoTransform } from './transform';
 import type { Vec2 } from './types';
+import type { ViewState } from './viewstate';
 
 export type Mode = 'side' | 'overlay' | 'old' | 'mod';
 export type Orientation = 'north' | 'original';
@@ -98,6 +99,20 @@ const OLD_MAX_ZOOM = TILE_MAX_ZOOM + 0.8;
 /** Zoom (old map) from which all places are drawn as small rings. */
 const OLD_DOTS_ZOOM = 11.2;
 const MOD_DOTS_ZOOM = 15.3;
+/** Starred places: the gold of `--star` in style.css, which paint properties cannot read. */
+const STAR = '#946d10';
+
+/**
+ * A zoom ramp whose stops differ for a starred place: `[zoom, plain, starred]` each.
+ *
+ * The per-place choice goes INSIDE each stop because a zoom-based `interpolate` may not be
+ * nested in another expression — wrapping the ramp in a `case` makes MapLibre reject the whole
+ * paint property, and the layer is then never added at all (silently, except in the console).
+ */
+function starRamp(stops: [number, number, number][]): unknown[] {
+  return ['interpolate', ['linear'], ['zoom'],
+    ...stops.flatMap(([z, plain, star]) => [z, ['case', ['get', 'starred'], star, plain]])];
+}
 
 export interface MapCallbacks {
   onPick(id: string, source: Which): void;
@@ -114,6 +129,7 @@ export class MapView {
   private entries: Entry[];
   private candidates: Entry[];
   private filterActive = false;
+  private isStarred: (id: string) => boolean = () => false;
   private selected: Entry | null = null;
   private syncing = false;
   private anchor: Vec2 = [0, 0];
@@ -317,11 +333,27 @@ export class MapView {
     this.hideTooltip();
   }
 
-  setOrientation(o: Orientation): void {
+  /** `animate` is false when a camera is about to be set anyway (a shared view link carries its
+   *  own bearing, and a turn under it would only fight the jump). */
+  setOrientation(o: Orientation, animate = true): void {
     this.orientation = o;
+    if (!animate) return;
     const p = this.primary();
     if (p === 'old') this.old.easeTo({ bearing: this.targetOldBearing(), duration: 700 });
     else this.mod.easeTo({ bearing: this.targetModBearing(), duration: 700 });
+  }
+
+  /** Bring a set of places into view: a shared list opens on what it shares. */
+  fitTo(entries: Entry[]): void {
+    if (!entries.length || this.mod.getContainer().offsetWidth === 0) return;
+    let w = Infinity, s = Infinity, e = -Infinity, n = -Infinity;
+    for (const en of entries) {
+      w = Math.min(w, en.geo[0]); e = Math.max(e, en.geo[0]);
+      s = Math.min(s, en.geo[1]); n = Math.max(n, en.geo[1]);
+    }
+    if (!Number.isFinite(w) || !Number.isFinite(s)) return;
+    this.mod.fitBounds([[w, s], [e, n]], { padding: 60, maxZoom: 16.5, duration: 0 });
+    this.syncFrom('mod');
   }
 
   /** Back to the start: nothing selected, north up, the whole sheet in view. The caller has
@@ -467,15 +499,30 @@ export class MapView {
     this.refreshDots('mod');
   }
 
+  /** Tell the maps which places are the visitor's own, and redraw. */
+  setStarred(isStarred: (id: string) => boolean): void {
+    this.isStarred = isStarred;
+    this.refreshDots('old');
+    this.refreshDots('mod');
+  }
+
   private dotsData(which: Which): FeatureCollection {
+    // Starred places go last so their larger gold ring is drawn over the catalogue's dots.
+    const order = [...this.candidates].sort(
+      (a, b) => Number(this.isStarred(a.place.id)) - Number(this.isStarred(b.place.id)));
     return {
       type: 'FeatureCollection',
       // On the old map a place can have several labels (alsoLL); each gets its own dot.
-      features: this.candidates.flatMap((e) =>
+      features: order.flatMap((e) =>
         (which === 'old' ? [e.oldLL, ...e.alsoLL] : [e.geo]).map((c) => ({
           type: 'Feature' as const,
           geometry: { type: 'Point' as const, coordinates: c },
-          properties: { id: e.place.id, status: statusClass(e.place.status), kind: e.geoKind },
+          properties: {
+            id: e.place.id,
+            status: statusClass(e.place.status),
+            kind: e.geoKind,
+            starred: this.isStarred(e.place.id),
+          },
         }))),
     };
   }
@@ -484,25 +531,31 @@ export class MapView {
     const map = which === 'old' ? this.old : this.mod;
     if (map.getSource('places')) return;
     map.addSource('places', { type: 'geojson', data: this.dotsData(which) });
-    const colour = ['match', ['get', 'status'], 'vanished', '#8a6d4a', 'unknown', '#6b5a48', '#a63a1f'];
+    const plain = ['match', ['get', 'status'], 'vanished', '#8a6d4a', 'unknown', '#6b5a48', '#a63a1f'];
+    // A starred place is the only mark on either map that is the visitor's own, so it is gold
+    // rather than the catalogue's red, and a size larger.
+    const colour = ['case', ['get', 'starred'], STAR, plain];
     if (which === 'old') {
       map.addLayer({
         id: 'dots', type: 'circle', source: 'places',
         paint: {
-          'circle-radius': ['interpolate', ['linear'], ['zoom'], 9, 3, 12, 5, 14, 7],
-          'circle-color': 'rgba(0,0,0,0)',
+          'circle-radius': starRamp([[9, 3, 4.4], [12, 5, 7.3], [14, 7, 10.2]]) as never,
+          'circle-color': ['case', ['get', 'starred'], 'rgba(255,246,221,0.6)', 'rgba(0,0,0,0)'] as never,
           'circle-stroke-color': colour as never,
-          'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 9, 1.5, 13, 2.5],
+          'circle-stroke-width': starRamp([[9, 1.5, 2.2], [13, 2.5, 3.6]]) as never,
         },
       });
     } else {
       map.addLayer({
         id: 'dots', type: 'circle', source: 'places',
         paint: {
-          'circle-radius': ['interpolate', ['linear'], ['zoom'], 12, 3, 17, 6],
-          'circle-color': ['case', ['==', ['get', 'kind'], 'estimated'], 'rgba(255,250,240,0.6)', colour] as never,
+          'circle-radius': starRamp([[12, 3, 4.4], [17, 6, 8.7]]) as never,
+          'circle-color': ['case',
+            ['get', 'starred'], 'rgba(255,246,221,0.85)',
+            ['==', ['get', 'kind'], 'estimated'], 'rgba(255,250,240,0.6)',
+            plain] as never,
           'circle-stroke-color': colour as never,
-          'circle-stroke-width': 1.5,
+          'circle-stroke-width': ['case', ['get', 'starred'], 2.2, 1.5] as never,
         },
       });
     }
@@ -514,10 +567,39 @@ export class MapView {
     const src = map.getSource('places') as GeoJSONSource | undefined;
     if (!src) return;
     src.setData(this.dotsData(which));
+    if (!map.getLayer('dots')) return;
     const z0 = which === 'old' ? OLD_DOTS_ZOOM : MOD_DOTS_ZOOM;
-    const op = this.filterActive ? 0.9 : ['interpolate', ['linear'], ['zoom'], z0 - 0.6, 0, z0, 0.85];
+    // The catalogue's dots fade out where the labels would collide; a starred place keeps its
+    // ring at every zoom, so the visitor's own places stay findable while moving around.
+    const op = this.filterActive
+      ? ['case', ['get', 'starred'], 1, 0.9]
+      : starRamp([[z0 - 0.6, 0, 1], [z0, 0.85, 1]]);
     map.setPaintProperty('dots', 'circle-stroke-opacity', op as never);
     map.setPaintProperty('dots', 'circle-opacity', op as never);
+  }
+
+  // ---------- the camera, as something that fits in an address ----------
+
+  /** Everything "Share view" needs: the modern camera (real coordinates), and the rest of the
+   *  map area's state. The old map follows from it through the transform. */
+  getView(): ViewState {
+    const c = this.mod.getCenter();
+    return {
+      mode: this.mode,
+      orientation: this.orientation,
+      center: [c.lng, c.lat],
+      zoom: this.mod.getZoom(),
+      bearing: this.mod.getBearing(),
+      opacity: Math.round(this.opacity * 100),
+      swipe: Math.round(this.swipe),
+    };
+  }
+
+  /** Put the cameras where a shared link asks. The modern map leads, because that is the one
+   *  whose coordinates the link carries; the old map and the overlay follow. */
+  jumpToView(center: Vec2, zoom: number, bearing = 0): void {
+    this.mod.jumpTo({ center, zoom, bearing, pitch: 0 });
+    this.syncFrom('mod');
   }
 
   // ---------- picking places by pointer ----------
