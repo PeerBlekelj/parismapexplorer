@@ -2,6 +2,50 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-30 (10:30) — 73 claims checked; three corrections live; the poem question answered
+
+**The verification branch is merged and deployed** (main b102e3f). A cloud session opened and read the
+sources behind the claims that had only ever been seen as search extracts: **73 claims — 57 confirmed,
+9 partly, 4 contradicted, 3 unverified** (`data/research/quote_verification.md`). It stayed inside
+`data/research/`, so the site edits below were made here.
+
+**The four contradicted:**
+1. **The Senat brochure quotation does not exist.** `corrozet.md` attributed to it a sentence about
+   Corrozet patronising the plan's edition. All 12 pages carry a text layer and contain no "plan de
+   Bale", no "patronne", no "annexe". Kept in the notes WITH the contradiction recorded, on the owner's
+   call — a deleted bad citation gets re-added by the next person who finds the same extract. Not cited
+   on the site.
+2. **fr.wikipedia's 1553 sentence is not unsourced.** It carries two notes, one naming "Gilles
+   Corrozet, editeur" outright, and cites Vergneault-Belmont 2008 p. 168. The site said "we have found
+   no source for it". **Corrected in en/fr/sv** — it now names the study and says it is modern, not a
+   document of the time.
+3. Lazare's "actes de 1290, 1330, 1352 et 1406" are his **Verderet** entry, a different street 400 m
+   from **Verdelet**.
+4. Mathoniere was installed at the Corne de Daim in **1557**, not 1577 (fr.wikipedia's date is
+   internally impossible — it also has him dying in 1572).
+
+**Two more site corrections, deployed:**
+- The poem is at **pp. 64-67** of Lacroix 1874, not 64-68; p. 68 opens the Epigramme and the Blason,
+  which the texts page does not transcribe. Confirmed from a SECOND copy (Internet Archive
+  `lafleurdesantiqu00corr`, whose OCR keeps the running heads), its edition checked on its own title page.
+- **Truschet died about 1561-1564** (Lepape), not "by 1575". The 1575 date came from the archbishop's
+  censier still carrying his name, which Grivel reads as an error. The page now says both.
+
+**Two traps worth keeping:** fr.wikipedia's *Rue Verderet* article **conflates two Lazare entries**, so
+do NOT "correct" L0421 to match it — Lazare and the Archives nationales support what we have. And
+*History of Cartography* **disagrees with itself**: ch. 48 (Pelletier) dates the map 1550, ch. 53
+(Hofmann) ca. 1553. Never cite "HOC" for a date without the chapter.
+
+**The standing question is answered: the 1550 *Antiquitez* does NOT print the poem.** Vision OCR (458
+of 459 pages, $0.69) took it from 2 pages of text to 439. The *Louenges de Paris* is absent — *propices*,
+*gentillesse*, *singularite*, *instaurateur*, *descripture*, *exquise* all return nothing — as are the
+acrostic and the Epigramme. The book prints only the **Blason des armes**, front matter, scan p. 21,
+ending PLVS QVE MOINS. So the 14-gates/120-councillors question does not arise, and the updated figures
+appear in neither book: not in the 1532 *Fleur* (old numbers), not here (no poem). **The updating was
+done for the map.** Full note: `data/research/library_verification.md`.
+
+Checked live after the deploy: 9 routes 200, all three corrections present in en/fr/sv, old wording gone.
+
 ## 2026-10-30 (09:00) — Cousin corrected on the live site; the 1550 Antiquitez is in the library
 
 - **The about page overstated its own source.** It said "around 1572 the image-maker Nicolas Prevost
