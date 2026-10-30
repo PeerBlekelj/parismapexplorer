@@ -2,6 +2,31 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-30 (09:00) — Cousin corrected on the live site; the 1550 Antiquitez is in the library
+
+- **The about page overstated its own source.** It said "around 1572 the image-maker Nicolas Prevost
+  printed there", cited to Cousin. Cousin 1875 (scan p. 61) says: "La maison du Chef Saint-Denis, sans
+  doute liquidee apres la mort de Truschet, appartient alors a Nicolas Prevost." Ownership, not
+  printing. Corrected in en/fr/sv and DEPLOYED (main 737923d, prebuilt, `--archive=tgz`); checked live
+  on all three, old wording gone. Cousin's "toute une colonie d'imagiers" supports the other half of
+  the sentence, so that stayed. Found by the cloud session, verified here against the library.
+- **A flagged citation turned out to be right.** `web/texts/index.html` cites the poem in Lacroix 1874
+  at pp. 64-68; this log said 102-106. Rendered the page: printed page number 64, running head LES
+  ANTIQUITEZ. The site is right, 102-106 are Gallica VIEWER pages, offset 38. Cite printed pages.
+- **The 1550 first edition of the Antiquitez is in the library** (ark bpt6k1527257k, 459 pages),
+  confirmed from its own title page, not the catalogue: "LES ANTIQVITEZ ... 1550. A PARIS, Au Palais,
+  en la boutique de Gilles Corrozet." Two things follow: Corrozet's shop at the Palais is now on a
+  primary source (and is NOT the rue Montorgueil shop the open question is about); and the book is
+  dedicated to "Claude Guiot ... preuost des marchans de la ville de Paris", the same man the
+  Registres t. 3 show being sent to the King in Dec 1549 and reporting back 13 Jan 1550.
+- The poem question is still open: the scan is image-only, so Vision OCR is running (459 pages, $0.69).
+  The earlier "ends at FIN, no poem" was against the **1561** edition.
+- Notes in `data/research/library_verification.md` — deliberately a new file, because the cloud session
+  is editing `print_shop.md` and `corrozet.md` on `verify-research-quotes` at the same time.
+- Open: "by 1575 Truschet was dead" (cited to [9], not Cousin) is still unverified; the cloud session
+  is checking it. Cousin only infers Truschet's death, hedged with "sans doute", from the signatures
+  vanishing by about 1572.
+
 ## 2026-10-29 (13:20) — the ten coordinates are live
 
 - Merged `wrong-site-coordinates` into main (merge 61a73aa) and deployed. The 28 Oct fix had been
