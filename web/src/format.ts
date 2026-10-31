@@ -44,6 +44,22 @@ export function statusClass(status: string | null): string {
   return ['standing', 'rebuilt', 'renamed', 'vanished'].includes(status) ? status : 'unknown';
 }
 
+/** The class that marks an entry in the list, the table and on the map. */
+export function markClass(p: Place): string {
+  return p.type === 'inscription' ? 'inscription' : statusClass(p.status);
+}
+
+/** The sheet's own words and devices, which have no place on the ground. */
+export function isInscription(p: Place): boolean {
+  return p.type === 'inscription';
+}
+
+/** How an inscription is titled: the text as printed, or -- for a device that carries none --
+ *  its name, which is translated rather than transcribed. */
+export function inscriptionTitle(p: Place): string {
+  return p.printed === false ? t.deviceNames[p.id] ?? p.old : displayOld(p.old);
+}
+
 export function hasKnownPosition(p: Place): boolean {
   return typeof p.lat === 'number' && typeof p.lon === 'number' && Number.isFinite(p.lat) && Number.isFinite(p.lon);
 }

@@ -1,0 +1,15 @@
+id,old,modern,status,lat,lon,loc_confidence,id_confidence,duplicate_of,register,history_fr,sources,note,check,printed,texts_anchor
+L0471,LA VILLE CITE VNIVERSITE DE PARIS,,,,,,high,,,,,the title banderole across the top of the sheet,,yes,title
+L0472,Arms of France,,,,,,high,,,,,"crowned shield, three fleurs-de-lis, ringed by a collar of scallop shells; no printed text",,no,arms
+L0473,Arms of Paris,,,,,,high,,,,,a ship under a chief of fleurs-de-lis; no printed text,,no,arms
+L0474,Three interlaced crescents,,,,,,high,,,,,"King Henri II's emblem, between the arms of France and Subsolanus; no printed text",,no,arms
+L0475,A POEM IN PRAISE OF PARIS,,,,,,high,,,,,108 lines in two panels; the second panel is also_px,,yes,poem
+L0476,THE PUBLISHERS' NOTICE,,,,,,high,,,,,"Icy est le vray pourtraict naturel de la ville, cite, vniuersite...",,yes,notice
+L0477,BIBL. PUBL. BASILEENSIS,,,,,,high,,,,,"the Basel library's oval stamp, bottom-left corner",,yes,basel
+L0478,A POEM IN PRAISE OF PARIS,,,,,,high,L0475,,,,the second panel of the poem,,yes,poem
+L0161,,,,,,,high,,,,,wind name (east),,yes,winds
+L0162,,,,,,,high,,,,,quarter (east),,yes,winds
+L0163,,,,,,,high,,,,,wind name (south),,yes,winds
+L0164,,,,,,,high,,,,,quarter (north),,yes,winds
+L0165,,,,,,,high,,,,,quarter (west),,yes,winds
+L0166,,,,,,,high,,,,,wind name (west),,yes,winds

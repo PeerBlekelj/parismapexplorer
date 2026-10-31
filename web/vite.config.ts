@@ -26,6 +26,8 @@ const TEXTS = ['texts', 'fr/texts', 'sv/texts'];
 interface Place {
   id: string;
   old: string;
+  type?: string;
+  printed?: boolean;
   modern: string | null;
   status: string | null;
   summary: string | null;
@@ -136,20 +138,25 @@ function sitePages(): Plugin {
         write({ lang: l, title: s.siteTitle, desc: s.siteDesc, path: 'map/', image: `${SITE}/og/site.jpg`, alt: s.siteImageAlt });
       }
       for (const p of places) {
+        // A wordless device (the two coats of arms, the king's crescents) is named rather than
+        // transcribed, and the name is translated -- so the static page gets the right one too,
+        // for a link shared before the app has run.
+        const named = p.type === 'inscription' && p.printed === false;
         const old = tidy(p.old);
         const path = `place/${p.id}/`;
         const image = haveOg && existsSync(resolve(outDir, `og/${p.id}.jpg`)) ? `${SITE}/og/${p.id}.jpg` : `${SITE}/og/site.jpg`;
         for (const l of LANGS) {
           const s = STRINGS[l];
+          const name = named ? s.deviceNames[p.id] ?? old : old;
           const modern = p.modern ? localModernIn(p.modern, s) : null;
-          const title = modern && modern.toLowerCase() !== old.toLowerCase()
-            ? `${old} (${modern}) · ${NAME}`
-            : `${old} · ${NAME}`;
-          const lead = s.placeLead(p.old, p.status, modern);
+          const title = !named && modern && modern.toLowerCase() !== old.toLowerCase()
+            ? `${name} (${modern}) · ${NAME}`
+            : `${name} · ${NAME}`;
+          const lead = s.placeLead(named ? name : p.old, p.status, modern);
           // The translated summary, or the English one where there is none yet.
           const summary = (l === 'fr' ? p.summary_fr : l === 'sv' ? p.summary_sv : null) || p.summary;
           const desc = clip(summary ? `${lead} ${summary}` : lead, 200);
-          write({ lang: l, title, desc, path, image, alt: s.placeImageAlt(p.old) });
+          write({ lang: l, title, desc, path, image, alt: s.placeImageAlt(named ? name : p.old) });
         }
         paths.push(path);
       }

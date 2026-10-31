@@ -2,7 +2,10 @@
 
 export type PlaceType =
   | 'street' | 'church_religious' | 'college' | 'building' | 'gate_wall'
-  | 'bridge' | 'square_market' | 'village_faubourg' | 'other';
+  | 'bridge' | 'square_market' | 'village_faubourg' | 'other'
+  /** The sheet's own words and devices: the title, the quarters and winds, the arms, the poem,
+   *  the publishers' notice, the Basel stamp. Ink on the paper, with no place on the ground. */
+  | 'inscription';
 
 export type Status = 'standing' | 'rebuilt' | 'renamed' | 'vanished';
 export type LocConfidence = 'exact' | 'approx' | 'uncertain';
@@ -29,6 +32,11 @@ export interface Place {
   summary_sv?: string | null;
   variants: string[];
   sources: Source[];
+  /** Inscriptions only. `printed` is false for a device that carries no text (the two coats of
+   *  arms, the king's crescents), whose `old` is therefore a name and not a reading. `texts` is
+   *  the part of the texts page that explains it. */
+  printed?: boolean;
+  texts?: string | null;
 }
 
 export interface PlacesFile {

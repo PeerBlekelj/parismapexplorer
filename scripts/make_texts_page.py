@@ -746,8 +746,15 @@ def lines(rows, lg, start=1, cls="verse"):
     return f'        <div class="{cls}">\n{head}\n{rows_html}\n        </div>'
 
 
-def items(xs):
-    return "\n".join(f"          <li>{x}</li>" for x in xs)
+def items(xs, ids=()):
+    """`ids` gives the items their own anchors, so a place card on the map can link straight to
+    the sentence that explains it (web/src/card.ts, type `inscription`)."""
+    return "\n".join(f'          <li{f' id="{ids[i]}"' if i < len(ids) else ""}>{x}</li>'
+                     for i, x in enumerate(xs))
+
+
+# the order of OTHER, and the `texts_anchor` column of data/places_inscriptions.csv
+OTHER_IDS = ("title", "winds", "arms", "basel")
 
 
 def figure(name, alt, cap):
@@ -816,7 +823,7 @@ def page(lg):
       <section id="other">
         <h2>{s['h_other']}</h2>
         <ul class="notes">
-{items(OTHER[lg])}
+{items(OTHER[lg], OTHER_IDS)}
         </ul>
       </section>
 

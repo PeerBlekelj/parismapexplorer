@@ -83,6 +83,9 @@ figure a { display: block; cursor: zoom-in; }
 }
 .notes li, .sources li { font-size: 17.5px; line-height: 1.55; margin-bottom: 10px; }
 .notes b { font-weight: 500; }
+/* arrived from a place card on the map: show which sentence was meant */
+.notes li:target { background: #fdf3d6; box-shadow: 0 0 0 6px #fdf3d6; border-radius: 2px; }
+section:target > h2 { text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 6px; }
 .sources { font-family: var(--sans); }
 .sources li { font-size: 14px; }
 

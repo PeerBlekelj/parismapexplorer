@@ -1,8 +1,8 @@
 // Sortable table of places. Uses the same filtered result set as the sidebar list.
 
-import { esc, statusClass, statusLabel, typeLabel } from './format';
+import { esc, isInscription, statusClass, statusLabel, typeLabel } from './format';
 import { t } from './i18n';
-import { modernText, type Entry } from './model';
+import { displayTitle, modernText, type Entry } from './model';
 import { norm } from './search';
 
 type SortKey = 'id' | 'old' | 'modern' | 'type' | 'status' | 'reading' | 'star';
@@ -82,7 +82,7 @@ export class PlaceTable {
       case 'old': return norm(p.old);
       case 'modern': return p.modern ? norm(p.modern) : '￿'; // placeholders sort last
       case 'type': return typeLabel(p.type);
-      case 'status': return p.status ? statusLabel(p.status) : '￿';
+      case 'status': return isInscription(p) ? '￿' : p.status ? statusLabel(p.status) : '￿';
       case 'reading': return p.flag === 'unsure' ? '0' : '1';
       case 'star': return this.stars.isStarred(p.id) ? '0' : '1'; // starred first
     }
@@ -104,11 +104,11 @@ export class PlaceTable {
       const on = this.stars.isStarred(p.id);
       return `<tr data-id="${esc(p.id)}"${p.id === this.selectedId ? ' class="sel"' : ''}>
         <td class="sr"><button type="button" class="star${on ? ' on' : ''}" aria-pressed="${on}"
-          aria-label="${esc(on ? t.unstarRow(e.title) : t.starRow(e.title))}">${on ? '★' : '☆'}</button></td>
-        <td class="o">${esc(e.title)}</td>
+          aria-label="${esc(on ? t.unstarRow(displayTitle(e)) : t.starRow(displayTitle(e)))}">${on ? '★' : '☆'}</button></td>
+        <td class="o">${esc(displayTitle(e))}</td>
         <td class="m"><span${m.placeholder ? ' class="placeholder"' : ''}>${esc(m.text)}</span><span class="m-type"> · ${esc(typeLabel(p.type))}</span></td>
         <td class="ty">${esc(typeLabel(p.type))}</td>
-        <td class="st"><span class="badge ${statusClass(p.status)}">${esc(statusLabel(p.status))}</span></td>
+        <td class="st">${isInscription(p) ? '' : `<span class="badge ${statusClass(p.status)}">${esc(statusLabel(p.status))}</span>`}</td>
         <td class="rd">${p.flag === 'unsure' ? `<span class="badge unsure">${esc(t.unsureBadge)}</span>` : ''}</td>
         <td class="id">${esc(p.id)}</td>
       </tr>`;

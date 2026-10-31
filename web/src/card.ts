@@ -2,9 +2,9 @@
 // "not researched yet" and is shown with a neutral placeholder, never as absent or negative.
 
 import { drawCrop } from './crop';
-import { esc, fmtLat, fmtLon, safeUrl, statusClass, statusLabel, summaryFor, typeLabel } from './format';
+import { esc, fmtLat, fmtLon, isInscription, safeUrl, statusClass, statusLabel, summaryFor, typeLabel } from './format';
 import { langBase, t } from './i18n';
-import { modernText, type Entry } from './model';
+import { displayTitle, modernText, type Entry } from './model';
 import type { PixelGeoTransform } from './transform';
 
 const REPO = 'https://github.com/PeerBlekelj/parismapexplorer';
@@ -19,7 +19,7 @@ function correctionUrl(e: Entry): string {
     `Status: ${statusLabel(p.status)}`,
     `Link: ${SITE}/place/${p.id}/`,
   ].join('\n');
-  const q = new URLSearchParams({ template: 'correction.yml', title: `Correction: ${p.id} ${e.title}`, place_id: p.id, place });
+  const q = new URLSearchParams({ template: 'correction.yml', title: `Correction: ${p.id} ${displayTitle(e)}`, place_id: p.id, place });
   return `${REPO}/issues/new?${q}`;
 }
 
@@ -42,13 +42,17 @@ function paintStar(btn: HTMLElement, on: boolean): void {
   btn.innerHTML = `<span class="ic" aria-hidden="true">${on ? '★' : '☆'}</span><span>${esc(on ? t.starred : t.star)}</span>`;
 }
 
-// `backCount` is the number of places in the list the card was opened over; the back link and
-// the × both call `actions.onClose`, which returns to that list.
-export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, backCount: number, actions: CardActions): void {
+// `backTo` is how the count line describes the list the card was opened over; the back link and
+// the × both call `actions.onClose`, which returns to it.
+export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, backTo: string, actions: CardActions): void {
   const p = e.place;
   const m = modernText(p);
   const unsure = p.flag === 'unsure';
   const gone = p.status === 'vanished';
+  // An inscription is ink on the sheet: it has no modern name, no status and nowhere to stand,
+  // so the card drops those rows rather than filling them with placeholders, and points at the
+  // part of the texts page that explains it.
+  const insc = isInscription(p);
 
   let posToday: string;
   if (e.geoKind === 'estimated') {
@@ -78,14 +82,14 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, back
 
   el.innerHTML = `
     <article class="card">
-      <button class="card-back" type="button">${esc(t.backToList(backCount))}</button>
+      <button class="card-back" type="button">${esc(t.backToList(backTo))}</button>
       <button class="card-close" type="button" aria-label="${esc(t.cardClose)}" title="${esc(t.cardClose)}">×</button>
       <div class="kicker">${esc(typeLabel(p.type))}
-        <span class="badge ${statusClass(p.status)}">${esc(statusLabel(p.status))}</span>
+        ${insc ? '' : `<span class="badge ${statusClass(p.status)}">${esc(statusLabel(p.status))}</span>`}
         ${unsure ? `<span class="badge unsure">${esc(t.unsureBadge)}</span>` : ''}
       </div>
-      <h2>${esc(e.title)}</h2>
-      <div class="modname">${esc(t.today)}${esc(t.colon)}<span class="${m.placeholder ? 'placeholder' : ''}">${esc(m.text)}</span></div>
+      <h2${p.printed === false ? ' class="named"' : ''}>${esc(displayTitle(e))}</h2>
+      ${insc ? '' : `<div class="modname">${esc(t.today)}${esc(t.colon)}<span class="${m.placeholder ? 'placeholder' : ''}">${esc(m.text)}</span></div>`}
       <div class="actions">
         <button type="button" class="act star-btn"></button>
         <button type="button" class="act share-btn" title="${esc(t.sharePlaceHint)}">
@@ -96,16 +100,21 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, back
         <figcaption>${esc(t.cropCaption)}</figcaption>
       </figure>
       <dl>
-        <dt>${esc(t.onMapAs)}</dt><dd>${esc(t.quote(p.old))}</dd>
-        ${p.note ? `<dt>${esc(t.transcription)}</dt><dd>${esc(p.note)}</dd>` : ''}
-        <dt>${esc(t.reading)}</dt><dd>${esc(unsure ? t.readingUnsure : t.readingOk)}</dd>
-        <dt>${esc(t.variants)}</dt><dd>${variants}</dd>
+        ${p.printed === false
+          ? `<dt>${esc(t.inscriptionAbout)}</dt><dd>${esc(t.inscriptionNoText)}</dd>`
+          : `<dt>${esc(t.onMapAs)}</dt><dd>${esc(t.quote(p.old))}</dd>`}
+        ${p.note && !insc ? `<dt>${esc(t.transcription)}</dt><dd>${esc(p.note)}</dd>` : ''}
+        ${insc ? '' : `<dt>${esc(t.reading)}</dt><dd>${esc(unsure ? t.readingUnsure : t.readingOk)}</dd>`}
+        ${insc ? '' : `<dt>${esc(t.variants)}</dt><dd>${variants}</dd>`}
         <dt>${esc(t.pos1550)}</dt><dd>${esc(t.pxFmt(e.px[0], e.px[1]))}</dd>
-        <dt>${esc(t.posToday)}</dt><dd class="pos">${posToday}</dd>
+        ${insc ? '' : `<dt>${esc(t.posToday)}</dt><dd class="pos">${posToday}</dd>`}
         <dt>${esc(t.id)}</dt><dd><a href="${langBase()}place/${encodeURIComponent(p.id)}/" class="permalink">${esc(p.id)}</a> · <span class="muted">${esc(t.link)}</span></dd>
       </dl>
       ${sum ? `<p class="summary"${sum.lang ? ` lang="${sum.lang}"` : ''}>${esc(sum.text)}</p>` : `<p class="summary placeholder">${esc(t.noSummary)}</p>`}
-      <div class="src">${esc(t.sources)}${esc(t.colon)}${links || `<span class="placeholder">${esc(t.noSources)}</span>`}</div>
+      ${insc && p.texts
+        ? `<p class="reads"><a href="${langBase()}texts/#${esc(p.texts)}">${esc(t.inscriptionRead)} \u2192</a></p>`
+        : ''}
+      ${insc && !links ? '' : `<div class="src">${esc(t.sources)}${esc(t.colon)}${links || `<span class="placeholder">${esc(t.noSources)}</span>`}</div>`}
       <p class="suggest"><a href="${esc(correctionUrl(e))}" target="_blank" rel="noopener" title="${esc(t.suggestCorrectionHint)}">${esc(t.suggestCorrection)}</a></p>
     </article>`;
 
