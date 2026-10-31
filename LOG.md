@@ -2,6 +2,55 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-31 (19:30) — 190 longer descriptions, written by Gemini through the gateway
+
+The brief and the batches did not need a human in the middle: the mini's **LiteLLM gateway**
+(`localhost:4000`, see the llm-gateway notes) takes them straight to Gemini.
+`scripts/run_detail_gemini.py` sends the brief plus one batch and saves the reply;
+`scripts/ingest_detail.py` checks it and writes the ones that pass.
+
+**190 details in `data/research/details.csv`**, 40–141 words, median 72, out of 277 asked for.
+**79 came back `null`** — the model's own judgement that the source adds nothing over the summary,
+which is what the brief asks for and is the right answer for a street the register describes in one
+line. Nothing is wired into the site yet.
+
+**The checks did real work.** Two findings worth keeping:
+
+1. **The model alters a quotation while asserting it is verbatim.** For L0018 it returned a `used`
+   span reading *"l'édifice le plus **sinister** de Paris"*; the source reads *sinistre*. It did this
+   **twice, in two independent passes**, after being told not to retype or correct spans. One letter
+   — but a model that quietly anglicises a word inside a quotation will quietly move a date. The
+   check stayed strict and **L0018 has no detail**; its summary is complete without one.
+2. **A style rule in a prompt is a hope; a check is a guarantee.** The brief forbids opening with
+   "Located in…". Ten of 197 did exactly that, and three leaked markdown into a plain-text field.
+   Both are mechanically detectable, so both are now checks in `ingest_detail.py` rather than
+   sentences in the brief.
+
+**Model**: `gemini/gemini-3.5-flash`. `gemini-2.5-pro` is **retired** by Google ("no longer available
+to new users"), `gemini-3.1-pro-preview` is over quota on this key, and `gemini-3.8-flash` and
+`gemini-flash-latest` both answered **503**. The gateway advertises 88 Gemini models; several of them
+the API will not serve.
+
+**Cost**: **$3.17** for 29 calls — 152k tokens in, 330k out. The output is large because thinking
+tokens are billed.
+
+**Two gateway notes**: `litellm_session_id` works (these are tagged `paris1550-detail-batch-NN` in
+`LiteLLM_SpendLogs`), but **`GET /spend/logs?start_date=…` returned 0 rows while Postgres held 123**
+— its date filter is broken, not just `/global/spend/report`. Query the container's Postgres directly
+(`docker exec litellm-postgres psql -U litellm -d litellm`).
+
+**Open:**
+- **7 details are pulled and awaiting a rewrite** (L0118, L0145, L0176, L0191, L0204, L0443, L0444):
+  they opened with "Located…" and were removed from details.csv; the daily Gemini quota ran out
+  mid-rewrite. Resume with
+  `scripts/run_detail_gemini.py . work/detail/batch-NN.json --retry work/detail/failed-style-NN.json`
+  for batches 03, 04, 05 and 11, then ingest.
+- **The checks guarantee provenance, not editorial fit.** A spot-read found L0118 (Saint-Eustache)
+  drifting into the life of the saint rather than the church on the map — sourced, but off the point.
+  The 190 want a read before they are shown.
+- Still to build: `detail` through `build_places.py` into places.json and the data contract, and the
+  disclosure on the card. French and Swedish after the English is reviewed.
+
 ## 2026-10-31 (17:05) — a brief and a validator for the longer descriptions (option B)
 
 Option B — a written `detail` behind a disclosure on the card, not the raw French extract — is the

@@ -3,7 +3,8 @@
     ../.venv/bin/python scripts/ingest_detail.py . work/detail/returned-01.json
     ../.venv/bin/python scripts/ingest_detail.py . work/detail/returned-01.json --write
 
-Reports every failure and ingests nothing unless --write is given and nothing failed. The point of
+Reports every failure. With --write it ingests the entries that passed and names the ones that did
+not, so one bad entry in a batch of 25 does not hold up the other 24. The point of
 the checks is that a longer text written from a source can be held to that source mechanically:
 
   * every `used` span must appear verbatim in that place's source_fr (accents and all);
@@ -89,7 +90,14 @@ for i, r in enumerate(got):
         bad('reads as a restatement of the short description')
     if 'http' in detail:
         bad('contains a URL')
-    if not any(p.startswith(pid) for p in problems):
+    # Style rules the brief states and the model does not reliably keep. A rule in a prompt is a
+    # hope; a check is a guarantee.
+    if re.match(r'^(located|situated|nestled|set )', detail, re.I):
+        bad(f'opens with {detail.split(",")[0][:40]!r} — the brief forbids this opener')
+    md = re.search(r'(\*[^*]+\*|_[^_]+_|\[[^\]]+\]\(|`)', detail)
+    if md:
+        bad(f'contains markdown ({md.group(0)[:30]!r}); the field is plain text')
+    if not any(p.startswith(pid + ':') for p in problems):
         ok.append((pid, detail, r.get('notes', '')))
 
 print(f'{returned.name}: {len(got)} returned, {len(ok)} clean, {len(problems)} problem(s)\n')
@@ -104,11 +112,24 @@ nulls = [i for i, d, _ in ok if d is None]
 if nulls:
     print(f'\n  {len(nulls)} returned null (source too thin): {", ".join(nulls)}')
 
-if problems:
-    sys.exit(f'\n{len(problems)} problem(s). Nothing written; send the failures back for another pass.')
+# The failures, machine-readable, so run_detail_gemini.py --retry can send them back with the
+# reason each one was refused instead of asking for the whole batch again.
+fail_p = root / 'work/detail' / f'failed-{returned.stem.replace("returned-", "")}.json'
+by_id = {}
+for p in problems:
+    pid, _, why = p.partition(': ')
+    by_id.setdefault(pid, []).append(why)
+if by_id:
+    fail_p.parent.mkdir(parents=True, exist_ok=True)
+    json.dump(by_id, open(fail_p, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    print(f'\n  failures written to {fail_p}')
+elif fail_p.exists():
+    fail_p.unlink()
+
 if not write:
-    print('\nAll clean. Re-run with --write to append to data/research/details.csv.')
-    sys.exit(0)
+    print('\nRe-run with --write to append the clean ones to data/research/details.csv.'
+          if problems else '\nAll clean. Re-run with --write to append to data/research/details.csv.')
+    sys.exit(1 if problems else 0)
 
 out = root / 'data/research/details.csv'
 have = set()
@@ -125,3 +146,7 @@ with open(out, 'a', encoding='utf-8', newline='') as f:
             w.writerow({'id': pid, 'detail': detail})
             added += 1
 print(f'\nwrote {added} to {out}')
+if problems:
+    failed = sorted({p.split(':')[0] for p in problems})
+    print(f'{len(failed)} id(s) still need another pass: {", ".join(failed)}')
+    sys.exit(1)
