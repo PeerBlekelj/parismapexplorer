@@ -2,6 +2,45 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-31 (16:10) — every place has a description
+
+**0 places without one**, in all three languages (was 20 without any description, and 22 without a
+French or Swedish one). `scripts/check_coverage.py` reports the gaps and now **fails** if a place
+has no description; the other gaps it reports and allows, because a null there means "not researched
+yet", which is a legitimate state.
+
+**What the 20 were**: mostly vanished mansions, hospitals and chapels — Lostel Dangoulesme, Lostel
+Dargent, Lotel de Nevers, Lotel de Rims, Lopital S. Gerves, Les Audriettes, S. Bon, La Chapelle de
+Braques — plus two colleges, two gates, a tennis court, a mill, a crossroads and two streets.
+
+**Four of them turned out to be properly researchable** and now cite the article the words came
+from: the **Haudriettes** (founded by Étienne Haudry and his wife Jeanne, chapel licensed by
+Philippe le Bel in 1306, moved to the rue Saint-Honoré in 1622 as the Sisters of the Assumption);
+**Saint-Bon** (on the site of an older Sainte-Colombe, suppressed 1790); the **Tour du Bois** (where
+Charles V's wall met the Seine, by the present pont du Carrousel); and the **chapelle de Braque**
+(Arnould de Braque, 1348, in the street that still carries the name). The **collège de Bayeux**
+already had its article and now uses it.
+
+**The rest say what is and is not known.** For a vanished hôtel that Cousin's table attests and
+nothing else does, the description says so in as many words rather than inventing a history or
+leaving a blank. Two conflation traps are written into the text so a later reader does not fall in:
+L0009 is **not** the hôtel d'Angoulême-Lamoignon (begun 1584), L0027 is **not** the hôtel de Nevers
+on the Monnaie site (1580s), L0196 is a different Braque from L0047, and L0421 is **not** the rue
+Verderet that fr.wikipedia describes — the trap this log recorded on 2026-10-30.
+
+**A lead worth chasing, in OPEN_QUESTIONS.md**: the map marks LE MOULIN DE LA MONNOIE on the Seine
+just west of the Cité. Henri II sent to Augsburg for the screw press in **1550** and Aubin Olivier's
+*Monnaie du Moulin des Étuves*, at the west end of the Cité, was authorised in **July 1553**. If the
+mill on the sheet is that works it bears on the map's contested date — but nothing here establishes
+it, and the place's own description says so.
+
+**Still open**: 6 places carry no source at all (L0031, L0083, L0133, L0202, L0217, L0224 — none is
+in Cousin's table under a name the pairing recognised); 24 labels have an unsure reading; 6 places
+are not identified and not marked vanished. All listed by the coverage check.
+
+**Owner's call**: longer descriptions behind a disclosure on the card — a written `detail` field,
+not the raw French source extract — are wanted, but **later**.
+
 ## 2026-10-31 (14:20) — the sheet's own inscriptions are on the map
 
 The four quarter words, the two named winds, the title banderole, the two coats of arms, the king's
