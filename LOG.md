@@ -31,7 +31,11 @@ switch travels in a shared view link as `&d=0`.
 starred row, under the pointer, or always where there is no pointer — as in the sidebar list.
 
 **Checking**: `scripts/check_map_controls.py <url>` (the strip at twelve widths, the halo, the switch,
-the column); `scripts/check_stars.py <url>` as before. Both green on the preview build.
+the column); `scripts/check_stars.py <url>` as before.
+
+**All of it is DEPLOYED** (main 79f09b1, prebuilt, `--archive=tgz`). Both check scripts run green
+against `https://paris1550.vercel.app`, and the nine routes, the data, the sitemap, the OG images, both
+tile pyramids and the old domain's 308 were checked after the deploy.
 
 **Open:** the direction banners (SEPTENTRIONES, ORIENS, the winds), the arms, the Basel stamp, the poem
 and the publishers' notice are **not in the gazetteer** — 0 of 457 rows. Their explanations already
