@@ -41,7 +41,11 @@ marks the sentence you were sent to. The texts page is long and its images settl
 corrects the jump over about a second — that is the browser, not the link.
 
 **Checking**: `scripts/check_inscriptions.py <url>` (24 assertions, mostly absences — what must *not*
-appear on an inscription's card or on the modern map). All three suites green on the preview build.
+appear on an inscription's card or on the modern map).
+
+**DEPLOYED** (main 62b7b8e, prebuilt, `--archive=tgz`). All three suites green against
+`https://paris1550.vercel.app`; the routes, the data, the sitemap (1422 urls), the OG images (471,
+regenerated for the new ids) and the old domain's 308 checked after the deploy.
 
 **Open**: the French and Swedish summaries for the 13 are drafted here, not reviewed, like the rest of
 the translations.
