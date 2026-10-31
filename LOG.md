@@ -38,6 +38,9 @@ it, and the place's own description says so.
 in Cousin's table under a name the pairing recognised); 24 labels have an unsure reading; 6 places
 are not identified and not marked vanished. All listed by the coverage check.
 
+**DEPLOYED** (main, prebuilt, `--archive=tgz`); all three browser suites green against
+`https://paris1550.vercel.app`, and a filled entry checked live in its page metadata.
+
 **Owner's call**: longer descriptions behind a disclosure on the card — a written `detail` field,
 not the raw French source extract — are wanted, but **later**.
 
