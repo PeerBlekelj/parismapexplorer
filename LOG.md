@@ -2,6 +2,40 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-31 (17:05) — a brief and a validator for the longer descriptions (option B)
+
+Option B — a written `detail` behind a disclosure on the card, not the raw French extract — is the
+owner's choice, for later. The handover package is ready now so the writing can be done elsewhere.
+
+**`data/research/DETAIL_BRIEF.md`** is what goes to the model with each batch: what the site is,
+the house voice with two worked examples, the 80–160 word range, and the rule the whole thing turns
+on — *every factual statement must be supported by the `source_fr` supplied with that place*, with
+`null` an explicitly welcome answer when the source is thin. It carries the four traps this project
+has already fallen into (two streets with one name; the later building of the same name; an
+administrative extract dressed up as a history; a year nobody read).
+
+**`scripts/make_detail_batches.py`** writes `work/detail/batch-NN.json`: **277 places in 12 batches**
+of 25, grouped by type so a batch keeps one voice. Only places whose French extract runs to 200
+characters or more are included — below that the extract says no more than the summary already does,
+and asking for a longer text would be asking for invention. (414 places have an extract at all; 137
+of those are too short to be worth it.)
+
+**The part that makes it checkable**: the model must return, with each text, `used` — short spans
+**copied verbatim** from that place's source, one per factual claim. `scripts/ingest_detail.py` then
+holds the text to the source mechanically: every span must appear verbatim (accents and typographic
+variants normalised), **every four-digit year in the text must appear in the source or the summary**,
+`added_beyond_source` must be empty, the length must be in range, and the text must not read as a
+restatement of the summary. Nothing is ingested unless the whole batch is clean.
+
+Tested against five deliberately broken returns — a fabricated year, a span that is not in the
+source, context added from the model's own knowledge, an unknown id, and short texts — and all nine
+expected failures fired; the one clean entry passed and wrote. The test rows were then removed, so
+`data/research/details.csv` does not exist until real work lands.
+
+**Still to build when the texts come back**: `detail` through `build_places.py` into places.json and
+the data contract, and the disclosure on the card. French and Swedish are a separate pass after the
+English is reviewed.
+
 ## 2026-10-31 (16:10) — every place has a description
 
 **0 places without one**, in all three languages (was 20 without any description, and 22 without a
