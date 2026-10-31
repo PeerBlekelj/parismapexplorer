@@ -2,6 +2,50 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-31 (14:20) — the sheet's own inscriptions are on the map
+
+The four quarter words, the two named winds, the title banderole, the two coats of arms, the king's
+crescents, the poem, the publishers' notice and the Basel stamp: **13 inscriptions**, each with a mark
+on the 1550 sheet, a card that explains it, and a link into the part of `/texts/` that covers it.
+
+**Six of them were already read.** `labels_inventory.csv` had SUBSOLANUS, ORIENS, AUSTER,
+SEPTENTRIONES, OCCIDENS and FAVONIUS as type `decoration` (L0161–L0166) and `build_places.py` then
+threw them away. The other seven were found on `mockups/overview.jpg` (2400 px wide, 4.5375 scan px
+per overview px) and their positions read off a grid drawn in scan coordinates; the mapping was
+checked against SUBSOLANUS's known position before any of them were trusted. New ids L0471–L0478.
+
+**They are a type, not a status.** `inscription` reaches the app as its own type, and the app treats
+it as ink on paper rather than a place:
+- `geoKind: 'sheet'` — no position on the ground, not even an estimated one. They are **not drawn on
+  the modern map** and cannot be picked there; they never anchor the two maps to each other, and a
+  shared list's fit ignores them.
+- The card drops the rows that would otherwise be filled with placeholders: no "Today", no status
+  badge, no "Position today". It keeps "Position (1550)" and adds **Read it on the texts page →**.
+- The list and the table say **"Printed on the map"** where a place says what is there today — an
+  inscription was never missing a modern name.
+- `t.count` still says **457 places**; the 13 are counted separately in the same line ("457 places ·
+  13 inscriptions"), so neither number is inflated. The back link quotes that same wording instead of
+  counting "places" of a list that is not all places.
+- The **poem is one thing in two panels**: the second is `also_px`, which was already the mechanism
+  for a place labelled twice, so both panels are clickable and open the same card.
+
+**Three of them carry no words at all** — the two coats of arms and the crescents. Their `old` is a
+name, not a reading, so `printed: no` in the data; the card sets the title in italic rather than as
+small-caps, says "A device, not a text: it carries no words", and the name is translated
+(`deviceNames` in strings.ts, and in `vite.config.ts` so a shared link's title is right before the app
+has run).
+
+**Anchors**: `make_texts_page.py` now gives the four items of "Other words on the map" their own ids
+(`title`, `winds`, `arms`, `basel`); `poem` and `notice` were already section ids. A `li:target` rule
+marks the sentence you were sent to. The texts page is long and its images settle late, so the browser
+corrects the jump over about a second — that is the browser, not the link.
+
+**Checking**: `scripts/check_inscriptions.py <url>` (24 assertions, mostly absences — what must *not*
+appear on an inscription's card or on the modern map). All three suites green on the preview build.
+
+**Open**: the French and Swedish summaries for the 13 are drafted here, not reviewed, like the rest of
+the translations.
+
 ## 2026-10-31 (11:40) — the QR a camera can read; stronger marks with a switch; starred in the table
 
 **The QR was never wrong — it was too small.** Reported as "the QR sharing isn't working". A decoder

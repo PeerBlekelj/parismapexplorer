@@ -14,7 +14,8 @@ The app reads two static files. They are **generated** by `scripts/build_places.
       "id": "L0123",              // permanent; safe for URLs (#place=L0123)
       "old": "S. CHRISTOFLE",     // label as printed (normalised spelling of letters, not modernised)
       "type": "church_religious", // street | church_religious | college | building | gate_wall |
-                                  // bridge | square_market | village_faubourg | other
+                                  // bridge | square_market | village_faubourg | other |
+                                  // inscription (see below)
       "px": [6430, 3665],         // label position in source-image pixels (x right, y down)
       "also_px": [[6420, 3900]],  // other labels naming the same place (duplicates); [] if none
       "orient": "h",              // label direction on the map: h | v | d (diagonal)
@@ -33,6 +34,23 @@ The app reads two static files. They are **generated** by `scripts/build_places.
   ]
 }
 ```
+
+### `type: "inscription"`
+
+The sheet's own words and devices: the title banderole, the quarter and wind names, the two coats
+of arms, the king's crescents, the poem, the publishers' notice, the Basel library stamp. They are
+ink on the paper, not somewhere you can stand, and they carry two extra fields:
+
+```jsonc
+"printed": true,   // false for a device with no text: `old` is then a NAME we give it, not a
+                   // reading, and the app translates it (deviceNames in src/strings.ts)
+"texts": "winds"   // which part of /texts/ explains it: title | winds | arms | basel |
+                   // poem | notice
+```
+
+An inscription has `modern`, `status`, `lat`, `lon` and `loc_confidence` all null, and the app must
+**not** estimate a modern position for it, show it on the modern map, or describe it as "not
+identified yet": there is nothing to identify. The app counts them apart from the 457 places.
 
 `summary_fr` / `summary_sv` are translations of `summary` from `data/research/summaries_fr.csv` and
 `summaries_sv.csv`; show the one for the current language and fall back to `summary`.

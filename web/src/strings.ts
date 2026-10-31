@@ -58,7 +58,9 @@ const en = {
 
   // card
   cardClose: 'Close',
-  backToList: (n: number) => `← Back to ${n} ${n === 1 ? 'place' : 'places'}`,
+  // `what` is the count line's own wording, so the link never says "places" of a list that
+  // also holds the sheet's inscriptions.
+  backToList: (what: string) => `← Back to ${what}`,
   intro: 'Search for a place, pick one from the list, or click a label on either map.',
   introNote: 'Every name printed on the 1550 map is listed. Identifications and descriptions are still being added and checked.',
   notIdentified: 'Not identified yet',
@@ -114,6 +116,7 @@ const en = {
     square_market: 'Square or market',
     village_faubourg: 'Village or faubourg',
     other: 'Other',
+    inscription: 'Inscription on the map',
   } as Record<string, string>,
   typeChips: {
     church_religious: 'Churches',
@@ -125,6 +128,7 @@ const en = {
     square_market: 'Squares & markets',
     village_faubourg: 'Villages',
     other: 'Other',
+    inscription: 'Inscriptions',
   } as Record<string, string>,
 
   // table
@@ -185,6 +189,20 @@ const en = {
   dotsToggle: 'Places',
   dotsToggleShort: 'Places',
   dotsToggleHint: 'Show or hide the marks on the places. Your starred ones stay.',
+  // the sheet's own words and devices (type 'inscription')
+  onTheSheet: 'Printed on the map',
+  inscriptionsCount: (n: number) => `${n} inscription${n === 1 ? '' : 's'}`,
+  inscriptionNoText: 'A device, not a text: it carries no words.',
+  inscriptionRead: 'Read it on the texts page',
+  inscriptionAbout: 'What it is',
+  inscriptionKicker: 'On the sheet',
+  // The two coats of arms and the king's crescents carry no printed text, so their title is a
+  // name we give them rather than a reading, and it is translated like any other UI string.
+  deviceNames: {
+    L0472: 'Arms of France',
+    L0473: 'Arms of Paris',
+    L0474: "Henri II's crescents",
+  } as Record<string, string>,
   colStarred: 'Starred',
   chipStarred: 'Starred',
   starsEmpty: 'Nothing starred yet. The ☆ on a place keeps it here.',
@@ -286,7 +304,7 @@ const fr: Strings = {
   tilesMissing: 'Les tuiles du plan ancien sont absentes. Lancez scripts/make_old_tiles.py.',
 
   cardClose: 'Fermer',
-  backToList: (n: number) => (n > 1 ? `← Retour aux ${n} lieux` : '← Retour à la liste'),
+  backToList: (what: string) => `← Retour à la liste\u00a0: ${what}`,
   intro: 'Cherchez un lieu, choisissez-en un dans la liste, ou cliquez sur un nom sur l’une des deux cartes.',
   introNote: 'Tous les noms imprimés sur le plan de 1550 sont répertoriés. Les identifications et les descriptions sont encore en cours d’ajout et de vérification.',
   notIdentified: 'Pas encore identifié',
@@ -343,6 +361,7 @@ const fr: Strings = {
     square_market: 'Place ou marché',
     village_faubourg: 'Village ou faubourg',
     other: 'Autre',
+    inscription: 'Inscription du plan',
   } as Record<string, string>,
   typeChips: {
     church_religious: 'Églises',
@@ -354,6 +373,7 @@ const fr: Strings = {
     square_market: 'Places et marchés',
     village_faubourg: 'Villages',
     other: 'Autres',
+    inscription: 'Inscriptions',
   } as Record<string, string>,
 
   colId: 'Id',
@@ -395,6 +415,17 @@ const fr: Strings = {
   dotsToggle: 'Lieux',
   dotsToggleShort: 'Lieux',
   dotsToggleHint: 'Afficher ou masquer les marques sur les lieux. Vos favoris restent.',
+  onTheSheet: 'Imprimé sur le plan',
+  inscriptionsCount: (n: number) => `${n} inscription${n === 1 ? '' : 's'}`,
+  inscriptionNoText: 'Un emblème, et non un texte\u00a0: il ne porte aucun mot.',
+  inscriptionRead: 'À lire sur la page des textes',
+  inscriptionAbout: 'Ce que c’est',
+  inscriptionKicker: 'Sur le plan',
+  deviceNames: {
+    L0472: 'Armes de France',
+    L0473: 'Armes de Paris',
+    L0474: 'Les croissants d’Henri II',
+  } as Record<string, string>,
   colStarred: 'Favoris',
   chipStarred: 'Favoris',
   starsEmpty: 'Aucun favori pour l’instant. L’☆ d’un lieu le garde ici.',
@@ -513,7 +544,7 @@ const sv: Strings = {
   tilesMissing: 'Kartrutorna för den gamla kartan saknas. Kör scripts/make_old_tiles.py.',
 
   cardClose: 'Stäng',
-  backToList: (n: number) => `← Tillbaka till ${n} ${n === 1 ? 'plats' : 'platser'}`,
+  backToList: (what: string) => `← Tillbaka till listan: ${what}`,
   intro: 'Sök efter en plats, välj en i listan eller klicka på ett namn på någon av kartorna.',
   introNote: 'Alla namn som är tryckta på kartan från 1550 finns med. Identifieringar och beskrivningar håller fortfarande på att läggas till och kontrolleras.',
   notIdentified: 'Ännu inte identifierad',
@@ -570,6 +601,7 @@ const sv: Strings = {
     square_market: 'Torg eller marknad',
     village_faubourg: 'By eller förstad',
     other: 'Övrigt',
+    inscription: 'Inskription på kartan',
   } as Record<string, string>,
   typeChips: {
     church_religious: 'Kyrkor',
@@ -581,6 +613,7 @@ const sv: Strings = {
     square_market: 'Torg och marknader',
     village_faubourg: 'Byar',
     other: 'Övrigt',
+    inscription: 'Inskriptioner',
   } as Record<string, string>,
 
   colId: 'Id',
@@ -622,6 +655,17 @@ const sv: Strings = {
   dotsToggle: 'Platser',
   dotsToggleShort: 'Platser',
   dotsToggleHint: 'Visa eller dölj markeringarna på platserna. Dina stjärnmärkta blir kvar.',
+  onTheSheet: 'Tryckt på kartan',
+  inscriptionsCount: (n: number) => `${n} inskription${n === 1 ? '' : 'er'}`,
+  inscriptionNoText: 'Ett emblem, inte en text: det bär inga ord.',
+  inscriptionRead: 'Läs den på textsidan',
+  inscriptionAbout: 'Vad det är',
+  inscriptionKicker: 'På arket',
+  deviceNames: {
+    L0472: 'Frankrikes vapen',
+    L0473: 'Paris vapen',
+    L0474: 'Henrik II:s halvmånar',
+  } as Record<string, string>,
   colStarred: 'Stjärnmärkt',
   chipStarred: 'Stjärnmärkta',
   starsEmpty: 'Inget stjärnmärkt än. ☆ på en plats sparar den här.',

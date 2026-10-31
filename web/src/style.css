@@ -72,6 +72,8 @@ a { color: var(--blue); }
 .dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 5px; background: var(--red); }
 .dot.vanished { background: transparent; border: 2px dashed var(--gone); }
 .dot.unknown { background: #bfae8e; }
+/* the sheet's own words and devices: ink, not one of the catalogue's statuses */
+.dot.inscription { background: transparent; border: 2px solid #3f3327; }
 
 .card-wrap { flex: 0 0 auto; overflow: auto; }
 .app.has-sel .card-wrap { flex: 1 1 auto; min-height: 0; }
@@ -84,6 +86,9 @@ a { color: var(--blue); }
 .card-close:hover { background: var(--paper2); color: var(--ink); }
 .card .kicker { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink2); display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding-right: 28px; }
 .card h2 { font-family: var(--serif); font-weight: 500; font-size: 26px; margin: 6px 0 2px; font-variant: small-caps; line-height: 1.1; }
+/* a device carries no printed words, so its title is a name and is not set as a reading */
+.card h2.named { font-variant: normal; font-style: italic; }
+.card .reads { font-size: 13.5px; margin: 0 0 10px; }
 .card .modname { font-size: 14px; color: var(--ink2); margin-bottom: 12px; }
 .card .modname span:not(.placeholder) { color: var(--ink); }
 .snip { margin: 0; }

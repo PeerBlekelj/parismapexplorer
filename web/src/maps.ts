@@ -15,9 +15,9 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?url';
 import type { FeatureCollection } from 'geojson';
 
-import { esc, statusClass } from './format';
+import { esc, markClass } from './format';
 import { t } from './i18n';
-import { modernText, type Entry } from './model';
+import { displayTitle, modernText, type Entry } from './model';
 import {
   IMAGE_BOUNDS, IMAGE_H, IMAGE_W, PLANE_MERC_M_PER_PX, TILE_MAX_ZOOM, TILE_MIN_ZOOM,
   lngLatToPx, oldZoomForScale, pxToLngLat,
@@ -310,7 +310,7 @@ export class MapView {
   }
 
   private setAnchorFor(e: Entry | null): void {
-    if (e && e.geoKind !== 'estimated') {
+    if (e && e.geoKind !== 'estimated' && e.geoKind !== 'sheet') {
       const real = lngLatToMerc(e.geo), fit = this.T.pxToMerc(e.px);
       this.anchor = [real[0] - fit[0], real[1] - fit[1]];
     } else {
@@ -349,6 +349,7 @@ export class MapView {
     if (!entries.length || this.mod.getContainer().offsetWidth === 0) return;
     let w = Infinity, s = Infinity, e = -Infinity, n = -Infinity;
     for (const en of entries) {
+      if (en.geoKind === 'sheet') continue;
       w = Math.min(w, en.geo[0]); e = Math.max(e, en.geo[0]);
       s = Math.min(s, en.geo[1]); n = Math.max(n, en.geo[1]);
     }
@@ -513,14 +514,16 @@ export class MapView {
       (a, b) => Number(this.isStarred(a.place.id)) - Number(this.isStarred(b.place.id)));
     return {
       type: 'FeatureCollection',
-      // On the old map a place can have several labels (alsoLL); each gets its own dot.
+      // On the old map a place can have several labels (alsoLL); each gets its own dot. The
+      // sheet's own inscriptions are drawn only there: they have no position on the ground, and
+      // a mark for the map's title in the middle of modern Paris would be a lie.
       features: order.flatMap((e) =>
-        (which === 'old' ? [e.oldLL, ...e.alsoLL] : [e.geo]).map((c) => ({
+        (which === 'old' ? [e.oldLL, ...e.alsoLL] : e.geoKind === 'sheet' ? [] : [e.geo]).map((c) => ({
           type: 'Feature' as const,
           geometry: { type: 'Point' as const, coordinates: c },
           properties: {
             id: e.place.id,
-            status: statusClass(e.place.status),
+            status: markClass(e.place),
             kind: e.geoKind,
             starred: this.isStarred(e.place.id),
           },
@@ -546,7 +549,8 @@ export class MapView {
         'circle-stroke-width': 1.5,
       },
     });
-    const plain = ['match', ['get', 'status'], 'vanished', '#8a6d4a', 'unknown', '#6b5a48', '#a63a1f'];
+    const plain = ['match', ['get', 'status'],
+      'vanished', '#8a6d4a', 'unknown', '#6b5a48', 'inscription', '#3f3327', '#a63a1f'];
     // A starred place is the only mark on either map that is the visitor's own, so it is gold
     // rather than the catalogue's red, and a size larger.
     const colour = ['case', ['get', 'starred'], STAR, plain];
@@ -657,6 +661,7 @@ export class MapView {
     let best: Entry | null = null;
     let bd = r * r;
     for (const e of this.candidates) {
+      if (which === 'mod' && e.geoKind === 'sheet') continue;
       for (const ll of which === 'old' ? [e.oldLL, ...e.alsoLL] : [e.geo]) {
         const p = map.project(ll);
         const d = (p.x - x) ** 2 + (p.y - y) ** 2;
@@ -694,7 +699,7 @@ export class MapView {
   private showTooltip(e: Entry, me: MouseEvent): void {
     const m = modernText(e.place);
     this.tooltip.innerHTML =
-      `<span class="tt-old">${esc(e.title)}</span><span class="tt-mod${m.placeholder ? ' placeholder' : ''}">${esc(m.text)}</span>`;
+      `<span class="tt-old">${esc(displayTitle(e))}</span><span class="tt-mod${m.placeholder ? ' placeholder' : ''}">${esc(m.text)}</span>`;
     this.tooltip.style.transform = `translate(${me.clientX + 14}px, ${me.clientY + 12}px)`;
     this.tooltip.hidden = false;
   }

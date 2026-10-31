@@ -8,11 +8,11 @@ import './style.css';
 
 import { renderCard, renderIntro } from './card';
 import { badge } from './badge';
-import { esc, statusClass, statusLabel, typeLabel } from './format';
+import { esc, isInscription, markClass, statusLabel, typeLabel } from './format';
 import { lang, langBase, LANGS, mapBase, setLang, t, type Lang } from './i18n';
 import { loadOverlayTiles, MapView, type Mode, type Orientation } from './maps';
 import { initMobile } from './mobile';
-import { buildEntries, modernText, type Entry } from './model';
+import { buildEntries, displayTitle, modernText, type Entry } from './model';
 import { IMAGE_H, IMAGE_W } from './oldPlane';
 import { SearchIndex } from './search';
 import { copyText, flash, qrSvg, shareLink } from './share';
@@ -130,7 +130,11 @@ async function main(): Promise<void> {
   const entries = buildEntries(placesFile.places ?? [], T);
   const byId = new Map(entries.map((e) => [e.place.id, e]));
   const index = new SearchIndex(entries.map((e) => e.place));
-  const total = entries.length;
+  // "457 places" counts places. The sheet's own inscriptions are listed and searchable with
+  // them, but they are not places and are counted separately, so neither number is inflated.
+  const total = entries.filter((e) => !isInscription(e.place)).length;
+  /** The count line's text, kept so the table view can show the same words. */
+  let countText = '';
 
   // ---------- state ----------
   const state = {
@@ -250,16 +254,17 @@ async function main(): Promise<void> {
   function resultHtml(e: Entry): string {
     const p = e.place;
     const m = modernText(p);
-    const second = p.status ? statusLabel(p.status).toLowerCase() : typeLabel(p.type);
+    const second = isInscription(p) ? typeLabel(p.type)
+      : p.status ? statusLabel(p.status).toLowerCase() : typeLabel(p.type);
     const on = stars.has(p.id);
     // A place from someone else's link is not yours until you say so: its star is drawn hollow,
     // in the paler gold, and only a click makes it yours.
     const fromLink = !on && !!state.shared?.set.has(p.id);
     return `<div class="result${(state.selected ?? state.lastSelected) === e ? ' sel' : ''}" data-id="${esc(p.id)}" role="option">` +
-      `<span class="dot ${statusClass(p.status)}"></span>` +
-      `<span class="old">${esc(e.title)}${p.flag === 'unsure' ? ' <span class="q" title="' + esc(t.unsureBadge) + '">?</span>' : ''}</span>` +
+      `<span class="dot ${markClass(p)}"></span>` +
+      `<span class="old">${esc(displayTitle(e))}${p.flag === 'unsure' ? ' <span class="q" title="' + esc(t.unsureBadge) + '">?</span>' : ''}</span>` +
       `<button type="button" class="star${on ? ' on' : fromLink ? ' from-link' : ''}" aria-pressed="${on}" ` +
-      `aria-label="${esc(on ? t.unstarRow(e.title) : t.starRow(e.title))}">${on ? '★' : '☆'}</button>` +
+      `aria-label="${esc(on ? t.unstarRow(displayTitle(e)) : t.starRow(displayTitle(e)))}">${on ? '★' : '☆'}</button>` +
       `<span class="mod"><span class="${m.placeholder ? 'placeholder' : ''}">${esc(m.text)}</span> · ${esc(second)}</span></div>`;
   }
 
@@ -270,7 +275,13 @@ async function main(): Promise<void> {
       (state.types.size === 0 || state.types.has(p.type)) && (!state.unsure || p.flag === 'unsure') &&
       (!state.starred || stars.has(p.id)) && (!shared?.ids.length || shared.set.has(p.id));
     state.results = index.search(state.query, filter).map((r) => byId.get(r.place.id) as Entry);
-    const countText = shared?.ids.length ? t.sharedCount(state.results.length) : t.count(state.results.length, total);
+    const insc = state.results.filter((e) => isInscription(e.place)).length;
+    const places = state.results.length - insc;
+    countText = shared?.ids.length ? t.sharedCount(state.results.length)
+      // "0 of 457 places · 13 inscriptions" is true but graceless; with no places in the result
+      // the inscriptions are the whole of it.
+      : places === 0 && insc ? t.inscriptionsCount(insc)
+      : t.count(places, total) + (insc ? ` · ${t.inscriptionsCount(insc)}` : '');
     renderCount(countText);
     listEl.innerHTML = state.results.length
       ? state.results.map(resultHtml).join('')
@@ -555,7 +566,7 @@ async function main(): Promise<void> {
     item?.classList.add('sel');
     app.classList.toggle('has-sel', !!e);
     if (e) {
-      renderCard(cardEl, e, T, state.results.length, cardActions(e));
+      renderCard(cardEl, e, T, countText, cardActions(e));
       if (!wasOpen) mobile.cardOpened();
       history.replaceState(null, '', `${langBase()}place/${encodeURIComponent(e.place.id)}/${location.search}`);
       document.title = `${e.place.modern ?? e.place.old} · Paris 1550`;
@@ -566,7 +577,7 @@ async function main(): Promise<void> {
       document.title = t.siteTitle;
     }
     maps.select(e, opts);
-    if (state.view === 'table') table.update(state.results, e?.place.id ?? null, t.count(state.results.length, total));
+    if (state.view === 'table') table.update(state.results, e?.place.id ?? null, countText);
   }
 
   /** Back to the list. `restore` puts the list back where it was (false when the results are
@@ -608,7 +619,7 @@ async function main(): Promise<void> {
       b.classList.toggle('on', on);
       b.setAttribute('aria-selected', String(on));
     });
-    if (view === 'table') table.update(state.results, state.selected?.place.id ?? null, t.count(state.results.length, total));
+    if (view === 'table') table.update(state.results, state.selected?.place.id ?? null, countText);
     else maps.resize();
   }
   document.querySelectorAll<HTMLButtonElement>('.viewtabs button').forEach((b) =>
@@ -732,7 +743,7 @@ async function main(): Promise<void> {
     const e = state.selected;
     if (e) {
       const cardScroll = cardEl.scrollTop;
-      renderCard(cardEl, e, T, state.results.length, cardActions(e));
+      renderCard(cardEl, e, T, countText, cardActions(e));
       cardEl.scrollTop = cardScroll;
     } else {
       renderIntro(cardEl);

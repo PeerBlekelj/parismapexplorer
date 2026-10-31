@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-28T19:35:10+00:00",
+"generated": "2026-10-31T15:59:04+00:00",
 "image": {
 "width": 10890,
 "height": 7820,
@@ -5997,6 +5997,156 @@
 "url": "https://www.wikidata.org/wiki/Q2983807"
 }
 ]
+},
+{
+"id": "L0161",
+"old": "SUBSOLANUS",
+"type": "inscription",
+"px": [
+850,
+170
+],
+"also_px": [],
+"orient": "h",
+"flag": "ok",
+"note": "wind name (east)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": "The east wind, blowing from a head in the top-left corner of the sheet. The map is printed east-up, so the Latin names of the quarters run round the edges in that orientation.",
+"summary_fr": "Le vent d’est, soufflé par une tête dans le coin supérieur gauche. Le plan est imprimé l’est en haut, et les noms latins des points cardinaux suivent cette orientation.",
+"summary_sv": "Östanvinden, blåst av ett huvud i övre vänstra hörnet. Kartan är tryckt med öster uppåt, och de latinska namnen på väderstrecken följer den riktningen.",
+"variants": [],
+"sources": [],
+"printed": true,
+"texts": "winds"
+},
+{
+"id": "L0162",
+"old": "ORIENS",
+"type": "inscription",
+"px": [
+6730,
+80
+],
+"also_px": [],
+"orient": "h",
+"flag": "ok",
+"note": "quarter (east)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": "East. The sheet is printed with east at the top, which is why this word sits above the fields beyond the city rather than at one side.",
+"summary_fr": "L’est. Le plan est imprimé l’est en haut : ce mot se trouve donc au-dessus des champs au-delà de la ville, et non sur un côté.",
+"summary_sv": "Öster. Arket är tryckt med öster uppåt, och därför står ordet ovanför fälten utanför staden i stället för vid en sida.",
+"variants": [],
+"sources": [],
+"printed": true,
+"texts": "winds"
+},
+{
+"id": "L0163",
+"old": "AUSTER",
+"type": "inscription",
+"px": [
+9920,
+140
+],
+"also_px": [],
+"orient": "h",
+"flag": "ok",
+"note": "wind name (south)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": "The south wind, in the top-right corner of the sheet.",
+"summary_fr": "Le vent du sud, dans le coin supérieur droit du plan.",
+"summary_sv": "Sunnanvinden, i arkets övre högra hörn.",
+"variants": [],
+"sources": [],
+"printed": true,
+"texts": "winds"
+},
+{
+"id": "L0164",
+"old": "SEPTENTRIONES",
+"type": "inscription",
+"px": [
+410,
+6930
+],
+"also_px": [],
+"orient": "h",
+"flag": "ok",
+"note": "quarter (north)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": "North, on a banderole in the bottom-left corner beside a blowing head. The sheet is printed east-up, so north lies at the foot of it rather than at the top.",
+"summary_fr": "Le nord, sur une banderole dans le coin inférieur gauche, à côté d’une tête qui souffle. Le plan étant imprimé l’est en haut, le nord se trouve en bas et non en haut.",
+"summary_sv": "Norr, på ett banderoll i nedre vänstra hörnet bredvid ett blåsande huvud. Arket är tryckt med öster uppåt, så norr ligger nedtill i stället för överst.",
+"variants": [],
+"sources": [],
+"printed": true,
+"texts": "winds"
+},
+{
+"id": "L0165",
+"old": "OCCIDENS",
+"type": "inscription",
+"px": [
+5500,
+7460
+],
+"also_px": [],
+"orient": "h",
+"flag": "ok",
+"note": "quarter (west)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": "West, at the foot of the sheet, below the left bank.",
+"summary_fr": "L’ouest, au bas du plan, sous la rive gauche.",
+"summary_sv": "Väster, nedtill på arket, under vänstra stranden.",
+"variants": [],
+"sources": [],
+"printed": true,
+"texts": "winds"
+},
+{
+"id": "L0166",
+"old": "FAVONIUS",
+"type": "inscription",
+"px": [
+10500,
+7050
+],
+"also_px": [],
+"orient": "h",
+"flag": "ok",
+"note": "wind name (west)",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": "The west wind, in the bottom-right corner of the sheet.",
+"summary_fr": "Le vent d’ouest, dans le coin inférieur droit du plan.",
+"summary_sv": "Västanvinden, i arkets nedre högra hörn.",
+"variants": [],
+"sources": [],
+"printed": true,
+"texts": "winds"
 },
 {
 "id": "L0167",
@@ -16393,6 +16543,186 @@
 "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f78.item"
 }
 ]
+},
+{
+"id": "L0471",
+"old": "LA VILLE CITE VNIVERSITE DE PARIS",
+"type": "inscription",
+"px": [
+5350,
+320
+],
+"also_px": [],
+"orient": "h",
+"flag": "ok",
+"note": "the title banderole across the top of the sheet",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": "The map's own title, on a banderole across the top: the town, the city and the university of Paris. Those were the three parts of the city at the time — the Ville on the right bank, the Cité on the island, the Université on the left bank.",
+"summary_fr": "Le titre du plan, sur une banderole en haut : la ville, la cité et l’université de Paris. C’étaient les trois parties de la ville à l’époque : la Ville sur la rive droite, la Cité dans l’île, l’Université sur la rive gauche.",
+"summary_sv": "Kartans egen titel, på ett banderoll överst: staden, Cité och universitetet i Paris. Det var stadens tre delar på den tiden — Ville på högra stranden, Cité på ön och Université på vänstra stranden.",
+"variants": [],
+"sources": [],
+"printed": true,
+"texts": "title"
+},
+{
+"id": "L0472",
+"old": "Arms of France",
+"type": "inscription",
+"px": [
+2620,
+420
+],
+"also_px": [],
+"orient": "h",
+"flag": "ok",
+"note": "crowned shield, three fleurs-de-lis, ringed by a collar of scallop shells; no printed text",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": "The arms of the kingdom: three golden fleurs-de-lis on blue, under a crown and ringed by a collar of scallop shells. They stand at the top of the sheet, facing the arms of Paris.",
+"summary_fr": "Les armes du royaume : trois fleurs de lis d’or sur azur, sous une couronne et entourées d’un collier de coquilles. Elles occupent le haut du plan, face aux armes de Paris.",
+"summary_sv": "Rikets vapen: tre gyllene liljor på blått, under en krona och omgivna av en krage av musselskal. De står överst på arket, mitt emot Paris vapen.",
+"variants": [],
+"sources": [],
+"printed": false,
+"texts": "arms"
+},
+{
+"id": "L0473",
+"old": "Arms of Paris",
+"type": "inscription",
+"px": [
+8100,
+390
+],
+"also_px": [],
+"orient": "h",
+"flag": "ok",
+"note": "a ship under a chief of fleurs-de-lis; no printed text",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": "The arms of Paris: a ship on red, under a chief of golden fleurs-de-lis. They face the arms of France across the top of the sheet.",
+"summary_fr": "Les armes de Paris : une nef sur gueules, sous un chef de fleurs de lis d’or. Elles font face aux armes de France en haut du plan.",
+"summary_sv": "Paris vapen: ett skepp på rött, under ett huvud av gyllene liljor. De står mitt emot Frankrikes vapen överst på arket.",
+"variants": [],
+"sources": [],
+"printed": false,
+"texts": "arms"
+},
+{
+"id": "L0474",
+"old": "Three interlaced crescents",
+"type": "inscription",
+"px": [
+1380,
+360
+],
+"also_px": [],
+"orient": "h",
+"flag": "ok",
+"note": "King Henri II's emblem, between the arms of France and Subsolanus; no printed text",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": "Three interlaced crescents, the emblem of King Henri II (reigned 1547–1559), between the arms of France and the east wind.",
+"summary_fr": "Trois croissants entrelacés, l’emblème du roi Henri II (1547–1559), entre les armes de France et le vent d’est.",
+"summary_sv": "Tre sammanflätade halvmånar, kung Henrik II:s emblem (regent 1547–1559), mellan Frankrikes vapen och östanvinden.",
+"variants": [],
+"sources": [],
+"printed": false,
+"texts": "arms"
+},
+{
+"id": "L0475",
+"old": "A POEM IN PRAISE OF PARIS",
+"type": "inscription",
+"px": [
+1950,
+6410
+],
+"also_px": [
+[
+5320,
+7060
+]
+],
+"orient": "h",
+"flag": "ok",
+"note": "108 lines in two panels; the second panel is also_px",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": "A poem of 108 lines in praise of Paris, printed in two panels at the foot of the sheet. The initials of its first fourteen lines spell GILLES CORROSET — the poet and bookseller Gilles Corrozet. Transcribed and translated line by line on the texts page.",
+"summary_fr": "Un poème de 108 vers à la louange de Paris, imprimé en deux cartouches au bas du plan. Les initiales des quatorze premiers vers forment GILLES CORROSET — le poète et libraire Gilles Corrozet. Transcrit et traduit vers par vers sur la page des textes.",
+"summary_sv": "En dikt på 108 rader till Paris lov, tryckt i två fält nedtill på arket. Begynnelsebokstäverna i de första fjorton raderna bildar GILLES CORROSET — poeten och bokhandlaren Gilles Corrozet. Transkriberad och översatt rad för rad på textsidan.",
+"variants": [],
+"sources": [],
+"printed": true,
+"texts": "poem"
+},
+{
+"id": "L0476",
+"old": "THE PUBLISHERS' NOTICE",
+"type": "inscription",
+"px": [
+7280,
+7050
+],
+"also_px": [],
+"orient": "h",
+"flag": "ok",
+"note": "Icy est le vray pourtraict naturel de la ville, cite, vniuersite...",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": "The publishers' notice, and the counts the map claims for itself: 287 streets and alleys, 104 churches and monasteries, 49 colleges. It ends with the address — Olivier Truschet and Germain Hoyau, in the rue de Montorgueil, at the Chef Saint-Denis.",
+"summary_fr": "L’avis des éditeurs, et les nombres que le plan revendique : 287 rues et ruelles, 104 églises et monastères, 49 collèges. Il se termine par l’adresse : Olivier Truschet et Germain Hoyau, rue de Montorgueil, au Chef Saint-Denis.",
+"summary_sv": "Utgivarnas meddelande, och de tal kartan själv anger: 287 gator och gränder, 104 kyrkor och kloster, 49 kollegier. Det slutar med adressen — Olivier Truschet och Germain Hoyau, vid rue de Montorgueil, au Chef Saint-Denis.",
+"variants": [],
+"sources": [],
+"printed": true,
+"texts": "notice"
+},
+{
+"id": "L0477",
+"old": "BIBL. PUBL. BASILEENSIS",
+"type": "inscription",
+"px": [
+1250,
+7650
+],
+"also_px": [],
+"orient": "h",
+"flag": "ok",
+"note": "the Basel library's oval stamp, bottom-left corner",
+"modern": null,
+"status": null,
+"lat": null,
+"lon": null,
+"loc_confidence": null,
+"summary": "The oval stamp of the public library of Basel, in the bottom-left corner. Basel's copy is the only one known; the librarian Louis Sieber recognised it in 1874.",
+"summary_fr": "Le cachet ovale de la bibliothèque publique de Bâle, dans le coin inférieur gauche. L’exemplaire de Bâle est le seul connu ; le bibliothécaire Louis Sieber l’a identifié en 1874.",
+"summary_sv": "Den ovala stämpeln från det offentliga biblioteket i Basel, i nedre vänstra hörnet. Basels exemplar är det enda kända; bibliotekarien Louis Sieber identifierade det 1874.",
+"variants": [],
+"sources": [],
+"printed": true,
+"texts": "basel"
 }
 ]
 }

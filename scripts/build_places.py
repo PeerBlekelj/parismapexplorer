@@ -94,17 +94,21 @@ for r in inv_rows:
     if dup:
         also.setdefault(dup, []).append([int(r["x"]), int(r["y"])])
 
+# The sheet's own inscriptions and devices -- the title banner, the quarter and wind names, the
+# arms, the king's crescents, the poem, the publishers' notice, the Basel stamp -- are read into
+# the inventory as `decoration` and reach the app as type `inscription`. They are ink on the
+# paper, not somewhere you can stand: no modern name, no position on the ground, and the app must
+# not estimate one for them.
 places = []
 for r in inv_rows:
-    if r["type"] == "decoration":
-        continue
     i = ident.get(r["id"], {})
+    inscription = r["type"] == "decoration"
     if nn(i.get("duplicate_of")):
         continue  # a second reading of the same label
     places.append({
         "id": r["id"],
         "old": r["text"],
-        "type": r["type"],
+        "type": "inscription" if inscription else r["type"],
         "px": [int(r["x"]), int(r["y"])],
         "also_px": also.get(r["id"], []),
         "orient": r["orient"],
@@ -122,6 +126,11 @@ for r in inv_rows:
                     + ([cousin[r["id"]]["name"]] if r["id"] in cousin else []),
         "sources": (json.loads(i["sources"]) if nn(i.get("sources")) else [])
                    + ([{k: cousin[r["id"]][k] for k in ("label", "url")}] if r["id"] in cousin else []),
+        # inscriptions only: whether `old` is text printed on the sheet (the arms and the
+        # crescents carry none, so their `old` is a name, not a reading), and which part of the
+        # texts page explains it.
+        **({"printed": nn(i.get("printed")) != "no",
+            "texts": nn(i.get("texts_anchor"))} if inscription else {}),
     })
 
 # --auto-gcps: use the larger set built by scripts/fit_transform.py (needs a TPS in the app).
