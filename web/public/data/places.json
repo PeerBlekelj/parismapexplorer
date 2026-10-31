@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-31T15:59:04+00:00",
+"generated": "2026-10-31T20:06:04+00:00",
 "image": {
 "width": 10890,
 "height": 7820,
@@ -267,9 +267,9 @@
 "lat": 48.8755,
 "lon": 2.338845,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "A small bridge on the road north out of Paris to the Porcherons, carrying it over the great sewer that ran where the rue de Provence runs now. The sewer was covered over in the 1760s and 1770s and the bridge went with it; the road it served became the rue de la Chaussée-d’Antin.",
+"summary_fr": "Un petit pont sur la route qui sortait de Paris vers les Porcherons, au-dessus du grand égout qui passait là où court aujourd’hui la rue de Provence. L’égout fut couvert dans les années 1760 et 1770 et le pont disparut avec lui ; la route est devenue la rue de la Chaussée-d’Antin.",
+"summary_sv": "En liten bro på vägen norrut ur Paris mot Porcherons, över den stora kloak som gick där rue de Provence går i dag. Kloaken täcktes över på 1760- och 1770-talen och bron försvann med den; vägen blev rue de la Chaussée-d’Antin.",
 "variants": [
 "Pont Arcans"
 ],
@@ -339,9 +339,9 @@
 "lat": 48.854759,
 "lon": 2.362803,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "A town house of the Angoulême family in the Marais, listed by Jules Cousin in his 1875 table of the map’s names. It is not the hôtel d’Angoulême-Lamoignon in the rue Pavée, which was begun in 1584, a generation after this map; no account of the earlier house has been found for this entry.",
+"summary_fr": "Un hôtel de la famille d’Angoulême, dans le Marais, relevé par Jules Cousin dans sa table de 1875 des noms du plan. Ce n’est pas l’hôtel d’Angoulême-Lamoignon de la rue Pavée, commencé en 1584, une génération après ce plan ; aucune relation de l’hôtel antérieur n’a été trouvée ici.",
+"summary_sv": "Ett stadshus tillhörigt familjen Angoulême i Marais, upptaget av Jules Cousin i hans tabell från 1875 över kartans namn. Det är inte hôtel d’Angoulême-Lamoignon vid rue Pavée, som påbörjades 1584, en generation efter kartan; ingen redogörelse för det tidigare huset har hittats här.",
 "variants": [
 "Hôtel d'Angoulême"
 ],
@@ -517,9 +517,9 @@
 "lat": 48.858432,
 "lon": 2.352626,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "The hôtel d’Argent, a town house on the right bank near the rue du Temple. Cousin’s 1875 table of the map’s names records it; nothing further has been established for this entry.",
+"summary_fr": "L’hôtel d’Argent, demeure de la rive droite près de la rue du Temple. La table de Cousin (1875) des noms du plan le mentionne ; rien de plus n’a été établi ici.",
+"summary_sv": "Hôtel d’Argent, ett stadshus på högra stranden nära rue du Temple. Cousins tabell från 1875 över kartans namn tar upp det; mer än så har inte fastställts här.",
 "variants": [
 "Hôtel d'Argent"
 ],
@@ -1003,9 +1003,9 @@
 "lat": 48.853842,
 "lon": 2.340554,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "A town house of the Nevers family on the left bank. It is not the hôtel de Nevers built on the Monnaie’s site in the 1580s, which came a generation after this map; Cousin’s 1875 table lists the earlier one, and nothing further has been established for this entry.",
+"summary_fr": "Un hôtel de la famille de Nevers, sur la rive gauche. Ce n’est pas l’hôtel de Nevers bâti sur le site de la Monnaie dans les années 1580, postérieur d’une génération à ce plan ; la table de Cousin (1875) relève le premier, et rien de plus n’a été établi ici.",
+"summary_sv": "Ett stadshus tillhörigt familjen Nevers på vänstra stranden. Det är inte det hôtel de Nevers som byggdes på Monnaies tomt på 1580-talet, en generation efter kartan; Cousins tabell från 1875 tar upp det tidigare, och mer än så har inte fastställts här.",
 "variants": [
 "Hôtel de Nevers"
 ],
@@ -1033,9 +1033,9 @@
 "lat": 48.851818,
 "lon": 2.340485,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "The hôtel de Reims, a town house on the left bank. Cousin’s 1875 table of the map’s names records it; nothing further has been established for this entry.",
+"summary_fr": "L’hôtel de Reims, demeure de la rive gauche. La table de Cousin (1875) des noms du plan le mentionne ; rien de plus n’a été établi ici.",
+"summary_sv": "Hôtel de Reims, ett stadshus på vänstra stranden. Cousins tabell från 1875 över kartans namn tar upp det; mer än så har inte fastställts här.",
 "variants": [
 "Hôtel de Reims"
 ],
@@ -1446,9 +1446,9 @@
 "lat": 48.838815,
 "lon": 2.353894,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "A hospital by Saint-Médard, in the faubourg south of the city. Cousin’s 1875 table of the map’s names lists it as the hospital of that parish; nothing further has been established for this entry.",
+"summary_fr": "Un hôpital près de Saint-Médard, dans le faubourg au sud de la ville. La table de Cousin (1875) des noms du plan le donne pour l’hôpital de cette paroisse ; rien de plus n’a été établi ici.",
+"summary_sv": "Ett sjukhus vid Saint-Médard, i förstaden söder om staden. Cousins tabell från 1875 över kartans namn anger det som församlingens sjukhus; mer än så har inte fastställts här.",
 "variants": [
 "Hôpital (St-Médard)"
 ],
@@ -1744,13 +1744,17 @@
 "lat": 48.859733,
 "lon": 2.359233,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "The chapel the Braque family founded in the street that still carries their name, off the rue du Temple. Arnould de Braque had a chapel and a hospital built there in 1348; the family had lived in the street since the fourteenth century.",
+"summary_fr": "La chapelle fondée par la famille de Braque dans la rue qui porte encore son nom, près de la rue du Temple. Arnould de Braque y fit bâtir en 1348 une chapelle et un hôpital ; la famille habitait la rue depuis le XIVᵉ siècle.",
+"summary_sv": "Kapellet som familjen Braque grundade vid gatan som fortfarande bär deras namn, vid rue du Temple. Arnould de Braque lät bygga ett kapell och ett sjukhus där 1348; familjen hade bott vid gatan sedan 1300-talet.",
 "variants": [
 "Chapelle de Braques"
 ],
 "sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Rue_de_Braque"
+},
 {
 "label": "Cousin 1875, p. 61",
 "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f69.item"
@@ -1922,9 +1926,9 @@
 "lat": 48.856358,
 "lon": 2.355126,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "The hospital of Saint-Gervais, beside the parish church of that name on the right bank. Cousin’s 1875 table of the map’s names records it; nothing further has been established for this entry.",
+"summary_fr": "L’hôpital Saint-Gervais, auprès de l’église paroissiale du même nom, rive droite. La table de Cousin (1875) des noms du plan le mentionne ; rien de plus n’a été établi ici.",
+"summary_sv": "Saint-Gervais sjukhus, intill församlingskyrkan med samma namn på högra stranden. Cousins tabell från 1875 över kartans namn tar upp det; mer än så har inte fastställts här.",
 "variants": [
 "Hôpital Saint-Gervais"
 ],
@@ -2032,13 +2036,17 @@
 "lat": 48.855406,
 "lon": 2.353383,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "The house of the Haudriettes, a community of poor women founded in the early fourteenth century by Étienne Haudry and his wife Jeanne — Philippe le Bel licensed their chapel by the Grève in 1306. In 1622 the community moved to the rue Saint-Honoré and became the Sisters of the Assumption; the name survives in the rue des Haudriettes.",
+"summary_fr": "La maison des Haudriettes, communauté de femmes pauvres fondée au début du XIVᵉ siècle par Étienne Haudry et sa femme Jeanne — Philippe le Bel autorisa leur chapelle près de la Grève en 1306. En 1622 la communauté passa rue Saint-Honoré et devint les Sœurs de l’Assomption ; le nom subsiste dans la rue des Haudriettes.",
+"summary_sv": "Haudriettes hus, en gemenskap av fattiga kvinnor grundad i början av 1300-talet av Étienne Haudry och hans hustru Jeanne — Filip den sköne gav 1306 tillstånd till deras kapell vid Grève. År 1622 flyttade gemenskapen till rue Saint-Honoré och blev Marie himmelsfärds systrar; namnet lever kvar i rue des Haudriettes.",
 "variants": [
 "Couvent des Haudriettes"
 ],
 "sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Haudriettes"
+},
 {
 "label": "Cousin 1875, p. 64",
 "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f72.item"
@@ -2617,13 +2625,17 @@
 "lat": 48.858954,
 "lon": 2.351782,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "The chapel of Saint-Bon, which gave its name to the rue Saint-Bon. It stood on the site of an older church called Sainte-Colombe, and was suppressed in 1790 and sold off at the Revolution.",
+"summary_fr": "La chapelle Saint-Bon, qui a donné son nom à la rue Saint-Bon. Elle occupait l’emplacement d’une église plus ancienne dite Sainte-Colombe, fut supprimée en 1790 et vendue comme bien national à la Révolution.",
+"summary_sv": "Saint-Bons kapell, som gav rue Saint-Bon dess namn. Det stod på platsen för en äldre kyrka kallad Sainte-Colombe, avskaffades 1790 och såldes som nationalegendom under revolutionen.",
 "variants": [
 "Chapelle Saint-Bon"
 ],
 "sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Rue_Saint-Bon"
+},
 {
 "label": "Cousin 1875, p. 67",
 "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f75.item"
@@ -4956,9 +4968,9 @@
 "lat": 48.84809,
 "lon": 2.346691,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "The college and town house of Albret, in the university quarter on the left bank. Cousin’s 1875 table of the map’s names lists both under that name; nothing further has been established for this entry, and it carries no source yet.",
+"summary_fr": "Le collège et l’hôtel d’Albret, dans le quartier de l’Université, rive gauche. La table de Cousin (1875) des noms du plan les relève tous deux sous ce nom ; rien de plus n’a été établi ici, et l’entrée n’a pas encore de source.",
+"summary_sv": "Albrets kollegium och stadshus, i universitetskvarteret på vänstra stranden. Cousins tabell från 1875 över kartans namn tar upp båda under det namnet; mer än så har inte fastställts här, och posten har ännu ingen källa.",
 "variants": [],
 "sources": []
 },
@@ -5679,9 +5691,9 @@
 "lat": 48.849623,
 "lon": 2.342093,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "The collège de Bayeux, founded in 1308 by Guillaume Bonnet, bishop of Bayeux, who left a house in the rue de la Harpe for twelve scholars so that they might study theology. Its statutes were reformed in 1543, a few years before this map was cut. The reading of the label is uncertain.",
+"summary_fr": "Le collège de Bayeux, fondé en 1308 par Guillaume Bonnet, évêque de Bayeux, qui légua une maison rue de la Harpe pour douze boursiers afin qu’ils étudient la théologie. Ses statuts furent réformés en 1543, quelques années avant la gravure de ce plan. La lecture du nom est incertaine.",
+"summary_sv": "Collège de Bayeux, grundat 1308 av Guillaume Bonnet, biskop av Bayeux, som testamenterade ett hus vid rue de la Harpe åt tolv stipendiater för teologiska studier. Stadgarna reformerades 1543, några år innan kartan skärs. Läsningen av namnet är osäker.",
 "variants": [
 "Collège de Bayeux"
 ],
@@ -6285,9 +6297,9 @@
 "lat": 48.841218,
 "lon": 2.358935,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "A gate called the porte de la Barre, in the faubourg Saint-Marcel south of the city. Cousin’s 1875 table of the map’s names records it; nothing further has been established for this entry.",
+"summary_fr": "Une porte dite porte de la Barre, au faubourg Saint-Marcel, au sud de la ville. La table de Cousin (1875) des noms du plan la mentionne ; rien de plus n’a été établi ici.",
+"summary_sv": "En port kallad porte de la Barre, i förstaden Saint-Marcel söder om staden. Cousins tabell från 1875 över kartans namn tar upp den; mer än så har inte fastställts här.",
 "variants": [
 "Porte de la Barre"
 ],
@@ -6316,8 +6328,8 @@
 "lon": 2.364919,
 "loc_confidence": "approx",
 "summary": "The Bastillon du Temple, a bastion of the city wall on the north side, by the Porte du Temple; not to be confused with the Bastillon Saint-Antoine by the Bastille (Jules Cousin, 1875). It disappeared with the wall.",
-"summary_fr": null,
-"summary_sv": null,
+"summary_fr": "Le bastillon du Temple, bastion de l’enceinte au nord, près de la porte du Temple ; à ne pas confondre avec le bastillon Saint-Antoine, près de la Bastille (Jules Cousin, 1875). Il a disparu avec l’enceinte.",
+"summary_sv": "Bastillon du Temple, en bastion i stadsmuren på norra sidan, vid Porte du Temple; inte att förväxla med Bastillon Saint-Antoine vid Bastiljen (Jules Cousin, 1875). Den försvann med muren.",
 "variants": [
 "Le Bastillon du Temple"
 ],
@@ -6791,11 +6803,16 @@
 "lat": 48.861038,
 "lon": 2.336428,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "The Tour du Bois, where Charles V’s wall came down to the Seine — near where the pont du Carrousel crosses now. The wall ran north from here, west of the Louvre, and the tower held its river end.",
+"summary_fr": "La tour du Bois, où l’enceinte de Charles V rejoignait la Seine — près de l’actuel pont du Carrousel. De là l’enceinte remontait vers le nord, à l’ouest du Louvre, et la tour en tenait l’extrémité sur le fleuve.",
+"summary_sv": "Tour du Bois, där Karl V:s mur mötte Seine — nära där pont du Carrousel går i dag. Härifrån gick muren norrut, väster om Louvren, och tornet höll dess ände vid floden.",
 "variants": [],
-"sources": []
+"sources": [
+{
+"label": "Wikipédia (fr)",
+"url": "https://fr.wikipedia.org/wiki/Enceinte_de_Charles_V"
+}
+]
 },
 {
 "id": "L0184",
@@ -7272,9 +7289,9 @@
 "lat": 48.843149,
 "lon": 2.346522,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "The hôtel de Braque, in the faubourg Saint-Marcel south of the city, as Cousin’s 1875 table of the map’s names lists it. It is a different Braque from the family chapel on the right bank, which has its own entry; nothing further has been established for this one.",
+"summary_fr": "L’hôtel de Braque, au faubourg Saint-Marcel, au sud de la ville, tel que le relève la table de Cousin (1875) des noms du plan. Il est distinct de la chapelle de la famille, rive droite, qui a sa propre notice ; rien de plus n’a été établi ici.",
+"summary_sv": "Hôtel de Braque, i förstaden Saint-Marcel söder om staden, så som Cousins tabell från 1875 över kartans namn tar upp det. Det är ett annat Braque än familjens kapell på högra stranden, som har en egen post; mer än så har inte fastställts här.",
 "variants": [
 "Hôtel de Braques"
 ],
@@ -7412,9 +7429,9 @@
 "lat": 48.861834,
 "lon": 2.346455,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "A court for real tennis — the jeu de paume — beside the Halles. Cousin’s 1875 table of the map’s names records it; nothing further has been established for this entry.",
+"summary_fr": "Un jeu de paume, près des Halles. La table de Cousin (1875) des noms du plan le mentionne ; rien de plus n’a été établi ici.",
+"summary_sv": "En bollhusbana för jeu de paume, intill Halles. Cousins tabell från 1875 över kartans namn tar upp den; mer än så har inte fastställts här.",
 "variants": [
 "Le Jeu de Paume"
 ],
@@ -7442,9 +7459,9 @@
 "lat": 48.857369,
 "lon": 2.34285,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "The Mint’s mill, drawn on the Seine just west of the Cité, downstream of the Monnaie itself. Water-powered minting was being set up in Paris in exactly these years — Henri II sent to Augsburg for the screw press in 1550 — but whether this is that works has not been established here.",
+"summary_fr": "Le moulin de la Monnaie, figuré sur la Seine juste à l’ouest de la Cité, en aval de la Monnaie elle-même. Le monnayage au moulin s’installait à Paris précisément en ces années-là — Henri II envoya étudier la presse à vis d’Augsbourg en 1550 — mais rien n’établit ici qu’il s’agisse de cet atelier.",
+"summary_sv": "Myntets kvarn, ritad på Seine strax väster om Cité, nedströms själva Monnaie. Vattendrivet myntande inrättades i Paris just dessa år — Henrik II skickade bud efter skruvpressen i Augsburg 1550 — men om detta är det verket har inte fastställts här.",
 "variants": [
 "Le Moulin de la Monnaie"
 ],
@@ -7635,9 +7652,9 @@
 "lat": 48.857944,
 "lon": 2.352817,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "The carrefour Guillori, a crossroads on the right bank; the map spells it Gilori. Cousin’s 1875 table of the map’s names records both spellings, and nothing further has been established for this entry.",
+"summary_fr": "Le carrefour Guillori, rive droite ; le plan écrit Gilori. La table de Cousin (1875) des noms du plan donne les deux graphies, et rien de plus n’a été établi ici.",
+"summary_sv": "Carrefour Guillori, en gatukorsning på högra stranden; kartan stavar Gilori. Cousins tabell från 1875 över kartans namn ger båda stavningarna, och mer än så har inte fastställts här.",
 "variants": [
 "Carrefour Guillori"
 ],
@@ -8202,9 +8219,9 @@
 "lat": 48.839855,
 "lon": 2.356052,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "A rue Neuve — a “new street” — running into the rue de la Barre in the faubourg Saint-Marcel, as Cousin’s 1875 table describes it. The name was given to new streets all over the city, and no modern successor has been identified for this one.",
+"summary_fr": "Une rue Neuve donnant dans la rue de la Barre, au faubourg Saint-Marcel, telle que la décrit la table de Cousin (1875). Le nom était donné aux rues nouvelles dans toute la ville, et aucun successeur moderne n’a été identifié pour celle-ci.",
+"summary_sv": "En rue Neuve — en ”ny gata” — som mynnade i rue de la Barre i förstaden Saint-Marcel, så som Cousins tabell från 1875 beskriver den. Namnet gavs åt nya gator över hela staden, och ingen modern efterträdare har identifierats för denna.",
 "variants": [],
 "sources": []
 },
@@ -9085,8 +9102,8 @@
 "lon": 2.359188,
 "loc_confidence": "exact",
 "summary": "Labelled 'R. Nonnain', but this is the rue du Fauconnier, by Saint-Paul: the engraver gave it the name of the neighbouring rue des Nonnains-d'Yères by mistake (Jules Cousin, 1875). It still exists.",
-"summary_fr": null,
-"summary_sv": null,
+"summary_fr": "Le plan écrit « R. Nonnain », mais il s’agit de la rue du Fauconnier, près de Saint-Paul : le graveur lui a donné par erreur le nom de la rue voisine des Nonnains-d’Yères (Jules Cousin, 1875). Elle existe toujours.",
+"summary_sv": "Kartan skriver ”R. Nonnain”, men det är rue du Fauconnier vid Saint-Paul: gravören gav den av misstag namnet på grannskapets rue des Nonnains-d’Yères (Jules Cousin, 1875). Den finns kvar.",
 "variants": [
 "Rue Nonnain"
 ],
@@ -14780,9 +14797,9 @@
 "lat": 48.866658,
 "lon": 2.343475,
 "loc_confidence": "approx",
-"summary": null,
-"summary_fr": null,
-"summary_sv": null,
+"summary": "The street the map calls Breneuse — a name for a filthy street — ran between what are now the rue Jean-Jacques-Rousseau and the rue de la Jussienne. The city’s register of vanished streets knows it as the rue Verdelet, earlier Mardelet or Marderet. It is not the rue Verderet described on French Wikipedia, which was a different street.",
+"summary_fr": "La rue que le plan nomme Breneuse — un nom de rue sale — allait d’où partent aujourd’hui la rue Jean-Jacques-Rousseau et la rue de la Jussienne. Le registre des voies caduques de la Ville la connaît comme rue Verdelet, antérieurement Mardelet ou Marderet. Ce n’est pas la rue Verderet décrite sur Wikipédia en français, qui était une autre rue.",
+"summary_sv": "Gatan som kartan kallar Breneuse — ett namn för en smutsig gata — gick mellan dagens rue Jean-Jacques-Rousseau och rue de la Jussienne. Stadens register över försvunna gator känner den som rue Verdelet, tidigare Mardelet eller Marderet. Det är inte den rue Verderet som franska Wikipedia beskriver, vilken var en annan gata.",
 "variants": [
 "Rue Breneuse"
 ],
