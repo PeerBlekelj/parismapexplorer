@@ -81,6 +81,10 @@ with sync_playwright() as pw:
     check("the QR panel shows the link", "stars=" in url, url)
     modules = p.eval_on_selector("svg.qr", "e => e.getAttribute('viewBox')")
     check("the QR has a real symbol", modules not in (None, "0 0 0 0"), modules)
+    # It was drawn at 92 css px once, which is where a scanner starts to lose it: a decoder reads
+    # this symbol down to roughly 100 px of captured height, and a camera is never ideal.
+    qrbox = p.eval_on_selector("svg.qr", "e => Math.round(e.getBoundingClientRect().width)")
+    check("the QR is big enough for a camera", qrbox >= 160, f"{qrbox} css px")
     p.screenshot(path=str(OUT / "2-starred-list.png"), clip={"x": 0, "y": 0, "width": 400, "height": 900})
     p.click('#stars-bar [data-act="copy"]')
     p.wait_for_selector(".copied")

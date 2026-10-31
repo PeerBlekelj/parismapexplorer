@@ -230,8 +230,10 @@ a { color: var(--blue); }
 .stars-bar .acts { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
 .stars-bar .ask { display: inline-flex; gap: 6px; align-items: center; color: var(--ink); }
 .stars-bar .note { margin: 0; line-height: 1.45; }
-.handoff { min-width: 0; background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 12px; display: flex; gap: 12px; align-items: flex-start; }
-.handoff .qr { width: 92px; height: 92px; flex: 0 0 auto; border: 1px solid var(--rule); border-radius: 4px; }
+.handoff { min-width: 0; background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 12px; display: flex; flex-direction: column; gap: 9px; }
+/* Big enough for a phone camera to resolve: at 92 px a scanner loses it below arm's length.
+   No border — the white quiet zone around the symbol is what a camera looks for. */
+.handoff .qr { width: min(200px, 100%); height: auto; aspect-ratio: 1; align-self: center; border-radius: 3px; }
 .handoff .side2 { min-width: 0; display: flex; flex-direction: column; gap: 7px; }
 .handoff .lbl { font-size: 11px; letter-spacing: .07em; text-transform: uppercase; }
 .urlbox { max-width: 100%; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; color: var(--ink2); background: var(--paper); border: 1px solid var(--rule); border-radius: 4px; padding: 5px 7px; overflow-wrap: anywhere; line-height: 1.4; user-select: all; }

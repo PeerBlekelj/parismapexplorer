@@ -356,9 +356,9 @@ async function main(): Promise<void> {
       } catch {
         // A list too long for a symbol: the link itself still works, so show only that.
       }
-      qr = `<div class="handoff">${svg}<div class="side2">` +
-        (svg ? `<span class="lbl">${esc(t.starsQrLead)}</span>` : '') +
-        `<span class="urlbox">${esc(url)}</span>` +
+      qr = '<div class="handoff">' +
+        (svg ? `<span class="lbl">${esc(t.starsQrLead)}</span>${svg}` : '') +
+        `<div class="side2"><span class="urlbox">${esc(url)}</span>` +
         `<span>${esc(t.starsPrivacy(n))}</span></div></div>`;
     }
     starsBarEl.innerHTML =

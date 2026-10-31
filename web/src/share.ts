@@ -86,7 +86,9 @@ export function qrSvg(text: string, label: string): string {
   qr.addData(text);
   qr.make();
   const n = qr.getModuleCount();
-  const m = 2; // quiet zone, in modules
+  // The quiet zone is 4 modules, as the spec asks. Less than that, with the panel's border
+  // right at the edge, is one of the things that stops a camera finding the symbol at all.
+  const m = 4;
   let d = '';
   for (let r = 0; r < n; r++) {
     for (let c = 0; c < n; c++) {
