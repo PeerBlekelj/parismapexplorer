@@ -63,6 +63,8 @@ function fillStaticText(): void {
   const modes: Record<string, string> = { side: t.modeSide, overlay: t.modeOverlay, old: t.modeOld, mod: t.modeMod };
   document.querySelectorAll<HTMLButtonElement>('#modes button').forEach((b) => (b.textContent = modes[b.dataset.m ?? ''] ?? ''));
   $('#orient .lbl').textContent = t.orientOriginal;
+  $('#dots-toggle .lbl').textContent = t.dotsToggle;
+  $('#dots-toggle').title = t.dotsToggleHint;
   $('#share-view .lbl').textContent = t.shareView;
   $('#share-view').title = t.shareViewHint;
   $('#share-view').setAttribute('aria-label', t.shareView);
@@ -135,6 +137,8 @@ async function main(): Promise<void> {
     query: '',
     types: new Set<string>(),
     unsure: false,
+    /** The marks on the places; off leaves only the visitor's own starred ones. */
+    dots: true,
     /** Showing only the visitor's own starred places. */
     starred: false,
     /** Places a link shared, while they are being shown. Never merged into the visitor's own
@@ -166,7 +170,10 @@ async function main(): Promise<void> {
   // Expose for debugging in the console and for the screenshot script.
   (window as unknown as { pme: unknown }).pme = { maps, T, entries };
 
-  const table = new PlaceTable($('#table'), (id) => select(id, { fly: true, fromTable: true }));
+  const table = new PlaceTable($('#table'), (id) => select(id, { fly: true, fromTable: true }), {
+    isStarred: (id) => stars.has(id),
+    toggleStar: (id) => stars.toggle(id),
+  });
   const mobile = initMobile({ back: () => closeCard(true), resize: () => maps.resize() });
   mobile.foldAttribution([maps.old, maps.mod]);
 
@@ -620,6 +627,17 @@ async function main(): Promise<void> {
   }
   document.querySelectorAll<HTMLButtonElement>('#modes button').forEach((b) =>
     b.addEventListener('click', () => setMode(b.dataset.m as Mode)));
+  const dotsBtn = $('#dots-toggle');
+  function markDots(): void {
+    dotsBtn.setAttribute('aria-pressed', String(state.dots));
+  }
+  dotsBtn.addEventListener('click', () => {
+    state.dots = !state.dots;
+    markDots();
+    maps.setDotsVisible(state.dots);
+  });
+  markDots();
+
   const orientBtn = $('#orient');
   orientBtn.title = t.orientTitle;
   function markOrientation(): void {
@@ -654,6 +672,9 @@ async function main(): Promise<void> {
     setView('map');
     mobile.home(); // first: the sheet sets the map's size, and the camera fits that size
     setMode('side');
+    state.dots = true;
+    markDots();
+    maps.setDotsVisible(true);
     state.orientation = 'north';
     markOrientation();
     if (state.selected) select(null, { fly: false });
@@ -718,6 +739,7 @@ async function main(): Promise<void> {
       document.title = t.siteTitle;
     }
     orientBtn.title = t.orientTitle;
+    dotsBtn.title = t.dotsToggleHint;
     updateTags();
     $('#warn').textContent = overlayTiles
       ? t.overlayNoteWarped(overlayTiles.controlPoints, overlayTiles.medianErrorM)
@@ -743,6 +765,11 @@ async function main(): Promise<void> {
       maps.setOpacity(v.opacity / 100);
     }
     if (v.swipe !== undefined) setSwipe(v.swipe);
+    if (v.dots === false) {
+      state.dots = false;
+      markDots();
+      maps.setDotsVisible(false);
+    }
     if (camera && v.center && v.zoom !== undefined) maps.jumpToView(v.center, v.zoom, v.bearing ?? 0);
   }
 

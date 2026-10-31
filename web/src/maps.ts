@@ -130,6 +130,7 @@ export class MapView {
   private candidates: Entry[];
   private filterActive = false;
   private isStarred: (id: string) => boolean = () => false;
+  private dotsOn = true;
   private selected: Entry | null = null;
   private syncing = false;
   private anchor: Vec2 = [0, 0];
@@ -531,6 +532,20 @@ export class MapView {
     const map = which === 'old' ? this.old : this.mod;
     if (map.getSource('places')) return;
     map.addSource('places', { type: 'geojson', data: this.dotsData(which) });
+    // A disc of the map's own paper under each mark. On the woodcut a thin ring is lost among
+    // the red-orange roofs; the engraving still shows through this, so the mark reads as the
+    // paper lifting around it rather than as a sticker over it.
+    map.addLayer({
+      id: 'casing', type: 'circle', source: 'places',
+      paint: {
+        'circle-radius': (which === 'old'
+          ? starRamp([[9, 5.5, 7.2], [12, 8, 10.6], [14, 10.5, 13.8]])
+          : starRamp([[12, 5.5, 7.4], [17, 9, 12]])) as never,
+        'circle-color': which === 'old' ? 'rgba(255,250,240,0.62)' : 'rgba(255,255,255,0.72)',
+        'circle-stroke-color': which === 'old' ? 'rgba(255,250,240,0.85)' : 'rgba(255,255,255,0.9)',
+        'circle-stroke-width': 1.5,
+      },
+    });
     const plain = ['match', ['get', 'status'], 'vanished', '#8a6d4a', 'unknown', '#6b5a48', '#a63a1f'];
     // A starred place is the only mark on either map that is the visitor's own, so it is gold
     // rather than the catalogue's red, and a size larger.
@@ -559,7 +574,27 @@ export class MapView {
         },
       });
     }
+    this.applyDotFilter(map);
     this.refreshDots(which);
+  }
+
+  /** With the dots switched off the visitor's own starred places stay: there are few of them and
+   *  they are the only marks on the map that are theirs. Clicking a label still works either
+   *  way -- picking is geometric, not a hit test on these layers. */
+  private applyDotFilter(map: MlMap): void {
+    for (const id of ['casing', 'dots']) {
+      if (map.getLayer(id)) map.setFilter(id, this.dotsOn ? null : ['get', 'starred']);
+    }
+  }
+
+  setDotsVisible(on: boolean): void {
+    this.dotsOn = on;
+    this.applyDotFilter(this.old);
+    this.applyDotFilter(this.mod);
+  }
+
+  get dotsVisible(): boolean {
+    return this.dotsOn;
   }
 
   private refreshDots(which: Which): void {
@@ -576,6 +611,10 @@ export class MapView {
       : starRamp([[z0 - 0.6, 0, 1], [z0, 0.85, 1]]);
     map.setPaintProperty('dots', 'circle-stroke-opacity', op as never);
     map.setPaintProperty('dots', 'circle-opacity', op as never);
+    if (map.getLayer('casing')) {
+      map.setPaintProperty('casing', 'circle-opacity', op as never);
+      map.setPaintProperty('casing', 'circle-stroke-opacity', op as never);
+    }
   }
 
   // ---------- the camera, as something that fits in an address ----------
@@ -592,6 +631,7 @@ export class MapView {
       bearing: this.mod.getBearing(),
       opacity: Math.round(this.opacity * 100),
       swipe: Math.round(this.swipe),
+      dots: this.dotsOn,
     };
   }
 

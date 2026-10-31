@@ -70,16 +70,18 @@
   /* ---------- the map ---------- */
   .main { position: fixed; top: 0; left: 0; right: 0; height: var(--map-h); min-height: 0; flex: none; }
   .map-area[data-mode="side"] .panes { flex-direction: column; }
-  .modes { top: calc(8px + env(safe-area-inset-top)); left: calc(12px + env(safe-area-inset-left)); right: calc(12px + env(safe-area-inset-right)); transform: none; max-width: none; flex-wrap: nowrap; border-radius: 8px; }
+  /* The strip itself takes the safe-area insets; the modes bar fills its first line and the
+     controls wrap underneath, which is what the flex row does unaided at this width. */
+  .maptop { top: calc(8px + env(safe-area-inset-top)); left: calc(12px + env(safe-area-inset-left)); right: calc(12px + env(safe-area-inset-right)); gap: 8px; }
+  .modes { width: 100%; margin-inline: 0; max-width: none; flex-wrap: nowrap; border-radius: 8px; }
   .modes button { flex: 1 1 0; min-width: 0; height: 40px; padding: 0 4px; font-size: 13px; }
-  .topright { top: calc(56px + env(safe-area-inset-top)); right: calc(12px + env(safe-area-inset-right)); left: auto; bottom: auto; }
+  .topright { flex: 1 1 100%; }
   .orient, .share-view { min-height: 40px; padding: 0 11px; font-size: 12px; border-radius: 8px; }
   /* no room for both labels beside the modes bar: the share button keeps its glyph */
   .share-view .lbl { display: none; }
   /* With the sheet up the map is short: keep its top clear for the selected place. */
   .app:not([data-sheet="peek"]) .topright { display: none; }
-  .app:not([data-sheet="peek"]) .warn { top: calc(56px + env(safe-area-inset-top)); }
-  .warn { top: calc(104px + env(safe-area-inset-top)); left: 12px; right: 12px; transform: none; max-width: none; font-size: 10.5px; padding: 3px 8px; text-align: left; display: none; }
+  .warn { max-width: none; font-size: 10.5px; padding: 3px 8px; text-align: left; display: none; }
   .map-area[data-mode="overlay"] .warn { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
   .ctrl { left: 12px; right: 12px; transform: none; bottom: 10px; min-height: 44px; padding: 0 12px; justify-content: space-between; font-size: 12.5px; }
   .ctrl label { flex: 1; }
@@ -114,6 +116,9 @@
   .table-view td.m > span:first-child:not(.placeholder) { color: var(--ink); }
   .table-view td.rd:empty { display: none; }
   .table-view td.id { justify-self: end; grid-column: -2; }
+  /* the row is a card here, so the star goes to the end of it rather than before the name */
+  .table-view td.sr { order: 99; justify-self: end; width: auto; }
+  .table-view td.sr .star { font-size: 17px; padding: 4px; }
   .table-view tbody tr:hover td, .table-view tr.sel td { background: transparent; }
   .table-view tr.sel { box-shadow: inset 3px 0 0 var(--red); }
   .table-view tr.sel td:first-child { box-shadow: none; }

@@ -50,17 +50,23 @@
       </aside>
       <main class="main">
         <div class="map-area" data-mode="side" id="map-area">
-          <div class="modes" id="modes">
-            <button type="button" data-m="side" class="on"></button>
-            <button type="button" data-m="overlay"></button>
-            <button type="button" data-m="old"></button>
-            <button type="button" data-m="mod"></button>
+          <!-- One strip across the top of the map: the modes, the controls, and the overlay
+               note. A flex row that wraps, so the controls drop to their own line instead of
+               landing on the modes bar when the pane is narrow. -->
+          <div class="maptop">
+            <div class="modes" id="modes">
+              <button type="button" data-m="side" class="on"></button>
+              <button type="button" data-m="overlay"></button>
+              <button type="button" data-m="old"></button>
+              <button type="button" data-m="mod"></button>
+            </div>
+            <div class="topright">
+              <button type="button" class="share-view" id="share-view"><span class="ic" aria-hidden="true">⤴</span><span class="lbl"></span></button>
+              <button type="button" class="orient" id="dots-toggle" aria-pressed="true"><span class="box" aria-hidden="true"></span><span class="lbl"></span></button>
+              <button type="button" class="orient" id="orient" aria-pressed="false"><span class="box" aria-hidden="true"></span><span class="lbl"></span></button>
+            </div>
+            <div class="warn" id="warn"></div>
           </div>
-          <div class="topright">
-            <button type="button" class="share-view" id="share-view"><span class="ic" aria-hidden="true">⤴</span><span class="lbl"></span></button>
-            <button type="button" class="orient" id="orient" aria-pressed="false"><span class="box" aria-hidden="true"></span><span class="lbl"></span></button>
-          </div>
-          <div class="warn" id="warn"></div>
           <div class="panes">
             <div class="pane oldp"><div class="map" id="map-old"></div><span class="tag" id="tag-old"></span></div>
             <div class="pane modp">

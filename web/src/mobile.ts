@@ -165,6 +165,7 @@ function addShortLabels(): void {
     ['#modes [data-m=overlay]', t.modeOverlayShort],
     ['#modes [data-m=old]', t.modeOldShort],
     ['#modes [data-m=mod]', t.modeModShort],
+    ['#dots-toggle .lbl', t.dotsToggleShort],
     ['#orient .lbl', t.orientOriginalShort],
   ];
   for (const [sel, short] of pairs) {

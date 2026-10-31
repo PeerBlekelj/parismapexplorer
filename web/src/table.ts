@@ -5,9 +5,10 @@ import { t } from './i18n';
 import { modernText, type Entry } from './model';
 import { norm } from './search';
 
-type SortKey = 'id' | 'old' | 'modern' | 'type' | 'status' | 'reading';
+type SortKey = 'id' | 'old' | 'modern' | 'type' | 'status' | 'reading' | 'star';
 
 const COLS: { key: SortKey; label: () => string }[] = [
+  { key: 'star', label: () => t.colStarred },
   { key: 'old', label: () => t.colOld },
   { key: 'modern', label: () => t.colModern },
   { key: 'type', label: () => t.colType },
@@ -16,16 +17,23 @@ const COLS: { key: SortKey; label: () => string }[] = [
   { key: 'id', label: () => t.colId },
 ];
 
+export interface TableStars {
+  isStarred(id: string): boolean;
+  toggleStar(id: string): void;
+}
+
 export class PlaceTable {
   private el: HTMLElement;
   private sort: { key: SortKey; dir: 1 | -1 } | null = null; // null = relevance / alphabetical
   private rows: Entry[] = [];
   private selectedId: string | null = null;
   private onSelect: (id: string) => void;
+  private stars: TableStars;
 
-  constructor(el: HTMLElement, onSelect: (id: string) => void) {
+  constructor(el: HTMLElement, onSelect: (id: string) => void, stars: TableStars) {
     this.el = el;
     this.onSelect = onSelect;
+    this.stars = stars;
     // The sort menu stands in for the column headers on a phone, where rows are cards.
     el.addEventListener('change', (ev) => {
       const sel = ev.target as HTMLSelectElement;
@@ -47,7 +55,14 @@ export class PlaceTable {
         return;
       }
       const tr = target.closest('tr[data-id]') as HTMLElement | null;
-      if (tr?.dataset.id) this.onSelect(tr.dataset.id);
+      if (!tr?.dataset.id) return;
+      // The star belongs to the row but is not a way into it, as in the sidebar list.
+      if (target.closest('.star')) {
+        this.stars.toggleStar(tr.dataset.id);
+        this.render();
+        return;
+      }
+      this.onSelect(tr.dataset.id);
     });
   }
 
@@ -69,6 +84,7 @@ export class PlaceTable {
       case 'type': return typeLabel(p.type);
       case 'status': return p.status ? statusLabel(p.status) : '￿';
       case 'reading': return p.flag === 'unsure' ? '0' : '1';
+      case 'star': return this.stars.isStarred(p.id) ? '0' : '1'; // starred first
     }
   }
 
@@ -85,7 +101,10 @@ export class PlaceTable {
     const body = rows.map((e) => {
       const p = e.place;
       const m = modernText(p);
+      const on = this.stars.isStarred(p.id);
       return `<tr data-id="${esc(p.id)}"${p.id === this.selectedId ? ' class="sel"' : ''}>
+        <td class="sr"><button type="button" class="star${on ? ' on' : ''}" aria-pressed="${on}"
+          aria-label="${esc(on ? t.unstarRow(e.title) : t.starRow(e.title))}">${on ? '★' : '☆'}</button></td>
         <td class="o">${esc(e.title)}</td>
         <td class="m"><span${m.placeholder ? ' class="placeholder"' : ''}>${esc(m.text)}</span><span class="m-type"> · ${esc(typeLabel(p.type))}</span></td>
         <td class="ty">${esc(typeLabel(p.type))}</td>

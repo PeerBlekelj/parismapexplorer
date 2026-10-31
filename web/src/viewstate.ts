@@ -20,6 +20,7 @@ export interface ViewState {
   bearing?: number;
   opacity?: number; // 0–100, overlay only
   swipe?: number; // 0–100, overlay only
+  dots?: boolean; // the place marks; false when they have been switched off
 }
 
 const MODES: Mode[] = ['side', 'overlay', 'old', 'mod'];
@@ -55,6 +56,7 @@ export function readViewState(search = location.search): ViewState {
   if (o !== undefined) v.opacity = o;
   const s = num(q.get('s'), 0, 100);
   if (s !== undefined) v.swipe = s;
+  if (q.get('d') === '0') v.dots = false;
   return v;
 }
 
@@ -81,6 +83,7 @@ export function viewQuery(v: ViewState, search = location.search): string {
     if (v.opacity !== undefined) q.set('o', round(v.opacity, 0));
     if (v.swipe !== undefined) q.set('s', round(v.swipe, 0));
   }
+  if (v.dots === false) q.set('d', '0');
   // A comma is safe in a query and these links get pasted into messages, so it stays a
   // comma rather than %2C. Everything else keeps the standard encoding.
   return q.toString().replace(/%2C/g, ',');
@@ -89,7 +92,7 @@ export function viewQuery(v: ViewState, search = location.search): string {
 /** Strip the view parameters from an address, keeping anything else (`lang`) it carries. */
 export function withoutView(search = location.search): string {
   const q = new URLSearchParams(search);
-  for (const k of ['m', 'or', 'c', 'z', 'b', 'o', 's', 'stars']) q.delete(k);
+  for (const k of ['m', 'or', 'c', 'z', 'b', 'o', 's', 'd', 'stars']) q.delete(k);
   const s = q.toString();
   return s ? `?${s}` : '';
 }

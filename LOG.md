@@ -2,6 +2,42 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-10-31 (11:40) — the QR a camera can read; stronger marks with a switch; starred in the table
+
+**The QR was never wrong — it was too small.** Reported as "the QR sharing isn't working". A decoder
+reads the rendered symbol and returns exactly the link the panel shows, so the encoding was fine; it
+was drawn at **92 css px**, which is where a scanner starts to lose it. Under any blur or distance the
+capture falls below about 100 px of symbol and nothing decodes — there was no margin at all. Now 200 px,
+stacked above the link instead of beside it, with the **4-module quiet zone** the spec asks for (it had
+2) and **no border**, which was eating into the zone a camera looks for. `check_stars.py` fails if it is
+ever drawn under 160 px. Deployed and re-scanned live.
+
+**The top strip could not help overlapping.** The modes bar was centred absolutely and the controls
+anchored absolutely to the right, with a `max-width: 1180px` media query meant to drop the controls
+below. The query keys off the **viewport** while the bar is constrained by the **pane** — the viewport
+minus the 380 px sidebar — so at 1400 px wide the pane is 1020 and they collided with no query firing.
+Now one wrapping flex row (`.maptop`): the modes bar centres itself in what the controls leave, and
+when they no longer fit the controls take their own line. The overlay note is in the same row, so its
+hard-coded `top: 56px`/`96px` are gone too. Checked at twelve widths in both modes.
+
+**The marks stand out, and can be switched off** (owner's pick, option B of `mockups/favorites/`):
+a disc of the map's own paper under each mark, with the engraving showing through, rather than a
+thin red ring lost among the red-orange roofs. A **Places** toggle beside the orientation switch hides
+them; **starred places stay**, since there are few of them and they are the visitor's own. Clicking a
+label still works with the marks hidden — picking is geometric, not a hit test on the layers. The
+switch travels in a shared view link as `&d=0`.
+
+**Starred is a column in the table**, sortable, and a star can be set from there. It shows only for a
+starred row, under the pointer, or always where there is no pointer — as in the sidebar list.
+
+**Checking**: `scripts/check_map_controls.py <url>` (the strip at twelve widths, the halo, the switch,
+the column); `scripts/check_stars.py <url>` as before. Both green on the preview build.
+
+**Open:** the direction banners (SEPTENTRIONES, ORIENS, the winds), the arms, the Basel stamp, the poem
+and the publishers' notice are **not in the gazetteer** — 0 of 457 rows. Their explanations already
+exist in all three languages in "Other words on the map" on the texts page; what is missing is a
+pixel position, a dot, a card, and a link from that card into that section. Next piece of work.
+
 ## 2026-10-30 (22:45) — starred places and sharing: LIVE
 
 **Deployed** (main 1d22a4b, prebuilt, `--archive=tgz`). A visitor can keep their own list of places and send a place, a view or the
