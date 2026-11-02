@@ -120,6 +120,11 @@ for i, r in enumerate(got):
         if not isinstance(span, str) or norm(span) not in src:
             bad(f'span not found verbatim in the source: {str(span)[:80]!r}')
     for year in set(re.findall(r'\b(1[0-9]{3}|20[0-9]{2})\b', detail)):
+        # 1550 is the sheet's own date, which the brief tells the model to use ("say 'the map' for
+        # the 1550 sheet") and every page of the site prints. It is the frame, not a claim drawn
+        # from the source, so it does not need to appear in the source.
+        if year == '1550':
+            continue
         if year not in source_for(pid) and year not in (ps[pid]['summary'] or ''):
             bad(f'the year {year} appears in neither the source nor the summary')
     summ = ps[pid]['summary'] or ''

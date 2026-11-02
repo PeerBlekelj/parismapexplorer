@@ -29,6 +29,8 @@ The app reads two static files. They are **generated** by `scripts/build_places.
       "summary_fr": "the same in French" | null,   // null: not translated yet; show `summary`
       "summary_sv": "the same in Swedish" | null,
       "detail": "a longer description, English" | null,
+      "reading": "clear" | "confirmed" | "disputed" | "uncertain",
+      "reading_other": "Rueli" | null,          // the other reading, when "disputed"
       "variants": ["Saint-Christofle", "…"],
       "sources": [{ "label": "Wikipedia (fr)", "url": "https://…" }]
     }
@@ -55,6 +57,25 @@ identified yet": there is nothing to identify. The app counts them apart from th
 
 `summary_fr` / `summary_sv` are translations of `summary` from `data/research/summaries_fr.csv` and
 `summaries_sv.csv`; show the one for the current language and fall back to `summary`.
+
+### `reading`
+
+How well attested our reading of `old` is. `flag` is the raw note the tile-by-tile transcription
+pass left about **its own** doubt; `reading` is what became of that doubt once Jules Cousin's 1875
+reading of the same label was compared against ours.
+
+- **`clear`** — the transcription pass had no doubt.
+- **`confirmed`** — it had doubt, and Cousin printed the same reading, character for character
+  (case, accents and the `R.`/`S.` abbreviations aside). Two readers a century apart agree, so the
+  reading is settled and the card must **not** call the label hard to read.
+- **`disputed`** — it had doubt, and Cousin read something else. `reading_other` carries his
+  reading; show both and prefer neither.
+- **`uncertain`** — it had doubt and there is no second reading. Cousin's alphabetical index
+  heading does not count: it is his name for the street, not his transcription of the ink.
+
+Of 24 labels the transcription pass flagged, 14 are `confirmed`, 2 are `disputed`
+(`REUILLI`/*Rueli*, `BAIEUS`/*Raieus*) and 8 are `uncertain`. The "unsure reading" filter and the
+table column count the 10 that are still open, not all 24.
 
 ### `detail`
 
