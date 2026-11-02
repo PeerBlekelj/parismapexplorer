@@ -2,6 +2,65 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-11-02 (13:40) — the held-back places were a source failure, and eight came back
+
+Chased the nine held back this morning. **None of them was a model failure.** The cause is one
+parameter: `fetch_wiki.py` asks French Wikipedia for **`exintro`**, so `history_fr` is the article's
+**lead**. For a church or a street the lead is the whole story; for a modern commune it is today's
+population, today's politics and today's buildings. The model wrote the only thing those sources
+supported.
+
+**`scripts/fetch_wiki_history.py`** fetches the article's *history sections* instead, into
+`data/research/sources_long.csv`, which `make_detail_batches.py` and `ingest_detail.py` both now
+prefer over `history_fr` — the same text in both, so a span is still checked against exactly what
+the model was given.
+
+**Two traps on the way, both about a pattern being too narrow:**
+
+1. The section is normally called **"Historique"**, not "Histoire". A first pass matched only
+   `histoire`, and reported that Bercy and the faubourg Saint-Germain had **no history at all**.
+   Matching `histo` found 4,207 and 3,112 characters of it. Within the same hour the US-spelling
+   check matched `neighborhood` and let `neighboring` through, then caught `baptized` and let
+   `forced labor` through in the same sentence. A too-narrow pattern returns zero and reads exactly
+   like a clean result.
+2. **The right article is often not the one the card cites.** Bercy pointed at `Quartier de Bercy`,
+   whose history begins in the 19th century. `Bercy (Seine)` is the village the map shows: 0
+   pre-1600 references became 7. The article a place is *identified* by is not always the article it
+   should be *described* from.
+
+**Eight of the nine now have a detail**, and they are the best writing in the set. Clignancourt's
+vineyards stripped of unripe grapes by Breton and Burgundian soldiers on 9 September 1465;
+Belleville's medieval ploughland and vines on the "Mont chauve", and the 1543 chapel built to spare
+residents the walk to Saint-Merry; Montreuil keeping its tax exemptions on condition it maintained
+the fountains feeding the Vincennes fishpond. **Bercy is the find**: its source names *"plan de
+Truschet et Hoyau"* outright and says the place is labelled **"Percy"** on it — which is exactly
+what our sheet reads for L0441. An independent corroboration of that identification, arrived at
+sideways.
+
+**193 details**, live and checked on production.
+
+**Only L0185 (the Marne) stays held**, and it is a final answer rather than a gap: that article has
+no history section at all — hydronymy, flood records, water quality. The summary already says what
+a reader needs.
+
+**Period fit resisted mechanisation twice, so it is a warning, not a check.** Requiring an early
+date in the text wherever the source has one would reject **33 of the 185 already shipped**, nearly
+all of them good: "Joan of Navarre, wife of Philip the Fair" is plainly medieval and names no year.
+Absence of a date is not evidence of the wrong century. `ingest_detail.py` prints it as `look`,
+pointing a reader at entries worth a glance, and fails nothing.
+
+The brief gained a **"Which century to write about"** section naming the exact failure: a
+population in 2023, a quarter number, which party has held the town hall since 1925 are all true,
+sourced, and wrong for this card.
+
+**Open:**
+- A read of the 193 by the owner; the checks prove provenance, not editorial fit.
+- French and Swedish translations, after that read.
+- The other `village_faubourg` and quarter cards still read from their leads. Eight were fixed
+  because they had produced a bad detail; the rest were never asked. `sources_long_titles.csv` is
+  where to add them.
+- L0018 still has no detail (the altered quotation, refused — see 10-31).
+
 ## 2026-11-02 (11:20) — the longer descriptions on the card, and nine held back
 
 The 7 rewrites blocked by the Gemini quota went through on the first pass once it reset, and
