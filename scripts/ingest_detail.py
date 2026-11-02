@@ -22,6 +22,20 @@ returned = Path(sys.argv[2])
 write = '--write' in sys.argv
 MIN_WORDS, MAX_WORDS = 40, 200          # the brief asks for 80-160; refuse well outside it
 
+# The brief says "plain British English" and the model mostly obeys, which is exactly when a rule
+# needs a check: 3 of the first 194 slipped through. `honor` is excluded on purpose -- the street
+# names are full of Saint-Honore.
+US_SPELLINGS = [
+    (r'\bneighbor', 'neighbour'), (r'\bpracticing\b', 'practising'),
+    (r'\bcenter(?:s|ed|ing)?\b', 'centre'), (r'\bmeters?\b', 'metre'),
+    (r'\btheater', 'theatre'), (r'\bdefense\b', 'defence'), (r'\bcolor', 'colour'),
+    (r'\b\w*modeled\b', 'modelled'), (r'\b\w*modeling\b', 'modelling'),
+    (r'\b\w*traveled\b', 'travelled'), (r'\b\w*traveling\b', 'travelling'),
+    (r'\b\w*labeled\b', 'labelled'), (r'\b\w*canceled\b', 'cancelled'),
+    (r'\borganiz', 'organis'), (r'\brecogniz', 'recognis'), (r'\bemphasiz', 'emphasis'),
+    (r'\bbaptiz', 'baptis'), (r'\bgray\b', 'grey'), (r'\bmold', 'mould'),
+]
+
 def norm(s):
     """For span matching: collapse whitespace and the typographic variants a model may re-type."""
     s = unicodedata.normalize('NFC', s)
@@ -97,6 +111,10 @@ for i, r in enumerate(got):
     md = re.search(r'(\*[^*]+\*|_[^_]+_|\[[^\]]+\]\(|`)', detail)
     if md:
         bad(f'contains markdown ({md.group(0)[:30]!r}); the field is plain text')
+    for us, brit in US_SPELLINGS:
+        m = re.search(us, detail)
+        if m:
+            bad(f'{m.group(0)!r} is US spelling; the brief asks for British English ({brit})')
     if not any(p.startswith(pid + ':') for p in problems):
         ok.append((pid, detail, r.get('notes', '')))
 

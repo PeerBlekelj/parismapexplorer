@@ -48,6 +48,21 @@ for lang, tr in (("fr", summaries_fr), ("sv", summaries_sv)):
     if extra:
         sys.exit(f"summaries_{lang}.csv has ids with no English summary: {', '.join(extra[:10])}")
 
+# The longer descriptions (data/research/details.csv), written from the French source extracts and
+# checked against them by scripts/ingest_detail.py. English only for now; a place without one is
+# null, and the app simply shows no disclosure. Not every place has or needs one.
+def read_details(name):
+    out = {}
+    p = root / "data/research" / name
+    if p.exists():
+        for r in csv.DictReader(open(p, encoding="utf-8")):
+            if r["id"] in out:
+                sys.exit(f"{r['id']} has two details in {name}")
+            out[r["id"]] = r["detail"].strip()
+    return out
+
+details = read_details("details.csv")
+
 # Jules Cousin's 1875 table of the map's names (data/research/cousin.csv, from scripts/cousin_match.py):
 # cited on every place it lists, linked to the page on Gallica (Gallica page = printed page + 8).
 COUSIN = "https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f{f}.item"
@@ -122,6 +137,7 @@ for r in inv_rows:
         "summary": nn(summaries.get(r["id"])) or nn(i.get("summary")),
         "summary_fr": nn(summaries_fr.get(r["id"])),
         "summary_sv": nn(summaries_sv.get(r["id"])),
+        "detail": nn(details.get(r["id"])),
         "variants": [v for v in (i.get("variants") or "").split("|") if v]
                     + ([cousin[r["id"]]["name"]] if r["id"] in cousin else []),
         "sources": (json.loads(i["sources"]) if nn(i.get("sources")) else [])
@@ -142,6 +158,10 @@ else:
     gcps = [{"id": g["id"], "name": g["name"], "px": [int(g["x"]), int(g["y"])],
              "lat": float(g["lat"]), "lon": float(g["lon"]), "quality": g["quality"]}
             for g in csv.DictReader(open(root / "data/gcps.csv"))]
+
+unknown = sorted(set(details) - {p["id"] for p in places})
+if unknown:
+    sys.exit(f"details.csv has ids that are not places: {', '.join(unknown[:10])}")
 
 meta = {"generated": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
         "image": {"width": 10890, "height": 7820, "orientation": "east-up"}}

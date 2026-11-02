@@ -30,6 +30,8 @@ export interface Place {
   summary: string | null;      // English
   summary_fr?: string | null;
   summary_sv?: string | null;
+  detail?: string | null;     // the longer description, English; null = none written
+
   variants: string[];
   sources: Source[];
   /** Inscriptions only. `printed` is false for a device that carries no text (the two coats of
