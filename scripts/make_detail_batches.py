@@ -22,12 +22,21 @@ for f in sorted(glob.glob(str(root / 'data/places_*.csv'))):
     for r in csv.DictReader(open(f, encoding='utf-8')):
         ident[r['id']] = r
 
+# Where the article's lead says nothing about the period the map shows, data/research/
+# sources_long.csv carries that article's history sections instead (scripts/fetch_wiki_history.py).
+# It wins over history_fr, and a place listed there is included whatever its lead's length.
+long_src = {}
+p_long = root / 'data/research/sources_long.csv'
+if p_long.exists():
+    for r in csv.DictReader(open(p_long, encoding='utf-8')):
+        long_src[r['id']] = r['source_fr'].strip()
+
 data = json.load(open(root / 'web/public/data/places.json', encoding='utf-8'))
 places = [p for p in data['places'] if p['type'] != 'inscription']
 
 jobs = []
 for p in places:
-    src = (ident.get(p['id'], {}).get('history_fr') or '').strip()
+    src = long_src.get(p['id']) or (ident.get(p['id'], {}).get('history_fr') or '').strip()
     if len(src) < MIN_SOURCE:
         continue
     jobs.append({

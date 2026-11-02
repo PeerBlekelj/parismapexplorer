@@ -25,6 +25,17 @@ MIN_WORDS, MAX_WORDS = 40, 200          # the brief asks for 80-160; refuse well
 # The brief says "plain British English" and the model mostly obeys, which is exactly when a rule
 # needs a check: 3 of the first 194 slipped through. `honor` is excluded on purpose -- the street
 # names are full of Saint-Honore.
+# Period fit is NOT mechanisable, and this is deliberately a warning rather than a check.
+# Measured against the 185 details already shipped, requiring an explicit early date wherever the
+# source has one rejects 33 of them, nearly all good: "Joan of Navarre, wife of Philip the Fair"
+# is plainly medieval and names no year. Absence of a date is not evidence of the wrong century.
+# So it only points a reader at entries worth a glance.
+EARLY_FR = re.compile(r'\b1[0-5][0-9]{2}\b|\b(?:I|V|X|L|C)+e\s+si[eè]cle|moyen[- ]âge|antiquit', re.I)
+EARLY_EN = re.compile(r'\b1[0-5][0-9]{2}\b|\b\d{1,2}(?:st|nd|rd|th)\s+century\b|'
+                      r'\b(?:ninth|tenth|eleventh|twelfth|thirteenth|fourteenth|fifteenth|'
+                      r'sixteenth)\s+century\b|middle ages|medieval|mediaeval|roman|'
+                      r'merovingian|antiquity', re.I)
+
 US_SPELLINGS = [
     (r'\bneighbor', 'neighbour'), (r'\bpracticing\b', 'practising'),
     (r'\bcenter(?:s|ed|ing)?\b', 'centre'), (r'\bmeters?\b', 'metre'),
@@ -34,6 +45,7 @@ US_SPELLINGS = [
     (r'\b\w*labeled\b', 'labelled'), (r'\b\w*canceled\b', 'cancelled'),
     (r'\borganiz', 'organis'), (r'\brecogniz', 'recognis'), (r'\bemphasiz', 'emphasis'),
     (r'\bbaptiz', 'baptis'), (r'\bgray\b', 'grey'), (r'\bmold', 'mould'),
+    (r'\blabor\b', 'labour'), (r'\bfavor', 'favour'), (r'\bvapor', 'vapour'),
 ]
 
 def norm(s):
@@ -48,6 +60,17 @@ ident = {}
 for f in sorted(glob.glob(str(root / 'data/places_*.csv'))):
     for r in csv.DictReader(open(f, encoding='utf-8')):
         ident[r['id']] = r
+# Must match make_detail_batches.py: a span is checked against the text the model was actually
+# given, which for these ids is the article's history sections, not its lead.
+long_src = {}
+p_long = root / 'data/research/sources_long.csv'
+if p_long.exists():
+    for r in csv.DictReader(open(p_long, encoding='utf-8')):
+        long_src[r['id']] = r['source_fr'].strip()
+
+def source_for(pid):
+    return long_src.get(pid) or (ident.get(pid, {}).get('history_fr') or '')
+
 data = json.load(open(root / 'web/public/data/places.json', encoding='utf-8'))
 ps = {p['id']: p for p in data['places']}
 
@@ -63,7 +86,7 @@ if isinstance(got, dict):                     # tolerate {"places": [...]} or {"
 if not isinstance(got, list):
     sys.exit(f'{returned}: expected a JSON array of objects, got {type(got).__name__}')
 
-problems, ok = [], []
+problems, warnings, ok = [], [], []
 seen = set()
 for i, r in enumerate(got):
     pid = (r or {}).get('id')
@@ -76,7 +99,7 @@ for i, r in enumerate(got):
         bad('returned twice')
         continue
     seen.add(pid)
-    src = norm((ident.get(pid, {}).get('history_fr') or ''))
+    src = norm(source_for(pid))
     detail = r.get('detail_en')
     if detail is None:
         ok.append((pid, None, r.get('notes', '')))
@@ -97,7 +120,7 @@ for i, r in enumerate(got):
         if not isinstance(span, str) or norm(span) not in src:
             bad(f'span not found verbatim in the source: {str(span)[:80]!r}')
     for year in set(re.findall(r'\b(1[0-9]{3}|20[0-9]{2})\b', detail)):
-        if year not in (ident.get(pid, {}).get('history_fr') or '') and year not in (ps[pid]['summary'] or ''):
+        if year not in source_for(pid) and year not in (ps[pid]['summary'] or ''):
             bad(f'the year {year} appears in neither the source nor the summary')
     summ = ps[pid]['summary'] or ''
     if summ and difflib.SequenceMatcher(None, norm(summ), norm(detail)).ratio() > 0.6:
@@ -115,12 +138,17 @@ for i, r in enumerate(got):
         m = re.search(us, detail)
         if m:
             bad(f'{m.group(0)!r} is US spelling; the brief asks for British English ({brit})')
+    if EARLY_FR.search(source_for(pid)) and not EARLY_EN.search(detail):
+        warnings.append(f'{pid}: the source reaches back before 1600 and the detail does not '
+                        f'name any early date \u2014 worth a glance for period fit')
     if not any(p.startswith(pid + ':') for p in problems):
         ok.append((pid, detail, r.get('notes', '')))
 
 print(f'{returned.name}: {len(got)} returned, {len(ok)} clean, {len(problems)} problem(s)\n')
 for p in problems:
     print('  FAIL', p)
+for w in warnings:
+    print('  look', w)
 notes = [(i, n) for i, _, n in ok if n]
 if notes:
     print('\n  notes from the model:')

@@ -48,6 +48,24 @@ Match the short descriptions you are given in `summary_now`. They are the house 
 - **Do not repeat the short description.** Start where it stops. Overlap of a phrase or two is
   unavoidable; a restatement is not.
 
+## Which century to write about
+
+The reader is looking at a woodcut of Paris made around 1550, and has clicked a place **on that
+sheet**. Write about that place: what it was, who held it, what stood there, what it was for.
+
+Some sources run from antiquity to last year. Take from them the part that bears on the map's own
+century and the centuries before it, and let the modern end go. A commune's population in 2023, its
+administrative quarter number, which party has held the town hall since 1925, the architects of a
+1970s renovation and the tenants of a building today are all **true, sourced and wrong for this
+card**. This is the single most common way a detail has failed here: nine were written entirely
+from the modern end of their source and had to be thrown away.
+
+Later history earns its place when it is the fate of the thing on the map — a gate demolished, a
+convent turned into a medical school, a village swallowed by the city in 1860. That is the
+continuation of the story. The population of the commune in 2023 is a different story.
+
+If the source only has the modern end, say so in `notes` and return `null`.
+
 ## Length
 
 **80 to 160 words.** Below 80, it is not worth a disclosure; above 160, it stops being a map card.
