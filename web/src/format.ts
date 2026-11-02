@@ -81,6 +81,21 @@ export function summaryFor(p: Place): { text: string; lang: string | null } | nu
   return null;
 }
 
+/** Whether the reading of a label is still open. A label the transcription pass doubted but that
+ *  Cousin read the same way in 1875 is NOT open: two readers agree, and the card used to claim the
+ *  opposite ("the label is hard to read"). 24 labels were flagged; 10 are actually open. */
+export function readingOpen(p: Place): boolean {
+  return p.reading === 'uncertain' || p.reading === 'disputed';
+}
+
+/** What the card says under "Reading". */
+export function readingText(p: Place): string {
+  if (p.reading === 'confirmed') return t.readingConfirmed;
+  if (p.reading === 'uncertain') return t.readingUncertain;
+  if (p.reading === 'disputed') return t.readingDisputed(p.reading_other || '');
+  return t.readingOk;
+}
+
 /** The longer description. English only so far, so in French and Swedish it is shown as English
  *  and the card says so; `null` means none was written for this place, not that none is possible. */
 export function detailFor(p: Place): { text: string; english: boolean } | null {

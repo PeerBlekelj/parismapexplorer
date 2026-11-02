@@ -21,6 +21,10 @@ export interface Place {
   also_px?: [number, number][];
   orient: 'h' | 'v' | 'd' | string;
   flag: 'ok' | 'unsure' | string;
+  // How well attested our reading of `old` is. `flag` records the transcription pass's own
+  // doubt; `reading` says what became of it once Cousin's 1875 reading was compared.
+  reading?: 'clear' | 'confirmed' | 'disputed' | 'uncertain';
+  reading_other?: string | null;   // the other reading, when `disputed`
   note: string | null;
   modern: string | null;
   status: Status | string | null;

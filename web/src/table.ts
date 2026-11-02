@@ -1,6 +1,6 @@
 // Sortable table of places. Uses the same filtered result set as the sidebar list.
 
-import { esc, isInscription, statusClass, statusLabel, typeLabel } from './format';
+import { esc, isInscription, readingOpen, statusClass, statusLabel, typeLabel } from './format';
 import { t } from './i18n';
 import { displayTitle, modernText, type Entry } from './model';
 import { norm } from './search';
@@ -83,7 +83,7 @@ export class PlaceTable {
       case 'modern': return p.modern ? norm(p.modern) : '￿'; // placeholders sort last
       case 'type': return typeLabel(p.type);
       case 'status': return isInscription(p) ? '￿' : p.status ? statusLabel(p.status) : '￿';
-      case 'reading': return p.flag === 'unsure' ? '0' : '1';
+      case 'reading': return readingOpen(p) ? '0' : '1';
       case 'star': return this.stars.isStarred(p.id) ? '0' : '1'; // starred first
     }
   }
@@ -109,7 +109,7 @@ export class PlaceTable {
         <td class="m"><span${m.placeholder ? ' class="placeholder"' : ''}>${esc(m.text)}</span><span class="m-type"> · ${esc(typeLabel(p.type))}</span></td>
         <td class="ty">${esc(typeLabel(p.type))}</td>
         <td class="st">${isInscription(p) ? '' : `<span class="badge ${statusClass(p.status)}">${esc(statusLabel(p.status))}</span>`}</td>
-        <td class="rd">${p.flag === 'unsure' ? `<span class="badge unsure">${esc(t.unsureBadge)}</span>` : ''}</td>
+        <td class="rd">${readingOpen(p) ? `<span class="badge unsure">${esc(t.unsureBadge)}</span>` : ''}</td>
         <td class="id">${esc(p.id)}</td>
       </tr>`;
     }).join('');

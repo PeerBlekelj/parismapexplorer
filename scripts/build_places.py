@@ -3,7 +3,7 @@
 Contract with the app (see web/DATA_CONTRACT.md). Fields that are not researched yet are null,
 never empty strings or guesses: the app must show null as "not identified yet".
 """
-import csv, json, re, sys, datetime
+import csv, difflib, json, re, sys, datetime, unicodedata
 from pathlib import Path
 
 root = Path(sys.argv[1])
@@ -98,7 +98,47 @@ p = root / "data/research/cousin.csv"
 if p.exists():
     for r in csv.DictReader(open(p, encoding="utf-8")):
         cousin[r["id"]] = {"label": f"Cousin 1875, p. {r['page']}", "url": COUSIN.format(f=int(r["page"]) + 8),
-                           "name": cousin_name(r["cousin_name"])}
+                           "name": cousin_name(r["cousin_name"]),
+                           # Cousin's own transcription of the label as PRINTED on the sheet, where
+                           # he gives one. His alphabetical heading (`cousin_name`) is not that.
+                           "printed": (r.get("printed") or "").strip()}
+
+
+def reading_of(pid, old_label):
+    """How well attested our reading of a label is -- not how clear the ink looks to us.
+
+    `flag == "unsure"` is a note the tile-by-tile transcription pass left about ITS OWN doubt. It
+    was shown on the card as "the label is hard to read", which is a claim about the woodcut and a
+    different thing entirely: for 14 of the 24 flagged labels, Cousin printed his own reading in
+    1875 and it is the same as ours, character for character. The owner was right to call that out.
+
+    So the card now reports the evidence:
+      clear      -- the transcription pass had no doubt
+      confirmed  -- it had doubt, and an independent 1875 reading of the same label agrees
+      disputed   -- it had doubt, and that reading DIFFERS; both are shown, neither is hidden
+      uncertain  -- it had doubt and no second reading exists
+    """
+    if flagged_unsure.get(pid) is not True:
+        return "clear", None
+    printed = (cousin.get(pid) or {}).get("printed") or ""
+    if not printed:
+        return "uncertain", None
+    a, b = label_key(old_label), label_key(printed)
+    if not a or not b:
+        return "uncertain", None
+    ratio = difflib.SequenceMatcher(None, a, b).ratio()
+    if ratio > 0.85:
+        return "confirmed", printed
+    return "disputed", printed
+
+
+def label_key(s):
+    """Compare readings, not typography: case, accents, punctuation and the R./S. abbreviations."""
+    s = unicodedata.normalize("NFD", s or "")
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn").lower()
+    s = re.sub(r"\br\.?\b", "rue", s)
+    s = re.sub(r"\bs\.?\b", "saint", s)
+    return re.sub(r"[^a-z0-9]+", " ", s).strip()
 
 # A label that repeats another (e.g. a second "LA VILLE NEUVE") is not a place of its own, but its
 # position stays clickable on the old map: it is listed under the main place as `also_px`.
@@ -114,6 +154,8 @@ for r in inv_rows:
 # the inventory as `decoration` and reach the app as type `inscription`. They are ink on the
 # paper, not somewhere you can stand: no modern name, no position on the ground, and the app must
 # not estimate one for them.
+flagged_unsure = {r["id"]: r["flag"] == "unsure" for r in inv_rows}
+
 places = []
 for r in inv_rows:
     i = ident.get(r["id"], {})
@@ -128,6 +170,7 @@ for r in inv_rows:
         "also_px": also.get(r["id"], []),
         "orient": r["orient"],
         "flag": r["flag"],
+        **dict(zip(("reading", "reading_other"), reading_of(r["id"], r["text"]))),
         "note": nn(i.get("note")) or inv_note(r["note"]),
         "modern": nn(i.get("modern")),
         "status": nn(i.get("status")),

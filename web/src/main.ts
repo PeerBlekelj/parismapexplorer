@@ -8,7 +8,7 @@ import './style.css';
 
 import { renderCard, renderIntro } from './card';
 import { badge } from './badge';
-import { esc, isInscription, markClass, statusLabel, typeLabel } from './format';
+import { esc, isInscription, markClass, readingOpen, statusLabel, typeLabel } from './format';
 import { lang, langBase, LANGS, mapBase, setLang, t, type Lang } from './i18n';
 import { loadOverlayTiles, MapView, type Mode, type Orientation } from './maps';
 import { initMobile } from './mobile';
@@ -184,7 +184,7 @@ async function main(): Promise<void> {
   // ---------- chips ----------
   const counts = new Map<string, number>();
   for (const e of entries) counts.set(e.place.type, (counts.get(e.place.type) ?? 0) + 1);
-  const unsureCount = entries.filter((e) => e.place.flag === 'unsure').length;
+  const unsureCount = entries.filter((e) => readingOpen(e.place)).length;
   const chipTypes = TYPE_ORDER.filter((k) => counts.has(k));
   for (const k of counts.keys()) if (!chipTypes.includes(k)) chipTypes.push(k);
   const chipsEl = $('#chips');
@@ -262,7 +262,7 @@ async function main(): Promise<void> {
     const fromLink = !on && !!state.shared?.set.has(p.id);
     return `<div class="result${(state.selected ?? state.lastSelected) === e ? ' sel' : ''}" data-id="${esc(p.id)}" role="option">` +
       `<span class="dot ${markClass(p)}"></span>` +
-      `<span class="old">${esc(displayTitle(e))}${p.flag === 'unsure' ? ' <span class="q" title="' + esc(t.unsureBadge) + '">?</span>' : ''}</span>` +
+      `<span class="old">${esc(displayTitle(e))}${readingOpen(p) ? ' <span class="q" title="' + esc(t.unsureBadge) + '">?</span>' : ''}</span>` +
       `<button type="button" class="star${on ? ' on' : fromLink ? ' from-link' : ''}" aria-pressed="${on}" ` +
       `aria-label="${esc(on ? t.unstarRow(displayTitle(e)) : t.starRow(displayTitle(e)))}">${on ? '★' : '☆'}</button>` +
       `<span class="mod"><span class="${m.placeholder ? 'placeholder' : ''}">${esc(m.text)}</span> · ${esc(second)}</span></div>`;
@@ -272,7 +272,7 @@ async function main(): Promise<void> {
   function refresh(keepScroll = false): void {
     const shared = state.shared;
     const filter = (p: Entry['place']) =>
-      (state.types.size === 0 || state.types.has(p.type)) && (!state.unsure || p.flag === 'unsure') &&
+      (state.types.size === 0 || state.types.has(p.type)) && (!state.unsure || readingOpen(p)) &&
       (!state.starred || stars.has(p.id)) && (!shared?.ids.length || shared.set.has(p.id));
     state.results = index.search(state.query, filter).map((r) => byId.get(r.place.id) as Entry);
     const insc = state.results.filter((e) => isInscription(e.place)).length;

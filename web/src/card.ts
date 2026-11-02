@@ -2,7 +2,7 @@
 // "not researched yet" and is shown with a neutral placeholder, never as absent or negative.
 
 import { drawCrop } from './crop';
-import { detailFor, esc, fmtLat, fmtLon, isInscription, safeUrl, statusClass, statusLabel, summaryFor, typeLabel } from './format';
+import { detailFor, esc, fmtLat, fmtLon, isInscription, readingOpen, readingText, safeUrl, statusClass, statusLabel, summaryFor, typeLabel } from './format';
 import { langBase, t } from './i18n';
 import { displayTitle, modernText, type Entry } from './model';
 import type { PixelGeoTransform } from './transform';
@@ -47,7 +47,7 @@ function paintStar(btn: HTMLElement, on: boolean): void {
 export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, backTo: string, actions: CardActions): void {
   const p = e.place;
   const m = modernText(p);
-  const unsure = p.flag === 'unsure';
+  const unsure = readingOpen(p);
   const gone = p.status === 'vanished';
   // An inscription is ink on the sheet: it has no modern name, no status and nowhere to stand,
   // so the card drops those rows rather than filling them with placeholders, and points at the
@@ -105,7 +105,7 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, back
           ? `<dt>${esc(t.inscriptionAbout)}</dt><dd>${esc(t.inscriptionNoText)}</dd>`
           : `<dt>${esc(t.onMapAs)}</dt><dd>${esc(t.quote(p.old))}</dd>`}
         ${p.note && !insc ? `<dt>${esc(t.transcription)}</dt><dd>${esc(p.note)}</dd>` : ''}
-        ${insc ? '' : `<dt>${esc(t.reading)}</dt><dd>${esc(unsure ? t.readingUnsure : t.readingOk)}</dd>`}
+        ${insc ? '' : `<dt>${esc(t.reading)}</dt><dd>${esc(readingText(p))}</dd>`}
         ${insc ? '' : `<dt>${esc(t.variants)}</dt><dd>${variants}</dd>`}
         <dt>${esc(t.pos1550)}</dt><dd>${esc(t.pxFmt(e.px[0], e.px[1]))}</dd>
         ${insc ? '' : `<dt>${esc(t.posToday)}</dt><dd class="pos">${posToday}</dd>`}
