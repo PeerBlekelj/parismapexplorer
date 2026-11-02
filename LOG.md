@@ -2,6 +2,58 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-11-02 (11:20) — the longer descriptions on the card, and nine held back
+
+The 7 rewrites blocked by the Gemini quota went through on the first pass once it reset, and
+`detail` is now wired from `data/research/details.csv` through `build_places.py` into places.json
+and onto the card, under the summary behind a **"More about this place"** disclosure. It continues
+the summary, never replaces it. English only, so French and Swedish say "(en anglais)" / "(på
+engelska)" and mark the text `lang="en"`. **185 places carry one.** Live and checked on production.
+
+**The read found a failure the provenance checks cannot see, and it is a source problem, not a
+model problem.** Nine details were written from a source that is long but **off-period** — a modern
+commune or quarter article. Ivry and Vitry got the population in 2023, 1970s brutalism and the PCF
+since 1925; Belleville and Clignancourt got their administrative quarter numbers; Bois de Vincennes
+got its hectares back from its own summary; Saint-Nicolas-du-Chardonnet got the 1977 occupation as
+its "notable recent history". Every one of them passes every check: the spans are verbatim, the
+years are in the source. The source simply is not about the place the map shows.
+
+`make_detail_batches.py` gates on **`len(source) >= 200`**, which measures bulk, not period. A
+modern commune lead clears it easily. The nine are listed with their reason in
+`data/research/details-held.csv`, waiting for a 16th-century source; the fix belongs upstream in
+which sources enter a batch, not in another pass over the same text.
+
+Four more were **trimmed by hand** to the part that is about the place on the map — Hôtel-Dieu
+(keep the pilgrims' hostelry, the Augustinian nuns and doctors arriving in hospitals only in the
+18th century; drop the 2019 retail plan), the Cordeliers, the Seine and Montmartre. Trimming only
+removes claims, so nothing can enter that the source does not carry; each was re-checked for the
+word floor, the summary-restatement ratio and the forbidden opener afterwards.
+
+**A measurement worth keeping:** a first pass flagged 35 details as having "no date before 1700",
+but it was over-firing — entries write "In the 13th century" in words, and a street's register
+extract legitimately carries no dates at all. Counting written-out centuries as well brings it to
+52 of 194, and most of those are fine. Period fit is not mechanisable; it took reading them.
+
+**What was mechanisable, and is now a check:** British English. `ingest_detail.py` gained a
+US-spelling table, which caught 3 in the shipped 194 (`practicing`, `neighborhood`). The first
+version of the pattern missed `neighboring` — a reminder that a check with a too-narrow pattern
+reports zero and looks like success.
+
+**`scripts/check_details.py`** — 24 assertions, mostly absences: no empty disclosure where there is
+no detail, the summary never moves aside, the body stays hidden until asked, and both other
+languages say the text is English.
+
+**Two process notes.** `build_places.py` must be run with **`--auto-gcps`** (CONTRIBUTING.md line
+44): without it gcps.json silently drops from 46 control points to the 20 hand ones, and the diff
+looks like an ordinary regeneration. And piping `vercel build` into `head` kills it with SIGPIPE
+part-way, leaving `.vercel/output/` without `config.json`; the deploy then fails with a message
+about the config file that says nothing about the real cause.
+
+**Open:**
+- The 9 held-back places want a 16th-century source. Lazare, Sauval and Berty cover most of them.
+- French and Swedish translations of the 185, after the English has been read by the owner.
+- L0018 still has no detail (the altered quotation, refused — see 10-31).
+
 ## 2026-10-31 (19:30) — 190 longer descriptions, written by Gemini through the gateway
 
 The brief and the batches did not need a human in the middle: the mini's **LiteLLM gateway**
