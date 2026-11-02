@@ -2,6 +2,66 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-11-02 (16:10) — the faubourg sweep, and the reading flag stops overclaiming
+
+**The reading flag told a lie, and the data already knew.** The owner asked why L0419 says "the label
+is hard to read" when R. DES AUGUSTINS is plainly legible on the crop and other sources tell us what
+is printed. He was right. That card carried `id_confidence: high`, a register match (`VAN:542`) **and**
+a citation to Cousin 1875 p. 60 — who printed his own reading of the same label. The site was
+asserting a fact about the woodcut on the strength of our own transcription doubt, contradicted by a
+source cited three lines further down the same card.
+
+`flag == "unsure"` is a note the tile-by-tile pass left about **its own** doubt. Comparing our
+reading against Cousin's transcription of the printed label settles most of them. Of the 24 flagged:
+
+- **14 agree character for character** (case, accents and the `R.`/`S.` abbreviations aside), L0419
+  at 1.00 — two readers a century apart, so the reading is settled.
+- **2 genuinely differ**: we read `REUILLI` where Cousin read *Rueli*, `BAIEUS` where he read
+  *Raieus*. The flag is earned, and what is worth showing is **both readings**, not "hard to read".
+- **8 have no second reading.** Cousin's alphabetical index heading does **not** count — it is his
+  name for the street, not his transcription of the ink. Treating it as corroboration would have
+  "confirmed" four labels on no evidence at all; that distinction is the whole of this fix.
+
+places.json now carries a derived `reading` (clear / confirmed / disputed / uncertain) plus
+`reading_other`. The filter chip and the table column count the **10 still open**, not all 24.
+`scripts/check_reading.py` guards it with 20 assertions — two of which were **vacuous when written**:
+the badge sits in `.kicker`, which CSS uppercases, so comparing `innerText` against "Unsure reading"
+made the presence and the absence assertion both pass. The same class of bug as the `histoire`
+matcher and the `neighboring` spelling miss earlier the same day.
+
+**The faubourg sweep.** 18 more village and quarter cards were still described from their Wikipedia
+lead — **13 had never been batched at all**, because the lead fell under the 200-character gate, so
+nothing had ever flagged them. 5 carried a detail written from the lead. All 18 now have a period
+source and a new detail, and they are the best in the set:
+
+- **Bagnolet** — its article alone carries 30 pre-1600 references. Queen Isabeau of Bavaria's château
+  of 1412 with its windmill, winepress and dovecote; Charles VI granting the manor of Mallassis to his
+  mistress Odette de Champdivers; the Bois de Bagnolet bought by John of Lancaster in 1422. The source
+  states that the **plan de Truschet et Hoyau is the first known depiction of the village**, so the
+  detail can say the church "appears on the 1550 map" and have it be true.
+- **Conflans** — the Charenton bridge seized by Vikings in 865, taken by the dauphin in 1358, retaken
+  from the English in 1436.
+- **Le Roule** — the moneyers of the Paris mint buying land around 1200 to care for their own lepers.
+
+**206 details.** Three check corrections: **1550 is the sheet's own date** and the brief tells the
+model to use it, so the year check no longer demands it appear in the source (two entries failed on
+exactly that); markdown italics round Latin etymologies are presentation and are stripped rather than
+rejected (8 of 18 had them, from the Toponymie sections); and `labor`/`favor`/`vapor` joined
+US_SPELLINGS after the check caught `baptized` and let `forced labor` through **in the same sentence**.
+
+**A review surface for the owner's read**, since nothing on the site says which places have a detail:
+a private artifact listing all 206 with label, modern name, status, the live short description, the
+longer one, and links to the card and the source — markable Good / Reword / Cut with a note, saved in
+the artifact's own store so the marks can be read back and acted on.
+<https://claude.ai/artifact/5FQVA5bgi4FEw9rv2X1FwP>
+
+**Open:**
+- The read itself. The checks prove provenance; only a person can judge fit.
+- French and Swedish translations, after that read.
+- L0185 (the Marne) has no history section to draw on; L0018 still refused over the altered quotation.
+- `L0447` (Bicêtre) and `L0467` (Auteuil) were probed and skipped: their articles' history sections
+  carry no pre-1600 reference either.
+
 ## 2026-11-02 (13:40) — the held-back places were a source failure, and eight came back
 
 Chased the nine held back this morning. **None of them was a model failure.** The cause is one
