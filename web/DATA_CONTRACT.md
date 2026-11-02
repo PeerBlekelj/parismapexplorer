@@ -28,6 +28,7 @@ The app reads two static files. They are **generated** by `scripts/build_places.
       "summary": "2–4 sentences, English" | null,
       "summary_fr": "the same in French" | null,   // null: not translated yet; show `summary`
       "summary_sv": "the same in Swedish" | null,
+      "detail": "a longer description, English" | null,
       "variants": ["Saint-Christofle", "…"],
       "sources": [{ "label": "Wikipedia (fr)", "url": "https://…" }]
     }
@@ -54,6 +55,25 @@ identified yet": there is nothing to identify. The app counts them apart from th
 
 `summary_fr` / `summary_sv` are translations of `summary` from `data/research/summaries_fr.csv` and
 `summaries_sv.csv`; show the one for the current language and fall back to `summary`.
+
+### `detail`
+
+A longer description, 40–160 words, from `data/research/details.csv`. It **continues** the summary
+rather than replacing it, so the app shows it under the summary behind a disclosure and never
+instead of it. English only: there is no `detail_fr`/`detail_sv` yet, so in French and Swedish the
+card shows the English text and says so.
+
+`detail` is `null` for most places, and that is a normal, final answer as often as it is a gap.
+Each one is written from that place’s French source extract (`history_fr` in `data/places_*.csv`)
+and checked against it by `scripts/ingest_detail.py`: every factual claim must be carried by a span
+copied verbatim from the source, and every year in the text must appear in the source. Three reasons
+a place has none, and the app must not distinguish them:
+
+- the source is too thin to say more than the summary already does;
+- the source is long but **off-period** — a modern commune or quarter article that describes
+  today’s administration, not the place on the map. Those ids are listed with their reason in
+  `data/research/details-held.csv`, waiting for a 16th-century source;
+- the text failed a check and has not been rewritten.
 
 **`null` means "not researched yet", never "nothing there".** Show it as "Not identified yet" /
 "Location estimated from the map", never as an empty or negative state.

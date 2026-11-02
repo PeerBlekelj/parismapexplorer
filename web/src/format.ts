@@ -81,6 +81,12 @@ export function summaryFor(p: Place): { text: string; lang: string | null } | nu
   return null;
 }
 
+/** The longer description. English only so far, so in French and Swedish it is shown as English
+ *  and the card says so; `null` means none was written for this place, not that none is possible. */
+export function detailFor(p: Place): { text: string; english: boolean } | null {
+  return p.detail ? { text: p.detail, english: lang !== 'en' } : null;
+}
+
 const ESC: Record<string, string> = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
 export function esc(s: unknown): string {
   return String(s ?? '').replace(/[&<>"']/g, (c) => ESC[c]);

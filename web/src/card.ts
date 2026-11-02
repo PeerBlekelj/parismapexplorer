@@ -2,7 +2,7 @@
 // "not researched yet" and is shown with a neutral placeholder, never as absent or negative.
 
 import { drawCrop } from './crop';
-import { esc, fmtLat, fmtLon, isInscription, safeUrl, statusClass, statusLabel, summaryFor, typeLabel } from './format';
+import { detailFor, esc, fmtLat, fmtLon, isInscription, safeUrl, statusClass, statusLabel, summaryFor, typeLabel } from './format';
 import { langBase, t } from './i18n';
 import { displayTitle, modernText, type Entry } from './model';
 import type { PixelGeoTransform } from './transform';
@@ -78,6 +78,7 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, back
     .join(' · ');
 
   const sum = summaryFor(p);
+  const det = detailFor(p);
   const orient = p.orient === 'v' ? 'v' : p.orient === 'd' ? 'd' : 'h';
 
   el.innerHTML = `
@@ -111,6 +112,11 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, back
         <dt>${esc(t.id)}</dt><dd><a href="${langBase()}place/${encodeURIComponent(p.id)}/" class="permalink">${esc(p.id)}</a> · <span class="muted">${esc(t.link)}</span></dd>
       </dl>
       ${sum ? `<p class="summary"${sum.lang ? ` lang="${sum.lang}"` : ''}>${esc(sum.text)}</p>` : `<p class="summary placeholder">${esc(t.noSummary)}</p>`}
+      ${det
+        ? `<details class="more"><summary>${esc(t.more)}${det.english ? ` <span class="muted">(${esc(t.moreEnglishOnly)})</span>` : ''}</summary>
+             <p class="more-body"${det.english ? ' lang="en"' : ''}>${esc(det.text)}</p>
+           </details>`
+        : ''}
       ${insc && p.texts
         ? `<p class="reads"><a href="${langBase()}texts/#${esc(p.texts)}">${esc(t.inscriptionRead)} \u2192</a></p>`
         : ''}
