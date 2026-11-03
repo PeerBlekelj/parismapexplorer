@@ -18,7 +18,11 @@ image or the page's own text"). Two consequences, and they are the main caveat o
    give the reading in square brackets — e.g. `i55i` → `1551`, `Gonwiliae` → `Gou[r]daine`. Nothing in
    square brackets was seen on a page.
 2. **Printed page numbers were pinned from the running heads in the same OCR**, by finding the nearest
-   head above the passage. That is reliable in the Imprimerie nationale volumes (Berty, the
+   head above the passage. (**Three of them have since been confirmed against a printed copy**: the
+   maintainer checked *Registres* t. III pp. 247–248, 250 and 252 — the editor's note on the atelier des
+   Étuves and the edict of July 1553, document CCLXI of 2 June 1551, and document CCLXIII of 5 June 1551
+   — and they match the printed pages exactly. That is the heart of the L0201/L0202 case, so the
+   page-number caveat below now bites hardest on Berty and on Lazare, not on the *Registres*.) That is reliable in the Imprimerie nationale volumes (Berty, the
    *Registres*), whose running heads carry the page number on every page. It is **not** reliable in the
    Google-digitised Jaillot volumes, where pages are sometimes duplicated or out of order; for Jaillot
    I give the page from **his own alphabetical table** where he supplies one, and say so where I do not
@@ -90,39 +94,44 @@ Two further sources put the same garden in the same place:
 And in the repository, Cousin's own table of this map's names already has the entry, unidentified:
 `JARDIN DU ROI (le), à la pointe du Palais | | VII,1` (`data/research/cousin_1875_table.txt:208`).
 
-### The Corrozet lead: relayed, not read here — and the folio in the brief was wrong
+### Corrozet 1550, f. 88: read from the page image by the maintainer — and the folio in the brief was wrong
 
-The brief that set this pass going pointed first at **Corrozet, *Les Antiquitez, histoires et
-singularitez de Paris*, 1550, f. 55**, for a passage naming the *maison des estuues & iardin du roy* at
-the point of the Cité. **That folio is wrong, and the correction was relayed to this session after the
-rest of this note was written:** f. 55 is the folio in the **1561** edition; in the **1550** edition the
-passage stands at **f. 88** (Gallica `bpt6k1527257k` for 1550, `bpt6k1510886x` for 1561). The other two
-Corrozet leads' editions were right — L0217 at 1550 f. 193 and 1561 f. 121, L0133 at 1550 f. 198.
-Anyone citing the first lead from the earlier wording should correct the folio.
+**The folio first.** The brief that set this pass going pointed at **Corrozet, *Les Antiquitez,
+histoires et singularitez de Paris*, 1550, f. 55**. That folio is wrong: f. 55 is the **1561** folio; in
+the **1550** edition the passage stands at **f. 88** (Gallica `bpt6k1527257k` for 1550,
+`bpt6k1510886x` for 1561). The other two Corrozet leads' editions were right — L0217 at 1550 f. 193 and
+1561 f. 121, L0133 at 1550 f. 198. Anyone citing the first lead from the earlier wording should correct
+the folio.
 
-**I could not open either edition** (Gallica refuses this session: see *Sources I could not open*), so
-the passage is recorded here as relayed, from another session's reading of the Gallica OCR, and **not as
-a source I have read**:
+**Who read it.** Not this session. Gallica refuses this session (see *Sources I could not open*), so
+I could open neither edition. The passage has since been **read from the page image of the 1550 edition
+by the maintainer**, who holds the scan (Gallica `bpt6k1527257k`, printed folio **88**, PDF p. 219),
+off the type and not the OCR, and reported to this session. So it now meets the project's standard —
+but it meets it on the maintainer's reading, not mine, and this note says so rather than absorbing it as
+something I checked:
 
-> « …iusques à la pointe de l'isle de la cité de Paris, où est la **maison des estuues & iardin du roy**:
-> à l'endroit duquel iardin passoit iadis vn petit bras de Seine, séparant vne petite [isle] d'auec la
-> grande… »
+> « Les murs d'iceluy garnis de tours & tourelles, contient depuis le pont des musniers ou est
+> l'horloge, iusques au pont sainct Michel, enuironnantz des deux costez de la riuiere, **iusques à la
+> pointe de l'isle de la cité de Paris, où est la maison des estuues & iardin du roy**, à l'endroit
+> duquel iardin passoit iadis vn petit bras de Seine, séparant vne petite [isle] d'auec la grande… »
 
-reported to sit in Corrozet's description of the Palais, in the paragraph on the circuit of its walls
-from the pont des Meuniers to the pont Saint-Michel, with OCR damage in the 1550 text (`estu ues`,
-`du toy` for *du roy*). **Treat it as a pointer until someone reads the folio.**
+(The long *s* is printed as *s*; the printed type reads *du roy*, where the OCR had `du toy`; the line
+break splits *estu-ues*. The `[isle]` is bracketed as the maintainer's reading reports it.)
 
-If it holds, it corroborates this section at three points and changes none of it: the *jardin du roy*
-and the *maison des estuues* side by side at the point of the Cité, and a small arm of the Seine that
-had once separated a small island from the large one — which is Sauval's and Jaillot's pair of islets,
-the île aux Bureaux and the île de la Gourdaine.
+It corroborates this section at three points and changes none of it: the *jardin du roy* and the
+*maison des estuues* **side by side at the point of the Cité** in 1550, in a passage about the circuit
+of the Palais walls from the pont des Meuniers — « ou est l'horloge » — to the pont Saint-Michel; and a
+small arm of the Seine that had once passed at the garden, **separating a small island from the large
+one**, which is Sauval's and Jaillot's pair of islets, the île aux Bureaux and the île de la Gourdaine.
 
 ⚠ **It does not date the mint works, and must not be read as doing so.** Corrozet's *maison des estuues*
 is the royal bath-house, which Sauval says the kings built at the point long before (I, p. 99: « Depuis
 nos Rois bâtirent des étuves à la pointe de cette Isle, & pour cela firent faire un logis nommé la
 maison des Etuves »). A bath-house named in 1550 is not a mint: the engines were installed in it in
 **1551**, by the documents quoted above. Corrozet 1550 naming the *maison des estuues* is therefore
-consistent with the map's mill label being **later** than 1550, not evidence for 1550.
+consistent with the map's mill label being **later** than 1550, and is not evidence for 1550 — which
+matters, because « maison des estuues » in a 1550 book sitting beside « Monnaie du Moulin des Étuves »
+invites exactly the wrong inference.
 
 **What remains unknown.** The garden's exact perimeter. Sauval and the royal letter put it at the west
 point of the Cité behind the Palais; Jaillot adds the alignment of the Pont-Neuf 12 toises from the
@@ -691,9 +700,10 @@ remain the single most useful things to read, as `print_shop.md` already says.
    having been joined to the Palais long before the Pont-Neuf — a use of Corrozet 1550 the project may
    want to check when Gallica is reachable again.
 8. **The folio for the first Corrozet lead was wrong in the brief that set this pass going.** The
-   *maison des estuues & iardin du roy* passage is at **1550 f. 88**; f. 55 is the **1561** folio.
-   Corrected by the session that wrote the brief, and recorded in the L0202 section above so that
-   nobody downstream repeats it.
+   *maison des estuues & iardin du roy* passage is at **1550 f. 88** (PDF p. 219); f. 55 is the **1561**
+   folio. Corrected by the session that wrote the brief, and the folio has since been read from the page
+   image by the maintainer; both are recorded in the L0202 section above so that nobody downstream
+   repeats the wrong folio.
 
 ---
 
@@ -701,7 +711,7 @@ remain the single most useful things to read, as `print_shop.md` already says.
 
 | Source | Why |
 |---|---|
-| **Gallica (gallica.bnf.fr)** | The host answers **HTTP 403** to this session's client on every path tried (`/ark:/…/f55.texteBrut`, `/ark:/…/f55.image`, the IIIF manifest). This is the site refusing, not the session's network policy. **Consequence: Corrozet 1550 f. 88 (the "maison des estuues & iardin du roy" lead — f. 55 is the 1561 folio), f. 193 (le pilory) and f. 198 (L'hostel d'Albret) are all unread.** The 1550 *Antiquitez* is in the owner's library (`library_verification.md` §1, Gallica `ark:/12148/bpt6k1527257k`), so these three folios are a short job on that machine, and they are the first thing to do next. |
+| **Gallica (gallica.bnf.fr)** | The host answers **HTTP 403** to this session's client on every path tried (`/ark:/…/f55.texteBrut`, `/ark:/…/f55.image`, the IIIF manifest). This is the site refusing, not the session's network policy. **Consequence: Corrozet 1550 f. 193 (le pilory) and f. 198 (L'hostel d'Albret) are unread.** f. 88 (the "maison des estuues & iardin du roy" lead — f. 55 is the 1561 folio) **has since been read from the page image by the maintainer** and is quoted in the L0202 section on that reading, not on mine. The 1550 *Antiquitez* is in the owner's library (`library_verification.md` §1, Gallica `ark:/12148/bpt6k1527257k`), so these folios are a short job on that machine; ff. 193 and 198 are what is left. |
 | **api.bnf.fr, data.bnf.fr** | Refused by the session's egress policy (CONNECT 403). |
 | **HathiTrust (babel.hathitrust.org)** | Refused by the session's egress policy (CONNECT 403). |
 | **Persée (www.persee.fr)** | Refused by the session's egress policy (CONNECT 403). |
