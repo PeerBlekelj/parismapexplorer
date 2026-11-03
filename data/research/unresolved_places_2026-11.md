@@ -90,6 +90,40 @@ Two further sources put the same garden in the same place:
 And in the repository, Cousin's own table of this map's names already has the entry, unidentified:
 `JARDIN DU ROI (le), à la pointe du Palais | | VII,1` (`data/research/cousin_1875_table.txt:208`).
 
+### The Corrozet lead: relayed, not read here — and the folio in the brief was wrong
+
+The brief that set this pass going pointed first at **Corrozet, *Les Antiquitez, histoires et
+singularitez de Paris*, 1550, f. 55**, for a passage naming the *maison des estuues & iardin du roy* at
+the point of the Cité. **That folio is wrong, and the correction was relayed to this session after the
+rest of this note was written:** f. 55 is the folio in the **1561** edition; in the **1550** edition the
+passage stands at **f. 88** (Gallica `bpt6k1527257k` for 1550, `bpt6k1510886x` for 1561). The other two
+Corrozet leads' editions were right — L0217 at 1550 f. 193 and 1561 f. 121, L0133 at 1550 f. 198.
+Anyone citing the first lead from the earlier wording should correct the folio.
+
+**I could not open either edition** (Gallica refuses this session: see *Sources I could not open*), so
+the passage is recorded here as relayed, from another session's reading of the Gallica OCR, and **not as
+a source I have read**:
+
+> « …iusques à la pointe de l'isle de la cité de Paris, où est la **maison des estuues & iardin du roy**:
+> à l'endroit duquel iardin passoit iadis vn petit bras de Seine, séparant vne petite [isle] d'auec la
+> grande… »
+
+reported to sit in Corrozet's description of the Palais, in the paragraph on the circuit of its walls
+from the pont des Meuniers to the pont Saint-Michel, with OCR damage in the 1550 text (`estu ues`,
+`du toy` for *du roy*). **Treat it as a pointer until someone reads the folio.**
+
+If it holds, it corroborates this section at three points and changes none of it: the *jardin du roy*
+and the *maison des estuues* side by side at the point of the Cité, and a small arm of the Seine that
+had once separated a small island from the large one — which is Sauval's and Jaillot's pair of islets,
+the île aux Bureaux and the île de la Gourdaine.
+
+⚠ **It does not date the mint works, and must not be read as doing so.** Corrozet's *maison des estuues*
+is the royal bath-house, which Sauval says the kings built at the point long before (I, p. 99: « Depuis
+nos Rois bâtirent des étuves à la pointe de cette Isle, & pour cela firent faire un logis nommé la
+maison des Etuves »). A bath-house named in 1550 is not a mint: the engines were installed in it in
+**1551**, by the documents quoted above. Corrozet 1550 naming the *maison des estuues* is therefore
+consistent with the map's mill label being **later** than 1550, not evidence for 1550.
+
 **What remains unknown.** The garden's exact perimeter. Sauval and the royal letter put it at the west
 point of the Cité behind the Palais; Jaillot adds the alignment of the Pont-Neuf 12 toises from the
 wall of the *corps d'hôtel des Étuves*, which would fix the étuves but not the garden's other sides.
@@ -647,7 +681,7 @@ remain the single most useful things to read, as `print_shop.md` already says.
 5. **A third dating opinion is missing from the project.** Berty and Tisserand date the plan **1552**
    (1887, p. 94; 1897, plate captions). The project records only *History of Cartography* ch. 48 (1550)
    and ch. 53 (ca. 1553).
-6. **Berty's « le plan de 15[4]8 »** (1876, p. 207) is **not** identified as this map and must not be
+6. **Berty's « le plan de `i5û8` »** (1876, p. 207) is **not** identified as this map and must not be
    cited as if it were. See the L0217 section.
 7. **Jaillot corrects Sauval twice on the Cité islets**, which matters if either is ever cited here: the
    mill « ne s'est jamais appelé de Bucy, mais à la Gourdaine » (Sauval I, p. 100 calls it « le moulin de
@@ -656,6 +690,10 @@ remain the single most useful things to read, as `print_shop.md` already says.
    31 Octobre 1543 »). Jaillot also cites « Corrozet, édit. de 1550 » as his authority for the islets
    having been joined to the Palais long before the Pont-Neuf — a use of Corrozet 1550 the project may
    want to check when Gallica is reachable again.
+8. **The folio for the first Corrozet lead was wrong in the brief that set this pass going.** The
+   *maison des estuues & iardin du roy* passage is at **1550 f. 88**; f. 55 is the **1561** folio.
+   Corrected by the session that wrote the brief, and recorded in the L0202 section above so that
+   nobody downstream repeats it.
 
 ---
 
@@ -663,7 +701,7 @@ remain the single most useful things to read, as `print_shop.md` already says.
 
 | Source | Why |
 |---|---|
-| **Gallica (gallica.bnf.fr)** | The host answers **HTTP 403** to this session's client on every path tried (`/ark:/…/f55.texteBrut`, `/ark:/…/f55.image`, the IIIF manifest). This is the site refusing, not the session's network policy. **Consequence: Corrozet 1550 f. 55 (the "maison des estuues & iardin du roy" lead), f. 193 (le pilory) and f. 198 (L'hostel d'Albret) are all unread.** The 1550 *Antiquitez* is in the owner's library (`library_verification.md` §1, Gallica `ark:/12148/bpt6k1527257k`), so these three folios are a short job on that machine, and they are the first thing to do next. |
+| **Gallica (gallica.bnf.fr)** | The host answers **HTTP 403** to this session's client on every path tried (`/ark:/…/f55.texteBrut`, `/ark:/…/f55.image`, the IIIF manifest). This is the site refusing, not the session's network policy. **Consequence: Corrozet 1550 f. 88 (the "maison des estuues & iardin du roy" lead — f. 55 is the 1561 folio), f. 193 (le pilory) and f. 198 (L'hostel d'Albret) are all unread.** The 1550 *Antiquitez* is in the owner's library (`library_verification.md` §1, Gallica `ark:/12148/bpt6k1527257k`), so these three folios are a short job on that machine, and they are the first thing to do next. |
 | **api.bnf.fr, data.bnf.fr** | Refused by the session's egress policy (CONNECT 403). |
 | **HathiTrust (babel.hathitrust.org)** | Refused by the session's egress policy (CONNECT 403). |
 | **Persée (www.persee.fr)** | Refused by the session's egress policy (CONNECT 403). |
