@@ -2,6 +2,38 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-11-03 (night) — an independent reading of the 206 descriptions, and twenty pulled
+
+**An independent second reading found twenty descriptions that should not have shipped, and they are pulled.**
+A separate model read all 206 longer descriptions against their sources (`data/research/detail_review.md`,
+`detail_review.csv`). It asks what the mechanical checks cannot: is the source itself right, is the text about
+the century the map shows, does it claim more than its source, does it conflate two things, does it agree with the
+card it sits on. Result: **20 hold, 135 edit, 51 ok**. Of the 135, about half want one sentence deleted. It says
+plainly that only **61** were checked deeply (the Wikipedia article opened past the extract, its references read)
+and 145 shallowly, and that accents are flattened in its CSV.
+
+The twenty were real defects, and all twenty were live. L0025 LA MONNOIE described the **modern** Monnaie de Paris,
+down to a 2007 finance law, on a card for a building pulled down after 1775. L0029 described the Petit-Bourbon
+(the hôtel d'Alençon is only its neighbour). L0034 described the Tour de Nesle on the hôtel de Nesle's card, and
+turned an antiquarian's opinion of 1853 into an established fact. The rest are a mix of those three kinds: a source
+about the modern place, a neighbour described instead, an unattributed opinion.
+
+**Pulled, not rewritten.** The twenty ids are removed from `details.csv` and recorded in `details-held.csv` with the
+reviewer's reason, so `places.json` now carries 186 details and the cards for those twenty show only their short
+description, which is accurate. Regenerated with `--auto-gcps` (46 control points held); the diff of `places.json`
+is exactly twenty places, field `detail` only, plus the timestamp. All six check scripts are green against a local
+preview before the deploy. The suggested edits are suggestions: nothing in the review was applied.
+
+**Also merged:** `unresolved-places` (data/research/unresolved_places_2026-11.md and proposals/), a write-up of the
+six places that still carried no source and two research questions. Proposals only; no data file changed. Its main
+finding is the **moulin de la Gourdaine**: the King's letter of 9 May 1551 (Registres, t. III, pp. 247-248) asks for
+"ung viel moullin... à la porte de nostre jardin du Palais de Paris, nommé la Gourdaine" to house the German coining
+engines, so the mill the map labels LE MOULIN DE LA MONNOIE cannot predate spring 1551. That is a lower bound on the
+state of the city the sheet shows, and it is incompatible with a city as of 1550; it does not by itself choose between
+*History of Cartography* ch. 48 (1550) and ch. 53 (ca. 1553), and Berty and Tisserand date the map 1552. The write-up
+read Internet Archive OCR and not page images, and says so on every quotation; its Corrozet 1550 folios (ff. 88, 193,
+198) were read from the page image afterwards.
+
 ## 2026-11-02 (16:10) — the faubourg sweep, and the reading flag stops overclaiming
 
 **The reading flag told a lie, and the data already knew.** The owner asked why L0419 says "the label
