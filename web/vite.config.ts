@@ -150,7 +150,7 @@ function sitePages(): Plugin {
         writeFileSync(resolve(dir, 'index.html'), page);
       };
 
-      const paths = ['', 'map/', 'method/', 'texts/'];
+      const paths = ['', 'map/', 'method/', 'texts/', 'sources/'];
       for (const l of LANGS) {
         const s = STRINGS[l];
         write({ lang: l, title: s.siteTitle, desc: s.siteDesc, path: 'map/', image: `${SITE}/og/site.jpg`, alt: s.siteImageAlt });
@@ -208,6 +208,7 @@ export default defineConfig({
         ...(parked('sv') ? {} : { homeSv: resolve(import.meta.dirname, 'sv/index.html'), methodSv: resolve(import.meta.dirname, 'sv/method/index.html') }),
         method: resolve(import.meta.dirname, 'method/index.html'),
         suggest: resolve(import.meta.dirname, 'suggest/index.html'),
+        sources: resolve(import.meta.dirname, 'sources/index.html'),
         ...Object.fromEntries(TEXTS.map((t) => [t.replace('/', '-'), resolve(import.meta.dirname, t, 'index.html')])),
       },
     },

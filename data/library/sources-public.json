@@ -1,0 +1,494 @@
+{
+ "library": [
+  {
+   "slug": "c-est-l-ordre-qui-a-este-bpt6k1510092w",
+   "title": "C'est l'ordre qui a esté tenu à la nouvelle et joyeuse entrée de Henri II en sa ville de Paris, 16 juin 1549",
+   "author": "",
+   "date": "1549",
+   "url": "https://gallica.bnf.fr/ark:/12148/bpt6k1510092w",
+   "pages": 88,
+   "group": "The city's own records",
+   "blurb": "The festival book of Henri II's entry into Paris on 16 June 1549: the arches, the inscriptions, the order of the procession."
+  },
+  {
+   "slug": "la-fleur-des-antiquitez-de-corrozet-gilles-bpt6k6487221d",
+   "title": "La Fleur des antiquitez de la noble et triumphante ville et cité de Paris",
+   "author": "Gilles Corrozet",
+   "date": "1532 (éd. 1874)",
+   "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6487221d",
+   "pages": 218,
+   "group": "Guides to the city",
+   "blurb": "Gilles Corrozet's first book on Paris, in the 1874 edition. It prints the poem the map later carries, with the acrostic that spells his name."
+  },
+  {
+   "slug": "les-antiquitez-histoires-et-singularitez-corr-bpt6k1527257k",
+   "title": "Les Antiquitez, histoires et singularitez de Paris, ville capitale du royaume de France ... (Par G. Corrozet.)",
+   "author": "Corrozet, Gilles (1510-1568)",
+   "date": "1550",
+   "url": "https://gallica.bnf.fr/ark:/12148/bpt6k1527257k",
+   "pages": 459,
+   "group": "Guides to the city",
+   "blurb": "The first edition of Corrozet's guide, printed the year this project is set in."
+  },
+  {
+   "slug": "les-antiquitez-histoires-et-singularitez-corr-bpt6k1510886x",
+   "title": "Les antiquitez, histoires et singularitez excellentes de la ville, cité et université de Paris",
+   "author": "Gilles Corrozet",
+   "date": "1561",
+   "url": "https://gallica.bnf.fr/ark:/12148/bpt6k1510886x",
+   "pages": 285,
+   "group": "Guides to the city",
+   "blurb": "The 1561 edition of the same guide, enlarged."
+  },
+  {
+   "slug": "les-metiers-et-corporations-de-lespinasse-ren-bpt6k5823044k",
+   "title": "Les métiers et corporations de la ville de Paris : XIVe-XVIIIe siècles",
+   "author": "Lespinasse, René de (1843-1922)",
+   "date": "",
+   "url": "https://gallica.bnf.fr/ark:/12148/bpt6k5823044k",
+   "pages": 738,
+   "group": "Trades and printing",
+   "blurb": "René de Lespinasse on the trades and guilds of Paris, from the 14th to the 18th century (first volume)."
+  },
+  {
+   "slug": "lutece-ou-premier-plan-de-delamare-nicolas-btv1b8593322b",
+   "title": "Lutèce ou premier plan de la ville de Paris tiré de Cesar, de Strabon, de l'Empereur Julien et d'Ammiam Marcellin",
+   "author": "La Mare, Nicolas de, 1639-1723",
+   "date": "",
+   "url": "https://gallica.bnf.fr/ark:/12148/btv1b8593322b",
+   "pages": 3,
+   "group": "The map and other plans",
+   "blurb": "Nicolas de La Mare's plan of Roman Lutetia."
+  },
+  {
+   "slug": "cousin-1875-memoires-shp-bpt6k6310467r",
+   "title": "Mémoires de la Société de l'histoire de Paris et de l'Ile-de-France",
+   "author": "Société de l'histoire de Paris et de l'Ile-de-France",
+   "date": "1875",
+   "url": "https://gallica.bnf.fr/ark:/12148/bpt6k6310467r",
+   "pages": 302,
+   "group": "The map and other plans",
+   "blurb": "Jules Cousin's notice on the Truschet and Hoyau plan, written the year after it came to light in Basel."
+  },
+  {
+   "slug": "registres-des-deliberations-du-bureau-bpt6k5821300t",
+   "title": "Registres des délibérations du bureau de la ville de Paris, tome 10 (1590-1594)",
+   "author": "éd. Paul Guérin",
+   "date": "1590–1594",
+   "url": "https://gallica.bnf.fr/ark:/12148/bpt6k5821300t",
+   "pages": 546,
+   "group": "The city's own records",
+   "blurb": "The minutes of the city council during the years of the Catholic League."
+  },
+  {
+   "slug": "registres-des-deliberations-bureau-ville-de-paris-t3-1539-15",
+   "title": "Registres des délibérations du bureau de la ville de Paris, tome 3 (1539-1552)",
+   "author": "éd. Paul Guérin",
+   "date": "1539–1552",
+   "url": "https://archive.org/details/registresdesd03pariuoft",
+   "pages": 404,
+   "group": "The city's own records",
+   "blurb": "The minutes of the city council, the Bureau de la ville. This tome covers 1550."
+  },
+  {
+   "slug": "registres-des-deliberations-bureau-ville-de-paris-t4-1552-15",
+   "title": "Registres des délibérations du bureau de la ville de Paris, tome 4 (1552-1558)",
+   "author": "éd. François Bonnardot",
+   "date": "1552–1558",
+   "url": "https://archive.org/details/registresdesdl04pariuoft",
+   "pages": 680,
+   "group": "The city's own records",
+   "blurb": "The minutes of the city council for the years just after 1550."
+  },
+  {
+   "slug": "repertoire-des-imprimeurs-parisiens-renouard-bpt6k65711282",
+   "title": "Répertoire des imprimeurs parisiens : libraires, fondeurs de caractères et correcteurs d'imprimerie",
+   "author": "Renouard, Philippe (1862-1934)",
+   "date": "",
+   "url": "https://gallica.bnf.fr/ark:/12148/bpt6k65711282",
+   "pages": 547,
+   "group": "Trades and printing",
+   "blurb": "Philippe Renouard's directory of Paris printers, booksellers and type-founders."
+  },
+  {
+   "slug": "vieux-paris-vieux-plans-beaurepaire-edmond-bpt6k64563829",
+   "title": "Vieux Paris, vieux plans",
+   "author": "Beaurepaire, Edmond (1854-1917)",
+   "date": "",
+   "url": "https://gallica.bnf.fr/ark:/12148/bpt6k64563829",
+   "pages": 26,
+   "group": "The map and other plans",
+   "blurb": "Edmond Beaurepaire on the old plans of Paris."
+  }
+ ],
+ "queued": [
+  {
+   "title": "Registres des deliberations du bureau de la ville de Paris, tome 1",
+   "author": "ed. Francois Bonnardot",
+   "date": "1883",
+   "url": "https://archive.org/details/registresdesdeli01pari",
+   "priority": "A",
+   "category": "A"
+  },
+  {
+   "title": "Registres des deliberations du bureau de la ville de Paris, tome 2",
+   "author": "ed. Alexandre Tuetey",
+   "date": "1886",
+   "url": "https://archive.org/details/registresdesd02pariuoft",
+   "priority": "A",
+   "category": "A"
+  },
+  {
+   "title": "Registres des deliberations du bureau de la ville de Paris, tome 5",
+   "author": "ed. Alexandre Tuetey",
+   "date": "1892",
+   "url": "https://archive.org/details/registresdesdl05pariuoft",
+   "priority": "A",
+   "category": "A"
+  },
+  {
+   "title": "Registres des deliberations du bureau de la ville de Paris, tome 6",
+   "author": "ed. Paul Guerin",
+   "date": "1892",
+   "url": "https://archive.org/details/registresdesdl06pariuoft",
+   "priority": "B",
+   "category": "A"
+  },
+  {
+   "title": "Registres des deliberations du bureau de la ville de Paris, tome 7",
+   "author": "ed. Francois Bonnardot",
+   "date": "1893",
+   "url": "https://archive.org/details/registresdesdl07pariuoft",
+   "priority": "B",
+   "category": "A"
+  },
+  {
+   "title": "Registres des deliberations du bureau de la ville de Paris, tome 8",
+   "author": "ed. Paul Guerin",
+   "date": "1896",
+   "url": "https://archive.org/details/registresdesdl08pariuoft",
+   "priority": "B",
+   "category": "A"
+  },
+  {
+   "title": "Registres des deliberations du bureau de la ville de Paris, tome 9",
+   "author": "ed. Francois Bonnardot",
+   "date": "1902",
+   "url": "https://archive.org/details/registresdesdl03pariuoft",
+   "priority": "B",
+   "category": "A"
+  },
+  {
+   "title": "Registres des deliberations du bureau de la ville de Paris, tome 11",
+   "author": "ed. Alexandre Tuetey",
+   "date": "1902",
+   "url": "https://archive.org/details/registresdesdl11pariuoft",
+   "priority": "B",
+   "category": "A"
+  },
+  {
+   "title": "Registres des deliberations du bureau de la ville de Paris, tome 12",
+   "author": "ed. Paul Guerin",
+   "date": "1909",
+   "url": "https://archive.org/details/registresdesdl12pariuoft",
+   "priority": "B",
+   "category": "A"
+  },
+  {
+   "title": "Journal d'un bourgeois de Paris sous le regne de Francois Premier (1515-1536)",
+   "author": "ed. Ludovic Lalanne",
+   "date": "1854",
+   "url": "https://archive.org/details/journaldunbourge00lalauoft",
+   "priority": "A",
+   "category": "B"
+  },
+  {
+   "title": "Les metiers et corporations de la ville de Paris, XIVe-XVIIIe siecle, tome 2, tome 2",
+   "author": "Rene de Lespinasse",
+   "date": "1892",
+   "url": "https://archive.org/details/lesmtiersetcor02lespuoft",
+   "priority": "A",
+   "category": "B"
+  },
+  {
+   "title": "Les metiers et corporations de la ville de Paris, XIVe-XVIIIe siecle, tome 3, tome 3",
+   "author": "Rene de Lespinasse",
+   "date": "1897",
+   "url": "https://archive.org/details/lesmtiersetcor03lespuoft",
+   "priority": "A",
+   "category": "B"
+  },
+  {
+   "title": "Memoires de Claude Haton, 1553-1582, tome 1, tome 1",
+   "author": "ed. Felix Bourquelot",
+   "date": "1857",
+   "url": "https://archive.org/details/mmoiresdeclaudeh01hato",
+   "priority": "A",
+   "category": "B"
+  },
+  {
+   "title": "Memoires de Claude Haton, 1553-1582, tome 2, tome 2",
+   "author": "ed. Felix Bourquelot",
+   "date": "1857",
+   "url": "https://archive.org/details/mmoiresdeclaudeh02hato",
+   "priority": "B",
+   "category": "B"
+  },
+  {
+   "title": "Recueil general des anciennes lois francaises, tome XII: regne de Francois Ier, tome 12",
+   "author": "Isambert, Decrusy, Armet",
+   "date": "1828",
+   "url": "https://archive.org/details/recueilgnral12fran",
+   "priority": "A",
+   "category": "B"
+  },
+  {
+   "title": "Recueil general des anciennes lois francaises, tome XIII: regne de Henri II, tome 13",
+   "author": "Isambert, Decrusy",
+   "date": "1828",
+   "url": "https://archive.org/details/recueilgnral13fran",
+   "priority": "A",
+   "category": "B"
+  },
+  {
+   "title": "Oeuvres completes d'Ambroise Pare, revues et collationnees sur toutes les editions, tome 1, tome 1",
+   "author": "Ambroise Pare, ed. J.-F. Malgaigne",
+   "date": "1840",
+   "url": "https://archive.org/details/oeuvrescomplte01par",
+   "priority": "A",
+   "category": "B"
+  },
+  {
+   "title": "Oeuvres completes d'Ambroise Pare, revues et collationnees sur toutes les editions, tome 2, tome 2",
+   "author": "Ambroise Pare, ed. J.-F. Malgaigne",
+   "date": "1840",
+   "url": "https://archive.org/details/oeuvrescomplte02par",
+   "priority": "B",
+   "category": "B"
+  },
+  {
+   "title": "Oeuvres completes d'Ambroise Pare, revues et collationnees sur toutes les editions, tome 3, tome 3",
+   "author": "Ambroise Pare, ed. J.-F. Malgaigne",
+   "date": "1840",
+   "url": "https://archive.org/details/oeuvrescomplte03par",
+   "priority": "B",
+   "category": "B"
+  },
+  {
+   "title": "C'est l'ordre qui a este tenu a la nouvelle et joyeuse entree ... [Henri II, Paris, 1549]",
+   "author": "ill. Jean Goujon",
+   "date": "1549",
+   "url": "https://archive.org/details/cestlordrequiest00gouj",
+   "priority": "B",
+   "category": "B"
+  },
+  {
+   "title": "La magnificque et triumphante entree du tresillustre et sacre empereur Charles Cesar ... en la excellente ville et cite de Paris",
+   "author": "anon. [Paris, 1540]",
+   "date": "1540",
+   "url": "https://archive.org/details/OEXV754P18",
+   "priority": "A",
+   "category": "B"
+  },
+  {
+   "title": "Memoires-journaux de Pierre de L'Estoile, tome premier: Journal de Henri III, 1574-1580, tome 1",
+   "author": "Pierre de L'Estoile, ed. Brunet et al.",
+   "date": "1875",
+   "url": "https://archive.org/details/mmoiresjournaux15lesgoog",
+   "priority": "B",
+   "category": "B"
+  },
+  {
+   "title": "Epitaphier du vieux Paris: recueil general des inscriptions funeraires, tome I, tome I",
+   "author": "Emile Raunie",
+   "date": "1890",
+   "url": "https://archive.org/details/pitaphierduvie01raunuoft",
+   "priority": "B",
+   "category": "B"
+  },
+  {
+   "title": "Le theatre des antiquitez de Paris",
+   "author": "Jacques Du Breul",
+   "date": "1612",
+   "url": "https://archive.org/details/letheatredesanti00dubr",
+   "priority": "A",
+   "category": "C"
+  },
+  {
+   "title": "Histoire et recherches des antiquites de la ville de Paris, tome 1, tome 1",
+   "author": "Henri Sauval",
+   "date": "1724",
+   "url": "https://archive.org/details/histoireetrecher01sauv",
+   "priority": "B",
+   "category": "C"
+  },
+  {
+   "title": "Histoire et recherches des antiquites de la ville de Paris, tome 2, tome 2",
+   "author": "Henri Sauval",
+   "date": "1724",
+   "url": "https://archive.org/details/histoireetrecher02sauv",
+   "priority": "B",
+   "category": "C"
+  },
+  {
+   "title": "Histoire et recherches des antiquites de la ville de Paris, tome 3, tome 3",
+   "author": "Henri Sauval",
+   "date": "1724",
+   "url": "https://archive.org/details/histoireetrecher03sauv",
+   "priority": "B",
+   "category": "C"
+  },
+  {
+   "title": "Histoire de la ville de Paris, tome troisieme, tome 3",
+   "author": "Michel Felibien et Guy-Alexis Lobineau",
+   "date": "1725",
+   "url": "https://archive.org/details/gri_33125008573111",
+   "priority": "B",
+   "category": "C"
+  },
+  {
+   "title": "Histoire de la ville de Paris, tome cinquieme: troisieme volume des pieces justificatives, tome 5",
+   "author": "Michel Felibien et Guy-Alexis Lobineau",
+   "date": "1725",
+   "url": "https://archive.org/details/gri_33125008572931",
+   "priority": "B",
+   "category": "C"
+  },
+  {
+   "title": "Dictionnaire administratif et historique des rues de Paris et de ses monuments",
+   "author": "Felix Lazare et Louis Lazare",
+   "date": "1844",
+   "url": "https://archive.org/details/dictionnaireadm00lazagoog",
+   "priority": "B",
+   "category": "C"
+  },
+  {
+   "title": "Topographie historique du vieux Paris, tome 1: Region du Louvre et des Tuileries, tome 1",
+   "author": "Adolphe Berty, H. Legrand, L.-M. Tisserand",
+   "date": "1885",
+   "url": "https://archive.org/details/topographiehisto01bertuoft",
+   "priority": "A",
+   "category": "C"
+  },
+  {
+   "title": "Topographie historique du vieux Paris, tome 2: Region du Louvre et des Tuileries, tome 2",
+   "author": "Adolphe Berty, H. Legrand, L.-M. Tisserand",
+   "date": "1885",
+   "url": "https://archive.org/details/topographiehisto02bertuoft",
+   "priority": "A",
+   "category": "C"
+  },
+  {
+   "title": "Topographie historique du vieux Paris, tome 3: Region du Bourg Saint-Germain, tome 3",
+   "author": "Adolphe Berty, H. Legrand, L.-M. Tisserand",
+   "date": "1876",
+   "url": "https://archive.org/details/topographiehisto03bertuoft",
+   "priority": "A",
+   "category": "C"
+  },
+  {
+   "title": "Topographie historique du vieux Paris, tome 4: Region du faubourg Saint-Germain, tome 4",
+   "author": "Adolphe Berty, H. Legrand, L.-M. Tisserand",
+   "date": "1882",
+   "url": "https://archive.org/details/topographiehisto04bert",
+   "priority": "B",
+   "category": "C"
+  },
+  {
+   "title": "Topographie historique du vieux Paris, tome 5: Region occidentale de l'Universite, tome 5",
+   "author": "Adolphe Berty, H. Legrand, L.-M. Tisserand",
+   "date": "1887",
+   "url": "https://archive.org/details/topographiehisto05bertuoft",
+   "priority": "A",
+   "category": "C"
+  },
+  {
+   "title": "Topographie historique du vieux Paris, tome 6: Region centrale de l'Universite, tome 6",
+   "author": "Adolphe Berty, H. Legrand, L.-M. Tisserand",
+   "date": "1897",
+   "url": "https://archive.org/details/topographiehisto06bertuoft",
+   "priority": "A",
+   "category": "C"
+  },
+  {
+   "title": "Etudes archeologiques sur les anciens plans de Paris des XVIe, XVIIe et XVIIIe siecles",
+   "author": "Alfred Bonnardot",
+   "date": "1851",
+   "url": "https://archive.org/details/etudesarcheologi00bonn",
+   "priority": "A",
+   "category": "C"
+  },
+  {
+   "title": "Dissertations archeologiques sur les anciennes enceintes de Paris, suivies de recherches sur les portes fortifiees",
+   "author": "Alfred Bonnardot",
+   "date": "1853",
+   "url": "https://archive.org/details/dissertationsarc00bonn",
+   "priority": "A",
+   "category": "C"
+  },
+  {
+   "title": "Appendice aux Etudes archeologiques sur les anciens plans de Paris",
+   "author": "Alfred Bonnardot",
+   "date": "1877",
+   "url": "https://archive.org/details/appendiceauxetud00bonn",
+   "priority": "B",
+   "category": "C"
+  },
+  {
+   "title": "Les anciens plans de Paris: notices historiques et topographiques, tome 1, tome 1",
+   "author": "Alfred Franklin",
+   "date": "1878",
+   "url": "https://archive.org/details/lesanciensplansd01fran",
+   "priority": "A",
+   "category": "C"
+  },
+  {
+   "title": "Les anciens plans de Paris: notices historiques et topographiques, tome 2, tome 2",
+   "author": "Alfred Franklin",
+   "date": "1878",
+   "url": "https://archive.org/details/lesanciensplansd02fran",
+   "priority": "B",
+   "category": "C"
+  },
+  {
+   "title": "Paris et ses historiens aux XIVe et XVe siecles: documents et ecrits originaux",
+   "author": "Le Roux de Lincy et L.-M. Tisserand",
+   "date": "1867",
+   "url": "https://archive.org/details/parisetseshistor00lerouoft",
+   "priority": "B",
+   "category": "C"
+  },
+  {
+   "title": "La vie privee d'autrefois: arts et metiers, modes, moeurs, usages des Parisiens du XIIe au XVIIIe siecle - L'hygiene, serie 1 vol. 10",
+   "author": "Alfred Franklin",
+   "date": "1888",
+   "url": "https://archive.org/details/lavieprivedaut10franuoft",
+   "priority": "B",
+   "category": "C"
+  },
+  {
+   "title": "La vie privee d'autrefois: arts et metiers, modes, moeurs, usages des Parisiens du XIIe au XVIIIe siecle - La cuisine, serie 1 vol. 6",
+   "author": "Alfred Franklin",
+   "date": "1888",
+   "url": "https://archive.org/details/lavieprivedaut06franuoft",
+   "priority": "B",
+   "category": "C"
+  },
+  {
+   "title": "La vie privee d'autrefois: arts et metiers, modes, moeurs, usages des Parisiens du XIIe au XVIIIe siecle - Les chirurgiens, serie 1 vol. 19",
+   "author": "Alfred Franklin",
+   "date": "1888",
+   "url": "https://archive.org/details/lavieprivedaut19franuoft",
+   "priority": "B",
+   "category": "C"
+  },
+  {
+   "title": "La vie privee d'autrefois: arts et metiers, modes, moeurs, usages des Parisiens du XIIe au XVIIIe siecle - Ecoles et colleges, serie 1 vol. 17",
+   "author": "Alfred Franklin",
+   "date": "1888",
+   "url": "https://archive.org/details/lavieprivedaut17franuoft",
+   "priority": "B",
+   "category": "C"
+  }
+ ]
+}
