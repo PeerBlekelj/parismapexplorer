@@ -111,8 +111,8 @@ function withTopbar(html: string): string {
   const bar = '    <nav class="topbar" aria-label="Site"><div class="topbar-in">' +
     '<a class="brand" href="/">Paris 1550</a>' +
     (items.length > 1 ? '<button type="button" class="menu" aria-expanded="false" aria-controls="topbar-sections">Contents</button>' +
-      `<ul id="topbar-sections" class="sections">${items.join('')}</ul>` : '<span class="sections"></span>') +
-    '<a class="open" href="/map/">Open the map \u2192</a></div></nav>\n';
+      `<ul id="topbar-sections" class="sections">${items.join('')}<li class="narrow-only"><a href="/sources/">Sources</a></li></ul>` : '<span class="sections"></span>') +
+    '<a class="sites" href="/sources/">Sources</a><a class="open" href="/map/">Open the map \u2192</a></div></nav>\n';
   return html.replace(/\n?\s*<nav class="toc"[\s\S]*?<\/nav>/, '').replace('<body class="doc">', `<body class="doc">\n${bar}`);
 }
 

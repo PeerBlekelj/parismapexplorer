@@ -79,7 +79,7 @@ page = f'''<!doctype html>
     <main class="doc-body">
       <section id="library">
         <h2>In the library <span class="count">{len(lib)}</span></h2>
-        <p>These volumes are held in the project's research library, where they can be searched page by page. Only open sources are listed, and only their details: the text stays in the library. The list is rebuilt whenever something is added. The sources cited for individual claims are on the <a href="/#sources">start page</a>.</p>
+        <p>These volumes are held in the project's research library, where they can be searched page by page. Only open sources are listed, and only their details: the text stays in the library. The list is rebuilt whenever something is added. The sources cited for individual claims are the references on the <a href="/#sources">start page</a> and the <a href="/method/#sources">method page</a>.</p>
         {chr(10).join(parts)}
       </section>
 
@@ -89,7 +89,7 @@ page = f'''<!doctype html>
         {chr(10).join(qparts)}
       </section>
 
-      <section id="help">
+      <section id="help" data-nav="Missing one?">
         <h2>Know a source we are missing?</h2>
         <p>Further reading, a better copy or a correction is welcome. <a href="/suggest/">Write to us</a>, no account needed.</p>
       </section>

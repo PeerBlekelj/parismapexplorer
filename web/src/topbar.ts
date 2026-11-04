@@ -28,3 +28,8 @@ if (bar) {
     byId.forEach((_, id) => { const el = document.getElementById(id); if (el) io.observe(el); });
   }
 }
+
+// On the Sources page itself, mark its link in the bar as the current page.
+if (location.pathname.replace(/\/$/, '') === '/sources') {
+  document.querySelectorAll<HTMLAnchorElement>('.topbar .sites').forEach((a) => a.setAttribute('aria-current', 'page'));
+}

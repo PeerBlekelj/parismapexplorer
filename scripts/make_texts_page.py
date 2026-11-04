@@ -299,7 +299,7 @@ L["en"] = dict(
     cap3="The notice, lower right of the map. Click for the full resolution.",
     h_other="Other words on the map",
     h_about="About this transcription",
-    h_sources="Sources",
+    h_sources="References",
     lang_links="",
 )
 L["fr"] = dict(
@@ -770,6 +770,7 @@ def page(lg):
     alternates = "\n".join(f'    <link rel="alternate" hreflang="{o}" href="%SITE%{L[o]["path"]}" />' for o in L if o in ACTIVE) + \
         f'\n    <link rel="alternate" hreflang="x-default" href="%SITE%{L["en"]["path"]}" />'
     s = L[lg]
+    refs_note = '        <p class="refs-note">Everything the project reads from is on the <a href="/sources/">Sources page</a>.</p>\n' if lg in ACTIVE else ''
     langs_line = f'      <p class="langs">{s["lang_links"]}</p>\n' if lg not in ACTIVE else ''
     return f"""<!doctype html>
 <html lang="{lg}">
@@ -836,7 +837,7 @@ def page(lg):
 
       <section id="sources">
         <h2>{s['h_sources']}</h2>
-        <ul class="sources">
+{refs_note}        <ul class="sources">
 {items(SOURCES)}
         </ul>
         <p class="muted">{s['by']}</p>
