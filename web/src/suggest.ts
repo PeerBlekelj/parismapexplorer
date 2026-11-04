@@ -15,15 +15,17 @@ const ENDPOINT = 'https://api.web3forms.com/submit';
 const REPO = 'https://github.com/PeerBlekelj/parismapexplorer';
 
 const $ = <T extends HTMLElement>(sel: string) => document.querySelector(sel) as T;
-const form = $<HTMLFormElement>('#suggest');
+const form = document.querySelector<HTMLFormElement>('#suggest');
+if (!form) throw new Error('no #suggest form on this page');
 const status = $('#status');
+/* The start page carries the same form without a place. */
 const send = $<HTMLButtonElement>('#send');
 
 // The place card links here with ?p=L0006&n=Le+Pont+S.+Michel (a place to correct), or nothing.
 const q = new URLSearchParams(location.search);
 const placeId = (q.get('p') ?? '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 12);
 const placeName = (q.get('n') ?? '').slice(0, 120);
-if (placeId) {
+if (placeId && document.querySelector('#place-line')) {
   const line = $('#place-line');
   line.textContent = `About: ${placeName || 'a place'} (${placeId})`;
   line.hidden = false;

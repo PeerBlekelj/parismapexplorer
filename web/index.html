@@ -38,6 +38,53 @@
     </header>
 
     <main class="doc-body">
+      <section id="note" class="note">
+        <figure class="note-pic">
+          <a href="https://auctionet.com/en/events/1162-the-design-sale/252-josef-frank-plan-de-paris-cabinet-firma-svenskt-tenn-early-1950s-model-b2144-walnut-doors-papered-with-truschet-and-hoyau-s-map-of-paris"><img src="/about/cabinet.webp" width="900" height="900" alt="Josef Frank's cabinet for Svenskt Tenn, standing on a walnut frame, its two doors papered with the Truschet and Hoyau map of Paris" /></a>
+          <figcaption>Josef Frank's cabinet for Svenskt Tenn, early 1950s, walnut with doors papered with the map. Photo from the Auctionet sale listing.</figcaption>
+        </figure>
+        <p>I have always loved maps, and I like sifting through online auction catalogues for old pieces of furniture. So when I, in the middle of October 2026, stumbled upon <a href="https://auctionet.com/en/events/1162-the-design-sale/252-josef-frank-plan-de-paris-cabinet-firma-svenskt-tenn-early-1950s-model-b2144-walnut-doors-papered-with-truschet-and-hoyau-s-map-of-paris">this fantastic cabinet</a> by Joseph Frank with a for me unknown map of Paris, I went down a rabbit hole.</p>
+        <p>The map itself was extraordinary. The colours, the details, the history of how it was found. I looked at it for hours, trying to locate places I knew, imagining what they would have looked like back then.</p>
+        <p>But the rabbit hole took me even further. The artists behind the map - Olivier Truschet and Germain Hoyau - lived on the same street in Paris that I used to live. Probably within 50 m (see more on the exact location <a href="#shop">further down</a>).<br />When I realised, I knew I had to do something about it.</p>
+        <p>I couldn’t afford to buy the cabinet, so instead I built this site.</p>
+        <p>I’ll have Claude explain <a href="/method/">here</a> how we went about handling the overlay of two very different kinds of map projections. But that was the easy part.</p>
+        <p>What took time was looking up all the named places - I wanted to have facts on all of them.<br />As I write this, I’m still building the repository of open source material to continue filling in details (<a href="#sources">see it here</a>), but I’ve managed to at least have some facts on each of the locations, even though it in some cases is only from Wikipedia.</p>
+        <p>I’ll keep expanding on the facts and collecting sources, so if you have suggestions on further reading or additional sources, please feel free to drop me a line.<br />And if you find something that is incorrect or plain out wrong, also please let me know.</p>
+        <p class="sign">//Peer Blekelj</p>
+        <h2 id="contact">Get in touch</h2>
+        <form id="suggest" class="suggest-form" novalidate>
+          <label for="f-kind">What is it about?</label>
+          <select id="f-kind" name="kind">
+            <option value="wrong">Something is wrong or missing</option>
+            <option value="source">A source or further reading</option>
+            <option value="other">A question, or something else</option>
+          </select>
+
+          <label for="f-message">Your message <span class="req">required</span></label>
+          <textarea id="f-message" name="message" rows="7" required></textarea>
+
+          <label for="f-source">A source, if you have one <span class="opt">optional</span></label>
+          <input id="f-source" name="source" type="text" placeholder="a link, or a book and page" autocomplete="off" />
+
+          <div class="two">
+            <div>
+              <label for="f-name">Your name <span class="opt">optional</span></label>
+              <input id="f-name" name="name" type="text" autocomplete="name" />
+            </div>
+            <div>
+              <label for="f-email">Your email <span class="opt">optional, only if you want an answer</span></label>
+              <input id="f-email" name="email" type="email" autocomplete="email" />
+            </div>
+          </div>
+
+          <!-- Spam trap: people never see or tick this. -->
+          <div class="trap" aria-hidden="true"><label>Leave this empty <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" /></label></div>
+
+          <p class="fineprint">What you send is used to improve the site. If you give an email, it is only used to answer you.</p>
+          <p class="actions"><button type="submit" id="send">Send</button> <span id="status" role="status" aria-live="polite"></span></p>
+        </form>
+      </section>
+
       <nav class="toc" aria-label="Contents">
         <ol>
           <li><a href="#map">The map</a></li>
@@ -369,5 +416,6 @@
       </section>
     </main>
     <script type="module" src="/src/method.ts"></script>
+    <script type="module" src="/src/suggest.ts"></script>
   </body>
 </html>
