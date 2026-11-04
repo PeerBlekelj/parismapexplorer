@@ -11,7 +11,7 @@ import './method.css';
 import './topbar';
 import './suggest.css';
 
-const ACCESS_KEY = '';
+const ACCESS_KEY = 'a553a6e4-786e-4b27-812c-369d4ac6151c';
 const ENDPOINT = 'https://api.web3forms.com/submit';
 const REPO = 'https://github.com/PeerBlekelj/parismapexplorer';
 
