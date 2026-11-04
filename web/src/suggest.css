@@ -1,0 +1,20 @@
+/* The suggestion form: the method page's palette and type, a plain stacked form. */
+.suggest-form { display: flex; flex-direction: column; gap: 6px; margin: 26px 0 0; font-family: var(--sans); font-size: 15px; }
+.suggest-form label { font-weight: 600; margin-top: 12px; }
+.suggest-form .req, .suggest-form .opt { font-weight: 400; font-size: 12.5px; color: var(--ink2); margin-left: 6px; }
+.suggest-form input[type="text"], .suggest-form input[type="email"], .suggest-form select, .suggest-form textarea {
+  font: inherit; color: var(--ink); background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 9px 11px; width: 100%; }
+.suggest-form textarea { resize: vertical; min-height: 140px; line-height: 1.45; }
+.suggest-form input:focus-visible, .suggest-form select:focus-visible, .suggest-form textarea:focus-visible, .suggest-form button:focus-visible { outline: 2px solid var(--blue); outline-offset: 1px; }
+.suggest-form .two { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; }
+.suggest-form .about-place { margin: 0; padding: 10px 14px; background: var(--paper2); border-radius: 6px; font-weight: 600; }
+.suggest-form .fineprint { font-size: 13px; color: var(--ink2); margin: 14px 0 0; }
+.suggest-form .actions { display: flex; align-items: center; gap: 14px; margin: 8px 0 0; }
+.suggest-form button { font: inherit; font-weight: 600; color: #fff; background: var(--red); border: 0; border-radius: 6px; padding: 11px 26px; cursor: pointer; }
+.suggest-form button:hover:not(:disabled) { background: #8a2f18; }
+.suggest-form button:disabled { opacity: .55; cursor: default; }
+.suggest-form #status.ok { color: #2f6b3a; }
+.suggest-form #status.bad { color: var(--red); }
+.suggest-form .trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.alt { font-family: var(--sans); font-size: 14px; margin: 26px 0 60px; }
+@media (max-width: 600px) { .suggest-form .two { grid-template-columns: 1fr; } }

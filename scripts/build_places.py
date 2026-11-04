@@ -63,6 +63,14 @@ def read_details(name):
 
 details = read_details("details.csv")
 
+# Places whose longer description was written and then held back after review
+# (data/research/details-held.csv, reason starting "held"). The card says so and invites a
+# correction. The one row held because there is simply nothing to draw on is not among them.
+held_details = set()
+_hp = root / "data/research/details-held.csv"
+if _hp.exists():
+    held_details = {r["id"] for r in csv.DictReader(open(_hp, encoding="utf-8")) if r["why"].startswith("held")}
+
 # Jules Cousin's 1875 table of the map's names (data/research/cousin.csv, from scripts/cousin_match.py):
 # cited on every place it lists, linked to the page on Gallica (Gallica page = printed page + 8).
 COUSIN = "https://gallica.bnf.fr/ark:/12148/bpt6k6310467r/f{f}.item"
@@ -181,6 +189,7 @@ for r in inv_rows:
         "summary_fr": nn(summaries_fr.get(r["id"])),
         "summary_sv": nn(summaries_sv.get(r["id"])),
         "detail": nn(details.get(r["id"])),
+        "detail_held": True if r["id"] in held_details and not details.get(r["id"]) else None,
         "variants": [v for v in (i.get("variants") or "").split("|") if v]
                     + ([cousin[r["id"]]["name"]] if r["id"] in cousin else []),
         "sources": (json.loads(i["sources"]) if nn(i.get("sources")) else [])

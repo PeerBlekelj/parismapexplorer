@@ -158,7 +158,9 @@ const en = {
 
   // correction link (opens a pre-filled GitHub issue)
   suggestCorrection: 'Suggest a correction',
-  suggestCorrectionHint: 'Opens a pre-filled issue on GitHub (needs a GitHub account)',
+  suggestCorrectionHint: 'Opens a short form; no account needed',
+  detailHeld: 'A longer description of this place was written and is being rechecked.',
+  detailHeldAction: 'If you know this place, tell us.',
 
   langLabel: 'Language',
   colon: ': ',
@@ -403,7 +405,9 @@ const fr: Strings = {
   oldAttribution: 'Truschet &amp; Hoyau, vers 1550 · bibliothèque universitaire de Bâle (domaine public)',
 
   suggestCorrection: 'Proposer une correction',
-  suggestCorrectionHint: 'Ouvre un ticket prérempli sur GitHub (compte GitHub nécessaire)',
+  suggestCorrectionHint: 'Ouvre un court formulaire ; aucun compte nécessaire',
+  detailHeld: 'Une description plus longue de ce lieu a été rédigée et est en cours de vérification.',
+  detailHeldAction: 'Si vous connaissez ce lieu, écrivez-nous.',
   viewTableShort: 'Tableau',
   modeSideShort: 'Les deux',
   modeOverlayShort: 'Superposé',
@@ -648,7 +652,9 @@ const sv: Strings = {
   oldAttribution: 'Truschet &amp; Hoyau, ca 1550 · Basels universitetsbibliotek (fri från upphovsrätt)',
 
   suggestCorrection: 'Föreslå en rättelse',
-  suggestCorrectionHint: 'Öppnar ett ifyllt ärende på GitHub (kräver ett GitHub-konto)',
+  suggestCorrectionHint: 'Öppnar ett kort formulär; inget konto behövs',
+  detailHeld: 'En längre beskrivning av platsen har skrivits och kontrolleras på nytt.',
+  detailHeldAction: 'Känner du till platsen, hör av dig.',
   viewTableShort: 'Tabell',
   modeSideShort: 'Båda',
   modeOverlayShort: 'Överlagrad',

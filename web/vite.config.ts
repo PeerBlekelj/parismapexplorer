@@ -199,6 +199,7 @@ export default defineConfig({
         ...(parked('fr') ? {} : { homeFr: resolve(import.meta.dirname, 'fr/index.html'), methodFr: resolve(import.meta.dirname, 'fr/method/index.html') }),
         ...(parked('sv') ? {} : { homeSv: resolve(import.meta.dirname, 'sv/index.html'), methodSv: resolve(import.meta.dirname, 'sv/method/index.html') }),
         method: resolve(import.meta.dirname, 'method/index.html'),
+        suggest: resolve(import.meta.dirname, 'suggest/index.html'),
         ...Object.fromEntries(TEXTS.map((t) => [t.replace('/', '-'), resolve(import.meta.dirname, t, 'index.html')])),
       },
     },

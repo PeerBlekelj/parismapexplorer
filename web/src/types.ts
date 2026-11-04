@@ -35,6 +35,7 @@ export interface Place {
   summary_fr?: string | null;
   summary_sv?: string | null;
   detail?: string | null;     // the longer description, English; null = none written
+  detail_held?: true | null;  // a longer description was written, then held back after review
 
   variants: string[];
   sources: Source[];

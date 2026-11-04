@@ -84,6 +84,8 @@ rather than replacing it, so the app shows it under the summary behind a disclos
 instead of it. English only: there is no `detail_fr`/`detail_sv` yet, so in French and Swedish the
 card shows the English text and says so.
 
+`detail_held` is `true` for the places whose description was written and then held back after an independent review (`data/research/details-held.csv`, reason starting "held"); the card tells the visitor and invites a correction. Otherwise `null`.
+
 `detail` is `null` for most places, and that is a normal, final answer as often as it is a gap.
 Each one is written from that place’s French source extract (`history_fr` in `data/places_*.csv`)
 and checked against it by `scripts/ingest_detail.py`: every factual claim must be carried by a span

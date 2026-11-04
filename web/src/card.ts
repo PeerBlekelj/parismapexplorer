@@ -7,20 +7,12 @@ import { langBase, t } from './i18n';
 import { displayTitle, modernText, type Entry } from './model';
 import type { PixelGeoTransform } from './transform';
 
-const REPO = 'https://github.com/PeerBlekelj/parismapexplorer';
-const SITE = 'https://paris1550.vercel.app';
 
 /** A new GitHub issue from `.github/ISSUE_TEMPLATE/correction.yml`, its fields filled in by id. */
 function correctionUrl(e: Entry): string {
-  const p = e.place;
-  const place = [
-    `On the map as: "${p.old}"`,
-    `Today: ${modernText(p).text}`,
-    `Status: ${statusLabel(p.status)}`,
-    `Link: ${SITE}/place/${p.id}/`,
-  ].join('\n');
-  const q = new URLSearchParams({ template: 'correction.yml', title: `Correction: ${p.id} ${displayTitle(e)}`, place_id: p.id, place });
-  return `${REPO}/issues/new?${q}`;
+  // The site's own form (no account needed); it offers GitHub as a second way.
+  const q = new URLSearchParams({ p: e.place.id, n: displayTitle(e) });
+  return `/suggest/?${q}`;
 }
 
 export interface CardActions {
@@ -112,6 +104,9 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, back
         <dt>${esc(t.id)}</dt><dd><a href="${langBase()}place/${encodeURIComponent(p.id)}/" class="permalink">${esc(p.id)}</a> · <span class="muted">${esc(t.link)}</span></dd>
       </dl>
       ${sum ? `<p class="summary"${sum.lang ? ` lang="${sum.lang}"` : ''}>${esc(sum.text)}</p>` : `<p class="summary placeholder">${esc(t.noSummary)}</p>`}
+      ${!det && p.detail_held
+        ? `<p class="held">${esc(t.detailHeld)} <a href="${esc(correctionUrl(e))}" target="_blank" rel="noopener">${esc(t.detailHeldAction)}</a></p>`
+        : ''}
       ${det
         ? `<details class="more"><summary>${esc(t.more)}${det.english ? ` <span class="muted">(${esc(t.moreEnglishOnly)})</span>` : ''}</summary>
              <p class="more-body"${det.english ? ' lang="en"' : ''}>${esc(det.text)}</p>

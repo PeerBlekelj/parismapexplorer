@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suggest a correction · Paris 1550</title>
+    <meta name="description" content="Something wrong or missing on the Paris 1550 map? Tell us. No account needed." />
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="%SITE%/suggest/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="doc">
+    <header class="doc-head">
+      <div class="doc-top">
+        <span class="home-links"><a class="back" href="/">← Paris 1550</a> · <a class="back" href="/map/">Open the map</a></span>
+      </div>
+      <h1>Suggest a correction</h1>
+      <p class="lede" id="about-place">Something wrong, missing or worth adding? Tell us here. You do not need an account.</p>
+    </header>
+
+    <main class="doc-body">
+      <section id="form">
+      <form id="suggest" class="suggest-form" novalidate>
+        <p class="about-place" id="place-line" hidden></p>
+
+        <label for="f-kind">What is it about?</label>
+        <select id="f-kind" name="kind">
+          <option value="location">Where the place is (position on today's map)</option>
+          <option value="reading">The name or how the label is read</option>
+          <option value="description">The description or what is said about it</option>
+          <option value="source">A source I can point to</option>
+          <option value="other">Something else</option>
+        </select>
+
+        <label for="f-message">What should be different? <span class="req">required</span></label>
+        <textarea id="f-message" name="message" rows="7" required></textarea>
+
+        <label for="f-source">A source, if you have one <span class="opt">optional</span></label>
+        <input id="f-source" name="source" type="text" placeholder="a link, or a book and page" autocomplete="off" />
+
+        <div class="two">
+          <div>
+            <label for="f-name">Your name <span class="opt">optional</span></label>
+            <input id="f-name" name="name" type="text" autocomplete="name" />
+          </div>
+          <div>
+            <label for="f-email">Your email <span class="opt">optional, only if you want an answer</span></label>
+            <input id="f-email" name="email" type="email" autocomplete="email" />
+          </div>
+        </div>
+
+        <!-- Spam trap: people never see or tick this. -->
+        <div class="trap" aria-hidden="true"><label>Leave this empty <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" /></label></div>
+
+        <p class="fineprint">We use what you send to correct the map. If you give an email, it is only used to answer you.</p>
+        <p class="actions"><button type="submit" id="send">Send</button> <span id="status" role="status" aria-live="polite"></span></p>
+      </form>
+
+      <p class="alt muted" id="alt">Prefer GitHub? <a id="gh" href="https://github.com/PeerBlekelj/parismapexplorer/issues/new?template=correction.yml">Open an issue</a> (needs a GitHub account).</p>
+      </section>
+    </main>
+    <script type="module" src="/src/suggest.ts"></script>
+  </body>
+</html>
