@@ -21,7 +21,9 @@ const NAME = 'Paris 1550';
 const langPath = (l: Lang, path: string) => (l === 'en' ? `/${path}` : `/${l}/${path}`);
 
 // The texts on the map: static pages from scripts/make_texts_page.py (en, fr, sv).
-const TEXTS = ['texts', 'fr/texts', 'sv/texts'];
+// Only the active languages are built (see LANGS in strings.ts); fr/ and sv/ stay in the repo, parked.
+const TEXTS = ['texts', 'fr/texts', 'sv/texts'].filter((p) => LANGS.some((l) => l === 'en' ? !p.includes('/') : p.startsWith(`${l}/`)));
+const parked = (l: Lang) => !LANGS.includes(l);
 
 interface Place {
   id: string;
@@ -118,7 +120,15 @@ function sitePages(): Plugin {
       const html = readFileSync(resolve(outDir, 'map/index.html'), 'utf8');
       const block = /(<!-- page-meta[^>]*-->\n)[\s\S]*?(\n\s*<!-- \/page-meta -->)/;
       if (!block.test(html)) throw new Error('site-pages: no page-meta block in map/index.html');
-      const places: Place[] = JSON.parse(readFileSync(resolve(outDir, 'data/places.json'), 'utf8')).places;
+      const dataFile = resolve(outDir, 'data/places.json');
+      const data = JSON.parse(readFileSync(dataFile, 'utf8'));
+      const places: Place[] = data.places;
+      // The parked languages' descriptions stay in the repo's data, not in what is served.
+      for (const l of ['fr', 'sv'] as const) {
+        if (!parked(l)) continue;
+        for (const p of places) delete p[`summary_${l}`];
+      }
+      writeFileSync(dataFile, JSON.stringify(data));
       const haveOg = existsSync(resolve(outDir, 'og'));
       if (!haveOg) this.warn('no og/ images: run scripts/make_og_images.py (pages still get the site image)');
 
@@ -186,11 +196,9 @@ export default defineConfig({
       input: {
         map: resolve(import.meta.dirname, 'map/index.html'),
         home: resolve(import.meta.dirname, 'index.html'),
-        homeFr: resolve(import.meta.dirname, 'fr/index.html'),
-        homeSv: resolve(import.meta.dirname, 'sv/index.html'),
+        ...(parked('fr') ? {} : { homeFr: resolve(import.meta.dirname, 'fr/index.html'), methodFr: resolve(import.meta.dirname, 'fr/method/index.html') }),
+        ...(parked('sv') ? {} : { homeSv: resolve(import.meta.dirname, 'sv/index.html'), methodSv: resolve(import.meta.dirname, 'sv/method/index.html') }),
         method: resolve(import.meta.dirname, 'method/index.html'),
-        methodFr: resolve(import.meta.dirname, 'fr/method/index.html'),
-        methodSv: resolve(import.meta.dirname, 'sv/method/index.html'),
         ...Object.fromEntries(TEXTS.map((t) => [t.replace('/', '-'), resolve(import.meta.dirname, t, 'index.html')])),
       },
     },

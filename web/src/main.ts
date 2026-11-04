@@ -76,7 +76,7 @@ function fillStaticText(): void {
   $('.swipe-r').textContent = t.overlayRight;
   const langs = LANGS.map((l) =>
     `<button type="button" data-lang="${l}" lang="${l}" aria-pressed="${l === lang}">${l.toUpperCase()}</button>`).join(' · ');
-  $('#credits').innerHTML = `<span class="langs" role="group" aria-label="${esc(t.langLabel)}">${langs}</span>` +
+  $('#credits').innerHTML = (LANGS.length > 1 ? `<span class="langs" role="group" aria-label="${esc(t.langLabel)}">${langs}</span>` : '') +
     `<a href="${langBase()}">${esc(t.creditAbout)}</a> · <a href="${langBase()}method/">${esc(t.creditMethod)}</a> · ` +
     `<a href="${langBase()}texts/">${esc(t.creditTexts)}</a> · ` + [t.creditMap, t.creditOsm, t.creditBy].map(esc).join(' · ') + badge('sa-badge');
 }

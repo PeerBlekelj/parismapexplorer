@@ -5,8 +5,7 @@ Basel plan) side by side with the city today. Search any place named on the old 
 modern name and see where it was and what is there now.
 
 **Site:** https://paris1550.vercel.app: the start page tells the map's story (who made it, how it is
-dated, how its only copy turned up in Basel; also in [French](https://paris1550.vercel.app/fr/) and
-[Swedish](https://paris1550.vercel.app/sv/)). The map itself: https://paris1550.vercel.app/map/
+dated, how its only copy turned up in Basel). The map itself: https://paris1550.vercel.app/map/
 
 - 457 places named on the map, each identified with today's place (or marked as vanished, shown
   where it stood), with a short description and sources.
@@ -17,7 +16,7 @@ dated, how its only copy turned up in Basel; also in [French](https://paris1550.
 - Search by old or modern name, tolerant of 16th-century spellings.
 - Every place has its own link, e.g. https://paris1550.vercel.app/place/L0006/
 - The texts printed on the map (a 108-line poem in praise of Paris and the publishers' notice),
-  transcribed and translated line by line into English, modern French and Swedish:
+  transcribed and translated line by line into English:
   [The texts on the map](https://paris1550.vercel.app/texts/) (built by `scripts/make_texts_page.py`).
 
 Corrections are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) and the list of

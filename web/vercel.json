@@ -1,17 +1,48 @@
 {
-  "git": { "deploymentEnabled": false },
+  "git": {
+    "deploymentEnabled": false
+  },
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "parismapexplorer.vercel.app" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "parismapexplorer.vercel.app"
+        }
+      ],
       "destination": "https://paris1550.vercel.app/:path*",
       "permanent": true
     },
-    { "source": "/about", "destination": "/", "permanent": true },
-    { "source": "/about/", "destination": "/", "permanent": true },
-    { "source": "/fr/about", "destination": "/fr/", "permanent": true },
-    { "source": "/fr/about/", "destination": "/fr/", "permanent": true },
-    { "source": "/sv/about", "destination": "/sv/", "permanent": true },
-    { "source": "/sv/about/", "destination": "/sv/", "permanent": true }
+    {
+      "source": "/about",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/about/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/fr",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/fr/:path*",
+      "destination": "/:path*",
+      "permanent": false
+    },
+    {
+      "source": "/sv",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/sv/:path*",
+      "destination": "/:path*",
+      "permanent": false
+    }
   ]
 }

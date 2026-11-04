@@ -746,8 +746,13 @@ const sv: Strings = {
   compass: { N: 'N', S: 'S', E: 'Ö', W: 'V' } as Record<string, string>,
 };
 
-export const LANGS = ['en', 'fr', 'sv'] as const;
-export type Lang = (typeof LANGS)[number];
+// French and Swedish are parked (owner, 2026-11-04): the translations stay in this file and in the
+// data, but nothing links to them, no page is built for them, and an address, ?lang= or earlier
+// choice naming them falls back to English. To bring them back, list them here and in
+// vite.config.ts (inputs), and take the redirects out of vercel.json.
+export const ALL_LANGS = ['en', 'fr', 'sv'] as const;
+export type Lang = (typeof ALL_LANGS)[number];
+export const LANGS: readonly Lang[] = ['en'];
 export const STRINGS: Record<Lang, Strings> = { en, fr, sv };
 
 export const isLang = (v: unknown): v is Lang => typeof v === 'string' && (LANGS as readonly string[]).includes(v);

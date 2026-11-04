@@ -127,9 +127,9 @@ with sync_playwright() as pw:
               p.inner_text("#count"))
         p.screenshot(path=str(OUT / "4-filtered.png"), clip={"x": 0, "y": 0, "width": 400, "height": 950})
 
-    print("\nin the other languages:")
-    for lang, path, want in (("fr", "/fr/place/L0472/", "Armes de France"),
-                             ("sv", "/sv/place/L0472/", "Frankrikes vapen")):
+    # French and Swedish are parked (2026-11-04); put them back here when they return.
+    print("\nin the other languages: skipped (parked)")
+    for lang, path, want in ():
         p.goto(f"{BASE}{path}")
         p.wait_for_selector(".card h2", timeout=30000)
         check(f"{lang}: the device is named in this language", p.inner_text(".card h2") == want,

@@ -300,8 +300,7 @@ L["en"] = dict(
     h_other="Other words on the map",
     h_about="About this transcription",
     h_sources="Sources",
-    lang_links="Also in <a href=\"/fr/texts/\" hreflang=\"fr\" lang=\"fr\">français</a> · "
-               "<a href=\"/sv/texts/\" hreflang=\"sv\" lang=\"sv\">svenska</a>",
+    lang_links="",
 )
 L["fr"] = dict(
     path="/fr/texts/", home="/fr/", map="Ouvrir la carte", by="Paris 1550, par Peer Blekelj.",
@@ -764,10 +763,14 @@ def figure(name, alt, cap):
             f'          <figcaption>{cap}</figcaption>\n        </figure>')
 
 
+ACTIVE = ("en",)  # French and Swedish are parked (2026-11-04): still generated, linked from nowhere
+
+
 def page(lg):
-    alternates = "\n".join(f'    <link rel="alternate" hreflang="{o}" href="%SITE%{L[o]["path"]}" />' for o in L) + \
+    alternates = "\n".join(f'    <link rel="alternate" hreflang="{o}" href="%SITE%{L[o]["path"]}" />' for o in L if o in ACTIVE) + \
         f'\n    <link rel="alternate" hreflang="x-default" href="%SITE%{L["en"]["path"]}" />'
     s = L[lg]
+    langs_line = f'      <p class="langs">{s["lang_links"]}</p>\n' if lg not in ACTIVE else ''
     return f"""<!doctype html>
 <html lang="{lg}">
   <head>
@@ -793,8 +796,7 @@ def page(lg):
       <span class="home-links"><a class="back" href="{s['home']}">← Paris 1550</a> · <a class="back" href="{s['home']}map/">{s['map']}</a></span>
       <h1>{s['title']}</h1>
       <p class="lede">{s['lede']}</p>
-      <p class="langs">{s['lang_links']}</p>
-    </header>
+{langs_line}    </header>
 
     <main class="doc-body">
       <section id="poem">
