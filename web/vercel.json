@@ -30,8 +30,18 @@
       "permanent": false
     },
     {
+      "source": "/fr/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
       "source": "/fr/:path*",
       "destination": "/:path*",
+      "permanent": false
+    },
+    {
+      "source": "/fr/:path*/",
+      "destination": "/:path*/",
       "permanent": false
     },
     {
@@ -40,8 +50,18 @@
       "permanent": false
     },
     {
+      "source": "/sv/",
+      "destination": "/",
+      "permanent": false
+    },
+    {
       "source": "/sv/:path*",
       "destination": "/:path*",
+      "permanent": false
+    },
+    {
+      "source": "/sv/:path*/",
+      "destination": "/:path*/",
       "permanent": false
     }
   ]
