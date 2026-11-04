@@ -2,6 +2,10 @@
 
 Newest first. What was done, what was found, what is open.
 
+## 2026-11-04 — French and Swedish parked
+
+On the owner's word the /fr/ and /sv/ versions are off: `LANGS` in `web/src/strings.ts` lists English only, no link or hreflang points at them, the pages are not built, the sitemap and the served `places.json` carry English only, and /fr, /sv (with or without trailing slash, any depth) redirect 307 to the English page. The translations stay in the repo. **To bring them back:** list them in `LANGS`, unfilter `TEXTS`/inputs in `vite.config.ts` (they follow `LANGS`), take the four redirects per language out of `web/vercel.json`, set `ACTIVE` in `scripts/make_texts_page.py`, restore the loop in `scripts/check_inscriptions.py`. Live and checked. A `:path*` redirect does not match a trailing slash; it needs its own `/:path*/` rule (found live: /fr/ was a 404 on the first deploy).
+
 ## 2026-11-03 (night) — an independent reading of the 206 descriptions, and twenty pulled
 
 **An independent second reading found twenty descriptions that should not have shipped, and they are pulled.**
