@@ -26,15 +26,15 @@
         <span class="home-links"><a class="back" href="/">← Paris 1550</a> · <a class="back" href="/map/">Open the map</a></span>
       </div>
       <h1>How the map was bent</h1>
-      <p class="lede">The Truschet &amp; Hoyau plan of Paris is a picture, not a survey. To lay it over the modern
-        city, it has to be bent: gently in the centre, hard at the edges. This page explains how that was done,
-        how far to trust the result, and where it goes wrong.</p>
+      <p class="lede">The Truschet &amp; Hoyau plan of Paris was drawn without a surveyed scale. To lay it over the
+        modern city, it has to be bent, gently in the centre and hard at the edges. This page covers how that
+        was done, how far to trust the result, and where it goes wrong.</p>
     </header>
 
     <main class="doc-body">
       <nav class="toc" aria-label="Contents">
         <ol>
-          <li><a href="#picture">A picture, not a plan</a></li>
+          <li><a href="#picture">Why it needs bending</a></li>
           <li><a href="#labels">Reading the labels</a></li>
           <li><a href="#points">Control points</a></li>
           <li><a href="#spline">The spline</a></li>
@@ -46,106 +46,95 @@
       </nav>
 
       <section id="picture">
-        <h2>A picture, not a plan</h2>
-        <p>The map was cut in wood around 1550 and printed from several blocks. It shows Paris as a bird
-          would see it from high above the west, looking east: every church, house and garden is drawn standing up, and
-          the streets between them are stretched or squeezed to make room. It is printed with east at
-          the top. Measured against the modern city, the top of the sheet points to a bearing of about
-          <strong>116°</strong> (east-south-east), so north lies down and to the left.</p>
+        <h2>Why it needs bending</h2>
+        <p>The map was cut in wood around 1550 and shows Paris as a bird would see it from high above the
+          west, looking east, with every building drawn standing up. East is at the top. Against the modern
+          city the top of the sheet points to a bearing of about <strong>116°</strong> (east-south-east), so
+          north lies down and to the left.</p>
         <figure>
           <img src="/figures/orientation.svg" width="1400" height="1005" alt="The whole map as printed, with an arrow showing that north points down and to the left" loading="lazy" />
-          <figcaption>The whole sheet as printed. The arrow shows true north, from the fit described below.</figcaption>
+          <figcaption>The whole sheet as printed, with true north from the fit.</figcaption>
         </figure>
-        <p>Turning the sheet by 116° is not enough. If you fit the best single stretch to it (an
-          <em>affine</em> transform: one rotation, one scale in each direction and one shear for the whole
-          map), the sheet's right angles turn out to be <strong>77°</strong> on the ground, and one pixel
-          across the sheet covers about 0.36&nbsp;m while one pixel up the sheet covers about
-          0.43&nbsp;m. The engravers also gave more room to what mattered: the Île de la Cité and its
-          churches are drawn larger than life, the fields beyond the walls smaller. No single stretch
-          can undo that, because the distortion changes from one part of the map to the next.</p>
+        <p>Turning the sheet is not enough. The best single stretch (an <em>affine</em> transform: one
+          rotation, one scale in each direction and one shear for the whole map) leaves the sheet's right
+          angles at <strong>77°</strong> on the ground, with one pixel across covering about 0.36&nbsp;m and
+          one pixel up about 0.43&nbsp;m. The engravers also drew the Île de la Cité and its churches larger
+          than life and the fields beyond the walls smaller, so the distortion changes from place to place
+          and no single stretch can undo it.</p>
       </section>
 
       <section id="labels">
         <h2>Reading the labels</h2>
         <p>The source is the only known copy, in Basel University Library, scanned at
-          10&nbsp;890 × 7&nbsp;820 pixels (public domain, via Wikimedia Commons). The scan was cut into 88
-          overlapping tiles and every label read tile by tile by an AI model (Claude, see
-          <a href="#built">how this was built</a>), then the dense areas again at twice the zoom. That gave 468 labels, and the check against Cousin's index (below) found two more that had been missed; after removing duplicates and decoration, <strong>457 places</strong>.
-          Every label keeps a permanent id (L0001 …) so links and corrections never break.</p>
-        <p>Each place was then identified:</p>
-        <ul>
-          <li><strong>Streets</strong> against the City of Paris registers of current and vanished street
-            names, matched with spelling normalisation (16th-century <em>v</em> for <em>u</em>, missing
-            accents, <em>S.</em> for <em>Saint</em>, words run together) and then checked one by one.</li>
-          <li><strong>Everything else</strong> (churches, colleges, gates, mansions) against French
-            Wikipedia and Wikidata, with every article title checked by script.</li>
-        </ul>
-        <p>Then everything was checked against the one earlier index of this map: the table of its names
-          that Jules Cousin published in 1875, when the Basel copy had just been rediscovered. Cousin gives each
-          name as he corrected it, the engraver's spelling, and the sheet and square where it stands. Fitting
-          his sheet grid to our labels lined up 285 of 313 clear matches to the exact square, which made his
-          table usable label by label. It confirmed most identifications, settled 26 of the 29 open questions (further research settled two more),
-          corrected four misreadings (“R. de la Venerie” is a damaged “Poterie”; “Cherro Coupt” is
-          “C. Herro Court”, the collège d'Harcourt), and found two labels the first pass had missed
-          (“Hu Leu” and “R. dei Son”).</p>
-        <p>The result: 143 places still standing, 19 rebuilt, 77 renamed or absorbed, 217 vanished and 1
-          not identified. One item is still open and listed in the
-          <a href="https://github.com/PeerBlekelj/parismapexplorer/blob/main/data/research/OPEN_QUESTIONS.md">open questions</a>.
-          Every place in Cousin's table cites the page, linked to the scan on Gallica.</p>
+          10&nbsp;890 × 7&nbsp;820 pixels. The scan was cut into 88 overlapping tiles and an AI model (Claude,
+          see <a href="#built">how this was built</a>) read every label tile by tile, then the dense areas
+          again at twice the zoom. That gave 468 labels, and after Cousin's index (below) added two and
+          duplicates and decoration were removed, <strong>457 places</strong>, each with a permanent id
+          (L0001 …).</p>
+        <p>Streets were identified against the City of Paris registers of current and vanished street names,
+          with spelling normalisation (1550 spelling varies too much for a plain same-name test) and a manual
+          check of each. Churches, colleges, gates and
+          mansions were identified against French Wikipedia and Wikidata, with every article title checked
+          by script.</p>
+        <p>Everything was then checked against the one earlier index of this map, published by Jules Cousin
+          in 1875, when the Basel copy had just been rediscovered. It gives each name as he corrected it, the
+          engraver's spelling, and its sheet and square. Fitting his sheet grid to our labels
+          put 285 of 313 clear matches in the exact square, so the table could be used label by label. It
+          confirmed most identifications, settled 26 of the 29 open questions (further research settled two
+          more), corrected four misreadings and found two labels the first pass had missed (“Hu Leu” and “R. dei
+          Son”). Each place in it cites its page, linked to the scan on Gallica.</p>
+        <p>The result is 143 places still standing, 19 rebuilt, 77 renamed or absorbed, 217 vanished and 1
+          not identified, listed in the
+          <a href="https://github.com/PeerBlekelj/parismapexplorer/blob/main/data/research/OPEN_QUESTIONS.md">open questions</a>.</p>
       </section>
 
       <section id="points">
         <h2>Control points</h2>
-        <p>A control point is a spot that can be found on both maps: a pixel on the woodcut and a latitude
-          and longitude today. The bend is computed from these alone, so their quality decides
-          everything. There are <strong>46</strong>:</p>
+        <p>A control point is a spot found on both maps, a pixel on the woodcut and a latitude and longitude
+          today. The bend is computed from these alone. There are <strong>46</strong>:</p>
         <ul>
-          <li><strong>21 drawn buildings</strong> whose site is known exactly: Notre-Dame, Saint-Eustache,
-            the Tour Saint-Jacques, Saint-Germain-des-Prés, the Bastille and others. The point sits on the
-            drawn building, at its foot, not on its label: labels float beside what they name, and moving
-            the points from labels to buildings cut the typical error from 76&nbsp;m to 64&nbsp;m.</li>
-          <li><strong>8 bridge ends</strong> where a bridge meets the bank, taken from OpenStreetMap. Bridges
-            are the sharpest points on the map, because the river fixes them on both sides.</li>
-          <li><strong>11 more</strong> at the label itself, where the label sits on or right against what it
+          <li><strong>21 drawn buildings</strong> whose site is known exactly (Notre-Dame, Saint-Eustache,
+            the Bastille and others). The point sits at the
+            foot of the building, since labels float beside what they name. Moving points from labels to
+            buildings cut the typical error from 76&nbsp;m to 64&nbsp;m.</li>
+          <li><strong>8 bridge ends</strong> where a bridge meets the bank, taken from OpenStreetMap. The
+            river fixes them on both sides, which makes them the sharpest points on the map.</li>
+          <li><strong>11 more</strong> at the label itself, where it sits on or right against what it
             names.</li>
-          <li><strong>6 at the edges</strong>, added later where the fit was weakest: five street corners that
-            have not moved since the 16th century (rue Saint-Antoine × rue Saint-Paul, rue Mouffetard ×
-            rue Daubenton, rue du Temple × rue Pastourelle and others), placed with the City of Paris street
-            geometry, and the site of the Tour de Nesle. Three more corners were tried and dropped: each
-            landed 200&nbsp;m or more off and pulled its neighbours with it.</li>
+          <li><strong>6 at the edges</strong>, added where the fit was weakest: five street corners
+            unchanged since the 16th century, located from the City of Paris street geometry (rue
+            Saint-Antoine × rue Saint-Paul and others), and the site of the Tour de Nesle. Three more corners were tried and
+            dropped, each 120 to 220&nbsp;m off and pulling its neighbours with it.</li>
         </ul>
         <figure>
           <img src="/figures/control-points.svg" width="1400" height="1005" alt="The map with 46 coloured dots: most are green; the Bastille and Saint-Germain-des-Prés, far out, are red" loading="lazy" />
-          <figcaption>The 46 control points on the sheet, coloured by how far off each one lands when it is
-            left out of the fit (see <a href="#errors">below</a>). The dashed line is where the overlay
-            stops: outside it the spline would only be guessing.</figcaption>
+          <figcaption>The 46 control points, coloured by how far off each lands when left out of the fit
+            (see <a href="#errors">below</a>). The dashed line is where the overlay stops, since outside it
+            the spline would only be guessing.</figcaption>
         </figure>
       </section>
 
       <section id="spline">
         <h2>The spline</h2>
-        <p>The bend is a <strong>thin-plate spline</strong>: picture the map printed on a thin sheet of
+        <p>The bend is a <strong>thin-plate spline</strong>. Picture the map printed on a thin sheet of
           metal, with each control point pinned to its place on the modern city. The sheet bends as little
-          as it can while meeting the pins. Near the pins it follows them closely; between them it bends
-          smoothly; far from all of them it falls back to the single best stretch.</p>
-        <p>The pins are slightly loose (a smoothing setting, λ&nbsp;=&nbsp;0.2) so that one misplaced point
-          can't drag a whole district with it. The same spline runs both ways in the app: it puts the
-          old map's tiles onto the modern map in the overlay, and it keeps the two maps in step in the
-          side-by-side view.</p>
+          as it can while meeting the pins, and far from all of them it falls back to the best single
+          stretch. The pins are slightly loose (a smoothing setting, λ&nbsp;=&nbsp;0.2), so one misplaced
+          point can't drag a whole district with it. The same spline serves the overlay and the
+          side-by-side view in the app.</p>
         <figure>
           <img src="/figures/bend.svg" width="900" height="1383" alt="Two grids, north up: a straight grey grid and a red grid bent around the control points, most strongly in the south and east" loading="lazy" />
-          <figcaption>The woodcut's square grid, laid on the modern city with north up. Grey: after the
-            best single stretch, still straight. Red: after the spline. The lines bend most where the
-            engravers took the most liberty, towards the edges of the city.</figcaption>
+          <figcaption>The woodcut's square grid on the modern city, north up. Grey: after the best single
+            stretch, still straight. Red: after the spline, which bends most towards the edges, where the
+            engravers took the most liberty.</figcaption>
         </figure>
       </section>
 
       <section id="errors">
         <h2>How good is it?</h2>
-        <p>A spline passes through its own control points, so measuring the error at those points proves
-          nothing. Instead each point is left out in turn, the spline is fitted to the other 45, and the
-          left-out point is checked: how far from its real position does it land? This
-          <strong>leave-one-out error</strong> is an honest estimate of the error anywhere else on the map.</p>
+        <p>A spline passes through its own control points, so the error there proves nothing. Instead each
+          point is left out in turn, the spline is fitted to the other 45, and the miss at the left-out point is measured. This
+          <strong>leave-one-out error</strong> is an honest estimate of the error elsewhere on the map.</p>
         <table class="nums">
           <thead><tr><th></th><th>median</th><th>90% of points within</th><th>worst</th></tr></thead>
           <tbody>
@@ -158,56 +147,45 @@
           <figcaption>Leave-one-out errors, north up. Each line runs from a point's real position to where
             the fit puts it, drawn four times longer than it is.</figcaption>
         </figure>
-        <p>In the centre, on the Cité and along the river, a place usually lands within a street's width
-          or two of where it was. Towards the walls and beyond, the error grows to a few hundred metres,
-          for two reasons: there are fewer control points out there, and the woodcut itself is looser
-          there. The two worst points, Saint-Germain-des-Prés (195&nbsp;m) and the Bastille (190&nbsp;m), lie
-          at the edge, where leaving one point out removes most of the anchoring for a whole quarter.
-          Before the six edge points were added, the Bastille was off by 427&nbsp;m and Saint-Médard by
-          416&nbsp;m; Saint-Médard is now off by 25&nbsp;m.</p>
+        <p>In the centre, on the Cité and along the river, a place usually lands within a street or
+          two of where it was. Towards the walls and beyond, the error grows to a few hundred metres,
+          because there are fewer control points and the woodcut is looser. The two worst points,
+          Saint-Germain-des-Prés (195&nbsp;m) and the Bastille (190&nbsp;m), lie at the edge, where leaving
+          one out removes most of the anchoring for a whole quarter. Before the six edge points were added,
+          the Bastille was off by 427&nbsp;m and Saint-Médard by 416&nbsp;m (now 25&nbsp;m).</p>
       </section>
 
       <section id="mistakes">
         <h2>Mistakes caught on the way</h2>
         <ul>
-          <li><strong>A lone point far out.</strong> The Pont de Charenton is correctly placed, 3&nbsp;km
-            beyond the walls. As a control point it wrecked the fit: the spline stretched a whole
-            compressed corner of the picture to reach it. Leaving it out cut the 90% error from
-            463&nbsp;m to 172&nbsp;m. Villages at the edge were tried as anchors too and made the centre
-            worse, so they are left out as well.</li>
-          <li><strong>Namesakes.</strong> Looking up "Popincourt" found a commune in the Oise, 92&nbsp;km
-            away, not the faubourg by the Bastille. Any identification that lands outside the map's area
-            now stops the build.</li>
-          <li><strong>Old spellings.</strong> A plain "same name?" test called renamed streets standing and
-            the other way round, because 1550 spelling varies so much. Decisions now rest on normalised
-            spelling plus a manual check of each street.</li>
-          <li><strong>Labels as points.</strong> The first control points sat on the labels, which float
-            beside what they name. Moving them to the drawn buildings and bridge ends was the biggest
-            single improvement.</li>
-          <li><strong>The engraver's shuffle.</strong> Between the rue des Poulies and the Louvre, about
-            ten street names are each one street off: the name of each street was cut on its neighbour,
-            and so on down the line (Cousin spotted it in 1875). The first pass took the names at face
-            value; the nine affected places now say which street each label really stands on. Three more
-            labels sit on the wrong street the same way: “rue des Paiens” on the rue des Juifs, “rue des
-            Chats” on the rue des Déchargeurs, and “rue du Battoir” on the rue Gît-le-Cœur.</li>
-          <li><strong>The engravers' own slips.</strong> Some labels are misprinted or garbled: "HOSTRE DAME"
-            for Notre-Dame, "Bribouche" for Aubry-le-Boucher, "Cochonnerie" for the Cossonnerie. They are
-            kept as printed and identified in the notes.</li>
+          <li><strong>A lone point far out.</strong> The Pont de Charenton, 3&nbsp;km beyond the walls, is
+            correctly placed, yet as a control point it pulled a whole compressed corner of the picture out
+            of shape. Leaving it out cut the 90% error from 463&nbsp;m to 172&nbsp;m. Villages at the edge
+            made the centre worse too and are also left out.</li>
+          <li><strong>Namesakes.</strong> "Popincourt" matched a commune in the Oise, 92&nbsp;km away,
+            instead of the faubourg by the Bastille. Any identification outside the map's area now stops
+            the build.</li>
+          <li><strong>The engraver's shuffle.</strong> Between the rue des Poulies and the Louvre, nine street
+            names are each one street off, because each name was cut on its neighbour's street (Cousin
+            spotted it in 1875). The nine places now say which street each label really stands on. Three
+            more labels sit on the wrong street the same way: “rue des Paiens” on the rue des Juifs, “rue
+            des Chats” on the rue des Déchargeurs and “rue du Battoir” on the rue Gît-le-Cœur.</li>
+          <li><strong>The engravers' own slips.</strong> "HOSTRE DAME" for Notre-Dame, "Bribouche" for
+            Aubry-le-Boucher and "Cochonnerie" for the Cossonnerie are kept as printed.</li>
         </ul>
       </section>
 
       <section id="limits">
         <h2>Limits</h2>
         <ul>
-          <li>Positions are good to tens of metres in the centre and a few hundred at the edges. The overlay
-            is a guide, not a survey: don't use it to settle where a wall stood to the metre.</li>
-          <li>The woodcut is not a measured map. Where the artists drew a street too long or a church too
-            big, the spline can only spread the error around; it can't recover what was never measured.</li>
-          <li>Riverbanks won't line up: most of today's quays were built after 1550 (the quai de Gesvres in
-            1642, for example), so the old shoreline and the modern one rarely coincide.</li>
+          <li>The overlay is a guide and cannot settle where a wall stood to the metre (see the errors above).</li>
+          <li>Where the artists drew a street too long or a church too big, the spline can only spread the
+            error around.</li>
+          <li>Riverbanks won't line up, since most of today's quays were built after 1550 (the quai de
+            Gesvres in 1642, for example).</li>
           <li>Many features are drawn but not named. The cartouche boasts 287 streets, 104 churches and
             49 colleges; about 221 streets, 91 churches and 33 colleges carry a readable label.</li>
-          <li>One label is not identified and some readings are uncertain; they are marked as such in
+          <li>Some readings, including the one unidentified label, are uncertain and are marked as such in
             the app.</li>
         </ul>
         <p>Corrections are welcome as pull requests, see
@@ -238,12 +216,11 @@
         </ul>
         <h3 id="built">How this was built</h3>
         <p>The whole project was built with <a href="https://claude.com/claude-code">Claude Code</a>,
-          Anthropic's AI coding assistant, working with a human editor: reading the labels off the scan,
-          matching them to the street registers and Wikipedia, choosing and placing the control points,
-          fitting the spline, writing the place summaries, and writing the site and this page. The human
-          side set the direction, made the design decisions and reviewed the results. An AI reading of a
-          500-year-old woodcut can be wrong, which is why every uncertain reading is flagged and every
-          identification links to its source; please report mistakes.</p>
+          Anthropic's AI coding assistant, working with a human editor. Claude read the labels, matched them
+          to the registers and Wikipedia, placed the control points, fitted the spline, and wrote the place
+          summaries, the site and this page. The human side set the direction, made the design decisions and
+          reviewed the results. An AI reading of a 500-year-old woodcut can be wrong, so every uncertain
+          reading is flagged and every identification links to its source.</p>
         <p class="muted">Paris 1550, by Peer Blekelj.</p>
       </section>
     </main>
