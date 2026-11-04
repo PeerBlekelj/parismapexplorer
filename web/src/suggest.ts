@@ -56,22 +56,22 @@ form.addEventListener('submit', async (ev) => {
   send.disabled = true;
   say('Sending…');
   try {
-    const res = await fetch(ENDPOINT, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-      body: JSON.stringify({
-        access_key: ACCESS_KEY,
-        subject: placeId ? `[1550] correction: ${placeId} ${placeName}`.trim() : '[1550] message from the site',
-        from_name: 'Paris 1550 site',
-        place: placeId ? `${placeName} (${placeId}) https://paris1550.vercel.app/place/${placeId}/` : '(none)',
-        about: kind,
-        message,
-        source: String(f.get('source') ?? '').trim(),
-        name: String(f.get('name') ?? '').trim(),
-        ...(email ? { email } : {}),
-        botcheck: '',
-      }),
-    });
+    // A plain form post (no custom Content-Type), which the browser sends without a CORS pre-check.
+    const data = new FormData();
+    const fields: Record<string, string> = {
+      access_key: ACCESS_KEY,
+      subject: placeId ? `[1550] correction: ${placeId} ${placeName}`.trim() : '[1550] message from the site',
+      from_name: 'Paris 1550 site',
+      place: placeId ? `${placeName} (${placeId}) https://paris1550.vercel.app/place/${placeId}/` : '(none)',
+      about: kind,
+      message,
+      source: String(f.get('source') ?? '').trim(),
+      name: String(f.get('name') ?? '').trim(),
+      botcheck: '',
+    };
+    if (email) fields.email = email;
+    for (const [k, v] of Object.entries(fields)) data.append(k, v);
+    const res = await fetch(ENDPOINT, { method: 'POST', headers: { Accept: 'application/json' }, body: data });
     const body = await res.json().catch(() => ({}));
     if (res.ok && body.success) {
       form.reset();
