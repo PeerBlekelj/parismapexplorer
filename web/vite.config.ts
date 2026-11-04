@@ -91,6 +91,14 @@ function withBadge(html: string): string {
   return `${html.slice(0, at)}  ${badge('sa-badge')}\n      ${html.slice(at)}`;
 }
 
+/** The copyright line at the foot of every written page, after the content. */
+function withFooter(html: string): string {
+  const at = html.lastIndexOf('</main>');
+  if (at < 0) throw new Error('site-url: no </main> to put the footer after');
+  const end = at + '</main>'.length;
+  return `${html.slice(0, end)}\n    <footer class="doc-foot"><p>\u00a9 2026 Peer Blekelj</p></footer>${html.slice(end)}`;
+}
+
 function siteUrl(): Plugin {
   return {
     name: 'site-url',
@@ -102,7 +110,7 @@ function siteUrl(): Plugin {
         const out = html.replaceAll('%SITE%', SITE).replace('</head>', `${ANALYTICS}\n  </head>`);
         // The badge goes on the written pages, under the colophon that ends the last section;
         // the map page (not .doc) carries its own, in the sidebar credits -- see src/main.ts.
-        return out.includes('<body class="doc">') ? withBadge(out) : out;
+        return out.includes('<body class="doc">') ? withFooter(withBadge(out)) : out;
       },
     },
   };

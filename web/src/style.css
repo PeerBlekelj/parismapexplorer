@@ -100,19 +100,8 @@ a { color: var(--blue); }
 .card dd small { display: block; color: var(--ink2); font-size: 11.5px; margin-top: 2px; }
 .card .est-note { display: inline-block; margin-left: 6px; font-size: 11px; padding: 1px 7px; border-radius: 99px; border: 1px dashed var(--ink2); color: var(--ink2); }
 .card .summary { font-family: var(--serif); font-size: 16px; line-height: 1.45; margin: 0 0 10px; }
-/* The longer description, behind a disclosure so the card still reads as a card. The marker is a
-   plain caret so it does not compete with the star and share buttons above. */
-.card .more { margin: 0 0 10px; }
-.card .more > summary { cursor: pointer; font-size: 12.5px; color: var(--ink2); list-style: none;
-  display: flex; align-items: baseline; gap: 5px; padding: 3px 0; }
-.card .more > summary::-webkit-details-marker { display: none; }
-.card .more > summary::before { content: '\203A'; display: inline-block; transition: transform .15s;
-  font-size: 14px; line-height: 1; }
-.card .more[open] > summary::before { transform: rotate(90deg); }
-.card .more > summary:hover { color: var(--ink); }
-.card .more .muted { font-size: 11.5px; }
-.card .more-body { font-family: var(--serif); font-size: 15px; line-height: 1.5;
-  margin: 4px 0 0; padding-left: 12px; border-left: 2px solid var(--rule); color: var(--ink); }
+/* The longer description follows the summary directly, in the same voice. */
+.card .more-body { font-family: var(--serif); font-size: 15px; line-height: 1.5; margin: 0 0 10px; color: var(--ink); }
 .card .src { font-size: 11.5px; color: var(--ink2); }
 .card .suggest { font-size: 11.5px; margin: 10px 0 0; }
 .card .held { font-size: 12.5px; color: var(--ink2); margin: 0 0 10px; }

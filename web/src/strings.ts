@@ -148,7 +148,7 @@ const en = {
   // credits
   creditMap: 'Map: Truschet & Hoyau, c. 1550, Basel University Library (public domain)',
   creditOsm: '© OpenStreetMap contributors',
-  creditBy: 'by Peer Blekelj, built with Claude Code',
+  creditBy: '© 2026 Peer Blekelj, built with Claude Code',
   creditMethod: 'How the map was bent',
   creditTexts: 'Texts on the map',
   creditAbout: 'About the map',
@@ -398,7 +398,7 @@ const fr: Strings = {
 
   creditMap: `Plan${NB}: Truschet & Hoyau, vers 1550, bibliothèque universitaire de Bâle (domaine public)`,
   creditOsm: '© les contributeurs d’OpenStreetMap',
-  creditBy: 'par Peer Blekelj, réalisé avec Claude Code',
+  creditBy: '© 2026 Peer Blekelj, réalisé avec Claude Code',
   creditMethod: 'Comment le plan a été déformé',
   creditTexts: 'Les textes du plan',
   creditAbout: 'À propos du plan',
@@ -645,7 +645,7 @@ const sv: Strings = {
 
   creditMap: 'Karta: Truschet & Hoyau, ca 1550, Basels universitetsbibliotek (fri från upphovsrätt)',
   creditOsm: '© OpenStreetMap-bidragsgivare',
-  creditBy: 'av Peer Blekelj, byggd med Claude Code',
+  creditBy: '© 2026 Peer Blekelj, byggd med Claude Code',
   creditMethod: 'Hur kartan böjdes',
   creditTexts: 'Texterna på kartan',
   creditAbout: 'Om kartan',

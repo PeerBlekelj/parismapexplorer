@@ -107,11 +107,7 @@ export function renderCard(el: HTMLElement, e: Entry, T: PixelGeoTransform, back
       ${!det && p.detail_held
         ? `<p class="held">${esc(t.detailHeld)} <a href="${esc(correctionUrl(e))}" target="_blank" rel="noopener">${esc(t.detailHeldAction)}</a></p>`
         : ''}
-      ${det
-        ? `<details class="more"><summary>${esc(t.more)}${det.english ? ` <span class="muted">(${esc(t.moreEnglishOnly)})</span>` : ''}</summary>
-             <p class="more-body"${det.english ? ' lang="en"' : ''}>${esc(det.text)}</p>
-           </details>`
-        : ''}
+      ${det ? `<p class="more-body"${det.english ? ' lang="en"' : ''}>${esc(det.text)}</p>` : ''}
       ${insc && p.texts
         ? `<p class="reads"><a href="${langBase()}texts/#${esc(p.texts)}">${esc(t.inscriptionRead)} \u2192</a></p>`
         : ''}

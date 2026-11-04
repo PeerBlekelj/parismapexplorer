@@ -122,3 +122,7 @@ ol.refs li:target { background: var(--paper2); }
 .note .suggest-form { clear: both; max-width: 640px; margin-top: 4px; }
 @media (max-width: 640px) { .note-pic { float: none; width: 100%; max-width: 100%; margin: 4px 0 18px; } }
 @media (min-width: 1100px) { .note-pic { margin-right: -120px; } .note-pic figcaption { margin-left: 0; } }
+
+/* The copyright line closing every written page (added by the build, see vite.config.ts). */
+.doc-foot { max-width: 760px; margin: 0 auto; padding: 18px 24px 40px; border-top: 1px solid var(--rule); font-family: var(--sans); font-size: 13px; color: var(--ink2); }
+.doc-foot p { margin: 0; }

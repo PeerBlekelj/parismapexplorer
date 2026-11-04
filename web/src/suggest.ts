@@ -60,7 +60,7 @@ form.addEventListener('submit', async (ev) => {
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       body: JSON.stringify({
         access_key: ACCESS_KEY,
-        subject: placeId ? `Paris 1550 correction: ${placeId} ${placeName}`.trim() : 'Paris 1550: message from the site',
+        subject: placeId ? `[1550] correction: ${placeId} ${placeName}`.trim() : '[1550] message from the site',
         from_name: 'Paris 1550 site',
         place: placeId ? `${placeName} (${placeId}) https://paris1550.vercel.app/place/${placeId}/` : '(none)',
         about: kind,
