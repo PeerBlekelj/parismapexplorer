@@ -170,6 +170,20 @@ body.append(f'<path d="M{tip[0] + ux * 6:.1f},{tip[1] + uy * 6:.1f} L{tip[0] - u
             f'L{tip[0] - ux * 18 - hx * 11:.1f},{tip[1] - uy * 18 - hy * 11:.1f} Z" fill="{RED}"/>')
 lx, ly = cx + ux * (L + 6) * 0.55 + hx * 24, cy + uy * (L + 6) * 0.55 + hy * 24
 body.append(f'<text x="{lx:.0f}" y="{ly + 9:.0f}" font-family="{SERIF}" font-size="30" font-weight="500" fill="{INK}" text-anchor="middle">N</text>')
+# The three parts of the city, named as the title ribbon names them, with the bank each lies on.
+# East is at the top and north on the left, so the Right Bank (the north bank, seen looking
+# downstream) is the LEFT half of the sheet. Positions are sheet pixels (10890 x 7820) of open
+# ground in each part, scaled to the figure.
+for (px, py), big, small in (((3300, 2750), "VILLE", "rive droite"),
+                             ((6490, 2950), "CIT\u00c9", ""),
+                             ((8900, 2750), "UNIVERSIT\u00c9", "rive gauche")):
+    x, y = px * k, py * k
+    halo = f'stroke="{PAPER}" stroke-width="7" stroke-linejoin="round" paint-order="stroke"'
+    body.append(f'<text x="{x:.0f}" y="{y:.0f}" font-family="{SERIF}" font-size="34" font-weight="500" letter-spacing="3" '
+                f'fill="{INK}" text-anchor="middle" {halo}>{big}</text>')
+    if small:
+        body.append(f'<text x="{x:.0f}" y="{y + 30:.0f}" font-family="{SERIF}" font-size="26" font-style="italic" '
+                    f'fill="{INK}" text-anchor="middle" {halo}>{small}</text>')
 (out / "orientation.svg").write_text(svg(bw, bh, "\n".join(body), "The whole map as printed, with the direction of north"), encoding="utf-8")
 
 # ---------- 2. control points ----------

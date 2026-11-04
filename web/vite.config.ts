@@ -91,12 +91,39 @@ function withBadge(html: string): string {
   return `${html.slice(0, at)}  ${badge('sa-badge')}\n      ${html.slice(at)}`;
 }
 
+/** The bar fixed to the top of every written page: the site's name, one link per section of the
+ *  page (read from the page's own headings, so it follows whatever the headings are), and the map.
+ *  A section is listed under its <h2>, or under data-nav="…" when it should be called something
+ *  else; a section with neither is left out. The page's own contents box is dropped: this replaces
+ *  it. The script that highlights the section being read and opens the list on a phone is
+ *  src/topbar.ts. */
+function withTopbar(html: string): string {
+  const text = (s: string) => s.replace(/<span class="count">[^<]*<\/span>/g, '').replace(/<[^>]+>/g, '')
+    .replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+  const items: string[] = [];
+  const re = /<section id="([^"]+)"([^>]*)>([\s\S]*?)(?=<section |<\/main>)/g;
+  for (let m; (m = re.exec(html));) {
+    const nav = /data-nav="([^"]+)"/.exec(m[2])?.[1];
+    const h2 = /<h2[^>]*>([\s\S]*?)<\/h2>/.exec(m[3])?.[1];
+    const label = nav ?? (h2 ? text(h2) : '');
+    if (label && m[1] !== 'sources-end') items.push(`<li><a href="#${m[1]}">${label}</a></li>`);
+  }
+  const bar = '    <nav class="topbar" aria-label="Site"><div class="topbar-in">' +
+    '<a class="brand" href="/">Paris 1550</a>' +
+    (items.length > 1 ? '<button type="button" class="menu" aria-expanded="false" aria-controls="topbar-sections">Contents</button>' +
+      `<ul id="topbar-sections" class="sections">${items.join('')}</ul>` : '<span class="sections"></span>') +
+    '<a class="open" href="/map/">Open the map \u2192</a></div></nav>\n';
+  return html.replace(/\n?\s*<nav class="toc"[\s\S]*?<\/nav>/, '').replace('<body class="doc">', `<body class="doc">\n${bar}`);
+}
+
 /** The copyright line at the foot of every written page, after the content. */
 function withFooter(html: string): string {
   const at = html.lastIndexOf('</main>');
   if (at < 0) throw new Error('site-url: no </main> to put the footer after');
   const end = at + '</main>'.length;
-  return `${html.slice(0, end)}\n    <footer class="doc-foot"><p>\u00a9 2026 Peer Blekelj</p></footer>${html.slice(end)}`;
+  return `${html.slice(0, end)}\n    <footer class="doc-foot"><p>\u00a9 2026 Peer Blekelj</p>` +
+    '<p class="foot-links"><a href="/map/">The map</a> \u00b7 <a href="/method/">How the map was bent</a> \u00b7 <a href="/texts/">The texts</a> \u00b7 <a href="/sources/">Sources</a> \u00b7 <a href="/suggest/">Write to us</a></p></footer>' +
+    html.slice(end);
 }
 
 function siteUrl(): Plugin {
@@ -110,7 +137,7 @@ function siteUrl(): Plugin {
         const out = html.replaceAll('%SITE%', SITE).replace('</head>', `${ANALYTICS}\n  </head>`);
         // The badge goes on the written pages, under the colophon that ends the last section;
         // the map page (not .doc) carries its own, in the sidebar credits -- see src/main.ts.
-        return out.includes('<body class="doc">') ? withFooter(withBadge(out)) : out;
+        return out.includes('<body class="doc">') ? withFooter(withTopbar(withBadge(out))) : out;
       },
     },
   };

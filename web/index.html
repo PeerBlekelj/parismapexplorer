@@ -38,19 +38,19 @@
     </header>
 
     <main class="doc-body">
-      <section id="note" class="note">
+      <section id="note" class="note" data-nav="Why this site">
         <figure class="note-pic">
           <a href="https://auctionet.com/en/events/1162-the-design-sale/252-josef-frank-plan-de-paris-cabinet-firma-svenskt-tenn-early-1950s-model-b2144-walnut-doors-papered-with-truschet-and-hoyau-s-map-of-paris"><img src="/about/cabinet.webp" width="900" height="900" alt="Josef Frank's cabinet for Svenskt Tenn, standing on a walnut frame, its two doors papered with the Truschet and Hoyau map of Paris" /></a>
           <figcaption>Josef Frank's cabinet for Svenskt Tenn, early 1950s, walnut with doors papered with the map. Photo from the Auctionet sale listing.</figcaption>
         </figure>
-        <p>I have always loved maps, and I like sifting through online auction catalogues for old pieces of furniture. So when I, in the middle of October 2026, stumbled upon <a href="https://auctionet.com/en/events/1162-the-design-sale/252-josef-frank-plan-de-paris-cabinet-firma-svenskt-tenn-early-1950s-model-b2144-walnut-doors-papered-with-truschet-and-hoyau-s-map-of-paris">this fantastic cabinet</a> by Joseph Frank with a for me unknown map of Paris, I went down a rabbit hole.</p>
+        <p>I have always loved maps, and I like sifting through online auction catalogues for old pieces of furniture. So when I, in the middle of October 2026, stumbled upon <a href="https://auctionet.com/en/events/1162-the-design-sale/252-josef-frank-plan-de-paris-cabinet-firma-svenskt-tenn-early-1950s-model-b2144-walnut-doors-papered-with-truschet-and-hoyau-s-map-of-paris">this fantastic cabinet</a> by Josef Frank with a map of Paris I had never seen, I went down a rabbit hole.</p>
         <p>The map itself was extraordinary. The colours, the details, the history of how it was found. I looked at it for hours, trying to locate places I knew, imagining what they would have looked like back then.</p>
-        <p>But the rabbit hole took me even further. The artists behind the map - Olivier Truschet and Germain Hoyau - lived on the same street in Paris that I used to live. Probably within 50 m (see more on the exact location <a href="#shop">further down</a>).<br />When I realised, I knew I had to do something about it.</p>
+        <p>But the rabbit hole took me even further. The artists behind the map - Olivier Truschet and Germain Hoyau - lived on the same street in Paris that I used to live. Probably within a few hundred metres (see more on the exact location <a href="#shop">further down</a>).<br />When I realised, I knew I had to do something about it.</p>
         <p>I couldn’t afford to buy the cabinet, so instead I built this site.</p>
-        <p>I’ll have Claude explain <a href="/method/">here</a> how we went about handling the overlay of two very different kinds of map projections. But that was the easy part.</p>
-        <p>What took time was looking up all the named places - I wanted to have facts on all of them.<br />As I write this, I’m still building the repository of open source material to continue filling in details (<a href="/sources/">see it here</a>), but I’ve managed to at least have some facts on each of the locations, even though it in some cases is only from Wikipedia.</p>
-        <p>I’ll keep expanding on the facts and collecting sources, so if you have suggestions on further reading or additional sources, please feel free to drop me a line.<br />And if you find something that is incorrect or plain out wrong, also please let me know.</p>
-        <p class="sign">//Peer Blekelj</p>
+        <p><a href="/method/">Here</a> I explain how I, with the help of Claude Code, laid the two maps together. That was the easy part.</p>
+        <p>What took time was looking up all the named places - I wanted to have facts on all of them.<br />I’m still building the repository of open source material to fill in details (<a href="/sources/">see it here</a>), but every location now has at least some facts, even if, in some cases, they come only from Wikipedia.</p>
+        <p>I’ll keep expanding on the facts and collecting sources, so if you have suggestions on further reading or additional sources, please feel free to drop me a line.<br />And if you find something that is incorrect or plainly wrong, please let me know.</p>
+        <p class="sign">– Peer Blekelj</p>
         <h2 id="contact">Get in touch</h2>
         <form id="suggest" class="suggest-form" novalidate>
           <label for="f-kind">What is it about?</label>
@@ -109,12 +109,14 @@
           <a class="ref" href="#s-cousin">[1]</a>.</p>
         <figure>
           <img src="/figures/orientation.svg" width="1400" height="1005" alt="The whole map as printed, east at the top" loading="lazy" />
-          <figcaption>The whole sheet as printed, with east at the top. The arrow shows true north (see
+          <figcaption>The whole sheet as printed, with east at the top, and its three parts named as the title names them: Ville, Cité, Université. The arrow shows true north (see
             <a href="/method/">how the map was bent</a>).</figcaption>
         </figure>
         <p>It is not a plan in the modern sense but a <strong>bird's-eye view</strong>: Paris seen from high
           above the west, looking east. East is at the top (the four winds blow from the corners and name the
-          directions), north on the left. The important buildings are drawn standing up, with some care for what
+          directions), north on the left.</p>
+        <p>One consequence: the Right Bank is not on the right. Banks are named as you look downstream, and the Seine flows west, so the right bank is the north bank. On this map north is on the left, so the <em>rive droite</em>, the Ville, fills the left half of the sheet, and the <em>rive gauche</em>, the Université, the right half. The Cité, the island, lies between them.</p>
+        <p>The important buildings are drawn standing up, with some care for what
           they really looked like; ordinary houses are rows of near-identical little cottages
           <a class="ref" href="#s-cousin">[1]</a>.</p>
         <p>The artists bent the world to fit the frame. Below Paris the Seine turns a sharp right angle so that
